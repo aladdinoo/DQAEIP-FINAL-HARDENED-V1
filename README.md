@@ -508,4 +508,4 @@ The 3.3M validation documentation was produced during an earlier repository stat
 
 ---
 
-*End of README V2 — Company-Facing Documentation.*
+*End of README — Company-Facing Documentation.*
