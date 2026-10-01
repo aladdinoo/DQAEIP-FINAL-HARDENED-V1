@@ -1,0 +1,2045 @@
+{
+  "run_id": "fc_100",
+  "run_start_time": "2026-09-19T02:23:01.522310+00:00",
+  "run_records": [
+    {
+      "run_id": "fc_100",
+      "source": "/home/z/my-project/dqvp-work/repo/evidence/final_verification/flag_contract/input_100.csv",
+      "database": "",
+      "table": "",
+      "rule_id": "",
+      "rule_version": "",
+      "row_count": 0,
+      "schema_hash": "47813dbee947c871971a4841bd4aef325530a6886b96a6f77bba6af86c5031fa",
+      "ddl_hash": "",
+      "sql_hash": "2b9130fdcc656d32191b122e6ea863c3dc228f20679827ba7dde7f4749273192",
+      "output_identity": "",
+      "timestamp": "2026-09-19T02:23:01.522600+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "source": "/home/z/my-project/dqvp-work/repo/evidence/final_verification/flag_contract/input_100.csv",
+      "database": "",
+      "table": "",
+      "rule_id": "",
+      "rule_version": "",
+      "row_count": 100,
+      "schema_hash": "47813dbee947c871971a4841bd4aef325530a6886b96a6f77bba6af86c5031fa",
+      "ddl_hash": "",
+      "sql_hash": "2b9130fdcc656d32191b122e6ea863c3dc228f20679827ba7dde7f4749273192",
+      "output_identity": "21fddc48ec8d3ac399e091087ea099f1819389a3b5c4fc3df5aa7afc2d383665",
+      "timestamp": "2026-09-19T02:23:01.526453+00:00"
+    }
+  ],
+  "row_records": [
+    {
+      "run_id": "fc_100",
+      "row_number": 2,
+      "rule_id": "proposed_email_export_eligible",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "18f7da920903acab",
+      "timestamp": "2026-09-19T02:23:01.524336+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 2,
+      "rule_id": "zip_state_assessable",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "18f7da920903acab",
+      "timestamp": "2026-09-19T02:23:01.524348+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 3,
+      "rule_id": "proposed_email_export_eligible",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "b6b22d04398cc2e0",
+      "timestamp": "2026-09-19T02:23:01.524352+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 3,
+      "rule_id": "zip_state_assessable",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "b6b22d04398cc2e0",
+      "timestamp": "2026-09-19T02:23:01.524355+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 4,
+      "rule_id": "proposed_email_export_eligible",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "a4527748294fd778",
+      "timestamp": "2026-09-19T02:23:01.524358+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 4,
+      "rule_id": "zip_state_assessable",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "a4527748294fd778",
+      "timestamp": "2026-09-19T02:23:01.524361+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 5,
+      "rule_id": "proposed_email_export_eligible",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "5cd6be43c4ac5cfb",
+      "timestamp": "2026-09-19T02:23:01.524364+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 5,
+      "rule_id": "zip_state_assessable",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "5cd6be43c4ac5cfb",
+      "timestamp": "2026-09-19T02:23:01.524367+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 6,
+      "rule_id": "proposed_email_export_eligible",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "15f259f90cd8eddd",
+      "timestamp": "2026-09-19T02:23:01.524369+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 6,
+      "rule_id": "zip_state_assessable",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "15f259f90cd8eddd",
+      "timestamp": "2026-09-19T02:23:01.524372+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 7,
+      "rule_id": "proposed_email_export_eligible",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "ec49629a85ebae2e",
+      "timestamp": "2026-09-19T02:23:01.524377+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 7,
+      "rule_id": "zip_state_assessable",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "ec49629a85ebae2e",
+      "timestamp": "2026-09-19T02:23:01.524380+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 8,
+      "rule_id": "proposed_email_export_eligible",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "49a0fe75c05124a4",
+      "timestamp": "2026-09-19T02:23:01.524383+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 8,
+      "rule_id": "zip_state_assessable",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "49a0fe75c05124a4",
+      "timestamp": "2026-09-19T02:23:01.524385+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 9,
+      "rule_id": "proposed_email_export_eligible",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "7013e886186df62f",
+      "timestamp": "2026-09-19T02:23:01.524388+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 9,
+      "rule_id": "zip_state_assessable",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "7013e886186df62f",
+      "timestamp": "2026-09-19T02:23:01.524391+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 10,
+      "rule_id": "proposed_email_export_eligible",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "8d60bd2acded7241",
+      "timestamp": "2026-09-19T02:23:01.524393+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 10,
+      "rule_id": "zip_state_assessable",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "8d60bd2acded7241",
+      "timestamp": "2026-09-19T02:23:01.524396+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 11,
+      "rule_id": "proposed_email_export_eligible",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "b0e5ea2069cf6473",
+      "timestamp": "2026-09-19T02:23:01.524399+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 11,
+      "rule_id": "zip_state_assessable",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "b0e5ea2069cf6473",
+      "timestamp": "2026-09-19T02:23:01.524401+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 12,
+      "rule_id": "proposed_email_export_eligible",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "351de1a4db6dfef6",
+      "timestamp": "2026-09-19T02:23:01.524404+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 12,
+      "rule_id": "zip_state_assessable",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "351de1a4db6dfef6",
+      "timestamp": "2026-09-19T02:23:01.524407+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 13,
+      "rule_id": "proposed_email_export_eligible",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "c4ce569a9b0158e5",
+      "timestamp": "2026-09-19T02:23:01.524409+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 13,
+      "rule_id": "zip_state_assessable",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "c4ce569a9b0158e5",
+      "timestamp": "2026-09-19T02:23:01.524412+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 14,
+      "rule_id": "proposed_email_export_eligible",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "a5f3d2b5262143d3",
+      "timestamp": "2026-09-19T02:23:01.524415+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 14,
+      "rule_id": "zip_state_assessable",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "a5f3d2b5262143d3",
+      "timestamp": "2026-09-19T02:23:01.524417+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 15,
+      "rule_id": "proposed_email_export_eligible",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "b0b251863c1e4cd6",
+      "timestamp": "2026-09-19T02:23:01.524420+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 15,
+      "rule_id": "zip_state_assessable",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "b0b251863c1e4cd6",
+      "timestamp": "2026-09-19T02:23:01.524422+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 16,
+      "rule_id": "proposed_email_export_eligible",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "d8e36989bdb4de81",
+      "timestamp": "2026-09-19T02:23:01.524425+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 16,
+      "rule_id": "zip_state_assessable",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "d8e36989bdb4de81",
+      "timestamp": "2026-09-19T02:23:01.524428+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 17,
+      "rule_id": "proposed_email_export_eligible",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "fdeda1844171cd20",
+      "timestamp": "2026-09-19T02:23:01.524433+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 17,
+      "rule_id": "zip_state_assessable",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "fdeda1844171cd20",
+      "timestamp": "2026-09-19T02:23:01.524435+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 18,
+      "rule_id": "proposed_email_export_eligible",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "9d487e16f19af50c",
+      "timestamp": "2026-09-19T02:23:01.524438+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 18,
+      "rule_id": "zip_state_assessable",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "9d487e16f19af50c",
+      "timestamp": "2026-09-19T02:23:01.524441+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 19,
+      "rule_id": "proposed_email_export_eligible",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "602816d52bdfd41c",
+      "timestamp": "2026-09-19T02:23:01.524443+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 19,
+      "rule_id": "zip_state_assessable",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "602816d52bdfd41c",
+      "timestamp": "2026-09-19T02:23:01.524446+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 20,
+      "rule_id": "proposed_email_export_eligible",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "49a5402bfa796c0d",
+      "timestamp": "2026-09-19T02:23:01.524448+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 20,
+      "rule_id": "zip_state_assessable",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "49a5402bfa796c0d",
+      "timestamp": "2026-09-19T02:23:01.524451+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 21,
+      "rule_id": "proposed_email_export_eligible",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "c05c4526e8fbd345",
+      "timestamp": "2026-09-19T02:23:01.524454+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 21,
+      "rule_id": "zip_state_assessable",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "c05c4526e8fbd345",
+      "timestamp": "2026-09-19T02:23:01.524456+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 22,
+      "rule_id": "proposed_email_export_eligible",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "2da4eb1560597306",
+      "timestamp": "2026-09-19T02:23:01.524459+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 22,
+      "rule_id": "zip_state_assessable",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "2da4eb1560597306",
+      "timestamp": "2026-09-19T02:23:01.524462+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 23,
+      "rule_id": "proposed_email_export_eligible",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "7ed2512a813eed8f",
+      "timestamp": "2026-09-19T02:23:01.524464+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 23,
+      "rule_id": "zip_state_assessable",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "7ed2512a813eed8f",
+      "timestamp": "2026-09-19T02:23:01.524467+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 24,
+      "rule_id": "proposed_email_export_eligible",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "ab75110d08d05817",
+      "timestamp": "2026-09-19T02:23:01.524469+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 24,
+      "rule_id": "zip_state_assessable",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "ab75110d08d05817",
+      "timestamp": "2026-09-19T02:23:01.524472+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 25,
+      "rule_id": "proposed_email_export_eligible",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "a1a2f0653e648952",
+      "timestamp": "2026-09-19T02:23:01.524475+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 25,
+      "rule_id": "zip_state_assessable",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "a1a2f0653e648952",
+      "timestamp": "2026-09-19T02:23:01.524477+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 26,
+      "rule_id": "proposed_email_export_eligible",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "22390dc3de24a434",
+      "timestamp": "2026-09-19T02:23:01.524480+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 26,
+      "rule_id": "zip_state_assessable",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "22390dc3de24a434",
+      "timestamp": "2026-09-19T02:23:01.524483+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 27,
+      "rule_id": "proposed_email_export_eligible",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "d7d406a4be609bcb",
+      "timestamp": "2026-09-19T02:23:01.524488+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 27,
+      "rule_id": "zip_state_assessable",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "d7d406a4be609bcb",
+      "timestamp": "2026-09-19T02:23:01.524491+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 28,
+      "rule_id": "proposed_email_export_eligible",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "d3cfb5e7d6ba71f5",
+      "timestamp": "2026-09-19T02:23:01.524493+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 28,
+      "rule_id": "zip_state_assessable",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "d3cfb5e7d6ba71f5",
+      "timestamp": "2026-09-19T02:23:01.524496+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 29,
+      "rule_id": "proposed_email_export_eligible",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "0b8a308af47fbaaa",
+      "timestamp": "2026-09-19T02:23:01.524499+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 29,
+      "rule_id": "zip_state_assessable",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "0b8a308af47fbaaa",
+      "timestamp": "2026-09-19T02:23:01.524501+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 30,
+      "rule_id": "proposed_email_export_eligible",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "4dc5d7a77353deb3",
+      "timestamp": "2026-09-19T02:23:01.524504+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 30,
+      "rule_id": "zip_state_assessable",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "4dc5d7a77353deb3",
+      "timestamp": "2026-09-19T02:23:01.524506+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 31,
+      "rule_id": "proposed_email_export_eligible",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "5aeb8edf51d08aee",
+      "timestamp": "2026-09-19T02:23:01.524509+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 31,
+      "rule_id": "zip_state_assessable",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "5aeb8edf51d08aee",
+      "timestamp": "2026-09-19T02:23:01.524512+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 32,
+      "rule_id": "proposed_email_export_eligible",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "4ae4238f88ed6c3c",
+      "timestamp": "2026-09-19T02:23:01.524514+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 32,
+      "rule_id": "zip_state_assessable",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "4ae4238f88ed6c3c",
+      "timestamp": "2026-09-19T02:23:01.524517+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 33,
+      "rule_id": "proposed_email_export_eligible",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "3a6770b194fd1975",
+      "timestamp": "2026-09-19T02:23:01.524519+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 33,
+      "rule_id": "zip_state_assessable",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "3a6770b194fd1975",
+      "timestamp": "2026-09-19T02:23:01.524522+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 34,
+      "rule_id": "proposed_email_export_eligible",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "61bd8a4c7fb89a71",
+      "timestamp": "2026-09-19T02:23:01.524525+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 34,
+      "rule_id": "zip_state_assessable",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "61bd8a4c7fb89a71",
+      "timestamp": "2026-09-19T02:23:01.524527+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 35,
+      "rule_id": "proposed_email_export_eligible",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "db99eaf0004206b1",
+      "timestamp": "2026-09-19T02:23:01.524530+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 35,
+      "rule_id": "zip_state_assessable",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "db99eaf0004206b1",
+      "timestamp": "2026-09-19T02:23:01.524533+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 36,
+      "rule_id": "proposed_email_export_eligible",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "de504a5ebe28e58b",
+      "timestamp": "2026-09-19T02:23:01.524535+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 36,
+      "rule_id": "zip_state_assessable",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "de504a5ebe28e58b",
+      "timestamp": "2026-09-19T02:23:01.524538+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 37,
+      "rule_id": "proposed_email_export_eligible",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "e591d863083d6ce1",
+      "timestamp": "2026-09-19T02:23:01.524543+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 37,
+      "rule_id": "zip_state_assessable",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "e591d863083d6ce1",
+      "timestamp": "2026-09-19T02:23:01.524546+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 38,
+      "rule_id": "proposed_email_export_eligible",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "d53a0a7d127d5d00",
+      "timestamp": "2026-09-19T02:23:01.524548+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 38,
+      "rule_id": "zip_state_assessable",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "d53a0a7d127d5d00",
+      "timestamp": "2026-09-19T02:23:01.524551+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 39,
+      "rule_id": "proposed_email_export_eligible",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "69e4b08ce8624643",
+      "timestamp": "2026-09-19T02:23:01.524554+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 39,
+      "rule_id": "zip_state_assessable",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "69e4b08ce8624643",
+      "timestamp": "2026-09-19T02:23:01.524556+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 40,
+      "rule_id": "proposed_email_export_eligible",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "19ee677939457c9f",
+      "timestamp": "2026-09-19T02:23:01.524559+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 40,
+      "rule_id": "zip_state_assessable",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "19ee677939457c9f",
+      "timestamp": "2026-09-19T02:23:01.524562+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 41,
+      "rule_id": "proposed_email_export_eligible",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "1cea56be1aabebe9",
+      "timestamp": "2026-09-19T02:23:01.524564+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 41,
+      "rule_id": "zip_state_assessable",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "1cea56be1aabebe9",
+      "timestamp": "2026-09-19T02:23:01.524567+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 42,
+      "rule_id": "proposed_email_export_eligible",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "6b11ed0828374e11",
+      "timestamp": "2026-09-19T02:23:01.524570+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 42,
+      "rule_id": "zip_state_assessable",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "6b11ed0828374e11",
+      "timestamp": "2026-09-19T02:23:01.524572+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 43,
+      "rule_id": "proposed_email_export_eligible",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "98da42aff528030f",
+      "timestamp": "2026-09-19T02:23:01.524575+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 43,
+      "rule_id": "zip_state_assessable",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "98da42aff528030f",
+      "timestamp": "2026-09-19T02:23:01.524578+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 44,
+      "rule_id": "proposed_email_export_eligible",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "7050bf4c1c11608a",
+      "timestamp": "2026-09-19T02:23:01.524580+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 44,
+      "rule_id": "zip_state_assessable",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "7050bf4c1c11608a",
+      "timestamp": "2026-09-19T02:23:01.524583+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 45,
+      "rule_id": "proposed_email_export_eligible",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "d019911f6af40fb1",
+      "timestamp": "2026-09-19T02:23:01.524586+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 45,
+      "rule_id": "zip_state_assessable",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "d019911f6af40fb1",
+      "timestamp": "2026-09-19T02:23:01.524588+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 46,
+      "rule_id": "proposed_email_export_eligible",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "cb423843e4d8a2f0",
+      "timestamp": "2026-09-19T02:23:01.524591+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 46,
+      "rule_id": "zip_state_assessable",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "cb423843e4d8a2f0",
+      "timestamp": "2026-09-19T02:23:01.524593+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 47,
+      "rule_id": "proposed_email_export_eligible",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "be5821acd2865c4f",
+      "timestamp": "2026-09-19T02:23:01.524596+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 47,
+      "rule_id": "zip_state_assessable",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "be5821acd2865c4f",
+      "timestamp": "2026-09-19T02:23:01.524601+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 48,
+      "rule_id": "proposed_email_export_eligible",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "9a8e2b074f32a00f",
+      "timestamp": "2026-09-19T02:23:01.524604+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 48,
+      "rule_id": "zip_state_assessable",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "9a8e2b074f32a00f",
+      "timestamp": "2026-09-19T02:23:01.524606+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 49,
+      "rule_id": "proposed_email_export_eligible",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "3ac88788fb32fd38",
+      "timestamp": "2026-09-19T02:23:01.524609+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 49,
+      "rule_id": "zip_state_assessable",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "3ac88788fb32fd38",
+      "timestamp": "2026-09-19T02:23:01.524612+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 50,
+      "rule_id": "proposed_email_export_eligible",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "da2a0e2d9e596574",
+      "timestamp": "2026-09-19T02:23:01.524614+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 50,
+      "rule_id": "zip_state_assessable",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "da2a0e2d9e596574",
+      "timestamp": "2026-09-19T02:23:01.524617+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 51,
+      "rule_id": "proposed_email_export_eligible",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "13da6ff2fe997617",
+      "timestamp": "2026-09-19T02:23:01.524620+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 51,
+      "rule_id": "zip_state_assessable",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "13da6ff2fe997617",
+      "timestamp": "2026-09-19T02:23:01.524623+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 52,
+      "rule_id": "proposed_email_export_eligible",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "473441a31adc81ff",
+      "timestamp": "2026-09-19T02:23:01.525720+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 52,
+      "rule_id": "zip_state_assessable",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "473441a31adc81ff",
+      "timestamp": "2026-09-19T02:23:01.525725+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 53,
+      "rule_id": "proposed_email_export_eligible",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "770d4436e9e5a841",
+      "timestamp": "2026-09-19T02:23:01.525728+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 53,
+      "rule_id": "zip_state_assessable",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "770d4436e9e5a841",
+      "timestamp": "2026-09-19T02:23:01.525731+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 54,
+      "rule_id": "proposed_email_export_eligible",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "5e38b5139755b337",
+      "timestamp": "2026-09-19T02:23:01.525734+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 54,
+      "rule_id": "zip_state_assessable",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "5e38b5139755b337",
+      "timestamp": "2026-09-19T02:23:01.525737+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 55,
+      "rule_id": "proposed_email_export_eligible",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "7c847092eb803510",
+      "timestamp": "2026-09-19T02:23:01.525740+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 55,
+      "rule_id": "zip_state_assessable",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "7c847092eb803510",
+      "timestamp": "2026-09-19T02:23:01.525743+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 56,
+      "rule_id": "proposed_email_export_eligible",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "303468a16cc02d24",
+      "timestamp": "2026-09-19T02:23:01.525745+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 56,
+      "rule_id": "zip_state_assessable",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "303468a16cc02d24",
+      "timestamp": "2026-09-19T02:23:01.525748+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 57,
+      "rule_id": "proposed_email_export_eligible",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "328e151e98c712be",
+      "timestamp": "2026-09-19T02:23:01.525751+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 57,
+      "rule_id": "zip_state_assessable",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "328e151e98c712be",
+      "timestamp": "2026-09-19T02:23:01.525754+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 58,
+      "rule_id": "first_name_cleaning_candidate",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "c8dc0f4442919708",
+      "timestamp": "2026-09-19T02:23:01.525756+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 58,
+      "rule_id": "proposed_email_export_eligible",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "c8dc0f4442919708",
+      "timestamp": "2026-09-19T02:23:01.525759+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 58,
+      "rule_id": "zip_state_assessable",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "c8dc0f4442919708",
+      "timestamp": "2026-09-19T02:23:01.525762+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 59,
+      "rule_id": "proposed_email_export_eligible",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "93ceffb1627df686",
+      "timestamp": "2026-09-19T02:23:01.525764+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 59,
+      "rule_id": "zip_state_assessable",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "93ceffb1627df686",
+      "timestamp": "2026-09-19T02:23:01.525767+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 60,
+      "rule_id": "proposed_email_export_eligible",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "45a162e0054679db",
+      "timestamp": "2026-09-19T02:23:01.525770+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 60,
+      "rule_id": "zip_state_assessable",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "45a162e0054679db",
+      "timestamp": "2026-09-19T02:23:01.525775+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 61,
+      "rule_id": "proposed_email_export_eligible",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "b81b3370eda05e58",
+      "timestamp": "2026-09-19T02:23:01.525778+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 61,
+      "rule_id": "zip_state_assessable",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "b81b3370eda05e58",
+      "timestamp": "2026-09-19T02:23:01.525780+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 62,
+      "rule_id": "proposed_email_export_eligible",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "ba9eec519d1422f2",
+      "timestamp": "2026-09-19T02:23:01.525783+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 62,
+      "rule_id": "zip_state_assessable",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "ba9eec519d1422f2",
+      "timestamp": "2026-09-19T02:23:01.525786+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 63,
+      "rule_id": "proposed_email_export_eligible",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "fb58ba68b4fad45c",
+      "timestamp": "2026-09-19T02:23:01.525788+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 63,
+      "rule_id": "zip_state_assessable",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "fb58ba68b4fad45c",
+      "timestamp": "2026-09-19T02:23:01.525791+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 64,
+      "rule_id": "proposed_email_export_eligible",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "86cb4c9cffb4d9e3",
+      "timestamp": "2026-09-19T02:23:01.525794+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 64,
+      "rule_id": "zip_state_assessable",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "86cb4c9cffb4d9e3",
+      "timestamp": "2026-09-19T02:23:01.525796+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 65,
+      "rule_id": "proposed_email_export_eligible",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "f55b2d4c18e105ef",
+      "timestamp": "2026-09-19T02:23:01.525799+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 65,
+      "rule_id": "zip_state_assessable",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "f55b2d4c18e105ef",
+      "timestamp": "2026-09-19T02:23:01.525801+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 66,
+      "rule_id": "email_blank",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "cf3871b3cb2167ac",
+      "timestamp": "2026-09-19T02:23:01.525804+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 66,
+      "rule_id": "zip_state_assessable",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "cf3871b3cb2167ac",
+      "timestamp": "2026-09-19T02:23:01.525807+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 67,
+      "rule_id": "first_name_cleaning_candidate",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "a8474b6c23936625",
+      "timestamp": "2026-09-19T02:23:01.525809+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 67,
+      "rule_id": "email_blank",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "a8474b6c23936625",
+      "timestamp": "2026-09-19T02:23:01.525812+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 67,
+      "rule_id": "zip_state_assessable",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "a8474b6c23936625",
+      "timestamp": "2026-09-19T02:23:01.525815+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 68,
+      "rule_id": "email_blank",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "baaf049376b08d73",
+      "timestamp": "2026-09-19T02:23:01.525817+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 68,
+      "rule_id": "zip_state_assessable",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "baaf049376b08d73",
+      "timestamp": "2026-09-19T02:23:01.525820+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 69,
+      "rule_id": "email_blank",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "b835bba57d17db29",
+      "timestamp": "2026-09-19T02:23:01.525831+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 69,
+      "rule_id": "zip_state_assessable",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "b835bba57d17db29",
+      "timestamp": "2026-09-19T02:23:01.525835+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 70,
+      "rule_id": "email_blank",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "2c49d7b3f9cfde26",
+      "timestamp": "2026-09-19T02:23:01.525838+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 70,
+      "rule_id": "zip_state_assessable",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "2c49d7b3f9cfde26",
+      "timestamp": "2026-09-19T02:23:01.525840+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 71,
+      "rule_id": "email_blank",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "171209c9fba8bcfb",
+      "timestamp": "2026-09-19T02:23:01.525843+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 71,
+      "rule_id": "zip_state_assessable",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "171209c9fba8bcfb",
+      "timestamp": "2026-09-19T02:23:01.525846+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 72,
+      "rule_id": "email_blank",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "ae13eac0f007bfe3",
+      "timestamp": "2026-09-19T02:23:01.525848+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 72,
+      "rule_id": "zip_state_assessable",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "ae13eac0f007bfe3",
+      "timestamp": "2026-09-19T02:23:01.525851+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 73,
+      "rule_id": "email_blank",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "fe48f5566fb10c5e",
+      "timestamp": "2026-09-19T02:23:01.525853+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 73,
+      "rule_id": "zip_state_assessable",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "fe48f5566fb10c5e",
+      "timestamp": "2026-09-19T02:23:01.525856+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 74,
+      "rule_id": "email_syntax_failure",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "663dfa73c239ad9c",
+      "timestamp": "2026-09-19T02:23:01.525859+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 74,
+      "rule_id": "zip_state_assessable",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "663dfa73c239ad9c",
+      "timestamp": "2026-09-19T02:23:01.525861+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 75,
+      "rule_id": "email_syntax_failure",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "3898f977ae56c534",
+      "timestamp": "2026-09-19T02:23:01.525864+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 75,
+      "rule_id": "zip_state_assessable",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "3898f977ae56c534",
+      "timestamp": "2026-09-19T02:23:01.525867+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 76,
+      "rule_id": "email_syntax_failure",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "a6b2fbc8e1c8cba0",
+      "timestamp": "2026-09-19T02:23:01.525869+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 76,
+      "rule_id": "zip_state_assessable",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "a6b2fbc8e1c8cba0",
+      "timestamp": "2026-09-19T02:23:01.525872+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 77,
+      "rule_id": "email_syntax_failure",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "8f7eb3e09bd23ec5",
+      "timestamp": "2026-09-19T02:23:01.525875+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 77,
+      "rule_id": "zip_state_assessable",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "8f7eb3e09bd23ec5",
+      "timestamp": "2026-09-19T02:23:01.525877+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 78,
+      "rule_id": "email_syntax_failure",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "5ae132f163113b2d",
+      "timestamp": "2026-09-19T02:23:01.525880+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 78,
+      "rule_id": "zip_state_assessable",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "5ae132f163113b2d",
+      "timestamp": "2026-09-19T02:23:01.525885+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 79,
+      "rule_id": "email_syntax_failure",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "15ba3bfebf45da14",
+      "timestamp": "2026-09-19T02:23:01.525888+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 79,
+      "rule_id": "zip_state_assessable",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "15ba3bfebf45da14",
+      "timestamp": "2026-09-19T02:23:01.525890+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 80,
+      "rule_id": "email_syntax_failure",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "dd71ee386abea96b",
+      "timestamp": "2026-09-19T02:23:01.525893+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 80,
+      "rule_id": "zip_state_assessable",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "dd71ee386abea96b",
+      "timestamp": "2026-09-19T02:23:01.525896+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 81,
+      "rule_id": "first_name_cleaning_candidate",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "492fa37ba86a37a9",
+      "timestamp": "2026-09-19T02:23:01.525898+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 81,
+      "rule_id": "proposed_email_export_eligible",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "492fa37ba86a37a9",
+      "timestamp": "2026-09-19T02:23:01.525901+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 81,
+      "rule_id": "zip_state_assessable",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "492fa37ba86a37a9",
+      "timestamp": "2026-09-19T02:23:01.525903+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 82,
+      "rule_id": "first_name_cleaning_candidate",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "151ca7b3cc23363d",
+      "timestamp": "2026-09-19T02:23:01.525906+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 82,
+      "rule_id": "proposed_email_export_eligible",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "151ca7b3cc23363d",
+      "timestamp": "2026-09-19T02:23:01.525909+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 82,
+      "rule_id": "zip_state_assessable",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "151ca7b3cc23363d",
+      "timestamp": "2026-09-19T02:23:01.525911+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 83,
+      "rule_id": "first_name_cleaning_candidate",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "c5461cd264097514",
+      "timestamp": "2026-09-19T02:23:01.525914+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 83,
+      "rule_id": "proposed_email_export_eligible",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "c5461cd264097514",
+      "timestamp": "2026-09-19T02:23:01.525917+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 83,
+      "rule_id": "zip_state_assessable",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "c5461cd264097514",
+      "timestamp": "2026-09-19T02:23:01.525919+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 84,
+      "rule_id": "first_name_cleaning_candidate",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "4d88b4b4758655eb",
+      "timestamp": "2026-09-19T02:23:01.525922+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 84,
+      "rule_id": "proposed_email_export_eligible",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "4d88b4b4758655eb",
+      "timestamp": "2026-09-19T02:23:01.525925+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 84,
+      "rule_id": "zip_state_assessable",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "4d88b4b4758655eb",
+      "timestamp": "2026-09-19T02:23:01.525927+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 85,
+      "rule_id": "first_name_cleaning_candidate",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "621b9c1890cfeafe",
+      "timestamp": "2026-09-19T02:23:01.525930+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 85,
+      "rule_id": "proposed_email_export_eligible",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "621b9c1890cfeafe",
+      "timestamp": "2026-09-19T02:23:01.525932+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 85,
+      "rule_id": "zip_state_assessable",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "621b9c1890cfeafe",
+      "timestamp": "2026-09-19T02:23:01.525935+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 86,
+      "rule_id": "last_name_cleaning_candidate",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "6625a8cc70d1c335",
+      "timestamp": "2026-09-19T02:23:01.525938+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 86,
+      "rule_id": "proposed_email_export_eligible",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "6625a8cc70d1c335",
+      "timestamp": "2026-09-19T02:23:01.525943+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 86,
+      "rule_id": "zip_state_assessable",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "6625a8cc70d1c335",
+      "timestamp": "2026-09-19T02:23:01.525946+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 87,
+      "rule_id": "last_name_cleaning_candidate",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "176b14ac2faa159e",
+      "timestamp": "2026-09-19T02:23:01.525948+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 87,
+      "rule_id": "proposed_email_export_eligible",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "176b14ac2faa159e",
+      "timestamp": "2026-09-19T02:23:01.525951+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 87,
+      "rule_id": "zip_state_assessable",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "176b14ac2faa159e",
+      "timestamp": "2026-09-19T02:23:01.525953+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 88,
+      "rule_id": "last_name_cleaning_candidate",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "4ec1d1c7f67f0058",
+      "timestamp": "2026-09-19T02:23:01.525956+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 88,
+      "rule_id": "proposed_email_export_eligible",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "4ec1d1c7f67f0058",
+      "timestamp": "2026-09-19T02:23:01.525959+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 88,
+      "rule_id": "zip_state_assessable",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "4ec1d1c7f67f0058",
+      "timestamp": "2026-09-19T02:23:01.525961+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 89,
+      "rule_id": "first_name_cleaning_candidate",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "09f88b14b8b7d922",
+      "timestamp": "2026-09-19T02:23:01.525964+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 89,
+      "rule_id": "last_name_cleaning_candidate",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "09f88b14b8b7d922",
+      "timestamp": "2026-09-19T02:23:01.525966+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 89,
+      "rule_id": "proposed_email_export_eligible",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "09f88b14b8b7d922",
+      "timestamp": "2026-09-19T02:23:01.525969+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 89,
+      "rule_id": "zip_state_assessable",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "09f88b14b8b7d922",
+      "timestamp": "2026-09-19T02:23:01.525972+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 90,
+      "rule_id": "last_name_cleaning_candidate",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "d61b945a041ccb6f",
+      "timestamp": "2026-09-19T02:23:01.525974+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 90,
+      "rule_id": "proposed_email_export_eligible",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "d61b945a041ccb6f",
+      "timestamp": "2026-09-19T02:23:01.525977+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 90,
+      "rule_id": "zip_state_assessable",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "d61b945a041ccb6f",
+      "timestamp": "2026-09-19T02:23:01.525980+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 91,
+      "rule_id": "proposed_email_export_eligible",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "da1e9656a95bbd45",
+      "timestamp": "2026-09-19T02:23:01.525982+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 91,
+      "rule_id": "zip_state_assessable",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "da1e9656a95bbd45",
+      "timestamp": "2026-09-19T02:23:01.525985+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 91,
+      "rule_id": "geography_mismatch_candidate",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "da1e9656a95bbd45",
+      "timestamp": "2026-09-19T02:23:01.525987+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 92,
+      "rule_id": "proposed_email_export_eligible",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "502903d3a25855be",
+      "timestamp": "2026-09-19T02:23:01.525990+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 92,
+      "rule_id": "zip_state_assessable",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "502903d3a25855be",
+      "timestamp": "2026-09-19T02:23:01.525993+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 92,
+      "rule_id": "geography_mismatch_candidate",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "502903d3a25855be",
+      "timestamp": "2026-09-19T02:23:01.525998+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 93,
+      "rule_id": "proposed_email_export_eligible",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "2f361d99847a45e9",
+      "timestamp": "2026-09-19T02:23:01.526000+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 93,
+      "rule_id": "zip_state_assessable",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "2f361d99847a45e9",
+      "timestamp": "2026-09-19T02:23:01.526003+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 93,
+      "rule_id": "geography_mismatch_candidate",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "2f361d99847a45e9",
+      "timestamp": "2026-09-19T02:23:01.526006+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 94,
+      "rule_id": "last_name_cleaning_candidate",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "012d3c98abcfbdc6",
+      "timestamp": "2026-09-19T02:23:01.526262+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 94,
+      "rule_id": "proposed_email_export_eligible",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "012d3c98abcfbdc6",
+      "timestamp": "2026-09-19T02:23:01.526267+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 94,
+      "rule_id": "zip_state_assessable",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "012d3c98abcfbdc6",
+      "timestamp": "2026-09-19T02:23:01.526269+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 94,
+      "rule_id": "geography_mismatch_candidate",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "012d3c98abcfbdc6",
+      "timestamp": "2026-09-19T02:23:01.526272+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 95,
+      "rule_id": "proposed_email_export_eligible",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "6c16de858e8d33b9",
+      "timestamp": "2026-09-19T02:23:01.526278+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 95,
+      "rule_id": "zip_state_assessable",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "6c16de858e8d33b9",
+      "timestamp": "2026-09-19T02:23:01.526281+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 95,
+      "rule_id": "geography_mismatch_candidate",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "6c16de858e8d33b9",
+      "timestamp": "2026-09-19T02:23:01.526284+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 96,
+      "rule_id": "name_cleaning_candidate",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "60f3237c63aa55b6",
+      "timestamp": "2026-09-19T02:23:01.526287+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 96,
+      "rule_id": "proposed_email_export_eligible",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "60f3237c63aa55b6",
+      "timestamp": "2026-09-19T02:23:01.526289+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 96,
+      "rule_id": "zip_state_assessable",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "60f3237c63aa55b6",
+      "timestamp": "2026-09-19T02:23:01.526292+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 97,
+      "rule_id": "name_cleaning_candidate",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "1f2c3b264cedec13",
+      "timestamp": "2026-09-19T02:23:01.526295+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 97,
+      "rule_id": "proposed_email_export_eligible",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "1f2c3b264cedec13",
+      "timestamp": "2026-09-19T02:23:01.526298+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 97,
+      "rule_id": "zip_state_assessable",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "1f2c3b264cedec13",
+      "timestamp": "2026-09-19T02:23:01.526301+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 98,
+      "rule_id": "name_cleaning_candidate",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "ce819301f8aa2502",
+      "timestamp": "2026-09-19T02:23:01.526303+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 98,
+      "rule_id": "proposed_email_export_eligible",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "ce819301f8aa2502",
+      "timestamp": "2026-09-19T02:23:01.526306+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 98,
+      "rule_id": "zip_state_assessable",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "ce819301f8aa2502",
+      "timestamp": "2026-09-19T02:23:01.526309+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 99,
+      "rule_id": "proposed_email_export_eligible",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "f4cccb560e7da13f",
+      "timestamp": "2026-09-19T02:23:01.526312+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 99,
+      "rule_id": "zip_state_assessable",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "f4cccb560e7da13f",
+      "timestamp": "2026-09-19T02:23:01.526315+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 100,
+      "rule_id": "proposed_email_export_eligible",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "881b4290264fe3d3",
+      "timestamp": "2026-09-19T02:23:01.526317+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 100,
+      "rule_id": "zip_state_assessable",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "881b4290264fe3d3",
+      "timestamp": "2026-09-19T02:23:01.526320+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 101,
+      "rule_id": "first_name_cleaning_candidate",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "4a984763c77b6201",
+      "timestamp": "2026-09-19T02:23:01.526323+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 101,
+      "rule_id": "proposed_email_export_eligible",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "4a984763c77b6201",
+      "timestamp": "2026-09-19T02:23:01.526325+00:00"
+    },
+    {
+      "run_id": "fc_100",
+      "row_number": 101,
+      "rule_id": "zip_state_assessable",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "4a984763c77b6201",
+      "timestamp": "2026-09-19T02:23:01.526328+00:00"
+    }
+  ],
+  "total_row_records": 223,
+  "truncated": false
+}

@@ -1,0 +1,25 @@
+{
+  "captured_utc": "2026-09-18T23:42:41Z",
+  "python": {
+    "version": "3.12.14",
+    "implementation": "CPython",
+    "executable_name": "python3"
+  },
+  "os": {
+    "system": "Linux",
+    "release": "5.10.134-013.15.kangaroo.al8.x86_64",
+    "architecture": "x86_64"
+  },
+  "packages": {
+    "pyyaml": "6.0.3",
+    "pytest": "9.0.2"
+  },
+  "dependency_lock_hash": null,
+  "dependency_lock_note": "no requirements lock file is tracked; dependencies declared in pyproject.toml (pyyaml>=6.0, pytest>=7.0 dev)",
+  "locale": "C (unset)",
+  "timezone": "UTC UTC",
+  "timezone_utc_offset_seconds": 0,
+  "execution_mode": "staged local validation (no network, no ClickHouse/Airflow runtime, no SP1/E1 activation)",
+  "reproducibility_claim": "environment-dependent; no claim of environment-independent reproducibility is made beyond what deterministic replay actually proves on this machine",
+  "hypothesis_available": false
+}

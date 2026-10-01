@@ -1,0 +1,63 @@
+{
+  "input_rows": 100,
+  "output_rows": 100,
+  "flag_counts": {
+    "first_name_cleaning_candidate": 9,
+    "last_name_cleaning_candidate": 6,
+    "name_cleaning_candidate": 3,
+    "email_blank": 8,
+    "email_syntax_failure": 7,
+    "proposed_email_export_eligible": 85,
+    "zip_state_assessable": 100,
+    "geography_mismatch_candidate": 5
+  },
+  "monitoring_score": 0.9187,
+  "sla_passed": false,
+  "blank_counts": {
+    "extra": 100,
+    "DNC": 34,
+    "ethnicity": 21,
+    "ownrent": 28,
+    "email_address": 8,
+    "first_name": 2,
+    "first_name_norm": 2
+  },
+  "unique_id_count": 100,
+  "zip_state_mismatch_count": 5,
+  "zip_state_assessable_count": 100,
+  "monitoring_details": {
+    "scores": {
+      "completeness": 0.9,
+      "validity": 0.85,
+      "consistency": 0.95,
+      "uniqueness": 1.0,
+      "accuracy": 0.85,
+      "freshness": 1.0,
+      "geography_quality": 0.95,
+      "email_quality": 0.85
+    },
+    "thresholds": {
+      "completeness": 0.95,
+      "validity": 0.95,
+      "consistency": 0.9,
+      "uniqueness": 0.95,
+      "accuracy": 0.9,
+      "freshness": 0.95,
+      "geography_quality": 0.9,
+      "email_quality": 0.95
+    },
+    "sla_results": {
+      "completeness": false,
+      "validity": false,
+      "consistency": true,
+      "uniqueness": true,
+      "accuracy": false,
+      "freshness": true,
+      "geography_quality": true,
+      "email_quality": false
+    },
+    "overall_score": 0.9187,
+    "sla_passed": false
+  },
+  "manual_completeness_check": 0.9
+}

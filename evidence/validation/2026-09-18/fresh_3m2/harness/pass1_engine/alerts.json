@@ -1,0 +1,74 @@
+[
+  {
+    "severity": "warning",
+    "alert_type": "sla_breach",
+    "message": "SLA breach for completeness: score=0.8603, threshold=0.95",
+    "run_id": "final_3m_pass1",
+    "timestamp": "2026-09-18T22:59:44.780959+00:00",
+    "details": {
+      "dimension": "completeness",
+      "score": 0.8603,
+      "threshold": 0.95
+    }
+  },
+  {
+    "severity": "warning",
+    "alert_type": "sla_breach",
+    "message": "SLA breach for validity: score=0.8297, threshold=0.95",
+    "run_id": "final_3m_pass1",
+    "timestamp": "2026-09-18T22:59:44.780992+00:00",
+    "details": {
+      "dimension": "validity",
+      "score": 0.8297,
+      "threshold": 0.95
+    }
+  },
+  {
+    "severity": "warning",
+    "alert_type": "sla_breach",
+    "message": "SLA breach for consistency: score=0.8565, threshold=0.9",
+    "run_id": "final_3m_pass1",
+    "timestamp": "2026-09-18T22:59:44.781001+00:00",
+    "details": {
+      "dimension": "consistency",
+      "score": 0.8565,
+      "threshold": 0.9
+    }
+  },
+  {
+    "severity": "warning",
+    "alert_type": "sla_breach",
+    "message": "SLA breach for accuracy: score=0.7619, threshold=0.9",
+    "run_id": "final_3m_pass1",
+    "timestamp": "2026-09-18T22:59:44.781007+00:00",
+    "details": {
+      "dimension": "accuracy",
+      "score": 0.7619,
+      "threshold": 0.9
+    }
+  },
+  {
+    "severity": "warning",
+    "alert_type": "sla_breach",
+    "message": "SLA breach for geography_quality: score=0.8565, threshold=0.9",
+    "run_id": "final_3m_pass1",
+    "timestamp": "2026-09-18T22:59:44.781013+00:00",
+    "details": {
+      "dimension": "geography_quality",
+      "score": 0.8565,
+      "threshold": 0.9
+    }
+  },
+  {
+    "severity": "warning",
+    "alert_type": "sla_breach",
+    "message": "SLA breach for email_quality: score=0.8297, threshold=0.95",
+    "run_id": "final_3m_pass1",
+    "timestamp": "2026-09-18T22:59:44.781018+00:00",
+    "details": {
+      "dimension": "email_quality",
+      "score": 0.8297,
+      "threshold": 0.95
+    }
+  }
+]

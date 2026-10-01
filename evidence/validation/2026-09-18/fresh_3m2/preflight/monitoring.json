@@ -1,0 +1,34 @@
+{
+  "scores": {
+    "completeness": 0.862,
+    "validity": 0.834,
+    "consistency": 0.851,
+    "uniqueness": 1.0,
+    "accuracy": 0.766,
+    "freshness": 1.0,
+    "geography_quality": 0.851,
+    "email_quality": 0.834
+  },
+  "thresholds": {
+    "completeness": 0.95,
+    "validity": 0.95,
+    "consistency": 0.9,
+    "uniqueness": 0.95,
+    "accuracy": 0.9,
+    "freshness": 0.95,
+    "geography_quality": 0.9,
+    "email_quality": 0.95
+  },
+  "sla_results": {
+    "completeness": false,
+    "validity": false,
+    "consistency": false,
+    "uniqueness": true,
+    "accuracy": false,
+    "freshness": true,
+    "geography_quality": false,
+    "email_quality": false
+  },
+  "overall_score": 0.8748,
+  "sla_passed": false
+}

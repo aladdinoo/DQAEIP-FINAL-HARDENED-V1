@@ -1,0 +1,118 @@
+{
+  "generated_utc": "2026-09-19T09:01:51Z",
+  "measurement_method": {
+    "engine_3m2_source": "certified regression pass1 CLI duration (frozen checker evidence)",
+    "engine_only": "canonical `python -m runner.cli validate` subprocess; wall time via perf_counter; peak RSS via /proc/<pid>/status monitor thread (Layer H monitor, no limits tripped)",
+    "hardened": "full layers A-H pipeline (data_quality_platform.hardening.pipeline.run_hardened_execution) around the identical engine command",
+    "ladder_seed": 20260919
+  },
+  "release": "DQAEIP-FINAL-HARDENED-RELEASE-2026-09-19",
+  "rungs": [
+    {
+      "engine_only": {
+        "output_size_bytes": 276608,
+        "peak_rss_bytes": 475136,
+        "returncode": 0,
+        "wall_seconds": 0.199
+      },
+      "hardened_pipeline": {
+        "output_size_bytes": 276608,
+        "peak_rss_bytes": 4096,
+        "verdict": "HARDENED_EXECUTION_PASS",
+        "wall_seconds": 0.203
+      },
+      "hardening_overhead_percent": 2.01,
+      "hardening_overhead_seconds": 0.004,
+      "input_sha256": "a55d3cc51e39815029874c1f33ed58e9c3cb5cc286193e8eca97a8f631694e54",
+      "label": "1K",
+      "rows": 1000,
+      "rows_per_second_engine_only": 5025.1,
+      "rows_per_second_hardened": 4926.1
+    },
+    {
+      "engine_only": {
+        "output_size_bytes": 2787481,
+        "peak_rss_bytes": 30081024,
+        "returncode": 0,
+        "wall_seconds": 0.604
+      },
+      "hardened_pipeline": {
+        "output_size_bytes": 2787481,
+        "peak_rss_bytes": 30154752,
+        "verdict": "HARDENED_EXECUTION_PASS",
+        "wall_seconds": 0.649
+      },
+      "hardening_overhead_percent": 7.45,
+      "hardening_overhead_seconds": 0.045,
+      "input_sha256": "f83e0317364c22f13ef22d0e84e68fd7668f9c92a9d1736e696fda31847e0662",
+      "label": "10K",
+      "rows": 10000,
+      "rows_per_second_engine_only": 16556.3,
+      "rows_per_second_hardened": 15408.3
+    },
+    {
+      "engine_only": {
+        "output_size_bytes": 28134631,
+        "peak_rss_bytes": 101146624,
+        "returncode": 0,
+        "wall_seconds": 4.825
+      },
+      "hardened_pipeline": {
+        "output_size_bytes": 28134631,
+        "peak_rss_bytes": 101404672,
+        "verdict": "HARDENED_EXECUTION_PASS",
+        "wall_seconds": 5.228
+      },
+      "hardening_overhead_percent": 8.35,
+      "hardening_overhead_seconds": 0.403,
+      "input_sha256": "2d09be0457effaf94304bbf195c660cfe4f72b22caad9a371e0e22fc8c1c0d4a",
+      "label": "100K",
+      "rows": 100000,
+      "rows_per_second_engine_only": 20725.4,
+      "rows_per_second_hardened": 19127.8
+    },
+    {
+      "engine_only": {
+        "output_size_bytes": 283966605,
+        "peak_rss_bytes": 786518016,
+        "returncode": 0,
+        "wall_seconds": 49.897
+      },
+      "hardened_pipeline": {
+        "output_size_bytes": 283966605,
+        "peak_rss_bytes": 786825216,
+        "verdict": "HARDENED_EXECUTION_PASS",
+        "wall_seconds": 54.0
+      },
+      "hardening_overhead_percent": 8.22,
+      "hardening_overhead_seconds": 4.103,
+      "input_sha256": "0dff73b04eaba34c6a9a544c1de110f442f18f00a9d0e4cc18647379e05005c9",
+      "label": "1M",
+      "rows": 1000000,
+      "rows_per_second_engine_only": 20041.3,
+      "rows_per_second_hardened": 18518.5
+    },
+    {
+      "engine_only": {
+        "output_size_bytes": 834606817,
+        "peak_rss_mb": 2365.29,
+        "source": "evidence/validation/2026-09-19/fresh_3m2/pass1_cli.json (certified frozen checker)",
+        "wall_seconds": 157.005
+      },
+      "hardened_pipeline": {
+        "output_size_bytes": 834606817,
+        "peak_rss_bytes": 2479177728,
+        "verdict": "HARDENED_EXECUTION_PASS",
+        "wall_seconds": 169.414
+      },
+      "hardening_overhead_percent": 7.9,
+      "hardening_overhead_seconds": 12.409,
+      "input_sha256": "59624a53c72f908f1dde673ceecf59e0662ae721bb8f9af7e165acba5318d153",
+      "label": "3.2M",
+      "rows": 3200000,
+      "rows_per_second_engine_only": 20381.5,
+      "rows_per_second_hardened": 18888.6
+    }
+  ],
+  "schema": "dqaeip.hardening.performance.ladder/1.0"
+}

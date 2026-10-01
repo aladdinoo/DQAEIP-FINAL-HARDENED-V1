@@ -1,0 +1,28 @@
+{
+  "run_a_sha256": "6d76b69f2aaf8ab77716ba7c416cb6f5d5a83c8903c4c829e43689434cde9d28",
+  "run_b_sha256": "6d76b69f2aaf8ab77716ba7c416cb6f5d5a83c8903c4c829e43689434cde9d28",
+  "determinism_verified": true,
+  "rule_hashes": {
+    "first_name_cleaning_candidate": "575e9d4588334d364bdcfae6ca3c44b9bf35120a371b78fecfde8ee19373ca69",
+    "last_name_cleaning_candidate": "c553b7f4484b54135e2b84c6b37a84b15df328544256577984e61f6ede900122",
+    "name_cleaning_candidate": "3a128ec85d196cd3a42720347ba8790f5fbf0f386bd617e4ec508ee050b661c8",
+    "email_blank": "157ccc2127334bac03534f80868a3d7ea3bc8df77c132e8c237874321164f2bc",
+    "email_syntax_failure": "5caaba13a73c90c5aac7a52cf756713c8ecc3dc73d30c2949206efa8d2b712f7",
+    "proposed_email_export_eligible": "6732e6bfed6fae3c23439f0e69b5c39e2843a5b74f2f8f3fdaf6ad5d536da98c",
+    "zip_state_assessable": "e7730c1b848f32790a56bfb79f7ef5dbc8c88b3919f9903421adc7dde5393885",
+    "geography_mismatch_candidate": "7967b59ef7a14b83284a12eb298d63c6140e0837bfafdf3ac4e758baf74c4e93"
+  },
+  "rule_versions": {
+    "first_name_cleaning_candidate": "1.0.0",
+    "last_name_cleaning_candidate": "1.0.0",
+    "name_cleaning_candidate": "1.0.0",
+    "email_blank": "1.0.0",
+    "email_syntax_failure": "1.0.0",
+    "proposed_email_export_eligible": "1.0.0",
+    "zip_state_assessable": "1.0.0",
+    "geography_mismatch_candidate": "1.0.0"
+  },
+  "generator_determinism": true,
+  "generator_hash_1": "931c9e27fd0a8c58b3dc5335a2e9bd1763fa5af09375ecacebba8aa1c11082a3",
+  "generator_hash_2": "931c9e27fd0a8c58b3dc5335a2e9bd1763fa5af09375ecacebba8aa1c11082a3"
+}

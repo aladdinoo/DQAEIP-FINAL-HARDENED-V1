@@ -1,0 +1,17 @@
+{
+  "dependency_fingerprint": "8c3039eeeafae34b7512c4f1dab3de2964ada16f59ab8d189b80cf49a652a7dc",
+  "evidence_fingerprint": "d9fa447d6d7e970a40c9dad61d0f235a0fa399337439b75e819b9853cd1d36e5",
+  "final_results_sha256": "98400e0f27ca526c54ef44ced1cf0d50a10b53ba2591a3dc43615561159cbdf8",
+  "frozen_v1_sha256": "daef1ded54c7d3c79898a1ba253be2acd5b6120e18b16b09009fdd7be9fc2276",
+  "invalidated": false,
+  "invalidation_note": "any subsequent modification to a locked artifact INVALIDATES this lock; a locked release MUST NOT silently change",
+  "locked_utc": "2026-09-19T02:43:07Z",
+  "official_input_sha256": "59624a53c72f908f1dde673ceecf59e0662ae721bb8f9af7e165acba5318d153",
+  "official_output_sha256": "b72adc235160a86e0b99a08f988dd0bb5f2cff82bbe5b5d28ea07c5a5719329a",
+  "release_id": "DQAEIP-FINAL-CLEAN-REBUILD-RELEASE-2026-09-18",
+  "release_manifest_concat_sha256": "0f166ea18a8ca9995e434b7d94b7ccb86f22532b4cb1c320a35b09d2af0a6c6e",
+  "release_manifest_sha256": "71c6d58df039c7963dfc74597dce9a7ff520a97188b3c8b25d79dcedfd83e926",
+  "report": "DQAEIP portable release lock (section 33)",
+  "root_final_results_sha256": "cbd25637a4b03cf57552e991b897321e50445394cf8734a0eb010e759c63de0b",
+  "status": "LOCKED"
+}

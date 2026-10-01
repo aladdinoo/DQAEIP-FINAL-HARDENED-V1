@@ -1,0 +1,34 @@
+{
+  "runtime_verification": "SKIPPED",
+  "runtime_reason": "Docker/ClickHouse not available in this environment",
+  "sql_static_verification": "PASS",
+  "sql_files": {
+    "001_create_source.sql": {
+      "exists": true,
+      "has_create": true,
+      "table": "source"
+    },
+    "002_create_flag_preview.sql": {
+      "exists": true,
+      "has_create": true,
+      "table": "flag_preview"
+    },
+    "003_create_reference_tables.sql": {
+      "exists": true,
+      "has_create": true,
+      "table": "reference"
+    },
+    "004_create_audit_table.sql": {
+      "exists": true,
+      "has_create": true,
+      "table": "audit"
+    },
+    "005_create_lineage_table.sql": {
+      "exists": true,
+      "has_create": true,
+      "table": "lineage"
+    }
+  },
+  "docker_available": false,
+  "docker_compose_exists": true
+}

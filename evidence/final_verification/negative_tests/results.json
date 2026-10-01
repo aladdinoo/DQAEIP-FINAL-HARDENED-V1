@@ -1,0 +1,72 @@
+[
+  {
+    "name": "blank_email",
+    "rule": "email_blank",
+    "expected": 1,
+    "actual": 1,
+    "status": "PASS"
+  },
+  {
+    "name": "invalid_email_no_at",
+    "rule": "email_syntax_failure",
+    "expected": 1,
+    "actual": 1,
+    "status": "PASS"
+  },
+  {
+    "name": "suspicious_first_name",
+    "rule": "first_name_cleaning_candidate",
+    "expected": 1,
+    "actual": 1,
+    "status": "PASS"
+  },
+  {
+    "name": "suspicious_last_name",
+    "rule": "last_name_cleaning_candidate",
+    "expected": 1,
+    "actual": 1,
+    "status": "PASS"
+  },
+  {
+    "name": "same_first_last_name",
+    "rule": "name_cleaning_candidate",
+    "expected": 1,
+    "actual": 1,
+    "status": "PASS"
+  },
+  {
+    "name": "zip_state_mismatch",
+    "rule": "geography_mismatch_candidate",
+    "expected": 1,
+    "actual": 1,
+    "status": "PASS"
+  },
+  {
+    "name": "valid_row_no_flags",
+    "rule": "email_syntax_failure",
+    "expected": 0,
+    "actual": 0,
+    "status": "PASS"
+  },
+  {
+    "name": "email_export_eligible",
+    "rule": "proposed_email_export_eligible",
+    "expected": 1,
+    "actual": 1,
+    "status": "PASS"
+  },
+  {
+    "name": "zip_state_assessable",
+    "rule": "zip_state_assessable",
+    "expected": 1,
+    "actual": 1,
+    "status": "PASS"
+  },
+  {
+    "name": "short_names_both",
+    "rule": "name_cleaning_candidate",
+    "expected": 1,
+    "actual": 1,
+    "status": "PASS"
+  }
+]

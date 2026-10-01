@@ -1,0 +1,510 @@
+{
+  "generated_utc": "2026-09-19T00:06:25Z",
+  "policy": "assurance metadata only; rule behavior is never altered by this graph; if a rule changes, the affected_evidence lists identify what must be regenerated \u2014 V1 changes are unauthorized by definition",
+  "problems": [],
+  "report": "DQAEIP Frozen V1 rule impact graph (metadata only)",
+  "rule_set": {
+    "canonical_source": "data_quality_platform/rules/v1_rules.py",
+    "canonical_source_sha256": "daef1ded54c7d3c79898a1ba253be2acd5b6120e18b16b09009fdd7be9fc2276",
+    "registry_exactly_v1": true,
+    "rule_count": 8
+  },
+  "rules": {
+    "email_blank": {
+      "affected_evidence_if_changed": [
+        "evidence/validation/2026-09-18/fresh_3m2/harness/ (official evidence becomes INVALID \u2014 rules must not change; any change is an unauthorized rule change)",
+        "evidence/rebuild_verification/run_pair_verification.json",
+        "evidence/release/rule_impact_graph.json",
+        "evidence/release/claim_provenance.json",
+        "evidence/release/release_evidence_model.json",
+        "evidence/release/consistency_matrix.json",
+        "README.md (rule-derived sections)"
+      ],
+      "evidence": {
+        "official_3m_flag_counts": {
+          "run_1": 256310,
+          "run_2": 256310
+        },
+        "official_3m_oracle_mismatches": {
+          "run_1": 0,
+          "run_2": 0
+        },
+        "run_manifests": [
+          "evidence/validation/2026-09-18/fresh_3m2/harness/pass1_engine/manifest.json",
+          "evidence/validation/2026-09-18/fresh_3m2/harness/pass2_engine/manifest.json"
+        ]
+      },
+      "golden_cases": [
+        "tests/golden/expected_results.csv",
+        "tests/golden/golden_cases.csv",
+        "tests/golden/regression_corpus.json",
+        "tests/golden/test_golden_cases.py",
+        "tests/golden/test_golden_fixture_integrity.py"
+      ],
+      "implementation": {
+        "canonical_source": "data_quality_platform/rules/v1_rules.py",
+        "class_name": "EmailBlank",
+        "rule_hash": "157ccc2127334bac03534f80868a3d7ea3bc8df77c132e8c237874321164f2bc",
+        "rule_version": "1.0.0"
+      },
+      "oracle": {
+        "reference": "data_quality_platform/verification/reference_provenance.py (independent oracle path; 24,000,000 comparisons per official run, per-rule mismatch records below)"
+      },
+      "release_claims": [
+        "CLAIM-v1-rule-source-sha-256-bc93f0",
+        "CLAIM-frozen-v1-rule-count-ec0e8b"
+      ],
+      "schema_dependencies": [
+        "email_address"
+      ],
+      "tests": [
+        "tests/unit/test_config_wiring.py",
+        "tests/unit/test_contracts.py",
+        "tests/unit/test_evidence.py",
+        "tests/unit/test_evidence_validator.py",
+        "tests/unit/test_impact_analysis.py",
+        "tests/unit/test_input_contract.py",
+        "tests/unit/test_lineage.py",
+        "tests/unit/test_lineage_serialization.py",
+        "tests/unit/test_monitoring.py",
+        "tests/unit/test_provenance.py",
+        "tests/unit/test_replay.py",
+        "tests/unit/test_security.py",
+        "tests/unit/test_sp1_successor_contract_validation.py",
+        "tests/golden/test_golden_cases.py",
+        "tests/golden/test_golden_fixture_integrity.py",
+        "tests/safety/test_fail_closed_gates.py",
+        "tests/property/test_property_invariants.py",
+        "tests/assurance/test_release_schema_and_stale_evidence.py",
+        "tests/integration/test_engine.py"
+      ]
+    },
+    "email_syntax_failure": {
+      "affected_evidence_if_changed": [
+        "evidence/validation/2026-09-18/fresh_3m2/harness/ (official evidence becomes INVALID \u2014 rules must not change; any change is an unauthorized rule change)",
+        "evidence/rebuild_verification/run_pair_verification.json",
+        "evidence/release/rule_impact_graph.json",
+        "evidence/release/claim_provenance.json",
+        "evidence/release/release_evidence_model.json",
+        "evidence/release/consistency_matrix.json",
+        "README.md (rule-derived sections)"
+      ],
+      "evidence": {
+        "official_3m_flag_counts": {
+          "run_1": 288653,
+          "run_2": 288653
+        },
+        "official_3m_oracle_mismatches": {
+          "run_1": 0,
+          "run_2": 0
+        },
+        "run_manifests": [
+          "evidence/validation/2026-09-18/fresh_3m2/harness/pass1_engine/manifest.json",
+          "evidence/validation/2026-09-18/fresh_3m2/harness/pass2_engine/manifest.json"
+        ]
+      },
+      "golden_cases": [
+        "tests/golden/expected_results.csv",
+        "tests/golden/golden_cases.csv",
+        "tests/golden/regression_corpus.json",
+        "tests/golden/test_golden_cases.py",
+        "tests/golden/test_golden_fixture_integrity.py"
+      ],
+      "implementation": {
+        "canonical_source": "data_quality_platform/rules/v1_rules.py",
+        "class_name": "EmailSyntaxFailure",
+        "rule_hash": "5caaba13a73c90c5aac7a52cf756713c8ecc3dc73d30c2949206efa8d2b712f7",
+        "rule_version": "1.0.0"
+      },
+      "oracle": {
+        "reference": "data_quality_platform/verification/reference_provenance.py (independent oracle path; 24,000,000 comparisons per official run, per-rule mismatch records below)"
+      },
+      "release_claims": [
+        "CLAIM-v1-rule-source-sha-256-bc93f0",
+        "CLAIM-frozen-v1-rule-count-ec0e8b"
+      ],
+      "schema_dependencies": [
+        "email_address"
+      ],
+      "tests": [
+        "tests/unit/test_config_wiring.py",
+        "tests/unit/test_contracts.py",
+        "tests/unit/test_input_contract.py",
+        "tests/unit/test_monitoring.py",
+        "tests/unit/test_sp1_successor_contract_validation.py",
+        "tests/golden/test_golden_cases.py",
+        "tests/golden/test_golden_fixture_integrity.py",
+        "tests/property/test_property_invariants.py"
+      ]
+    },
+    "first_name_cleaning_candidate": {
+      "affected_evidence_if_changed": [
+        "evidence/validation/2026-09-18/fresh_3m2/harness/ (official evidence becomes INVALID \u2014 rules must not change; any change is an unauthorized rule change)",
+        "evidence/rebuild_verification/run_pair_verification.json",
+        "evidence/release/rule_impact_graph.json",
+        "evidence/release/claim_provenance.json",
+        "evidence/release/release_evidence_model.json",
+        "evidence/release/consistency_matrix.json",
+        "README.md (rule-derived sections)"
+      ],
+      "evidence": {
+        "official_3m_flag_counts": {
+          "run_1": 506073,
+          "run_2": 506073
+        },
+        "official_3m_oracle_mismatches": {
+          "run_1": 0,
+          "run_2": 0
+        },
+        "run_manifests": [
+          "evidence/validation/2026-09-18/fresh_3m2/harness/pass1_engine/manifest.json",
+          "evidence/validation/2026-09-18/fresh_3m2/harness/pass2_engine/manifest.json"
+        ]
+      },
+      "golden_cases": [
+        "tests/golden/expected_results.csv",
+        "tests/golden/golden_cases.csv",
+        "tests/golden/regression_corpus.json",
+        "tests/golden/test_golden_cases.py",
+        "tests/golden/test_golden_fixture_integrity.py"
+      ],
+      "implementation": {
+        "canonical_source": "data_quality_platform/rules/v1_rules.py",
+        "class_name": "FirstNameCleaningCandidate",
+        "rule_hash": "575e9d4588334d364bdcfae6ca3c44b9bf35120a371b78fecfde8ee19373ca69",
+        "rule_version": "1.0.0"
+      },
+      "oracle": {
+        "reference": "data_quality_platform/verification/reference_provenance.py (independent oracle path; 24,000,000 comparisons per official run, per-rule mismatch records below)"
+      },
+      "release_claims": [
+        "CLAIM-v1-rule-source-sha-256-bc93f0",
+        "CLAIM-frozen-v1-rule-count-ec0e8b"
+      ],
+      "schema_dependencies": [
+        "first_name"
+      ],
+      "tests": [
+        "tests/unit/test_config_wiring.py",
+        "tests/unit/test_contracts.py",
+        "tests/unit/test_input_contract.py",
+        "tests/unit/test_monitoring.py",
+        "tests/unit/test_rule_oracle_consistency.py",
+        "tests/unit/test_rules.py",
+        "tests/unit/test_sp1_successor_contract_validation.py",
+        "tests/golden/test_golden_cases.py",
+        "tests/golden/test_golden_fixture_integrity.py",
+        "tests/property/test_property_invariants.py"
+      ]
+    },
+    "geography_mismatch_candidate": {
+      "affected_evidence_if_changed": [
+        "evidence/validation/2026-09-18/fresh_3m2/harness/ (official evidence becomes INVALID \u2014 rules must not change; any change is an unauthorized rule change)",
+        "evidence/rebuild_verification/run_pair_verification.json",
+        "evidence/release/rule_impact_graph.json",
+        "evidence/release/claim_provenance.json",
+        "evidence/release/release_evidence_model.json",
+        "evidence/release/consistency_matrix.json",
+        "README.md (rule-derived sections)"
+      ],
+      "evidence": {
+        "official_3m_flag_counts": {
+          "run_1": 424088,
+          "run_2": 424088
+        },
+        "official_3m_oracle_mismatches": {
+          "run_1": 0,
+          "run_2": 0
+        },
+        "run_manifests": [
+          "evidence/validation/2026-09-18/fresh_3m2/harness/pass1_engine/manifest.json",
+          "evidence/validation/2026-09-18/fresh_3m2/harness/pass2_engine/manifest.json"
+        ]
+      },
+      "golden_cases": [
+        "tests/golden/expected_results.csv",
+        "tests/golden/geography_edge_cases.csv",
+        "tests/golden/golden_cases.csv",
+        "tests/golden/regression_corpus.json",
+        "tests/golden/test_dl_canonical_geography.py",
+        "tests/golden/test_golden_cases.py",
+        "tests/golden/test_golden_fixture_integrity.py"
+      ],
+      "implementation": {
+        "canonical_source": "data_quality_platform/rules/v1_rules.py",
+        "class_name": "GeographyMismatchCandidate",
+        "rule_hash": "7967b59ef7a14b83284a12eb298d63c6140e0837bfafdf3ac4e758baf74c4e93",
+        "rule_version": "1.0.0"
+      },
+      "oracle": {
+        "reference": "data_quality_platform/verification/reference_provenance.py (independent oracle path; 24,000,000 comparisons per official run, per-rule mismatch records below)"
+      },
+      "release_claims": [
+        "CLAIM-v1-rule-source-sha-256-bc93f0",
+        "CLAIM-frozen-v1-rule-count-ec0e8b"
+      ],
+      "schema_dependencies": [
+        "state",
+        "zip"
+      ],
+      "tests": [
+        "tests/unit/test_contracts.py",
+        "tests/unit/test_input_contract.py",
+        "tests/unit/test_monitoring.py",
+        "tests/unit/test_provenance.py",
+        "tests/unit/test_rule_oracle_consistency.py",
+        "tests/unit/test_sp1_geography_contract.py",
+        "tests/unit/test_sp1_successor_contract_validation.py",
+        "tests/golden/test_dl_canonical_geography.py",
+        "tests/golden/test_golden_cases.py",
+        "tests/golden/test_golden_fixture_integrity.py",
+        "tests/property/test_property_invariants.py"
+      ]
+    },
+    "last_name_cleaning_candidate": {
+      "affected_evidence_if_changed": [
+        "evidence/validation/2026-09-18/fresh_3m2/harness/ (official evidence becomes INVALID \u2014 rules must not change; any change is an unauthorized rule change)",
+        "evidence/rebuild_verification/run_pair_verification.json",
+        "evidence/release/rule_impact_graph.json",
+        "evidence/release/claim_provenance.json",
+        "evidence/release/release_evidence_model.json",
+        "evidence/release/consistency_matrix.json",
+        "README.md (rule-derived sections)"
+      ],
+      "evidence": {
+        "official_3m_flag_counts": {
+          "run_1": 255805,
+          "run_2": 255805
+        },
+        "official_3m_oracle_mismatches": {
+          "run_1": 0,
+          "run_2": 0
+        },
+        "run_manifests": [
+          "evidence/validation/2026-09-18/fresh_3m2/harness/pass1_engine/manifest.json",
+          "evidence/validation/2026-09-18/fresh_3m2/harness/pass2_engine/manifest.json"
+        ]
+      },
+      "golden_cases": [
+        "tests/golden/expected_results.csv",
+        "tests/golden/golden_cases.csv",
+        "tests/golden/regression_corpus.json",
+        "tests/golden/test_golden_cases.py",
+        "tests/golden/test_golden_fixture_integrity.py"
+      ],
+      "implementation": {
+        "canonical_source": "data_quality_platform/rules/v1_rules.py",
+        "class_name": "LastNameCleaningCandidate",
+        "rule_hash": "c553b7f4484b54135e2b84c6b37a84b15df328544256577984e61f6ede900122",
+        "rule_version": "1.0.0"
+      },
+      "oracle": {
+        "reference": "data_quality_platform/verification/reference_provenance.py (independent oracle path; 24,000,000 comparisons per official run, per-rule mismatch records below)"
+      },
+      "release_claims": [
+        "CLAIM-v1-rule-source-sha-256-bc93f0",
+        "CLAIM-frozen-v1-rule-count-ec0e8b"
+      ],
+      "schema_dependencies": [
+        "last_name"
+      ],
+      "tests": [
+        "tests/unit/test_config_wiring.py",
+        "tests/unit/test_contracts.py",
+        "tests/unit/test_input_contract.py",
+        "tests/unit/test_monitoring.py",
+        "tests/unit/test_rule_oracle_consistency.py",
+        "tests/unit/test_rules.py",
+        "tests/unit/test_sp1_successor_contract_validation.py",
+        "tests/golden/test_golden_cases.py",
+        "tests/golden/test_golden_fixture_integrity.py",
+        "tests/property/test_property_invariants.py"
+      ]
+    },
+    "name_cleaning_candidate": {
+      "affected_evidence_if_changed": [
+        "evidence/validation/2026-09-18/fresh_3m2/harness/ (official evidence becomes INVALID \u2014 rules must not change; any change is an unauthorized rule change)",
+        "evidence/rebuild_verification/run_pair_verification.json",
+        "evidence/release/rule_impact_graph.json",
+        "evidence/release/claim_provenance.json",
+        "evidence/release/release_evidence_model.json",
+        "evidence/release/consistency_matrix.json",
+        "README.md (rule-derived sections)"
+      ],
+      "evidence": {
+        "official_3m_flag_counts": {
+          "run_1": 3619,
+          "run_2": 3619
+        },
+        "official_3m_oracle_mismatches": {
+          "run_1": 0,
+          "run_2": 0
+        },
+        "run_manifests": [
+          "evidence/validation/2026-09-18/fresh_3m2/harness/pass1_engine/manifest.json",
+          "evidence/validation/2026-09-18/fresh_3m2/harness/pass2_engine/manifest.json"
+        ]
+      },
+      "golden_cases": [
+        "tests/golden/expected_results.csv",
+        "tests/golden/golden_cases.csv",
+        "tests/golden/regression_corpus.json",
+        "tests/golden/test_golden_cases.py",
+        "tests/golden/test_golden_fixture_integrity.py"
+      ],
+      "implementation": {
+        "canonical_source": "data_quality_platform/rules/v1_rules.py",
+        "class_name": "NameCleaningCandidate",
+        "rule_hash": "3a128ec85d196cd3a42720347ba8790f5fbf0f386bd617e4ec508ee050b661c8",
+        "rule_version": "1.0.0"
+      },
+      "oracle": {
+        "reference": "data_quality_platform/verification/reference_provenance.py (independent oracle path; 24,000,000 comparisons per official run, per-rule mismatch records below)"
+      },
+      "release_claims": [
+        "CLAIM-v1-rule-source-sha-256-bc93f0",
+        "CLAIM-frozen-v1-rule-count-ec0e8b"
+      ],
+      "schema_dependencies": [
+        "first_name",
+        "last_name"
+      ],
+      "tests": [
+        "tests/unit/test_config_wiring.py",
+        "tests/unit/test_contracts.py",
+        "tests/unit/test_input_contract.py",
+        "tests/unit/test_monitoring.py",
+        "tests/unit/test_rule_oracle_consistency.py",
+        "tests/unit/test_rules.py",
+        "tests/unit/test_sp1_successor_contract_validation.py",
+        "tests/golden/test_golden_cases.py",
+        "tests/golden/test_golden_fixture_integrity.py",
+        "tests/property/test_property_invariants.py"
+      ]
+    },
+    "proposed_email_export_eligible": {
+      "affected_evidence_if_changed": [
+        "evidence/validation/2026-09-18/fresh_3m2/harness/ (official evidence becomes INVALID \u2014 rules must not change; any change is an unauthorized rule change)",
+        "evidence/rebuild_verification/run_pair_verification.json",
+        "evidence/release/rule_impact_graph.json",
+        "evidence/release/claim_provenance.json",
+        "evidence/release/release_evidence_model.json",
+        "evidence/release/consistency_matrix.json",
+        "README.md (rule-derived sections)"
+      ],
+      "evidence": {
+        "official_3m_flag_counts": {
+          "run_1": 2655037,
+          "run_2": 2655037
+        },
+        "official_3m_oracle_mismatches": {
+          "run_1": 0,
+          "run_2": 0
+        },
+        "run_manifests": [
+          "evidence/validation/2026-09-18/fresh_3m2/harness/pass1_engine/manifest.json",
+          "evidence/validation/2026-09-18/fresh_3m2/harness/pass2_engine/manifest.json"
+        ]
+      },
+      "golden_cases": [
+        "tests/golden/expected_results.csv",
+        "tests/golden/golden_cases.csv",
+        "tests/golden/regression_corpus.json",
+        "tests/golden/test_golden_cases.py",
+        "tests/golden/test_golden_fixture_integrity.py"
+      ],
+      "implementation": {
+        "canonical_source": "data_quality_platform/rules/v1_rules.py",
+        "class_name": "ProposedEmailExportEligible",
+        "rule_hash": "6732e6bfed6fae3c23439f0e69b5c39e2843a5b74f2f8f3fdaf6ad5d536da98c",
+        "rule_version": "1.0.0"
+      },
+      "oracle": {
+        "reference": "data_quality_platform/verification/reference_provenance.py (independent oracle path; 24,000,000 comparisons per official run, per-rule mismatch records below)"
+      },
+      "release_claims": [
+        "CLAIM-v1-rule-source-sha-256-bc93f0",
+        "CLAIM-frozen-v1-rule-count-ec0e8b"
+      ],
+      "schema_dependencies": [
+        "email_address"
+      ],
+      "tests": [
+        "tests/unit/test_config_wiring.py",
+        "tests/unit/test_contracts.py",
+        "tests/unit/test_input_contract.py",
+        "tests/unit/test_monitoring.py",
+        "tests/unit/test_sp1_successor_contract_validation.py",
+        "tests/golden/test_golden_cases.py",
+        "tests/golden/test_golden_fixture_integrity.py",
+        "tests/property/test_property_invariants.py",
+        "tests/integration/test_engine.py"
+      ]
+    },
+    "zip_state_assessable": {
+      "affected_evidence_if_changed": [
+        "evidence/validation/2026-09-18/fresh_3m2/harness/ (official evidence becomes INVALID \u2014 rules must not change; any change is an unauthorized rule change)",
+        "evidence/rebuild_verification/run_pair_verification.json",
+        "evidence/release/rule_impact_graph.json",
+        "evidence/release/claim_provenance.json",
+        "evidence/release/release_evidence_model.json",
+        "evidence/release/consistency_matrix.json",
+        "README.md (rule-derived sections)"
+      ],
+      "evidence": {
+        "official_3m_flag_counts": {
+          "run_1": 2954329,
+          "run_2": 2954329
+        },
+        "official_3m_oracle_mismatches": {
+          "run_1": 0,
+          "run_2": 0
+        },
+        "run_manifests": [
+          "evidence/validation/2026-09-18/fresh_3m2/harness/pass1_engine/manifest.json",
+          "evidence/validation/2026-09-18/fresh_3m2/harness/pass2_engine/manifest.json"
+        ]
+      },
+      "golden_cases": [
+        "tests/golden/expected_results.csv",
+        "tests/golden/geography_edge_cases.csv",
+        "tests/golden/golden_cases.csv",
+        "tests/golden/regression_corpus.json",
+        "tests/golden/test_dl_canonical_geography.py",
+        "tests/golden/test_golden_fixture_integrity.py"
+      ],
+      "implementation": {
+        "canonical_source": "data_quality_platform/rules/v1_rules.py",
+        "class_name": "ZipStateAssessable",
+        "rule_hash": "e7730c1b848f32790a56bfb79f7ef5dbc8c88b3919f9903421adc7dde5393885",
+        "rule_version": "1.0.0"
+      },
+      "oracle": {
+        "reference": "data_quality_platform/verification/reference_provenance.py (independent oracle path; 24,000,000 comparisons per official run, per-rule mismatch records below)"
+      },
+      "release_claims": [
+        "CLAIM-v1-rule-source-sha-256-bc93f0",
+        "CLAIM-frozen-v1-rule-count-ec0e8b"
+      ],
+      "schema_dependencies": [
+        "state",
+        "zip"
+      ],
+      "tests": [
+        "tests/unit/test_config_wiring.py",
+        "tests/unit/test_contracts.py",
+        "tests/unit/test_evidence_validator.py",
+        "tests/unit/test_final_3m_hardening.py",
+        "tests/unit/test_input_contract.py",
+        "tests/unit/test_monitoring.py",
+        "tests/unit/test_provenance.py",
+        "tests/unit/test_sp1_geography_contract.py",
+        "tests/unit/test_sp1_successor_contract_validation.py",
+        "tests/golden/test_dl_canonical_geography.py",
+        "tests/golden/test_golden_fixture_integrity.py",
+        "tests/safety/test_fail_closed_gates.py",
+        "tests/property/test_property_invariants.py"
+      ]
+    }
+  }
+}

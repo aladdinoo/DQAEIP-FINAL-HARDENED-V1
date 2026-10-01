@@ -1,0 +1,1881 @@
+{
+  "changes": [
+    {
+      "after": "scripts/final_3m_validation.py",
+      "before": "/home/z/my-project/dqvp-work/repo/scripts/final_3m_validation.py",
+      "json_path": "$.provenance.script_path",
+      "reason": "repo-local absolute path rewritten to canonical repo-relative POSIX form",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/FINAL_RESULTS.json"
+    },
+    {
+      "after": "<<venv-python>>bin/python3 -m runner.cli validate --csv data/generated/fresh_3m2/consumer_3m_seed_20260918_pass1.csv --output data/generated/fresh_3m2/consumer_3m_seed_20260918_pass1_out.csv --run-id final_3m_pass1 --evidence-dir evidence/validation/2026-09-18/fresh_3m2/harness/pass1_engine",
+      "before": "/home/z/.venv/bin/python3 -m runner.cli validate --csv data/generated/fresh_3m2/consumer_3m_seed_20260918_pass1.csv --output data/generated/fresh_3m2/consumer_3m_seed_20260918_pass1_out.csv --run-id final_3m_pass1 --evidence-dir evidence/validation/2026-09-18/fresh_3m2/harness/pass1_engine",
+      "json_path": "$.runs.run_1.cli.canonical_command",
+      "reason": "external environment interpreter-home prefix rewritten to explicit placeholder token",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/FINAL_RESULTS.json"
+    },
+    {
+      "after": "<<venv-python>>bin/python3 -m runner.cli validate --csv data/generated/fresh_3m2/consumer_3m_seed_20260918_pass2.csv --output data/generated/fresh_3m2/consumer_3m_seed_20260918_pass2_out.csv --run-id final_3m_pass2 --evidence-dir evidence/validation/2026-09-18/fresh_3m2/harness/pass2_engine",
+      "before": "/home/z/.venv/bin/python3 -m runner.cli validate --csv data/generated/fresh_3m2/consumer_3m_seed_20260918_pass2.csv --output data/generated/fresh_3m2/consumer_3m_seed_20260918_pass2_out.csv --run-id final_3m_pass2 --evidence-dir evidence/validation/2026-09-18/fresh_3m2/harness/pass2_engine",
+      "json_path": "$.runs.run_2.cli.canonical_command",
+      "reason": "external environment interpreter-home prefix rewritten to explicit placeholder token",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/FINAL_RESULTS.json"
+    },
+    {
+      "after": "<<venv-python>>bin/python3 scripts/final_3m_runtime_safety_wrapper.py --events-out evidence/validation/2026-09-18/fresh_3m2/harness/pass1_runtime_safety_events.json --max-events 50000 -- validate --csv data/generated/fresh_3m2/consumer_3m_seed_20260918_pass1.csv --output data/generated/fresh_3m2/consumer_3m_seed_20260918_pass1_out.csv --run-id final_3m_pass1 --evidence-dir evidence/validation/2026-09-18/fresh_3m2/harness/pass1_engine",
+      "before": "/home/z/.venv/bin/python3 /home/z/my-project/dqvp-work/repo/scripts/final_3m_runtime_safety_wrapper.py --events-out evidence/validation/2026-09-18/fresh_3m2/harness/pass1_runtime_safety_events.json --max-events 50000 -- validate --csv data/generated/fresh_3m2/consumer_3m_seed_20260918_pass1.csv --output data/generated/fresh_3m2/consumer_3m_seed_20260918_pass1_out.csv --run-id final_3m_pass1 --evidence-dir evidence/validation/2026-09-18/fresh_3m2/harness/pass1_engine",
+      "json_path": "$.cli.command",
+      "reason": "external environment interpreter-home prefix rewritten to explicit placeholder token",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass1_cli.json"
+    },
+    {
+      "after": "<<venv-python>>bin/python3 -m runner.cli validate --csv data/generated/fresh_3m2/consumer_3m_seed_20260918_pass1.csv --output data/generated/fresh_3m2/consumer_3m_seed_20260918_pass1_out.csv --run-id final_3m_pass1 --evidence-dir evidence/validation/2026-09-18/fresh_3m2/harness/pass1_engine",
+      "before": "/home/z/.venv/bin/python3 -m runner.cli validate --csv data/generated/fresh_3m2/consumer_3m_seed_20260918_pass1.csv --output data/generated/fresh_3m2/consumer_3m_seed_20260918_pass1_out.csv --run-id final_3m_pass1 --evidence-dir evidence/validation/2026-09-18/fresh_3m2/harness/pass1_engine",
+      "json_path": "$.cli.canonical_command",
+      "reason": "external environment interpreter-home prefix rewritten to explicit placeholder token",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass1_cli.json"
+    },
+    {
+      "after": "<<venv-python>>bin/python3 scripts/final_3m_runtime_safety_wrapper.py --events-out evidence/validation/2026-09-18/fresh_3m2/harness/pass1_runtime_safety_events.json --max-events 50000 -- validate --csv data/generated/fresh_3m2/consumer_3m_seed_20260918_pass1.csv --output data/generated/fresh_3m2/consumer_3m_seed_20260918_pass1_out.csv --run-id final_3m_pass1 --evidence-dir evidence/validation/2026-09-18/fresh_3m2/harness/pass1_engine",
+      "before": "/home/z/.venv/bin/python3 /home/z/my-project/dqvp-work/repo/scripts/final_3m_runtime_safety_wrapper.py --events-out evidence/validation/2026-09-18/fresh_3m2/harness/pass1_runtime_safety_events.json --max-events 50000 -- validate --csv data/generated/fresh_3m2/consumer_3m_seed_20260918_pass1.csv --output data/generated/fresh_3m2/consumer_3m_seed_20260918_pass1_out.csv --run-id final_3m_pass1 --evidence-dir evidence/validation/2026-09-18/fresh_3m2/harness/pass1_engine",
+      "json_path": "$.cli.command",
+      "reason": "external environment interpreter-home prefix rewritten to explicit placeholder token",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass1_result.json"
+    },
+    {
+      "after": "<<venv-python>>bin/python3 -m runner.cli validate --csv data/generated/fresh_3m2/consumer_3m_seed_20260918_pass1.csv --output data/generated/fresh_3m2/consumer_3m_seed_20260918_pass1_out.csv --run-id final_3m_pass1 --evidence-dir evidence/validation/2026-09-18/fresh_3m2/harness/pass1_engine",
+      "before": "/home/z/.venv/bin/python3 -m runner.cli validate --csv data/generated/fresh_3m2/consumer_3m_seed_20260918_pass1.csv --output data/generated/fresh_3m2/consumer_3m_seed_20260918_pass1_out.csv --run-id final_3m_pass1 --evidence-dir evidence/validation/2026-09-18/fresh_3m2/harness/pass1_engine",
+      "json_path": "$.cli.canonical_command",
+      "reason": "external environment interpreter-home prefix rewritten to explicit placeholder token",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass1_result.json"
+    },
+    {
+      "after": "runner/__pycache__/__init__.cpython-312.pyc",
+      "before": "/home/z/my-project/dqvp-work/repo/runner/__pycache__/__init__.cpython-312.pyc",
+      "json_path": "$.events[0].path",
+      "reason": "repo-local absolute path rewritten to canonical repo-relative POSIX form",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass1_runtime_safety_events.json"
+    },
+    {
+      "after": "runner/__init__.py",
+      "before": "/home/z/my-project/dqvp-work/repo/runner/__init__.py",
+      "json_path": "$.events[1].path",
+      "reason": "repo-local absolute path rewritten to canonical repo-relative POSIX form",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass1_runtime_safety_events.json"
+    },
+    {
+      "after": "runner/__pycache__/cli.cpython-312.pyc",
+      "before": "/home/z/my-project/dqvp-work/repo/runner/__pycache__/cli.cpython-312.pyc",
+      "json_path": "$.events[2].path",
+      "reason": "repo-local absolute path rewritten to canonical repo-relative POSIX form",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass1_runtime_safety_events.json"
+    },
+    {
+      "after": "runner/cli.py",
+      "before": "/home/z/my-project/dqvp-work/repo/runner/cli.py",
+      "json_path": "$.events[3].path",
+      "reason": "repo-local absolute path rewritten to canonical repo-relative POSIX form",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass1_runtime_safety_events.json"
+    },
+    {
+      "after": "<<uv-python:cpython-3.12.14-linux-x86_64-gnu>>/lib/python3.12/__pycache__/csv.cpython-312.pyc",
+      "before": "/home/z/.local/share/uv/python/cpython-3.12.14-linux-x86_64-gnu/lib/python3.12/__pycache__/csv.cpython-312.pyc",
+      "json_path": "$.events[4].path",
+      "reason": "external environment interpreter-home prefix rewritten to explicit placeholder token",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass1_runtime_safety_events.json"
+    },
+    {
+      "after": "<<uv-python:cpython-3.12.14-linux-x86_64-gnu>>/lib/python3.12/__pycache__/subprocess.cpython-312.pyc",
+      "before": "/home/z/.local/share/uv/python/cpython-3.12.14-linux-x86_64-gnu/lib/python3.12/__pycache__/subprocess.cpython-312.pyc",
+      "json_path": "$.events[5].path",
+      "reason": "external environment interpreter-home prefix rewritten to explicit placeholder token",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass1_runtime_safety_events.json"
+    },
+    {
+      "after": "<<uv-python:cpython-3.12.14-linux-x86_64-gnu>>/lib/python3.12/__pycache__/signal.cpython-312.pyc",
+      "before": "/home/z/.local/share/uv/python/cpython-3.12.14-linux-x86_64-gnu/lib/python3.12/__pycache__/signal.cpython-312.pyc",
+      "json_path": "$.events[6].path",
+      "reason": "external environment interpreter-home prefix rewritten to explicit placeholder token",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass1_runtime_safety_events.json"
+    },
+    {
+      "after": "<<uv-python:cpython-3.12.14-linux-x86_64-gnu>>/lib/python3.12/__pycache__/threading.cpython-312.pyc",
+      "before": "/home/z/.local/share/uv/python/cpython-3.12.14-linux-x86_64-gnu/lib/python3.12/__pycache__/threading.cpython-312.pyc",
+      "json_path": "$.events[7].path",
+      "reason": "external environment interpreter-home prefix rewritten to explicit placeholder token",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass1_runtime_safety_events.json"
+    },
+    {
+      "after": "<<uv-python:cpython-3.12.14-linux-x86_64-gnu>>/lib/python3.12/__pycache__/_weakrefset.cpython-312.pyc",
+      "before": "/home/z/.local/share/uv/python/cpython-3.12.14-linux-x86_64-gnu/lib/python3.12/__pycache__/_weakrefset.cpython-312.pyc",
+      "json_path": "$.events[8].path",
+      "reason": "external environment interpreter-home prefix rewritten to explicit placeholder token",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass1_runtime_safety_events.json"
+    },
+    {
+      "after": "<<uv-python:cpython-3.12.14-linux-x86_64-gnu>>/lib/python3.12/__pycache__/selectors.cpython-312.pyc",
+      "before": "/home/z/.local/share/uv/python/cpython-3.12.14-linux-x86_64-gnu/lib/python3.12/__pycache__/selectors.cpython-312.pyc",
+      "json_path": "$.events[9].path",
+      "reason": "external environment interpreter-home prefix rewritten to explicit placeholder token",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass1_runtime_safety_events.json"
+    },
+    {
+      "after": "<<uv-python:cpython-3.12.14-linux-x86_64-gnu>>/lib/python3.12/collections/__pycache__/abc.cpython-312.pyc",
+      "before": "/home/z/.local/share/uv/python/cpython-3.12.14-linux-x86_64-gnu/lib/python3.12/collections/__pycache__/abc.cpython-312.pyc",
+      "json_path": "$.events[10].path",
+      "reason": "external environment interpreter-home prefix rewritten to explicit placeholder token",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass1_runtime_safety_events.json"
+    },
+    {
+      "after": "<<uv-python:cpython-3.12.14-linux-x86_64-gnu>>/lib/python3.12/__pycache__/datetime.cpython-312.pyc",
+      "before": "/home/z/.local/share/uv/python/cpython-3.12.14-linux-x86_64-gnu/lib/python3.12/__pycache__/datetime.cpython-312.pyc",
+      "json_path": "$.events[11].path",
+      "reason": "external environment interpreter-home prefix rewritten to explicit placeholder token",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass1_runtime_safety_events.json"
+    },
+    {
+      "after": "data_quality_platform/__pycache__/__init__.cpython-312.pyc",
+      "before": "/home/z/my-project/dqvp-work/repo/data_quality_platform/__pycache__/__init__.cpython-312.pyc",
+      "json_path": "$.events[12].path",
+      "reason": "repo-local absolute path rewritten to canonical repo-relative POSIX form",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass1_runtime_safety_events.json"
+    },
+    {
+      "after": "data_quality_platform/__init__.py",
+      "before": "/home/z/my-project/dqvp-work/repo/data_quality_platform/__init__.py",
+      "json_path": "$.events[13].path",
+      "reason": "repo-local absolute path rewritten to canonical repo-relative POSIX form",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass1_runtime_safety_events.json"
+    },
+    {
+      "after": "data_quality_platform/validation/__pycache__/__init__.cpython-312.pyc",
+      "before": "/home/z/my-project/dqvp-work/repo/data_quality_platform/validation/__pycache__/__init__.cpython-312.pyc",
+      "json_path": "$.events[14].path",
+      "reason": "repo-local absolute path rewritten to canonical repo-relative POSIX form",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass1_runtime_safety_events.json"
+    },
+    {
+      "after": "data_quality_platform/validation/__init__.py",
+      "before": "/home/z/my-project/dqvp-work/repo/data_quality_platform/validation/__init__.py",
+      "json_path": "$.events[15].path",
+      "reason": "repo-local absolute path rewritten to canonical repo-relative POSIX form",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass1_runtime_safety_events.json"
+    },
+    {
+      "after": "data_quality_platform/validation/__pycache__/engine.cpython-312.pyc",
+      "before": "/home/z/my-project/dqvp-work/repo/data_quality_platform/validation/__pycache__/engine.cpython-312.pyc",
+      "json_path": "$.events[16].path",
+      "reason": "repo-local absolute path rewritten to canonical repo-relative POSIX form",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass1_runtime_safety_events.json"
+    },
+    {
+      "after": "data_quality_platform/validation/engine.py",
+      "before": "/home/z/my-project/dqvp-work/repo/data_quality_platform/validation/engine.py",
+      "json_path": "$.events[17].path",
+      "reason": "repo-local absolute path rewritten to canonical repo-relative POSIX form",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass1_runtime_safety_events.json"
+    },
+    {
+      "after": "<<uv-python:cpython-3.12.14-linux-x86_64-gnu>>/lib/python3.12/__pycache__/hashlib.cpython-312.pyc",
+      "before": "/home/z/.local/share/uv/python/cpython-3.12.14-linux-x86_64-gnu/lib/python3.12/__pycache__/hashlib.cpython-312.pyc",
+      "json_path": "$.events[18].path",
+      "reason": "external environment interpreter-home prefix rewritten to explicit placeholder token",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass1_runtime_safety_events.json"
+    },
+    {
+      "after": "<<uv-python:cpython-3.12.14-linux-x86_64-gnu>>/lib/python3.12/__pycache__/dataclasses.cpython-312.pyc",
+      "before": "/home/z/.local/share/uv/python/cpython-3.12.14-linux-x86_64-gnu/lib/python3.12/__pycache__/dataclasses.cpython-312.pyc",
+      "json_path": "$.events[19].path",
+      "reason": "external environment interpreter-home prefix rewritten to explicit placeholder token",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass1_runtime_safety_events.json"
+    },
+    {
+      "after": "<<uv-python:cpython-3.12.14-linux-x86_64-gnu>>/lib/python3.12/__pycache__/copy.cpython-312.pyc",
+      "before": "/home/z/.local/share/uv/python/cpython-3.12.14-linux-x86_64-gnu/lib/python3.12/__pycache__/copy.cpython-312.pyc",
+      "json_path": "$.events[20].path",
+      "reason": "external environment interpreter-home prefix rewritten to explicit placeholder token",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass1_runtime_safety_events.json"
+    },
+    {
+      "after": "<<uv-python:cpython-3.12.14-linux-x86_64-gnu>>/lib/python3.12/__pycache__/weakref.cpython-312.pyc",
+      "before": "/home/z/.local/share/uv/python/cpython-3.12.14-linux-x86_64-gnu/lib/python3.12/__pycache__/weakref.cpython-312.pyc",
+      "json_path": "$.events[21].path",
+      "reason": "external environment interpreter-home prefix rewritten to explicit placeholder token",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass1_runtime_safety_events.json"
+    },
+    {
+      "after": "<<uv-python:cpython-3.12.14-linux-x86_64-gnu>>/lib/python3.12/__pycache__/inspect.cpython-312.pyc",
+      "before": "/home/z/.local/share/uv/python/cpython-3.12.14-linux-x86_64-gnu/lib/python3.12/__pycache__/inspect.cpython-312.pyc",
+      "json_path": "$.events[22].path",
+      "reason": "external environment interpreter-home prefix rewritten to explicit placeholder token",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass1_runtime_safety_events.json"
+    },
+    {
+      "after": "<<uv-python:cpython-3.12.14-linux-x86_64-gnu>>/lib/python3.12/__pycache__/ast.cpython-312.pyc",
+      "before": "/home/z/.local/share/uv/python/cpython-3.12.14-linux-x86_64-gnu/lib/python3.12/__pycache__/ast.cpython-312.pyc",
+      "json_path": "$.events[23].path",
+      "reason": "external environment interpreter-home prefix rewritten to explicit placeholder token",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass1_runtime_safety_events.json"
+    },
+    {
+      "after": "<<uv-python:cpython-3.12.14-linux-x86_64-gnu>>/lib/python3.12/__pycache__/dis.cpython-312.pyc",
+      "before": "/home/z/.local/share/uv/python/cpython-3.12.14-linux-x86_64-gnu/lib/python3.12/__pycache__/dis.cpython-312.pyc",
+      "json_path": "$.events[24].path",
+      "reason": "external environment interpreter-home prefix rewritten to explicit placeholder token",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass1_runtime_safety_events.json"
+    },
+    {
+      "after": "<<uv-python:cpython-3.12.14-linux-x86_64-gnu>>/lib/python3.12/__pycache__/opcode.cpython-312.pyc",
+      "before": "/home/z/.local/share/uv/python/cpython-3.12.14-linux-x86_64-gnu/lib/python3.12/__pycache__/opcode.cpython-312.pyc",
+      "json_path": "$.events[25].path",
+      "reason": "external environment interpreter-home prefix rewritten to explicit placeholder token",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass1_runtime_safety_events.json"
+    },
+    {
+      "after": "<<uv-python:cpython-3.12.14-linux-x86_64-gnu>>/lib/python3.12/__pycache__/linecache.cpython-312.pyc",
+      "before": "/home/z/.local/share/uv/python/cpython-3.12.14-linux-x86_64-gnu/lib/python3.12/__pycache__/linecache.cpython-312.pyc",
+      "json_path": "$.events[26].path",
+      "reason": "external environment interpreter-home prefix rewritten to explicit placeholder token",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass1_runtime_safety_events.json"
+    },
+    {
+      "after": "<<uv-python:cpython-3.12.14-linux-x86_64-gnu>>/lib/python3.12/__pycache__/tokenize.cpython-312.pyc",
+      "before": "/home/z/.local/share/uv/python/cpython-3.12.14-linux-x86_64-gnu/lib/python3.12/__pycache__/tokenize.cpython-312.pyc",
+      "json_path": "$.events[27].path",
+      "reason": "external environment interpreter-home prefix rewritten to explicit placeholder token",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass1_runtime_safety_events.json"
+    },
+    {
+      "after": "<<uv-python:cpython-3.12.14-linux-x86_64-gnu>>/lib/python3.12/__pycache__/token.cpython-312.pyc",
+      "before": "/home/z/.local/share/uv/python/cpython-3.12.14-linux-x86_64-gnu/lib/python3.12/__pycache__/token.cpython-312.pyc",
+      "json_path": "$.events[28].path",
+      "reason": "external environment interpreter-home prefix rewritten to explicit placeholder token",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass1_runtime_safety_events.json"
+    },
+    {
+      "after": "<<uv-python:cpython-3.12.14-linux-x86_64-gnu>>/lib/python3.12/__pycache__/typing.cpython-312.pyc",
+      "before": "/home/z/.local/share/uv/python/cpython-3.12.14-linux-x86_64-gnu/lib/python3.12/__pycache__/typing.cpython-312.pyc",
+      "json_path": "$.events[29].path",
+      "reason": "external environment interpreter-home prefix rewritten to explicit placeholder token",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass1_runtime_safety_events.json"
+    },
+    {
+      "after": "data_quality_platform/__pycache__/contracts.cpython-312.pyc",
+      "before": "/home/z/my-project/dqvp-work/repo/data_quality_platform/__pycache__/contracts.cpython-312.pyc",
+      "json_path": "$.events[30].path",
+      "reason": "repo-local absolute path rewritten to canonical repo-relative POSIX form",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass1_runtime_safety_events.json"
+    },
+    {
+      "after": "data_quality_platform/contracts.py",
+      "before": "/home/z/my-project/dqvp-work/repo/data_quality_platform/contracts.py",
+      "json_path": "$.events[31].path",
+      "reason": "repo-local absolute path rewritten to canonical repo-relative POSIX form",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass1_runtime_safety_events.json"
+    },
+    {
+      "after": "data_quality_platform/schema/__pycache__/__init__.cpython-312.pyc",
+      "before": "/home/z/my-project/dqvp-work/repo/data_quality_platform/schema/__pycache__/__init__.cpython-312.pyc",
+      "json_path": "$.events[32].path",
+      "reason": "repo-local absolute path rewritten to canonical repo-relative POSIX form",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass1_runtime_safety_events.json"
+    },
+    {
+      "after": "data_quality_platform/schema/__init__.py",
+      "before": "/home/z/my-project/dqvp-work/repo/data_quality_platform/schema/__init__.py",
+      "json_path": "$.events[33].path",
+      "reason": "repo-local absolute path rewritten to canonical repo-relative POSIX form",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass1_runtime_safety_events.json"
+    },
+    {
+      "after": "data_quality_platform/schema/__pycache__/validator.cpython-312.pyc",
+      "before": "/home/z/my-project/dqvp-work/repo/data_quality_platform/schema/__pycache__/validator.cpython-312.pyc",
+      "json_path": "$.events[34].path",
+      "reason": "repo-local absolute path rewritten to canonical repo-relative POSIX form",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass1_runtime_safety_events.json"
+    },
+    {
+      "after": "data_quality_platform/schema/validator.py",
+      "before": "/home/z/my-project/dqvp-work/repo/data_quality_platform/schema/validator.py",
+      "json_path": "$.events[35].path",
+      "reason": "repo-local absolute path rewritten to canonical repo-relative POSIX form",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass1_runtime_safety_events.json"
+    },
+    {
+      "after": "data_quality_platform/rules/__pycache__/__init__.cpython-312.pyc",
+      "before": "/home/z/my-project/dqvp-work/repo/data_quality_platform/rules/__pycache__/__init__.cpython-312.pyc",
+      "json_path": "$.events[36].path",
+      "reason": "repo-local absolute path rewritten to canonical repo-relative POSIX form",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass1_runtime_safety_events.json"
+    },
+    {
+      "after": "data_quality_platform/rules/__init__.py",
+      "before": "/home/z/my-project/dqvp-work/repo/data_quality_platform/rules/__init__.py",
+      "json_path": "$.events[37].path",
+      "reason": "repo-local absolute path rewritten to canonical repo-relative POSIX form",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass1_runtime_safety_events.json"
+    },
+    {
+      "after": "data_quality_platform/rules/__pycache__/base.cpython-312.pyc",
+      "before": "/home/z/my-project/dqvp-work/repo/data_quality_platform/rules/__pycache__/base.cpython-312.pyc",
+      "json_path": "$.events[38].path",
+      "reason": "repo-local absolute path rewritten to canonical repo-relative POSIX form",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass1_runtime_safety_events.json"
+    },
+    {
+      "after": "data_quality_platform/rules/base.py",
+      "before": "/home/z/my-project/dqvp-work/repo/data_quality_platform/rules/base.py",
+      "json_path": "$.events[39].path",
+      "reason": "repo-local absolute path rewritten to canonical repo-relative POSIX form",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass1_runtime_safety_events.json"
+    },
+    {
+      "after": "data_quality_platform/rules/__pycache__/registry.cpython-312.pyc",
+      "before": "/home/z/my-project/dqvp-work/repo/data_quality_platform/rules/__pycache__/registry.cpython-312.pyc",
+      "json_path": "$.events[40].path",
+      "reason": "repo-local absolute path rewritten to canonical repo-relative POSIX form",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass1_runtime_safety_events.json"
+    },
+    {
+      "after": "data_quality_platform/rules/registry.py",
+      "before": "/home/z/my-project/dqvp-work/repo/data_quality_platform/rules/registry.py",
+      "json_path": "$.events[41].path",
+      "reason": "repo-local absolute path rewritten to canonical repo-relative POSIX form",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass1_runtime_safety_events.json"
+    },
+    {
+      "after": "data_quality_platform/rules/__pycache__/v1_rules.cpython-312.pyc",
+      "before": "/home/z/my-project/dqvp-work/repo/data_quality_platform/rules/__pycache__/v1_rules.cpython-312.pyc",
+      "json_path": "$.events[42].path",
+      "reason": "repo-local absolute path rewritten to canonical repo-relative POSIX form",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass1_runtime_safety_events.json"
+    },
+    {
+      "after": "data_quality_platform/rules/v1_rules.py",
+      "before": "/home/z/my-project/dqvp-work/repo/data_quality_platform/rules/v1_rules.py",
+      "json_path": "$.events[43].path",
+      "reason": "repo-local absolute path rewritten to canonical repo-relative POSIX form",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass1_runtime_safety_events.json"
+    },
+    {
+      "after": "data_quality_platform/lineage/__pycache__/__init__.cpython-312.pyc",
+      "before": "/home/z/my-project/dqvp-work/repo/data_quality_platform/lineage/__pycache__/__init__.cpython-312.pyc",
+      "json_path": "$.events[44].path",
+      "reason": "repo-local absolute path rewritten to canonical repo-relative POSIX form",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass1_runtime_safety_events.json"
+    },
+    {
+      "after": "data_quality_platform/lineage/__init__.py",
+      "before": "/home/z/my-project/dqvp-work/repo/data_quality_platform/lineage/__init__.py",
+      "json_path": "$.events[45].path",
+      "reason": "repo-local absolute path rewritten to canonical repo-relative POSIX form",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass1_runtime_safety_events.json"
+    },
+    {
+      "after": "data_quality_platform/lineage/__pycache__/recorder.cpython-312.pyc",
+      "before": "/home/z/my-project/dqvp-work/repo/data_quality_platform/lineage/__pycache__/recorder.cpython-312.pyc",
+      "json_path": "$.events[46].path",
+      "reason": "repo-local absolute path rewritten to canonical repo-relative POSIX form",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass1_runtime_safety_events.json"
+    },
+    {
+      "after": "data_quality_platform/lineage/recorder.py",
+      "before": "/home/z/my-project/dqvp-work/repo/data_quality_platform/lineage/recorder.py",
+      "json_path": "$.events[47].path",
+      "reason": "repo-local absolute path rewritten to canonical repo-relative POSIX form",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass1_runtime_safety_events.json"
+    },
+    {
+      "after": "data_quality_platform/audit/__pycache__/__init__.cpython-312.pyc",
+      "before": "/home/z/my-project/dqvp-work/repo/data_quality_platform/audit/__pycache__/__init__.cpython-312.pyc",
+      "json_path": "$.events[48].path",
+      "reason": "repo-local absolute path rewritten to canonical repo-relative POSIX form",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass1_runtime_safety_events.json"
+    },
+    {
+      "after": "data_quality_platform/audit/__init__.py",
+      "before": "/home/z/my-project/dqvp-work/repo/data_quality_platform/audit/__init__.py",
+      "json_path": "$.events[49].path",
+      "reason": "repo-local absolute path rewritten to canonical repo-relative POSIX form",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass1_runtime_safety_events.json"
+    },
+    {
+      "after": "data_quality_platform/audit/__pycache__/trail.cpython-312.pyc",
+      "before": "/home/z/my-project/dqvp-work/repo/data_quality_platform/audit/__pycache__/trail.cpython-312.pyc",
+      "json_path": "$.events[50].path",
+      "reason": "repo-local absolute path rewritten to canonical repo-relative POSIX form",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass1_runtime_safety_events.json"
+    },
+    {
+      "after": "data_quality_platform/audit/trail.py",
+      "before": "/home/z/my-project/dqvp-work/repo/data_quality_platform/audit/trail.py",
+      "json_path": "$.events[51].path",
+      "reason": "repo-local absolute path rewritten to canonical repo-relative POSIX form",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass1_runtime_safety_events.json"
+    },
+    {
+      "after": "data_quality_platform/monitoring/__pycache__/__init__.cpython-312.pyc",
+      "before": "/home/z/my-project/dqvp-work/repo/data_quality_platform/monitoring/__pycache__/__init__.cpython-312.pyc",
+      "json_path": "$.events[52].path",
+      "reason": "repo-local absolute path rewritten to canonical repo-relative POSIX form",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass1_runtime_safety_events.json"
+    },
+    {
+      "after": "data_quality_platform/monitoring/__init__.py",
+      "before": "/home/z/my-project/dqvp-work/repo/data_quality_platform/monitoring/__init__.py",
+      "json_path": "$.events[53].path",
+      "reason": "repo-local absolute path rewritten to canonical repo-relative POSIX form",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass1_runtime_safety_events.json"
+    },
+    {
+      "after": "data_quality_platform/monitoring/__pycache__/quality.cpython-312.pyc",
+      "before": "/home/z/my-project/dqvp-work/repo/data_quality_platform/monitoring/__pycache__/quality.cpython-312.pyc",
+      "json_path": "$.events[54].path",
+      "reason": "repo-local absolute path rewritten to canonical repo-relative POSIX form",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass1_runtime_safety_events.json"
+    },
+    {
+      "after": "data_quality_platform/monitoring/quality.py",
+      "before": "/home/z/my-project/dqvp-work/repo/data_quality_platform/monitoring/quality.py",
+      "json_path": "$.events[55].path",
+      "reason": "repo-local absolute path rewritten to canonical repo-relative POSIX form",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass1_runtime_safety_events.json"
+    },
+    {
+      "after": "data_quality_platform/alerting/__pycache__/__init__.cpython-312.pyc",
+      "before": "/home/z/my-project/dqvp-work/repo/data_quality_platform/alerting/__pycache__/__init__.cpython-312.pyc",
+      "json_path": "$.events[56].path",
+      "reason": "repo-local absolute path rewritten to canonical repo-relative POSIX form",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass1_runtime_safety_events.json"
+    },
+    {
+      "after": "data_quality_platform/alerting/__init__.py",
+      "before": "/home/z/my-project/dqvp-work/repo/data_quality_platform/alerting/__init__.py",
+      "json_path": "$.events[57].path",
+      "reason": "repo-local absolute path rewritten to canonical repo-relative POSIX form",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass1_runtime_safety_events.json"
+    },
+    {
+      "after": "data_quality_platform/alerting/__pycache__/alerts.cpython-312.pyc",
+      "before": "/home/z/my-project/dqvp-work/repo/data_quality_platform/alerting/__pycache__/alerts.cpython-312.pyc",
+      "json_path": "$.events[58].path",
+      "reason": "repo-local absolute path rewritten to canonical repo-relative POSIX form",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass1_runtime_safety_events.json"
+    },
+    {
+      "after": "data_quality_platform/alerting/alerts.py",
+      "before": "/home/z/my-project/dqvp-work/repo/data_quality_platform/alerting/alerts.py",
+      "json_path": "$.events[59].path",
+      "reason": "repo-local absolute path rewritten to canonical repo-relative POSIX form",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass1_runtime_safety_events.json"
+    },
+    {
+      "after": "data_quality_platform/evidence/__pycache__/__init__.cpython-312.pyc",
+      "before": "/home/z/my-project/dqvp-work/repo/data_quality_platform/evidence/__pycache__/__init__.cpython-312.pyc",
+      "json_path": "$.events[60].path",
+      "reason": "repo-local absolute path rewritten to canonical repo-relative POSIX form",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass1_runtime_safety_events.json"
+    },
+    {
+      "after": "data_quality_platform/evidence/__init__.py",
+      "before": "/home/z/my-project/dqvp-work/repo/data_quality_platform/evidence/__init__.py",
+      "json_path": "$.events[61].path",
+      "reason": "repo-local absolute path rewritten to canonical repo-relative POSIX form",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass1_runtime_safety_events.json"
+    },
+    {
+      "after": "data_quality_platform/evidence/__pycache__/manifests.cpython-312.pyc",
+      "before": "/home/z/my-project/dqvp-work/repo/data_quality_platform/evidence/__pycache__/manifests.cpython-312.pyc",
+      "json_path": "$.events[62].path",
+      "reason": "repo-local absolute path rewritten to canonical repo-relative POSIX form",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass1_runtime_safety_events.json"
+    },
+    {
+      "after": "data_quality_platform/evidence/manifests.py",
+      "before": "/home/z/my-project/dqvp-work/repo/data_quality_platform/evidence/manifests.py",
+      "json_path": "$.events[63].path",
+      "reason": "repo-local absolute path rewritten to canonical repo-relative POSIX form",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass1_runtime_safety_events.json"
+    },
+    {
+      "after": "data_quality_platform/security/__pycache__/__init__.cpython-312.pyc",
+      "before": "/home/z/my-project/dqvp-work/repo/data_quality_platform/security/__pycache__/__init__.cpython-312.pyc",
+      "json_path": "$.events[64].path",
+      "reason": "repo-local absolute path rewritten to canonical repo-relative POSIX form",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass1_runtime_safety_events.json"
+    },
+    {
+      "after": "data_quality_platform/security/__init__.py",
+      "before": "/home/z/my-project/dqvp-work/repo/data_quality_platform/security/__init__.py",
+      "json_path": "$.events[65].path",
+      "reason": "repo-local absolute path rewritten to canonical repo-relative POSIX form",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass1_runtime_safety_events.json"
+    },
+    {
+      "after": "data_quality_platform/security/__pycache__/pii_masking.cpython-312.pyc",
+      "before": "/home/z/my-project/dqvp-work/repo/data_quality_platform/security/__pycache__/pii_masking.cpython-312.pyc",
+      "json_path": "$.events[66].path",
+      "reason": "repo-local absolute path rewritten to canonical repo-relative POSIX form",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass1_runtime_safety_events.json"
+    },
+    {
+      "after": "data_quality_platform/security/pii_masking.py",
+      "before": "/home/z/my-project/dqvp-work/repo/data_quality_platform/security/pii_masking.py",
+      "json_path": "$.events[67].path",
+      "reason": "repo-local absolute path rewritten to canonical repo-relative POSIX form",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass1_runtime_safety_events.json"
+    },
+    {
+      "after": "data_quality_platform/security/__pycache__/auth.cpython-312.pyc",
+      "before": "/home/z/my-project/dqvp-work/repo/data_quality_platform/security/__pycache__/auth.cpython-312.pyc",
+      "json_path": "$.events[68].path",
+      "reason": "repo-local absolute path rewritten to canonical repo-relative POSIX form",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass1_runtime_safety_events.json"
+    },
+    {
+      "after": "data_quality_platform/security/auth.py",
+      "before": "/home/z/my-project/dqvp-work/repo/data_quality_platform/security/auth.py",
+      "json_path": "$.events[69].path",
+      "reason": "repo-local absolute path rewritten to canonical repo-relative POSIX form",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass1_runtime_safety_events.json"
+    },
+    {
+      "after": "data_quality_platform/generation/__pycache__/__init__.cpython-312.pyc",
+      "before": "/home/z/my-project/dqvp-work/repo/data_quality_platform/generation/__pycache__/__init__.cpython-312.pyc",
+      "json_path": "$.events[70].path",
+      "reason": "repo-local absolute path rewritten to canonical repo-relative POSIX form",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass1_runtime_safety_events.json"
+    },
+    {
+      "after": "data_quality_platform/generation/__init__.py",
+      "before": "/home/z/my-project/dqvp-work/repo/data_quality_platform/generation/__init__.py",
+      "json_path": "$.events[71].path",
+      "reason": "repo-local absolute path rewritten to canonical repo-relative POSIX form",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass1_runtime_safety_events.json"
+    },
+    {
+      "after": "data_quality_platform/generation/__pycache__/synthetic.cpython-312.pyc",
+      "before": "/home/z/my-project/dqvp-work/repo/data_quality_platform/generation/__pycache__/synthetic.cpython-312.pyc",
+      "json_path": "$.events[72].path",
+      "reason": "repo-local absolute path rewritten to canonical repo-relative POSIX form",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass1_runtime_safety_events.json"
+    },
+    {
+      "after": "data_quality_platform/generation/synthetic.py",
+      "before": "/home/z/my-project/dqvp-work/repo/data_quality_platform/generation/synthetic.py",
+      "json_path": "$.events[73].path",
+      "reason": "repo-local absolute path rewritten to canonical repo-relative POSIX form",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass1_runtime_safety_events.json"
+    },
+    {
+      "after": "<<uv-python:cpython-3.12.14-linux-x86_64-gnu>>/lib/python3.12/__pycache__/random.cpython-312.pyc",
+      "before": "/home/z/.local/share/uv/python/cpython-3.12.14-linux-x86_64-gnu/lib/python3.12/__pycache__/random.cpython-312.pyc",
+      "json_path": "$.events[74].path",
+      "reason": "external environment interpreter-home prefix rewritten to explicit placeholder token",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass1_runtime_safety_events.json"
+    },
+    {
+      "after": "<<uv-python:cpython-3.12.14-linux-x86_64-gnu>>/lib/python3.12/__pycache__/bisect.cpython-312.pyc",
+      "before": "/home/z/.local/share/uv/python/cpython-3.12.14-linux-x86_64-gnu/lib/python3.12/__pycache__/bisect.cpython-312.pyc",
+      "json_path": "$.events[75].path",
+      "reason": "external environment interpreter-home prefix rewritten to explicit placeholder token",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass1_runtime_safety_events.json"
+    },
+    {
+      "after": "data_quality_platform/config/__pycache__/__init__.cpython-312.pyc",
+      "before": "/home/z/my-project/dqvp-work/repo/data_quality_platform/config/__pycache__/__init__.cpython-312.pyc",
+      "json_path": "$.events[76].path",
+      "reason": "repo-local absolute path rewritten to canonical repo-relative POSIX form",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass1_runtime_safety_events.json"
+    },
+    {
+      "after": "data_quality_platform/config/__init__.py",
+      "before": "/home/z/my-project/dqvp-work/repo/data_quality_platform/config/__init__.py",
+      "json_path": "$.events[77].path",
+      "reason": "repo-local absolute path rewritten to canonical repo-relative POSIX form",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass1_runtime_safety_events.json"
+    },
+    {
+      "after": "data_quality_platform/config/__pycache__/settings.cpython-312.pyc",
+      "before": "/home/z/my-project/dqvp-work/repo/data_quality_platform/config/__pycache__/settings.cpython-312.pyc",
+      "json_path": "$.events[78].path",
+      "reason": "repo-local absolute path rewritten to canonical repo-relative POSIX form",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass1_runtime_safety_events.json"
+    },
+    {
+      "after": "data_quality_platform/config/settings.py",
+      "before": "/home/z/my-project/dqvp-work/repo/data_quality_platform/config/settings.py",
+      "json_path": "$.events[79].path",
+      "reason": "repo-local absolute path rewritten to canonical repo-relative POSIX form",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass1_runtime_safety_events.json"
+    },
+    {
+      "after": "<<venv-python>>lib/python3.12/site-packages/yaml/__pycache__/__init__.cpython-312.pyc",
+      "before": "/home/z/.venv/lib/python3.12/site-packages/yaml/__pycache__/__init__.cpython-312.pyc",
+      "json_path": "$.events[80].path",
+      "reason": "external environment interpreter-home prefix rewritten to explicit placeholder token",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass1_runtime_safety_events.json"
+    },
+    {
+      "after": "<<venv-python>>lib/python3.12/site-packages/yaml/__init__.py",
+      "before": "/home/z/.venv/lib/python3.12/site-packages/yaml/__init__.py",
+      "json_path": "$.events[81].path",
+      "reason": "external environment interpreter-home prefix rewritten to explicit placeholder token",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass1_runtime_safety_events.json"
+    },
+    {
+      "after": "<<venv-python>>lib/python3.12/site-packages/yaml/__pycache__/error.cpython-312.pyc",
+      "before": "/home/z/.venv/lib/python3.12/site-packages/yaml/__pycache__/error.cpython-312.pyc",
+      "json_path": "$.events[82].path",
+      "reason": "external environment interpreter-home prefix rewritten to explicit placeholder token",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass1_runtime_safety_events.json"
+    },
+    {
+      "after": "<<venv-python>>lib/python3.12/site-packages/yaml/error.py",
+      "before": "/home/z/.venv/lib/python3.12/site-packages/yaml/error.py",
+      "json_path": "$.events[83].path",
+      "reason": "external environment interpreter-home prefix rewritten to explicit placeholder token",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass1_runtime_safety_events.json"
+    },
+    {
+      "after": "<<venv-python>>lib/python3.12/site-packages/yaml/__pycache__/tokens.cpython-312.pyc",
+      "before": "/home/z/.venv/lib/python3.12/site-packages/yaml/__pycache__/tokens.cpython-312.pyc",
+      "json_path": "$.events[84].path",
+      "reason": "external environment interpreter-home prefix rewritten to explicit placeholder token",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass1_runtime_safety_events.json"
+    },
+    {
+      "after": "<<venv-python>>lib/python3.12/site-packages/yaml/tokens.py",
+      "before": "/home/z/.venv/lib/python3.12/site-packages/yaml/tokens.py",
+      "json_path": "$.events[85].path",
+      "reason": "external environment interpreter-home prefix rewritten to explicit placeholder token",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass1_runtime_safety_events.json"
+    },
+    {
+      "after": "<<venv-python>>lib/python3.12/site-packages/yaml/__pycache__/events.cpython-312.pyc",
+      "before": "/home/z/.venv/lib/python3.12/site-packages/yaml/__pycache__/events.cpython-312.pyc",
+      "json_path": "$.events[86].path",
+      "reason": "external environment interpreter-home prefix rewritten to explicit placeholder token",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass1_runtime_safety_events.json"
+    },
+    {
+      "after": "<<venv-python>>lib/python3.12/site-packages/yaml/events.py",
+      "before": "/home/z/.venv/lib/python3.12/site-packages/yaml/events.py",
+      "json_path": "$.events[87].path",
+      "reason": "external environment interpreter-home prefix rewritten to explicit placeholder token",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass1_runtime_safety_events.json"
+    },
+    {
+      "after": "<<venv-python>>lib/python3.12/site-packages/yaml/__pycache__/nodes.cpython-312.pyc",
+      "before": "/home/z/.venv/lib/python3.12/site-packages/yaml/__pycache__/nodes.cpython-312.pyc",
+      "json_path": "$.events[88].path",
+      "reason": "external environment interpreter-home prefix rewritten to explicit placeholder token",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass1_runtime_safety_events.json"
+    },
+    {
+      "after": "<<venv-python>>lib/python3.12/site-packages/yaml/nodes.py",
+      "before": "/home/z/.venv/lib/python3.12/site-packages/yaml/nodes.py",
+      "json_path": "$.events[89].path",
+      "reason": "external environment interpreter-home prefix rewritten to explicit placeholder token",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass1_runtime_safety_events.json"
+    },
+    {
+      "after": "<<venv-python>>lib/python3.12/site-packages/yaml/__pycache__/loader.cpython-312.pyc",
+      "before": "/home/z/.venv/lib/python3.12/site-packages/yaml/__pycache__/loader.cpython-312.pyc",
+      "json_path": "$.events[90].path",
+      "reason": "external environment interpreter-home prefix rewritten to explicit placeholder token",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass1_runtime_safety_events.json"
+    },
+    {
+      "after": "<<venv-python>>lib/python3.12/site-packages/yaml/loader.py",
+      "before": "/home/z/.venv/lib/python3.12/site-packages/yaml/loader.py",
+      "json_path": "$.events[91].path",
+      "reason": "external environment interpreter-home prefix rewritten to explicit placeholder token",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass1_runtime_safety_events.json"
+    },
+    {
+      "after": "<<venv-python>>lib/python3.12/site-packages/yaml/__pycache__/reader.cpython-312.pyc",
+      "before": "/home/z/.venv/lib/python3.12/site-packages/yaml/__pycache__/reader.cpython-312.pyc",
+      "json_path": "$.events[92].path",
+      "reason": "external environment interpreter-home prefix rewritten to explicit placeholder token",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass1_runtime_safety_events.json"
+    },
+    {
+      "after": "<<venv-python>>lib/python3.12/site-packages/yaml/reader.py",
+      "before": "/home/z/.venv/lib/python3.12/site-packages/yaml/reader.py",
+      "json_path": "$.events[93].path",
+      "reason": "external environment interpreter-home prefix rewritten to explicit placeholder token",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass1_runtime_safety_events.json"
+    },
+    {
+      "after": "<<venv-python>>lib/python3.12/site-packages/yaml/__pycache__/scanner.cpython-312.pyc",
+      "before": "/home/z/.venv/lib/python3.12/site-packages/yaml/__pycache__/scanner.cpython-312.pyc",
+      "json_path": "$.events[94].path",
+      "reason": "external environment interpreter-home prefix rewritten to explicit placeholder token",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass1_runtime_safety_events.json"
+    },
+    {
+      "after": "<<venv-python>>lib/python3.12/site-packages/yaml/scanner.py",
+      "before": "/home/z/.venv/lib/python3.12/site-packages/yaml/scanner.py",
+      "json_path": "$.events[95].path",
+      "reason": "external environment interpreter-home prefix rewritten to explicit placeholder token",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass1_runtime_safety_events.json"
+    },
+    {
+      "after": "<<venv-python>>lib/python3.12/site-packages/yaml/__pycache__/parser.cpython-312.pyc",
+      "before": "/home/z/.venv/lib/python3.12/site-packages/yaml/__pycache__/parser.cpython-312.pyc",
+      "json_path": "$.events[96].path",
+      "reason": "external environment interpreter-home prefix rewritten to explicit placeholder token",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass1_runtime_safety_events.json"
+    },
+    {
+      "after": "<<venv-python>>lib/python3.12/site-packages/yaml/parser.py",
+      "before": "/home/z/.venv/lib/python3.12/site-packages/yaml/parser.py",
+      "json_path": "$.events[97].path",
+      "reason": "external environment interpreter-home prefix rewritten to explicit placeholder token",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass1_runtime_safety_events.json"
+    },
+    {
+      "after": "<<venv-python>>lib/python3.12/site-packages/yaml/__pycache__/composer.cpython-312.pyc",
+      "before": "/home/z/.venv/lib/python3.12/site-packages/yaml/__pycache__/composer.cpython-312.pyc",
+      "json_path": "$.events[98].path",
+      "reason": "external environment interpreter-home prefix rewritten to explicit placeholder token",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass1_runtime_safety_events.json"
+    },
+    {
+      "after": "<<venv-python>>lib/python3.12/site-packages/yaml/composer.py",
+      "before": "/home/z/.venv/lib/python3.12/site-packages/yaml/composer.py",
+      "json_path": "$.events[99].path",
+      "reason": "external environment interpreter-home prefix rewritten to explicit placeholder token",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass1_runtime_safety_events.json"
+    },
+    {
+      "after": "<<venv-python>>lib/python3.12/site-packages/yaml/__pycache__/constructor.cpython-312.pyc",
+      "before": "/home/z/.venv/lib/python3.12/site-packages/yaml/__pycache__/constructor.cpython-312.pyc",
+      "json_path": "$.events[100].path",
+      "reason": "external environment interpreter-home prefix rewritten to explicit placeholder token",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass1_runtime_safety_events.json"
+    },
+    {
+      "after": "<<venv-python>>lib/python3.12/site-packages/yaml/constructor.py",
+      "before": "/home/z/.venv/lib/python3.12/site-packages/yaml/constructor.py",
+      "json_path": "$.events[101].path",
+      "reason": "external environment interpreter-home prefix rewritten to explicit placeholder token",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass1_runtime_safety_events.json"
+    },
+    {
+      "after": "<<uv-python:cpython-3.12.14-linux-x86_64-gnu>>/lib/python3.12/__pycache__/base64.cpython-312.pyc",
+      "before": "/home/z/.local/share/uv/python/cpython-3.12.14-linux-x86_64-gnu/lib/python3.12/__pycache__/base64.cpython-312.pyc",
+      "json_path": "$.events[102].path",
+      "reason": "external environment interpreter-home prefix rewritten to explicit placeholder token",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass1_runtime_safety_events.json"
+    },
+    {
+      "after": "<<uv-python:cpython-3.12.14-linux-x86_64-gnu>>/lib/python3.12/__pycache__/struct.cpython-312.pyc",
+      "before": "/home/z/.local/share/uv/python/cpython-3.12.14-linux-x86_64-gnu/lib/python3.12/__pycache__/struct.cpython-312.pyc",
+      "json_path": "$.events[103].path",
+      "reason": "external environment interpreter-home prefix rewritten to explicit placeholder token",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass1_runtime_safety_events.json"
+    },
+    {
+      "after": "<<venv-python>>lib/python3.12/site-packages/yaml/__pycache__/resolver.cpython-312.pyc",
+      "before": "/home/z/.venv/lib/python3.12/site-packages/yaml/__pycache__/resolver.cpython-312.pyc",
+      "json_path": "$.events[104].path",
+      "reason": "external environment interpreter-home prefix rewritten to explicit placeholder token",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass1_runtime_safety_events.json"
+    },
+    {
+      "after": "<<venv-python>>lib/python3.12/site-packages/yaml/resolver.py",
+      "before": "/home/z/.venv/lib/python3.12/site-packages/yaml/resolver.py",
+      "json_path": "$.events[105].path",
+      "reason": "external environment interpreter-home prefix rewritten to explicit placeholder token",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass1_runtime_safety_events.json"
+    },
+    {
+      "after": "<<venv-python>>lib/python3.12/site-packages/yaml/__pycache__/dumper.cpython-312.pyc",
+      "before": "/home/z/.venv/lib/python3.12/site-packages/yaml/__pycache__/dumper.cpython-312.pyc",
+      "json_path": "$.events[106].path",
+      "reason": "external environment interpreter-home prefix rewritten to explicit placeholder token",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass1_runtime_safety_events.json"
+    },
+    {
+      "after": "<<venv-python>>lib/python3.12/site-packages/yaml/dumper.py",
+      "before": "/home/z/.venv/lib/python3.12/site-packages/yaml/dumper.py",
+      "json_path": "$.events[107].path",
+      "reason": "external environment interpreter-home prefix rewritten to explicit placeholder token",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass1_runtime_safety_events.json"
+    },
+    {
+      "after": "<<venv-python>>lib/python3.12/site-packages/yaml/__pycache__/emitter.cpython-312.pyc",
+      "before": "/home/z/.venv/lib/python3.12/site-packages/yaml/__pycache__/emitter.cpython-312.pyc",
+      "json_path": "$.events[108].path",
+      "reason": "external environment interpreter-home prefix rewritten to explicit placeholder token",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass1_runtime_safety_events.json"
+    },
+    {
+      "after": "<<venv-python>>lib/python3.12/site-packages/yaml/emitter.py",
+      "before": "/home/z/.venv/lib/python3.12/site-packages/yaml/emitter.py",
+      "json_path": "$.events[109].path",
+      "reason": "external environment interpreter-home prefix rewritten to explicit placeholder token",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass1_runtime_safety_events.json"
+    },
+    {
+      "after": "<<venv-python>>lib/python3.12/site-packages/yaml/__pycache__/serializer.cpython-312.pyc",
+      "before": "/home/z/.venv/lib/python3.12/site-packages/yaml/__pycache__/serializer.cpython-312.pyc",
+      "json_path": "$.events[110].path",
+      "reason": "external environment interpreter-home prefix rewritten to explicit placeholder token",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass1_runtime_safety_events.json"
+    },
+    {
+      "after": "<<venv-python>>lib/python3.12/site-packages/yaml/serializer.py",
+      "before": "/home/z/.venv/lib/python3.12/site-packages/yaml/serializer.py",
+      "json_path": "$.events[111].path",
+      "reason": "external environment interpreter-home prefix rewritten to explicit placeholder token",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass1_runtime_safety_events.json"
+    },
+    {
+      "after": "<<venv-python>>lib/python3.12/site-packages/yaml/__pycache__/representer.cpython-312.pyc",
+      "before": "/home/z/.venv/lib/python3.12/site-packages/yaml/__pycache__/representer.cpython-312.pyc",
+      "json_path": "$.events[112].path",
+      "reason": "external environment interpreter-home prefix rewritten to explicit placeholder token",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass1_runtime_safety_events.json"
+    },
+    {
+      "after": "<<venv-python>>lib/python3.12/site-packages/yaml/representer.py",
+      "before": "/home/z/.venv/lib/python3.12/site-packages/yaml/representer.py",
+      "json_path": "$.events[113].path",
+      "reason": "external environment interpreter-home prefix rewritten to explicit placeholder token",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass1_runtime_safety_events.json"
+    },
+    {
+      "after": "<<venv-python>>lib/python3.12/site-packages/yaml/__pycache__/cyaml.cpython-312.pyc",
+      "before": "/home/z/.venv/lib/python3.12/site-packages/yaml/__pycache__/cyaml.cpython-312.pyc",
+      "json_path": "$.events[114].path",
+      "reason": "external environment interpreter-home prefix rewritten to explicit placeholder token",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass1_runtime_safety_events.json"
+    },
+    {
+      "after": "<<venv-python>>lib/python3.12/site-packages/yaml/cyaml.py",
+      "before": "/home/z/.venv/lib/python3.12/site-packages/yaml/cyaml.py",
+      "json_path": "$.events[115].path",
+      "reason": "external environment interpreter-home prefix rewritten to explicit placeholder token",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass1_runtime_safety_events.json"
+    },
+    {
+      "after": "runner/__pycache__/cli.cpython-312.pyc",
+      "before": "/home/z/my-project/dqvp-work/repo/runner/__pycache__/cli.cpython-312.pyc",
+      "json_path": "$.events[116].path",
+      "reason": "repo-local absolute path rewritten to canonical repo-relative POSIX form",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass1_runtime_safety_events.json"
+    },
+    {
+      "after": "runner/cli.py",
+      "before": "/home/z/my-project/dqvp-work/repo/runner/cli.py",
+      "json_path": "$.events[117].path",
+      "reason": "repo-local absolute path rewritten to canonical repo-relative POSIX form",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass1_runtime_safety_events.json"
+    },
+    {
+      "after": "configs/quality.yaml",
+      "before": "/home/z/my-project/dqvp-work/repo/configs/quality.yaml",
+      "json_path": "$.events[118].path",
+      "reason": "repo-local absolute path rewritten to canonical repo-relative POSIX form",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass1_runtime_safety_events.json"
+    },
+    {
+      "after": "data_quality_platform/validation/__pycache__/input_contract.cpython-312.pyc",
+      "before": "/home/z/my-project/dqvp-work/repo/data_quality_platform/validation/__pycache__/input_contract.cpython-312.pyc",
+      "json_path": "$.events[119].path",
+      "reason": "repo-local absolute path rewritten to canonical repo-relative POSIX form",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass1_runtime_safety_events.json"
+    },
+    {
+      "after": "data_quality_platform/validation/input_contract.py",
+      "before": "/home/z/my-project/dqvp-work/repo/data_quality_platform/validation/input_contract.py",
+      "json_path": "$.events[120].path",
+      "reason": "repo-local absolute path rewritten to canonical repo-relative POSIX form",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass1_runtime_safety_events.json"
+    },
+    {
+      "after": "data_quality_platform/rules/v1_rules.py",
+      "before": "/home/z/my-project/dqvp-work/repo/data_quality_platform/rules/v1_rules.py",
+      "json_path": "$.events[124].path",
+      "reason": "repo-local absolute path rewritten to canonical repo-relative POSIX form",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass1_runtime_safety_events.json"
+    },
+    {
+      "after": "<<venv-python>>bin/python3 scripts/final_3m_runtime_safety_wrapper.py --events-out evidence/validation/2026-09-18/fresh_3m2/harness/pass2_runtime_safety_events.json --max-events 50000 -- validate --csv data/generated/fresh_3m2/consumer_3m_seed_20260918_pass2.csv --output data/generated/fresh_3m2/consumer_3m_seed_20260918_pass2_out.csv --run-id final_3m_pass2 --evidence-dir evidence/validation/2026-09-18/fresh_3m2/harness/pass2_engine",
+      "before": "/home/z/.venv/bin/python3 /home/z/my-project/dqvp-work/repo/scripts/final_3m_runtime_safety_wrapper.py --events-out evidence/validation/2026-09-18/fresh_3m2/harness/pass2_runtime_safety_events.json --max-events 50000 -- validate --csv data/generated/fresh_3m2/consumer_3m_seed_20260918_pass2.csv --output data/generated/fresh_3m2/consumer_3m_seed_20260918_pass2_out.csv --run-id final_3m_pass2 --evidence-dir evidence/validation/2026-09-18/fresh_3m2/harness/pass2_engine",
+      "json_path": "$.cli.command",
+      "reason": "external environment interpreter-home prefix rewritten to explicit placeholder token",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass2_cli.json"
+    },
+    {
+      "after": "<<venv-python>>bin/python3 -m runner.cli validate --csv data/generated/fresh_3m2/consumer_3m_seed_20260918_pass2.csv --output data/generated/fresh_3m2/consumer_3m_seed_20260918_pass2_out.csv --run-id final_3m_pass2 --evidence-dir evidence/validation/2026-09-18/fresh_3m2/harness/pass2_engine",
+      "before": "/home/z/.venv/bin/python3 -m runner.cli validate --csv data/generated/fresh_3m2/consumer_3m_seed_20260918_pass2.csv --output data/generated/fresh_3m2/consumer_3m_seed_20260918_pass2_out.csv --run-id final_3m_pass2 --evidence-dir evidence/validation/2026-09-18/fresh_3m2/harness/pass2_engine",
+      "json_path": "$.cli.canonical_command",
+      "reason": "external environment interpreter-home prefix rewritten to explicit placeholder token",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass2_cli.json"
+    },
+    {
+      "after": "<<venv-python>>bin/python3 scripts/final_3m_runtime_safety_wrapper.py --events-out evidence/validation/2026-09-18/fresh_3m2/harness/pass2_runtime_safety_events.json --max-events 50000 -- validate --csv data/generated/fresh_3m2/consumer_3m_seed_20260918_pass2.csv --output data/generated/fresh_3m2/consumer_3m_seed_20260918_pass2_out.csv --run-id final_3m_pass2 --evidence-dir evidence/validation/2026-09-18/fresh_3m2/harness/pass2_engine",
+      "before": "/home/z/.venv/bin/python3 /home/z/my-project/dqvp-work/repo/scripts/final_3m_runtime_safety_wrapper.py --events-out evidence/validation/2026-09-18/fresh_3m2/harness/pass2_runtime_safety_events.json --max-events 50000 -- validate --csv data/generated/fresh_3m2/consumer_3m_seed_20260918_pass2.csv --output data/generated/fresh_3m2/consumer_3m_seed_20260918_pass2_out.csv --run-id final_3m_pass2 --evidence-dir evidence/validation/2026-09-18/fresh_3m2/harness/pass2_engine",
+      "json_path": "$.cli.command",
+      "reason": "external environment interpreter-home prefix rewritten to explicit placeholder token",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass2_result.json"
+    },
+    {
+      "after": "<<venv-python>>bin/python3 -m runner.cli validate --csv data/generated/fresh_3m2/consumer_3m_seed_20260918_pass2.csv --output data/generated/fresh_3m2/consumer_3m_seed_20260918_pass2_out.csv --run-id final_3m_pass2 --evidence-dir evidence/validation/2026-09-18/fresh_3m2/harness/pass2_engine",
+      "before": "/home/z/.venv/bin/python3 -m runner.cli validate --csv data/generated/fresh_3m2/consumer_3m_seed_20260918_pass2.csv --output data/generated/fresh_3m2/consumer_3m_seed_20260918_pass2_out.csv --run-id final_3m_pass2 --evidence-dir evidence/validation/2026-09-18/fresh_3m2/harness/pass2_engine",
+      "json_path": "$.cli.canonical_command",
+      "reason": "external environment interpreter-home prefix rewritten to explicit placeholder token",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass2_result.json"
+    },
+    {
+      "after": "runner/__pycache__/__init__.cpython-312.pyc",
+      "before": "/home/z/my-project/dqvp-work/repo/runner/__pycache__/__init__.cpython-312.pyc",
+      "json_path": "$.events[0].path",
+      "reason": "repo-local absolute path rewritten to canonical repo-relative POSIX form",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass2_runtime_safety_events.json"
+    },
+    {
+      "after": "runner/__init__.py",
+      "before": "/home/z/my-project/dqvp-work/repo/runner/__init__.py",
+      "json_path": "$.events[1].path",
+      "reason": "repo-local absolute path rewritten to canonical repo-relative POSIX form",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass2_runtime_safety_events.json"
+    },
+    {
+      "after": "runner/__pycache__/cli.cpython-312.pyc",
+      "before": "/home/z/my-project/dqvp-work/repo/runner/__pycache__/cli.cpython-312.pyc",
+      "json_path": "$.events[2].path",
+      "reason": "repo-local absolute path rewritten to canonical repo-relative POSIX form",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass2_runtime_safety_events.json"
+    },
+    {
+      "after": "runner/cli.py",
+      "before": "/home/z/my-project/dqvp-work/repo/runner/cli.py",
+      "json_path": "$.events[3].path",
+      "reason": "repo-local absolute path rewritten to canonical repo-relative POSIX form",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass2_runtime_safety_events.json"
+    },
+    {
+      "after": "<<uv-python:cpython-3.12.14-linux-x86_64-gnu>>/lib/python3.12/__pycache__/csv.cpython-312.pyc",
+      "before": "/home/z/.local/share/uv/python/cpython-3.12.14-linux-x86_64-gnu/lib/python3.12/__pycache__/csv.cpython-312.pyc",
+      "json_path": "$.events[4].path",
+      "reason": "external environment interpreter-home prefix rewritten to explicit placeholder token",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass2_runtime_safety_events.json"
+    },
+    {
+      "after": "<<uv-python:cpython-3.12.14-linux-x86_64-gnu>>/lib/python3.12/__pycache__/subprocess.cpython-312.pyc",
+      "before": "/home/z/.local/share/uv/python/cpython-3.12.14-linux-x86_64-gnu/lib/python3.12/__pycache__/subprocess.cpython-312.pyc",
+      "json_path": "$.events[5].path",
+      "reason": "external environment interpreter-home prefix rewritten to explicit placeholder token",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass2_runtime_safety_events.json"
+    },
+    {
+      "after": "<<uv-python:cpython-3.12.14-linux-x86_64-gnu>>/lib/python3.12/__pycache__/signal.cpython-312.pyc",
+      "before": "/home/z/.local/share/uv/python/cpython-3.12.14-linux-x86_64-gnu/lib/python3.12/__pycache__/signal.cpython-312.pyc",
+      "json_path": "$.events[6].path",
+      "reason": "external environment interpreter-home prefix rewritten to explicit placeholder token",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass2_runtime_safety_events.json"
+    },
+    {
+      "after": "<<uv-python:cpython-3.12.14-linux-x86_64-gnu>>/lib/python3.12/__pycache__/threading.cpython-312.pyc",
+      "before": "/home/z/.local/share/uv/python/cpython-3.12.14-linux-x86_64-gnu/lib/python3.12/__pycache__/threading.cpython-312.pyc",
+      "json_path": "$.events[7].path",
+      "reason": "external environment interpreter-home prefix rewritten to explicit placeholder token",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass2_runtime_safety_events.json"
+    },
+    {
+      "after": "<<uv-python:cpython-3.12.14-linux-x86_64-gnu>>/lib/python3.12/__pycache__/_weakrefset.cpython-312.pyc",
+      "before": "/home/z/.local/share/uv/python/cpython-3.12.14-linux-x86_64-gnu/lib/python3.12/__pycache__/_weakrefset.cpython-312.pyc",
+      "json_path": "$.events[8].path",
+      "reason": "external environment interpreter-home prefix rewritten to explicit placeholder token",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass2_runtime_safety_events.json"
+    },
+    {
+      "after": "<<uv-python:cpython-3.12.14-linux-x86_64-gnu>>/lib/python3.12/__pycache__/selectors.cpython-312.pyc",
+      "before": "/home/z/.local/share/uv/python/cpython-3.12.14-linux-x86_64-gnu/lib/python3.12/__pycache__/selectors.cpython-312.pyc",
+      "json_path": "$.events[9].path",
+      "reason": "external environment interpreter-home prefix rewritten to explicit placeholder token",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass2_runtime_safety_events.json"
+    },
+    {
+      "after": "<<uv-python:cpython-3.12.14-linux-x86_64-gnu>>/lib/python3.12/collections/__pycache__/abc.cpython-312.pyc",
+      "before": "/home/z/.local/share/uv/python/cpython-3.12.14-linux-x86_64-gnu/lib/python3.12/collections/__pycache__/abc.cpython-312.pyc",
+      "json_path": "$.events[10].path",
+      "reason": "external environment interpreter-home prefix rewritten to explicit placeholder token",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass2_runtime_safety_events.json"
+    },
+    {
+      "after": "<<uv-python:cpython-3.12.14-linux-x86_64-gnu>>/lib/python3.12/__pycache__/datetime.cpython-312.pyc",
+      "before": "/home/z/.local/share/uv/python/cpython-3.12.14-linux-x86_64-gnu/lib/python3.12/__pycache__/datetime.cpython-312.pyc",
+      "json_path": "$.events[11].path",
+      "reason": "external environment interpreter-home prefix rewritten to explicit placeholder token",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass2_runtime_safety_events.json"
+    },
+    {
+      "after": "data_quality_platform/__pycache__/__init__.cpython-312.pyc",
+      "before": "/home/z/my-project/dqvp-work/repo/data_quality_platform/__pycache__/__init__.cpython-312.pyc",
+      "json_path": "$.events[12].path",
+      "reason": "repo-local absolute path rewritten to canonical repo-relative POSIX form",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass2_runtime_safety_events.json"
+    },
+    {
+      "after": "data_quality_platform/__init__.py",
+      "before": "/home/z/my-project/dqvp-work/repo/data_quality_platform/__init__.py",
+      "json_path": "$.events[13].path",
+      "reason": "repo-local absolute path rewritten to canonical repo-relative POSIX form",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass2_runtime_safety_events.json"
+    },
+    {
+      "after": "data_quality_platform/validation/__pycache__/__init__.cpython-312.pyc",
+      "before": "/home/z/my-project/dqvp-work/repo/data_quality_platform/validation/__pycache__/__init__.cpython-312.pyc",
+      "json_path": "$.events[14].path",
+      "reason": "repo-local absolute path rewritten to canonical repo-relative POSIX form",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass2_runtime_safety_events.json"
+    },
+    {
+      "after": "data_quality_platform/validation/__init__.py",
+      "before": "/home/z/my-project/dqvp-work/repo/data_quality_platform/validation/__init__.py",
+      "json_path": "$.events[15].path",
+      "reason": "repo-local absolute path rewritten to canonical repo-relative POSIX form",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass2_runtime_safety_events.json"
+    },
+    {
+      "after": "data_quality_platform/validation/__pycache__/engine.cpython-312.pyc",
+      "before": "/home/z/my-project/dqvp-work/repo/data_quality_platform/validation/__pycache__/engine.cpython-312.pyc",
+      "json_path": "$.events[16].path",
+      "reason": "repo-local absolute path rewritten to canonical repo-relative POSIX form",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass2_runtime_safety_events.json"
+    },
+    {
+      "after": "data_quality_platform/validation/engine.py",
+      "before": "/home/z/my-project/dqvp-work/repo/data_quality_platform/validation/engine.py",
+      "json_path": "$.events[17].path",
+      "reason": "repo-local absolute path rewritten to canonical repo-relative POSIX form",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass2_runtime_safety_events.json"
+    },
+    {
+      "after": "<<uv-python:cpython-3.12.14-linux-x86_64-gnu>>/lib/python3.12/__pycache__/hashlib.cpython-312.pyc",
+      "before": "/home/z/.local/share/uv/python/cpython-3.12.14-linux-x86_64-gnu/lib/python3.12/__pycache__/hashlib.cpython-312.pyc",
+      "json_path": "$.events[18].path",
+      "reason": "external environment interpreter-home prefix rewritten to explicit placeholder token",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass2_runtime_safety_events.json"
+    },
+    {
+      "after": "<<uv-python:cpython-3.12.14-linux-x86_64-gnu>>/lib/python3.12/__pycache__/dataclasses.cpython-312.pyc",
+      "before": "/home/z/.local/share/uv/python/cpython-3.12.14-linux-x86_64-gnu/lib/python3.12/__pycache__/dataclasses.cpython-312.pyc",
+      "json_path": "$.events[19].path",
+      "reason": "external environment interpreter-home prefix rewritten to explicit placeholder token",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass2_runtime_safety_events.json"
+    },
+    {
+      "after": "<<uv-python:cpython-3.12.14-linux-x86_64-gnu>>/lib/python3.12/__pycache__/copy.cpython-312.pyc",
+      "before": "/home/z/.local/share/uv/python/cpython-3.12.14-linux-x86_64-gnu/lib/python3.12/__pycache__/copy.cpython-312.pyc",
+      "json_path": "$.events[20].path",
+      "reason": "external environment interpreter-home prefix rewritten to explicit placeholder token",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass2_runtime_safety_events.json"
+    },
+    {
+      "after": "<<uv-python:cpython-3.12.14-linux-x86_64-gnu>>/lib/python3.12/__pycache__/weakref.cpython-312.pyc",
+      "before": "/home/z/.local/share/uv/python/cpython-3.12.14-linux-x86_64-gnu/lib/python3.12/__pycache__/weakref.cpython-312.pyc",
+      "json_path": "$.events[21].path",
+      "reason": "external environment interpreter-home prefix rewritten to explicit placeholder token",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass2_runtime_safety_events.json"
+    },
+    {
+      "after": "<<uv-python:cpython-3.12.14-linux-x86_64-gnu>>/lib/python3.12/__pycache__/inspect.cpython-312.pyc",
+      "before": "/home/z/.local/share/uv/python/cpython-3.12.14-linux-x86_64-gnu/lib/python3.12/__pycache__/inspect.cpython-312.pyc",
+      "json_path": "$.events[22].path",
+      "reason": "external environment interpreter-home prefix rewritten to explicit placeholder token",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass2_runtime_safety_events.json"
+    },
+    {
+      "after": "<<uv-python:cpython-3.12.14-linux-x86_64-gnu>>/lib/python3.12/__pycache__/ast.cpython-312.pyc",
+      "before": "/home/z/.local/share/uv/python/cpython-3.12.14-linux-x86_64-gnu/lib/python3.12/__pycache__/ast.cpython-312.pyc",
+      "json_path": "$.events[23].path",
+      "reason": "external environment interpreter-home prefix rewritten to explicit placeholder token",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass2_runtime_safety_events.json"
+    },
+    {
+      "after": "<<uv-python:cpython-3.12.14-linux-x86_64-gnu>>/lib/python3.12/__pycache__/dis.cpython-312.pyc",
+      "before": "/home/z/.local/share/uv/python/cpython-3.12.14-linux-x86_64-gnu/lib/python3.12/__pycache__/dis.cpython-312.pyc",
+      "json_path": "$.events[24].path",
+      "reason": "external environment interpreter-home prefix rewritten to explicit placeholder token",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass2_runtime_safety_events.json"
+    },
+    {
+      "after": "<<uv-python:cpython-3.12.14-linux-x86_64-gnu>>/lib/python3.12/__pycache__/opcode.cpython-312.pyc",
+      "before": "/home/z/.local/share/uv/python/cpython-3.12.14-linux-x86_64-gnu/lib/python3.12/__pycache__/opcode.cpython-312.pyc",
+      "json_path": "$.events[25].path",
+      "reason": "external environment interpreter-home prefix rewritten to explicit placeholder token",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass2_runtime_safety_events.json"
+    },
+    {
+      "after": "<<uv-python:cpython-3.12.14-linux-x86_64-gnu>>/lib/python3.12/__pycache__/linecache.cpython-312.pyc",
+      "before": "/home/z/.local/share/uv/python/cpython-3.12.14-linux-x86_64-gnu/lib/python3.12/__pycache__/linecache.cpython-312.pyc",
+      "json_path": "$.events[26].path",
+      "reason": "external environment interpreter-home prefix rewritten to explicit placeholder token",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass2_runtime_safety_events.json"
+    },
+    {
+      "after": "<<uv-python:cpython-3.12.14-linux-x86_64-gnu>>/lib/python3.12/__pycache__/tokenize.cpython-312.pyc",
+      "before": "/home/z/.local/share/uv/python/cpython-3.12.14-linux-x86_64-gnu/lib/python3.12/__pycache__/tokenize.cpython-312.pyc",
+      "json_path": "$.events[27].path",
+      "reason": "external environment interpreter-home prefix rewritten to explicit placeholder token",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass2_runtime_safety_events.json"
+    },
+    {
+      "after": "<<uv-python:cpython-3.12.14-linux-x86_64-gnu>>/lib/python3.12/__pycache__/token.cpython-312.pyc",
+      "before": "/home/z/.local/share/uv/python/cpython-3.12.14-linux-x86_64-gnu/lib/python3.12/__pycache__/token.cpython-312.pyc",
+      "json_path": "$.events[28].path",
+      "reason": "external environment interpreter-home prefix rewritten to explicit placeholder token",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass2_runtime_safety_events.json"
+    },
+    {
+      "after": "<<uv-python:cpython-3.12.14-linux-x86_64-gnu>>/lib/python3.12/__pycache__/typing.cpython-312.pyc",
+      "before": "/home/z/.local/share/uv/python/cpython-3.12.14-linux-x86_64-gnu/lib/python3.12/__pycache__/typing.cpython-312.pyc",
+      "json_path": "$.events[29].path",
+      "reason": "external environment interpreter-home prefix rewritten to explicit placeholder token",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass2_runtime_safety_events.json"
+    },
+    {
+      "after": "data_quality_platform/__pycache__/contracts.cpython-312.pyc",
+      "before": "/home/z/my-project/dqvp-work/repo/data_quality_platform/__pycache__/contracts.cpython-312.pyc",
+      "json_path": "$.events[30].path",
+      "reason": "repo-local absolute path rewritten to canonical repo-relative POSIX form",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass2_runtime_safety_events.json"
+    },
+    {
+      "after": "data_quality_platform/contracts.py",
+      "before": "/home/z/my-project/dqvp-work/repo/data_quality_platform/contracts.py",
+      "json_path": "$.events[31].path",
+      "reason": "repo-local absolute path rewritten to canonical repo-relative POSIX form",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass2_runtime_safety_events.json"
+    },
+    {
+      "after": "data_quality_platform/schema/__pycache__/__init__.cpython-312.pyc",
+      "before": "/home/z/my-project/dqvp-work/repo/data_quality_platform/schema/__pycache__/__init__.cpython-312.pyc",
+      "json_path": "$.events[32].path",
+      "reason": "repo-local absolute path rewritten to canonical repo-relative POSIX form",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass2_runtime_safety_events.json"
+    },
+    {
+      "after": "data_quality_platform/schema/__init__.py",
+      "before": "/home/z/my-project/dqvp-work/repo/data_quality_platform/schema/__init__.py",
+      "json_path": "$.events[33].path",
+      "reason": "repo-local absolute path rewritten to canonical repo-relative POSIX form",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass2_runtime_safety_events.json"
+    },
+    {
+      "after": "data_quality_platform/schema/__pycache__/validator.cpython-312.pyc",
+      "before": "/home/z/my-project/dqvp-work/repo/data_quality_platform/schema/__pycache__/validator.cpython-312.pyc",
+      "json_path": "$.events[34].path",
+      "reason": "repo-local absolute path rewritten to canonical repo-relative POSIX form",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass2_runtime_safety_events.json"
+    },
+    {
+      "after": "data_quality_platform/schema/validator.py",
+      "before": "/home/z/my-project/dqvp-work/repo/data_quality_platform/schema/validator.py",
+      "json_path": "$.events[35].path",
+      "reason": "repo-local absolute path rewritten to canonical repo-relative POSIX form",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass2_runtime_safety_events.json"
+    },
+    {
+      "after": "data_quality_platform/rules/__pycache__/__init__.cpython-312.pyc",
+      "before": "/home/z/my-project/dqvp-work/repo/data_quality_platform/rules/__pycache__/__init__.cpython-312.pyc",
+      "json_path": "$.events[36].path",
+      "reason": "repo-local absolute path rewritten to canonical repo-relative POSIX form",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass2_runtime_safety_events.json"
+    },
+    {
+      "after": "data_quality_platform/rules/__init__.py",
+      "before": "/home/z/my-project/dqvp-work/repo/data_quality_platform/rules/__init__.py",
+      "json_path": "$.events[37].path",
+      "reason": "repo-local absolute path rewritten to canonical repo-relative POSIX form",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass2_runtime_safety_events.json"
+    },
+    {
+      "after": "data_quality_platform/rules/__pycache__/base.cpython-312.pyc",
+      "before": "/home/z/my-project/dqvp-work/repo/data_quality_platform/rules/__pycache__/base.cpython-312.pyc",
+      "json_path": "$.events[38].path",
+      "reason": "repo-local absolute path rewritten to canonical repo-relative POSIX form",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass2_runtime_safety_events.json"
+    },
+    {
+      "after": "data_quality_platform/rules/base.py",
+      "before": "/home/z/my-project/dqvp-work/repo/data_quality_platform/rules/base.py",
+      "json_path": "$.events[39].path",
+      "reason": "repo-local absolute path rewritten to canonical repo-relative POSIX form",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass2_runtime_safety_events.json"
+    },
+    {
+      "after": "data_quality_platform/rules/__pycache__/registry.cpython-312.pyc",
+      "before": "/home/z/my-project/dqvp-work/repo/data_quality_platform/rules/__pycache__/registry.cpython-312.pyc",
+      "json_path": "$.events[40].path",
+      "reason": "repo-local absolute path rewritten to canonical repo-relative POSIX form",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass2_runtime_safety_events.json"
+    },
+    {
+      "after": "data_quality_platform/rules/registry.py",
+      "before": "/home/z/my-project/dqvp-work/repo/data_quality_platform/rules/registry.py",
+      "json_path": "$.events[41].path",
+      "reason": "repo-local absolute path rewritten to canonical repo-relative POSIX form",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass2_runtime_safety_events.json"
+    },
+    {
+      "after": "data_quality_platform/rules/__pycache__/v1_rules.cpython-312.pyc",
+      "before": "/home/z/my-project/dqvp-work/repo/data_quality_platform/rules/__pycache__/v1_rules.cpython-312.pyc",
+      "json_path": "$.events[42].path",
+      "reason": "repo-local absolute path rewritten to canonical repo-relative POSIX form",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass2_runtime_safety_events.json"
+    },
+    {
+      "after": "data_quality_platform/rules/v1_rules.py",
+      "before": "/home/z/my-project/dqvp-work/repo/data_quality_platform/rules/v1_rules.py",
+      "json_path": "$.events[43].path",
+      "reason": "repo-local absolute path rewritten to canonical repo-relative POSIX form",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass2_runtime_safety_events.json"
+    },
+    {
+      "after": "data_quality_platform/lineage/__pycache__/__init__.cpython-312.pyc",
+      "before": "/home/z/my-project/dqvp-work/repo/data_quality_platform/lineage/__pycache__/__init__.cpython-312.pyc",
+      "json_path": "$.events[44].path",
+      "reason": "repo-local absolute path rewritten to canonical repo-relative POSIX form",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass2_runtime_safety_events.json"
+    },
+    {
+      "after": "data_quality_platform/lineage/__init__.py",
+      "before": "/home/z/my-project/dqvp-work/repo/data_quality_platform/lineage/__init__.py",
+      "json_path": "$.events[45].path",
+      "reason": "repo-local absolute path rewritten to canonical repo-relative POSIX form",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass2_runtime_safety_events.json"
+    },
+    {
+      "after": "data_quality_platform/lineage/__pycache__/recorder.cpython-312.pyc",
+      "before": "/home/z/my-project/dqvp-work/repo/data_quality_platform/lineage/__pycache__/recorder.cpython-312.pyc",
+      "json_path": "$.events[46].path",
+      "reason": "repo-local absolute path rewritten to canonical repo-relative POSIX form",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass2_runtime_safety_events.json"
+    },
+    {
+      "after": "data_quality_platform/lineage/recorder.py",
+      "before": "/home/z/my-project/dqvp-work/repo/data_quality_platform/lineage/recorder.py",
+      "json_path": "$.events[47].path",
+      "reason": "repo-local absolute path rewritten to canonical repo-relative POSIX form",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass2_runtime_safety_events.json"
+    },
+    {
+      "after": "data_quality_platform/audit/__pycache__/__init__.cpython-312.pyc",
+      "before": "/home/z/my-project/dqvp-work/repo/data_quality_platform/audit/__pycache__/__init__.cpython-312.pyc",
+      "json_path": "$.events[48].path",
+      "reason": "repo-local absolute path rewritten to canonical repo-relative POSIX form",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass2_runtime_safety_events.json"
+    },
+    {
+      "after": "data_quality_platform/audit/__init__.py",
+      "before": "/home/z/my-project/dqvp-work/repo/data_quality_platform/audit/__init__.py",
+      "json_path": "$.events[49].path",
+      "reason": "repo-local absolute path rewritten to canonical repo-relative POSIX form",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass2_runtime_safety_events.json"
+    },
+    {
+      "after": "data_quality_platform/audit/__pycache__/trail.cpython-312.pyc",
+      "before": "/home/z/my-project/dqvp-work/repo/data_quality_platform/audit/__pycache__/trail.cpython-312.pyc",
+      "json_path": "$.events[50].path",
+      "reason": "repo-local absolute path rewritten to canonical repo-relative POSIX form",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass2_runtime_safety_events.json"
+    },
+    {
+      "after": "data_quality_platform/audit/trail.py",
+      "before": "/home/z/my-project/dqvp-work/repo/data_quality_platform/audit/trail.py",
+      "json_path": "$.events[51].path",
+      "reason": "repo-local absolute path rewritten to canonical repo-relative POSIX form",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass2_runtime_safety_events.json"
+    },
+    {
+      "after": "data_quality_platform/monitoring/__pycache__/__init__.cpython-312.pyc",
+      "before": "/home/z/my-project/dqvp-work/repo/data_quality_platform/monitoring/__pycache__/__init__.cpython-312.pyc",
+      "json_path": "$.events[52].path",
+      "reason": "repo-local absolute path rewritten to canonical repo-relative POSIX form",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass2_runtime_safety_events.json"
+    },
+    {
+      "after": "data_quality_platform/monitoring/__init__.py",
+      "before": "/home/z/my-project/dqvp-work/repo/data_quality_platform/monitoring/__init__.py",
+      "json_path": "$.events[53].path",
+      "reason": "repo-local absolute path rewritten to canonical repo-relative POSIX form",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass2_runtime_safety_events.json"
+    },
+    {
+      "after": "data_quality_platform/monitoring/__pycache__/quality.cpython-312.pyc",
+      "before": "/home/z/my-project/dqvp-work/repo/data_quality_platform/monitoring/__pycache__/quality.cpython-312.pyc",
+      "json_path": "$.events[54].path",
+      "reason": "repo-local absolute path rewritten to canonical repo-relative POSIX form",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass2_runtime_safety_events.json"
+    },
+    {
+      "after": "data_quality_platform/monitoring/quality.py",
+      "before": "/home/z/my-project/dqvp-work/repo/data_quality_platform/monitoring/quality.py",
+      "json_path": "$.events[55].path",
+      "reason": "repo-local absolute path rewritten to canonical repo-relative POSIX form",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass2_runtime_safety_events.json"
+    },
+    {
+      "after": "data_quality_platform/alerting/__pycache__/__init__.cpython-312.pyc",
+      "before": "/home/z/my-project/dqvp-work/repo/data_quality_platform/alerting/__pycache__/__init__.cpython-312.pyc",
+      "json_path": "$.events[56].path",
+      "reason": "repo-local absolute path rewritten to canonical repo-relative POSIX form",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass2_runtime_safety_events.json"
+    },
+    {
+      "after": "data_quality_platform/alerting/__init__.py",
+      "before": "/home/z/my-project/dqvp-work/repo/data_quality_platform/alerting/__init__.py",
+      "json_path": "$.events[57].path",
+      "reason": "repo-local absolute path rewritten to canonical repo-relative POSIX form",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass2_runtime_safety_events.json"
+    },
+    {
+      "after": "data_quality_platform/alerting/__pycache__/alerts.cpython-312.pyc",
+      "before": "/home/z/my-project/dqvp-work/repo/data_quality_platform/alerting/__pycache__/alerts.cpython-312.pyc",
+      "json_path": "$.events[58].path",
+      "reason": "repo-local absolute path rewritten to canonical repo-relative POSIX form",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass2_runtime_safety_events.json"
+    },
+    {
+      "after": "data_quality_platform/alerting/alerts.py",
+      "before": "/home/z/my-project/dqvp-work/repo/data_quality_platform/alerting/alerts.py",
+      "json_path": "$.events[59].path",
+      "reason": "repo-local absolute path rewritten to canonical repo-relative POSIX form",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass2_runtime_safety_events.json"
+    },
+    {
+      "after": "data_quality_platform/evidence/__pycache__/__init__.cpython-312.pyc",
+      "before": "/home/z/my-project/dqvp-work/repo/data_quality_platform/evidence/__pycache__/__init__.cpython-312.pyc",
+      "json_path": "$.events[60].path",
+      "reason": "repo-local absolute path rewritten to canonical repo-relative POSIX form",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass2_runtime_safety_events.json"
+    },
+    {
+      "after": "data_quality_platform/evidence/__init__.py",
+      "before": "/home/z/my-project/dqvp-work/repo/data_quality_platform/evidence/__init__.py",
+      "json_path": "$.events[61].path",
+      "reason": "repo-local absolute path rewritten to canonical repo-relative POSIX form",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass2_runtime_safety_events.json"
+    },
+    {
+      "after": "data_quality_platform/evidence/__pycache__/manifests.cpython-312.pyc",
+      "before": "/home/z/my-project/dqvp-work/repo/data_quality_platform/evidence/__pycache__/manifests.cpython-312.pyc",
+      "json_path": "$.events[62].path",
+      "reason": "repo-local absolute path rewritten to canonical repo-relative POSIX form",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass2_runtime_safety_events.json"
+    },
+    {
+      "after": "data_quality_platform/evidence/manifests.py",
+      "before": "/home/z/my-project/dqvp-work/repo/data_quality_platform/evidence/manifests.py",
+      "json_path": "$.events[63].path",
+      "reason": "repo-local absolute path rewritten to canonical repo-relative POSIX form",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass2_runtime_safety_events.json"
+    },
+    {
+      "after": "data_quality_platform/security/__pycache__/__init__.cpython-312.pyc",
+      "before": "/home/z/my-project/dqvp-work/repo/data_quality_platform/security/__pycache__/__init__.cpython-312.pyc",
+      "json_path": "$.events[64].path",
+      "reason": "repo-local absolute path rewritten to canonical repo-relative POSIX form",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass2_runtime_safety_events.json"
+    },
+    {
+      "after": "data_quality_platform/security/__init__.py",
+      "before": "/home/z/my-project/dqvp-work/repo/data_quality_platform/security/__init__.py",
+      "json_path": "$.events[65].path",
+      "reason": "repo-local absolute path rewritten to canonical repo-relative POSIX form",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass2_runtime_safety_events.json"
+    },
+    {
+      "after": "data_quality_platform/security/__pycache__/pii_masking.cpython-312.pyc",
+      "before": "/home/z/my-project/dqvp-work/repo/data_quality_platform/security/__pycache__/pii_masking.cpython-312.pyc",
+      "json_path": "$.events[66].path",
+      "reason": "repo-local absolute path rewritten to canonical repo-relative POSIX form",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass2_runtime_safety_events.json"
+    },
+    {
+      "after": "data_quality_platform/security/pii_masking.py",
+      "before": "/home/z/my-project/dqvp-work/repo/data_quality_platform/security/pii_masking.py",
+      "json_path": "$.events[67].path",
+      "reason": "repo-local absolute path rewritten to canonical repo-relative POSIX form",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass2_runtime_safety_events.json"
+    },
+    {
+      "after": "data_quality_platform/security/__pycache__/auth.cpython-312.pyc",
+      "before": "/home/z/my-project/dqvp-work/repo/data_quality_platform/security/__pycache__/auth.cpython-312.pyc",
+      "json_path": "$.events[68].path",
+      "reason": "repo-local absolute path rewritten to canonical repo-relative POSIX form",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass2_runtime_safety_events.json"
+    },
+    {
+      "after": "data_quality_platform/security/auth.py",
+      "before": "/home/z/my-project/dqvp-work/repo/data_quality_platform/security/auth.py",
+      "json_path": "$.events[69].path",
+      "reason": "repo-local absolute path rewritten to canonical repo-relative POSIX form",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass2_runtime_safety_events.json"
+    },
+    {
+      "after": "data_quality_platform/generation/__pycache__/__init__.cpython-312.pyc",
+      "before": "/home/z/my-project/dqvp-work/repo/data_quality_platform/generation/__pycache__/__init__.cpython-312.pyc",
+      "json_path": "$.events[70].path",
+      "reason": "repo-local absolute path rewritten to canonical repo-relative POSIX form",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass2_runtime_safety_events.json"
+    },
+    {
+      "after": "data_quality_platform/generation/__init__.py",
+      "before": "/home/z/my-project/dqvp-work/repo/data_quality_platform/generation/__init__.py",
+      "json_path": "$.events[71].path",
+      "reason": "repo-local absolute path rewritten to canonical repo-relative POSIX form",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass2_runtime_safety_events.json"
+    },
+    {
+      "after": "data_quality_platform/generation/__pycache__/synthetic.cpython-312.pyc",
+      "before": "/home/z/my-project/dqvp-work/repo/data_quality_platform/generation/__pycache__/synthetic.cpython-312.pyc",
+      "json_path": "$.events[72].path",
+      "reason": "repo-local absolute path rewritten to canonical repo-relative POSIX form",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass2_runtime_safety_events.json"
+    },
+    {
+      "after": "data_quality_platform/generation/synthetic.py",
+      "before": "/home/z/my-project/dqvp-work/repo/data_quality_platform/generation/synthetic.py",
+      "json_path": "$.events[73].path",
+      "reason": "repo-local absolute path rewritten to canonical repo-relative POSIX form",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass2_runtime_safety_events.json"
+    },
+    {
+      "after": "<<uv-python:cpython-3.12.14-linux-x86_64-gnu>>/lib/python3.12/__pycache__/random.cpython-312.pyc",
+      "before": "/home/z/.local/share/uv/python/cpython-3.12.14-linux-x86_64-gnu/lib/python3.12/__pycache__/random.cpython-312.pyc",
+      "json_path": "$.events[74].path",
+      "reason": "external environment interpreter-home prefix rewritten to explicit placeholder token",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass2_runtime_safety_events.json"
+    },
+    {
+      "after": "<<uv-python:cpython-3.12.14-linux-x86_64-gnu>>/lib/python3.12/__pycache__/bisect.cpython-312.pyc",
+      "before": "/home/z/.local/share/uv/python/cpython-3.12.14-linux-x86_64-gnu/lib/python3.12/__pycache__/bisect.cpython-312.pyc",
+      "json_path": "$.events[75].path",
+      "reason": "external environment interpreter-home prefix rewritten to explicit placeholder token",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass2_runtime_safety_events.json"
+    },
+    {
+      "after": "data_quality_platform/config/__pycache__/__init__.cpython-312.pyc",
+      "before": "/home/z/my-project/dqvp-work/repo/data_quality_platform/config/__pycache__/__init__.cpython-312.pyc",
+      "json_path": "$.events[76].path",
+      "reason": "repo-local absolute path rewritten to canonical repo-relative POSIX form",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass2_runtime_safety_events.json"
+    },
+    {
+      "after": "data_quality_platform/config/__init__.py",
+      "before": "/home/z/my-project/dqvp-work/repo/data_quality_platform/config/__init__.py",
+      "json_path": "$.events[77].path",
+      "reason": "repo-local absolute path rewritten to canonical repo-relative POSIX form",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass2_runtime_safety_events.json"
+    },
+    {
+      "after": "data_quality_platform/config/__pycache__/settings.cpython-312.pyc",
+      "before": "/home/z/my-project/dqvp-work/repo/data_quality_platform/config/__pycache__/settings.cpython-312.pyc",
+      "json_path": "$.events[78].path",
+      "reason": "repo-local absolute path rewritten to canonical repo-relative POSIX form",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass2_runtime_safety_events.json"
+    },
+    {
+      "after": "data_quality_platform/config/settings.py",
+      "before": "/home/z/my-project/dqvp-work/repo/data_quality_platform/config/settings.py",
+      "json_path": "$.events[79].path",
+      "reason": "repo-local absolute path rewritten to canonical repo-relative POSIX form",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass2_runtime_safety_events.json"
+    },
+    {
+      "after": "<<venv-python>>lib/python3.12/site-packages/yaml/__pycache__/__init__.cpython-312.pyc",
+      "before": "/home/z/.venv/lib/python3.12/site-packages/yaml/__pycache__/__init__.cpython-312.pyc",
+      "json_path": "$.events[80].path",
+      "reason": "external environment interpreter-home prefix rewritten to explicit placeholder token",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass2_runtime_safety_events.json"
+    },
+    {
+      "after": "<<venv-python>>lib/python3.12/site-packages/yaml/__init__.py",
+      "before": "/home/z/.venv/lib/python3.12/site-packages/yaml/__init__.py",
+      "json_path": "$.events[81].path",
+      "reason": "external environment interpreter-home prefix rewritten to explicit placeholder token",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass2_runtime_safety_events.json"
+    },
+    {
+      "after": "<<venv-python>>lib/python3.12/site-packages/yaml/__pycache__/error.cpython-312.pyc",
+      "before": "/home/z/.venv/lib/python3.12/site-packages/yaml/__pycache__/error.cpython-312.pyc",
+      "json_path": "$.events[82].path",
+      "reason": "external environment interpreter-home prefix rewritten to explicit placeholder token",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass2_runtime_safety_events.json"
+    },
+    {
+      "after": "<<venv-python>>lib/python3.12/site-packages/yaml/error.py",
+      "before": "/home/z/.venv/lib/python3.12/site-packages/yaml/error.py",
+      "json_path": "$.events[83].path",
+      "reason": "external environment interpreter-home prefix rewritten to explicit placeholder token",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass2_runtime_safety_events.json"
+    },
+    {
+      "after": "<<venv-python>>lib/python3.12/site-packages/yaml/__pycache__/tokens.cpython-312.pyc",
+      "before": "/home/z/.venv/lib/python3.12/site-packages/yaml/__pycache__/tokens.cpython-312.pyc",
+      "json_path": "$.events[84].path",
+      "reason": "external environment interpreter-home prefix rewritten to explicit placeholder token",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass2_runtime_safety_events.json"
+    },
+    {
+      "after": "<<venv-python>>lib/python3.12/site-packages/yaml/tokens.py",
+      "before": "/home/z/.venv/lib/python3.12/site-packages/yaml/tokens.py",
+      "json_path": "$.events[85].path",
+      "reason": "external environment interpreter-home prefix rewritten to explicit placeholder token",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass2_runtime_safety_events.json"
+    },
+    {
+      "after": "<<venv-python>>lib/python3.12/site-packages/yaml/__pycache__/events.cpython-312.pyc",
+      "before": "/home/z/.venv/lib/python3.12/site-packages/yaml/__pycache__/events.cpython-312.pyc",
+      "json_path": "$.events[86].path",
+      "reason": "external environment interpreter-home prefix rewritten to explicit placeholder token",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass2_runtime_safety_events.json"
+    },
+    {
+      "after": "<<venv-python>>lib/python3.12/site-packages/yaml/events.py",
+      "before": "/home/z/.venv/lib/python3.12/site-packages/yaml/events.py",
+      "json_path": "$.events[87].path",
+      "reason": "external environment interpreter-home prefix rewritten to explicit placeholder token",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass2_runtime_safety_events.json"
+    },
+    {
+      "after": "<<venv-python>>lib/python3.12/site-packages/yaml/__pycache__/nodes.cpython-312.pyc",
+      "before": "/home/z/.venv/lib/python3.12/site-packages/yaml/__pycache__/nodes.cpython-312.pyc",
+      "json_path": "$.events[88].path",
+      "reason": "external environment interpreter-home prefix rewritten to explicit placeholder token",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass2_runtime_safety_events.json"
+    },
+    {
+      "after": "<<venv-python>>lib/python3.12/site-packages/yaml/nodes.py",
+      "before": "/home/z/.venv/lib/python3.12/site-packages/yaml/nodes.py",
+      "json_path": "$.events[89].path",
+      "reason": "external environment interpreter-home prefix rewritten to explicit placeholder token",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass2_runtime_safety_events.json"
+    },
+    {
+      "after": "<<venv-python>>lib/python3.12/site-packages/yaml/__pycache__/loader.cpython-312.pyc",
+      "before": "/home/z/.venv/lib/python3.12/site-packages/yaml/__pycache__/loader.cpython-312.pyc",
+      "json_path": "$.events[90].path",
+      "reason": "external environment interpreter-home prefix rewritten to explicit placeholder token",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass2_runtime_safety_events.json"
+    },
+    {
+      "after": "<<venv-python>>lib/python3.12/site-packages/yaml/loader.py",
+      "before": "/home/z/.venv/lib/python3.12/site-packages/yaml/loader.py",
+      "json_path": "$.events[91].path",
+      "reason": "external environment interpreter-home prefix rewritten to explicit placeholder token",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass2_runtime_safety_events.json"
+    },
+    {
+      "after": "<<venv-python>>lib/python3.12/site-packages/yaml/__pycache__/reader.cpython-312.pyc",
+      "before": "/home/z/.venv/lib/python3.12/site-packages/yaml/__pycache__/reader.cpython-312.pyc",
+      "json_path": "$.events[92].path",
+      "reason": "external environment interpreter-home prefix rewritten to explicit placeholder token",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass2_runtime_safety_events.json"
+    },
+    {
+      "after": "<<venv-python>>lib/python3.12/site-packages/yaml/reader.py",
+      "before": "/home/z/.venv/lib/python3.12/site-packages/yaml/reader.py",
+      "json_path": "$.events[93].path",
+      "reason": "external environment interpreter-home prefix rewritten to explicit placeholder token",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass2_runtime_safety_events.json"
+    },
+    {
+      "after": "<<venv-python>>lib/python3.12/site-packages/yaml/__pycache__/scanner.cpython-312.pyc",
+      "before": "/home/z/.venv/lib/python3.12/site-packages/yaml/__pycache__/scanner.cpython-312.pyc",
+      "json_path": "$.events[94].path",
+      "reason": "external environment interpreter-home prefix rewritten to explicit placeholder token",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass2_runtime_safety_events.json"
+    },
+    {
+      "after": "<<venv-python>>lib/python3.12/site-packages/yaml/scanner.py",
+      "before": "/home/z/.venv/lib/python3.12/site-packages/yaml/scanner.py",
+      "json_path": "$.events[95].path",
+      "reason": "external environment interpreter-home prefix rewritten to explicit placeholder token",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass2_runtime_safety_events.json"
+    },
+    {
+      "after": "<<venv-python>>lib/python3.12/site-packages/yaml/__pycache__/parser.cpython-312.pyc",
+      "before": "/home/z/.venv/lib/python3.12/site-packages/yaml/__pycache__/parser.cpython-312.pyc",
+      "json_path": "$.events[96].path",
+      "reason": "external environment interpreter-home prefix rewritten to explicit placeholder token",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass2_runtime_safety_events.json"
+    },
+    {
+      "after": "<<venv-python>>lib/python3.12/site-packages/yaml/parser.py",
+      "before": "/home/z/.venv/lib/python3.12/site-packages/yaml/parser.py",
+      "json_path": "$.events[97].path",
+      "reason": "external environment interpreter-home prefix rewritten to explicit placeholder token",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass2_runtime_safety_events.json"
+    },
+    {
+      "after": "<<venv-python>>lib/python3.12/site-packages/yaml/__pycache__/composer.cpython-312.pyc",
+      "before": "/home/z/.venv/lib/python3.12/site-packages/yaml/__pycache__/composer.cpython-312.pyc",
+      "json_path": "$.events[98].path",
+      "reason": "external environment interpreter-home prefix rewritten to explicit placeholder token",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass2_runtime_safety_events.json"
+    },
+    {
+      "after": "<<venv-python>>lib/python3.12/site-packages/yaml/composer.py",
+      "before": "/home/z/.venv/lib/python3.12/site-packages/yaml/composer.py",
+      "json_path": "$.events[99].path",
+      "reason": "external environment interpreter-home prefix rewritten to explicit placeholder token",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass2_runtime_safety_events.json"
+    },
+    {
+      "after": "<<venv-python>>lib/python3.12/site-packages/yaml/__pycache__/constructor.cpython-312.pyc",
+      "before": "/home/z/.venv/lib/python3.12/site-packages/yaml/__pycache__/constructor.cpython-312.pyc",
+      "json_path": "$.events[100].path",
+      "reason": "external environment interpreter-home prefix rewritten to explicit placeholder token",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass2_runtime_safety_events.json"
+    },
+    {
+      "after": "<<venv-python>>lib/python3.12/site-packages/yaml/constructor.py",
+      "before": "/home/z/.venv/lib/python3.12/site-packages/yaml/constructor.py",
+      "json_path": "$.events[101].path",
+      "reason": "external environment interpreter-home prefix rewritten to explicit placeholder token",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass2_runtime_safety_events.json"
+    },
+    {
+      "after": "<<uv-python:cpython-3.12.14-linux-x86_64-gnu>>/lib/python3.12/__pycache__/base64.cpython-312.pyc",
+      "before": "/home/z/.local/share/uv/python/cpython-3.12.14-linux-x86_64-gnu/lib/python3.12/__pycache__/base64.cpython-312.pyc",
+      "json_path": "$.events[102].path",
+      "reason": "external environment interpreter-home prefix rewritten to explicit placeholder token",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass2_runtime_safety_events.json"
+    },
+    {
+      "after": "<<uv-python:cpython-3.12.14-linux-x86_64-gnu>>/lib/python3.12/__pycache__/struct.cpython-312.pyc",
+      "before": "/home/z/.local/share/uv/python/cpython-3.12.14-linux-x86_64-gnu/lib/python3.12/__pycache__/struct.cpython-312.pyc",
+      "json_path": "$.events[103].path",
+      "reason": "external environment interpreter-home prefix rewritten to explicit placeholder token",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass2_runtime_safety_events.json"
+    },
+    {
+      "after": "<<venv-python>>lib/python3.12/site-packages/yaml/__pycache__/resolver.cpython-312.pyc",
+      "before": "/home/z/.venv/lib/python3.12/site-packages/yaml/__pycache__/resolver.cpython-312.pyc",
+      "json_path": "$.events[104].path",
+      "reason": "external environment interpreter-home prefix rewritten to explicit placeholder token",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass2_runtime_safety_events.json"
+    },
+    {
+      "after": "<<venv-python>>lib/python3.12/site-packages/yaml/resolver.py",
+      "before": "/home/z/.venv/lib/python3.12/site-packages/yaml/resolver.py",
+      "json_path": "$.events[105].path",
+      "reason": "external environment interpreter-home prefix rewritten to explicit placeholder token",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass2_runtime_safety_events.json"
+    },
+    {
+      "after": "<<venv-python>>lib/python3.12/site-packages/yaml/__pycache__/dumper.cpython-312.pyc",
+      "before": "/home/z/.venv/lib/python3.12/site-packages/yaml/__pycache__/dumper.cpython-312.pyc",
+      "json_path": "$.events[106].path",
+      "reason": "external environment interpreter-home prefix rewritten to explicit placeholder token",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass2_runtime_safety_events.json"
+    },
+    {
+      "after": "<<venv-python>>lib/python3.12/site-packages/yaml/dumper.py",
+      "before": "/home/z/.venv/lib/python3.12/site-packages/yaml/dumper.py",
+      "json_path": "$.events[107].path",
+      "reason": "external environment interpreter-home prefix rewritten to explicit placeholder token",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass2_runtime_safety_events.json"
+    },
+    {
+      "after": "<<venv-python>>lib/python3.12/site-packages/yaml/__pycache__/emitter.cpython-312.pyc",
+      "before": "/home/z/.venv/lib/python3.12/site-packages/yaml/__pycache__/emitter.cpython-312.pyc",
+      "json_path": "$.events[108].path",
+      "reason": "external environment interpreter-home prefix rewritten to explicit placeholder token",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass2_runtime_safety_events.json"
+    },
+    {
+      "after": "<<venv-python>>lib/python3.12/site-packages/yaml/emitter.py",
+      "before": "/home/z/.venv/lib/python3.12/site-packages/yaml/emitter.py",
+      "json_path": "$.events[109].path",
+      "reason": "external environment interpreter-home prefix rewritten to explicit placeholder token",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass2_runtime_safety_events.json"
+    },
+    {
+      "after": "<<venv-python>>lib/python3.12/site-packages/yaml/__pycache__/serializer.cpython-312.pyc",
+      "before": "/home/z/.venv/lib/python3.12/site-packages/yaml/__pycache__/serializer.cpython-312.pyc",
+      "json_path": "$.events[110].path",
+      "reason": "external environment interpreter-home prefix rewritten to explicit placeholder token",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass2_runtime_safety_events.json"
+    },
+    {
+      "after": "<<venv-python>>lib/python3.12/site-packages/yaml/serializer.py",
+      "before": "/home/z/.venv/lib/python3.12/site-packages/yaml/serializer.py",
+      "json_path": "$.events[111].path",
+      "reason": "external environment interpreter-home prefix rewritten to explicit placeholder token",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass2_runtime_safety_events.json"
+    },
+    {
+      "after": "<<venv-python>>lib/python3.12/site-packages/yaml/__pycache__/representer.cpython-312.pyc",
+      "before": "/home/z/.venv/lib/python3.12/site-packages/yaml/__pycache__/representer.cpython-312.pyc",
+      "json_path": "$.events[112].path",
+      "reason": "external environment interpreter-home prefix rewritten to explicit placeholder token",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass2_runtime_safety_events.json"
+    },
+    {
+      "after": "<<venv-python>>lib/python3.12/site-packages/yaml/representer.py",
+      "before": "/home/z/.venv/lib/python3.12/site-packages/yaml/representer.py",
+      "json_path": "$.events[113].path",
+      "reason": "external environment interpreter-home prefix rewritten to explicit placeholder token",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass2_runtime_safety_events.json"
+    },
+    {
+      "after": "<<venv-python>>lib/python3.12/site-packages/yaml/__pycache__/cyaml.cpython-312.pyc",
+      "before": "/home/z/.venv/lib/python3.12/site-packages/yaml/__pycache__/cyaml.cpython-312.pyc",
+      "json_path": "$.events[114].path",
+      "reason": "external environment interpreter-home prefix rewritten to explicit placeholder token",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass2_runtime_safety_events.json"
+    },
+    {
+      "after": "<<venv-python>>lib/python3.12/site-packages/yaml/cyaml.py",
+      "before": "/home/z/.venv/lib/python3.12/site-packages/yaml/cyaml.py",
+      "json_path": "$.events[115].path",
+      "reason": "external environment interpreter-home prefix rewritten to explicit placeholder token",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass2_runtime_safety_events.json"
+    },
+    {
+      "after": "runner/__pycache__/cli.cpython-312.pyc",
+      "before": "/home/z/my-project/dqvp-work/repo/runner/__pycache__/cli.cpython-312.pyc",
+      "json_path": "$.events[116].path",
+      "reason": "repo-local absolute path rewritten to canonical repo-relative POSIX form",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass2_runtime_safety_events.json"
+    },
+    {
+      "after": "runner/cli.py",
+      "before": "/home/z/my-project/dqvp-work/repo/runner/cli.py",
+      "json_path": "$.events[117].path",
+      "reason": "repo-local absolute path rewritten to canonical repo-relative POSIX form",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass2_runtime_safety_events.json"
+    },
+    {
+      "after": "configs/quality.yaml",
+      "before": "/home/z/my-project/dqvp-work/repo/configs/quality.yaml",
+      "json_path": "$.events[118].path",
+      "reason": "repo-local absolute path rewritten to canonical repo-relative POSIX form",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass2_runtime_safety_events.json"
+    },
+    {
+      "after": "data_quality_platform/validation/__pycache__/input_contract.cpython-312.pyc",
+      "before": "/home/z/my-project/dqvp-work/repo/data_quality_platform/validation/__pycache__/input_contract.cpython-312.pyc",
+      "json_path": "$.events[119].path",
+      "reason": "repo-local absolute path rewritten to canonical repo-relative POSIX form",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass2_runtime_safety_events.json"
+    },
+    {
+      "after": "data_quality_platform/validation/input_contract.py",
+      "before": "/home/z/my-project/dqvp-work/repo/data_quality_platform/validation/input_contract.py",
+      "json_path": "$.events[120].path",
+      "reason": "repo-local absolute path rewritten to canonical repo-relative POSIX form",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass2_runtime_safety_events.json"
+    },
+    {
+      "after": "data_quality_platform/rules/v1_rules.py",
+      "before": "/home/z/my-project/dqvp-work/repo/data_quality_platform/rules/v1_rules.py",
+      "json_path": "$.events[124].path",
+      "reason": "repo-local absolute path rewritten to canonical repo-relative POSIX form",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/harness/pass2_runtime_safety_events.json"
+    },
+    {
+      "after": "data/generated/fresh_3m2_smoke/preflight_1k_seed_20260918.csv",
+      "before": "/home/z/my-project/dqvp-work/repo/data/generated/fresh_3m2_smoke/preflight_1k_seed_20260918.csv",
+      "json_path": "$.events[0].details.source",
+      "reason": "repo-local absolute path rewritten to canonical repo-relative POSIX form",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/preflight/audit.json"
+    },
+    {
+      "after": "data/generated/fresh_3m2_smoke/preflight_1k_out.csv",
+      "before": "/home/z/my-project/dqvp-work/repo/data/generated/fresh_3m2_smoke/preflight_1k_out.csv",
+      "json_path": "$.events[7].details.path",
+      "reason": "repo-local absolute path rewritten to canonical repo-relative POSIX form",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/preflight/audit.json"
+    },
+    {
+      "after": "evidence/validation/2026-09-18/fresh_3m2/preflight/lineage.json",
+      "before": "/home/z/my-project/dqvp-work/repo/evidence/validation/2026-09-18/fresh_3m2/preflight/lineage.json",
+      "json_path": "$.events[8].details.path",
+      "reason": "repo-local absolute path rewritten to canonical repo-relative POSIX form",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/preflight/audit.json"
+    },
+    {
+      "after": "data/generated/fresh_3m2_smoke/preflight_1k_seed_20260918.csv",
+      "before": "/home/z/my-project/dqvp-work/repo/data/generated/fresh_3m2_smoke/preflight_1k_seed_20260918.csv",
+      "json_path": "$.run_records[0].source",
+      "reason": "repo-local absolute path rewritten to canonical repo-relative POSIX form",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/preflight/lineage.json"
+    },
+    {
+      "after": "data/generated/fresh_3m2_smoke/preflight_1k_seed_20260918.csv",
+      "before": "/home/z/my-project/dqvp-work/repo/data/generated/fresh_3m2_smoke/preflight_1k_seed_20260918.csv",
+      "json_path": "$.run_records[1].source",
+      "reason": "repo-local absolute path rewritten to canonical repo-relative POSIX form",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/preflight/lineage.json"
+    },
+    {
+      "after": "evidence/validation/2026-09-18/fresh_3m2/preflight/lineage.json",
+      "before": "/home/z/my-project/dqvp-work/repo/evidence/validation/2026-09-18/fresh_3m2/preflight/lineage.json",
+      "json_path": "$.lineage_reference",
+      "reason": "repo-local absolute path rewritten to canonical repo-relative POSIX form",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/preflight/manifest.json"
+    },
+    {
+      "after": "data/generated/fresh_3m2_smoke/preflight_1k_out.csv",
+      "before": "/home/z/my-project/dqvp-work/repo/data/generated/fresh_3m2_smoke/preflight_1k_out.csv",
+      "json_path": "$.generated_files.output",
+      "reason": "repo-local absolute path rewritten to canonical repo-relative POSIX form",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/preflight/manifest.json"
+    },
+    {
+      "after": "evidence/validation/2026-09-18/fresh_3m2/preflight/lineage.json",
+      "before": "/home/z/my-project/dqvp-work/repo/evidence/validation/2026-09-18/fresh_3m2/preflight/lineage.json",
+      "json_path": "$.generated_files.lineage",
+      "reason": "repo-local absolute path rewritten to canonical repo-relative POSIX form",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/preflight/manifest.json"
+    },
+    {
+      "after": "evidence/validation/2026-09-18/fresh_3m2/preflight/audit.json",
+      "before": "/home/z/my-project/dqvp-work/repo/evidence/validation/2026-09-18/fresh_3m2/preflight/audit.json",
+      "json_path": "$.generated_files.audit",
+      "reason": "repo-local absolute path rewritten to canonical repo-relative POSIX form",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/preflight/manifest.json"
+    },
+    {
+      "after": "evidence/validation/2026-09-18/fresh_3m2/preflight/monitoring.json",
+      "before": "/home/z/my-project/dqvp-work/repo/evidence/validation/2026-09-18/fresh_3m2/preflight/monitoring.json",
+      "json_path": "$.generated_files.monitoring",
+      "reason": "repo-local absolute path rewritten to canonical repo-relative POSIX form",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/preflight/manifest.json"
+    },
+    {
+      "after": "evidence/validation/2026-09-18/fresh_3m2/preflight/alerts.json",
+      "before": "/home/z/my-project/dqvp-work/repo/evidence/validation/2026-09-18/fresh_3m2/preflight/alerts.json",
+      "json_path": "$.generated_files.alerts",
+      "reason": "repo-local absolute path rewritten to canonical repo-relative POSIX form",
+      "source_file": "evidence/validation/2026-09-18/fresh_3m2/preflight/manifest.json"
+    }
+  ],
+  "generated_utc": "2026-09-18T23:34:30Z",
+  "policy": "only approved path normalizations may change a value: repo-local absolute -> repo-relative POSIX, or uv-python interpreter-home -> explicit placeholder token; keys, arrays, numbers, booleans, hashes, rule IDs, test results and verdict semantics are preserved; every changed field below was re-derived through the centralized normalizer (normalize_string) and anything not reproducible FAILS CLOSED",
+  "report": "DQAEIP FINAL PORTABLE EVIDENCE UPDATE V2 \u2014 Phase 6 JSON semantic diff (fail-closed)",
+  "schema": {
+    "name": "dqaeip.update_v2.semantic_diff",
+    "version": "1.0"
+  },
+  "update_id": "DQAEIP-FINAL-CLEAN-REBUILD-RELEASE-2026-09-18",
+  "verification": {
+    "derived_copies_machine_path_free": true,
+    "files_compared": 10,
+    "originals_byte_identical": true,
+    "total_string_changes": 266,
+    "unapproved_changes": 0
+  }
+}

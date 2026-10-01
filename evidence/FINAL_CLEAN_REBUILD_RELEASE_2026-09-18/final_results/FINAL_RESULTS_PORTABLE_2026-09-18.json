@@ -1,0 +1,296 @@
+{
+  "assurance": {
+    "business_mutation_detected": 17,
+    "business_mutation_total": 17,
+    "evidence_mutations_rejected": 16,
+    "evidence_mutations_total": 16,
+    "false_pass_scenarios_rejected": 14,
+    "false_pass_scenarios_total": 14
+  },
+  "dependencies": [
+    {
+      "path": "evidence/validation/2026-09-18/fresh_3m2/harness/FINAL_RESULTS.json",
+      "sha256": "755fa28f224c480e873676b487d4c6babeb0072fff50e47c08104684b6643337"
+    },
+    {
+      "path": "evidence/rebuild_verification/run_pair_verification.json",
+      "sha256": "7112257f799c8473feb8622f6e1cee445b893914be67753becba999b69745379"
+    },
+    {
+      "path": "evidence/rebuild_verification/test_summary.json",
+      "sha256": "6f70c21a94bb23ef37633ca3983158f7c55fa0e24c4a0ff71c678d3e115f2e5c"
+    },
+    {
+      "path": "evidence/mutation_testing/mutation_results.json",
+      "sha256": "be6d0a7ec6df6fbab7c4d4a30ca4aac9f82decdf2c22e3d410672e307ec0adbe"
+    },
+    {
+      "path": "evidence/release/assurance_mutation.json",
+      "sha256": "795b722ae1b84755f049e33a75499f863471f25a20d3743114b9fd94bcc945f0"
+    },
+    {
+      "path": "evidence/release/limitation_registry.json",
+      "sha256": "4ffad35d9f50f68984323287870b4c9627c93411eef079474e32bd3234c93bb5"
+    },
+    {
+      "path": "data_quality_platform/rules/v1_rules.py",
+      "sha256": "daef1ded54c7d3c79898a1ba253be2acd5b6120e18b16b09009fdd7be9fc2276"
+    },
+    {
+      "path": "scripts/final_3m_validation.py",
+      "sha256": "0ef7c10c14a1df317c23cb0dfc73b3a60c2257c064b35080d694e5fe8bc50d84"
+    }
+  ],
+  "dependency_fingerprint": "d9fa447d6d7e970a40c9dad61d0f235a0fa399337439b75e819b9853cd1d36e5",
+  "derived_values": {
+    "checker_sha256": "0ef7c10c14a1df317c23cb0dfc73b3a60c2257c064b35080d694e5fe8bc50d84",
+    "combined_comparisons": 51200000,
+    "combined_mismatches": 0,
+    "comparisons_per_run": 25600000,
+    "frozen_v1_sha256": "daef1ded54c7d3c79898a1ba253be2acd5b6120e18b16b09009fdd7be9fc2276",
+    "input_column_count": 33,
+    "input_sha256": "59624a53c72f908f1dde673ceecf59e0662ae721bb8f9af7e165acba5318d153",
+    "output_column_count": 41,
+    "output_sha256": "b72adc235160a86e0b99a08f988dd0bb5f2cff82bbe5b5d28ea07c5a5719329a",
+    "rows_per_run": 3200000,
+    "rule_count": 8,
+    "run_count": 2
+  },
+  "evidence_identity": {
+    "checker_sha256": "0ef7c10c14a1df317c23cb0dfc73b3a60c2257c064b35080d694e5fe8bc50d84",
+    "frozen_v1_sha256": "daef1ded54c7d3c79898a1ba253be2acd5b6120e18b16b09009fdd7be9fc2276",
+    "official_evidence_dir": "evidence/validation/2026-09-18/fresh_3m2/harness",
+    "official_input_sha256": "59624a53c72f908f1dde673ceecf59e0662ae721bb8f9af7e165acba5318d153",
+    "official_output_sha256": "b72adc235160a86e0b99a08f988dd0bb5f2cff82bbe5b5d28ea07c5a5719329a",
+    "official_run_ids": [
+      "run_1",
+      "run_2"
+    ],
+    "portable_evidence_note": "official evidence preserved byte-exact; normalized derived representations under evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/portable_evidence/ (policy A)",
+    "seed": 20260918,
+    "verifier_sha256": "425534dba7183e25879e1b9e9e681ed5b465db45d941676868da8ed8a8c277ad"
+  },
+  "generated_utc": "2026-09-19T02:08:45Z",
+  "generation_mode": "two-phase: staging -> verify -> promote; this document was promoted only after the schema gate passed",
+  "git_identity": {
+    "branch": "main",
+    "head": "6699c52e4a361c7b00ed35d539457c92608d555e"
+  },
+  "limitations": [
+    {
+      "affected_scope": "execution",
+      "blocks_release": false,
+      "description": "The engine materializes the full dataset in memory; peak RSS measured 2365.7 MB at 3,200,000 rows (fresh 2026-09-18 run). Memory scales linearly with row count. A bounded-memory design exists as a future design document only; it is intentionally NOT implemented because business-equivalence is unproven.",
+      "evidence_reference": [
+        "evidence/validation/2026-09-18/fresh_3m2/harness/FINAL_RESULTS.json",
+        "evidence/dqvp_performance/performance_results.json",
+        "docs/future/bounded_memory_execution.md"
+      ],
+      "id": "LIM-001",
+      "policy_note": "documented; performance optimization is out of scope and explicitly forbidden for this rebuild",
+      "status": "OPEN",
+      "title": "O(N) memory profile",
+      "verification_state": "VERIFIED_LOCALLY"
+    },
+    {
+      "affected_scope": "storage integration",
+      "blocks_release": false,
+      "description": "The ClickHouse storage integration is import-verified only; no ClickHouse server is connected or executed. Client code contains no live connection path (verified boundary check).",
+      "evidence_reference": [
+        "tests/runtime/test_runtime.py",
+        "evidence/release_gate/final_release_gate.json"
+      ],
+      "id": "LIM-002",
+      "status": "OPEN",
+      "title": "ClickHouse runtime not executed",
+      "verification_state": "NOT_EXECUTED"
+    },
+    {
+      "affected_scope": "orchestration integration",
+      "blocks_release": false,
+      "description": "The Airflow DAG is statically validated only; the Airflow scheduler/executor runtime is not installed or run in this environment.",
+      "evidence_reference": [
+        "airflow/dags/dq_validation_dag.py",
+        "tests/runtime/test_runtime.py"
+      ],
+      "id": "LIM-003",
+      "status": "OPEN",
+      "title": "Airflow runtime not executed",
+      "verification_state": "NOT_EXECUTED"
+    },
+    {
+      "affected_scope": "golden test coverage",
+      "blocks_release": false,
+      "description": "The authoritative DL001-DL015 geography acceptance table was not supplied by the repo owner; 7 golden tests are skipped with that explicit reason. The fixture is never reconstructed from existing fixtures (anti-fabrication).",
+      "evidence_reference": [
+        "tests/golden/test_dl_canonical_geography.py"
+      ],
+      "id": "LIM-004",
+      "policy_note": "company-supplied evidence outstanding; skipped tests are never converted to PASS",
+      "status": "OPEN",
+      "title": "Authoritative DL fixture unavailable",
+      "verification_state": "NOT_VERIFIED"
+    },
+    {
+      "affected_scope": "geography successor layer",
+      "blocks_release": false,
+      "description": "The SP1 successor geography layer is implemented for validation only; it is NOT registered in the production rule registry and NOT activated. The fresh 3.2M validation pinned the frozen V1 rule set (regenerated from the frozen source) and verified SP1 absence in BOTH executed run manifests.",
+      "evidence_reference": [
+        "evidence/validation/2026-09-18/fresh_3m2/harness/FINAL_RESULTS.json",
+        "data_quality_platform/geography/"
+      ],
+      "id": "LIM-005",
+      "status": "OPEN",
+      "title": "SP1 validation-only",
+      "verification_state": "VERIFIED_LOCALLY"
+    },
+    {
+      "affected_scope": "future enhancement",
+      "blocks_release": false,
+      "description": "E1 is neither implemented nor authorized. Zero E1 identifiers exist in application code (tripwire-enforced boundary test). This registry entry documents that boundary; it is not an implementation plan.",
+      "evidence_reference": [
+        "tests/unit/test_final_3m_hardening.py"
+      ],
+      "id": "LIM-006",
+      "status": "OPEN",
+      "title": "E1 not implemented / not authorized",
+      "verification_state": "NOT_AUTHORIZED"
+    },
+    {
+      "affected_scope": "oracle semantics",
+      "blocks_release": false,
+      "description": "The independent oracle re-implements the frozen V1 contract; it is a pinned reference truth, not independently sourced business truth. Perfect engine-vs-oracle agreement (51,200,000 comparisons, 0 mismatches) proves engine-to-contract fidelity, not contract-to-business fidelity.",
+      "evidence_reference": [
+        "evidence/validation/2026-09-18/fresh_3m2/harness/FINAL_RESULTS.json",
+        "scripts/final_3m_validation.py"
+      ],
+      "id": "LIM-007",
+      "status": "OPEN",
+      "title": "Oracle reference truth is pinned, not independently sourced",
+      "verification_state": "VERIFIED_LOCALLY"
+    },
+    {
+      "affected_scope": "performance claims",
+      "blocks_release": false,
+      "description": "Production validation executed at 3,200,000 rows (two complete runs, seed 20260918). No claim is made about 100M/800M production scalability from this evidence; performance comparability is limited to the measured host class.",
+      "evidence_reference": [
+        "evidence/dqvp_performance/performance_results.json",
+        "evidence/validation/2026-09-18/fresh_3m2/harness/FINAL_RESULTS.json"
+      ],
+      "id": "LIM-008",
+      "status": "OPEN",
+      "title": "3.2M-row validation scale",
+      "verification_state": "VERIFIED_LOCALLY"
+    },
+    {
+      "affected_scope": "artifact retention",
+      "blocks_release": false,
+      "description": "The bulk input/output CSVs of BOTH passes under data/generated/ (gitignored staging) were removed after the byte-identical proof and after the release-verification chain was complete; their SHA-256 values are hash-anchored in the harness evidence. The dataset is deterministically re-derivable from seed 20260918 (generation ~85s per pass). The release gate's evidence-validation documents the by-design staging absence (determinism proven + manifest output SHA equals the byte-proven SHA).",
+      "evidence_reference": [
+        "evidence/validation/2026-09-18/fresh_3m2/harness/FINAL_RESULTS.json"
+      ],
+      "id": "LIM-009",
+      "status": "OPEN",
+      "title": "Bulk staging CSVs removed after byte-proof",
+      "verification_state": "VERIFIED_LOCALLY"
+    },
+    {
+      "affected_scope": "golden corpus / geography semantics",
+      "blocks_release": false,
+      "description": "Three golden-corpus cases record real-world expectations (mismatch=0) that conflict with the frozen V1 prefix map (73->OK only). The frozen V1 behavior is preserved and the cases are pinned REVIEW_REQUIRED with an exact allowlist; any new drift fails the suite.",
+      "evidence_reference": [
+        "tests/unit/test_rule_oracle_consistency.py",
+        "tests/golden/regression_corpus.json"
+      ],
+      "id": "LIM-010",
+      "policy_note": "no unauthorized semantic change; decision deferred to the contract owner",
+      "status": "OPEN",
+      "title": "ZIP 733xx / TX geography expectations under review",
+      "verification_state": "REVIEW_REQUIRED"
+    },
+    {
+      "affected_scope": "safety evidence semantics",
+      "blocks_release": false,
+      "description": "Runtime safety (0 sockets, 0 exec, in-repo writes only) is measured via CPython audit hooks inside the production CLI subprocess \u2014 cooperative observation, not a kernel sandbox.",
+      "evidence_reference": [
+        "scripts/final_3m_runtime_safety_wrapper.py",
+        "evidence/validation/2026-09-18/fresh_3m2/harness/pass1_cli.json"
+      ],
+      "id": "LIM-011",
+      "status": "OPEN",
+      "title": "Runtime safety is cooperative instrumentation",
+      "verification_state": "VERIFIED_LOCALLY"
+    }
+  ],
+  "release_id": "DQAEIP-FINAL-CLEAN-REBUILD-RELEASE-2026-09-18",
+  "release_identity": {
+    "product_name": "Data Quality Assurance & Evidence Integrity Platform",
+    "release_date": "2026-09-18",
+    "release_id": "DQAEIP-FINAL-CLEAN-REBUILD-RELEASE-2026-09-18",
+    "supersedes": null
+  },
+  "report": "DQAEIP FINAL PORTABLE EVIDENCE RELEASE \u2014 FINAL_RESULTS (rebuilt exclusively from verified authoritative evidence)",
+  "rule_identity": {
+    "frozen": true,
+    "policy": "exactly 8 V1 rules, versions 1.0.0; any change is an unauthorized rule change (STOP)",
+    "rule_count": 8,
+    "rule_ids": [
+      "email_blank",
+      "email_syntax_failure",
+      "first_name_cleaning_candidate",
+      "geography_mismatch_candidate",
+      "last_name_cleaning_candidate",
+      "name_cleaning_candidate",
+      "proposed_email_export_eligible",
+      "zip_state_assessable"
+    ]
+  },
+  "runs": {
+    "run_1": {
+      "comparisons": 25600000,
+      "input_sha256": null,
+      "mismatches": 0,
+      "output_sha256": null,
+      "rows": 3200000
+    },
+    "run_2": {
+      "comparisons": 25600000,
+      "input_sha256": null,
+      "mismatches": 0,
+      "output_sha256": null,
+      "rows": 3200000
+    }
+  },
+  "schema": {
+    "name": "dqaeip.final_results",
+    "version": "2.0"
+  },
+  "schema_identity": {
+    "contract": "33 in / 8 flags / 41 out",
+    "flag_count": 8,
+    "input_column_count": 33,
+    "output_column_count": 41
+  },
+  "test_identity": {
+    "collected": 1053,
+    "duration_seconds": null,
+    "errors": 0,
+    "failed": 0,
+    "passed": 1044,
+    "skipped": 9
+  },
+  "verification": {
+    "byte_identical_outputs": true,
+    "determinism": "PASS (byte-identical across two complete runs)",
+    "evidence_mutation_matrix_outcome": "PASS",
+    "run_pair_checks_failed": 0,
+    "run_pair_checks_total": 95,
+    "run_pair_verdict": "PASS",
+    "runtime_safety": "PASS",
+    "runtime_safety_note": "PASS only when runtime-verified via audit-hook instrumentation on BOTH official runs; cooperative Python instrumentation, NOT kernel-level sandboxing",
+    "sp1_isolation": "PASS",
+    "test_all_green": true,
+    "test_source": "evidence/rebuild_verification/test_summary.json"
+  },
+  "verification_state": "PASS_WITH_DOCUMENTED_LIMITATIONS"
+}

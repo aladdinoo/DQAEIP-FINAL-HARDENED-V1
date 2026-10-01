@@ -1,0 +1,11 @@
+{
+  "purpose": "rule-matrix derivation pre-flight (fresh engine exec)",
+  "rows": 1000,
+  "seed": 20260918,
+  "input_csv": "data/generated/fresh_3m2_smoke/preflight_1k_seed_20260918.csv",
+  "input_sha256": "e6a43ea13369626399d412636c6111e84207130486d8e173c3b8f349140b495c",
+  "output_csv": "data/generated/fresh_3m2_smoke/preflight_1k_out.csv",
+  "cli_returncode": 0,
+  "generated_rule_matrix": "evidence/final_execution/rule_matrix.json",
+  "v1_rules_sha256": "daef1ded54c7d3c79898a1ba253be2acd5b6120e18b16b09009fdd7be9fc2276"
+}

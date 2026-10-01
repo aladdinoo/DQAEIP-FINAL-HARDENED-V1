@@ -1,0 +1,14 @@
+[
+  {
+    "severity": "warning",
+    "alert_type": "sla_breach",
+    "message": "SLA breach for accuracy: score=0.86, threshold=0.9",
+    "run_id": "q3_run_a",
+    "timestamp": "2026-09-19T02:23:01.393725+00:00",
+    "details": {
+      "dimension": "accuracy",
+      "score": 0.86,
+      "threshold": 0.9
+    }
+  }
+]

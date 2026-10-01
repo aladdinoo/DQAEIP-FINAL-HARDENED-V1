@@ -1,0 +1,13 @@
+{
+  "pass": "pass1",
+  "path": "data/generated/fresh_3m2/consumer_3m_seed_20260918_pass1.csv",
+  "rows": 3200000,
+  "seed": 20260918,
+  "columns": 33,
+  "size_bytes": 783406620,
+  "sha256": "59624a53c72f908f1dde673ceecf59e0662ae721bb8f9af7e165acba5318d153",
+  "generation_seconds": 85.241,
+  "generated_utc": "2026-09-18T22:56:59Z",
+  "script_sha256": "0ef7c10c14a1df317c23cb0dfc73b3a60c2257c064b35080d694e5fe8bc50d84",
+  "git_commit": "babb4ca085c573f39a89b48f70431b5d34334efb"
+}

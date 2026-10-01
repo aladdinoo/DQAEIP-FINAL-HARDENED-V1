@@ -1,0 +1,194 @@
+{
+  "report": "DQAEIP Run 1 + Run 2 pair verification",
+  "generated_utc": "2026-09-18T23:38:58Z",
+  "verification_mode": "fail-closed; every invariant derived from actual artifacts",
+  "git_head_at_verification": "dafea63318b468929c7606681867ecf79f711094",
+  "checker_script_sha256_actual": "d216dbca0ad0132e199394cd4e416528712979e9684585d8dc7d111604afb969",
+  "evidence_dir": "evidence/validation/2026-09-18/fresh_3m2/harness",
+  "run_1": {
+    "pass": "pass1",
+    "result_file_exists": true,
+    "result_json_parseable": true,
+    "run_pass_marker": "pass1",
+    "git_commit": "babb4ca085c573f39a89b48f70431b5d34334efb",
+    "checker_script_sha256": "0ef7c10c14a1df317c23cb0dfc73b3a60c2257c064b35080d694e5fe8bc50d84",
+    "checker_version": "2.0.0 (fail-closed final-verdict hardening, Dave review)",
+    "cli_returncode": 0,
+    "input_sha256": "59624a53c72f908f1dde673ceecf59e0662ae721bb8f9af7e165acba5318d153",
+    "input_rows": 3200000,
+    "input_columns": 33,
+    "output_sha256": "b72adc235160a86e0b99a08f988dd0bb5f2cff82bbe5b5d28ea07c5a5719329a",
+    "output_rows": 3200000,
+    "output_columns": 41,
+    "verification_statuses": {
+      "schema_status": "PASS",
+      "row_count_status": "PASS",
+      "column_count_status": "PASS",
+      "column_order_status": "PASS",
+      "row_identity_status": "PASS",
+      "row_ordering_status": "PASS",
+      "source_values_preserved_status": "PASS",
+      "output_shape_status": "PASS",
+      "flag_domain_status": "PASS"
+    },
+    "oracle_comparisons": 25600000,
+    "oracle_mismatches": 0,
+    "flag_totals": {
+      "first_name_cleaning_candidate": 506073,
+      "last_name_cleaning_candidate": 255805,
+      "name_cleaning_candidate": 3619,
+      "email_blank": 256310,
+      "email_syntax_failure": 288653,
+      "proposed_email_export_eligible": 2655037,
+      "zip_state_assessable": 2954329,
+      "geography_mismatch_candidate": 424088
+    },
+    "sp1_frozen_status": "PASS",
+    "runtime_safety_status": "PASS",
+    "stage_runtimes": {
+      "generation_seconds": 85.241,
+      "validation_seconds": 161.319,
+      "verify_oracle_seconds": 68.063
+    },
+    "engine_peak_rss_mb": 2365.64,
+    "manifest_run_id": "final_3m_pass1",
+    "manifest_type": "success",
+    "schema_hash": "47813dbee947c871971a4841bd4aef325530a6886b96a6f77bba6af86c5031fa",
+    "rule_hashes": {
+      "first_name_cleaning_candidate": "575e9d4588334d364bdcfae6ca3c44b9bf35120a371b78fecfde8ee19373ca69",
+      "last_name_cleaning_candidate": "c553b7f4484b54135e2b84c6b37a84b15df328544256577984e61f6ede900122",
+      "name_cleaning_candidate": "3a128ec85d196cd3a42720347ba8790f5fbf0f386bd617e4ec508ee050b661c8",
+      "email_blank": "157ccc2127334bac03534f80868a3d7ea3bc8df77c132e8c237874321164f2bc",
+      "email_syntax_failure": "5caaba13a73c90c5aac7a52cf756713c8ecc3dc73d30c2949206efa8d2b712f7",
+      "proposed_email_export_eligible": "6732e6bfed6fae3c23439f0e69b5c39e2843a5b74f2f8f3fdaf6ad5d536da98c",
+      "zip_state_assessable": "e7730c1b848f32790a56bfb79f7ef5dbc8c88b3919f9903421adc7dde5393885",
+      "geography_mismatch_candidate": "7967b59ef7a14b83284a12eb298d63c6140e0837bfafdf3ac4e758baf74c4e93"
+    },
+    "manifest_flag_counts": {
+      "first_name_cleaning_candidate": 506073,
+      "last_name_cleaning_candidate": 255805,
+      "name_cleaning_candidate": 3619,
+      "email_blank": 256310,
+      "email_syntax_failure": 288653,
+      "proposed_email_export_eligible": 2655037,
+      "zip_state_assessable": 2954329,
+      "geography_mismatch_candidate": 424088
+    },
+    "evidence_root_verified": true,
+    "evidence_root_detail": {
+      "root_sha256": "0e866532f6989c129b0ef8cefd7b05613637644caf1a711b3b011bdbd6d74fba",
+      "present_artifacts": [
+        "manifest.json",
+        "lineage.json",
+        "audit.json",
+        "monitoring.json",
+        "alerts.json"
+      ],
+      "absent_artifacts": [
+        "output.csv"
+      ]
+    }
+  },
+  "run_2": {
+    "pass": "pass2",
+    "result_file_exists": true,
+    "result_json_parseable": true,
+    "run_pass_marker": "pass2",
+    "git_commit": "babb4ca085c573f39a89b48f70431b5d34334efb",
+    "checker_script_sha256": "0ef7c10c14a1df317c23cb0dfc73b3a60c2257c064b35080d694e5fe8bc50d84",
+    "checker_version": "2.0.0 (fail-closed final-verdict hardening, Dave review)",
+    "cli_returncode": 0,
+    "input_sha256": "59624a53c72f908f1dde673ceecf59e0662ae721bb8f9af7e165acba5318d153",
+    "input_rows": 3200000,
+    "input_columns": 33,
+    "output_sha256": "b72adc235160a86e0b99a08f988dd0bb5f2cff82bbe5b5d28ea07c5a5719329a",
+    "output_rows": 3200000,
+    "output_columns": 41,
+    "verification_statuses": {
+      "schema_status": "PASS",
+      "row_count_status": "PASS",
+      "column_count_status": "PASS",
+      "column_order_status": "PASS",
+      "row_identity_status": "PASS",
+      "row_ordering_status": "PASS",
+      "source_values_preserved_status": "PASS",
+      "output_shape_status": "PASS",
+      "flag_domain_status": "PASS"
+    },
+    "oracle_comparisons": 25600000,
+    "oracle_mismatches": 0,
+    "flag_totals": {
+      "first_name_cleaning_candidate": 506073,
+      "last_name_cleaning_candidate": 255805,
+      "name_cleaning_candidate": 3619,
+      "email_blank": 256310,
+      "email_syntax_failure": 288653,
+      "proposed_email_export_eligible": 2655037,
+      "zip_state_assessable": 2954329,
+      "geography_mismatch_candidate": 424088
+    },
+    "sp1_frozen_status": "PASS",
+    "runtime_safety_status": "PASS",
+    "stage_runtimes": {
+      "generation_seconds": 84.869,
+      "validation_seconds": 156.901,
+      "verify_oracle_seconds": 68.614
+    },
+    "engine_peak_rss_mb": 2365.7,
+    "manifest_run_id": "final_3m_pass2",
+    "manifest_type": "success",
+    "schema_hash": "47813dbee947c871971a4841bd4aef325530a6886b96a6f77bba6af86c5031fa",
+    "rule_hashes": {
+      "first_name_cleaning_candidate": "575e9d4588334d364bdcfae6ca3c44b9bf35120a371b78fecfde8ee19373ca69",
+      "last_name_cleaning_candidate": "c553b7f4484b54135e2b84c6b37a84b15df328544256577984e61f6ede900122",
+      "name_cleaning_candidate": "3a128ec85d196cd3a42720347ba8790f5fbf0f386bd617e4ec508ee050b661c8",
+      "email_blank": "157ccc2127334bac03534f80868a3d7ea3bc8df77c132e8c237874321164f2bc",
+      "email_syntax_failure": "5caaba13a73c90c5aac7a52cf756713c8ecc3dc73d30c2949206efa8d2b712f7",
+      "proposed_email_export_eligible": "6732e6bfed6fae3c23439f0e69b5c39e2843a5b74f2f8f3fdaf6ad5d536da98c",
+      "zip_state_assessable": "e7730c1b848f32790a56bfb79f7ef5dbc8c88b3919f9903421adc7dde5393885",
+      "geography_mismatch_candidate": "7967b59ef7a14b83284a12eb298d63c6140e0837bfafdf3ac4e758baf74c4e93"
+    },
+    "manifest_flag_counts": {
+      "first_name_cleaning_candidate": 506073,
+      "last_name_cleaning_candidate": 255805,
+      "name_cleaning_candidate": 3619,
+      "email_blank": 256310,
+      "email_syntax_failure": 288653,
+      "proposed_email_export_eligible": 2655037,
+      "zip_state_assessable": 2954329,
+      "geography_mismatch_candidate": 424088
+    },
+    "output_csv_absent_by_design": true,
+    "evidence_root_verified": true,
+    "evidence_root_detail": {
+      "root_sha256": "106672ee79d7ae71ba23d24693a9117444e8e1dde33c4d26bf8ce362eabb96df",
+      "present_artifacts": [
+        "manifest.json",
+        "lineage.json",
+        "audit.json",
+        "monitoring.json",
+        "alerts.json"
+      ],
+      "absent_artifacts": [
+        "output.csv"
+      ]
+    }
+  },
+  "cross_run_invariants": {
+    "run_ids_distinct": true,
+    "input_sha256": true,
+    "output_sha256": true,
+    "schema_hash": true,
+    "rule_hashes": true,
+    "checker_script_sha256": true,
+    "git_commit": true,
+    "both_mismatches_zero": true,
+    "flag_totals_equal": true,
+    "input_rows_equal": true
+  },
+  "checks_total": 95,
+  "checks_failed": 0,
+  "failures": [],
+  "verdict": "PASS",
+  "verdict_note": "PASS only when every required per-run and cross-run invariant is established from actual evidence artifacts; any missing or contradictory evidence is NOT_VERIFIED and fails this gate"
+}

@@ -1,0 +1,81 @@
+{
+  "generated_utc": "2026-09-19T13:28:40Z",
+  "layer_bundle_version": "1.0.0",
+  "layers": [
+    {
+      "implemented": true,
+      "layer_id": "A",
+      "layer_name": "Input Contract Firewall",
+      "module": "data_quality_platform.hardening.input_contract",
+      "path": "data_quality_platform/hardening/input_contract.py",
+      "sha256": "a57fd322327c2ee6102abd42a106802f34d55452287c1c0641995c2c466b0c91"
+    },
+    {
+      "implemented": true,
+      "layer_id": "B",
+      "layer_name": "Execution Authorization Gate",
+      "module": "data_quality_platform.hardening.authorization",
+      "path": "data_quality_platform/hardening/authorization.py",
+      "sha256": "2b59b0679c6e5b46fe918dbace911b77c231ca3c6c0a7ec076f4044ca3ee6433"
+    },
+    {
+      "implemented": true,
+      "layer_id": "C",
+      "layer_name": "Idempotency / Duplicate-Run Protection",
+      "module": "data_quality_platform.hardening.idempotency",
+      "path": "data_quality_platform/hardening/idempotency.py",
+      "sha256": "82abc88758c6e0f2b814c373347cf9ecd14a4bffcf6361968aa556b5e1b8e405"
+    },
+    {
+      "implemented": true,
+      "layer_id": "D",
+      "layer_name": "Atomic Output Commit",
+      "module": "data_quality_platform.hardening.atomic_commit",
+      "path": "data_quality_platform/hardening/atomic_commit.py",
+      "sha256": "64b63b7277bcb32b44b43f02ecd1243942d86657fac5b2c9198fca1708b37dd8"
+    },
+    {
+      "design_decision": "CONTRACT_ONLY: resume refused by design; fresh full re-run is the safe path (see limitations)",
+      "implemented": false,
+      "layer_id": "E",
+      "layer_name": "Checkpoint / Safe-Resume Contract",
+      "module": "data_quality_platform.hardening.checkpoint_contract",
+      "path": "data_quality_platform/hardening/checkpoint_contract.py",
+      "sha256": "cb8567e356708d32204057cf511ba516b6122955b808a267fb94f101a8d6e39c"
+    },
+    {
+      "implemented": true,
+      "layer_id": "F",
+      "layer_name": "Schema Evolution Guard",
+      "module": "data_quality_platform.hardening.schema_guard",
+      "path": "data_quality_platform/hardening/schema_guard.py",
+      "sha256": "2500156838eb1e27906cbf8672f6726603feee6a79b27d2cda85f04b97a70142"
+    },
+    {
+      "implemented": true,
+      "layer_id": "G",
+      "layer_name": "Reference-Data Versioning",
+      "module": "data_quality_platform.hardening.reference_data",
+      "path": "data_quality_platform/hardening/reference_data.py",
+      "sha256": "7723c29d2bd9501b6d603c34bae003c420f95b3b11b4f41b1b766f4addeb1bdf"
+    },
+    {
+      "implemented": true,
+      "layer_id": "H",
+      "layer_name": "Resource / Execution Guard",
+      "module": "data_quality_platform.hardening.resource_guard",
+      "path": "data_quality_platform/hardening/resource_guard.py",
+      "sha256": "54859056801326b5061f2c9a8d7d687cc3ea9b705450f8db2a139ecc96673627"
+    },
+    {
+      "implemented": true,
+      "layer_id": "ORCH",
+      "layer_name": "Hardened Execution Orchestrator",
+      "module": "data_quality_platform.hardening.pipeline",
+      "path": "data_quality_platform/hardening/pipeline.py",
+      "sha256": "b0fc2a36141d7454b04e7ab019469f1d08188a26b69de10fa394bc98a5e95b46"
+    }
+  ],
+  "package_init_sha256": "66762f4f57cf52957e1bb2ac998f59b2b44c37b5748870ac7f02dfa4a680e72a",
+  "schema": "dqaeip.hardening.layer.registry/1.0"
+}

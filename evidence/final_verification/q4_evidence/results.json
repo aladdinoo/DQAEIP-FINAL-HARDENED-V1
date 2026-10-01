@@ -1,0 +1,108 @@
+{
+  "manifest.json": {
+    "exists": true,
+    "content_valid": true,
+    "keys": {
+      "manifest_type": "str",
+      "run_id": "str",
+      "timestamp": "str",
+      "source_row_count": "int",
+      "output_row_count": "int",
+      "schema_hash": "str",
+      "rule_hashes": "dict",
+      "sql_hashes": "dict",
+      "flag_counts": "dict",
+      "reconciliation": "dict",
+      "safety_invariants": "list",
+      "lineage_reference": "str",
+      "monitoring_score": "float",
+      "monitoring_scores": "dict",
+      "sla_results": "dict",
+      "generated_files": "dict",
+      "file_hashes": "dict"
+    }
+  },
+  "audit.json": {
+    "exists": true,
+    "content_valid": true,
+    "keys": {
+      "run_id": "str",
+      "events": "list"
+    }
+  },
+  "lineage.json": {
+    "exists": true,
+    "content_valid": true,
+    "keys": {
+      "run_id": "str",
+      "run_start_time": "str",
+      "run_records": "list",
+      "row_records": "list",
+      "total_row_records": "int",
+      "truncated": "bool"
+    }
+  },
+  "monitoring.json": {
+    "exists": true,
+    "content_valid": true,
+    "keys": {
+      "scores": "dict",
+      "thresholds": "dict",
+      "sla_results": "dict",
+      "overall_score": "float",
+      "sla_passed": "bool"
+    }
+  },
+  "alerts.json": {
+    "exists": true,
+    "content_valid": true,
+    "keys": {
+      "type": "list",
+      "length": 4
+    }
+  },
+  "manifest_details": {
+    "schema_hash_present": true,
+    "rule_hashes_present": true,
+    "output_hash_present": true,
+    "row_counts_match": true,
+    "flag_counts_present": true,
+    "reconciliation_present": true
+  },
+  "audit_details": {
+    "event_types_found": [
+      "lineage_recorded",
+      "monitoring_completed",
+      "output_written",
+      "reconciliation_completed",
+      "rules_loaded",
+      "run_started",
+      "schema_validated",
+      "validation_completed",
+      "validation_started"
+    ],
+    "event_count": 9,
+    "run_id_present": true,
+    "timestamps_present": true
+  },
+  "lineage_details": {
+    "run_id_present": true,
+    "row_identity_no_pii": true,
+    "total_row_records": 223
+  },
+  "monitoring_details": {
+    "dimension_count": 8,
+    "thresholds_present": true,
+    "sla_result_present": true,
+    "scores": {
+      "completeness": 0.9,
+      "validity": 0.85,
+      "consistency": 0.95,
+      "uniqueness": 1.0,
+      "accuracy": 0.85,
+      "freshness": 1.0,
+      "geography_quality": 0.95,
+      "email_quality": 0.85
+    }
+  }
+}

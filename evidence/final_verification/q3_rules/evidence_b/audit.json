@@ -1,0 +1,109 @@
+{
+  "run_id": "q3_run_b",
+  "events": [
+    {
+      "event_type": "run_started",
+      "run_id": "q3_run_b",
+      "timestamp": "2026-09-19T02:23:01.419444+00:00",
+      "details": {
+        "source": "/home/z/my-project/dqvp-work/repo/evidence/final_verification/q3_rules/determinism_input.csv"
+      }
+    },
+    {
+      "event_type": "schema_validated",
+      "run_id": "q3_run_b",
+      "timestamp": "2026-09-19T02:23:01.419598+00:00",
+      "details": {
+        "schema_hash": "",
+        "errors": []
+      }
+    },
+    {
+      "event_type": "rules_loaded",
+      "run_id": "q3_run_b",
+      "timestamp": "2026-09-19T02:23:01.419711+00:00",
+      "details": {
+        "rule_count": 8,
+        "registry_hash": "2b9130fdcc656d32191b122e6ea863c3dc228f20679827ba7dde7f4749273192"
+      }
+    },
+    {
+      "event_type": "validation_started",
+      "run_id": "q3_run_b",
+      "timestamp": "2026-09-19T02:23:01.419722+00:00",
+      "details": {
+        "row_count": 0
+      }
+    },
+    {
+      "event_type": "reconciliation_completed",
+      "run_id": "q3_run_b",
+      "timestamp": "2026-09-19T02:23:01.423181+00:00",
+      "details": {
+        "passed": true,
+        "details": {
+          "passed": true,
+          "errors": [],
+          "input_row_count": 50,
+          "output_row_count": 50,
+          "flag_counts": {
+            "first_name_cleaning_candidate": 7,
+            "last_name_cleaning_candidate": 0,
+            "name_cleaning_candidate": 0,
+            "email_blank": 0,
+            "email_syntax_failure": 0,
+            "proposed_email_export_eligible": 50,
+            "zip_state_assessable": 50,
+            "geography_mismatch_candidate": 0
+          }
+        }
+      }
+    },
+    {
+      "event_type": "monitoring_completed",
+      "run_id": "q3_run_b",
+      "timestamp": "2026-09-19T02:23:01.423219+00:00",
+      "details": {
+        "overall_score": 0.9825,
+        "sla_passed": false
+      }
+    },
+    {
+      "event_type": "validation_completed",
+      "run_id": "q3_run_b",
+      "timestamp": "2026-09-19T02:23:01.423249+00:00",
+      "details": {
+        "input_rows": 50,
+        "output_rows": 50,
+        "flag_counts": {
+          "first_name_cleaning_candidate": 7,
+          "last_name_cleaning_candidate": 0,
+          "name_cleaning_candidate": 0,
+          "email_blank": 0,
+          "email_syntax_failure": 0,
+          "proposed_email_export_eligible": 50,
+          "zip_state_assessable": 50,
+          "geography_mismatch_candidate": 0
+        },
+        "duration_seconds": 0.003134012222290039
+      }
+    },
+    {
+      "event_type": "output_written",
+      "run_id": "q3_run_b",
+      "timestamp": "2026-09-19T02:23:01.423253+00:00",
+      "details": {
+        "path": "/home/z/my-project/dqvp-work/repo/evidence/final_verification/q3_rules/run_b.csv",
+        "rows": 50
+      }
+    },
+    {
+      "event_type": "lineage_recorded",
+      "run_id": "q3_run_b",
+      "timestamp": "2026-09-19T02:23:01.424641+00:00",
+      "details": {
+        "path": "/home/z/my-project/dqvp-work/repo/evidence/final_verification/q3_rules/evidence_b/lineage.json"
+      }
+    }
+  ]
+}

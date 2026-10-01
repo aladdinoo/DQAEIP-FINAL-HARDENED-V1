@@ -1,0 +1,216 @@
+{
+  "artifact_count": 29,
+  "artifacts": [
+    {
+      "artifact_role": "release documentation",
+      "evidence_classification": "RELEASE_DOCUMENT",
+      "path": "README.md",
+      "sha256": "74d26192f0920ff5ed7269d795e69768ba716644ebda34fa5196bf4bebfdf6a3",
+      "size_bytes": 24357
+    },
+    {
+      "artifact_role": "release changelog",
+      "evidence_classification": "RELEASE_DOCUMENT",
+      "path": "RELEASE_NOTES.md",
+      "sha256": "dc7bbef115b8262ba3cf46a6598733c897e60f145da0e2a4acfb153b0c93537f",
+      "size_bytes": 8757
+    },
+    {
+      "artifact_role": "rebuilt canonical release result",
+      "evidence_classification": "RELEASE_DOCUMENT_DERIVED_FROM_EVIDENCE",
+      "path": "FINAL_RESULTS.json",
+      "sha256": "98de015ff2f963a188bad6dcf57f1c9061aa8dc21391302639b13019edd449c4",
+      "size_bytes": 30760
+    },
+    {
+      "artifact_role": "compatibility mirror of FINAL_RESULTS",
+      "evidence_classification": "RELEASE_DOCUMENT_DERIVED_FROM_EVIDENCE",
+      "path": "final_result.json",
+      "sha256": "98de015ff2f963a188bad6dcf57f1c9061aa8dc21391302639b13019edd449c4",
+      "size_bytes": 30760
+    },
+    {
+      "artifact_role": "release identity + artifact hashes",
+      "evidence_classification": "RELEASE_DOCUMENT_DERIVED_FROM_EVIDENCE",
+      "path": "release_manifest.json",
+      "sha256": "b9a1fb47eec9d395e4500b4ed4099634a7b4674519238826e25482d8207b8907",
+      "size_bytes": 3355
+    },
+    {
+      "artifact_role": "canonical evidence model",
+      "evidence_classification": "AUTHORITATIVE_EVIDENCE",
+      "path": "evidence/release/release_evidence_model.json",
+      "sha256": "f9c3bf9ef6fafe2be6791341f45fc30942764bc1afb572daf392de52efa2d67f",
+      "size_bytes": 6730
+    },
+    {
+      "artifact_role": "PII-free release fingerprint",
+      "evidence_classification": "AUTHORITATIVE_EVIDENCE",
+      "path": "evidence/release/golden_release_snapshot.json",
+      "sha256": "3bfad9c2f37e15b8778fb0e2d9ca46327e93256009f8d9d0df85228cad544bad",
+      "size_bytes": 2878
+    },
+    {
+      "artifact_role": "cross-document consistency check",
+      "evidence_classification": "AUTHORITATIVE_EVIDENCE",
+      "path": "evidence/release/consistency_matrix.json",
+      "sha256": "a3487b7708e6deff157f5da4188add33306766789f8253a619d0bc77bc2dd41e",
+      "size_bytes": 3947
+    },
+    {
+      "artifact_role": "negative release gate evidence",
+      "evidence_classification": "AUTHORITATIVE_EVIDENCE",
+      "path": "evidence/release/assurance_mutation.json",
+      "sha256": "795b722ae1b84755f049e33a75499f863471f25a20d3743114b9fd94bcc945f0",
+      "size_bytes": 8284
+    },
+    {
+      "artifact_role": "claim-level provenance",
+      "evidence_classification": "AUTHORITATIVE_EVIDENCE",
+      "path": "evidence/release/claim_provenance.json",
+      "sha256": "459a2cdee2fc423112684882fbfa88eb4ab5f37a6cf75a6c230e53bf25b01fb1",
+      "size_bytes": 12883
+    },
+    {
+      "artifact_role": "structured limitation registry",
+      "evidence_classification": "AUTHORITATIVE_EVIDENCE",
+      "path": "evidence/release/limitation_registry.json",
+      "sha256": "ad6130b2e72168922c88270ba732ba1043df613005dc66eedd92aaaf427c3d33",
+      "size_bytes": 11666
+    },
+    {
+      "artifact_role": "reproducibility capsule",
+      "evidence_classification": "AUTHORITATIVE_EVIDENCE",
+      "path": "evidence/release/reproducibility_manifest.json",
+      "sha256": "2c3e34b7132a3f4fdaae90f233f883410e5c0a6803587a9970d87ae8e2fd340e",
+      "size_bytes": 2609
+    },
+    {
+      "artifact_role": "deterministic composite reproducibility fingerprint",
+      "evidence_classification": "AUTHORITATIVE_EVIDENCE_DERIVED",
+      "path": "evidence/release/reproducibility_fingerprint.json",
+      "sha256": "4fa332e6b57da5526ed1ba3ee65c9e85e8067c5c63f1de3c20ebfc12c4c4183d",
+      "size_bytes": 2683
+    },
+    {
+      "artifact_role": "Frozen V1 rule impact graph (metadata only)",
+      "evidence_classification": "AUTHORITATIVE_EVIDENCE_DERIVED",
+      "path": "evidence/release/rule_impact_graph.json",
+      "sha256": "d06e483c673066534492a3fa2c0afe2c06cd95209d5d9042447e8c2783878791",
+      "size_bytes": 21020
+    },
+    {
+      "artifact_role": "dedicated contradiction checker report",
+      "evidence_classification": "AUTHORITATIVE_EVIDENCE_DERIVED",
+      "path": "evidence/release/contradiction_check.json",
+      "sha256": "0c214a700ab57fb22a1ab9b006bddd83e654ca37d53c742cad603b8d74d0d561",
+      "size_bytes": 2955
+    },
+    {
+      "artifact_role": "evidence quarantine screening report",
+      "evidence_classification": "AUTHORITATIVE_EVIDENCE_DERIVED",
+      "path": "evidence/release/evidence_quarantine_screen.json",
+      "sha256": "009809e3a4e643ffee8e00d8ad4a045ff680776770770703c60f0caf7d070a3d",
+      "size_bytes": 9959
+    },
+    {
+      "artifact_role": "five-dimension observability status record",
+      "evidence_classification": "AUTHORITATIVE_EVIDENCE_DERIVED",
+      "path": "evidence/release/observability_status.json",
+      "sha256": "e743ca1f66e602cf308d919d6c3132339697e782fe14bb70a500d09eed6e4633",
+      "size_bytes": 5332
+    },
+    {
+      "artifact_role": "README/evidence automated consistency check",
+      "evidence_classification": "AUTHORITATIVE_EVIDENCE_DERIVED",
+      "path": "evidence/release/readme_consistency.json",
+      "sha256": "81adcbd4aebac87d644fb8f2cc088b87a543857062ceb2d26ec7b137e0803c6e",
+      "size_bytes": 3582
+    },
+    {
+      "artifact_role": "unified 21-gate fail-closed release gate result",
+      "evidence_classification": "AUTHORITATIVE_EVIDENCE",
+      "path": "evidence/release_gate/final_release_gate.json",
+      "sha256": "6be0031fdf94d27177e534bd655c20d277ae70ccd4442aedfd51b75e35c7ce12",
+      "size_bytes": 20804
+    },
+    {
+      "artifact_role": "machine-parsed full-suite test identity",
+      "evidence_classification": "AUTHORITATIVE_EVIDENCE",
+      "path": "evidence/rebuild_verification/test_summary.json",
+      "sha256": "8971adc4916ba210f8f1b49358846b6308bda5e35033422574037c42e7808ee9",
+      "size_bytes": 2779
+    },
+    {
+      "artifact_role": "Run 1 + Run 2 pair verification (95/95)",
+      "evidence_classification": "AUTHORITATIVE_EVIDENCE",
+      "path": "evidence/rebuild_verification/run_pair_verification.json",
+      "sha256": "7112257f799c8473feb8622f6e1cee445b893914be67753becba999b69745379",
+      "size_bytes": 8027
+    },
+    {
+      "artifact_role": "business mutation testing evidence (17/17)",
+      "evidence_classification": "AUTHORITATIVE_EVIDENCE",
+      "path": "evidence/mutation_testing/mutation_results.json",
+      "sha256": "3c324830bcc0406614d577e207b8d6ef8c424ed9139c962347370b40f4926a15",
+      "size_bytes": 8684
+    },
+    {
+      "artifact_role": "measured performance ladder",
+      "evidence_classification": "AUTHORITATIVE_EVIDENCE",
+      "path": "evidence/dqvp_performance/performance_results.json",
+      "sha256": "01c005bffc2229822e987c2df30f819f60254c560ca3f69c045a966608352b0d",
+      "size_bytes": 3293
+    },
+    {
+      "artifact_role": "frozen V1 rule source",
+      "evidence_classification": "FROZEN_PRODUCTION_SOURCE",
+      "path": "data_quality_platform/rules/v1_rules.py",
+      "sha256": "daef1ded54c7d3c79898a1ba253be2acd5b6120e18b16b09009fdd7be9fc2276",
+      "size_bytes": 9906
+    },
+    {
+      "artifact_role": "frozen contract source",
+      "evidence_classification": "FROZEN_PRODUCTION_SOURCE",
+      "path": "data_quality_platform/contracts.py",
+      "sha256": "b3eea54f0c5142e654cd531c4bb994669a170a7b37060b6bb7d45c4c46fb5d18",
+      "size_bytes": 3254
+    },
+    {
+      "artifact_role": "frozen validation engine",
+      "evidence_classification": "FROZEN_PRODUCTION_SOURCE",
+      "path": "data_quality_platform/validation/engine.py",
+      "sha256": "eb2af61813227cfb4b8ce4f92a71e61be8747bd39df77284a7e556fb6ebf3fc8",
+      "size_bytes": 17851
+    },
+    {
+      "artifact_role": "final verification report (regenerated at terminal state)",
+      "evidence_classification": "AUTHORITATIVE_EVIDENCE_DERIVED",
+      "path": "evidence/release/final_verification.json",
+      "sha256": "6359c02ab6e0707b48aa172db1420e3ddc302d552596d54dffe5aaa265217fbd",
+      "size_bytes": 3670
+    },
+    {
+      "artifact_role": "security/privacy release report (zip section post-ZIP)",
+      "evidence_classification": "AUTHORITATIVE_EVIDENCE_DERIVED",
+      "path": "evidence/release/security_release_report.json",
+      "sha256": "ad43f8a1ba22e874998399d44e257e7de4e699501b4ab371d37afa1197d0167f",
+      "size_bytes": 7709
+    },
+    {
+      "artifact_role": "hardened release ZIP record (non-self-referential; repo-side)",
+      "evidence_classification": "AUTHORITATIVE_EVIDENCE",
+      "path": "evidence/FINAL_HARDENED_RELEASE_2026-09-19/release_manifest/zip_record.json",
+      "sha256": "b0e37f0879cd78e2d3c0f04fe7dfefcf5af72f56593a1677f710f2681af26e12",
+      "size_bytes": 2177
+    }
+  ],
+  "generated_utc": "2026-09-19T13:44:34Z",
+  "hash_policy": "SHA-256 recomputed from file bytes at build time; verification recomputes and fails closed on drift",
+  "manifest_phase": "terminal (post-ZIP; all artifacts hashed)",
+  "manifest_sha256_self": "3b0d725b2b50f4e30a26952b3018106c12bac0f4207a89966cdddca88a199098",
+  "path_policy": "repository-relative paths only; any machine-local path aborts the build",
+  "pending_artifacts": [],
+  "report": "DQAEIP release artifact manifest",
+  "schema_version": "1.0.0"
+}

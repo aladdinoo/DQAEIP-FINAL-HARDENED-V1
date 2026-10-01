@@ -1,0 +1,36 @@
+{
+  "test_counts_by_category": {
+    "unit": 542,
+    "contract": 22,
+    "golden": 124,
+    "integration": 24,
+    "runtime": 10,
+    "security": 6
+  },
+  "total_collected": 728,
+  "pytest_passed": 1044,
+  "pytest_skipped": 9,
+  "pytest_failed": 0,
+  "pytest_warnings": 0,
+  "golden_csv_cases": 50,
+  "audit_event_types": 12,
+  "audit_event_names": [
+    "run_started",
+    "schema_validated",
+    "rules_loaded",
+    "validation_started",
+    "validation_completed",
+    "output_written",
+    "manifest_written",
+    "run_failed",
+    "reconciliation_completed",
+    "monitoring_completed",
+    "lineage_recorded",
+    "access_logged"
+  ],
+  "cli_uses_csv_flag": true,
+  "monitoring_consistency_geo_overlap": true,
+  "zip_prefix_lengths": [
+    2
+  ]
+}

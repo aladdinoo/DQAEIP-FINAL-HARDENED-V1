@@ -1,0 +1,76 @@
+{
+  "cli": {
+    "canonical_command": "<<venv-python>>bin/python3 -m runner.cli validate --csv data/generated/fresh_3m2/consumer_3m_seed_20260918_pass1.csv --output data/generated/fresh_3m2/consumer_3m_seed_20260918_pass1_out.csv --run-id final_3m_pass1 --evidence-dir evidence/validation/2026-09-18/fresh_3m2/harness/pass1_engine",
+    "command": "<<venv-python>>bin/python3 scripts/final_3m_runtime_safety_wrapper.py --events-out evidence/validation/2026-09-18/fresh_3m2/harness/pass1_runtime_safety_events.json --max-events 50000 -- validate --csv data/generated/fresh_3m2/consumer_3m_seed_20260918_pass1.csv --output data/generated/fresh_3m2/consumer_3m_seed_20260918_pass1_out.csv --run-id final_3m_pass1 --evidence-dir evidence/validation/2026-09-18/fresh_3m2/harness/pass1_engine",
+    "duration_seconds": 161.319,
+    "returncode": 0,
+    "stderr": "<frozen runpy>:128: RuntimeWarning: 'runner.cli' found in sys.modules after import of package 'runner', but prior to execution of 'runner.cli'; this may result in unpredictable behaviour\n",
+    "stdout": "Input contract: PASS (3200000 rows, 33 columns, id scan 500000 rows)\n[ALERT WARNING] sla_breach: SLA breach for completeness: score=0.8603, threshold=0.95\n[ALERT WARNING] sla_breach: SLA breach for validity: score=0.8297, threshold=0.95\n[ALERT WARNING] sla_breach: SLA breach for consistency: score=0.8565, threshold=0.9\n[ALERT WARNING] sla_breach: SLA breach for accuracy: score=0.7619, threshold=0.9\n[ALERT WARNING] sla_breach: SLA breach for geography_quality: score=0.8565, threshold=0.9\n[ALERT WARNING] sla_breach: SLA breach for email_quality: score=0.8297, threshold=0.95\nValidation PASSED: 3200000 rows in, 3200000 rows out\n  Run ID: final_3m_pass1\n  Duration: 119.14s\n  Monitoring score: 0.8743\n  SLA passed: False\n  Reconciliation passed: True\n  Evidence: evidence/validation/2026-09-18/fresh_3m2/harness/pass1_engine\n    first_name_cleaning_candidate: 506073\n    last_name_cleaning_candidate: 255805\n    name_cleaning_candidate: 3619\n    email_blank: 256310\n    email_syntax_failure: 288653\n    proposed_email_export_eligible: 2655037\n    zip_state_assessable: 2954329\n    geography_mismatch_candidate: 424088\n",
+    "wrapper_script": "scripts/final_3m_runtime_safety_wrapper.py"
+  },
+  "engine_evidence_dir": "evidence/validation/2026-09-18/fresh_3m2/harness/pass1_engine",
+  "engine_peak_rss_mb": 2365.64,
+  "git_commit": "babb4ca085c573f39a89b48f70431b5d34334efb",
+  "input_sha256_after_validation": "59624a53c72f908f1dde673ceecf59e0662ae721bb8f9af7e165acba5318d153",
+  "output_path": "data/generated/fresh_3m2/consumer_3m_seed_20260918_pass1_out.csv",
+  "output_sha256": "b72adc235160a86e0b99a08f988dd0bb5f2cff82bbe5b5d28ea07c5a5719329a",
+  "output_size_bytes": 834606817,
+  "pass": "pass1",
+  "portable_derivation": {
+    "derived_from": "evidence/validation/2026-09-18/fresh_3m2/harness/pass1_cli.json",
+    "environment_placeholders": {
+      "<<venv-python>>": "uv-managed cpython interpreter home (authoring machine; see source recorded above)"
+    },
+    "normalization": "repository-local absolute paths rewritten to repo-relative POSIX paths; historical interpreter-home prefixes rewritten to explicit placeholder tokens; all other values unchanged",
+    "normalized_field_paths": [
+      "$.cli.command",
+      "$.cli.canonical_command"
+    ],
+    "normalized_string_count": 2,
+    "policy": "A \u2014 original preserved byte-exact; this file is a clearly-marked normalized derived representation",
+    "portability": "PORTABLE",
+    "source_sha256": "ad756deb31f1df0f5036e64a32cb8fe8cf9a1b27ca23b146a8961004a58b495d"
+  },
+  "runtime_safety": {
+    "ctypes_event_count": 0,
+    "engine_exit_code": 0,
+    "event_count": 143,
+    "events_file_sha256": "2fc822ed2ed6cac744ac33bd6e47b6181c1d813064e274ccbd94d97851c0e301",
+    "events_path": "evidence/validation/2026-09-18/fresh_3m2/harness/pass1_runtime_safety_events.json",
+    "exec_event_count": 0,
+    "measurement": "CPython audit-hook runtime instrumentation of the production CLI subprocess (scripts/final_3m_runtime_safety_wrapper.py); cooperative observation, not a kernel sandbox",
+    "mutation_count": 6,
+    "network_event_count": 0,
+    "out_of_repo_mutation_count": 0,
+    "reason": "runtime-verified: 0 socket events, 0 process-exec events, 6 filesystem mutations all within the repository root",
+    "sample_mutations": [
+      {
+        "event": "open(write)",
+        "path": "data/generated/fresh_3m2/consumer_3m_seed_20260918_pass1_out.csv"
+      },
+      {
+        "event": "open(write)",
+        "path": "evidence/validation/2026-09-18/fresh_3m2/harness/pass1_engine/lineage.json"
+      },
+      {
+        "event": "open(write)",
+        "path": "evidence/validation/2026-09-18/fresh_3m2/harness/pass1_engine/audit.json"
+      },
+      {
+        "event": "open(write)",
+        "path": "evidence/validation/2026-09-18/fresh_3m2/harness/pass1_engine/monitoring.json"
+      },
+      {
+        "event": "open(write)",
+        "path": "evidence/validation/2026-09-18/fresh_3m2/harness/pass1_engine/alerts.json"
+      },
+      {
+        "event": "open(write)",
+        "path": "evidence/validation/2026-09-18/fresh_3m2/harness/pass1_engine/manifest.json"
+      }
+    ],
+    "status": "PASS"
+  },
+  "script_sha256": "0ef7c10c14a1df317c23cb0dfc73b3a60c2257c064b35080d694e5fe8bc50d84",
+  "validated_utc": "2026-09-18T22:59:48Z"
+}

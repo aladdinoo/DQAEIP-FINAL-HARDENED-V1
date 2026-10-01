@@ -1,0 +1,81 @@
+{
+  "tool": "scripts/dqvp_performance_certification.py",
+  "generated_utc": "2026-09-18T23:40:28Z",
+  "measurement_path": "production CLI subprocess (runner.cli validate, incl. preflight)",
+  "peak_rss_method": "resource.getrusage(RUSAGE_CHILDREN) max across benchmark children",
+  "results": [
+    {
+      "rows": 1000,
+      "columns_in": 33,
+      "columns_out": 41,
+      "seed": 20260915,
+      "input_sha256": "4a13dd1acecd8167df5136cfff72c84f46610a36dc2ea333d5824116bce0b888",
+      "input_size_bytes": 260213,
+      "generation_seconds": 0.025,
+      "cli_wall_seconds": 0.197,
+      "engine_reported_seconds": 0.033,
+      "preflight_included_in_wall": true,
+      "rows_per_second_engine": 30516.0,
+      "rows_per_second_wall": 5078.8,
+      "peak_rss_mb": 23.17,
+      "output_size_bytes": 276410,
+      "evidence_size_bytes": 268679
+    },
+    {
+      "rows": 10000,
+      "columns_in": 33,
+      "columns_out": 41,
+      "seed": 20260915,
+      "input_sha256": "d3e2e1ea109c8b7b425a88fe2bbc27e785399fa5cf2f80a7ce562bbc00e721a4",
+      "input_size_bytes": 2628557,
+      "generation_seconds": 0.245,
+      "cli_wall_seconds": 0.606,
+      "engine_reported_seconds": 0.331,
+      "preflight_included_in_wall": true,
+      "rows_per_second_engine": 30200.1,
+      "rows_per_second_wall": 16499.2,
+      "peak_rss_mb": 29.16,
+      "output_size_bytes": 2788754,
+      "evidence_size_bytes": 269767
+    },
+    {
+      "rows": 100000,
+      "columns_in": 33,
+      "columns_out": 41,
+      "seed": 20260915,
+      "input_sha256": "220d55af3feb27a68d97a440477718fdb2f22e4a0874f96e59bdf1f871c65ab3",
+      "input_size_bytes": 26529746,
+      "generation_seconds": 2.437,
+      "cli_wall_seconds": 4.809,
+      "engine_reported_seconds": 3.455,
+      "preflight_included_in_wall": true,
+      "rows_per_second_engine": 28945.3,
+      "rows_per_second_wall": 20795.6,
+      "peak_rss_mb": 96.68,
+      "output_size_bytes": 28129943,
+      "evidence_size_bytes": 270838
+    },
+    {
+      "rows": 1000000,
+      "columns_in": 33,
+      "columns_out": 41,
+      "seed": 20260915,
+      "input_sha256": "f8fb5ac1ff73a9440d5638288d9173dfc75826171f60a1d6ffb40e80c416f90d",
+      "input_size_bytes": 267966930,
+      "generation_seconds": 24.392,
+      "cli_wall_seconds": 48.634,
+      "engine_reported_seconds": 36.089,
+      "preflight_included_in_wall": true,
+      "rows_per_second_engine": 27709.4,
+      "rows_per_second_wall": 20561.6,
+      "peak_rss_mb": 750.41,
+      "output_size_bytes": 283967127,
+      "evidence_size_bytes": 271910
+    }
+  ],
+  "memory_risk_statement": "In-process memory is O(N) in row count \u2014 NOT O(1): the engine accumulates the unique-id set and lineage row records while streaming; the persisted lineage file caps at 1000 row_records. Measured peak RSS growth across scales: {\"1000\": 23.17, \"10000\": 29.16, \"100000\": 96.68, \"1000000\": 750.41}. No linear-scalability or constant-memory claim is made beyond these measured points.",
+  "notes": [
+    "engine_reported_seconds is the engine's own duration (audit validation_completed event); cli_wall_seconds includes interpreter startup + preflight firewall + engine + evidence persistence",
+    "the 3M scale is certified separately by the final 3M validation harness with two complete runs"
+  ]
+}

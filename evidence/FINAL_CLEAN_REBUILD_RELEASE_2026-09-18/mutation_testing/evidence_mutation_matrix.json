@@ -1,0 +1,126 @@
+{
+  "generated_utc": "2026-09-19T02:20:25Z",
+  "mutation_count": 16,
+  "mutations": [
+    {
+      "detail": "claim re-derivation mismatch",
+      "fixture_isolated": true,
+      "mutation_id": "m01_combined_47m",
+      "outcome": "FAIL",
+      "rejected": true
+    },
+    {
+      "detail": "mismatch anchor violated",
+      "fixture_isolated": true,
+      "mutation_id": "m02_one_mismatch",
+      "outcome": "FAIL",
+      "rejected": true
+    },
+    {
+      "detail": "run count is not exactly 2",
+      "fixture_isolated": true,
+      "mutation_id": "m03_run3",
+      "outcome": "FAIL",
+      "rejected": true
+    },
+    {
+      "detail": "frozen V1 identity changed",
+      "fixture_isolated": true,
+      "mutation_id": "m04_frozen_v1_sha",
+      "outcome": "FAIL",
+      "rejected": true
+    },
+    {
+      "detail": "checker identity changed",
+      "fixture_isolated": true,
+      "mutation_id": "m05_checker_sha",
+      "outcome": "FAIL",
+      "rejected": true
+    },
+    {
+      "detail": "input SHA anchor violated",
+      "fixture_isolated": true,
+      "mutation_id": "m06_input_sha",
+      "outcome": "FAIL",
+      "rejected": true
+    },
+    {
+      "detail": "output SHA anchor violated",
+      "fixture_isolated": true,
+      "mutation_id": "m07_output_sha",
+      "outcome": "FAIL",
+      "rejected": true
+    },
+    {
+      "detail": "verdict is machine-derived; recorded upgrade rejected",
+      "fixture_isolated": true,
+      "mutation_id": "m08_verdict_tamper",
+      "outcome": "FAIL",
+      "rejected": true
+    },
+    {
+      "detail": "limitation count changed",
+      "fixture_isolated": true,
+      "mutation_id": "m09_limitation_removed",
+      "outcome": "FAIL",
+      "rejected": true
+    },
+    {
+      "detail": "dependency hash moved -> STALE",
+      "fixture_isolated": true,
+      "mutation_id": "m10_dependency_modified",
+      "outcome": "NOT_VERIFIED",
+      "rejected": true
+    },
+    {
+      "detail": "manifest hash mismatch",
+      "fixture_isolated": true,
+      "mutation_id": "m11_manifest_modified",
+      "outcome": "FAIL",
+      "rejected": true
+    },
+    {
+      "detail": "release identity inconsistent across artifacts",
+      "fixture_isolated": true,
+      "mutation_id": "m12_release_identity",
+      "outcome": "FAIL",
+      "rejected": true
+    },
+    {
+      "detail": "stale dependency state detected",
+      "fixture_isolated": true,
+      "mutation_id": "m13_stale_evidence",
+      "outcome": "NOT_VERIFIED",
+      "rejected": true
+    },
+    {
+      "detail": "machine-local path injected into portable evidence",
+      "fixture_isolated": true,
+      "mutation_id": "m14_absolute_path_injection",
+      "outcome": "FAIL",
+      "rejected": true
+    },
+    {
+      "detail": "required evidence missing",
+      "fixture_isolated": true,
+      "mutation_id": "m15_missing_evidence",
+      "outcome": "FAIL",
+      "rejected": true
+    },
+    {
+      "detail": "malformed JSON rejected",
+      "fixture_isolated": true,
+      "mutation_id": "m16_malformed_json",
+      "outcome": "FAIL",
+      "rejected": true
+    }
+  ],
+  "outcome": "PASS",
+  "policy": "PASS is NEVER produced from tampered evidence; every mutation must yield FAIL or NOT_VERIFIED; fixtures are isolated temporary trees \u2014 authoritative evidence is never touched",
+  "release_id": "DQAEIP-FINAL-CLEAN-REBUILD-RELEASE-2026-09-18",
+  "report": "DQAEIP evidence mutation matrix (Phase 8)",
+  "schema": {
+    "name": "dqaeip.evidence_mutation_matrix",
+    "version": "1.0"
+  }
+}

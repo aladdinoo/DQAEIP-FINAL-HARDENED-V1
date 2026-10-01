@@ -1,0 +1,146 @@
+{
+  "repository_name": "data-quality-platformV2",
+  "remote_origin": "https://github.com/aladdinoo/data-quality-platformV2.git",
+  "branch": "main",
+  "head_sha": "a5ec759f069c2c8aeea72b147437f1b8b22756d9",
+  "parent_sha": "2a8b7e12914d64ec3fc151d8b97710697c06e22e",
+  "review_baseline_commit": "fb049eed60f3419706d56dd34a04b21062386585",
+  "r3_commit": "2a8b7e12914d64ec3fc151d8b97710697c06e22e",
+  "r3_status": "IMPLEMENTED / TESTED / VERIFIED (repo-local, user-authorized); commit 2a8b7e1 independently reviewed: APPROVED WITH NOTES",
+  "review_followup": {
+    "scope": "F1 legacy threshold-key compatibility; F2 null handling consistency; N1 explicit --config missing-file safety; tests; README; packaging",
+    "f1": "FIXED — quality_thresholds accepts BOTH short (completeness) and legacy full field-name (completeness_threshold) styles; legacy fallback restricted to real threshold fields; unknown keys still warn",
+    "f2": "FIXED — null values for recognized fields warn and keep the existing/default value, consistently across quality_thresholds, evidence, security, monitoring, clickhouse sections and legacy top-level field keys",
+    "n1": "FIXED — explicit --config path that does not exist fails with exit code 2 and a clear stderr message; deterministic default path (<project_root>/configs/quality.yaml, CWD-independent) keeps safe missing-file -> defaults fallback",
+    "not_implemented": "R2 was NOT implemented (nor R1/R4-R14). SP1 NOT activated. E1 NOT implemented/executed. V1 geography UNCHANGED. Canonical reference NOT fabricated."
+  },
+  "commit_lineage": "4065714 (initial) -> beefcaa8 (rev-1) -> 30c161d (rev-2) -> fb049ee (rev-3) -> bc81ee0 (README forensic rebuild) -> 2a8b7e1 (R3 config wiring, independently reviewed APPROVED WITH NOTES) -> a5ec759 (config follow-up F1/F2/N1 + README + packaging)",
+  "review_date": "2026-09-06",
+  "review_method": "read-only forensic inspection of actual tree; R3 single-commit strict review with empirical parent-vs-current probes; follow-up implemented with focused tests; full test execution; evidence SHA before/after comparison; zero production contact",
+  "test_results": {
+    "collected": 327,
+    "passed": 318,
+    "failed": 0,
+    "errors": 0,
+    "skipped": 9,
+    "skip_breakdown": "7x DL001-DL015 authoritative table absent (company-gated); 1x Docker/ClickHouse unavailable; 1x Airflow not installed",
+    "classification": {
+      "v1_shared": 216,
+      "sp1_isolated": 63,
+      "r3_r31_config": 27,
+      "q21_aggregator": 21,
+      "note": "216 = 207 passed + 9 skipped; 207+63+27+21 = 318 passed; verified per-area this round"
+    },
+    "reverified_for_final_packaging": true,
+    "rerun_after_documentation_changes": true,
+    "cli_verify": "20 PASS / 2 PARTIAL (Q18, Q21) / 0 FAIL"
+  },
+  "GEO_status": {
+    "v1_production_active": "STATE_ZIP_PREFIXES 51-entry 2-digit prefix map; ZipStateAssessable + GeographyMismatchCandidate registered (v1.0.0); UNCHANGED by R3 follow-up; known defects pinned (8 missing territory codes, DC duplicate, 13 ambiguous prefixes, GC011/GC037 false positives, no ZIP format validation)",
+    "sp1_successor": "IMPLEMENTED pure semantics (geography/canonical.py + references.py), 62-code allowlist, two-reference model, per-field field_present (county/country refused), 63 tests, 7/7 authoritative acceptance cases + independent oracle 7/7; NOT registered, NOT production active",
+    "two_definitions_disagree": "VERIFIED LIVE: WA/99501 (V1 false-negative), GU/96910 (V1 false-excludes), CA/00USA (V1 false-positive)",
+    "canonical_reference": "BLOCKED: tips_data.tblZipStCtyIB unreachable; no snapshot exists; none fabricated; sql/003 is schema-only and does not define the two-reference tables",
+    "dl001_dl015": "PARTIALLY AVAILABLE / NOT FULLY VERIFIED: tests/golden/dl_geography_cases.csv ABSENT; 7 skip-gated tests preserved"
+  },
+  "PS1_status": "LITERAL PS1 DOES NOT EXIST (0 occurrences, no *.ps1 files). SP1 exists in 15 files (transposition); see GEO_status.sp1_successor. No PS1/SP1 artifact performs ClickHouse I/O or writes.",
+  "E1_status": "DOCUMENTATION-ONLY (8 files). NO implementation/file/code path exists. Never executed, NOT authorized, zero production writes. Safety preconditions documented and untouched. Lowercase 'e1' hit = unrelated email_id fixture value.",
+  "clickhouse": {
+    "mutation_count": 0,
+    "production_data_modified": false,
+    "interactions_this_delivery": [
+      "NONE — no ClickHouse connection attempted during the R3 follow-up delivery"
+    ],
+    "repo_touchpoints": "no client code in app (storage = 2-line comment); env-indirected config; local docker-compose; schema-only DDL sql/001-005; skip-gated runtime test (local ping+DDL class)",
+    "mutation_statements_in_repo": "0 INSERT/UPDATE/DELETE/ALTER/DROP/TRUNCATE in *.py and *.sql (re-swept on the follow-up diff)"
+  },
+  "production_activation_status": "SP1: NOT ACTIVATED / NOT AUTHORIZED. E1: NOT EXECUTED / NOT AUTHORIZED (no path exists). Push to origin: NOT PERFORMED (not authorized). Nothing production-active exists in this tree.",
+  "protected_surfaces_confirmation": {
+    "v1_geography_changed": false,
+    "state_zip_prefixes_changed": false,
+    "sp1_activated": false,
+    "sp1_semantics_changed": false,
+    "e1_implemented_or_executed": false,
+    "canonical_data_fabricated": false,
+    "dl001_dl015_authoritative_table_supplied": false,
+    "clickhouse_mutations": 0,
+    "historical_evidence_drift": 0,
+    "golden_fixtures_changed": false,
+    "git_history_rewritten": false,
+    "pushed": false
+  },
+  "zip_filename": "data-quality-platformV2-FINAL-Data-Quality-V1-a5ec759.zip",
+  "zip_sha256": "2a85f2bea58bdcfc3c49533d6318aa885fb7c66ba4e39752cf0ecb5f56a0622e",
+  "zip_size_bytes": 767789,
+  "zip_file_count": 203,
+  "zip_verification": "FINAL package (round 2026-09-07): zipfile opens OK, CRC integrity OK; 203 file entries (202 tracked at HEAD + FINAL_IMPROVEMENT_REPORT.md; 265 total incl. 62 directory entries); forbidden entries (.git/__pycache__/.pyc/.env/.env*/pytest cache) NONE; README.md inside ZIP with exact H1 '# Data Quality V1' (byte-identical to working tree, differs from HEAD's old README); FINAL_IMPROVEMENT_REPORT.md inside ZIP with correct H1; ZIP path set == tracked files + report (no missing/extra); all 203 entries byte-identical to intended tree; secret scan on added documents: 0 hits",
+  "known_limitations": [
+    "Canonical geography validation BLOCKED (source table unreachable, no approved snapshot; pure-semantics verification only)",
+    "DL001-DL015 NOT FULLY VERIFIED (authoritative table not supplied; no case fabricated)",
+    "SP1 not activated in production (V1 prefix-map semantics remain the production behavior, defects pinned)",
+    "721M-row scale NOT verified (1K/10K/100K only)",
+    "Airflow runtime DESIGNED_BUT_NOT_RUNTIME_VERIFIED (not installed)",
+    "SQL/Python parity BLOCKED (ClickHouse unreachable; templates never rendered)",
+    "Production IAM absent (Q18 PARTIAL)",
+    "Historical evidence manifest carries stale rule-hash snapshot (preserved per no-rewrite policy)",
+    "SP1 contract document SHA is company-provided; physical file never locally hashable (disclosed)",
+    "Threshold fields have no DQ_* env override (platform DQ_* contract covers clickhouse_*/slack/smtp only); documented in README CONFIGURATION"
+  ],
+  "prior_deliveries_preserved": [
+    "data-quality-platformV2-review-blocked-beefcaa838eff49e64ab3175db9216cd3630986c.zip (rev-1)",
+    "data-quality-platformV2-ready-with-limitations-30c161dcabab579cff80567d4a4463dfdd08d1b9.zip (rev-2)",
+    "data-quality-platformV2-ready-with-limitations-fb049eed60f3419706d56dd34a04b21062386585.zip (rev-3)",
+    "data-quality-platformV2-reviewed-bc81ee019f24bbb3f37356b9e930e9be08dfe660.zip (forensic re-review)",
+    "data-quality-platformV2-reviewed-a5ec759f069c2c8aeea72b147437f1b8b22756d9.zip (config follow-up checkpoint, SHA ce98e502...)"
+  ],
+  "reproduction_commands": [
+    "cd data-quality-platformV2",
+    "python -m pytest -q                               # 318 passed, 9 skipped (327 collected)",
+    "python -m pytest -rs                              # skip reasons (7 DL + 1 ClickHouse + 1 Airflow)",
+    "python -m pytest tests/unit/test_config_wiring.py -q      # 27 config-wiring tests",
+    "python -m pytest tests/unit/test_sp1_geography_contract.py -q  # 63 SP1 tests",
+    "python -m pytest tests/unit/test_q21_scope_aggregation.py -q   # 21 Q21 tests",
+    "python -m runner.cli verify --evidence-dir <scratch-dir>   # 20 PASS / 2 PARTIAL / 0 FAIL",
+    "unzip data-quality-platformV2-FINAL-Data-Quality-V1-a5ec759.zip -d <dir> && cd <dir>/data-quality-platformV2 && python -m pytest -q",
+    "sha256sum data-quality-platformV2-FINAL-Data-Quality-V1-a5ec759.zip  # 2a85f2bea58bdcfc3c49533d6318aa885fb7c66ba4e39752cf0ecb5f56a0622e"
+  ],
+  "package_type": "FINAL",
+  "zip_total_entries_including_directories": 265,
+  "readme": {
+    "exact_h1": "# Data Quality V1",
+    "title_verified": true,
+    "line_count": 1174,
+    "describes": "Data Quality V1 (repository data-quality-platformV2 contains the V1 implementation); NOT the older 'Data Quality Platform V2 — Forensic Re-Review README'",
+    "state": "rebuilt from the verified repository state in the final round (header, §19 classification cross-check, §33/§35 improvement-report rows, §36 final checkpoint); packaged copy byte-identical to working tree (75,043 bytes vs HEAD's old README 38,591 bytes)"
+  },
+  "git_status": "intentional changes only: README.md modified + FINAL_IMPROVEMENT_REPORT.md added (untracked); HEAD == a5ec759f069c2c8aeea72b147437f1b8b22756d9; working tree otherwise clean",
+  "push_status": "NOT PERFORMED — origin/main == 4065714c3c810c503020d60a8f726a485a5e09ac (initial commit); 6 local commits unpushed; push not authorized",
+  "final_packaging_safety": {
+    "clickhouse_modified": "NO",
+    "clickhouse_mutations": 0,
+    "sp1_active": "NO",
+    "e1_implemented": "NO",
+    "e1_executed": "NO",
+    "e1_authorized": "NO",
+    "r2_implemented": "NO",
+    "commit_created": "NO",
+    "push_occurred": "NO",
+    "golden_fixtures_modified": "NO",
+    "historical_evidence_modified": "NO",
+    "company_data_fabricated": "NO (DL001-DL015 and canonical reference remain absent, never reconstructed)",
+    "v1_implementation_modified": "NO (only README.md + FINAL_IMPROVEMENT_REPORT.md)",
+    "older_zips_overwritten": "NO (5 historical delivery ZIPs preserved; prior FINAL revision SHA recorded above)"
+  },
+  "package_round": "final forensic re-test + README rebuild + improvement report (2026-09-07)",
+  "zip_previous_revision_sha256": "dd3e1352561e6c52d273ab6827870285b95a102ac38d8d16b3530d4cd0a038da",
+  "improvement_report": {
+    "filename": "FINAL_IMPROVEMENT_REPORT.md",
+    "exact_h1": "# FINAL IMPROVEMENT REPORT — Data Quality V1",
+    "line_count": 509,
+    "structure": "A implemented+verified (6) / B tested-not-active (1) / C prepared-company-gated (2) / D remaining limitations (9) / E recommended future (6) / F company authorization items (7); every item carries ID/Area/Before/Improvement/Current status/Evidence/Tests/Production status/Remaining dependency/Recommendation"
+  },
+  "baseline": {
+    "head": "a5ec759f069c2c8aeea72b147437f1b8b22756d9",
+    "parent": "2a8b7e12914d64ec3fc151d8b97710697c06e22e",
+    "origin_main": "4065714c3c810c503020d60a8f726a485a5e09ac"
+  }
+}

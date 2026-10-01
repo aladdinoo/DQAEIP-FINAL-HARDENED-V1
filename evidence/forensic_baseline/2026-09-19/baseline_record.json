@@ -1,0 +1,251 @@
+{
+  "report": "DQAEIP forensic baseline audit (Phase 0, read-only)",
+  "audit_utc": "2026-09-19T08:12:16Z",
+  "audit_mode": "READ_ONLY",
+  "release_context": {
+    "baseline_certified_release": "DQAEIP-FINAL-CLEAN-REBUILD-RELEASE-2026-09-18",
+    "baseline_release_date": "2026-09-18",
+    "new_hardened_release_planned": "DQAEIP-FINAL-HARDENED-RELEASE-2026-09-19",
+    "policy": "baseline preserved byte-for-byte; new release adds additive hardening only; Frozen V1 immutable"
+  },
+  "git": {
+    "dqaeip_repo": {
+      "repo": "/home/z/my-project/dqvp-work/repo",
+      "head": "fb4df927baf9e43735ac8facde7c5ecbd2a5f187",
+      "branch": "main",
+      "tree_hash": "295b7138dacb26f7b7e368101950174e163e0376",
+      "modified_count": 195,
+      "untracked_count": 1,
+      "staged_count": 0,
+      "status_porcelain_sha256": "c094e66bd0ab05370fa2450b6213937f9a0ed3fe72622c1a8c999dcc3dce128c",
+      "last_5_commits": [
+        "fb4df92 CLEAN-ROOM RELEASE ZIP 4ecbfc16 (460 members, 2,001,588 bytes)",
+        "66e457b CLEAN-ROOM: dependency graph + claim graph + freshness CURRENT at final state; full re-pin",
+        "b863203 CLEAN-ROOM RELEASE ZIP 6a438339 (460 members, 2,001,669 bytes)",
+        "b10c364 CLEAN-ROOM ABSOLUTE TERMINAL: full re-pin (lock/snapshot/monitor/registry/freshness) at final-verification-PASS state",
+        "785d42b CLEAN-ROOM TERMINAL: FINAL VERIFICATION PASS (21/21 checks) + post-verification manifest re-finalize (documented discipline)"
+      ]
+    },
+    "outer_workspace": {
+      "repo": "/home/z/my-project",
+      "head": "b9a3e6f6259ab3e0fb17e2394a20295d5809a429",
+      "branch": "main",
+      "tree_hash": "b63987094f10f55418016086cc949d512747ddbc",
+      "modified_count": 6,
+      "untracked_count": 0,
+      "staged_count": 0,
+      "status_porcelain_sha256": "16540ff57ff7cb706746bbaa11e0b1daec5b5809aaac41a83b6de89b2e4bddbd",
+      "last_5_commits": [
+        "b9a3e6f cf0cdbdc-8b3a-480e-9b11-a593f1e91753",
+        "078f670 b18ae00d-4b5e-4eef-84eb-6f480ea3ab94",
+        "378a681 8c8fdae2-72b4-4dc7-81bf-2ac7d7843cbc",
+        "658625a e5bccf98-8188-4809-8624-2030f06d24fd",
+        "ef01207 23535cf8-fe9f-4bbb-b5bf-b4e18f61d659"
+      ]
+    }
+  },
+  "certified_release_zip": {
+    "path": "/home/z/my-project/download/DQAEIP-FINAL-CLEAN-REBUILD-RELEASE-2026-09-18.zip",
+    "exists": true,
+    "sha256": "4ecbfc16da7ddaa1c830d5963f2eefba3236e3ce07fb1b1857bd07d63020cea5",
+    "size_bytes": 2001588,
+    "member_count": 460,
+    "sidecar_exists": true,
+    "sidecar_expected_sha256": "4ecbfc16da7ddaa1c830d5963f2eefba3236e3ce07fb1b1857bd07d63020cea5",
+    "sidecar_matches_actual": true
+  },
+  "certified_validation": {
+    "source": "evidence/validation/2026-09-18/fresh_3m2/harness/FINAL_RESULTS.json",
+    "readable": true,
+    "final_status": "PASS",
+    "rows": 3200000,
+    "runs": 2,
+    "input_sha256": "59624a53c72f908f1dde673ceecf59e0662ae721bb8f9af7e165acba5318d153",
+    "output_sha256": "b72adc235160a86e0b99a08f988dd0bb5f2cff82bbe5b5d28ea07c5a5719329a",
+    "run_1": {
+      "status": "PASS",
+      "oracle_comparisons": 25600000,
+      "oracle_mismatches": 0
+    },
+    "run_2": {
+      "status": "PASS",
+      "oracle_comparisons": 25600000,
+      "oracle_mismatches": 0
+    },
+    "expected_input_sha256": "59624a53c72f908f1dde673ceecf59e0662ae721bb8f9af7e165acba5318d153",
+    "expected_output_sha256": "b72adc235160a86e0b99a08f988dd0bb5f2cff82bbe5b5d28ea07c5a5719329a",
+    "input_sha256_matches_declared": true,
+    "output_sha256_matches_declared": true,
+    "combined_comparisons": 51200000
+  },
+  "frozen_v1": {
+    "source": "data_quality_platform/rules/v1_rules.py",
+    "exists": true,
+    "sha256": "daef1ded54c7d3c79898a1ba253be2acd5b6120e18b16b09009fdd7be9fc2276",
+    "size_bytes": 9906,
+    "matches_expected_sha256": true
+  },
+  "pinned_rule_matrix": {
+    "source": "evidence/final_execution/rule_matrix.json",
+    "readable": true,
+    "rule_count": 8,
+    "rule_names_match_frozen_eight": true,
+    "frozen_v1_source_sha256_in_matrix": "daef1ded54c7d3c79898a1ba253be2acd5b6120e18b16b09009fdd7be9fc2276",
+    "rules": {
+      "first_name_cleaning_candidate": {
+        "implementation_hash_head": "575e9d4588334d36",
+        "rule_version": "1.0.0"
+      },
+      "last_name_cleaning_candidate": {
+        "implementation_hash_head": "c553b7f4484b5413",
+        "rule_version": "1.0.0"
+      },
+      "name_cleaning_candidate": {
+        "implementation_hash_head": "3a128ec85d196cd3",
+        "rule_version": "1.0.0"
+      },
+      "email_blank": {
+        "implementation_hash_head": "157ccc2127334bac",
+        "rule_version": "1.0.0"
+      },
+      "email_syntax_failure": {
+        "implementation_hash_head": "5caaba13a73c90c5",
+        "rule_version": "1.0.0"
+      },
+      "proposed_email_export_eligible": {
+        "implementation_hash_head": "6732e6bfed6fae3c",
+        "rule_version": "1.0.0"
+      },
+      "zip_state_assessable": {
+        "implementation_hash_head": "e7730c1b848f3279",
+        "rule_version": "1.0.0"
+      },
+      "geography_mismatch_candidate": {
+        "implementation_hash_head": "7967b59ef7a14b83",
+        "rule_version": "1.0.0"
+      }
+    }
+  },
+  "current_release_documents": {
+    "README.md": {
+      "path": "README.md",
+      "exists": true,
+      "sha256": "87d7a36f75695f437e95398e0406f3ed6ef2f6de6e4788fed55aff6430905de9",
+      "size_bytes": 14995
+    },
+    "FINAL_RESULTS.json": {
+      "path": "FINAL_RESULTS.json",
+      "exists": true,
+      "sha256": "cbd25637a4b03cf57552e991b897321e50445394cf8734a0eb010e759c63de0b",
+      "size_bytes": 35549,
+      "readable": true,
+      "release_name": "DQAEIP-FINAL-CLEAN-REBUILD-RELEASE-2026-09-18",
+      "final_status": "PASS_WITH_DOCUMENTED_LIMITATIONS"
+    },
+    "release_manifest.json": {
+      "path": "release_manifest.json",
+      "exists": true,
+      "sha256": "aaa92fe736c87b93bc98bd40d7b2e4607c76f367cfa53f03675d28616e28a3ea",
+      "size_bytes": 3510,
+      "readable": true,
+      "release_name": "DQAEIP-FINAL-CLEAN-REBUILD-RELEASE-2026-09-18"
+    },
+    "RELEASE_NOTES.md": {
+      "path": "RELEASE_NOTES.md",
+      "exists": true,
+      "sha256": "81d8241e7522310569ece5c6ff5921f60b2ee9066f68c07a61fdbaa56ba31891",
+      "size_bytes": 14178
+    }
+  },
+  "evidence_namespaces": {
+    "FINAL_CLEAN_REBUILD_RELEASE_2026-09-18": {
+      "file_count": 46
+    },
+    "FINAL_PORTABLE_RELEASE_2026-09-18": {
+      "file_count": 1
+    },
+    "bench_quick": {
+      "file_count": 5
+    },
+    "dqvp_performance": {
+      "file_count": 2
+    },
+    "final_execution": {
+      "file_count": 1
+    },
+    "final_verification": {
+      "file_count": 79
+    },
+    "hardening_baseline": {
+      "file_count": 5
+    },
+    "mutation_testing": {
+      "file_count": 1
+    },
+    "q20_cli": {
+      "file_count": 5
+    },
+    "rebuild_baseline": {
+      "file_count": 4
+    },
+    "rebuild_verification": {
+      "file_count": 2
+    },
+    "release": {
+      "file_count": 16
+    },
+    "release_gate": {
+      "file_count": 54
+    },
+    "rt_1k": {
+      "file_count": 5
+    },
+    "test_q9": {
+      "file_count": 5
+    },
+    "validation": {
+      "file_count": 27
+    }
+  },
+  "test_summary": {
+    "source": "evidence/rebuild_verification/test_summary.json",
+    "readable": true,
+    "collected": 1053,
+    "passed": 1044,
+    "skipped": 9,
+    "failed": 0,
+    "all_green": true
+  },
+  "release_gate": {
+    "source": "evidence/release_gate/final_release_gate.json",
+    "readable": true,
+    "gate_count": 22,
+    "overall_verdict": "PASS"
+  },
+  "business_mutation": {
+    "source": "evidence/mutation_testing/mutation_results.json",
+    "readable": true,
+    "mutants_total": 17,
+    "detected": null,
+    "mutation_score": 1.0
+  },
+  "assurance_mutation": {
+    "source": "evidence/release/assurance_mutation.json",
+    "readable": true,
+    "scenarios_total": 14,
+    "all_rejected": null
+  },
+  "historical_reference_census": {
+    "note": "counts include legitimate historical labels; the new release must label any retained 2026-09-18 references as BASELINE_CERTIFIED (historical) and never as current",
+    "files_with_2026_09_18_occurrences": 7972,
+    "files_with_2026_09_15_occurrences": 183
+  },
+  "audit_checks": {
+    "baseline_zip_sidecar_verified": true,
+    "frozen_v1_sha_matches": true,
+    "certified_input_sha_matches": true,
+    "certified_output_sha_matches": true,
+    "rule_names_match_frozen_eight": true
+  },
+  "audit_verdict": "BASELINE_ESTABLISHED"
+}

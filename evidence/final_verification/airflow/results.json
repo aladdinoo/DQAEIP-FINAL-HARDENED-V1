@@ -1,0 +1,27 @@
+{
+  "static_verification": "PASS",
+  "runtime_verification": "SKIPPED",
+  "runtime_reason": "Airflow not installed in this environment",
+  "task_ids_found": [
+    "preflight",
+    "schema_validation",
+    "rule_validation",
+    "quality_validation",
+    "monitoring",
+    "evidence_finalization"
+  ],
+  "expected_tasks": [
+    "preflight",
+    "schema_validation",
+    "rule_validation",
+    "quality_validation",
+    "monitoring",
+    "evidence_finalization"
+  ],
+  "tasks_match": true,
+  "dependency_chain_correct": true,
+  "has_retries": true,
+  "has_timeout": true,
+  "has_schedule": true,
+  "syntax_valid": true
+}

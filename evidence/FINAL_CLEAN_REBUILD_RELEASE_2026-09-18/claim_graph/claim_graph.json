@@ -1,0 +1,1301 @@
+{
+  "claim_count": 25,
+  "claims": [
+    {
+      "_derivation_fn_name": "_d_run_count",
+      "claim_id": "official_run_count",
+      "derivation": "_d_run_count",
+      "evidence": [
+        "evidence:evidence/validation/2026-09-18/fresh_3m2/harness/FINAL_RESULTS.json",
+        "evidence:evidence/validation/2026-09-18/fresh_3m2/harness/pass1_result.json",
+        "evidence:evidence/validation/2026-09-18/fresh_3m2/harness/pass2_result.json"
+      ],
+      "node_id": "claim:official_run_count",
+      "text": "official run pair is exactly Run 1 + Run 2 (no Run 3)",
+      "type": "CLAIM",
+      "value": 2,
+      "verifiable": true
+    },
+    {
+      "_derivation_fn_name": "_d_rows",
+      "claim_id": "rows_per_run",
+      "derivation": "_d_rows",
+      "evidence": [
+        "evidence:evidence/validation/2026-09-18/fresh_3m2/harness/FINAL_RESULTS.json",
+        "evidence:evidence/validation/2026-09-18/fresh_3m2/harness/pass1_result.json",
+        "evidence:evidence/validation/2026-09-18/fresh_3m2/harness/pass2_result.json"
+      ],
+      "node_id": "claim:rows_per_run",
+      "text": "3,200,000 rows per official run",
+      "type": "CLAIM",
+      "value": 3200000,
+      "verifiable": true
+    },
+    {
+      "_derivation_fn_name": "_d_comp_per_run",
+      "claim_id": "comparisons_per_run",
+      "derivation": "_d_comp_per_run",
+      "evidence": [
+        "evidence:evidence/validation/2026-09-18/fresh_3m2/harness/FINAL_RESULTS.json",
+        "evidence:evidence/validation/2026-09-18/fresh_3m2/harness/pass1_result.json",
+        "evidence:evidence/validation/2026-09-18/fresh_3m2/harness/pass2_result.json"
+      ],
+      "node_id": "claim:comparisons_per_run",
+      "text": "25,600,000 oracle comparisons per run",
+      "type": "CLAIM",
+      "value": 25600000,
+      "verifiable": true
+    },
+    {
+      "_derivation_fn_name": "_d_comp_combined",
+      "claim_id": "combined_comparisons",
+      "derivation": "_d_comp_combined",
+      "evidence": [
+        "evidence:evidence/validation/2026-09-18/fresh_3m2/harness/FINAL_RESULTS.json",
+        "evidence:evidence/validation/2026-09-18/fresh_3m2/harness/pass1_result.json",
+        "evidence:evidence/validation/2026-09-18/fresh_3m2/harness/pass2_result.json"
+      ],
+      "node_id": "claim:combined_comparisons",
+      "text": "51,200,000 combined comparisons",
+      "type": "CLAIM",
+      "value": 51200000,
+      "verifiable": true
+    },
+    {
+      "_derivation_fn_name": "_d_mismatches",
+      "claim_id": "combined_mismatches",
+      "derivation": "_d_mismatches",
+      "evidence": [
+        "evidence:evidence/validation/2026-09-18/fresh_3m2/harness/FINAL_RESULTS.json",
+        "evidence:evidence/validation/2026-09-18/fresh_3m2/harness/pass1_result.json",
+        "evidence:evidence/validation/2026-09-18/fresh_3m2/harness/pass2_result.json"
+      ],
+      "node_id": "claim:combined_mismatches",
+      "text": "0 oracle mismatches",
+      "type": "CLAIM",
+      "value": 0,
+      "verifiable": true
+    },
+    {
+      "_derivation_fn_name": "_d_byte_identical",
+      "claim_id": "byte_identical_outputs",
+      "derivation": "_d_byte_identical",
+      "evidence": [
+        "evidence:evidence/validation/2026-09-18/fresh_3m2/harness/FINAL_RESULTS.json",
+        "evidence:evidence/validation/2026-09-18/fresh_3m2/harness/pass1_result.json",
+        "evidence:evidence/validation/2026-09-18/fresh_3m2/harness/pass2_result.json"
+      ],
+      "node_id": "claim:byte_identical_outputs",
+      "text": "byte-identical outputs across the official pair",
+      "type": "CLAIM",
+      "value": true,
+      "verifiable": true
+    },
+    {
+      "_derivation_fn_name": "_d_run_pair",
+      "claim_id": "run_pair_verification",
+      "derivation": "_d_run_pair",
+      "evidence": [
+        "evidence:evidence/rebuild_verification/run_pair_verification.json"
+      ],
+      "node_id": "claim:run_pair_verification",
+      "text": "run-pair verification checks (all passed)",
+      "type": "CLAIM",
+      "value": 95,
+      "verifiable": true
+    },
+    {
+      "_derivation_fn_name": "_d_test_counts",
+      "claim_id": "test_suite_counts",
+      "derivation": "_d_test_counts",
+      "evidence": [
+        "evidence:evidence/rebuild_verification/test_summary.json"
+      ],
+      "node_id": "claim:test_suite_counts",
+      "text": "full suite collected/passed/skipped (0 failed)",
+      "type": "CLAIM",
+      "value": {
+        "collected": 1053,
+        "passed": 1044,
+        "skipped": 9
+      },
+      "verifiable": true
+    },
+    {
+      "_derivation_fn_name": "_d_business_mutation",
+      "claim_id": "business_mutation_detected",
+      "derivation": "_d_business_mutation",
+      "evidence": [
+        "evidence:evidence/mutation_testing/mutation_results.json"
+      ],
+      "node_id": "claim:business_mutation_detected",
+      "text": "business-rule mutants detected (all killed)",
+      "type": "CLAIM",
+      "value": 17,
+      "verifiable": true
+    },
+    {
+      "_derivation_fn_name": "_d_assurance_mutation",
+      "claim_id": "false_pass_rejected",
+      "derivation": "_d_assurance_mutation",
+      "evidence": [
+        "evidence:evidence/release/assurance_mutation.json"
+      ],
+      "node_id": "claim:false_pass_rejected",
+      "text": "false-PASS scenarios rejected",
+      "type": "CLAIM",
+      "value": 14,
+      "verifiable": true
+    },
+    {
+      "_derivation_fn_name": "_d_tamper",
+      "claim_id": "tamper_detected",
+      "derivation": "_d_tamper",
+      "evidence": [
+        "evidence:evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/security/tamper_matrix.json"
+      ],
+      "node_id": "claim:tamper_detected",
+      "text": "tamper scenarios detected (fail-closed battery)",
+      "type": "CLAIM",
+      "value": 15,
+      "verifiable": true
+    },
+    {
+      "_derivation_fn_name": "_d_monitors",
+      "claim_id": "integrity_monitors",
+      "derivation": "_d_monitors",
+      "evidence": [
+        "evidence:evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/integrity/integrity_monitor_report.json"
+      ],
+      "node_id": "claim:integrity_monitors",
+      "text": "integrity monitors passing",
+      "type": "CLAIM",
+      "value": 20,
+      "verifiable": true
+    },
+    {
+      "_derivation_fn_name": "_d_gate",
+      "claim_id": "release_gate",
+      "derivation": "_d_gate",
+      "evidence": [
+        "evidence:evidence/release_gate/final_release_gate.json"
+      ],
+      "node_id": "claim:release_gate",
+      "text": "fail-closed release gates passing",
+      "type": "CLAIM",
+      "value": 22,
+      "verifiable": true
+    },
+    {
+      "_derivation_fn_name": "_d_v1_sha",
+      "claim_id": "frozen_v1_sha256",
+      "derivation": "_d_v1_sha",
+      "evidence": [
+        "evidence:data_quality_platform/rules/v1_rules.py"
+      ],
+      "node_id": "claim:frozen_v1_sha256",
+      "text": "Frozen V1 rule source SHA-256",
+      "type": "CLAIM",
+      "value": "daef1ded54c7d3c79898a1ba253be2acd5b6120e18b16b09009fdd7be9fc2276",
+      "verifiable": true
+    },
+    {
+      "_derivation_fn_name": "_d_input_sha",
+      "claim_id": "official_input_sha256",
+      "derivation": "_d_input_sha",
+      "evidence": [
+        "evidence:evidence/validation/2026-09-18/fresh_3m2/harness/FINAL_RESULTS.json"
+      ],
+      "node_id": "claim:official_input_sha256",
+      "text": "official 3M input SHA-256",
+      "type": "CLAIM",
+      "value": "59624a53c72f908f1dde673ceecf59e0662ae721bb8f9af7e165acba5318d153",
+      "verifiable": true
+    },
+    {
+      "_derivation_fn_name": "_d_output_sha",
+      "claim_id": "official_output_sha256",
+      "derivation": "_d_output_sha",
+      "evidence": [
+        "evidence:evidence/validation/2026-09-18/fresh_3m2/harness/FINAL_RESULTS.json"
+      ],
+      "node_id": "claim:official_output_sha256",
+      "text": "official 3M output SHA-256",
+      "type": "CLAIM",
+      "value": "b72adc235160a86e0b99a08f988dd0bb5f2cff82bbe5b5d28ea07c5a5719329a",
+      "verifiable": true
+    },
+    {
+      "_derivation_fn_name": "_d_checker_sha",
+      "claim_id": "checker_sha256",
+      "derivation": "_d_checker_sha",
+      "evidence": [
+        "evidence:scripts/final_3m_validation.py",
+        "evidence:evidence/validation/2026-09-18/fresh_3m2/harness/FINAL_RESULTS.json"
+      ],
+      "node_id": "claim:checker_sha256",
+      "text": "official checker SHA-256",
+      "type": "CLAIM",
+      "value": "0ef7c10c14a1df317c23cb0dfc73b3a60c2257c064b35080d694e5fe8bc50d84",
+      "verifiable": true
+    },
+    {
+      "_derivation_fn_name": "_d_rule_count",
+      "claim_id": "rule_count",
+      "derivation": "_d_rule_count",
+      "evidence": [
+        "evidence:data_quality_platform/rules/v1_rules.py"
+      ],
+      "node_id": "claim:rule_count",
+      "text": "Frozen V1 rule count",
+      "type": "CLAIM",
+      "value": 8,
+      "verifiable": true
+    },
+    {
+      "_derivation_fn_name": "_d_contract",
+      "claim_id": "contract",
+      "derivation": "_d_contract",
+      "evidence": [
+        "evidence:data_quality_platform/rules/v1_rules.py"
+      ],
+      "node_id": "claim:contract",
+      "text": "column contract 33 in / 8 flags / 41 out",
+      "type": "CLAIM",
+      "value": {
+        "flags": 8,
+        "input_columns": 33,
+        "output_columns": 41
+      },
+      "verifiable": true
+    },
+    {
+      "_derivation_fn_name": "_d_limitation_count",
+      "claim_id": "limitation_count",
+      "derivation": "_d_limitation_count",
+      "evidence": [
+        "evidence:evidence/release/limitation_registry.json"
+      ],
+      "node_id": "claim:limitation_count",
+      "text": "documented limitations",
+      "type": "CLAIM",
+      "value": 11,
+      "verifiable": true
+    },
+    {
+      "_derivation_fn_name": "_d_verdict",
+      "claim_id": "verification_state",
+      "derivation": "_d_verdict",
+      "evidence": [
+        "evidence:evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/final_results/FINAL_RESULTS_PORTABLE_2026-09-18.json"
+      ],
+      "node_id": "claim:verification_state",
+      "text": "release verification state",
+      "type": "CLAIM",
+      "value": "PASS_WITH_DOCUMENTED_LIMITATIONS",
+      "verifiable": true
+    },
+    {
+      "_derivation_fn_name": "_d_seed",
+      "claim_id": "seed",
+      "derivation": "_d_seed",
+      "evidence": [
+        "evidence:evidence/validation/2026-09-18/fresh_3m2/harness/FINAL_RESULTS.json"
+      ],
+      "node_id": "claim:seed",
+      "text": "synthetic dataset seed",
+      "type": "CLAIM",
+      "value": 20260918,
+      "verifiable": true
+    },
+    {
+      "_derivation_fn_name": "_d_no_run3",
+      "claim_id": "no_run3",
+      "derivation": "_d_no_run3",
+      "evidence": [
+        "evidence:evidence/validation/2026-09-18/fresh_3m2/harness/FINAL_RESULTS.json"
+      ],
+      "node_id": "claim:no_run3",
+      "text": "Run 3 absent from official evidence",
+      "type": "CLAIM",
+      "value": "ABSENT",
+      "verifiable": true
+    },
+    {
+      "_derivation_fn_name": "_d_absolute_path_gate",
+      "claim_id": "absolute_path_gate",
+      "derivation": "_d_absolute_path_gate",
+      "evidence": [
+        "evidence:evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/release_gate/absolute_path_gate_report.json"
+      ],
+      "node_id": "claim:absolute_path_gate",
+      "text": "portable evidence files scanned by the absolute-path gate (0 violations)",
+      "type": "CLAIM",
+      "value": 55,
+      "verifiable": true
+    },
+    {
+      "_derivation_fn_name": "_d_mutation_matrix",
+      "claim_id": "evidence_mutation_matrix",
+      "derivation": "_d_mutation_matrix",
+      "evidence": [
+        "evidence:evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/mutation_testing/evidence_mutation_matrix.json"
+      ],
+      "node_id": "claim:evidence_mutation_matrix",
+      "text": "evidence-layer controlled mutations all rejected",
+      "type": "CLAIM",
+      "value": 16,
+      "verifiable": true
+    }
+  ],
+  "edges": [
+    {
+      "from": "evidence:evidence/validation/2026-09-18/fresh_3m2/harness/FINAL_RESULTS.json",
+      "relation": "depends_on",
+      "to": "evidence:evidence/validation/2026-09-18/fresh_3m2/harness/pass1_result.json"
+    },
+    {
+      "from": "evidence:evidence/validation/2026-09-18/fresh_3m2/harness/FINAL_RESULTS.json",
+      "relation": "depends_on",
+      "to": "evidence:evidence/validation/2026-09-18/fresh_3m2/harness/pass2_result.json"
+    },
+    {
+      "from": "evidence:evidence/validation/2026-09-18/fresh_3m2/harness/FINAL_RESULTS.json",
+      "relation": "depends_on",
+      "to": "evidence:scripts/final_3m_validation.py"
+    },
+    {
+      "from": "evidence:evidence/validation/2026-09-18/fresh_3m2/harness/pass1_result.json",
+      "relation": "depends_on",
+      "to": "evidence:scripts/final_3m_validation.py"
+    },
+    {
+      "from": "evidence:evidence/validation/2026-09-18/fresh_3m2/harness/pass1_result.json",
+      "relation": "depends_on",
+      "to": "evidence:data_quality_platform/rules/v1_rules.py"
+    },
+    {
+      "from": "evidence:evidence/validation/2026-09-18/fresh_3m2/harness/pass2_result.json",
+      "relation": "depends_on",
+      "to": "evidence:scripts/final_3m_validation.py"
+    },
+    {
+      "from": "evidence:evidence/validation/2026-09-18/fresh_3m2/harness/pass2_result.json",
+      "relation": "depends_on",
+      "to": "evidence:data_quality_platform/rules/v1_rules.py"
+    },
+    {
+      "from": "evidence:scripts/final_3m_validation.py",
+      "relation": "depends_on",
+      "to": "evidence:data_quality_platform/rules/v1_rules.py"
+    },
+    {
+      "from": "evidence:evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/final_results/FINAL_RESULTS_PORTABLE_2026-09-18.json",
+      "relation": "depends_on",
+      "to": "evidence:evidence/validation/2026-09-18/fresh_3m2/harness/FINAL_RESULTS.json"
+    },
+    {
+      "from": "evidence:evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/final_results/FINAL_RESULTS_PORTABLE_2026-09-18.json",
+      "relation": "depends_on",
+      "to": "evidence:evidence/rebuild_verification/run_pair_verification.json"
+    },
+    {
+      "from": "evidence:evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/final_results/FINAL_RESULTS_PORTABLE_2026-09-18.json",
+      "relation": "depends_on",
+      "to": "evidence:evidence/rebuild_verification/test_summary.json"
+    },
+    {
+      "from": "evidence:evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/final_results/FINAL_RESULTS_PORTABLE_2026-09-18.json",
+      "relation": "depends_on",
+      "to": "evidence:evidence/mutation_testing/mutation_results.json"
+    },
+    {
+      "from": "evidence:evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/final_results/FINAL_RESULTS_PORTABLE_2026-09-18.json",
+      "relation": "depends_on",
+      "to": "evidence:evidence/release/assurance_mutation.json"
+    },
+    {
+      "from": "evidence:evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/final_results/FINAL_RESULTS_PORTABLE_2026-09-18.json",
+      "relation": "depends_on",
+      "to": "evidence:evidence/release/limitation_registry.json"
+    },
+    {
+      "from": "evidence:evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/final_results/FINAL_RESULTS_PORTABLE_2026-09-18.json",
+      "relation": "depends_on",
+      "to": "evidence:data_quality_platform/rules/v1_rules.py"
+    },
+    {
+      "from": "evidence:evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/final_results/FINAL_RESULTS_PORTABLE_2026-09-18.json",
+      "relation": "depends_on",
+      "to": "evidence:scripts/final_3m_validation.py"
+    },
+    {
+      "from": "claim:official_run_count",
+      "relation": "derived_from",
+      "to": "evidence:evidence/validation/2026-09-18/fresh_3m2/harness/FINAL_RESULTS.json"
+    },
+    {
+      "from": "claim:official_run_count",
+      "relation": "derived_from",
+      "to": "evidence:evidence/validation/2026-09-18/fresh_3m2/harness/pass1_result.json"
+    },
+    {
+      "from": "claim:official_run_count",
+      "relation": "derived_from",
+      "to": "evidence:evidence/validation/2026-09-18/fresh_3m2/harness/pass2_result.json"
+    },
+    {
+      "from": "claim:rows_per_run",
+      "relation": "derived_from",
+      "to": "evidence:evidence/validation/2026-09-18/fresh_3m2/harness/FINAL_RESULTS.json"
+    },
+    {
+      "from": "claim:rows_per_run",
+      "relation": "derived_from",
+      "to": "evidence:evidence/validation/2026-09-18/fresh_3m2/harness/pass1_result.json"
+    },
+    {
+      "from": "claim:rows_per_run",
+      "relation": "derived_from",
+      "to": "evidence:evidence/validation/2026-09-18/fresh_3m2/harness/pass2_result.json"
+    },
+    {
+      "from": "claim:comparisons_per_run",
+      "relation": "derived_from",
+      "to": "evidence:evidence/validation/2026-09-18/fresh_3m2/harness/FINAL_RESULTS.json"
+    },
+    {
+      "from": "claim:comparisons_per_run",
+      "relation": "derived_from",
+      "to": "evidence:evidence/validation/2026-09-18/fresh_3m2/harness/pass1_result.json"
+    },
+    {
+      "from": "claim:comparisons_per_run",
+      "relation": "derived_from",
+      "to": "evidence:evidence/validation/2026-09-18/fresh_3m2/harness/pass2_result.json"
+    },
+    {
+      "from": "claim:combined_comparisons",
+      "relation": "derived_from",
+      "to": "evidence:evidence/validation/2026-09-18/fresh_3m2/harness/FINAL_RESULTS.json"
+    },
+    {
+      "from": "claim:combined_comparisons",
+      "relation": "derived_from",
+      "to": "evidence:evidence/validation/2026-09-18/fresh_3m2/harness/pass1_result.json"
+    },
+    {
+      "from": "claim:combined_comparisons",
+      "relation": "derived_from",
+      "to": "evidence:evidence/validation/2026-09-18/fresh_3m2/harness/pass2_result.json"
+    },
+    {
+      "from": "claim:combined_mismatches",
+      "relation": "derived_from",
+      "to": "evidence:evidence/validation/2026-09-18/fresh_3m2/harness/FINAL_RESULTS.json"
+    },
+    {
+      "from": "claim:combined_mismatches",
+      "relation": "derived_from",
+      "to": "evidence:evidence/validation/2026-09-18/fresh_3m2/harness/pass1_result.json"
+    },
+    {
+      "from": "claim:combined_mismatches",
+      "relation": "derived_from",
+      "to": "evidence:evidence/validation/2026-09-18/fresh_3m2/harness/pass2_result.json"
+    },
+    {
+      "from": "claim:byte_identical_outputs",
+      "relation": "derived_from",
+      "to": "evidence:evidence/validation/2026-09-18/fresh_3m2/harness/FINAL_RESULTS.json"
+    },
+    {
+      "from": "claim:byte_identical_outputs",
+      "relation": "derived_from",
+      "to": "evidence:evidence/validation/2026-09-18/fresh_3m2/harness/pass1_result.json"
+    },
+    {
+      "from": "claim:byte_identical_outputs",
+      "relation": "derived_from",
+      "to": "evidence:evidence/validation/2026-09-18/fresh_3m2/harness/pass2_result.json"
+    },
+    {
+      "from": "claim:run_pair_verification",
+      "relation": "derived_from",
+      "to": "evidence:evidence/rebuild_verification/run_pair_verification.json"
+    },
+    {
+      "from": "claim:test_suite_counts",
+      "relation": "derived_from",
+      "to": "evidence:evidence/rebuild_verification/test_summary.json"
+    },
+    {
+      "from": "claim:business_mutation_detected",
+      "relation": "derived_from",
+      "to": "evidence:evidence/mutation_testing/mutation_results.json"
+    },
+    {
+      "from": "claim:false_pass_rejected",
+      "relation": "derived_from",
+      "to": "evidence:evidence/release/assurance_mutation.json"
+    },
+    {
+      "from": "claim:tamper_detected",
+      "relation": "derived_from",
+      "to": "evidence:evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/security/tamper_matrix.json"
+    },
+    {
+      "from": "claim:integrity_monitors",
+      "relation": "derived_from",
+      "to": "evidence:evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/integrity/integrity_monitor_report.json"
+    },
+    {
+      "from": "claim:release_gate",
+      "relation": "derived_from",
+      "to": "evidence:evidence/release_gate/final_release_gate.json"
+    },
+    {
+      "from": "claim:frozen_v1_sha256",
+      "relation": "derived_from",
+      "to": "evidence:data_quality_platform/rules/v1_rules.py"
+    },
+    {
+      "from": "claim:official_input_sha256",
+      "relation": "derived_from",
+      "to": "evidence:evidence/validation/2026-09-18/fresh_3m2/harness/FINAL_RESULTS.json"
+    },
+    {
+      "from": "claim:official_output_sha256",
+      "relation": "derived_from",
+      "to": "evidence:evidence/validation/2026-09-18/fresh_3m2/harness/FINAL_RESULTS.json"
+    },
+    {
+      "from": "claim:checker_sha256",
+      "relation": "derived_from",
+      "to": "evidence:scripts/final_3m_validation.py"
+    },
+    {
+      "from": "claim:checker_sha256",
+      "relation": "derived_from",
+      "to": "evidence:evidence/validation/2026-09-18/fresh_3m2/harness/FINAL_RESULTS.json"
+    },
+    {
+      "from": "claim:rule_count",
+      "relation": "derived_from",
+      "to": "evidence:data_quality_platform/rules/v1_rules.py"
+    },
+    {
+      "from": "claim:contract",
+      "relation": "derived_from",
+      "to": "evidence:data_quality_platform/rules/v1_rules.py"
+    },
+    {
+      "from": "claim:limitation_count",
+      "relation": "derived_from",
+      "to": "evidence:evidence/release/limitation_registry.json"
+    },
+    {
+      "from": "claim:verification_state",
+      "relation": "derived_from",
+      "to": "evidence:evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/final_results/FINAL_RESULTS_PORTABLE_2026-09-18.json"
+    },
+    {
+      "from": "claim:seed",
+      "relation": "derived_from",
+      "to": "evidence:evidence/validation/2026-09-18/fresh_3m2/harness/FINAL_RESULTS.json"
+    },
+    {
+      "from": "claim:no_run3",
+      "relation": "derived_from",
+      "to": "evidence:evidence/validation/2026-09-18/fresh_3m2/harness/FINAL_RESULTS.json"
+    },
+    {
+      "from": "claim:absolute_path_gate",
+      "relation": "derived_from",
+      "to": "evidence:evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/release_gate/absolute_path_gate_report.json"
+    },
+    {
+      "from": "claim:evidence_mutation_matrix",
+      "relation": "derived_from",
+      "to": "evidence:evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/mutation_testing/evidence_mutation_matrix.json"
+    }
+  ],
+  "evidence_count": 17,
+  "evidence_nodes": [
+    {
+      "anchor": true,
+      "artifact": "evidence/validation/2026-09-18/fresh_3m2/harness/FINAL_RESULTS.json",
+      "node_id": "evidence:evidence/validation/2026-09-18/fresh_3m2/harness/FINAL_RESULTS.json",
+      "role": "official run-pair record",
+      "sha256": "755fa28f224c480e873676b487d4c6babeb0072fff50e47c08104684b6643337",
+      "status_hint": "PRESENT",
+      "type": "EVIDENCE",
+      "volatile": false
+    },
+    {
+      "anchor": false,
+      "artifact": "evidence/validation/2026-09-18/fresh_3m2/harness/pass1_result.json",
+      "node_id": "evidence:evidence/validation/2026-09-18/fresh_3m2/harness/pass1_result.json",
+      "role": "",
+      "sha256": "dde3592c46fd48bfa8950ec0ab94a8076b287523770cad7a9dc9919e278aad18",
+      "status_hint": "PRESENT",
+      "type": "EVIDENCE",
+      "volatile": false
+    },
+    {
+      "anchor": false,
+      "artifact": "evidence/validation/2026-09-18/fresh_3m2/harness/pass2_result.json",
+      "node_id": "evidence:evidence/validation/2026-09-18/fresh_3m2/harness/pass2_result.json",
+      "role": "",
+      "sha256": "9c92d21cd5a6d636d355bf867508cb7a9501275e1adb2a004fda0f6cfe34157f",
+      "status_hint": "PRESENT",
+      "type": "EVIDENCE",
+      "volatile": false
+    },
+    {
+      "anchor": false,
+      "artifact": "scripts/final_3m_validation.py",
+      "node_id": "evidence:scripts/final_3m_validation.py",
+      "role": "",
+      "sha256": "0ef7c10c14a1df317c23cb0dfc73b3a60c2257c064b35080d694e5fe8bc50d84",
+      "status_hint": "PRESENT",
+      "type": "EVIDENCE",
+      "volatile": false
+    },
+    {
+      "anchor": false,
+      "artifact": "data_quality_platform/rules/v1_rules.py",
+      "node_id": "evidence:data_quality_platform/rules/v1_rules.py",
+      "role": "",
+      "sha256": "daef1ded54c7d3c79898a1ba253be2acd5b6120e18b16b09009fdd7be9fc2276",
+      "status_hint": "PRESENT",
+      "type": "EVIDENCE",
+      "volatile": false
+    },
+    {
+      "anchor": true,
+      "artifact": "scripts/verify_run_pair.py",
+      "node_id": "evidence:scripts/verify_run_pair.py",
+      "role": "run-pair verifier",
+      "sha256": "425534dba7183e25879e1b9e9e681ed5b465db45d941676868da8ed8a8c277ad",
+      "status_hint": "PRESENT",
+      "type": "EVIDENCE",
+      "volatile": false
+    },
+    {
+      "anchor": false,
+      "artifact": "evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/integrity/integrity_monitor_report.json",
+      "node_id": "evidence:evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/integrity/integrity_monitor_report.json",
+      "role": "integrity monitor report (runtime output; value-anchored)",
+      "sha256": null,
+      "status_hint": "RUNTIME_VALUE_ANCHORED",
+      "type": "EVIDENCE",
+      "volatile": true
+    },
+    {
+      "anchor": false,
+      "artifact": "evidence/release_gate/final_release_gate.json",
+      "node_id": "evidence:evidence/release_gate/final_release_gate.json",
+      "role": "release gate report (runtime output; value-anchored)",
+      "sha256": null,
+      "status_hint": "RUNTIME_VALUE_ANCHORED",
+      "type": "EVIDENCE",
+      "volatile": true
+    },
+    {
+      "anchor": false,
+      "artifact": "evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/security/tamper_matrix.json",
+      "node_id": "evidence:evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/security/tamper_matrix.json",
+      "role": "artifact tamper matrix (isolated fixtures)",
+      "sha256": "ec78857d91d94e5379d3df0f5c5392be9bba4cd7cfce7fe25cf3b39d9dc51d93",
+      "status_hint": "PRESENT",
+      "type": "EVIDENCE",
+      "volatile": false
+    },
+    {
+      "anchor": false,
+      "artifact": "evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/mutation_testing/evidence_mutation_matrix.json",
+      "node_id": "evidence:evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/mutation_testing/evidence_mutation_matrix.json",
+      "role": "evidence mutation matrix (isolated fixtures)",
+      "sha256": "f74070efaf0d735e255b5be6c77b0c71094d8a557c8af05fc163600affb8b6c5",
+      "status_hint": "PRESENT",
+      "type": "EVIDENCE",
+      "volatile": false
+    },
+    {
+      "anchor": false,
+      "artifact": "evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/release_gate/absolute_path_gate_report.json",
+      "node_id": "evidence:evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/release_gate/absolute_path_gate_report.json",
+      "role": "absolute-path release gate report",
+      "sha256": "e9771beb6d44695cbe256fdd5cb3677c4bc6778a9bc6d7c66a4fbf798f049dea",
+      "status_hint": "PRESENT",
+      "type": "EVIDENCE",
+      "volatile": false
+    },
+    {
+      "anchor": false,
+      "artifact": "evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/final_results/FINAL_RESULTS_PORTABLE_2026-09-18.json",
+      "node_id": "evidence:evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/final_results/FINAL_RESULTS_PORTABLE_2026-09-18.json",
+      "role": "portable FINAL_RESULTS (two-phase rebuild)",
+      "sha256": "98400e0f27ca526c54ef44ced1cf0d50a10b53ba2591a3dc43615561159cbdf8",
+      "status_hint": "PRESENT",
+      "type": "EVIDENCE",
+      "volatile": false
+    },
+    {
+      "anchor": false,
+      "artifact": "evidence/rebuild_verification/run_pair_verification.json",
+      "node_id": "evidence:evidence/rebuild_verification/run_pair_verification.json",
+      "role": "",
+      "sha256": "7112257f799c8473feb8622f6e1cee445b893914be67753becba999b69745379",
+      "status_hint": "PRESENT",
+      "type": "EVIDENCE",
+      "volatile": false
+    },
+    {
+      "anchor": false,
+      "artifact": "evidence/rebuild_verification/test_summary.json",
+      "node_id": "evidence:evidence/rebuild_verification/test_summary.json",
+      "role": "",
+      "sha256": "6f70c21a94bb23ef37633ca3983158f7c55fa0e24c4a0ff71c678d3e115f2e5c",
+      "status_hint": "PRESENT",
+      "type": "EVIDENCE",
+      "volatile": false
+    },
+    {
+      "anchor": false,
+      "artifact": "evidence/mutation_testing/mutation_results.json",
+      "node_id": "evidence:evidence/mutation_testing/mutation_results.json",
+      "role": "",
+      "sha256": "a24da7210bc0d757b7e7abfebf22acac158f2722ddb890a153e7d506e874ff98",
+      "status_hint": "PRESENT",
+      "type": "EVIDENCE",
+      "volatile": false
+    },
+    {
+      "anchor": false,
+      "artifact": "evidence/release/assurance_mutation.json",
+      "node_id": "evidence:evidence/release/assurance_mutation.json",
+      "role": "",
+      "sha256": "795b722ae1b84755f049e33a75499f863471f25a20d3743114b9fd94bcc945f0",
+      "status_hint": "PRESENT",
+      "type": "EVIDENCE",
+      "volatile": false
+    },
+    {
+      "anchor": false,
+      "artifact": "evidence/release/limitation_registry.json",
+      "node_id": "evidence:evidence/release/limitation_registry.json",
+      "role": "",
+      "sha256": "4ffad35d9f50f68984323287870b4c9627c93411eef079474e32bd3234c93bb5",
+      "status_hint": "PRESENT",
+      "type": "EVIDENCE",
+      "volatile": false
+    }
+  ],
+  "fingerprint_policy": "deterministic, timestamp-free",
+  "forward_lookup": {
+    "data_quality_platform/rules/v1_rules.py": [
+      "byte_identical_outputs",
+      "checker_sha256",
+      "combined_comparisons",
+      "combined_mismatches",
+      "comparisons_per_run",
+      "contract",
+      "frozen_v1_sha256",
+      "no_run3",
+      "official_input_sha256",
+      "official_output_sha256",
+      "official_run_count",
+      "rows_per_run",
+      "rule_count",
+      "seed",
+      "verification_state"
+    ],
+    "evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/final_results/FINAL_RESULTS_PORTABLE_2026-09-18.json": [
+      "verification_state"
+    ],
+    "evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/integrity/integrity_monitor_report.json": [
+      "integrity_monitors"
+    ],
+    "evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/mutation_testing/evidence_mutation_matrix.json": [
+      "evidence_mutation_matrix"
+    ],
+    "evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/release_gate/absolute_path_gate_report.json": [
+      "absolute_path_gate"
+    ],
+    "evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/security/tamper_matrix.json": [
+      "tamper_detected"
+    ],
+    "evidence/mutation_testing/mutation_results.json": [
+      "business_mutation_detected",
+      "verification_state"
+    ],
+    "evidence/rebuild_verification/run_pair_verification.json": [
+      "run_pair_verification",
+      "verification_state"
+    ],
+    "evidence/rebuild_verification/test_summary.json": [
+      "test_suite_counts",
+      "verification_state"
+    ],
+    "evidence/release/assurance_mutation.json": [
+      "false_pass_rejected",
+      "verification_state"
+    ],
+    "evidence/release/limitation_registry.json": [
+      "limitation_count",
+      "verification_state"
+    ],
+    "evidence/release_gate/final_release_gate.json": [
+      "release_gate"
+    ],
+    "evidence/validation/2026-09-18/fresh_3m2/harness/FINAL_RESULTS.json": [
+      "byte_identical_outputs",
+      "checker_sha256",
+      "combined_comparisons",
+      "combined_mismatches",
+      "comparisons_per_run",
+      "no_run3",
+      "official_input_sha256",
+      "official_output_sha256",
+      "official_run_count",
+      "rows_per_run",
+      "seed",
+      "verification_state"
+    ],
+    "evidence/validation/2026-09-18/fresh_3m2/harness/pass1_result.json": [
+      "byte_identical_outputs",
+      "checker_sha256",
+      "combined_comparisons",
+      "combined_mismatches",
+      "comparisons_per_run",
+      "no_run3",
+      "official_input_sha256",
+      "official_output_sha256",
+      "official_run_count",
+      "rows_per_run",
+      "seed",
+      "verification_state"
+    ],
+    "evidence/validation/2026-09-18/fresh_3m2/harness/pass2_result.json": [
+      "byte_identical_outputs",
+      "checker_sha256",
+      "combined_comparisons",
+      "combined_mismatches",
+      "comparisons_per_run",
+      "no_run3",
+      "official_input_sha256",
+      "official_output_sha256",
+      "official_run_count",
+      "rows_per_run",
+      "seed",
+      "verification_state"
+    ],
+    "scripts/final_3m_validation.py": [
+      "byte_identical_outputs",
+      "checker_sha256",
+      "combined_comparisons",
+      "combined_mismatches",
+      "comparisons_per_run",
+      "no_run3",
+      "official_input_sha256",
+      "official_output_sha256",
+      "official_run_count",
+      "rows_per_run",
+      "seed",
+      "verification_state"
+    ]
+  },
+  "generated_utc": "2026-09-19T02:42:52Z",
+  "graph_fingerprint": "05e715a5dbce200127003ff4f7794d399d0ec12973add7ee6fc93ff9b6085e7b",
+  "node_count": 42,
+  "release_id": "DQAEIP-FINAL-CLEAN-REBUILD-RELEASE-2026-09-18",
+  "report": "DQAEIP claim \u2192 evidence \u2192 artifact \u2192 SHA-256 provenance graph",
+  "reverse_lookup": {
+    "absolute_path_gate": [
+      "evidence:evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/release_gate/absolute_path_gate_report.json"
+    ],
+    "business_mutation_detected": [
+      "evidence:evidence/mutation_testing/mutation_results.json"
+    ],
+    "byte_identical_outputs": [
+      "evidence:data_quality_platform/rules/v1_rules.py",
+      "evidence:evidence/validation/2026-09-18/fresh_3m2/harness/FINAL_RESULTS.json",
+      "evidence:evidence/validation/2026-09-18/fresh_3m2/harness/pass1_result.json",
+      "evidence:evidence/validation/2026-09-18/fresh_3m2/harness/pass2_result.json",
+      "evidence:scripts/final_3m_validation.py"
+    ],
+    "checker_sha256": [
+      "evidence:data_quality_platform/rules/v1_rules.py",
+      "evidence:evidence/validation/2026-09-18/fresh_3m2/harness/FINAL_RESULTS.json",
+      "evidence:evidence/validation/2026-09-18/fresh_3m2/harness/pass1_result.json",
+      "evidence:evidence/validation/2026-09-18/fresh_3m2/harness/pass2_result.json",
+      "evidence:scripts/final_3m_validation.py"
+    ],
+    "combined_comparisons": [
+      "evidence:data_quality_platform/rules/v1_rules.py",
+      "evidence:evidence/validation/2026-09-18/fresh_3m2/harness/FINAL_RESULTS.json",
+      "evidence:evidence/validation/2026-09-18/fresh_3m2/harness/pass1_result.json",
+      "evidence:evidence/validation/2026-09-18/fresh_3m2/harness/pass2_result.json",
+      "evidence:scripts/final_3m_validation.py"
+    ],
+    "combined_mismatches": [
+      "evidence:data_quality_platform/rules/v1_rules.py",
+      "evidence:evidence/validation/2026-09-18/fresh_3m2/harness/FINAL_RESULTS.json",
+      "evidence:evidence/validation/2026-09-18/fresh_3m2/harness/pass1_result.json",
+      "evidence:evidence/validation/2026-09-18/fresh_3m2/harness/pass2_result.json",
+      "evidence:scripts/final_3m_validation.py"
+    ],
+    "comparisons_per_run": [
+      "evidence:data_quality_platform/rules/v1_rules.py",
+      "evidence:evidence/validation/2026-09-18/fresh_3m2/harness/FINAL_RESULTS.json",
+      "evidence:evidence/validation/2026-09-18/fresh_3m2/harness/pass1_result.json",
+      "evidence:evidence/validation/2026-09-18/fresh_3m2/harness/pass2_result.json",
+      "evidence:scripts/final_3m_validation.py"
+    ],
+    "contract": [
+      "evidence:data_quality_platform/rules/v1_rules.py"
+    ],
+    "evidence_mutation_matrix": [
+      "evidence:evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/mutation_testing/evidence_mutation_matrix.json"
+    ],
+    "false_pass_rejected": [
+      "evidence:evidence/release/assurance_mutation.json"
+    ],
+    "frozen_v1_sha256": [
+      "evidence:data_quality_platform/rules/v1_rules.py"
+    ],
+    "integrity_monitors": [
+      "evidence:evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/integrity/integrity_monitor_report.json"
+    ],
+    "limitation_count": [
+      "evidence:evidence/release/limitation_registry.json"
+    ],
+    "no_run3": [
+      "evidence:data_quality_platform/rules/v1_rules.py",
+      "evidence:evidence/validation/2026-09-18/fresh_3m2/harness/FINAL_RESULTS.json",
+      "evidence:evidence/validation/2026-09-18/fresh_3m2/harness/pass1_result.json",
+      "evidence:evidence/validation/2026-09-18/fresh_3m2/harness/pass2_result.json",
+      "evidence:scripts/final_3m_validation.py"
+    ],
+    "official_input_sha256": [
+      "evidence:data_quality_platform/rules/v1_rules.py",
+      "evidence:evidence/validation/2026-09-18/fresh_3m2/harness/FINAL_RESULTS.json",
+      "evidence:evidence/validation/2026-09-18/fresh_3m2/harness/pass1_result.json",
+      "evidence:evidence/validation/2026-09-18/fresh_3m2/harness/pass2_result.json",
+      "evidence:scripts/final_3m_validation.py"
+    ],
+    "official_output_sha256": [
+      "evidence:data_quality_platform/rules/v1_rules.py",
+      "evidence:evidence/validation/2026-09-18/fresh_3m2/harness/FINAL_RESULTS.json",
+      "evidence:evidence/validation/2026-09-18/fresh_3m2/harness/pass1_result.json",
+      "evidence:evidence/validation/2026-09-18/fresh_3m2/harness/pass2_result.json",
+      "evidence:scripts/final_3m_validation.py"
+    ],
+    "official_run_count": [
+      "evidence:data_quality_platform/rules/v1_rules.py",
+      "evidence:evidence/validation/2026-09-18/fresh_3m2/harness/FINAL_RESULTS.json",
+      "evidence:evidence/validation/2026-09-18/fresh_3m2/harness/pass1_result.json",
+      "evidence:evidence/validation/2026-09-18/fresh_3m2/harness/pass2_result.json",
+      "evidence:scripts/final_3m_validation.py"
+    ],
+    "release_gate": [
+      "evidence:evidence/release_gate/final_release_gate.json"
+    ],
+    "rows_per_run": [
+      "evidence:data_quality_platform/rules/v1_rules.py",
+      "evidence:evidence/validation/2026-09-18/fresh_3m2/harness/FINAL_RESULTS.json",
+      "evidence:evidence/validation/2026-09-18/fresh_3m2/harness/pass1_result.json",
+      "evidence:evidence/validation/2026-09-18/fresh_3m2/harness/pass2_result.json",
+      "evidence:scripts/final_3m_validation.py"
+    ],
+    "rule_count": [
+      "evidence:data_quality_platform/rules/v1_rules.py"
+    ],
+    "run_pair_verification": [
+      "evidence:evidence/rebuild_verification/run_pair_verification.json"
+    ],
+    "seed": [
+      "evidence:data_quality_platform/rules/v1_rules.py",
+      "evidence:evidence/validation/2026-09-18/fresh_3m2/harness/FINAL_RESULTS.json",
+      "evidence:evidence/validation/2026-09-18/fresh_3m2/harness/pass1_result.json",
+      "evidence:evidence/validation/2026-09-18/fresh_3m2/harness/pass2_result.json",
+      "evidence:scripts/final_3m_validation.py"
+    ],
+    "tamper_detected": [
+      "evidence:evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/security/tamper_matrix.json"
+    ],
+    "test_suite_counts": [
+      "evidence:evidence/rebuild_verification/test_summary.json"
+    ],
+    "verification_state": [
+      "evidence:data_quality_platform/rules/v1_rules.py",
+      "evidence:evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/final_results/FINAL_RESULTS_PORTABLE_2026-09-18.json",
+      "evidence:evidence/mutation_testing/mutation_results.json",
+      "evidence:evidence/rebuild_verification/run_pair_verification.json",
+      "evidence:evidence/rebuild_verification/test_summary.json",
+      "evidence:evidence/release/assurance_mutation.json",
+      "evidence:evidence/release/limitation_registry.json",
+      "evidence:evidence/validation/2026-09-18/fresh_3m2/harness/FINAL_RESULTS.json",
+      "evidence:evidence/validation/2026-09-18/fresh_3m2/harness/pass1_result.json",
+      "evidence:evidence/validation/2026-09-18/fresh_3m2/harness/pass2_result.json",
+      "evidence:scripts/final_3m_validation.py"
+    ]
+  },
+  "schema": {
+    "name": "dqaeip.claim_graph",
+    "version": "1.0"
+  },
+  "verification": {
+    "all_claims_verified": true,
+    "claim_results": [
+      {
+        "broken_evidence": [],
+        "claim_id": "official_run_count",
+        "derivation_error": null,
+        "re_derived_value": 2,
+        "recorded_value": 2,
+        "status": "VERIFIED",
+        "text": "official run pair is exactly Run 1 + Run 2 (no Run 3)"
+      },
+      {
+        "broken_evidence": [],
+        "claim_id": "rows_per_run",
+        "derivation_error": null,
+        "re_derived_value": 3200000,
+        "recorded_value": 3200000,
+        "status": "VERIFIED",
+        "text": "3,200,000 rows per official run"
+      },
+      {
+        "broken_evidence": [],
+        "claim_id": "comparisons_per_run",
+        "derivation_error": null,
+        "re_derived_value": 25600000,
+        "recorded_value": 25600000,
+        "status": "VERIFIED",
+        "text": "25,600,000 oracle comparisons per run"
+      },
+      {
+        "broken_evidence": [],
+        "claim_id": "combined_comparisons",
+        "derivation_error": null,
+        "re_derived_value": 51200000,
+        "recorded_value": 51200000,
+        "status": "VERIFIED",
+        "text": "51,200,000 combined comparisons"
+      },
+      {
+        "broken_evidence": [],
+        "claim_id": "combined_mismatches",
+        "derivation_error": null,
+        "re_derived_value": 0,
+        "recorded_value": 0,
+        "status": "VERIFIED",
+        "text": "0 oracle mismatches"
+      },
+      {
+        "broken_evidence": [],
+        "claim_id": "byte_identical_outputs",
+        "derivation_error": null,
+        "re_derived_value": true,
+        "recorded_value": true,
+        "status": "VERIFIED",
+        "text": "byte-identical outputs across the official pair"
+      },
+      {
+        "broken_evidence": [],
+        "claim_id": "run_pair_verification",
+        "derivation_error": null,
+        "re_derived_value": 95,
+        "recorded_value": 95,
+        "status": "VERIFIED",
+        "text": "run-pair verification checks (all passed)"
+      },
+      {
+        "broken_evidence": [],
+        "claim_id": "test_suite_counts",
+        "derivation_error": null,
+        "re_derived_value": {
+          "collected": 1053,
+          "passed": 1044,
+          "skipped": 9
+        },
+        "recorded_value": {
+          "collected": 1053,
+          "passed": 1044,
+          "skipped": 9
+        },
+        "status": "VERIFIED",
+        "text": "full suite collected/passed/skipped (0 failed)"
+      },
+      {
+        "broken_evidence": [],
+        "claim_id": "business_mutation_detected",
+        "derivation_error": null,
+        "re_derived_value": 17,
+        "recorded_value": 17,
+        "status": "VERIFIED",
+        "text": "business-rule mutants detected (all killed)"
+      },
+      {
+        "broken_evidence": [],
+        "claim_id": "false_pass_rejected",
+        "derivation_error": null,
+        "re_derived_value": 14,
+        "recorded_value": 14,
+        "status": "VERIFIED",
+        "text": "false-PASS scenarios rejected"
+      },
+      {
+        "broken_evidence": [],
+        "claim_id": "tamper_detected",
+        "derivation_error": null,
+        "re_derived_value": 15,
+        "recorded_value": 15,
+        "status": "VERIFIED",
+        "text": "tamper scenarios detected (fail-closed battery)"
+      },
+      {
+        "broken_evidence": [],
+        "claim_id": "integrity_monitors",
+        "derivation_error": null,
+        "re_derived_value": 20,
+        "recorded_value": 20,
+        "status": "VERIFIED",
+        "text": "integrity monitors passing"
+      },
+      {
+        "broken_evidence": [],
+        "claim_id": "release_gate",
+        "derivation_error": null,
+        "re_derived_value": 22,
+        "recorded_value": 22,
+        "status": "VERIFIED",
+        "text": "fail-closed release gates passing"
+      },
+      {
+        "broken_evidence": [],
+        "claim_id": "frozen_v1_sha256",
+        "derivation_error": null,
+        "re_derived_value": "daef1ded54c7d3c79898a1ba253be2acd5b6120e18b16b09009fdd7be9fc2276",
+        "recorded_value": "daef1ded54c7d3c79898a1ba253be2acd5b6120e18b16b09009fdd7be9fc2276",
+        "status": "VERIFIED",
+        "text": "Frozen V1 rule source SHA-256"
+      },
+      {
+        "broken_evidence": [],
+        "claim_id": "official_input_sha256",
+        "derivation_error": null,
+        "re_derived_value": "59624a53c72f908f1dde673ceecf59e0662ae721bb8f9af7e165acba5318d153",
+        "recorded_value": "59624a53c72f908f1dde673ceecf59e0662ae721bb8f9af7e165acba5318d153",
+        "status": "VERIFIED",
+        "text": "official 3M input SHA-256"
+      },
+      {
+        "broken_evidence": [],
+        "claim_id": "official_output_sha256",
+        "derivation_error": null,
+        "re_derived_value": "b72adc235160a86e0b99a08f988dd0bb5f2cff82bbe5b5d28ea07c5a5719329a",
+        "recorded_value": "b72adc235160a86e0b99a08f988dd0bb5f2cff82bbe5b5d28ea07c5a5719329a",
+        "status": "VERIFIED",
+        "text": "official 3M output SHA-256"
+      },
+      {
+        "broken_evidence": [],
+        "claim_id": "checker_sha256",
+        "derivation_error": null,
+        "re_derived_value": "0ef7c10c14a1df317c23cb0dfc73b3a60c2257c064b35080d694e5fe8bc50d84",
+        "recorded_value": "0ef7c10c14a1df317c23cb0dfc73b3a60c2257c064b35080d694e5fe8bc50d84",
+        "status": "VERIFIED",
+        "text": "official checker SHA-256"
+      },
+      {
+        "broken_evidence": [],
+        "claim_id": "rule_count",
+        "derivation_error": null,
+        "re_derived_value": 8,
+        "recorded_value": 8,
+        "status": "VERIFIED",
+        "text": "Frozen V1 rule count"
+      },
+      {
+        "broken_evidence": [],
+        "claim_id": "contract",
+        "derivation_error": null,
+        "re_derived_value": {
+          "flags": 8,
+          "input_columns": 33,
+          "output_columns": 41
+        },
+        "recorded_value": {
+          "flags": 8,
+          "input_columns": 33,
+          "output_columns": 41
+        },
+        "status": "VERIFIED",
+        "text": "column contract 33 in / 8 flags / 41 out"
+      },
+      {
+        "broken_evidence": [],
+        "claim_id": "limitation_count",
+        "derivation_error": null,
+        "re_derived_value": 11,
+        "recorded_value": 11,
+        "status": "VERIFIED",
+        "text": "documented limitations"
+      },
+      {
+        "broken_evidence": [],
+        "claim_id": "verification_state",
+        "derivation_error": null,
+        "re_derived_value": "PASS_WITH_DOCUMENTED_LIMITATIONS",
+        "recorded_value": "PASS_WITH_DOCUMENTED_LIMITATIONS",
+        "status": "VERIFIED",
+        "text": "release verification state"
+      },
+      {
+        "broken_evidence": [],
+        "claim_id": "seed",
+        "derivation_error": null,
+        "re_derived_value": 20260918,
+        "recorded_value": 20260918,
+        "status": "VERIFIED",
+        "text": "synthetic dataset seed"
+      },
+      {
+        "broken_evidence": [],
+        "claim_id": "no_run3",
+        "derivation_error": null,
+        "re_derived_value": "ABSENT",
+        "recorded_value": "ABSENT",
+        "status": "VERIFIED",
+        "text": "Run 3 absent from official evidence"
+      },
+      {
+        "broken_evidence": [],
+        "claim_id": "absolute_path_gate",
+        "derivation_error": null,
+        "re_derived_value": 55,
+        "recorded_value": 55,
+        "status": "VERIFIED",
+        "text": "portable evidence files scanned by the absolute-path gate (0 violations)"
+      },
+      {
+        "broken_evidence": [],
+        "claim_id": "evidence_mutation_matrix",
+        "derivation_error": null,
+        "re_derived_value": 16,
+        "recorded_value": 16,
+        "status": "VERIFIED",
+        "text": "evidence-layer controlled mutations all rejected"
+      }
+    ],
+    "claims_not_verified": 0,
+    "claims_total": 25,
+    "claims_verified": 25,
+    "evidence_problems": {},
+    "verdict": "PASS"
+  }
+}

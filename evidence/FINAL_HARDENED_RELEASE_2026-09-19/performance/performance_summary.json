@@ -1,0 +1,20 @@
+{
+  "generated_utc": "2026-09-19T13:28:43Z",
+  "overhead_percent_by_rung": {
+    "100K": 8.35,
+    "10K": 7.45,
+    "1K": 2.01,
+    "1M": 8.22,
+    "3.2M": 7.9
+  },
+  "rung_labels": [
+    "1K",
+    "10K",
+    "100K",
+    "1M",
+    "3.2M"
+  ],
+  "schema": "dqaeip.hardening.performance.summary/1.0",
+  "source": "evidence/FINAL_HARDENED_RELEASE_2026-09-19/performance/performance_ladder.json",
+  "source_sha256": "f8813c6b87555077f8368592f281bba98f5c626a62f91f68ddb3289ecc03e191"
+}

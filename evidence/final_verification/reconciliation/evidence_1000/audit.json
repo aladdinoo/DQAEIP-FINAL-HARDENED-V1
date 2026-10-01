@@ -1,0 +1,109 @@
+{
+  "run_id": "recon_1000",
+  "events": [
+    {
+      "event_type": "run_started",
+      "run_id": "recon_1000",
+      "timestamp": "2026-09-19T02:23:01.694996+00:00",
+      "details": {
+        "source": "/home/z/my-project/dqvp-work/repo/evidence/final_verification/reconciliation/input_1000.csv"
+      }
+    },
+    {
+      "event_type": "schema_validated",
+      "run_id": "recon_1000",
+      "timestamp": "2026-09-19T02:23:01.695109+00:00",
+      "details": {
+        "schema_hash": "",
+        "errors": []
+      }
+    },
+    {
+      "event_type": "rules_loaded",
+      "run_id": "recon_1000",
+      "timestamp": "2026-09-19T02:23:01.695199+00:00",
+      "details": {
+        "rule_count": 8,
+        "registry_hash": "2b9130fdcc656d32191b122e6ea863c3dc228f20679827ba7dde7f4749273192"
+      }
+    },
+    {
+      "event_type": "validation_started",
+      "run_id": "recon_1000",
+      "timestamp": "2026-09-19T02:23:01.695207+00:00",
+      "details": {
+        "row_count": 0
+      }
+    },
+    {
+      "event_type": "reconciliation_completed",
+      "run_id": "recon_1000",
+      "timestamp": "2026-09-19T02:23:01.735644+00:00",
+      "details": {
+        "passed": true,
+        "details": {
+          "passed": true,
+          "errors": [],
+          "input_row_count": 1000,
+          "output_row_count": 1000,
+          "flag_counts": {
+            "first_name_cleaning_candidate": 114,
+            "last_name_cleaning_candidate": 66,
+            "name_cleaning_candidate": 30,
+            "email_blank": 80,
+            "email_syntax_failure": 70,
+            "proposed_email_export_eligible": 850,
+            "zip_state_assessable": 1000,
+            "geography_mismatch_candidate": 50
+          }
+        }
+      }
+    },
+    {
+      "event_type": "monitoring_completed",
+      "run_id": "recon_1000",
+      "timestamp": "2026-09-19T02:23:01.735675+00:00",
+      "details": {
+        "overall_score": 0.915,
+        "sla_passed": false
+      }
+    },
+    {
+      "event_type": "validation_completed",
+      "run_id": "recon_1000",
+      "timestamp": "2026-09-19T02:23:01.735716+00:00",
+      "details": {
+        "input_rows": 1000,
+        "output_rows": 1000,
+        "flag_counts": {
+          "first_name_cleaning_candidate": 114,
+          "last_name_cleaning_candidate": 66,
+          "name_cleaning_candidate": 30,
+          "email_blank": 80,
+          "email_syntax_failure": 70,
+          "proposed_email_export_eligible": 850,
+          "zip_state_assessable": 1000,
+          "geography_mismatch_candidate": 50
+        },
+        "duration_seconds": 0.03349781036376953
+      }
+    },
+    {
+      "event_type": "output_written",
+      "run_id": "recon_1000",
+      "timestamp": "2026-09-19T02:23:01.735719+00:00",
+      "details": {
+        "path": "/home/z/my-project/dqvp-work/repo/evidence/final_verification/reconciliation/output_1000.csv",
+        "rows": 1000
+      }
+    },
+    {
+      "event_type": "lineage_recorded",
+      "run_id": "recon_1000",
+      "timestamp": "2026-09-19T02:23:01.743201+00:00",
+      "details": {
+        "path": "/home/z/my-project/dqvp-work/repo/evidence/final_verification/reconciliation/evidence_1000/lineage.json"
+      }
+    }
+  ]
+}

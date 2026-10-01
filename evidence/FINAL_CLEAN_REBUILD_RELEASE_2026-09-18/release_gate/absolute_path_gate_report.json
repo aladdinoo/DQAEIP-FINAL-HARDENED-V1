@@ -1,0 +1,124 @@
+{
+  "detectors": [
+    "posix_home",
+    "macos_users",
+    "root_home",
+    "mounted_volume",
+    "machine_tmp",
+    "system_var",
+    "service_tree",
+    "windows_drive",
+    "unc_share",
+    "file_uri",
+    "tilde_user",
+    "tilde_named_user"
+  ],
+  "exception_registry": {
+    "entries": [
+      {
+        "classification": "historical_captured_output",
+        "path": "evidence/hardening_baseline/test_baseline.txt",
+        "reason": "captured pytest terminal output from the fresh 2026-09-18 hardening-baseline run (machine-parsed counts are authoritative in baseline_manifest.json / test_summary.json; this textual capture quotes the authoring interpreter's module discovery paths and pytest tmp dirs)"
+      },
+      {
+        "classification": "diagnostic_quoting_violations",
+        "path": "evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/path_forensics/ABSOLUTE_PATH_INVENTORY.json",
+        "reason": "read-only forensic inventory; every finding RECORDS the original machine-local value it measured \u2014 quoting is the tool's function (the inventory cannot audit its own pre-measurement state)"
+      },
+      {
+        "classification": "diagnostic_quoting_violations",
+        "path": "evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/path_forensics/path_inventory_UPDATE-V2.json",
+        "reason": "read-only path inventory (UPDATE-V2 flow); records original values per task-book taxonomy \u2014 same quoting principle"
+      },
+      {
+        "classification": "diagnostic_quoting_violations",
+        "path": "evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/path_forensics/json_semantic_diff_UPDATE-V2.json",
+        "reason": "semantic diff report; every change entry carries before/after pairs where 'before' is the original machine-local value being normalized \u2014 quoting is the verification mechanism"
+      },
+      {
+        "classification": "diagnostic_quoting_violations",
+        "path": "evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/release_gate/absolute_path_gate_report.json",
+        "reason": "the gate's own report quotes the violations it measured (excerpt lines); a report cannot audit its own pre-measurement state \u2014 same self-exclusion principle as the forensics output directory"
+      },
+      {
+        "classification": "diagnostic_quoting_violations",
+        "path": "evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/staging/rebuild_failure.log",
+        "reason": "two-phase rebuild working-area failure log quoting the failing file path in its diagnostic message (staging is excluded from the release ZIP by policy)"
+      }
+    ],
+    "granted": [
+      {
+        "applied": true,
+        "classification": "historical_captured_output",
+        "path": "evidence/hardening_baseline/test_baseline.txt",
+        "reason": "captured pytest terminal output from the fresh 2026-09-18 hardening-baseline run (machine-parsed counts are authoritative in baseline_manifest.json / test_summary.json; this textual capture quotes the authoring interpreter's module discovery paths and pytest tmp dirs)"
+      },
+      {
+        "applied": true,
+        "classification": "diagnostic_quoting_violations",
+        "path": "evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/path_forensics/ABSOLUTE_PATH_INVENTORY.json",
+        "reason": "read-only forensic inventory; every finding RECORDS the original machine-local value it measured \u2014 quoting is the tool's function (the inventory cannot audit its own pre-measurement state)"
+      },
+      {
+        "applied": true,
+        "classification": "diagnostic_quoting_violations",
+        "path": "evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/path_forensics/path_inventory_UPDATE-V2.json",
+        "reason": "read-only path inventory (UPDATE-V2 flow); records original values per task-book taxonomy \u2014 same quoting principle"
+      },
+      {
+        "applied": true,
+        "classification": "diagnostic_quoting_violations",
+        "path": "evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/path_forensics/json_semantic_diff_UPDATE-V2.json",
+        "reason": "semantic diff report; every change entry carries before/after pairs where 'before' is the original machine-local value being normalized \u2014 quoting is the verification mechanism"
+      },
+      {
+        "applied": true,
+        "classification": "diagnostic_quoting_violations",
+        "path": "evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/release_gate/absolute_path_gate_report.json",
+        "reason": "the gate's own report quotes the violations it measured (excerpt lines); a report cannot audit its own pre-measurement state \u2014 same self-exclusion principle as the forensics output directory"
+      },
+      {
+        "applied": true,
+        "classification": "diagnostic_quoting_violations",
+        "path": "evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/staging/rebuild_failure.log",
+        "reason": "two-phase rebuild working-area failure log quoting the failing file path in its diagnostic message (staging is excluded from the release ZIP by policy)"
+      }
+    ],
+    "path": "evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/release_gate/absolute_path_gate_exceptions.json",
+    "policy": "exact path + exact reason + classification; one file per exception; no directories, no patterns, no detector-level exemptions",
+    "registry_problems": [],
+    "stale_exceptions": []
+  },
+  "gate_version": "1.0.0",
+  "generated_utc": "2026-09-18T23:54:58Z",
+  "release_id": "DQAEIP-FINAL-CLEAN-REBUILD-RELEASE-2026-09-18",
+  "report": "DQAEIP absolute-path release gate (fail-closed)",
+  "schema": {
+    "name": "dqaeip.absolute_path_gate_report",
+    "version": "1.0"
+  },
+  "scope": {
+    "directories": [
+      "evidence/release",
+      "evidence/rebuild_verification",
+      "evidence/mutation_testing",
+      "evidence/hardening_baseline",
+      "evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18"
+    ],
+    "files": [
+      "README.md",
+      "RELEASE_NOTES.md",
+      "FINAL_RESULTS.json",
+      "final_result.json",
+      "release_manifest.json",
+      "DELIVERY_MANIFEST.json"
+    ],
+    "missing_scope_entries": [],
+    "scanned_file_count": 55,
+    "scope_note": "explicit inclusion list; historical evidence archives are covered by the documented historical-evidence policy (Phase 1 inventory + Phase 15 policy record), not silently ignored"
+  },
+  "verdict": "PASS",
+  "verdict_note": "PASS only when every in-scope file exists, the exception registry is structurally valid, and zero machine-local paths are found; any missing scope entry, broken registry, stale exception or violation fails the gate",
+  "violation_count": 0,
+  "violations": []
+}

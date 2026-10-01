@@ -1,0 +1,16 @@
+[
+  {
+    "size": 100,
+    "input_rows": 100,
+    "engine_output_rows": 100,
+    "file_output_rows": 100,
+    "reconciliation_passed": true
+  },
+  {
+    "size": 1000,
+    "input_rows": 1000,
+    "engine_output_rows": 1000,
+    "file_output_rows": 1000,
+    "reconciliation_passed": true
+  }
+]

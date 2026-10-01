@@ -1,0 +1,42 @@
+{
+  "report": "Absolute-path release gate exception registry (exact-path, auditable)",
+  "schema": {
+    "name": "dqaeip.path_gate_exceptions",
+    "version": "1.0"
+  },
+  "registry_version": "1.1.0",
+  "release_id": "DQAEIP-FINAL-CLEAN-REBUILD-RELEASE-2026-09-18",
+  "policy": "exact-path, reason-specific, auditable exceptions; anything not listed fails closed; every exception is a diagnostic record that necessarily QUOTES the machine paths it measured (the scanner-output self-exclusion principle documented in the forensics tool and the rebuild round)",
+  "exceptions": [
+    {
+      "path": "evidence/hardening_baseline/test_baseline.txt",
+      "reason": "captured pytest terminal output from the fresh 2026-09-18 hardening-baseline run (machine-parsed counts are authoritative in baseline_manifest.json / test_summary.json; this textual capture quotes the authoring interpreter's module discovery paths and pytest tmp dirs)",
+      "classification": "historical_captured_output"
+    },
+    {
+      "path": "evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/path_forensics/ABSOLUTE_PATH_INVENTORY.json",
+      "reason": "read-only forensic inventory; every finding RECORDS the original machine-local value it measured \u2014 quoting is the tool's function (the inventory cannot audit its own pre-measurement state)",
+      "classification": "diagnostic_quoting_violations"
+    },
+    {
+      "path": "evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/path_forensics/path_inventory_UPDATE-V2.json",
+      "reason": "read-only path inventory (UPDATE-V2 flow); records original values per task-book taxonomy \u2014 same quoting principle",
+      "classification": "diagnostic_quoting_violations"
+    },
+    {
+      "path": "evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/path_forensics/json_semantic_diff_UPDATE-V2.json",
+      "reason": "semantic diff report; every change entry carries before/after pairs where 'before' is the original machine-local value being normalized \u2014 quoting is the verification mechanism",
+      "classification": "diagnostic_quoting_violations"
+    },
+    {
+      "path": "evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/release_gate/absolute_path_gate_report.json",
+      "reason": "the gate's own report quotes the violations it measured (excerpt lines); a report cannot audit its own pre-measurement state \u2014 same self-exclusion principle as the forensics output directory",
+      "classification": "diagnostic_quoting_violations"
+    },
+    {
+      "path": "evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/staging/rebuild_failure.log",
+      "reason": "two-phase rebuild working-area failure log quoting the failing file path in its diagnostic message (staging is excluded from the release ZIP by policy)",
+      "classification": "diagnostic_quoting_violations"
+    }
+  ]
+}

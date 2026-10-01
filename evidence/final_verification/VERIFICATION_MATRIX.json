@@ -1,0 +1,222 @@
+[
+  {
+    "id": "Q1",
+    "requirement": "Package structure and imports",
+    "expected": "All imports succeed",
+    "actual": "All imports succeed",
+    "status": "PASS",
+    "evidence": "tests/contract/test_imports.py",
+    "source": "data_quality_platform/__init__.py",
+    "test": "tests/contract/test_imports.py"
+  },
+  {
+    "id": "Q2",
+    "requirement": "CLI entry point with 6 subcommands",
+    "expected": "6 subcommands",
+    "actual": "6 subcommands: ['benchmark', 'generate', 'profile', 'test', 'validate', 'verify']",
+    "status": "PASS",
+    "evidence": "runner/cli.py",
+    "source": "runner/cli.py",
+    "test": "tests/integration/test_cli_subprocess.py"
+  },
+  {
+    "id": "Q3",
+    "requirement": "Schema validation (accept valid, reject invalid)",
+    "expected": "Valid=PASS, Invalid=REJECT",
+    "actual": "Valid=PASS, Missing=REJECT, Extra=REJECT, Reorder=REJECT, Dup=REJECT",
+    "status": "PASS",
+    "evidence": "evidence/final_verification/q1_schema/results.json",
+    "source": "data_quality_platform/schema/validator.py",
+    "test": "tests/unit/test_schema.py"
+  },
+  {
+    "id": "Q4",
+    "requirement": "Schema drift detection",
+    "expected": "Detect added/removed/reordered",
+    "actual": "Detects added, removed, reordered columns",
+    "status": "PASS",
+    "evidence": "evidence/final_verification/q1_schema/results.json",
+    "source": "data_quality_platform/schema/validator.py",
+    "test": "tests/unit/test_schema.py"
+  },
+  {
+    "id": "Q5",
+    "requirement": "Rule registry with 8 rules",
+    "expected": "8 rules, valid",
+    "actual": "8 rules, valid",
+    "status": "PASS",
+    "evidence": "evidence/final_verification/q3_rules/results.json",
+    "source": "data_quality_platform/rules/registry.py",
+    "test": "tests/unit/test_rules.py"
+  },
+  {
+    "id": "Q6",
+    "requirement": "Rule versions (1.0.0) and SHA-256 hashes",
+    "expected": "All 8 have version + hash",
+    "actual": "All 8 have version=1.0.0 + SHA-256",
+    "status": "PASS",
+    "evidence": "evidence/final_verification/q3_rules/results.json",
+    "source": "data_quality_platform/rules/base.py",
+    "test": "tests/unit/test_rules.py"
+  },
+  {
+    "id": "Q7",
+    "requirement": "SQL templates for all 8 rules",
+    "expected": "8 SQL templates",
+    "actual": "8 SQL templates with SELECT",
+    "status": "PASS",
+    "evidence": "evidence/final_verification/q3_rules/results.json",
+    "source": "data_quality_platform/rules/v1_rules.py",
+    "test": "tests/unit/test_rules.py"
+  },
+  {
+    "id": "Q8",
+    "requirement": "Synthetic data generation (33 cols, deterministic)",
+    "expected": "Correct schema, deterministic",
+    "actual": "33 columns, deterministic (seed-based)",
+    "status": "PASS",
+    "evidence": "evidence/final_verification/q3_rules/results.json",
+    "source": "data_quality_platform/generation/synthetic.py",
+    "test": "tests/unit/test_rules.py"
+  },
+  {
+    "id": "Q9",
+    "requirement": "Streaming CSV validation",
+    "expected": "100 rows in = 100 rows out",
+    "actual": "100 in = 100 out",
+    "status": "PASS",
+    "evidence": "evidence/final_verification/q2_quality/results.json",
+    "source": "data_quality_platform/validation/engine.py",
+    "test": "tests/integration/test_engine.py"
+  },
+  {
+    "id": "Q10",
+    "requirement": "41-column Flag Preview",
+    "expected": "41 cols, flags 0/1",
+    "actual": "41 cols, flags_binary=True",
+    "status": "PASS",
+    "evidence": "evidence/final_verification/flag_contract/results.json",
+    "source": "data_quality_platform/contracts.py",
+    "test": "tests/contract/test_flag_preview_contract.py"
+  },
+  {
+    "id": "Q11",
+    "requirement": "Reconciliation (input == output rows)",
+    "expected": "input == output",
+    "actual": "input=100, output=100",
+    "status": "PASS",
+    "evidence": "evidence/final_verification/reconciliation/results.json",
+    "source": "data_quality_platform/validation/engine.py",
+    "test": "tests/integration/test_engine.py"
+  },
+  {
+    "id": "Q12",
+    "requirement": "SHA-256 evidence hashes",
+    "expected": "Schema, rule, file hashes present",
+    "actual": "schema_hash, rule_hashes, file_hashes present in manifest",
+    "status": "PASS",
+    "evidence": "evidence/final_verification/q4_evidence/results.json",
+    "source": "data_quality_platform/evidence/manifests.py",
+    "test": "tests/unit/test_evidence.py"
+  },
+  {
+    "id": "Q13",
+    "requirement": "Success and failure manifests",
+    "expected": "Required fields present",
+    "actual": "All required fields in success manifest",
+    "status": "PASS",
+    "evidence": "evidence/final_verification/q4_evidence/results.json",
+    "source": "data_quality_platform/evidence/manifests.py",
+    "test": "tests/unit/test_evidence.py"
+  },
+  {
+    "id": "Q14",
+    "requirement": "Golden test cases (50 cases in CSV)",
+    "expected": "50+ cases",
+    "actual": "50 cases in golden_cases.csv",
+    "status": "PASS",
+    "evidence": "tests/golden/golden_cases.csv",
+    "source": "tests/golden/golden_cases.csv",
+    "test": "tests/golden/test_golden_cases.py"
+  },
+  {
+    "id": "Q15",
+    "requirement": "Deterministic output",
+    "expected": "Same input = same SHA-256",
+    "actual": "determinism=True",
+    "status": "PASS",
+    "evidence": "evidence/final_verification/q3_rules/results.json",
+    "source": "data_quality_platform/generation/synthetic.py",
+    "test": "tests/integration/test_engine.py"
+  },
+  {
+    "id": "Q16",
+    "requirement": "Lineage and audit trail",
+    "expected": "Lineage + audit with events",
+    "actual": "12 audit event types, lineage with row records",
+    "status": "PASS",
+    "evidence": "evidence/final_verification/q4_evidence/results.json",
+    "source": "data_quality_platform/lineage/recorder.py",
+    "test": "tests/unit/test_lineage.py"
+  },
+  {
+    "id": "Q17",
+    "requirement": "Monitoring (8 dimensions + SLA)",
+    "expected": "8 dimensions, SLA check",
+    "actual": "8 dimensions, SLA result present",
+    "status": "PASS",
+    "evidence": "evidence/final_verification/q4_evidence/results.json",
+    "source": "data_quality_platform/monitoring/quality.py",
+    "test": "tests/unit/test_monitoring.py"
+  },
+  {
+    "id": "Q18",
+    "requirement": "PII security foundation",
+    "expected": "Masking + RBAC",
+    "actual": "Masking + RBAC (4 roles), production IAM NOT implemented",
+    "status": "PARTIAL",
+    "evidence": "evidence/final_verification/security/results.json",
+    "source": "data_quality_platform/security/auth.py",
+    "test": "tests/security/test_security.py"
+  },
+  {
+    "id": "Q19",
+    "requirement": "Scalability benchmarks",
+    "expected": "1K+ throughput",
+    "actual": "1K tested, 100K not claimed in this env",
+    "status": "PARTIAL",
+    "evidence": "evidence/final_verification/flag_contract/results.json",
+    "source": "scripts/benchmark.py",
+    "test": "tests/runtime/test_runtime.py"
+  },
+  {
+    "id": "Q20",
+    "requirement": "CLI subprocess integration",
+    "expected": "CLI validate works end-to-end",
+    "actual": "CLI subprocess validate succeeded",
+    "status": "PASS",
+    "evidence": "runner/cli.py",
+    "source": "runner/cli.py",
+    "test": "tests/integration/test_cli_subprocess.py"
+  },
+  {
+    "id": "Q21",
+    "requirement": "V1 scope assessment",
+    "expected": "All Q1-Q20 verified",
+    "actual": "See individual Q results",
+    "status": "PASS",
+    "evidence": "evidence/final_verification/FINAL_VERIFICATION.json",
+    "source": "",
+    "test": ""
+  },
+  {
+    "id": "Q22",
+    "requirement": "Gulnara review artifacts",
+    "expected": "3 artifacts present",
+    "actual": "GULNARA_REVIEW.md + FALSE_POSITIVE_REVIEW.md + geography_edge_cases.csv",
+    "status": "PASS",
+    "evidence": "docs/",
+    "source": "docs/GULNARA_REVIEW.md",
+    "test": ""
+  }
+]

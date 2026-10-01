@@ -1,0 +1,205 @@
+{
+  "classification_counts": {
+    "VERIFIED": 25
+  },
+  "current_identities": {
+    "checker_sha256": "0ef7c10c14a1df317c23cb0dfc73b3a60c2257c064b35080d694e5fe8bc50d84",
+    "gate_count": 22
+  },
+  "expected_inventory_source": "evidence/release/release_artifact_manifest.json",
+  "fail_closed_rule": "any STALE / FOREIGN / TAMPERED / QUARANTINED artifact makes the screening verdict EVIDENCE_REJECTED; untrusted evidence can never raise a release verdict",
+  "generated_utc": "2026-09-19T00:08:52Z",
+  "rejected": [],
+  "rejected_count": 0,
+  "report": "DQAEIP evidence quarantine screening (release evidence set from the release artifact manifest)",
+  "results": [
+    {
+      "actual_sha256": "1a2f6f6d226f37b03fedb0589f7c1624c4f329dbc9283706e66501cd5b1cca22",
+      "classification": "VERIFIED",
+      "expected_sha256": "1a2f6f6d226f37b03fedb0589f7c1624c4f329dbc9283706e66501cd5b1cca22",
+      "path": "FINAL_RESULTS.json",
+      "reason": "hash matches pinned expected value"
+    },
+    {
+      "actual_sha256": "536930c5fe7d6f120caf9c4c543615c215ccfffca124df8dca63aadcd509f006",
+      "classification": "VERIFIED",
+      "expected_sha256": "536930c5fe7d6f120caf9c4c543615c215ccfffca124df8dca63aadcd509f006",
+      "path": "README.md",
+      "reason": "hash matches pinned expected value"
+    },
+    {
+      "actual_sha256": "fae58fb225110916342ef37d27e9f09922c93f6b23a8e02571afb4c54b66de8c",
+      "classification": "VERIFIED",
+      "expected_sha256": "fae58fb225110916342ef37d27e9f09922c93f6b23a8e02571afb4c54b66de8c",
+      "path": "RELEASE_NOTES.md",
+      "reason": "hash matches pinned expected value"
+    },
+    {
+      "actual_sha256": "b3eea54f0c5142e654cd531c4bb994669a170a7b37060b6bb7d45c4c46fb5d18",
+      "classification": "VERIFIED",
+      "expected_sha256": "b3eea54f0c5142e654cd531c4bb994669a170a7b37060b6bb7d45c4c46fb5d18",
+      "path": "data_quality_platform/contracts.py",
+      "reason": "hash matches pinned expected value"
+    },
+    {
+      "actual_sha256": "daef1ded54c7d3c79898a1ba253be2acd5b6120e18b16b09009fdd7be9fc2276",
+      "classification": "VERIFIED",
+      "expected_sha256": "daef1ded54c7d3c79898a1ba253be2acd5b6120e18b16b09009fdd7be9fc2276",
+      "path": "data_quality_platform/rules/v1_rules.py",
+      "reason": "hash matches pinned expected value"
+    },
+    {
+      "actual_sha256": "eb2af61813227cfb4b8ce4f92a71e61be8747bd39df77284a7e556fb6ebf3fc8",
+      "classification": "VERIFIED",
+      "expected_sha256": "eb2af61813227cfb4b8ce4f92a71e61be8747bd39df77284a7e556fb6ebf3fc8",
+      "path": "data_quality_platform/validation/engine.py",
+      "reason": "hash matches pinned expected value"
+    },
+    {
+      "actual_sha256": "37a4e55ac3ccf8e1f0db945016c9dbb5997a2b1bebd6d04f44fc43e33935e8c7",
+      "classification": "VERIFIED",
+      "expected_sha256": "37a4e55ac3ccf8e1f0db945016c9dbb5997a2b1bebd6d04f44fc43e33935e8c7",
+      "path": "evidence/dqvp_performance/performance_results.json",
+      "reason": "hash matches pinned expected value"
+    },
+    {
+      "actual_sha256": "ae94ff33c9bd6fb0bf335c621d5cc866849befe93cfa802f4fb49a81b05fd192",
+      "classification": "VERIFIED",
+      "expected_sha256": "ae94ff33c9bd6fb0bf335c621d5cc866849befe93cfa802f4fb49a81b05fd192",
+      "path": "evidence/mutation_testing/mutation_results.json",
+      "reason": "hash matches pinned expected value"
+    },
+    {
+      "actual_sha256": "7112257f799c8473feb8622f6e1cee445b893914be67753becba999b69745379",
+      "classification": "VERIFIED",
+      "expected_sha256": "7112257f799c8473feb8622f6e1cee445b893914be67753becba999b69745379",
+      "path": "evidence/rebuild_verification/run_pair_verification.json",
+      "reason": "hash matches pinned expected value"
+    },
+    {
+      "actual_sha256": "ec73193df619db292478c36957a0eb5819c6923910e9a71077928f26ae221296",
+      "classification": "VERIFIED",
+      "expected_sha256": "ec73193df619db292478c36957a0eb5819c6923910e9a71077928f26ae221296",
+      "path": "evidence/rebuild_verification/test_summary.json",
+      "reason": "hash matches pinned expected value"
+    },
+    {
+      "actual_sha256": "795b722ae1b84755f049e33a75499f863471f25a20d3743114b9fd94bcc945f0",
+      "classification": "VERIFIED",
+      "expected_sha256": "795b722ae1b84755f049e33a75499f863471f25a20d3743114b9fd94bcc945f0",
+      "path": "evidence/release/assurance_mutation.json",
+      "reason": "hash matches pinned expected value"
+    },
+    {
+      "actual_sha256": "ab5e4275fb3730111ae56303124af85170f7b075c77ef8bab62ef79176639320",
+      "classification": "VERIFIED",
+      "expected_sha256": "ab5e4275fb3730111ae56303124af85170f7b075c77ef8bab62ef79176639320",
+      "path": "evidence/release/claim_provenance.json",
+      "reason": "hash matches pinned expected value"
+    },
+    {
+      "actual_sha256": "adaa22650817bd4e60447f1ee14d1105228fa724c2f686d484643e6f8d80555b",
+      "classification": "VERIFIED",
+      "expected_sha256": "adaa22650817bd4e60447f1ee14d1105228fa724c2f686d484643e6f8d80555b",
+      "path": "evidence/release/consistency_matrix.json",
+      "reason": "hash matches pinned expected value"
+    },
+    {
+      "actual_sha256": "78067fefe52c39c00b839122666888263f873ed635f3a0dc46ef928f2593b268",
+      "classification": "VERIFIED",
+      "expected_sha256": "78067fefe52c39c00b839122666888263f873ed635f3a0dc46ef928f2593b268",
+      "path": "evidence/release/contradiction_check.json",
+      "reason": "hash matches pinned expected value"
+    },
+    {
+      "actual_sha256": "24b2704e755e532a38654ec4b3f1194d5f773a9cf98bd5cf3f0591ce9a083265",
+      "classification": "VERIFIED",
+      "expected_sha256": "24b2704e755e532a38654ec4b3f1194d5f773a9cf98bd5cf3f0591ce9a083265",
+      "path": "evidence/release/golden_release_snapshot.json",
+      "reason": "hash matches pinned expected value"
+    },
+    {
+      "actual_sha256": "6234053364b4e1697a867ed54750ebd937ab5ea39fca2ecc1da0bc17d0d75aef",
+      "classification": "VERIFIED",
+      "expected_sha256": "6234053364b4e1697a867ed54750ebd937ab5ea39fca2ecc1da0bc17d0d75aef",
+      "path": "evidence/release/limitation_registry.json",
+      "reason": "hash matches pinned expected value"
+    },
+    {
+      "actual_sha256": "3f6a1474bff08c9bdda8266f25859043ee3be5e62e928b6082e94e38ccfe8f27",
+      "classification": "VERIFIED",
+      "expected_sha256": "3f6a1474bff08c9bdda8266f25859043ee3be5e62e928b6082e94e38ccfe8f27",
+      "path": "evidence/release/observability_status.json",
+      "reason": "hash matches pinned expected value"
+    },
+    {
+      "actual_sha256": "3f59df3e52df027aa14ff378c672bbc1887b2532b2ef12b6680296bf96543e7f",
+      "classification": "VERIFIED",
+      "expected_sha256": "3f59df3e52df027aa14ff378c672bbc1887b2532b2ef12b6680296bf96543e7f",
+      "path": "evidence/release/readme_consistency.json",
+      "reason": "hash matches pinned expected value"
+    },
+    {
+      "actual_sha256": "b098e0816718aefccd7987fba668eaadfe921e664403e5850b67330435b3fce7",
+      "classification": "VERIFIED",
+      "expected_sha256": "b098e0816718aefccd7987fba668eaadfe921e664403e5850b67330435b3fce7",
+      "path": "evidence/release/release_evidence_model.json",
+      "reason": "hash matches pinned expected value"
+    },
+    {
+      "actual_sha256": "4fa332e6b57da5526ed1ba3ee65c9e85e8067c5c63f1de3c20ebfc12c4c4183d",
+      "classification": "VERIFIED",
+      "expected_sha256": "4fa332e6b57da5526ed1ba3ee65c9e85e8067c5c63f1de3c20ebfc12c4c4183d",
+      "path": "evidence/release/reproducibility_fingerprint.json",
+      "reason": "hash matches pinned expected value"
+    },
+    {
+      "actual_sha256": "e886c52d9a533a61b0a1104bd5c58843ba18cc54bb01213a4ab5a657e7aabf8a",
+      "classification": "VERIFIED",
+      "expected_sha256": "e886c52d9a533a61b0a1104bd5c58843ba18cc54bb01213a4ab5a657e7aabf8a",
+      "path": "evidence/release/reproducibility_manifest.json",
+      "reason": "hash matches pinned expected value"
+    },
+    {
+      "actual_sha256": "d06e483c673066534492a3fa2c0afe2c06cd95209d5d9042447e8c2783878791",
+      "classification": "VERIFIED",
+      "expected_sha256": "d06e483c673066534492a3fa2c0afe2c06cd95209d5d9042447e8c2783878791",
+      "path": "evidence/release/rule_impact_graph.json",
+      "reason": "hash matches pinned expected value"
+    },
+    {
+      "actual_sha256": "a4c60468d829324671ec85305615543346f063832d026b9a46f21d655c5added",
+      "classification": "VERIFIED",
+      "expected_sha256": "a4c60468d829324671ec85305615543346f063832d026b9a46f21d655c5added",
+      "path": "evidence/release_gate/final_release_gate.json",
+      "reason": "hash matches pinned expected value"
+    },
+    {
+      "actual_sha256": "1a2f6f6d226f37b03fedb0589f7c1624c4f329dbc9283706e66501cd5b1cca22",
+      "classification": "VERIFIED",
+      "expected_sha256": "1a2f6f6d226f37b03fedb0589f7c1624c4f329dbc9283706e66501cd5b1cca22",
+      "path": "final_result.json",
+      "reason": "hash matches pinned expected value"
+    },
+    {
+      "actual_sha256": "889aa82eb71b8f96abe98bec8bf921c4adc2c1093c29eee4ed8063d6570fcbba",
+      "classification": "VERIFIED",
+      "expected_sha256": "889aa82eb71b8f96abe98bec8bf921c4adc2c1093c29eee4ed8063d6570fcbba",
+      "path": "release_manifest.json",
+      "reason": "hash matches pinned expected value"
+    }
+  ],
+  "screened": 25,
+  "self_exclusion": {
+    "path": "evidence/release/evidence_quarantine_screen.json",
+    "reason": "the screening report cannot pin its own pre-measurement state; its integrity is enforced by the release artifact manifest pin and zero-drift verification"
+  },
+  "trusted_set": [
+    "evidence/validation/2026-09-18/fresh_3m2/harness/FINAL_RESULTS.json",
+    "evidence/validation/2026-09-18/fresh_3m2/harness/pass1_engine/manifest.json",
+    "evidence/validation/2026-09-18/fresh_3m2/harness/pass1_engine/evidence_root.json",
+    "evidence/validation/2026-09-18/fresh_3m2/harness/pass2_engine/manifest.json",
+    "evidence/validation/2026-09-18/fresh_3m2/harness/pass2_engine/evidence_root.json"
+  ],
+  "verdict": "CLEAN"
+}

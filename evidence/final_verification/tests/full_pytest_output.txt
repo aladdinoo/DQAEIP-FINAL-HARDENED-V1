@@ -1,0 +1,51 @@
+{
+  "unit": {
+    "collected": 0,
+    "passed": 542,
+    "skipped": 0,
+    "failed": 0,
+    "warnings": 0
+  },
+  "contract": {
+    "collected": 0,
+    "passed": 22,
+    "skipped": 0,
+    "failed": 0,
+    "warnings": 0
+  },
+  "golden": {
+    "collected": 0,
+    "passed": 117,
+    "skipped": 7,
+    "failed": 0,
+    "warnings": 0
+  },
+  "integration": {
+    "collected": 0,
+    "passed": 24,
+    "skipped": 0,
+    "failed": 0,
+    "warnings": 0
+  },
+  "runtime": {
+    "collected": 0,
+    "passed": 8,
+    "skipped": 2,
+    "failed": 0,
+    "warnings": 0
+  },
+  "security": {
+    "collected": 0,
+    "passed": 6,
+    "skipped": 0,
+    "failed": 0,
+    "warnings": 0
+  },
+  "total": {
+    "collected": 0,
+    "passed": 719,
+    "skipped": 9,
+    "failed": 0,
+    "warnings": 0
+  }
+}

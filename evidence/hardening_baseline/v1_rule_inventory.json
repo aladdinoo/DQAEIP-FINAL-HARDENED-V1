@@ -1,0 +1,243 @@
+{
+  "inventory_version": "1.0.0",
+  "generated_utc": "2026-09-18T23:43:14Z",
+  "source_of_truth": "data_quality_platform/rules/registry.py RuleRegistry.create_default() + contracts.REQUIRED_RULE_IDS (actual code, not documentation)",
+  "frozen_contract_statement": "All eight V1 rules are FROZEN. Semantics, versions, and source hashes recorded here are the hardening baseline; any change to these files during enterprise hardening is a release-gate failure (gate 16: production-source integrity).",
+  "required_rule_ids_in_order": [
+    "first_name_cleaning_candidate",
+    "last_name_cleaning_candidate",
+    "name_cleaning_candidate",
+    "email_blank",
+    "email_syntax_failure",
+    "proposed_email_export_eligible",
+    "zip_state_assessable",
+    "geography_mismatch_candidate"
+  ],
+  "rules": [
+    {
+      "rule_id": "first_name_cleaning_candidate",
+      "version": "1.0.0",
+      "registry_position": 1,
+      "implementation_class": "FirstNameCleaningCandidate",
+      "implementation_file": "data_quality_platform/rules/v1_rules.py",
+      "rule_sha256": "575e9d4588334d364bdcfae6ca3c44b9bf35120a371b78fecfde8ee19373ca69",
+      "source_file_sha256": "daef1ded54c7d3c79898a1ba253be2acd5b6120e18b16b09009fdd7be9fc2276",
+      "input_columns": [
+        "first_name"
+      ],
+      "reference_data": [
+        "suspicious_name_patterns_v1"
+      ],
+      "covering_test_files": [
+        "tests/golden/test_golden_cases.py",
+        "tests/golden/test_golden_fixture_integrity.py",
+        "tests/property/test_property_invariants.py",
+        "tests/unit/test_config_wiring.py",
+        "tests/unit/test_contracts.py",
+        "tests/unit/test_input_contract.py",
+        "tests/unit/test_monitoring.py",
+        "tests/unit/test_rule_oracle_consistency.py",
+        "tests/unit/test_rules.py",
+        "tests/unit/test_sp1_successor_contract_validation.py"
+      ]
+    },
+    {
+      "rule_id": "last_name_cleaning_candidate",
+      "version": "1.0.0",
+      "registry_position": 2,
+      "implementation_class": "LastNameCleaningCandidate",
+      "implementation_file": "data_quality_platform/rules/v1_rules.py",
+      "rule_sha256": "c553b7f4484b54135e2b84c6b37a84b15df328544256577984e61f6ede900122",
+      "source_file_sha256": "daef1ded54c7d3c79898a1ba253be2acd5b6120e18b16b09009fdd7be9fc2276",
+      "input_columns": [
+        "last_name"
+      ],
+      "reference_data": [
+        "suspicious_name_patterns_v1"
+      ],
+      "covering_test_files": [
+        "tests/golden/test_golden_cases.py",
+        "tests/golden/test_golden_fixture_integrity.py",
+        "tests/property/test_property_invariants.py",
+        "tests/unit/test_config_wiring.py",
+        "tests/unit/test_contracts.py",
+        "tests/unit/test_input_contract.py",
+        "tests/unit/test_monitoring.py",
+        "tests/unit/test_rule_oracle_consistency.py",
+        "tests/unit/test_rules.py",
+        "tests/unit/test_sp1_successor_contract_validation.py"
+      ]
+    },
+    {
+      "rule_id": "name_cleaning_candidate",
+      "version": "1.0.0",
+      "registry_position": 3,
+      "implementation_class": "NameCleaningCandidate",
+      "implementation_file": "data_quality_platform/rules/v1_rules.py",
+      "rule_sha256": "3a128ec85d196cd3a42720347ba8790f5fbf0f386bd617e4ec508ee050b661c8",
+      "source_file_sha256": "daef1ded54c7d3c79898a1ba253be2acd5b6120e18b16b09009fdd7be9fc2276",
+      "input_columns": [
+        "first_name",
+        "last_name"
+      ],
+      "reference_data": [],
+      "covering_test_files": [
+        "tests/golden/test_golden_cases.py",
+        "tests/golden/test_golden_fixture_integrity.py",
+        "tests/property/test_property_invariants.py",
+        "tests/unit/test_config_wiring.py",
+        "tests/unit/test_contracts.py",
+        "tests/unit/test_input_contract.py",
+        "tests/unit/test_monitoring.py",
+        "tests/unit/test_rule_oracle_consistency.py",
+        "tests/unit/test_rules.py",
+        "tests/unit/test_sp1_successor_contract_validation.py"
+      ]
+    },
+    {
+      "rule_id": "email_blank",
+      "version": "1.0.0",
+      "registry_position": 4,
+      "implementation_class": "EmailBlank",
+      "implementation_file": "data_quality_platform/rules/v1_rules.py",
+      "rule_sha256": "157ccc2127334bac03534f80868a3d7ea3bc8df77c132e8c237874321164f2bc",
+      "source_file_sha256": "daef1ded54c7d3c79898a1ba253be2acd5b6120e18b16b09009fdd7be9fc2276",
+      "input_columns": [
+        "email_address"
+      ],
+      "reference_data": [],
+      "covering_test_files": [
+        "tests/assurance/test_release_schema_and_stale_evidence.py",
+        "tests/golden/test_golden_cases.py",
+        "tests/golden/test_golden_fixture_integrity.py",
+        "tests/integration/test_engine.py",
+        "tests/property/test_property_invariants.py",
+        "tests/safety/test_fail_closed_gates.py",
+        "tests/unit/test_config_wiring.py",
+        "tests/unit/test_contracts.py",
+        "tests/unit/test_evidence.py",
+        "tests/unit/test_evidence_validator.py",
+        "tests/unit/test_impact_analysis.py",
+        "tests/unit/test_input_contract.py",
+        "tests/unit/test_lineage.py",
+        "tests/unit/test_lineage_serialization.py",
+        "tests/unit/test_monitoring.py",
+        "tests/unit/test_provenance.py",
+        "tests/unit/test_replay.py",
+        "tests/unit/test_security.py",
+        "tests/unit/test_sp1_successor_contract_validation.py"
+      ]
+    },
+    {
+      "rule_id": "email_syntax_failure",
+      "version": "1.0.0",
+      "registry_position": 5,
+      "implementation_class": "EmailSyntaxFailure",
+      "implementation_file": "data_quality_platform/rules/v1_rules.py",
+      "rule_sha256": "5caaba13a73c90c5aac7a52cf756713c8ecc3dc73d30c2949206efa8d2b712f7",
+      "source_file_sha256": "daef1ded54c7d3c79898a1ba253be2acd5b6120e18b16b09009fdd7be9fc2276",
+      "input_columns": [
+        "email_address"
+      ],
+      "reference_data": [
+        "email_syntax_regex_v1"
+      ],
+      "covering_test_files": [
+        "tests/golden/test_golden_cases.py",
+        "tests/golden/test_golden_fixture_integrity.py",
+        "tests/property/test_property_invariants.py",
+        "tests/unit/test_config_wiring.py",
+        "tests/unit/test_contracts.py",
+        "tests/unit/test_input_contract.py",
+        "tests/unit/test_monitoring.py",
+        "tests/unit/test_sp1_successor_contract_validation.py"
+      ]
+    },
+    {
+      "rule_id": "proposed_email_export_eligible",
+      "version": "1.0.0",
+      "registry_position": 6,
+      "implementation_class": "ProposedEmailExportEligible",
+      "implementation_file": "data_quality_platform/rules/v1_rules.py",
+      "rule_sha256": "6732e6bfed6fae3c23439f0e69b5c39e2843a5b74f2f8f3fdaf6ad5d536da98c",
+      "source_file_sha256": "daef1ded54c7d3c79898a1ba253be2acd5b6120e18b16b09009fdd7be9fc2276",
+      "input_columns": [
+        "email_address"
+      ],
+      "reference_data": [
+        "email_syntax_regex_v1"
+      ],
+      "covering_test_files": [
+        "tests/golden/test_golden_cases.py",
+        "tests/golden/test_golden_fixture_integrity.py",
+        "tests/integration/test_engine.py",
+        "tests/property/test_property_invariants.py",
+        "tests/unit/test_config_wiring.py",
+        "tests/unit/test_contracts.py",
+        "tests/unit/test_input_contract.py",
+        "tests/unit/test_monitoring.py",
+        "tests/unit/test_sp1_successor_contract_validation.py"
+      ]
+    },
+    {
+      "rule_id": "zip_state_assessable",
+      "version": "1.0.0",
+      "registry_position": 7,
+      "implementation_class": "ZipStateAssessable",
+      "implementation_file": "data_quality_platform/rules/v1_rules.py",
+      "rule_sha256": "e7730c1b848f32790a56bfb79f7ef5dbc8c88b3919f9903421adc7dde5393885",
+      "source_file_sha256": "daef1ded54c7d3c79898a1ba253be2acd5b6120e18b16b09009fdd7be9fc2276",
+      "input_columns": [
+        "zip",
+        "state"
+      ],
+      "reference_data": [
+        "state_zip_prefix_map_v1"
+      ],
+      "covering_test_files": [
+        "tests/golden/test_dl_canonical_geography.py",
+        "tests/golden/test_golden_fixture_integrity.py",
+        "tests/property/test_property_invariants.py",
+        "tests/safety/test_fail_closed_gates.py",
+        "tests/unit/test_config_wiring.py",
+        "tests/unit/test_contracts.py",
+        "tests/unit/test_evidence_validator.py",
+        "tests/unit/test_final_3m_hardening.py",
+        "tests/unit/test_input_contract.py",
+        "tests/unit/test_monitoring.py",
+        "tests/unit/test_provenance.py",
+        "tests/unit/test_sp1_geography_contract.py",
+        "tests/unit/test_sp1_successor_contract_validation.py"
+      ]
+    },
+    {
+      "rule_id": "geography_mismatch_candidate",
+      "version": "1.0.0",
+      "registry_position": 8,
+      "implementation_class": "GeographyMismatchCandidate",
+      "implementation_file": "data_quality_platform/rules/v1_rules.py",
+      "rule_sha256": "7967b59ef7a14b83284a12eb298d63c6140e0837bfafdf3ac4e758baf74c4e93",
+      "source_file_sha256": "daef1ded54c7d3c79898a1ba253be2acd5b6120e18b16b09009fdd7be9fc2276",
+      "input_columns": [
+        "zip",
+        "state"
+      ],
+      "reference_data": [
+        "state_zip_prefix_map_v1"
+      ],
+      "covering_test_files": [
+        "tests/golden/test_dl_canonical_geography.py",
+        "tests/golden/test_golden_cases.py",
+        "tests/golden/test_golden_fixture_integrity.py",
+        "tests/property/test_property_invariants.py",
+        "tests/unit/test_contracts.py",
+        "tests/unit/test_input_contract.py",
+        "tests/unit/test_monitoring.py",
+        "tests/unit/test_provenance.py",
+        "tests/unit/test_rule_oracle_consistency.py",
+        "tests/unit/test_sp1_geography_contract.py",
+        "tests/unit/test_sp1_successor_contract_validation.py"
+      ]
+    }
+  ]
+}

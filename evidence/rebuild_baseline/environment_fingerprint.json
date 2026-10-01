@@ -1,0 +1,10 @@
+{
+  "arch": "x86_64",
+  "captured_utc": "2026-09-18T23:40:47Z",
+  "locale": "",
+  "os": "linux",
+  "os_release": "5.10.134-013.15.kangaroo.al8.x86_64",
+  "python": "3.12.14",
+  "python_implementation": "CPython",
+  "timezone_note": "all timestamps in evidence are UTC"
+}

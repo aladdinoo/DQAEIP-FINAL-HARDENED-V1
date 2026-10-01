@@ -1,0 +1,86 @@
+{
+  "check_count": 17,
+  "checks": {
+    "absolute_path_gate_extracted": {
+      "detail": "absolute-path gate: PASS (0 violations, 75 files scanned, 5 exceptions granted)\n",
+      "status": "PASS"
+    },
+    "artifact_identity_registry_extracted": {
+      "detail": "records 41 problems 0\n",
+      "status": "PASS"
+    },
+    "claim_graph_verification_extracted": {
+      "detail": "claim graph written: evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/claim_graph/claim_graph.json\n  claims: 25 (verified 24, NOT_VERIFIED 1)\n  evidence nodes: 17\n  verdict: FAIL\n  [NOT_VERIFIED] integrity_monitors: None\n",
+      "status": "FAIL"
+    },
+    "contract_33_41_and_8_rules": {
+      "detail": "",
+      "status": "PASS"
+    },
+    "contradiction_checker_extracted": {
+      "detail": "CONTRADICTION CHECK: CONSISTENT\n  docs scanned: 24\n  contradictions: 0\n",
+      "status": "PASS"
+    },
+    "executable_bits_preserved": {
+      "detail": "265 executable members faithful",
+      "status": "PASS"
+    },
+    "extraction": {
+      "detail": "",
+      "status": "PASS"
+    },
+    "final_results_documents": {
+      "detail": "",
+      "status": "PASS"
+    },
+    "freshness_extracted": {
+      "detail": "LEAN_REBUILD_RELEASE_2026-09-18/release_gate/absolute_path_gate_report.json\n  - dependency changed: evidence/release/release_evidence_model.json\n  - dependency changed: evidence/release/release_evidence_model.json\n  - dependency changed: FINAL_RESULTS.json\n  - dependency changed: FINAL_RESULTS.json\n",
+      "status": "PASS"
+    },
+    "integrity_monitor_extracted": {
+      "detail": "L_final_results\n  [        PASS] M_readme_metrics\n  [        PASS] N_frozen_v1\n  [        PASS] O_official_3m_evidence\n  [        PASS] P_checker\n  [        PASS] Q_run3_appearance\n  [        PASS] R_duplicate_identity\n  [        PASS] S_unauthorized_artifacts\n  [        PASS] T_malformed_manifests\n",
+      "status": "FAIL"
+    },
+    "manifest_and_lock": {
+      "detail": "",
+      "status": "PASS"
+    },
+    "package_import": {
+      "detail": "",
+      "status": "PASS"
+    },
+    "readme_consistency_extracted": {
+      "detail": "README CONSISTENCY -> evidence/release/readme_consistency.json : CONSISTENT\n",
+      "status": "PASS"
+    },
+    "release_identity_consistent": {
+      "detail": "",
+      "status": "PASS"
+    },
+    "schema_compatibility_extracted": {
+      "detail": "",
+      "status": "PASS"
+    },
+    "security_scan_extracted": {
+      "detail": "PASS 0\n",
+      "status": "PASS"
+    },
+    "test_suite_extracted": {
+      "detail": "1043 passed, 10 skipped in 24.12s",
+      "status": "PASS"
+    }
+  },
+  "generated_utc": "2026-09-19T02:42:02Z",
+  "release_id": "DQAEIP-FINAL-CLEAN-REBUILD-RELEASE-2026-09-18",
+  "report": "DQAEIP self-contained release verification (clean-room extraction)",
+  "schema": {
+    "name": "dqaeip.self_contained_verification",
+    "version": "1.0"
+  },
+  "scratch_root": "<clean random temporary directory>",
+  "self_contained": "every check executed from the extracted copy only; the extracted release does not depend on the original working tree, its paths, or its git checkout",
+  "verdict": "FAIL",
+  "working_tree_gate_note": "the full release gate (including the git-integrity gate, which requires repository metadata deliberately excluded from the ZIP) ran in the working tree; this extraction verification is the self-contained equivalent for the shipped archive",
+  "zip_path": "DQAEIP-FINAL-CLEAN-REBUILD-RELEASE-2026-09-18.zip",
+  "zip_sha256": "6a4383399f4bc773c0930986dd0ee76bbe907ebf5efb3bc0224b24df288b6dc5"
+}

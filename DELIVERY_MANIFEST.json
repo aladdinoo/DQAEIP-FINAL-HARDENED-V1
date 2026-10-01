@@ -1,0 +1,338 @@
+{
+  "project": "Data Quality",
+  "product_name": "Data Quality",
+  "implementation_scope": "Data Quality V1",
+  "repository_lineage": "data-quality-platformV2 (origin github.com/aladdinoo/data-quality-platformV2)",
+  "package_identifier": "data_quality_platform (unchanged for compatibility)",
+  "distribution_identifier": "data-quality-platform (retained as technical identifier)",
+  "single_project_statement": "This archive contains EXACTLY ONE project: Data Quality. GEO, SP1 and E1 are workstreams/features/validation areas inside it. All reports, evidence, manifests, test outputs, historical checkpoints and ZIP snapshots are project artifacts, never separate projects.",
+  "baseline_commit": "a5ec759f069c2c8aeea72b147437f1b8b22756d9",
+  "consolidation_commit": "5abca22a2b82dd17f03ee067b92b987d7c696d83",
+  "manifest_note": "Committed in the manifest-record commit that sits on top of the final documentation commit; the delivered archive HEAD equals that commit. Run 'git rev-parse HEAD' inside the archive for the exact value. Nothing pushed.",
+  "push_status": "nothing pushed",
+  "generated_at_utc": "2026-09-07T18:20:21.273225+00:00",
+  "environment": {
+    "python": "3.12.14",
+    "pytest": "9.0.2",
+    "os": "Linux 5.10.134-013.8.3.kangaroo.al8.x86_64 x86_64",
+    "docker_clickhouse": "absent (runtime test skips; no connection attempted)",
+    "airflow": "not installed (runtime test skips)"
+  },
+  "test_results": {
+    "command": "python3 -m pytest -q -rs",
+    "collected": 331,
+    "passed": 322,
+    "failed": 0,
+    "skipped": 9,
+    "errors": 0,
+    "duration_seconds": 4.72,
+    "category_runs_overlapping_not_summed": {
+      "unit": 237,
+      "contract": 22,
+      "integration": 24,
+      "golden": "25 passed + 7 skipped",
+      "sp1_geography": 63,
+      "security": 25,
+      "runtime": "8 passed + 2 skipped",
+      "e2e_golden_cases": 10,
+      "security_tests_dir": 6
+    },
+    "skips": [
+      {
+        "count": 7,
+        "reason": "Authoritative DL001-DL015 acceptance table not present at tests/golden/dl_geography_cases.csv (company-gated; never reconstructed)",
+        "classification": "BLOCKED/COMPANY-GATED"
+      },
+      {
+        "count": 1,
+        "reason": "Docker/ClickHouse unavailable",
+        "classification": "ENVIRONMENTAL"
+      },
+      {
+        "count": 1,
+        "reason": "Airflow not installed - DESIGNED_BUT_NOT_RUNTIME_VERIFIED",
+        "classification": "ENVIRONMENTAL"
+      }
+    ],
+    "logs": "evidence/final_execution/ (commands/ + category_runs/)",
+    "repeat_run_duration_seconds": 4.66,
+    "e2e_cli_subprocess": 10
+  },
+  "GEO_status": {
+    "v1_geography_frozen": "PARTIAL (implemented and verified as-built; known documented limitations preserved: 8 territory/military codes absent from prefix map, DC duplicate, 13 ambiguous prefixes, GC011/GC037 pinned false positives, SQL templates never rendered)",
+    "dl001_dl015": "COMPANY-GATED - 3 semantics-verified (DL006/DL011/DL014), 2 prose-only (DL012/DL015), 10 blocked on authoritative table; NOT claimed as fully validated"
+  },
+  "SP1_status": {
+    "implemented": true,
+    "registered": false,
+    "active": false,
+    "authorized": false,
+    "executed_in_production": false,
+    "verification": "63/63 suite; 7/7 acceptance cases live; 21/21 consolidation probe; pinned constants == authoritative contract doc; 62-code allowlist exact; provider-isolated; legacy-map tripwire green",
+    "activation_gate": "requires physical reference data + explicit company authorization + explicit registry swap"
+  },
+  "E1_status": {
+    "implemented": false,
+    "executed": false,
+    "authorized": false,
+    "evidence": "0 code identifiers in data_quality_platform/, runner/, airflow/ (fresh grep)",
+    "activation_requirements": "implemented module + written company authorization + non-production environment + mutation-capable credentials provisioned by company + audit/rollback plan"
+  },
+  "clickhouse": {
+    "client_in_app_code": false,
+    "connections_this_pass": 0,
+    "statements_this_pass": 0,
+    "mutations_this_pass": 0,
+    "write_sql_in_production_code": 0,
+    "note": "tips_data.tblZipStCtyIB is a name constant only (geography/references.py:53); physical reproduction is an external execution dependency, not an implementation failure"
+  },
+  "reconciliation_721m": {
+    "arithmetic_identities": "5/5 PASS (fresh)",
+    "physical_reproduction": "BLOCKED - company reference scope unavailable; not claimed",
+    "authoritative_values": {
+      "total_rows": 721141364,
+      "five_digit_zip": 590011545,
+      "reference_missing": 3495452,
+      "reference_conflict": 37195,
+      "reference_resolved": 586478898,
+      "removed_by_state_conditions": 14607754,
+      "zip_state_assessable": 571871144,
+      "match": 569070112,
+      "mismatch": 2801032
+    }
+  },
+  "company_dependencies": [
+    "tests/golden/dl_geography_cases.csv (authoritative DL001-DL015 table, supplied verbatim)",
+    "physical canonical/cross reference data (authorized ClickHouse endpoint or hash-identified snapshots)",
+    "explicit SP1 production activation authorization",
+    "E1 implement/not-implement decision (+ authorization package if implementing)",
+    "non-blocking: Q18 production IAM, Airflow runtime, scale infrastructure"
+  ],
+  "final_classifications": {
+    "v1_core": "PASS",
+    "v1_geography": "PARTIAL",
+    "dl001_dl015": "COMPANY-GATED",
+    "sp1_semantics": "PASS",
+    "sp1_activation": "COMPANY-GATED/NOT AUTHORIZED",
+    "e1": "NOT IMPLEMENTED/NOT EXECUTED/NOT AUTHORIZED",
+    "clickhouse_safety": "PASS",
+    "clickhouse_reproduction": "BLOCKED (external)",
+    "provenance": "PASS (with recorded gaps)",
+    "scale_721m": "BLOCKED (scope; arithmetic 5/5)",
+    "security_foundation": "PASS",
+    "production_iam": "PARTIAL"
+  },
+  "safety_confirmation": {
+    "v1_semantics_changed": false,
+    "golden_fixture_hashes": {
+      "golden_cases.csv": "9ff2364f6b283ad2…",
+      "expected_results.csv": "fd2d9783718c7bd6…",
+      "geography_edge_cases.csv": "c5084feb4d8f2cee…"
+    },
+    "sp1_activated": false,
+    "e1_implemented": false,
+    "clickhouse_mutations": 0,
+    "secrets_introduced": 0,
+    "company_data_fabricated": false
+  },
+  "artifact_sha256": {
+    ".env.example": "050d42d7caab335e94a2cd1ee4a20b3ec3defcfbf3870fe5a373b357d7dea26d",
+    "BENCHMARK_REPORT.md": "798140307ae1f5aca9cb418554c70fdcc11e9db930b9ce978a6b828e7802328c",
+    "COMPANY_ALIGNMENT_FORENSIC_REPORT.md": "2fc9ea8ff06983966ba54eab30682b06106ebcf034dc353641d0a15a30d90e35",
+    "COMPANY_REQUIREMENTS_ANSWER.md": "9dbcff1e6aa7f7ca21fc2d023d0079a261a7320e0475eafad30335de9b0d317c",
+    "CROSS_REFERENCE_PROVENANCE_REPORT.md": "32445c038b2825264de65e53c2ab014b364d09954d8c4d0b632e249e255cc7f3",
+    "ENGINEERING_RECOMMENDATIONS.md": "8c708f147dd0606a3b9740bde987ca9e6306ac73322d5e39952f9e93886e38a1",
+    "EVIDENCE_MANIFEST.md": "9da8c9628d2e42f184fe57211154bba15187b5a609e2b087e209dd0a9304dbe9",
+    "EVIDENCE_MANIFEST_FORENSIC_AUDIT_REPORT.md": "d60b12ca3135a3c02b699f99d61b6747e6fd2134ddd4c4d205685e330ec9e2ad",
+    "FINAL_EXECUTION_REPORT.md": "a66a725d34492e226c5df02f4c5e7313ea059791ee2f6967f4bf6ea068ed4f1d",
+    "FINAL_IMPROVEMENT_REPORT.md": "762bd84a1a6c6caf7eb5d6f13aef6412c02a70ea8f8594b1589868ce256058d8",
+    "FINAL_TEST_AND_FORENSIC_REPORT.md": "fbc6af7a6a608ffd6fe95a1361d1978b52e404fc072744185a388ae042008ddb",
+    "FINAL_VERIFICATION_REPORT.md": "8324116063e42a876fcf1f39307cc809b4e83cadd839775dae53cb9c58b01d80",
+    "GEOGRAPHY_VALIDATION_REPORT.md": "70a80adcab5c1e1cfe022a3ef1d5a43b950dd8a5c34d49a8df67540fd8622b1b",
+    "LIMITATIONS.md": "57081ce722e80f1c0c0807920af3d841040ac76168fe0fb135e57c13e3a08c2f",
+    "README.md": "d19f13bb4d8467fd70d4e9c030a8fd417693e19f56aa96edb140afcb67473932",
+    "RECONCILIATION_REPORT.md": "5b3016013b108589c964be3ad31fa7a83eb72a5dc8b2eb7a67bff1919dfae37e",
+    "RULE_VALIDATION_REPORT.md": "2e70166a662014a818934f6d8c58e3b36b0385f97dcd20e8b0a1e6d372f7a9e1",
+    "TEST_REPORT.md": "061685d7231faf2c4af52521a370710fd3ac3723b323223722f28b650ba093ff",
+    "data_quality_platform/contracts.py": "b3eea54f0c5142e654cd531c4bb994669a170a7b37060b6bb7d45c4c46fb5d18",
+    "data_quality_platform/geography/canonical.py": "d59d2a7901a5d710aa9a476dd65a50fbc29408b069216e1b1babc6d12e7c4dfc",
+    "docs/GEOGRAPHY_RULE_SP1_CONTRACT.md": "22c5eb3b337a978fb98d2991730a892141a6b677ea004a448e4cc0b41de8cabb",
+    "evidence/benchmarks/benchmark.json": "884e1bb3100e27ff483d344bdb3ace1cc67503c66b9f833d2ff9e9f119977802",
+    "evidence/consolidation/sp1_consolidation_probe.log": "7b47578b64104f68b346cdd9105cef6bae7c7f79d702dd0f1333ea93809c2cdf",
+    "evidence/consolidation/test_full_suite.log": "6fcc58bd3d5938d94386e475710c919010c659314f3ba28b85cf7afa3b4bf4cf",
+    "evidence/final/PROOF_MATRIX.md": "daa2c9118c8f0203daf4ead85552d438269068d7bddc7f8884364d73abf33d74",
+    "evidence/final_execution/EVIDENCE_MANIFEST.json": "7f44e97c8990976e3021ecb5b1eda484957dc54d5f7db30225f74b32f0d1a728",
+    "evidence/final_execution/probe_results.json": "cd70b238ee6c9e74db64cc5f9e6148b55caed473f9c0de848868236d2dba86d9",
+    "evidence/final_execution/rule_matrix.json": "2ae2eff2184631db7a3fb5f91890ed9954f8305d78ca89ce870511c7dc1c7d4c",
+    "evidence/final_verification/manifest.json": "d1d1fc4a993248f1555862fcfd01fe6421c6c6cb4c796185fc728af82237c3e4",
+    "pyproject.toml": "e2071e3afb16bde0a70faf378aae2a8417d6543857e8201055df277b16a5368c",
+    "reports/history/HISTORY_INDEX.md": "c239890565baefec0a587307486730c4b9096ff186c2ef315912be12d3cf0e76",
+    "tests/golden/expected_results.csv": "fd2d9783718c7bd60ee89615309a3f5708c8e3fa0401c8fdbdcc4ed9db3a63b2",
+    "tests/golden/geography_edge_cases.csv": "c5084feb4d8f2cee6dbe4bab67fc3f8fb15f39d2098f7ab8c6a5a5c9d6b8406f",
+    "tests/golden/golden_cases.csv": "9ff2364f6b283ad26612677af99a39905ef9587654f1cef03206db994b2bc23e"
+  },
+  "reports_history": {
+    "location": "reports/history/",
+    "index": "reports/history/HISTORY_INDEX.md",
+    "files_sha256": {
+      "COMPANY_ALIGNMENT_FORENSIC_REPORT.md": "800eb3b873170a56c21d607cb7a20a18d73a2b2945fcd1cb0f28668958c85540",
+      "CROSS_REFERENCE_PROVENANCE_REPORT.md": "770946128ea8e16d35880a9facf964755cbc4ef0126158e81bfb5afe9e6335f1",
+      "DELIVERY_MANIFEST.json": "b6ba6668bd08008878f9827af840835dba299d37d1b39ea04b367306e94a23ec",
+      "ENGINEERING_RECOMMENDATIONS.md": "cbb1dce35778a94d69775a5d34ff2a169000004785f247048041d8fa8fd01238",
+      "HISTORY_INDEX.md": "ebbe8b37bdcb4b60663797b4343d27998524c4c463cecbbf827552d4ae2347e5",
+      "PHASE1_Q21_ADJUDICATION.md": "20c72ccf91ce9cad342f849010b2c77c01066114686142314547fa3d4a4042d8",
+      "PHASE3_GOLDEN_INTEGRITY_REPORT.md": "44913d4b136edd0d539b0c8950f38d342ca3ca2eb339bdf2abd35a58d6f091be",
+      "PHASE_18_DELTA_VERIFICATION_REPORT.md": "3a1b18452482bba44a7200e2ced4c960b181e37b598e46f6e0bd9a0714fe0eb8",
+      "PHASE_19_EVIDENCE_REPORT.md": "83eedcb4744acaf377d5206ad907405d5a995c919dd10e424daa1bbabdeb87f1",
+      "PHASE_20_FORENSIC_AUDIT_REPORT.md": "4bb618ef1baa54f78c599b5c15c7216f680e7d8552f5c391805c0c723f189ee8",
+      "Q1_Q22_ACCEPTANCE_AUDIT.md": "a8783a425fb3e28f4141e1e968603dc711f7fe4e86f09fac78b0ef086605fcef",
+      "FINAL_VERIFICATION_REPORT_2026-08-25_HISTORICAL.md": "c6d6c6873f9c306e7db7da8838d6d68457a93ef2b6d9589012514c8d969aee14"
+    }
+  },
+  "historical_zip_checkpoints": {
+    "location": "delivery area (NOT unpacked into the project)",
+    "classification": "historical checkpoints of the SAME single project; must never be presented as separate projects",
+    "register": [
+      "data-quality-platformV2-review-blocked-beefcaa8….zip",
+      "data-quality-platformV2-ready-with-limitations-30c161d….zip",
+      "data-quality-platformV2-ready-with-limitations-fb049ee….zip",
+      "data-quality-platformV2-reviewed-bc81ee0….zip",
+      "data-quality-platformV2-reviewed-a5ec759….zip",
+      "data-quality-platformV2-FINAL-Data-Quality-V1-a5ec759.zip"
+    ]
+  },
+  "final_archive": {
+    "directory": "download (delivery area)",
+    "zip": "Data-Quality-Validation-Platform-5M-Revalidated-2026-09-09-v2.zip (current package, 2026-09-09 documentation consolidation)",
+    "prior_package_preserved": "Data-Quality-Validation-Platform-5M-Revalidated-2026-09-09.zip — SHA-256 51fdf65d31df91a930aaaecf4e8f8fabfe2d0487372177b219d0b9bbe3463ea4 — preserved unmodified; never overwritten",
+    "contents_statement": "current consolidated documentation, full evidence tree (incl. FINAL_RESULTS.json + MANIFEST.json), reports, README, tests, scripts, configuration examples, packaging metadata; no secrets, no caches, no virtualenvs, no large generated CSVs (hash + regeneration-command anchored)",
+    "zip_sha256_note": "recorded in the download/…-v2.zip.sha256 sidecar and in evidence/final_5m_execution/13_archive/archive_v2_sha256.txt; cannot be embedded in the archive itself (self-reference)"
+  },
+  "final_commit": null,
+  "final_commit_note": "Self-reference impossible: the final commit necessarily contains this manifest. The exact final commit is the git HEAD of the delivered archive (git log -1 / git rev-parse HEAD inside the archive); recorded externally in the delivery-area packaging summary and the final response.",
+  "archive_sha256": null,
+  "archive_sha256_note": "The delivered ZIP cannot embed its own hash. The v2 package SHA-256 is recorded in download/Data-Quality-Validation-Platform-5M-Revalidated-2026-09-09-v2.zip.sha256 and evidence/final_5m_execution/13_archive/archive_v2_sha256.txt. The preserved task-time package's SHA-256 is recorded in 13_archive/archive_sha256.txt (51fdf65d…).",
+  "fresh_execution_pass": {
+    "date_utc": "2026-09-07",
+    "git_head_at_execution_start": "71a303e2dd39eeefcb982dcf7e2336c209dd9874",
+    "evidence_location": "evidence/final_execution/ (127 artifacts, EVIDENCE_MANIFEST.json)",
+    "reports_rebuilt": [
+      "FINAL_EXECUTION_REPORT.md",
+      "TEST_REPORT.md",
+      "BENCHMARK_REPORT.md",
+      "RECONCILIATION_REPORT.md",
+      "RULE_VALIDATION_REPORT.md",
+      "GEOGRAPHY_VALIDATION_REPORT.md",
+      "EVIDENCE_MANIFEST.md",
+      "LIMITATIONS.md",
+      "FINAL_VERIFICATION_REPORT.md"
+    ],
+    "cli_run": "fresh_exec_1000: 1000 in / 1000 out, reconciliation passed, seed 20260821",
+    "benchmark": "1K 0.207s/4841.5 rps/1.01MB; 10K 1.494s/6694.0 rps/7.23MB; 100K 15.325s/6525.1 rps/68.65MB",
+    "verification_matrix": "20 PASS / 2 PARTIAL / 0 FAIL / 0 SKIP",
+    "static_scans": "0 secret hits; 0 mutation-SQL hits; SP1 isolation confirmed (0 outside-package imports)"
+  },
+  "artifact_sha256_note": "all 34 artifact hashes recomputed from disk during the 2026-09-09 documentation consolidation (banner additions to the 2026-09-05/06/07 pass reports changed their content; hashes were refreshed rather than left stale); files themselves preserved verbatim apart from the documented banner/wording edits",
+  "product_identity_2026_09_09": {
+    "product_display_name": "Data Quality Validation Platform",
+    "short_name": "DQVP",
+    "technical_python_package": "data_quality_platform",
+    "repository_lineage": "data-quality-platformV2",
+    "same_project_statement": "This is the SAME project as all prior passes — not a new project, not a replacement, not a rewritten platform, and not a V2 implementation replacing V1. The 2026-09-09 documentation is a newer validated/documented state of the one project.",
+    "note": "'Data Quality' remains a valid short historical name used by the 2026-09-07-era sections below and reports/history/."
+  },
+  "final_validation_2026_09_09": {
+    "authoritative_source_of_truth": "evidence/final_5m_execution/FINAL_RESULTS.json",
+    "report_of_record": "docs/FINAL_5M_VALIDATION_REPORT.md",
+    "verdict": "PASS WITH DOCUMENTED LIMITATIONS",
+    "dataset_5m": {
+      "rows": 5000000,
+      "columns": 33,
+      "seed": 20260909,
+      "sha256": "44e41bb8cfe1c0d2fbafbff5e91bb40b100f8331ef26f946532b84c57409fb9d",
+      "status": "generated + independently verified (dataset scale)"
+    },
+    "execution_5m": {
+      "status": "FAILED — ENVIRONMENT OOM (kernel-evidenced)",
+      "rows_completed_of_5000000": 4943922,
+      "completion_fraction": "approximately 98.9%",
+      "observed_peak": "approximately 3,592 MB anon-rss at kernel kill",
+      "projected_peak_mb": 3593.9,
+      "classification": "environment/resource boundary — NOT a code correctness failure"
+    },
+    "flagship_3m": {
+      "role": "largest pre-registered safe flagship execution scale",
+      "runs": 2,
+      "input_sha256": "9be5438ee082652968705add152ee7268272213249826043603f36cfd55ae09e",
+      "output_sha256_both_runs": "22110e49d0276eeed1153fe16ddf00a2a87c49a379ece7363a84cfdca2cb1ef9",
+      "byte_identical": true,
+      "run1": {
+        "duration_s": 138.472,
+        "rows_per_second": 21664.1,
+        "peak_rss_mb": 2192.27
+      },
+      "run2": {
+        "duration_s": 140.466,
+        "rows_per_second": 21357.6,
+        "peak_rss_mb": 2195.82
+      },
+      "rows_per_second_note": "prose-report convention (README §5, PERFORMANCE_REPORT.md, documentation standard §10): 21,664.1 / 21,357.6; the machine-computed ladder capture (06_performance/bench_ladder.json, mirrored in FINAL_RESULTS.json performance.ladder) lists 21,665.0 / 21,357.5 — a 0.004% hand-rounding difference; durations identical",
+      "independent_verification": {
+        "flag_comparisons_per_run": 24000000,
+        "total_both_runs": 48000000,
+        "mismatches": 0,
+        "reconciliation": "all 8 flags, pipeline == independent, delta 0"
+      }
+    },
+    "tests": {
+      "collected": 331,
+      "passed": 322,
+      "skipped": 9,
+      "failed": 0,
+      "errors": 0,
+      "skips": "7 x DL001-DL015 company-gated + 1 ClickHouse runtime + 1 Airflow runtime",
+      "capture": "evidence/final_5m_execution/12_test_suite/pytest_full_rs.txt"
+    },
+    "performance_1m": {
+      "duration_s": 45.917,
+      "rows_per_second": 21778.5,
+      "peak_rss_mb": 735.71
+    },
+    "geography_v1": {
+      "assessable": "3,000,000/3,000,000 — 100% assessable under the frozen V1 prefix-map predicate",
+      "mismatch_candidates": 149044,
+      "not_claims": [
+        "canonical USPS errors",
+        "confirmed geographic errors",
+        "100% valid ZIPs"
+      ]
+    },
+    "sp1": "REGISTERED=NO / ACTIVE=NO / DEFAULT=NO / AUTHORIZED=NO / PRODUCTION CALL SITES=0 / PHYSICAL REFERENCE BOUND=NO / EXECUTED IN FLAGSHIP V1 RUN=NO",
+    "clickhouse": "NOT RUNTIME EXECUTED — 0 connections, 0 mutation SQL; production data mutation: NONE",
+    "airflow": "STATICALLY VERIFIED (DAG = 6 tasks); runtime NOT EXECUTED / unavailable",
+    "e1": "NOT IMPLEMENTED / NOT EXECUTED / NOT AUTHORIZED",
+    "company_scale": "721,141,364 / 590,011,545 — COMPANY-SUPPLIED / HISTORICAL / ARITHMETIC-ONLY / NOT LOCALLY REPRODUCED"
+  },
+  "documentation_consolidation_2026_09_09": {
+    "date_utc": "2026-09-09T17:20:09.582502+00:00",
+    "scope": "documentation + packaging only; no production/test/config logic touched",
+    "actions": [
+      "18 root pass reports (2026-09-05/06/07) banner-ed HISTORICAL / SUPERSEDED — 2026-09-07 (contents preserved verbatim)",
+      "3 wording corrections per documentation standard (11 authoritative territory/military codes = 8 territory + 3 military/APO/FPO), verified against contracts.py + SP1 allowlist",
+      "COMPANY_ALIGNMENT_FORENSIC_REPORT.md: 2026-09-09 CURRENT status-update header added (chain: FINAL_RESULTS.json -> Company Alignment -> Final Audit -> README -> package)",
+      "EVIDENCE_MANIFEST.md: historical-evidence-index note added",
+      "evidence/final_5m_execution/07_geography/GEOGRAPHY_V1_RESULTS.md: appended consolidation note (11-code completeness clarification; no prior content modified)",
+      "README updated (current package reference, banner map, geography harmonization, preferred 3M wording)",
+      "docs/FINAL_5M_VALIDATION_REPORT.md, docs/FINAL_AUDIT_DECISION_MATRIX.md, docs/REPRODUCIBILITY.md harmonized to the v2 package + 11-code wording",
+      "evidence/final_5m_execution/MANIFEST.json regenerated (see its hashing_semantics for exclusions)",
+      "v2 archive built + SHA-256 sidecar; prior package preserved unmodified"
+    ],
+    "code_changes": 0,
+    "test_changes": 0,
+    "dataset_changes": 0,
+    "git_commit_created": false,
+    "expensive_workloads_rerun": false,
+    "historical_reports_preserved": true
+  },
+  "last_consolidated_utc": "2026-09-09T17:20:09.582502+00:00"
+}

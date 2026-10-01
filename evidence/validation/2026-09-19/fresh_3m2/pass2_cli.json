@@ -1,0 +1,61 @@
+{
+  "pass": "pass2",
+  "cli": {
+    "command": "/home/z/my-project/dqvp-work/repo/.venv/bin/python /home/z/my-project/dqvp-work/repo/scripts/final_3m_runtime_safety_wrapper.py --events-out evidence/validation/2026-09-19/fresh_3m2/pass2_runtime_safety_events.json --max-events 50000 -- validate --csv data/generated/fresh_3m2_regression/consumer_3m_seed_20260918_pass2.csv --output data/generated/fresh_3m2_regression/consumer_3m_seed_20260918_pass2_out.csv --run-id final_3m_pass2 --evidence-dir evidence/validation/2026-09-19/fresh_3m2/pass2_engine",
+    "canonical_command": "/home/z/my-project/dqvp-work/repo/.venv/bin/python -m runner.cli validate --csv data/generated/fresh_3m2_regression/consumer_3m_seed_20260918_pass2.csv --output data/generated/fresh_3m2_regression/consumer_3m_seed_20260918_pass2_out.csv --run-id final_3m_pass2 --evidence-dir evidence/validation/2026-09-19/fresh_3m2/pass2_engine",
+    "wrapper_script": "scripts/final_3m_runtime_safety_wrapper.py",
+    "returncode": 0,
+    "stdout": "Input contract: PASS (3200000 rows, 33 columns, id scan 500000 rows)\n[ALERT WARNING] sla_breach: SLA breach for completeness: score=0.8603, threshold=0.95\n[ALERT WARNING] sla_breach: SLA breach for validity: score=0.8297, threshold=0.95\n[ALERT WARNING] sla_breach: SLA breach for consistency: score=0.8565, threshold=0.9\n[ALERT WARNING] sla_breach: SLA breach for accuracy: score=0.7619, threshold=0.9\n[ALERT WARNING] sla_breach: SLA breach for geography_quality: score=0.8565, threshold=0.9\n[ALERT WARNING] sla_breach: SLA breach for email_quality: score=0.8297, threshold=0.95\nValidation PASSED: 3200000 rows in, 3200000 rows out\n  Run ID: final_3m_pass2\n  Duration: 114.87s\n  Monitoring score: 0.8743\n  SLA passed: False\n  Reconciliation passed: True\n  Evidence: evidence/validation/2026-09-19/fresh_3m2/pass2_engine\n    first_name_cleaning_candidate: 506073\n    last_name_cleaning_candidate: 255805\n    name_cleaning_candidate: 3619\n    email_blank: 256310\n    email_syntax_failure: 288653\n    proposed_email_export_eligible: 2655037\n    zip_state_assessable: 2954329\n    geography_mismatch_candidate: 424088\n",
+    "stderr": "<frozen runpy>:128: RuntimeWarning: 'runner.cli' found in sys.modules after import of package 'runner', but prior to execution of 'runner.cli'; this may result in unpredictable behaviour\n",
+    "duration_seconds": 156.711
+  },
+  "output_path": "data/generated/fresh_3m2_regression/consumer_3m_seed_20260918_pass2_out.csv",
+  "output_size_bytes": 834606817,
+  "output_sha256": "b72adc235160a86e0b99a08f988dd0bb5f2cff82bbe5b5d28ea07c5a5719329a",
+  "input_sha256_after_validation": "59624a53c72f908f1dde673ceecf59e0662ae721bb8f9af7e165acba5318d153",
+  "engine_evidence_dir": "evidence/validation/2026-09-19/fresh_3m2/pass2_engine",
+  "engine_peak_rss_mb": 2363.95,
+  "runtime_safety": {
+    "status": "PASS",
+    "reason": "runtime-verified: 0 socket events, 0 process-exec events, 6 filesystem mutations all within the repository root",
+    "measurement": "CPython audit-hook runtime instrumentation of the production CLI subprocess (scripts/final_3m_runtime_safety_wrapper.py); cooperative observation, not a kernel sandbox",
+    "network_event_count": 0,
+    "exec_event_count": 0,
+    "ctypes_event_count": 0,
+    "mutation_count": 6,
+    "out_of_repo_mutation_count": 0,
+    "event_count": 144,
+    "engine_exit_code": 0,
+    "sample_mutations": [
+      {
+        "event": "open(write)",
+        "path": "data/generated/fresh_3m2_regression/consumer_3m_seed_20260918_pass2_out.csv"
+      },
+      {
+        "event": "open(write)",
+        "path": "evidence/validation/2026-09-19/fresh_3m2/pass2_engine/lineage.json"
+      },
+      {
+        "event": "open(write)",
+        "path": "evidence/validation/2026-09-19/fresh_3m2/pass2_engine/audit.json"
+      },
+      {
+        "event": "open(write)",
+        "path": "evidence/validation/2026-09-19/fresh_3m2/pass2_engine/monitoring.json"
+      },
+      {
+        "event": "open(write)",
+        "path": "evidence/validation/2026-09-19/fresh_3m2/pass2_engine/alerts.json"
+      },
+      {
+        "event": "open(write)",
+        "path": "evidence/validation/2026-09-19/fresh_3m2/pass2_engine/manifest.json"
+      }
+    ],
+    "events_path": "evidence/validation/2026-09-19/fresh_3m2/pass2_runtime_safety_events.json",
+    "events_file_sha256": "ea08f364d97f3e3196374a8f0e8da8af3c05dd6df28583ad9b5f4725a5452621"
+  },
+  "validated_utc": "2026-09-19T08:51:03Z",
+  "script_sha256": "0ef7c10c14a1df317c23cb0dfc73b3a60c2257c064b35080d694e5fe8bc50d84",
+  "git_commit": "fb4df927baf9e43735ac8facde7c5ecbd2a5f187"
+}

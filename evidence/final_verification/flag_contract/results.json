@@ -1,0 +1,48 @@
+[
+  {
+    "size": 100,
+    "column_count": 41,
+    "expected_columns": 41,
+    "column_count_ok": true,
+    "source_columns_ok": true,
+    "flag_columns_ok": true,
+    "no_duplicates": true,
+    "all_flags_binary": true,
+    "row_count_ok": true,
+    "input_rows": 100,
+    "output_rows": 100,
+    "flag_counts": {
+      "first_name_cleaning_candidate": 9,
+      "last_name_cleaning_candidate": 6,
+      "name_cleaning_candidate": 3,
+      "email_blank": 8,
+      "email_syntax_failure": 7,
+      "proposed_email_export_eligible": 85,
+      "zip_state_assessable": 100,
+      "geography_mismatch_candidate": 5
+    }
+  },
+  {
+    "size": 1000,
+    "column_count": 41,
+    "expected_columns": 41,
+    "column_count_ok": true,
+    "source_columns_ok": true,
+    "flag_columns_ok": true,
+    "no_duplicates": true,
+    "all_flags_binary": true,
+    "row_count_ok": true,
+    "input_rows": 1000,
+    "output_rows": 1000,
+    "flag_counts": {
+      "first_name_cleaning_candidate": 114,
+      "last_name_cleaning_candidate": 66,
+      "name_cleaning_candidate": 30,
+      "email_blank": 80,
+      "email_syntax_failure": 70,
+      "proposed_email_export_eligible": 850,
+      "zip_state_assessable": 1000,
+      "geography_mismatch_candidate": 50
+    }
+  }
+]

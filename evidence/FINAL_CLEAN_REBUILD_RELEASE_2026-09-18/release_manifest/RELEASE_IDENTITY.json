@@ -1,0 +1,34 @@
+{
+  "dependency_fingerprint": "d9fa447d6d7e970a40c9dad61d0f235a0fa399337439b75e819b9853cd1d36e5",
+  "final_results_path": "evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/final_results/FINAL_RESULTS_PORTABLE_2026-09-18.json",
+  "final_results_sha256": "98400e0f27ca526c54ef44ced1cf0d50a10b53ba2591a3dc43615561159cbdf8",
+  "frozen_v1_sha256": "daef1ded54c7d3c79898a1ba253be2acd5b6120e18b16b09009fdd7be9fc2276",
+  "official_checker_sha256": "0ef7c10c14a1df317c23cb0dfc73b3a60c2257c064b35080d694e5fe8bc50d84",
+  "official_input_sha256": "59624a53c72f908f1dde673ceecf59e0662ae721bb8f9af7e165acba5318d153",
+  "official_output_sha256": "b72adc235160a86e0b99a08f988dd0bb5f2cff82bbe5b5d28ea07c5a5719329a",
+  "product_name": "Data Quality Assurance & Evidence Integrity Platform",
+  "release_date": "2026-09-18",
+  "release_id": "DQAEIP-FINAL-CLEAN-REBUILD-RELEASE-2026-09-18",
+  "report": "DQAEIP machine-readable release identity",
+  "schema": {
+    "name": "dqaeip.release_identity",
+    "version": "1.0"
+  },
+  "supersedes": "DQAEIP-FINAL-UPDATE-2026-09-17",
+  "verification_chain": [
+    "official 3M run pair (Run 1 + Run 2; no Run 3)",
+    "run-pair verification 95/95",
+    "two-phase FINAL_RESULTS rebuild (schema gate)",
+    "claim -> evidence -> hash graph verification",
+    "artifact identity registry validation",
+    "evidence schema compatibility (all current KNOWN)",
+    "absolute-path release gate (0 violations)",
+    "integrity monitors 20/20",
+    "evidence mutation matrix 16/16 rejected",
+    "release gate 22/22 fail-closed gates",
+    "clean-room self-contained verification"
+  ],
+  "verification_state": "PASS_WITH_DOCUMENTED_LIMITATIONS",
+  "zip_sha256": null,
+  "zip_sha256_note": "a zip archive cannot embed its own hash; the authoritative zip_sha256 is recorded in the repo-side ZIP record (evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/release_manifest/zip_record.json) and in the .sha256 sidecar beside the archive"
+}

@@ -1,0 +1,40 @@
+{
+  "built_utc": "2026-09-19T02:43:08Z",
+  "documented_exceptions": {
+    "DQAEIP-FINAL-CLEAN-REBUILD-RELEASE-2026-09-18/tests/assurance/test_release_security_and_manifest.py": "positive-control fixture for the release security scanner (synthetic PEM marker, placeholder body)",
+    "DQAEIP-FINAL-CLEAN-REBUILD-RELEASE-2026-09-18/tests/unit/test_pii_scan.py": "positive-control fixture for the PII scanner (synthetic PEM marker, placeholder body)"
+  },
+  "excluded_by_policy": [],
+  "exclusion_policy": "temporary staging (two-phase rebuild working area; forensic records preserved in repository + git history), caches, bytecode, environment files",
+  "git_head_at_build": "66e457b3cca3ae33ddd55e330087415f81d90d40",
+  "historical_policy": {
+    "members_with_machine_paths": 78,
+    "note": "historical evidence archives preserved under the documented historical-evidence policy (Phase 15); portable derived representations are machine-path free"
+  },
+  "member_count": 460,
+  "portable_scope_members_scanned": 68,
+  "prohibited_findings": [],
+  "release_id": "DQAEIP-FINAL-CLEAN-REBUILD-RELEASE-2026-09-18",
+  "report": "DQAEIP portable release ZIP record",
+  "schema": {
+    "name": "dqaeip.zip_record",
+    "version": "1.0"
+  },
+  "status": "VERIFIED",
+  "tree_clean_at_build": true,
+  "verdict": "VERIFIED",
+  "verification": {
+    "crc": "PASS",
+    "credential_scan": "PASS (documented positive-control fixtures only)",
+    "executable_bits_preserved": true,
+    "key_artifact_manifest_consistency": "PASS",
+    "member_set_matches_tree": true,
+    "member_sha256_verified": 460,
+    "path_safety": "PASS",
+    "portable_scope_machine_path_gate": "PASS",
+    "problems": []
+  },
+  "zip_path": "DQAEIP-FINAL-CLEAN-REBUILD-RELEASE-2026-09-18.zip",
+  "zip_sha256": "4ecbfc16da7ddaa1c830d5963f2eefba3236e3ce07fb1b1857bd07d63020cea5",
+  "zip_size_bytes": 2001588
+}

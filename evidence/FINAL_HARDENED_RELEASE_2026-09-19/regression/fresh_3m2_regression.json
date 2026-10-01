@@ -1,0 +1,67 @@
+{
+  "baseline_reproduction": {
+    "compared_against": "DQAEIP-FINAL-CLEAN-REBUILD-RELEASE-2026-09-18 (BASELINE_CERTIFIED_HISTORICAL)",
+    "reproduced_exactly": [
+      "rows",
+      "seed",
+      "input_sha256 (both passes)",
+      "output_sha256 (both passes)",
+      "oracle comparisons per pass",
+      "zero mismatches",
+      "runtime safety PASS",
+      "byte-identical outputs"
+    ],
+    "verified": true
+  },
+  "configuration": {
+    "passes": 2,
+    "rows": 3200000,
+    "seed": 20260918
+  },
+  "determinism": {
+    "byte_comparison_performed": true,
+    "byte_identical_output": true,
+    "combined_oracle_comparisons": 51200000,
+    "combined_oracle_mismatches": 0,
+    "determinism_status": "PASS (byte-identical across two complete runs)"
+  },
+  "evidence_sources": {
+    "final_results": "evidence/validation/2026-09-19/fresh_3m2/FINAL_RESULTS.json",
+    "pass1_result": "evidence/validation/2026-09-19/fresh_3m2/pass1_result.json",
+    "pass2_result": "evidence/validation/2026-09-19/fresh_3m2/pass2_result.json"
+  },
+  "final_status": "PASS",
+  "generated_utc": "2026-09-19T13:28:40Z",
+  "harness": {
+    "checker_version": "2.0.0 (fail-closed final-verdict hardening, Dave review)",
+    "git_commit_during_run": null,
+    "script": "scripts/final_3m_validation.py",
+    "sha256": "0ef7c10c14a1df317c23cb0dfc73b3a60c2257c064b35080d694e5fe8bc50d84"
+  },
+  "pass1": {
+    "input_sha256": "59624a53c72f908f1dde673ceecf59e0662ae721bb8f9af7e165acba5318d153",
+    "oracle_comparisons": 25600000,
+    "oracle_mismatches": 0,
+    "output_sha256": "b72adc235160a86e0b99a08f988dd0bb5f2cff82bbe5b5d28ea07c5a5719329a",
+    "runtime_safety": "PASS",
+    "sp1_frozen": "PASS"
+  },
+  "pass2": {
+    "input_sha256": "59624a53c72f908f1dde673ceecf59e0662ae721bb8f9af7e165acba5318d153",
+    "oracle_comparisons": 25600000,
+    "oracle_mismatches": 0,
+    "output_sha256": "b72adc235160a86e0b99a08f988dd0bb5f2cff82bbe5b5d28ea07c5a5719329a",
+    "runtime_safety": "PASS",
+    "sp1_frozen": "PASS"
+  },
+  "schema": "dqaeip.hardening.regression/1.0",
+  "stage_runtimes": {
+    "generation_pass1": 86.898,
+    "generation_pass2": 84.104,
+    "validation_pass1": 157.005,
+    "validation_pass2": 156.711,
+    "verify_oracle_pass1": 67.77,
+    "verify_oracle_pass2": 68.098
+  },
+  "total_runtime_seconds": 620.586
+}

@@ -1,0 +1,166 @@
+{
+  "_artifact_identity": {
+    "artifact_class": "DERIVED",
+    "derived_by": "tools/update_v2_portable_evidence.py via the centralized normalizer data_quality_platform/assurance/portable_evidence.py",
+    "environment_placeholders": {
+      "<<venv-python>>": "uv-managed cpython interpreter home (authoring machine; original recoverable from source artifact via source_artifact_sha256)"
+    },
+    "logical_path": "repo://evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/portable_evidence/evidence/validation/2026-09-18/fresh_3m2/harness/pass2_result.UPDATE-V2.portable.json",
+    "normalization_detail": "repository-local absolute paths rewritten to the canonical repo-relative POSIX form; uv-managed cpython interpreter-home prefixes rewritten to explicit placeholder tokens; URLs, hashes, emails and all other values structurally unchanged",
+    "normalization_policy": "repo-local-paths-only",
+    "normalized_field_paths": [
+      "$.cli.command",
+      "$.cli.canonical_command"
+    ],
+    "normalized_string_count": 2,
+    "original_preserved_byte_exact": true,
+    "relative_path": "evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/portable_evidence/evidence/validation/2026-09-18/fresh_3m2/harness/pass2_result.UPDATE-V2.portable.json",
+    "schema_version": "dqaeip.update_v2.portable_artifact:1.0",
+    "source_artifact": "evidence/validation/2026-09-18/fresh_3m2/harness/pass2_result.json",
+    "source_artifact_sha256": "9c92d21cd5a6d636d355bf867508cb7a9501275e1adb2a004fda0f6cfe34157f",
+    "update_id": "DQAEIP-FINAL-CLEAN-REBUILD-RELEASE-2026-09-18"
+  },
+  "blocked": false,
+  "checker_version": "2.0.0 (fail-closed final-verdict hardening, Dave review)",
+  "cli": {
+    "canonical_command": "<<venv-python>>bin/python3 -m runner.cli validate --csv data/generated/fresh_3m2/consumer_3m_seed_20260918_pass2.csv --output data/generated/fresh_3m2/consumer_3m_seed_20260918_pass2_out.csv --run-id final_3m_pass2 --evidence-dir evidence/validation/2026-09-18/fresh_3m2/harness/pass2_engine",
+    "command": "<<venv-python>>bin/python3 scripts/final_3m_runtime_safety_wrapper.py --events-out evidence/validation/2026-09-18/fresh_3m2/harness/pass2_runtime_safety_events.json --max-events 50000 -- validate --csv data/generated/fresh_3m2/consumer_3m_seed_20260918_pass2.csv --output data/generated/fresh_3m2/consumer_3m_seed_20260918_pass2_out.csv --run-id final_3m_pass2 --evidence-dir evidence/validation/2026-09-18/fresh_3m2/harness/pass2_engine",
+    "duration_seconds": 156.901,
+    "returncode": 0,
+    "stderr": "<frozen runpy>:128: RuntimeWarning: 'runner.cli' found in sys.modules after import of package 'runner', but prior to execution of 'runner.cli'; this may result in unpredictable behaviour\n",
+    "stdout": "Input contract: PASS (3200000 rows, 33 columns, id scan 500000 rows)\n[ALERT WARNING] sla_breach: SLA breach for completeness: score=0.8603, threshold=0.95\n[ALERT WARNING] sla_breach: SLA breach for validity: score=0.8297, threshold=0.95\n[ALERT WARNING] sla_breach: SLA breach for consistency: score=0.8565, threshold=0.9\n[ALERT WARNING] sla_breach: SLA breach for accuracy: score=0.7619, threshold=0.9\n[ALERT WARNING] sla_breach: SLA breach for geography_quality: score=0.8565, threshold=0.9\n[ALERT WARNING] sla_breach: SLA breach for email_quality: score=0.8297, threshold=0.95\nValidation PASSED: 3200000 rows in, 3200000 rows out\n  Run ID: final_3m_pass2\n  Duration: 114.92s\n  Monitoring score: 0.8743\n  SLA passed: False\n  Reconciliation passed: True\n  Evidence: evidence/validation/2026-09-18/fresh_3m2/harness/pass2_engine\n    first_name_cleaning_candidate: 506073\n    last_name_cleaning_candidate: 255805\n    name_cleaning_candidate: 3619\n    email_blank: 256310\n    email_syntax_failure: 288653\n    proposed_email_export_eligible: 2655037\n    zip_state_assessable: 2954329\n    geography_mismatch_candidate: 424088\n",
+    "wrapper_script": "scripts/final_3m_runtime_safety_wrapper.py"
+  },
+  "dataset": {
+    "columns": 33,
+    "generation_seconds": 84.869,
+    "path": "data/generated/fresh_3m2/consumer_3m_seed_20260918_pass2.csv",
+    "rows": 3200000,
+    "seed": 20260918,
+    "sha256": "59624a53c72f908f1dde673ceecf59e0662ae721bb8f9af7e165acba5318d153",
+    "sha256_after_validation": "59624a53c72f908f1dde673ceecf59e0662ae721bb8f9af7e165acba5318d153",
+    "size_bytes": 783406620
+  },
+  "engine_peak_rss_mb": 2365.7,
+  "git_commit": "babb4ca085c573f39a89b48f70431b5d34334efb",
+  "output": {
+    "columns": 41,
+    "path": "data/generated/fresh_3m2/consumer_3m_seed_20260918_pass2_out.csv",
+    "rows": 3200000,
+    "sha256": "b72adc235160a86e0b99a08f988dd0bb5f2cff82bbe5b5d28ea07c5a5719329a",
+    "size_bytes": 834606817
+  },
+  "pass": "pass2",
+  "peak_rss_mb": 20.27,
+  "pinned_rule_baseline_source": "evidence/final_execution/rule_matrix.json",
+  "runtime_safety": {
+    "ctypes_event_count": 0,
+    "engine_exit_code": 0,
+    "event_count": 143,
+    "events_file_sha256": "0a26ed04c1e0d711a1978bd05a0fc537a92fd19698a89af843ea0601d8d460bc",
+    "events_path": "evidence/validation/2026-09-18/fresh_3m2/harness/pass2_runtime_safety_events.json",
+    "exec_event_count": 0,
+    "measurement": "CPython audit-hook runtime instrumentation of the production CLI subprocess (scripts/final_3m_runtime_safety_wrapper.py); cooperative observation, not a kernel sandbox",
+    "mutation_count": 6,
+    "network_event_count": 0,
+    "out_of_repo_mutation_count": 0,
+    "reason": "runtime-verified: 0 socket events, 0 process-exec events, 6 filesystem mutations all within the repository root",
+    "sample_mutations": [
+      {
+        "event": "open(write)",
+        "path": "data/generated/fresh_3m2/consumer_3m_seed_20260918_pass2_out.csv"
+      },
+      {
+        "event": "open(write)",
+        "path": "evidence/validation/2026-09-18/fresh_3m2/harness/pass2_engine/lineage.json"
+      },
+      {
+        "event": "open(write)",
+        "path": "evidence/validation/2026-09-18/fresh_3m2/harness/pass2_engine/audit.json"
+      },
+      {
+        "event": "open(write)",
+        "path": "evidence/validation/2026-09-18/fresh_3m2/harness/pass2_engine/monitoring.json"
+      },
+      {
+        "event": "open(write)",
+        "path": "evidence/validation/2026-09-18/fresh_3m2/harness/pass2_engine/alerts.json"
+      },
+      {
+        "event": "open(write)",
+        "path": "evidence/validation/2026-09-18/fresh_3m2/harness/pass2_engine/manifest.json"
+      }
+    ],
+    "status": "PASS"
+  },
+  "script_sha256": "0ef7c10c14a1df317c23cb0dfc73b3a60c2257c064b35080d694e5fe8bc50d84",
+  "sp1_frozen": {
+    "expected_hashes_verified": true,
+    "expected_names_verified": true,
+    "manifest_rule_hashes": {
+      "email_blank": "157ccc2127334bac03534f80868a3d7ea3bc8df77c132e8c237874321164f2bc",
+      "email_syntax_failure": "5caaba13a73c90c5aac7a52cf756713c8ecc3dc73d30c2949206efa8d2b712f7",
+      "first_name_cleaning_candidate": "575e9d4588334d364bdcfae6ca3c44b9bf35120a371b78fecfde8ee19373ca69",
+      "geography_mismatch_candidate": "7967b59ef7a14b83284a12eb298d63c6140e0837bfafdf3ac4e758baf74c4e93",
+      "last_name_cleaning_candidate": "c553b7f4484b54135e2b84c6b37a84b15df328544256577984e61f6ede900122",
+      "name_cleaning_candidate": "3a128ec85d196cd3a42720347ba8790f5fbf0f386bd617e4ec508ee050b661c8",
+      "proposed_email_export_eligible": "6732e6bfed6fae3c23439f0e69b5c39e2843a5b74f2f8f3fdaf6ad5d536da98c",
+      "zip_state_assessable": "e7730c1b848f32790a56bfb79f7ef5dbc8c88b3919f9903421adc7dde5393885"
+    },
+    "manifest_rule_names": [
+      "email_blank",
+      "email_syntax_failure",
+      "first_name_cleaning_candidate",
+      "geography_mismatch_candidate",
+      "last_name_cleaning_candidate",
+      "name_cleaning_candidate",
+      "proposed_email_export_eligible",
+      "zip_state_assessable"
+    ],
+    "mismatched_rules": {},
+    "pinned_source": "evidence/final_execution/rule_matrix.json",
+    "reason": "manifest rule names and implementation hashes match the pinned frozen baseline (exactly the 8 frozen V1 rules executed; SP1 successor layer absent)",
+    "secondary_full_hash_match": null,
+    "status": "PASS"
+  },
+  "verification": {
+    "column_count_status": "PASS",
+    "column_order_status": "PASS",
+    "extra_input_rows_after_lockstep": 0,
+    "extra_output_rows_after_lockstep": 0,
+    "first_mismatches": [],
+    "flag_domain_status": "PASS",
+    "flag_totals": {
+      "email_blank": 256310,
+      "email_syntax_failure": 288653,
+      "first_name_cleaning_candidate": 506073,
+      "geography_mismatch_candidate": 424088,
+      "last_name_cleaning_candidate": 255805,
+      "name_cleaning_candidate": 3619,
+      "proposed_email_export_eligible": 2655037,
+      "zip_state_assessable": 2954329
+    },
+    "input_rows": 3200000,
+    "mismatches_by_rule": {
+      "email_blank": 0,
+      "email_syntax_failure": 0,
+      "first_name_cleaning_candidate": 0,
+      "geography_mismatch_candidate": 0,
+      "last_name_cleaning_candidate": 0,
+      "name_cleaning_candidate": 0,
+      "proposed_email_export_eligible": 0,
+      "zip_state_assessable": 0
+    },
+    "oracle_comparisons": 25600000,
+    "oracle_mismatches": 0,
+    "output_rows": 3200000,
+    "output_shape_status": "PASS",
+    "row_count_status": "PASS",
+    "row_identity_status": "PASS",
+    "row_ordering_status": "PASS",
+    "schema_status": "PASS",
+    "source_values_preserved_status": "PASS",
+    "verify_duration_seconds": 68.614
+  },
+  "verified_utc": "2026-09-18T23:06:37Z"
+}

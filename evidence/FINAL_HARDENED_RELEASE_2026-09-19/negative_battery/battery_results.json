@@ -1,0 +1,39 @@
+{
+  "generated_utc": "2026-09-19T13:28:43Z",
+  "junit_xml": "evidence/FINAL_HARDENED_RELEASE_2026-09-19/negative_battery/_junit_battery.xml",
+  "mandated_negative_scenarios": 17,
+  "mapping_note": "N01-N17 map to tests named test_nXX_* in tests/hardening/test_hardening_negative_battery.py; positive controls P01-P03 + Layer G controls complete the battery",
+  "scenario_tests_detected": 21,
+  "schema": "dqaeip.hardening.negative.battery/1.0",
+  "stats": {
+    "collected": 21,
+    "errors": 0,
+    "failed": 0,
+    "passed": 21,
+    "returncode": 0,
+    "skipped": 0
+  },
+  "test_ids": [
+    "tests.hardening.test_hardening_negative_battery::test_n01_wrong_input_hash_rejected",
+    "tests.hardening.test_hardening_negative_battery::test_n02_wrong_schema_rejected_by_layer_a",
+    "tests.hardening.test_hardening_negative_battery::test_n03_missing_column_incompatible",
+    "tests.hardening.test_hardening_negative_battery::test_n04_column_reorder_incompatible",
+    "tests.hardening.test_hardening_negative_battery::test_n05_type_change_detected",
+    "tests.hardening.test_hardening_negative_battery::test_n06_changed_rule_set_hash_rejected",
+    "tests.hardening.test_hardening_negative_battery::test_n07_changed_config_rejected",
+    "tests.hardening.test_hardening_negative_battery::test_n08_changed_reference_fingerprint_rejected",
+    "tests.hardening.test_hardening_negative_battery::test_n10_authorization_mismatch",
+    "tests.hardening.test_hardening_negative_battery::test_n11_partial_output_distinguishable",
+    "tests.hardening.test_hardening_negative_battery::test_n11_verify_hook_rejection",
+    "tests.hardening.test_hardening_negative_battery::test_n12_interrupted_run_blocked",
+    "tests.hardening.test_hardening_negative_battery::test_n13_stale_checkpoint_refused",
+    "tests.hardening.test_hardening_negative_battery::test_n14_cross_input_checkpoint_refused",
+    "tests.hardening.test_hardening_negative_battery::test_n15_resource_limits_trip",
+    "tests.hardening.test_hardening_negative_battery::test_n16_unknown_schema_incompatible",
+    "tests.hardening.test_hardening_negative_battery::test_n17_tampered_committed_output_detected",
+    "tests.hardening.test_hardening_negative_battery::test_n17_malformed_ledger_fail_closed",
+    "tests.hardening.test_hardening_negative_battery::test_p01_p02_pipeline_happy_path_and_idempotent_rerun",
+    "tests.hardening.test_hardening_negative_battery::test_p03_frozen_v1_immutable",
+    "tests.hardening.test_hardening_negative_battery::test_layer_g_reference_data_pinning"
+  ]
+}

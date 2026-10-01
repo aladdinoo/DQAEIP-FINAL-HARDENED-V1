@@ -1,0 +1,590 @@
+{
+  "dependents_map": {
+    "FINAL_RESULTS.json": [
+      "evidence/release/release_evidence_model.json",
+      "README.md"
+    ],
+    "data_quality_platform/assurance/claim_graph.py": [
+      "evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/mutation_testing/evidence_mutation_matrix.json"
+    ],
+    "data_quality_platform/assurance/claims.py": [
+      "evidence/release/assurance_mutation.json"
+    ],
+    "data_quality_platform/assurance/evidence_schema.py": [
+      "evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/mutation_testing/evidence_mutation_matrix.json"
+    ],
+    "data_quality_platform/assurance/portable_evidence.py": [
+      "evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/release_gate/absolute_path_gate_report.json"
+    ],
+    "data_quality_platform/rules/v1_rules.py": [
+      "evidence/rebuild_verification/run_pair_verification.json",
+      "evidence/mutation_testing/mutation_results.json",
+      "evidence/release/assurance_mutation.json",
+      "evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/security/tamper_matrix.json",
+      "evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/mutation_testing/evidence_mutation_matrix.json",
+      "evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/final_results/FINAL_RESULTS_PORTABLE_2026-09-18.json"
+    ],
+    "data_quality_platform/validation/engine.py": [
+      "evidence/mutation_testing/mutation_results.json"
+    ],
+    "evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/final_results/FINAL_RESULTS_PORTABLE_2026-09-18.json": [
+      "evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/claim_graph/claim_graph.json",
+      "evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/artifact_identity/artifact_identity_registry.json",
+      "evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/schema_versioning/SCHEMA_COMPATIBILITY_REPORT.json",
+      "evidence/release/release_evidence_model.json",
+      "README.md"
+    ],
+    "evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/mutation_testing/evidence_mutation_matrix.json": [
+      "evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/claim_graph/claim_graph.json"
+    ],
+    "evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/path_forensics/ABSOLUTE_PATH_INVENTORY.json": [
+      "evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/portable_paths/PORTABLE_EVIDENCE_NORMALIZATION.json"
+    ],
+    "evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/release_gate/absolute_path_gate_exceptions.json": [
+      "evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/release_gate/absolute_path_gate_report.json"
+    ],
+    "evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/release_gate/absolute_path_gate_report.json": [
+      "evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/claim_graph/claim_graph.json",
+      "evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/artifact_identity/artifact_identity_registry.json"
+    ],
+    "evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/security/tamper_matrix.json": [
+      "evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/claim_graph/claim_graph.json"
+    ],
+    "evidence/mutation_testing/mutation_results.json": [
+      "evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/final_results/FINAL_RESULTS_PORTABLE_2026-09-18.json"
+    ],
+    "evidence/rebuild_verification/run_pair_verification.json": [
+      "evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/final_results/FINAL_RESULTS_PORTABLE_2026-09-18.json",
+      "evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/claim_graph/claim_graph.json"
+    ],
+    "evidence/rebuild_verification/test_summary.json": [
+      "evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/final_results/FINAL_RESULTS_PORTABLE_2026-09-18.json"
+    ],
+    "evidence/release/assurance_mutation.json": [
+      "evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/final_results/FINAL_RESULTS_PORTABLE_2026-09-18.json"
+    ],
+    "evidence/release/limitation_registry.json": [
+      "evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/final_results/FINAL_RESULTS_PORTABLE_2026-09-18.json"
+    ],
+    "evidence/release/release_evidence_model.json": [
+      "evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/artifact_identity/artifact_identity_registry.json",
+      "evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/schema_versioning/SCHEMA_COMPATIBILITY_REPORT.json"
+    ],
+    "evidence/validation/2026-09-18/fresh_3m2/harness/FINAL_RESULTS.json": [
+      "evidence/rebuild_verification/run_pair_verification.json",
+      "evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/final_results/FINAL_RESULTS_PORTABLE_2026-09-18.json",
+      "evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/claim_graph/claim_graph.json",
+      "evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/portable_paths/PORTABLE_EVIDENCE_NORMALIZATION.json"
+    ],
+    "evidence/validation/2026-09-18/fresh_3m2/harness/pass1_result.json": [
+      "evidence/rebuild_verification/run_pair_verification.json"
+    ],
+    "evidence/validation/2026-09-18/fresh_3m2/harness/pass2_result.json": [
+      "evidence/rebuild_verification/run_pair_verification.json"
+    ],
+    "scripts/final_3m_validation.py": [
+      "evidence/rebuild_verification/run_pair_verification.json"
+    ],
+    "scripts/verify_run_pair.py": [
+      "evidence/rebuild_verification/run_pair_verification.json"
+    ],
+    "tests": [
+      "evidence/rebuild_verification/test_summary.json"
+    ],
+    "tests/assurance/test_integrity_monitoring.py": [
+      "evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/security/tamper_matrix.json"
+    ]
+  },
+  "fingerprint_policy": "deterministic; timestamps, durations, temporary paths and environment noise are excluded; any dependency change changes the fingerprint (DRIFT DETECTED)",
+  "generated_utc": "2026-09-19T02:42:52Z",
+  "git_head": "b86320379a99de4aa34d2bc67c6ec32a138b30b3",
+  "graph_fingerprint": "8c3039eeeafae34b7512c4f1dab3de2964ada16f59ab8d189b80cf49a652a7dc",
+  "missing_dependencies": [],
+  "node_count": 22,
+  "nodes": [
+    {
+      "artifact": "data_quality_platform/rules/v1_rules.py",
+      "authority_level": "AUTHORITATIVE",
+      "dependencies": [],
+      "dependency_fingerprint": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "generation_utc": "2026-09-19T02:42:52Z",
+      "generator": null,
+      "generator_sha256": null,
+      "missing_dependencies": [],
+      "note": "frozen V1 rule source (identity anchor)"
+    },
+    {
+      "artifact": "evidence/validation/2026-09-18/fresh_3m2/harness/pass1_result.json",
+      "authority_level": "AUTHORITATIVE",
+      "dependencies": [],
+      "dependency_fingerprint": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "generation_utc": "2026-09-19T02:42:52Z",
+      "generator": null,
+      "generator_sha256": null,
+      "missing_dependencies": [],
+      "note": "official Run 1 (never regenerate; never modify)"
+    },
+    {
+      "artifact": "evidence/validation/2026-09-18/fresh_3m2/harness/pass2_result.json",
+      "authority_level": "AUTHORITATIVE",
+      "dependencies": [],
+      "dependency_fingerprint": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "generation_utc": "2026-09-19T02:42:52Z",
+      "generator": null,
+      "generator_sha256": null,
+      "missing_dependencies": [],
+      "note": "official Run 2 (never regenerate; never modify)"
+    },
+    {
+      "artifact": "scripts/final_3m_validation.py",
+      "authority_level": "AUTHORITATIVE",
+      "dependencies": [],
+      "dependency_fingerprint": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "generation_utc": "2026-09-19T02:42:52Z",
+      "generator": null,
+      "generator_sha256": null,
+      "missing_dependencies": [],
+      "note": "checker identity anchored in run evidence"
+    },
+    {
+      "artifact": "evidence/rebuild_verification/run_pair_verification.json",
+      "authority_level": "VERIFIED",
+      "dependencies": [
+        {
+          "path": "data_quality_platform/rules/v1_rules.py",
+          "role": "frozen V1 rule source",
+          "sha256": "daef1ded54c7d3c79898a1ba253be2acd5b6120e18b16b09009fdd7be9fc2276"
+        },
+        {
+          "path": "scripts/final_3m_validation.py",
+          "role": "official fail-closed checker",
+          "sha256": "0ef7c10c14a1df317c23cb0dfc73b3a60c2257c064b35080d694e5fe8bc50d84"
+        },
+        {
+          "path": "scripts/verify_run_pair.py",
+          "role": "run-pair verifier",
+          "sha256": "425534dba7183e25879e1b9e9e681ed5b465db45d941676868da8ed8a8c277ad"
+        },
+        {
+          "path": "evidence/validation/2026-09-18/fresh_3m2/harness/pass1_result.json",
+          "role": "official Run 1 evidence",
+          "sha256": "dde3592c46fd48bfa8950ec0ab94a8076b287523770cad7a9dc9919e278aad18"
+        },
+        {
+          "path": "evidence/validation/2026-09-18/fresh_3m2/harness/pass2_result.json",
+          "role": "official Run 2 evidence",
+          "sha256": "9c92d21cd5a6d636d355bf867508cb7a9501275e1adb2a004fda0f6cfe34157f"
+        },
+        {
+          "path": "evidence/validation/2026-09-18/fresh_3m2/harness/FINAL_RESULTS.json",
+          "role": "official run-pair record",
+          "sha256": "755fa28f224c480e873676b487d4c6babeb0072fff50e47c08104684b6643337"
+        }
+      ],
+      "dependency_fingerprint": "330f0b98ac3bcf59ea30e966fcb5d6e687f6e86b1799b9adfde1b9f991f9e1bc",
+      "generation_utc": "2026-09-19T02:42:52Z",
+      "generator": "scripts/verify_run_pair.py",
+      "generator_sha256": "425534dba7183e25879e1b9e9e681ed5b465db45d941676868da8ed8a8c277ad",
+      "missing_dependencies": [],
+      "note": "95-check fail-closed verification of the official pair"
+    },
+    {
+      "artifact": "evidence/rebuild_verification/test_summary.json",
+      "authority_level": "VERIFIED",
+      "dependencies": [
+        {
+          "path": "tests",
+          "role": "full test tree",
+          "sha256": "8da1c7ce8d13cafcd1ebae4443e478bb9652ac220e046312ab82f0c9544200d4"
+        }
+      ],
+      "dependency_fingerprint": "3fa2adaee20825e3e85b529e1bcfe0dd8ead42f10305f63d7075b46cf2c63a97",
+      "generation_utc": "2026-09-19T02:42:52Z",
+      "generator": "scripts/capture_test_summary.py",
+      "generator_sha256": "48c2ff95f139eee40a322042b2ac617225209126b331178fdf4647dd05ffbdb2",
+      "missing_dependencies": [],
+      "note": "actual collected/passed/skipped counts; never fabricated"
+    },
+    {
+      "artifact": "evidence/mutation_testing/mutation_results.json",
+      "authority_level": "VERIFIED",
+      "dependencies": [
+        {
+          "path": "data_quality_platform/rules/v1_rules.py",
+          "role": "frozen V1 rule source",
+          "sha256": "daef1ded54c7d3c79898a1ba253be2acd5b6120e18b16b09009fdd7be9fc2276"
+        },
+        {
+          "path": "data_quality_platform/validation/engine.py",
+          "role": "deterministic engine",
+          "sha256": "eb2af61813227cfb4b8ce4f92a71e61be8747bd39df77284a7e556fb6ebf3fc8"
+        }
+      ],
+      "dependency_fingerprint": "e0a05efcd9f387ac85398c890785b3ba0de11add4e16acd19b5fb2c6a7590c9e",
+      "generation_utc": "2026-09-19T02:42:52Z",
+      "generator": "scripts/mutation_testing.py",
+      "generator_sha256": "cb9c30742127021d49b5c9c24d17664fdd6f7276ecb1f4c0a2d73d2c7ad79b2e",
+      "missing_dependencies": [],
+      "note": "17/17 business mutants detected; source restored"
+    },
+    {
+      "artifact": "evidence/release/assurance_mutation.json",
+      "authority_level": "VERIFIED",
+      "dependencies": [
+        {
+          "path": "data_quality_platform/rules/v1_rules.py",
+          "role": "frozen V1 rule source",
+          "sha256": "daef1ded54c7d3c79898a1ba253be2acd5b6120e18b16b09009fdd7be9fc2276"
+        },
+        {
+          "path": "data_quality_platform/assurance/claims.py",
+          "role": "claim verification engine",
+          "sha256": "579edb438d58e2f3e08ac476cb3b2b916b7d9ec21fa9572a899bd537eca286a5"
+        }
+      ],
+      "dependency_fingerprint": "44da104046949d1dd8c1b3d12ce3140d804cc365385de3f6a07038f289ff1f66",
+      "generation_utc": "2026-09-19T02:42:52Z",
+      "generator": "scripts/assurance_mutation.py",
+      "generator_sha256": "5fcf361b8be6392ddb04b979720bf753e6395878e7efd1d3a6a0ce0d5d1ef89d",
+      "missing_dependencies": [],
+      "note": "false-PASS prevention battery results"
+    },
+    {
+      "artifact": "evidence/release/limitation_registry.json",
+      "authority_level": "VERIFIED",
+      "dependencies": [],
+      "dependency_fingerprint": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "generation_utc": "2026-09-19T02:42:52Z",
+      "generator": "scripts/build_release_evidence_model.py",
+      "generator_sha256": "97e03a36c42692d32f6382b2d0e8431fc7d33b1822d68df32e81c049b710a11b",
+      "missing_dependencies": [],
+      "note": "machine-readable documented limitations"
+    },
+    {
+      "artifact": "evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/security/tamper_matrix.json",
+      "authority_level": "VERIFIED",
+      "dependencies": [
+        {
+          "path": "data_quality_platform/rules/v1_rules.py",
+          "role": "frozen V1 rule source",
+          "sha256": "daef1ded54c7d3c79898a1ba253be2acd5b6120e18b16b09009fdd7be9fc2276"
+        },
+        {
+          "path": "tests/assurance/test_integrity_monitoring.py",
+          "role": "fixture definitions",
+          "sha256": "9b1e17ce27ff55fe990cfbb8f27eace1220026944e01dd3e79fe3427c749c071"
+        }
+      ],
+      "dependency_fingerprint": "d8a5411aa2b549b9da24ac17ad71c39a536c338508b0579cd55f6f0baf46b5f9",
+      "generation_utc": "2026-09-19T02:42:52Z",
+      "generator": "tools/run_tamper_matrix.py",
+      "generator_sha256": "b62245c42c63e9a2340a07da7aa68dbd5b97a467fb587442d682ef696da011d8",
+      "missing_dependencies": [],
+      "note": "15/15 artifact tamper scenarios detected (isolated fixtures only)"
+    },
+    {
+      "artifact": "evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/mutation_testing/evidence_mutation_matrix.json",
+      "authority_level": "VERIFIED",
+      "dependencies": [
+        {
+          "path": "data_quality_platform/rules/v1_rules.py",
+          "role": "frozen V1 rule source",
+          "sha256": "daef1ded54c7d3c79898a1ba253be2acd5b6120e18b16b09009fdd7be9fc2276"
+        },
+        {
+          "path": "data_quality_platform/assurance/evidence_schema.py",
+          "role": "schema validators",
+          "sha256": "547f52cd30e276ee1f76dbaa563aa13a5edc4da7a39ba096ddc849c13cc0bd93"
+        },
+        {
+          "path": "data_quality_platform/assurance/claim_graph.py",
+          "role": "claim verification engine",
+          "sha256": "2b34abf4bae046db57ea578ae3fb100e72788cb53f55b97ff7ce0459c7e26950"
+        }
+      ],
+      "dependency_fingerprint": "4c43c44c9f5e499348a0dfb6c8f832f09d3cae8b49136bf0d78379e65a66a1df",
+      "generation_utc": "2026-09-19T02:42:52Z",
+      "generator": "tools/run_evidence_mutation_matrix.py",
+      "generator_sha256": "16bde389e76fb9b13ac2b3f636c2c4c47810191f36c4bd6ec07a5521d1889bcd",
+      "missing_dependencies": [],
+      "note": "16/16 evidence-layer controlled mutations rejected (isolated fixtures only)"
+    },
+    {
+      "artifact": "evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/release_gate/absolute_path_gate_report.json",
+      "authority_level": "VERIFIED",
+      "dependencies": [
+        {
+          "path": "data_quality_platform/assurance/portable_evidence.py",
+          "role": "shared detectors",
+          "sha256": "5e3af6210a968340976f5ef13bb8f44396c07d9caac91aaa83138a49f5cbac33"
+        },
+        {
+          "path": "evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/release_gate/absolute_path_gate_exceptions.json",
+          "role": "narrow exception registry",
+          "sha256": "5d721aa527881e5efe2cf58444e6864c532e06f8f3b09d82357a85c5fc2f4ad0"
+        }
+      ],
+      "dependency_fingerprint": "f09023f754a27814dd688c035ba0646de72e4daa51ef58b8c0a4305ca61d6ca8",
+      "generation_utc": "2026-09-19T02:42:52Z",
+      "generator": "tools/absolute_path_release_gate.py",
+      "generator_sha256": "17c7a84ff627f4a7f9e2d19a9084c7c3f52222b4e03768e4526643d6c5e1b5a2",
+      "missing_dependencies": [],
+      "note": "portable evidence machine-path gate (fail-closed)"
+    },
+    {
+      "artifact": "evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/final_results/FINAL_RESULTS_PORTABLE_2026-09-18.json",
+      "authority_level": "DERIVED",
+      "dependencies": [
+        {
+          "path": "data_quality_platform/rules/v1_rules.py",
+          "role": "frozen V1 rule source",
+          "sha256": "daef1ded54c7d3c79898a1ba253be2acd5b6120e18b16b09009fdd7be9fc2276"
+        },
+        {
+          "path": "evidence/validation/2026-09-18/fresh_3m2/harness/FINAL_RESULTS.json",
+          "role": "official run-pair record",
+          "sha256": "755fa28f224c480e873676b487d4c6babeb0072fff50e47c08104684b6643337"
+        },
+        {
+          "path": "evidence/rebuild_verification/run_pair_verification.json",
+          "role": "run-pair verdict",
+          "sha256": "7112257f799c8473feb8622f6e1cee445b893914be67753becba999b69745379"
+        },
+        {
+          "path": "evidence/rebuild_verification/test_summary.json",
+          "role": "test identity",
+          "sha256": "6f70c21a94bb23ef37633ca3983158f7c55fa0e24c4a0ff71c678d3e115f2e5c"
+        },
+        {
+          "path": "evidence/mutation_testing/mutation_results.json",
+          "role": "business mutation",
+          "sha256": "a24da7210bc0d757b7e7abfebf22acac158f2722ddb890a153e7d506e874ff98"
+        },
+        {
+          "path": "evidence/release/assurance_mutation.json",
+          "role": "assurance mutation",
+          "sha256": "795b722ae1b84755f049e33a75499f863471f25a20d3743114b9fd94bcc945f0"
+        },
+        {
+          "path": "evidence/release/limitation_registry.json",
+          "role": "limitations",
+          "sha256": "4ffad35d9f50f68984323287870b4c9627c93411eef079474e32bd3234c93bb5"
+        }
+      ],
+      "dependency_fingerprint": "f573cc4cbc7c682bffe53224df687523336f5966d6b1eef21d60347ef594c54d",
+      "generation_utc": "2026-09-19T02:42:52Z",
+      "generator": "tools/portable_final_results_rebuild.py",
+      "generator_sha256": "e17ee90d2bf7f0c5661ebc34d79aaf97220f0951c65b5ba6a9d8295606e7c6e8",
+      "missing_dependencies": [],
+      "note": "two-phase rebuild; promoted only after the schema gate passed"
+    },
+    {
+      "artifact": "evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/claim_graph/claim_graph.json",
+      "authority_level": "DERIVED",
+      "dependencies": [
+        {
+          "path": "evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/final_results/FINAL_RESULTS_PORTABLE_2026-09-18.json",
+          "role": "final results",
+          "sha256": "98400e0f27ca526c54ef44ced1cf0d50a10b53ba2591a3dc43615561159cbdf8"
+        },
+        {
+          "path": "evidence/validation/2026-09-18/fresh_3m2/harness/FINAL_RESULTS.json",
+          "role": "official run-pair record",
+          "sha256": "755fa28f224c480e873676b487d4c6babeb0072fff50e47c08104684b6643337"
+        },
+        {
+          "path": "evidence/rebuild_verification/run_pair_verification.json",
+          "role": "run-pair verdict",
+          "sha256": "7112257f799c8473feb8622f6e1cee445b893914be67753becba999b69745379"
+        },
+        {
+          "path": "evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/security/tamper_matrix.json",
+          "role": "tamper matrix",
+          "sha256": "ec78857d91d94e5379d3df0f5c5392be9bba4cd7cfce7fe25cf3b39d9dc51d93"
+        },
+        {
+          "path": "evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/mutation_testing/evidence_mutation_matrix.json",
+          "role": "evidence mutations",
+          "sha256": "f74070efaf0d735e255b5be6c77b0c71094d8a557c8af05fc163600affb8b6c5"
+        },
+        {
+          "path": "evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/release_gate/absolute_path_gate_report.json",
+          "role": "path gate report",
+          "sha256": "e9771beb6d44695cbe256fdd5cb3677c4bc6778a9bc6d7c66a4fbf798f049dea"
+        }
+      ],
+      "dependency_fingerprint": "15d21c47a19e59324c5a0a949e2d5703dd21d8eff89ea7ab15d5ee9cc7954794",
+      "generation_utc": "2026-09-19T02:42:52Z",
+      "generator": "tools/build_claim_graph.py",
+      "generator_sha256": "8760d9db2d64028c0c9da96b28bfa253df02147dbead5a6b8e024d31d54cac29",
+      "missing_dependencies": [],
+      "note": "claim\u2192evidence\u2192hash provenance graph; monitor-report and release-gate-report claims are VALUE-anchored (volatile runtime outputs, never hash-pinned)"
+    },
+    {
+      "artifact": "evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/artifact_identity/artifact_identity_registry.json",
+      "authority_level": "DERIVED",
+      "dependencies": [
+        {
+          "path": "evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/final_results/FINAL_RESULTS_PORTABLE_2026-09-18.json",
+          "role": "final results",
+          "sha256": "98400e0f27ca526c54ef44ced1cf0d50a10b53ba2591a3dc43615561159cbdf8"
+        },
+        {
+          "path": "evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/release_gate/absolute_path_gate_report.json",
+          "role": "path gate report",
+          "sha256": "e9771beb6d44695cbe256fdd5cb3677c4bc6778a9bc6d7c66a4fbf798f049dea"
+        },
+        {
+          "path": "evidence/release/release_evidence_model.json",
+          "role": "canonical evidence model",
+          "sha256": "3649c44ea2302f46858219db4d47366a80a6320f942da98949e026ec05743d76"
+        }
+      ],
+      "dependency_fingerprint": "9057f1962f0b3e1c3d99c22c3eaef52d9403c98c68678195f787a11b778e20bb",
+      "generation_utc": "2026-09-19T02:42:52Z",
+      "generator": "tools/build_artifact_identity_registry.py",
+      "generator_sha256": "fed95c15fe4d13f2e2522d16ac0879ae27c26299dc1b8c32e235d70d8ed2cc5b",
+      "missing_dependencies": [],
+      "note": "cryptographic artifact identity contract (also registers the claim graph and mutation matrices, built in the same finalize pass \u2014 hash-pinned by the ZIP member manifest and validated by the clean-room extraction)"
+    },
+    {
+      "artifact": "evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/schema_versioning/SCHEMA_COMPATIBILITY_REPORT.json",
+      "authority_level": "DERIVED",
+      "dependencies": [
+        {
+          "path": "evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/final_results/FINAL_RESULTS_PORTABLE_2026-09-18.json",
+          "role": "final results",
+          "sha256": "98400e0f27ca526c54ef44ced1cf0d50a10b53ba2591a3dc43615561159cbdf8"
+        },
+        {
+          "path": "evidence/release/release_evidence_model.json",
+          "role": "canonical evidence model",
+          "sha256": "3649c44ea2302f46858219db4d47366a80a6320f942da98949e026ec05743d76"
+        }
+      ],
+      "dependency_fingerprint": "e51e96bcc616a83778b5699ace902ac3542729cab927c8bfba98e4092438e2c5",
+      "generation_utc": "2026-09-19T02:42:52Z",
+      "generator": "tools/build_schema_compatibility_report.py",
+      "generator_sha256": "f81bc737ad213f153838ccfdace27d88aee8e490dd779f3566b3bc7e34414714",
+      "missing_dependencies": [],
+      "note": "schema identity classification of current artifacts (classifies the claim graph and registry built in the same finalize pass)"
+    },
+    {
+      "artifact": "evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/portable_paths/PORTABLE_EVIDENCE_NORMALIZATION.json",
+      "authority_level": "DERIVED",
+      "dependencies": [
+        {
+          "path": "evidence/validation/2026-09-18/fresh_3m2/harness/FINAL_RESULTS.json",
+          "role": "official run-pair record",
+          "sha256": "755fa28f224c480e873676b487d4c6babeb0072fff50e47c08104684b6643337"
+        },
+        {
+          "path": "evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/path_forensics/ABSOLUTE_PATH_INVENTORY.json",
+          "role": "phase-1 inventory",
+          "sha256": "b2e68da0f1a94a5634c62ea68aaf79272a70fd7e2b1480849ae428fabd39000a"
+        }
+      ],
+      "dependency_fingerprint": "3ae52ad34653951db6ffc8b4927e3ed4c3610bb1f494034dd287d1cf73320cad",
+      "generation_utc": "2026-09-19T02:42:52Z",
+      "generator": "tools/normalize_portable_evidence.py",
+      "generator_sha256": "04d5651c1e244e8241dce5b8d4339995e9649b0d65cb4dcdea40dbe913a316f2",
+      "missing_dependencies": [],
+      "note": "policy-A normalization summary; originals preserved byte-exact"
+    },
+    {
+      "artifact": "evidence/release/release_evidence_model.json",
+      "authority_level": "DERIVED",
+      "dependencies": [
+        {
+          "path": "evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/final_results/FINAL_RESULTS_PORTABLE_2026-09-18.json",
+          "role": "final results (portable)",
+          "sha256": "98400e0f27ca526c54ef44ced1cf0d50a10b53ba2591a3dc43615561159cbdf8"
+        },
+        {
+          "path": "FINAL_RESULTS.json",
+          "role": "final results (root)",
+          "sha256": "cbd25637a4b03cf57552e991b897321e50445394cf8734a0eb010e759c63de0b"
+        }
+      ],
+      "dependency_fingerprint": "02c1eacdadb036136398d45982d8a592c11887f366108989fe35fe5ffba0e489",
+      "generation_utc": "2026-09-19T02:42:52Z",
+      "generator": "scripts/build_release_evidence_model.py",
+      "generator_sha256": "97e03a36c42692d32f6382b2d0e8431fc7d33b1822d68df32e81c049b710a11b",
+      "missing_dependencies": [],
+      "note": "canonical evidence model (regenerated at release identity)"
+    },
+    {
+      "artifact": "README.md",
+      "authority_level": "DERIVED",
+      "dependencies": [
+        {
+          "path": "FINAL_RESULTS.json",
+          "role": "final results (root)",
+          "sha256": "cbd25637a4b03cf57552e991b897321e50445394cf8734a0eb010e759c63de0b"
+        },
+        {
+          "path": "evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/final_results/FINAL_RESULTS_PORTABLE_2026-09-18.json",
+          "role": "final results (portable)",
+          "sha256": "98400e0f27ca526c54ef44ced1cf0d50a10b53ba2591a3dc43615561159cbdf8"
+        }
+      ],
+      "dependency_fingerprint": "02c1eacdadb036136398d45982d8a592c11887f366108989fe35fe5ffba0e489",
+      "generation_utc": "2026-09-19T02:42:52Z",
+      "generator": "scripts/build_release_evidence_model.py",
+      "generator_sha256": "97e03a36c42692d32f6382b2d0e8431fc7d33b1822d68df32e81c049b710a11b",
+      "missing_dependencies": [],
+      "note": "presentation only; never a source of truth"
+    },
+    {
+      "artifact": "tools/integrity_monitor.py",
+      "authority_level": "TOOL",
+      "dependencies": [],
+      "dependency_fingerprint": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "generation_utc": "2026-09-19T02:42:52Z",
+      "generator": "tools/integrity_monitor.py",
+      "generator_sha256": "b2cdc4b0635a1da0135c363f96b9423d9cf2ecc43a4762354c44c2bfa1695551",
+      "missing_dependencies": [],
+      "note": "continuous integrity monitor (A-T); leaf tool \u2014 the snapshot is a runtime input, not a build dependency"
+    },
+    {
+      "artifact": "tools/drift_detector.py",
+      "authority_level": "TOOL",
+      "dependencies": [],
+      "dependency_fingerprint": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "generation_utc": "2026-09-19T02:42:52Z",
+      "generator": "tools/drift_detector.py",
+      "generator_sha256": "b234385e4eb6236da04b15f0546811ecf3ec4b6a6ccaa4f986a53955ea7b2080",
+      "missing_dependencies": [],
+      "note": "ten-class drift detector; leaf tool"
+    },
+    {
+      "artifact": "tools/absolute_path_release_gate.py",
+      "authority_level": "TOOL",
+      "dependencies": [],
+      "dependency_fingerprint": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "generation_utc": "2026-09-19T02:42:52Z",
+      "generator": "tools/absolute_path_release_gate.py",
+      "generator_sha256": "17c7a84ff627f4a7f9e2d19a9084c7c3f52222b4e03768e4526643d6c5e1b5a2",
+      "missing_dependencies": [],
+      "note": "portable-evidence path gate; leaf tool"
+    }
+  ],
+  "release_id": "DQAEIP-FINAL-CLEAN-REBUILD-RELEASE-2026-09-18",
+  "report": "DQAEIP portable release evidence dependency graph",
+  "runtime_apparatus_exclusions": {
+    "drift_report": "runtime output",
+    "freshness_report": "post-snapshot runtime evaluation",
+    "integrity_snapshot": "pins the graph fingerprint \u2014 listing it here would be circular",
+    "monitor_report": "regenerated on every verification run by design",
+    "policy": "runtime apparatus is verified by RE-EXECUTION (monitor re-run, clean-room extraction) and by the snapshot pins \u2014 never by freshness edges (a report cannot pin its own pre-measurement state)",
+    "release_identity": "pinned by the manifest",
+    "release_lock": "generated after the manifest",
+    "release_manifest": "generated after the graph (the manifest lists the graph)",
+    "self_contained_verification": "post-archive runtime record",
+    "zip_records": "post-archive runtime records"
+  },
+  "schema": {
+    "name": "dqaeip.dependency_graph",
+    "version": "1.0"
+  }
+}

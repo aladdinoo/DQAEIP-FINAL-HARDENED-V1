@@ -1,0 +1,149 @@
+{
+  "authoritative_inputs": {
+    "canonical_test_summary": "evidence/rebuild_verification/test_summary.json",
+    "live_gate_artifact": "evidence/release_gate/final_release_gate.json",
+    "regression_evidence": "evidence/validation/2026-09-19/fresh_3m2/"
+  },
+  "byte_convergence": {
+    "FINAL_RESULTS.json": true,
+    "README.md": true,
+    "RELEASE_NOTES.md": true,
+    "evidence/release/claim_provenance.json": true,
+    "evidence/release/golden_release_snapshot.json": true,
+    "evidence/release/release_evidence_model.json": true,
+    "evidence/release/reproducibility_manifest.json": true,
+    "final_result.json": true,
+    "release_manifest.json": true
+  },
+  "byte_convergence_verdict": "CONVERGED",
+  "checker_battery": {
+    "claims_rederivation": {
+      "claims_total": 21,
+      "pass": true,
+      "recheck_passed": true
+    },
+    "consistency_matrix": {
+      "pass": true,
+      "verdict": "CONSISTENT"
+    },
+    "contradiction_check": {
+      "pass": true,
+      "verdict": "CONSISTENT"
+    },
+    "live_gate": {
+      "gate_count": 22,
+      "gate_counts": {
+        "fail": 0,
+        "pass": 22
+      },
+      "overall_verdict": "PASS",
+      "pass": true
+    },
+    "observability": {
+      "EVIDENCE_INTEGRITY_STATUS": "PASS",
+      "RELEASE_VERDICT": "PASS_WITH_DOCUMENTED_LIMITATIONS",
+      "VALIDATION_STATUS": "PASS",
+      "pass": true
+    },
+    "readme_consistency": {
+      "pass": true,
+      "verdict": "CONSISTENT"
+    },
+    "release_schemas": {
+      "pass": true,
+      "problems": []
+    },
+    "test_identity_agreement": {
+      "canonical": {
+        "collected": 1098,
+        "errors": 0,
+        "failed": 0,
+        "passed": 1089,
+        "skipped": 9
+      },
+      "final_results": {
+        "collected": 1098,
+        "errors": 0,
+        "failed": 0,
+        "passed": 1089,
+        "skipped": 9
+      },
+      "namespace": {
+        "collected": 1098,
+        "errors": 0,
+        "failed": 0,
+        "passed": 1089,
+        "skipped": 9
+      },
+      "pass": true
+    }
+  },
+  "document_hashes_after": {
+    "FINAL_RESULTS.json": "98de015ff2f963a188bad6dcf57f1c9061aa8dc21391302639b13019edd449c4",
+    "README.md": "74d26192f0920ff5ed7269d795e69768ba716644ebda34fa5196bf4bebfdf6a3",
+    "RELEASE_NOTES.md": "dc7bbef115b8262ba3cf46a6598733c897e60f145da0e2a4acfb153b0c93537f",
+    "evidence/release/claim_provenance.json": "459a2cdee2fc423112684882fbfa88eb4ab5f37a6cf75a6c230e53bf25b01fb1",
+    "evidence/release/golden_release_snapshot.json": "3bfad9c2f37e15b8778fb0e2d9ca46327e93256009f8d9d0df85228cad544bad",
+    "evidence/release/release_evidence_model.json": "f9c3bf9ef6fafe2be6791341f45fc30942764bc1afb572daf392de52efa2d67f",
+    "evidence/release/reproducibility_manifest.json": "2c3e34b7132a3f4fdaae90f233f883410e5c0a6803587a9970d87ae8e2fd340e",
+    "final_result.json": "98de015ff2f963a188bad6dcf57f1c9061aa8dc21391302639b13019edd449c4",
+    "release_manifest.json": "b9a1fb47eec9d395e4500b4ed4099634a7b4674519238826e25482d8207b8907"
+  },
+  "document_hashes_before": {
+    "FINAL_RESULTS.json": "98de015ff2f963a188bad6dcf57f1c9061aa8dc21391302639b13019edd449c4",
+    "README.md": "74d26192f0920ff5ed7269d795e69768ba716644ebda34fa5196bf4bebfdf6a3",
+    "RELEASE_NOTES.md": "dc7bbef115b8262ba3cf46a6598733c897e60f145da0e2a4acfb153b0c93537f",
+    "evidence/release/claim_provenance.json": "459a2cdee2fc423112684882fbfa88eb4ab5f37a6cf75a6c230e53bf25b01fb1",
+    "evidence/release/golden_release_snapshot.json": "3bfad9c2f37e15b8778fb0e2d9ca46327e93256009f8d9d0df85228cad544bad",
+    "evidence/release/release_evidence_model.json": "f9c3bf9ef6fafe2be6791341f45fc30942764bc1afb572daf392de52efa2d67f",
+    "evidence/release/reproducibility_manifest.json": "2c3e34b7132a3f4fdaae90f233f883410e5c0a6803587a9970d87ae8e2fd340e",
+    "final_result.json": "98de015ff2f963a188bad6dcf57f1c9061aa8dc21391302639b13019edd449c4",
+    "release_manifest.json": "b9a1fb47eec9d395e4500b4ed4099634a7b4674519238826e25482d8207b8907"
+  },
+  "fixed_point_holds": true,
+  "generated_utc": "2026-09-19T13:28:40Z",
+  "rebuild_sequence": [
+    {
+      "exit_code": 0,
+      "step": "evidence namespace"
+    },
+    {
+      "exit_code": 0,
+      "step": "README"
+    },
+    {
+      "exit_code": 0,
+      "step": "FINAL_RESULTS"
+    },
+    {
+      "exit_code": 0,
+      "step": "RELEASE_NOTES"
+    },
+    {
+      "exit_code": 0,
+      "step": "release_manifest"
+    },
+    {
+      "exit_code": 0,
+      "step": "release model artifacts"
+    },
+    {
+      "exit_code": 0,
+      "step": "observability"
+    },
+    {
+      "exit_code": 0,
+      "step": "consistency matrix"
+    },
+    {
+      "exit_code": 0,
+      "step": "README consistency"
+    },
+    {
+      "exit_code": 0,
+      "step": "contradiction check"
+    }
+  ],
+  "run": "2",
+  "schema": "dqaeip.hardening.fixed_point.run/1.0"
+}

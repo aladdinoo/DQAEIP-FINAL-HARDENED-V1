@@ -1,0 +1,199 @@
+{
+  "fail_closed_statement": "FAIL is never downgraded; a missing snapshot is NOT_VERIFIED, never PASS",
+  "generated_utc": "2026-09-19T02:43:08Z",
+  "monitor_count": 20,
+  "monitors": {
+    "A_content_changes": "PASS",
+    "B_deletion": "PASS",
+    "C_unexpected_creation": "PASS",
+    "D_rename": "PASS",
+    "E_sha_changes": "PASS",
+    "F_permission_changes": "PASS",
+    "G_dependency_changes": "PASS",
+    "H_stale_evidence": "PASS",
+    "I_manifest_changes": "PASS",
+    "J_provenance_changes": "PASS",
+    "K_release_identity": "PASS",
+    "L_final_results": "PASS",
+    "M_readme_metrics": "PASS",
+    "N_frozen_v1": "PASS",
+    "O_official_3m_evidence": "PASS",
+    "P_checker": "PASS",
+    "Q_run3_appearance": "PASS",
+    "R_duplicate_identity": "PASS",
+    "S_unauthorized_artifacts": "PASS",
+    "T_malformed_manifests": "PASS"
+  },
+  "overall_status": "PASS",
+  "results": [
+    {
+      "details": {
+        "changed": [],
+        "critical": []
+      },
+      "findings": [],
+      "monitor": "A_content_changes",
+      "status": "PASS"
+    },
+    {
+      "details": {
+        "critical": [],
+        "deleted": []
+      },
+      "findings": [],
+      "monitor": "B_deletion",
+      "status": "PASS"
+    },
+    {
+      "details": {
+        "new": [],
+        "note": "new files inside the official 3M evidence directory are FAIL (possible Run 3 / injection); new files elsewhere are WARNING pending review",
+        "official_evidence_dir_new": []
+      },
+      "findings": [],
+      "monitor": "C_unexpected_creation",
+      "status": "PASS"
+    },
+    {
+      "details": {
+        "renames": []
+      },
+      "findings": [],
+      "monitor": "D_rename",
+      "status": "PASS"
+    },
+    {
+      "details": {
+        "changed": {}
+      },
+      "findings": [],
+      "monitor": "E_sha_changes",
+      "status": "PASS"
+    },
+    {
+      "details": {
+        "changes": [],
+        "note": "only the executable bit is monitored; group-write storage-layer noise is recorded, not failed"
+      },
+      "findings": [],
+      "monitor": "F_permission_changes",
+      "status": "PASS"
+    },
+    {
+      "details": {},
+      "findings": [],
+      "monitor": "G_dependency_changes",
+      "status": "PASS"
+    },
+    {
+      "details": {
+        "invalid": [],
+        "not_verified": [],
+        "stale": []
+      },
+      "findings": [],
+      "monitor": "H_stale_evidence",
+      "status": "PASS"
+    },
+    {
+      "details": {
+        "artifact": "evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/release_manifest/release_manifest.json"
+      },
+      "findings": [],
+      "monitor": "I_manifest_changes",
+      "status": "PASS"
+    },
+    {
+      "details": {
+        "artifact": "evidence/release/claim_provenance.json"
+      },
+      "findings": [],
+      "monitor": "J_provenance_changes",
+      "status": "PASS"
+    },
+    {
+      "details": {
+        "release_id": "DQAEIP-FINAL-CLEAN-REBUILD-RELEASE-2026-09-18"
+      },
+      "findings": [],
+      "monitor": "K_release_identity",
+      "status": "PASS"
+    },
+    {
+      "details": {
+        "artifact": "evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/final_results/FINAL_RESULTS_PORTABLE_2026-09-18.json"
+      },
+      "findings": [],
+      "monitor": "L_final_results",
+      "status": "PASS"
+    },
+    {
+      "details": {
+        "artifact": "README.md"
+      },
+      "findings": [],
+      "monitor": "M_readme_metrics",
+      "status": "PASS"
+    },
+    {
+      "details": {
+        "sha256": "daef1ded54c7d3c79898a1ba253be2acd5b6120e18b16b09009fdd7be9fc2276"
+      },
+      "findings": [],
+      "monitor": "N_frozen_v1",
+      "status": "PASS"
+    },
+    {
+      "details": {
+        "changed": [],
+        "missing": []
+      },
+      "findings": [],
+      "monitor": "O_official_3m_evidence",
+      "status": "PASS"
+    },
+    {
+      "details": {},
+      "findings": [],
+      "monitor": "P_checker",
+      "status": "PASS"
+    },
+    {
+      "details": {},
+      "findings": [],
+      "monitor": "Q_run3_appearance",
+      "status": "PASS"
+    },
+    {
+      "details": {
+        "duplicates": {},
+        "note": "identity = logical role/path, never raw bytes; legitimate byte-identical files are not rejected"
+      },
+      "findings": [],
+      "monitor": "R_duplicate_identity",
+      "status": "PASS"
+    },
+    {
+      "details": {},
+      "findings": [],
+      "monitor": "S_unauthorized_artifacts",
+      "status": "PASS"
+    },
+    {
+      "details": {
+        "checked": [
+          "FINAL_RESULTS.json",
+          "release_manifest.json",
+          "evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/release_manifest/release_manifest.json",
+          "evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/release_manifest/release_lock.json",
+          "evidence/release/release_evidence_model.json"
+        ]
+      },
+      "findings": [],
+      "monitor": "T_malformed_manifests",
+      "status": "PASS"
+    }
+  ],
+  "snapshot_path": "evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/integrity/baseline_snapshot.json",
+  "update_id": "DQAEIP-FINAL-CLEAN-REBUILD-RELEASE-2026-09-18"
+}

@@ -1,0 +1,686 @@
+"""Negative/failure battery for the 2026-09-19 hardening layers A-H.
+
+17 mandated negative scenarios + positive-path controls, per the hardened
+release specification. Every negative scenario asserts a FAIL-CLOSED
+verdict with an explicit reason; no test converts a failure into a pass.
+
+Scenario map
+------------
+N01 wrong input SHA-256                -> Layer A rejects
+N02 wrong schema (mismatch)            -> Layer A rejects (pipeline) /
+                                          Layer F INCOMPATIBLE (unit)
+N03 missing column                     -> Layer F INCOMPATIBLE
+N04 column reorder                     -> Layer F INCOMPATIBLE
+N05 type change                        -> Layer A (type contract) and
+                                          Layer F (declared types)
+N06 changed V1 rule-set hash           -> Layer B rejects
+N07 changed config fingerprint         -> Layer B rejects
+N08 changed reference fingerprint      -> Layer B rejects
+N09 duplicate execution                -> Layer C IDEMPOTENT_COMPLETE,
+                                          engine NOT re-executed
+N10 authorization mismatch             -> Layer B rejects (missing grant,
+                                          wrong input, unknown mode)
+N11 partial output present             -> Layer D refuses/distinguishes
+N12 interrupted run (PARTIAL ledger)   -> Layer C blocks + Layer E refusal
+N13 stale checkpoint                   -> Layer E refuses
+N14 cross-input checkpoint             -> Layer E refuses (never grants)
+N15 resource limit exceeded            -> Layer H trips (rows/size/output)
+N16 unknown schema                     -> Layer F INCOMPATIBLE
+N17 tampered execution manifest/output -> Layer D/C detect tampering
+
+Positive controls
+-----------------
+P01 full pipeline happy path (real engine subprocess)
+P02 idempotent rerun (engine not re-executed)  [same flow as N09]
+P03 frozen V1 immutability invariant
+"""
+
+from __future__ import annotations
+
+import csv
+import hashlib
+import json
+import os
+import shutil
+import subprocess
+import sys
+from pathlib import Path
+
+import pytest
+
+from data_quality_platform.contracts import SOURCE_COLUMNS
+from data_quality_platform.hardening import FROZEN_V1_SHA256
+from data_quality_platform.hardening.input_contract import (
+    validate_input_contract,
+)
+from data_quality_platform.hardening.schema_guard import (
+    assess_schema_evolution,
+)
+from data_quality_platform.hardening.reference_data import (
+    fingerprint_reference_data,
+)
+from data_quality_platform.hardening.authorization import (
+    AuthorizationScope,
+    evaluate_authorization,
+    observe_scope,
+)
+from data_quality_platform.hardening.idempotency import (
+    ExecutionLedger,
+    VERDICT_DUPLICATE_BLOCKED,
+    VERDICT_IDEMPOTENT,
+    VERDICT_NEW,
+)
+from data_quality_platform.hardening.checkpoint_contract import (
+    evaluate_resume_request,
+    REQUIRED_CHECKPOINT_BINDINGS,
+)
+from data_quality_platform.hardening.resource_guard import (
+    ResourceLimits,
+    check_post_execution,
+    check_pre_execution,
+)
+from data_quality_platform.hardening.atomic_commit import (
+    commit_directory_atomically,
+    discard_staging,
+    is_committed_directory,
+    staging_directory,
+    verify_committed_directory,
+    write_partial_manifest,
+)
+from data_quality_platform.hardening.pipeline import (
+    HardenedExecutionSpec,
+    default_software_paths,
+    run_hardened_execution,
+)
+
+REPO_ROOT = Path(__file__).resolve().parents[2]
+ENGINE_PY = sys.executable
+V1_RULES = REPO_ROOT / "data_quality_platform" / "rules" / "v1_rules.py"
+CONTRACTS = REPO_ROOT / "data_quality_platform" / "contracts.py"
+
+AUTH_COLUMNS = ["id", "email_address", "first_name", "last_name", "state",
+                "zip"]
+REFERENCE_PATHS = {"state_zip_prefixes": str(CONTRACTS)}
+CONFIG = {"release": "DQAEIP-FINAL-HARDENED-RELEASE-2026-09-19",
+          "scenario": "battery"}
+
+
+def sha256_file(path) -> str:
+    h = hashlib.sha256()
+    with open(path, "rb") as f:
+        for chunk in iter(lambda: f.read(1 << 20), b""):
+            h.update(chunk)
+    return h.hexdigest()
+
+
+def make_csv(path, columns, rows):
+    with open(path, "w", encoding="utf-8", newline="") as f:
+        w = csv.writer(f)
+        w.writerow(columns)
+        for row in rows:
+            w.writerow(row)
+    return str(path)
+
+
+# ══════════════════════════════════════════════════════════════════════
+# Shared fixtures
+# ══════════════════════════════════════════════════════════════════════
+
+@pytest.fixture(scope="module")
+def synthetic_csv(tmp_path_factory):
+    """Small CSV matching AUTH_COLUMNS with 10 rows."""
+    d = tmp_path_factory.mktemp("synthetic")
+    rows = [[f"r{i}", f"a{i}@x.com", "Ann", "Smith", "CA", "90001"]
+            for i in range(10)]
+    return make_csv(d / "input.csv", AUTH_COLUMNS, rows)
+
+
+@pytest.fixture(scope="module")
+def engine_csv(tmp_path_factory):
+    """Real 33-column engine input, generated by the canonical CLI."""
+    d = tmp_path_factory.mktemp("engine")
+    out = d / "input_20.csv"
+    r = subprocess.run(
+        [ENGINE_PY, "-m", "runner.cli", "generate", "--rows", "20",
+         "--seed", "20260919", "--output", str(out)],
+        cwd=str(REPO_ROOT), capture_output=True, text=True)
+    assert r.returncode == 0, r.stderr
+    assert out.exists() and out.stat().st_size > 0
+    with open(out, encoding="utf-8", newline="") as f:
+        header = next(csv.reader(f))
+    assert header == SOURCE_COLUMNS
+    return str(out)
+
+
+def build_grant(input_path):
+    """Correct authorization scope for the synthetic/engine input."""
+    return observe_scope(
+        input_path=input_path,
+        authorized_columns=AUTH_COLUMNS,
+        v1_rules_path=str(V1_RULES),
+        reference_data_paths=REFERENCE_PATHS,
+        config=CONFIG,
+        execution_mode="validation",
+        software_paths=default_software_paths(str(V1_RULES)),
+    )
+
+
+def build_engine_grant(input_path):
+    return observe_scope(
+        input_path=input_path,
+        authorized_columns=SOURCE_COLUMNS,
+        v1_rules_path=str(V1_RULES),
+        reference_data_paths=REFERENCE_PATHS,
+        config=CONFIG,
+        execution_mode="validation",
+        software_paths=default_software_paths(str(V1_RULES)),
+    )
+
+
+def engine_spec(tmp_path, input_path, granted, **overrides):
+    work = Path(tmp_path) / "work"
+    final = Path(tmp_path) / "committed"
+    spec = HardenedExecutionSpec(
+        input_path=input_path,
+        expected_input_sha256=sha256_file(input_path),
+        authorized_columns=SOURCE_COLUMNS,
+        v1_rules_path=str(V1_RULES),
+        reference_data_paths=REFERENCE_PATHS,
+        config=CONFIG,
+        execution_mode="validation",
+        engine_argv=[
+            "-m", "runner.cli", "validate",
+            "--csv", "{INPUT}",
+            "--output", "{OUTPUT_DIR}/flagged_preview.csv",
+            "--run-id", "hardening-battery",
+            "--evidence-dir", str(work / "engine_evidence"),
+        ],
+        engine_cwd=str(REPO_ROOT),
+        engine_python=ENGINE_PY,
+        output_member_names=["flagged_preview.csv"],
+        work_dir=str(work),
+        final_dir=str(final),
+        granted_scope=granted,
+        limits=ResourceLimits(
+            max_input_bytes=64 * 1024 * 1024,
+            max_rows=1000,
+            max_wall_seconds=300.0,
+            max_peak_rss_bytes=2 * 1024 * 1024 * 1024,
+            max_output_bytes=64 * 1024 * 1024,
+        ),
+        run_label="battery",
+    )
+    for k, v in overrides.items():
+        setattr(spec, k, v)
+    return spec
+
+
+# ══════════════════════════════════════════════════════════════════════
+# N01 — wrong input SHA-256
+# ══════════════════════════════════════════════════════════════════════
+
+def test_n01_wrong_input_hash_rejected(synthetic_csv):
+    result = validate_input_contract(
+        synthetic_csv, "0" * 64, AUTH_COLUMNS)
+    assert result.verdict == "INPUT_CONTRACT_REJECTED"
+    assert any("SHA-256" in r for r in result.reasons)
+    assert result.details["observed_sha256"] == sha256_file(synthetic_csv)
+
+
+# ══════════════════════════════════════════════════════════════════════
+# N02 — wrong schema (header mismatch)
+# ══════════════════════════════════════════════════════════════════════
+
+def test_n02_wrong_schema_rejected_by_layer_a(tmp_path, synthetic_csv):
+    # header column renamed at position 2
+    rows = [[f"r{i}", f"a{i}@x.com", "Ann", "Smith", "CA", "90001"]
+            for i in range(5)]
+    bad = make_csv(tmp_path / "bad.csv",
+                   AUTH_COLUMNS[:2] + ["given_name"] + AUTH_COLUMNS[3:],
+                   rows)
+    result = validate_input_contract(bad, sha256_file(bad), AUTH_COLUMNS)
+    assert result.verdict == "INPUT_CONTRACT_REJECTED"
+    assert any("header" in r for r in result.reasons)
+
+    # unit level: Layer F
+    f_result = assess_schema_evolution(
+        AUTH_COLUMNS[:2] + ["given_name"] + AUTH_COLUMNS[3:],
+        AUTH_COLUMNS)
+    assert f_result.verdict == "SCHEMA_INCOMPATIBLE"
+
+
+# ══════════════════════════════════════════════════════════════════════
+# N03 — missing column
+# ══════════════════════════════════════════════════════════════════════
+
+def test_n03_missing_column_incompatible():
+    result = assess_schema_evolution(
+        AUTH_COLUMNS[:5], AUTH_COLUMNS)
+    assert result.verdict == "SCHEMA_INCOMPATIBLE"
+    assert any("deleted" in r for r in result.reasons)
+    assert result.details["removed_columns"] == ["zip"]
+
+
+# ══════════════════════════════════════════════════════════════════════
+# N04 — column reorder
+# ══════════════════════════════════════════════════════════════════════
+
+def test_n04_column_reorder_incompatible():
+    reordered = [AUTH_COLUMNS[1], AUTH_COLUMNS[0]] + AUTH_COLUMNS[2:]
+    result = assess_schema_evolution(reordered, AUTH_COLUMNS)
+    assert result.verdict == "SCHEMA_INCOMPATIBLE"
+    assert any("reordering or rename" in r for r in result.reasons)
+
+
+# ══════════════════════════════════════════════════════════════════════
+# N05 — type change (Layer A type contract + Layer F declared types)
+# ══════════════════════════════════════════════════════════════════════
+
+def test_n05_type_change_detected(tmp_path):
+    # Layer A: id declared integer, but a row has a non-integer id
+    rows = [[f"r{i}", f"a{i}@x.com", "Ann", "Smith", "CA", "90001"]
+            for i in range(9)] + [["NOT_INT", "a9@x.com", "Ann",
+                                   "Smith", "CA", "90001"]]
+    typed = make_csv(tmp_path / "typed.csv", AUTH_COLUMNS, rows)
+    result = validate_input_contract(
+        typed, sha256_file(typed), AUTH_COLUMNS,
+        column_types={"id": "integer"})
+    assert result.verdict == "INPUT_CONTRACT_REJECTED"
+    assert any("type contract violated" in r for r in result.reasons)
+
+    # Layer F: declared type changes on the same column set
+    f_result = assess_schema_evolution(
+        AUTH_COLUMNS, AUTH_COLUMNS,
+        observed_types={"id": "string"},
+        authorized_types={"id": "integer"})
+    assert f_result.verdict == "SCHEMA_INCOMPATIBLE"
+    assert any("authorized type" in r for r in f_result.reasons)
+
+    # Layer F: nullability drift
+    f2 = assess_schema_evolution(
+        AUTH_COLUMNS, AUTH_COLUMNS,
+        observed_types={"id": "integer"},
+        authorized_types={"id": "nullable_integer"})
+    assert f2.verdict == "SCHEMA_INCOMPATIBLE"
+
+
+# ══════════════════════════════════════════════════════════════════════
+# N06 — changed V1 rule-set hash
+# ══════════════════════════════════════════════════════════════════════
+
+def test_n06_changed_rule_set_hash_rejected(synthetic_csv):
+    granted = build_grant(synthetic_csv)
+    observed = build_grant(synthetic_csv)
+    tampered = AuthorizationScope(**{**observed.as_dict()})
+    tampered.v1_ruleset_sha256 = "f" * 64
+    result = evaluate_authorization(granted, tampered)
+    assert result.verdict == "AUTHORIZATION_REJECTED"
+    assert "v1_ruleset_sha256" in result.details["divergent_fields"]
+
+
+# ══════════════════════════════════════════════════════════════════════
+# N07 — changed config fingerprint
+# ══════════════════════════════════════════════════════════════════════
+
+def test_n07_changed_config_rejected(synthetic_csv):
+    granted = build_grant(synthetic_csv)
+    tampered = AuthorizationScope(**{**granted.as_dict()})
+    tampered.config_fingerprint = "a" * 64
+    result = evaluate_authorization(granted, tampered)
+    assert result.verdict == "AUTHORIZATION_REJECTED"
+    assert "config_fingerprint" in result.details["divergent_fields"]
+
+
+# ══════════════════════════════════════════════════════════════════════
+# N08 — changed reference-data fingerprint
+# ══════════════════════════════════════════════════════════════════════
+
+def test_n08_changed_reference_fingerprint_rejected(synthetic_csv):
+    granted = build_grant(synthetic_csv)
+    tampered = AuthorizationScope(**{**granted.as_dict()})
+    tampered.reference_data_fingerprint = "b" * 64
+    result = evaluate_authorization(granted, tampered)
+    assert result.verdict == "AUTHORIZATION_REJECTED"
+    assert "reference_data_fingerprint" in \
+        result.details["divergent_fields"]
+
+
+# ══════════════════════════════════════════════════════════════════════
+# N10 — authorization mismatch (missing grant / wrong input / bad mode)
+# ══════════════════════════════════════════════════════════════════════
+
+def test_n10_authorization_mismatch(synthetic_csv):
+    observed = build_grant(synthetic_csv)
+
+    # (a) no grant at all
+    r1 = evaluate_authorization(None, observed)
+    assert r1.verdict == "AUTHORIZATION_REJECTED"
+    assert any("no authorization grant" in x for x in r1.reasons)
+
+    # (b) grant bound to a different input
+    granted = AuthorizationScope(**{**observed.as_dict()})
+    granted.input_sha256 = "0" * 64
+    r2 = evaluate_authorization(granted, observed)
+    assert r2.verdict == "AUTHORIZATION_REJECTED"
+    assert "input_sha256" in r2.details["divergent_fields"]
+
+    # (c) software identity divergence (single module hash changed)
+    granted3 = AuthorizationScope(**{**observed.as_dict()})
+    sid = dict(granted3.software_identity)
+    label = sorted(sid)[0]
+    sid[label] = "c" * 64
+    granted3.software_identity = sid
+    r3 = evaluate_authorization(granted3, observed)
+    assert r3.verdict == "AUTHORIZATION_REJECTED"
+    assert f"software_identity[{label}]" in r3.details["divergent_fields"]
+
+    # (d) observed scope not computable
+    r4 = evaluate_authorization(observed, None)
+    assert r4.verdict == "AUTHORIZATION_REJECTED"
+
+    # (e) unknown execution mode
+    with pytest.raises(ValueError):
+        observe_scope(
+            input_path=synthetic_csv,
+            authorized_columns=AUTH_COLUMNS,
+            v1_rules_path=str(V1_RULES),
+            reference_data_paths=REFERENCE_PATHS,
+            config=CONFIG,
+            execution_mode="not-a-mode",
+            software_paths=default_software_paths(str(V1_RULES)))
+
+
+# ══════════════════════════════════════════════════════════════════════
+# N11 — partial output present
+# ══════════════════════════════════════════════════════════════════════
+
+def test_n11_partial_output_distinguishable(tmp_path):
+    staging = staging_directory(str(tmp_path), "ab" * 32)
+    write_partial_manifest(staging, "ab" * 32, ["out.csv"])
+    with open(os.path.join(staging, "out.csv"), "w") as f:
+        f.write("data\n")
+
+    # partial staging is NOT a committed directory
+    assert not is_committed_directory(staging)
+    assert is_committed_directory(str(tmp_path) + "-nonexistent") is False
+
+    # commit the staging dir
+    final = os.path.join(tmp_path, "final")
+    commit = commit_directory_atomically(staging, final)
+    assert commit.committed
+    assert is_committed_directory(final)
+    assert verify_committed_directory(final)
+
+    # a PARTIAL marker left next to a commit attempt -> refuse to
+    # overwrite an existing committed directory
+    staging2 = staging_directory(str(tmp_path), "cd" * 32)
+    write_partial_manifest(staging2, "cd" * 32, ["out.csv"])
+    with open(os.path.join(staging2, "out.csv"), "w") as f:
+        f.write("data2\n")
+    commit2 = commit_directory_atomically(staging2, final)
+    assert not commit2.committed
+    assert any("already exists" in r for r in commit2.reasons)
+    discard_staging(staging2)
+    assert not os.path.exists(staging2)
+
+
+def test_n11_verify_hook_rejection(tmp_path):
+    staging = staging_directory(str(tmp_path), "ef" * 32)
+    write_partial_manifest(staging, "ef" * 32, ["out.csv"])
+    with open(os.path.join(staging, "out.csv"), "w") as f:
+        f.write("data\n")
+    final = os.path.join(tmp_path, "final-verify")
+
+    def reject(_path):
+        return False
+
+    commit = commit_directory_atomically(staging, final, verify_hook=reject)
+    assert not commit.committed
+    assert any("verification rejected" in r for r in commit.reasons)
+    # staging still intact (operator can inspect) and NOT committed
+    assert not is_committed_directory(staging)
+    discard_staging(staging)
+
+
+# ══════════════════════════════════════════════════════════════════════
+# N12 — interrupted run (PARTIAL ledger entry blocks)
+# ══════════════════════════════════════════════════════════════════════
+
+def test_n12_interrupted_run_blocked(tmp_path, engine_csv):
+    granted = build_engine_grant(engine_csv)
+    identity = granted.identity_sha256()
+    ledger = ExecutionLedger(str(Path(tmp_path) / "work"
+                                 / "execution_ledger.json"))
+    ledger.register_partial(identity)
+
+    spec = engine_spec(tmp_path, engine_csv, granted)
+    report = run_hardened_execution(spec)
+    assert report.verdict == "HARDENED_EXECUTION_FAIL"
+    assert report.details["stopped_at"] == "C"
+    layer_c = [l for l in report.layers if l["layer_id"] == "C"][0]
+    assert layer_c["verdict"] == VERDICT_DUPLICATE_BLOCKED
+    # Layer E refusal is documented in the report
+    resume = report.details["layer_e_resume_decision"]
+    assert resume["verdict"] == "RESUME_REFUSED_FRESH_RUN_REQUIRED"
+    # no engine was started: no runtime guard layer present
+    assert not any(l["layer_id"] == "H" and
+                   "wall_seconds" in l["details"]
+                   for l in report.layers)
+
+
+# ══════════════════════════════════════════════════════════════════════
+# N13 — stale checkpoint
+# ══════════════════════════════════════════════════════════════════════
+
+def test_n13_stale_checkpoint_refused():
+    checkpoint = {binding: "stale-value" for binding in
+                  REQUIRED_CHECKPOINT_BINDINGS}
+    decision = evaluate_resume_request(checkpoint)
+    assert decision.verdict == "RESUME_REFUSED_FRESH_RUN_REQUIRED"
+    assert decision.implemented is False
+    assert decision.details["bindings_supplied_by_request"] == sorted(
+        REQUIRED_CHECKPOINT_BINDINGS)
+
+
+# ══════════════════════════════════════════════════════════════════════
+# N14 — cross-input checkpoint (bindings from a different identity)
+# ══════════════════════════════════════════════════════════════════════
+
+def test_n14_cross_input_checkpoint_refused():
+    other_identity = {
+        "execution_identity_sha256": "f" * 64,
+        "input_sha256": "e" * 64,
+        "partial_output_sha256": "d" * 64,
+        "row_offset": 999,
+        "schema_fingerprint": "c" * 64,
+        "config_fingerprint": "b" * 64,
+        "software_identity": {},
+        "checkpoint_sequence": 1,
+    }
+    decision = evaluate_resume_request(other_identity)
+    assert decision.verdict == "RESUME_REFUSED_FRESH_RUN_REQUIRED"
+    # supplying a complete foreign checkpoint never grants anything
+    assert "operator_action" in decision.details
+
+
+# ══════════════════════════════════════════════════════════════════════
+# N15 — resource limits exceeded
+# ══════════════════════════════════════════════════════════════════════
+
+def test_n15_resource_limits_trip(synthetic_csv):
+    # row cap
+    limits = ResourceLimits(max_rows=2)
+    r = check_pre_execution(limits, synthetic_csv)
+    assert r.verdict == "GUARD_TRIPPED"
+    assert r.trip_reason == "row_count_exceeded"
+    # size cap
+    limits2 = ResourceLimits(max_input_bytes=4)
+    r2 = check_pre_execution(limits2, synthetic_csv)
+    assert r2.verdict == "GUARD_TRIPPED"
+    assert r2.trip_reason == "input_size_exceeded"
+    # output cap
+    limits3 = ResourceLimits(max_output_bytes=4)
+    r3 = check_post_execution(limits3, [synthetic_csv])
+    assert r3.verdict == "GUARD_TRIPPED"
+    assert r3.trip_reason == "output_size_exceeded"
+    # missing file -> fail-closed monitor error, never a pass
+    r4 = check_pre_execution(limits, str(Path(synthetic_csv).parent /
+                                          "nope.csv"))
+    assert r4.verdict == "GUARD_MONITOR_ERROR"
+
+
+# ══════════════════════════════════════════════════════════════════════
+# N16 — unknown schema (completely different column set)
+# ══════════════════════════════════════════════════════════════════════
+
+def test_n16_unknown_schema_incompatible():
+    unknown = ["totally", "different", "columns"]
+    result = assess_schema_evolution(unknown, AUTH_COLUMNS)
+    assert result.verdict == "SCHEMA_INCOMPATIBLE"
+
+    # additive trailing columns require re-authorization (not silent)
+    additive = AUTH_COLUMNS + ["new_column"]
+    result2 = assess_schema_evolution(additive, AUTH_COLUMNS)
+    assert result2.verdict == "REQUIRES_AUTHORIZATION"
+
+    # inserted (non-trailing) additions are incompatible
+    inserted = AUTH_COLUMNS[:2] + ["injected"] + AUTH_COLUMNS[2:]
+    result3 = assess_schema_evolution(inserted, AUTH_COLUMNS)
+    assert result3.verdict == "SCHEMA_INCOMPATIBLE"
+
+
+# ══════════════════════════════════════════════════════════════════════
+# N17 — tampered execution manifest / committed output
+# ══════════════════════════════════════════════════════════════════════
+
+def test_n17_tampered_committed_output_detected(tmp_path):
+    staging = staging_directory(str(tmp_path), "aa" * 32)
+    write_partial_manifest(staging, "aa" * 32, ["out.csv"])
+    out = os.path.join(staging, "out.csv")
+    with open(out, "w") as f:
+        f.write("original\n")
+    final = os.path.join(tmp_path, "final-tamper")
+    commit = commit_directory_atomically(staging, final)
+    assert commit.committed
+
+    # (a) tamper the member -> verify_committed_directory detects it
+    with open(os.path.join(final, "out.csv"), "a") as f:
+        f.write("TAMPERED\n")
+    assert verify_committed_directory(final) is False
+
+    # (b) ledger re-check on tampered committed output -> blocked
+    ledger = ExecutionLedger(str(tmp_path / "ledger.json"))
+    identity = "aa" * 32
+    # restore original content FIRST so the ledger records the
+    # clean hash, then register the committed entry
+    with open(os.path.join(final, "out.csv"), "w") as f:
+        f.write("original\n")
+    assert verify_committed_directory(final)
+    ledger.register_partial(identity)
+    ledger.register_committed(identity, [os.path.join(final, "out.csv")])
+    ok = ledger.check_execution(identity, [os.path.join(final, "out.csv")])
+    assert ok.verdict == VERDICT_IDEMPOTENT
+    # now tamper -> blocked
+    with open(os.path.join(final, "out.csv"), "a") as f:
+        f.write("DRIFT\n")
+    drift = ledger.check_execution(
+        identity, [os.path.join(final, "out.csv")])
+    assert drift.verdict == VERDICT_DUPLICATE_BLOCKED
+    assert any("hash drift" in r for r in drift.reasons)
+
+    # (c) committed ledger entries are immutable history
+    demote = ledger.register_partial(identity)
+    assert demote.verdict == VERDICT_DUPLICATE_BLOCKED
+    clear = ledger.clear_partial(identity)
+    assert clear.verdict == VERDICT_DUPLICATE_BLOCKED
+
+
+def test_n17_malformed_ledger_fail_closed(tmp_path):
+    ledger_path = tmp_path / "bad_ledger.json"
+    ledger_path.write_text("{not json", encoding="utf-8")
+    ledger = ExecutionLedger(str(ledger_path))
+    result = ledger.check_execution("ab" * 32, [])
+    assert result.verdict == "LEDGER_UNUSABLE_BLOCKED"
+
+
+# ══════════════════════════════════════════════════════════════════════
+# P01/P02 — positive controls: full pipeline happy path + idempotent rerun
+# ══════════════════════════════════════════════════════════════════════
+
+def test_p01_p02_pipeline_happy_path_and_idempotent_rerun(tmp_path,
+                                                          engine_csv):
+    granted = build_engine_grant(engine_csv)
+    spec = engine_spec(tmp_path, engine_csv, granted)
+
+    # P01 — first execution: full pass, committed outputs
+    report = run_hardened_execution(spec)
+    assert report.verdict == "HARDENED_EXECUTION_PASS", report.to_json()
+    layer_ids = [l["layer_id"] for l in report.layers]
+    assert layer_ids == ["A", "F", "G", "B", "C", "H", "H", "H", "D", "C"]
+    final = Path(spec.final_dir)
+    assert is_committed_directory(str(final))
+    assert verify_committed_directory(str(final))
+    out_csv = final / "flagged_preview.csv"
+    assert out_csv.exists() and out_csv.stat().st_size > 0
+    # ledger entry COMMITTED
+    ledger_payload = json.loads(
+        (Path(spec.work_dir) / "execution_ledger.json").read_text())
+    identity = report.details["execution_identity_sha256"]
+    assert ledger_payload["entries"][identity]["state"] == "COMMITTED"
+
+    # P02 / N09 — duplicate execution: idempotent, engine NOT re-executed
+    out_mtime_before = out_csv.stat().st_mtime_ns
+    report2 = run_hardened_execution(spec)
+    assert report2.verdict == "HARDENED_EXECUTION_IDEMPOTENT_COMPLETE"
+    assert report2.details["stopped_at"] == "C-idempotent"
+    layer_c2 = [l for l in report2.layers if l["layer_id"] == "C"][0]
+    assert layer_c2["verdict"] == VERDICT_IDEMPOTENT
+    # no runtime monitor layer => engine never started
+    assert not any("wall_seconds" in l.get("details", {})
+                   for l in report2.layers)
+    assert out_csv.stat().st_mtime_ns == out_mtime_before
+
+    # N10 (pipeline level) — a grant bound to a different input is
+    # refused before any engine start
+    wrong_grant = build_engine_grant(engine_csv)
+    wrong_grant = AuthorizationScope(**{**wrong_grant.as_dict()})
+    wrong_grant.config_fingerprint = "9" * 64
+    spec3 = engine_spec(tmp_path, engine_csv, wrong_grant,
+                        run_label="wrong-grant")
+    report3 = run_hardened_execution(spec3)
+    assert report3.verdict == "HARDENED_EXECUTION_FAIL"
+    assert report3.details["stopped_at"] == "B"
+    layer_b = [l for l in report3.layers if l["layer_id"] == "B"][0]
+    assert layer_b["verdict"] == "AUTHORIZATION_REJECTED"
+
+
+# ══════════════════════════════════════════════════════════════════════
+# P03 — frozen V1 immutability invariant
+# ══════════════════════════════════════════════════════════════════════
+
+def test_p03_frozen_v1_immutable():
+    assert sha256_file(V1_RULES) == FROZEN_V1_SHA256
+
+
+# ══════════════════════════════════════════════════════════════════════
+# Layer G positive + negative controls
+# ══════════════════════════════════════════════════════════════════════
+
+def test_layer_g_reference_data_pinning():
+    result = fingerprint_reference_data(REFERENCE_PATHS)
+    assert result.pinned
+    assert result.details["versions"]["state_zip_prefixes"] == \
+        sha256_file(CONTRACTS)
+    assert len(result.details["reference_data_fingerprint"]) == 64
+    assert "no external authoritative source is claimed" in \
+        result.details["provenance_note"]
+
+    # missing reference artifact -> fail-closed incomplete
+    bad = fingerprint_reference_data(
+        {"state_zip_prefixes": str(CONTRACTS),
+         "missing": "/nonexistent/reference.bin"})
+    assert bad.verdict == "REFERENCE_DATA_INCOMPLETE"
+
+    # empty set -> refuse to fingerprint
+    empty = fingerprint_reference_data({})
+    assert empty.verdict == "REFERENCE_DATA_INCOMPLETE"

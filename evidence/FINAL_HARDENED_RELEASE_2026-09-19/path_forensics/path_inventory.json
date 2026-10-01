@@ -1,0 +1,26 @@
+{
+  "generated_utc": "2026-09-19T13:28:43Z",
+  "regression_evidence_classification": "environment identity recorded by the FROZEN checker in its own evidence format (python interpreter and wrapper script paths of the execution environment); the checker output is certified and is NOT rewritten; dataset/output paths are repository-relative",
+  "regression_evidence_files_with_absolute_paths": [
+    "evidence/validation/2026-09-19/fresh_3m2/FINAL_RESULTS.json",
+    "evidence/validation/2026-09-19/fresh_3m2/pass1_cli.json",
+    "evidence/validation/2026-09-19/fresh_3m2/pass1_result.json",
+    "evidence/validation/2026-09-19/fresh_3m2/pass1_runtime_safety_events.json",
+    "evidence/validation/2026-09-19/fresh_3m2/pass2_cli.json",
+    "evidence/validation/2026-09-19/fresh_3m2/pass2_result.json",
+    "evidence/validation/2026-09-19/fresh_3m2/pass2_runtime_safety_events.json"
+  ],
+  "release_documents": {
+    "FINAL_RESULTS.json": "clean (zero machine-specific absolute paths)",
+    "README.md": "clean (zero machine-specific absolute paths)"
+  },
+  "repo_namespace_classification": {
+    "test_suite record": "canonical test summary consumed from evidence/rebuild_verification/test_summary.json (no in-process full-suite junit artifact exists; dependency direction fixed 2026-09-19)",
+    "tests/hardening junit XML": "pytest tmp_path fixtures (machine paths); EXCLUDED from the release ZIP; the parsed stats JSON is authoritative"
+  },
+  "repo_namespace_files_with_absolute_paths": [],
+  "schema": "dqaeip.hardening.path.forensics/1.0",
+  "zip_exclusions": [
+    "evidence/FINAL_HARDENED_RELEASE_2026-09-19/negative_battery/_junit_battery.xml"
+  ]
+}

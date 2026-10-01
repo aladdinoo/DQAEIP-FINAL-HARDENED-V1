@@ -1,0 +1,144 @@
+{
+  "current_artifact_count": 15,
+  "current_artifacts_classified": 15,
+  "current_artifacts_missing": [],
+  "current_artifacts_not_known": {},
+  "entries": {
+    "FINAL_RESULTS.json": {
+      "problems": [],
+      "schema": {
+        "name": "dqaeip.final_results",
+        "version": "2.0"
+      },
+      "status": "KNOWN"
+    },
+    "evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/artifact_identity/artifact_identity_registry.json": {
+      "problems": [],
+      "schema": {
+        "name": "dqaeip.artifact_identity_registry",
+        "version": "1.0"
+      },
+      "status": "KNOWN"
+    },
+    "evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/claim_graph/claim_graph.json": {
+      "problems": [],
+      "schema": {
+        "name": "dqaeip.claim_graph",
+        "version": "1.0"
+      },
+      "status": "KNOWN"
+    },
+    "evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/dependency_graph/dependency_graph.json": {
+      "problems": [],
+      "schema": {
+        "name": "dqaeip.dependency_graph",
+        "version": "1.0"
+      },
+      "status": "KNOWN"
+    },
+    "evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/final_results/FINAL_RESULTS_PORTABLE_2026-09-18.json": {
+      "problems": [],
+      "schema": {
+        "name": "dqaeip.final_results",
+        "version": "2.0"
+      },
+      "status": "KNOWN"
+    },
+    "evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/historical_policy/HISTORICAL_EVIDENCE_POLICY.json": {
+      "problems": [],
+      "schema": {
+        "name": "dqaeip.historical_policy",
+        "version": "1.0"
+      },
+      "status": "KNOWN"
+    },
+    "evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/mutation_testing/evidence_mutation_matrix.json": {
+      "problems": [],
+      "schema": {
+        "name": "dqaeip.evidence_mutation_matrix",
+        "version": "1.0"
+      },
+      "status": "KNOWN"
+    },
+    "evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/path_forensics/ABSOLUTE_PATH_INVENTORY.json": {
+      "problems": [],
+      "schema": {
+        "name": "dqaeip.absolute_path_inventory",
+        "version": "1.0"
+      },
+      "status": "KNOWN"
+    },
+    "evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/portable_paths/PORTABLE_EVIDENCE_NORMALIZATION.json": {
+      "problems": [],
+      "schema": {
+        "name": "dqaeip.normalization_summary",
+        "version": "1.0"
+      },
+      "status": "KNOWN"
+    },
+    "evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/release_gate/absolute_path_gate_exceptions.json": {
+      "problems": [],
+      "schema": {
+        "name": "dqaeip.path_gate_exceptions",
+        "version": "1.0"
+      },
+      "status": "KNOWN"
+    },
+    "evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/release_gate/absolute_path_gate_report.json": {
+      "problems": [],
+      "schema": {
+        "name": "dqaeip.absolute_path_gate_report",
+        "version": "1.0"
+      },
+      "status": "KNOWN"
+    },
+    "evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/release_manifest/RELEASE_IDENTITY.json": {
+      "problems": [],
+      "schema": {
+        "name": "dqaeip.release_identity",
+        "version": "1.0"
+      },
+      "status": "KNOWN"
+    },
+    "evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/security/tamper_matrix.json": {
+      "problems": [],
+      "schema": {
+        "name": "dqaeip.tamper_matrix",
+        "version": "1.0"
+      },
+      "status": "KNOWN"
+    },
+    "final_result.json": {
+      "problems": [],
+      "schema": {
+        "name": "dqaeip.final_results",
+        "version": "2.0"
+      },
+      "status": "KNOWN"
+    },
+    "release_manifest.json": {
+      "problems": [],
+      "schema": {
+        "name": "dqaeip.release_manifest",
+        "version": "1.0"
+      },
+      "status": "KNOWN"
+    }
+  },
+  "generated_utc": "2026-09-19T02:08:55Z",
+  "historical_artifacts_examined": 26,
+  "historical_policy": "historical and pre-versioning artifacts are documented as MISSING_SCHEMA records; they are never migrated and never automatically become PASS",
+  "policy": {
+    "known": "registered schema + structural validation PASS",
+    "malformed": "REJECTED \u2014 schema block or structure invalid",
+    "migration": "none performed; only deterministic, safe re-derivation through the two-phase rebuild is allowed for derived artifacts",
+    "missing_schema": "NOT_VERIFIED \u2014 historical/pre-versioning artifact; never automatically PASS; no migration is performed (historical evidence stays historically accurate)",
+    "unknown_schema": "REJECTED \u2014 never silently parsed"
+  },
+  "release_id": "DQAEIP-FINAL-CLEAN-REBUILD-RELEASE-2026-09-18",
+  "report": "DQAEIP evidence schema compatibility report",
+  "status_counts": {
+    "KNOWN": 15
+  },
+  "verdict": "PASS"
+}

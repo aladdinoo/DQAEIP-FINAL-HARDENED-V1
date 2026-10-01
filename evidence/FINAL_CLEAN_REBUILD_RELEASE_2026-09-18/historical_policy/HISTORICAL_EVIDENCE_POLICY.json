@@ -1,0 +1,29 @@
+{
+  "report": "Clean-room rebuild historical evidence policy",
+  "schema": {"name": "dqaeip.historical_policy", "version": "1.0"},
+  "release_id": "DQAEIP-FINAL-CLEAN-REBUILD-RELEASE-2026-09-18",
+  "policy": [
+    {
+      "rule": "no historical evidence in the current tree",
+      "statement": "the entire pre-rebuild evidence tree (32 namespaces, 2026-09-10 through 2026-09-18 pre-rebuild rounds, including the 2026-09-15 3M validation) was deleted by the clean-room mandate and regenerated from zero; the current tree contains ONLY freshly generated 2026-09-18 evidence",
+      "enforcement": "commit babb4ca (full deletion) + zero-old-trace marker sweep (old dates/hashes/counts = 0 hits in evidence/) + per-file git-commit provenance in every stage result"
+    },
+    {
+      "rule": "authoritative originals stay byte-exact",
+      "statement": "the fresh 3.2M run-pair evidence (harness), the pre-flight engine evidence, and the frozen-source-derived rule matrix are never modified after generation; portable derived copies are clearly-marked separate representations",
+      "enforcement": "policy-A portable copies carry _artifact_identity with source SHA; originals hash-anchored in the artifact identity registry and release manifest"
+    },
+    {
+      "rule": "git history is the only historical record",
+      "statement": "pre-rebuild evidence remains recoverable exclusively through git history (commits before babb4ca); it is deliberately absent from the working tree and the release ZIP",
+      "enforcement": "release ZIP membership = tracked files at HEAD; no restore, no relabel, no namespace preservation of old evidence"
+    }
+  ],
+  "counts": {
+    "old_evidence_files_deleted": 552,
+    "old_namespaces_deleted": 32,
+    "deletion_commit": "babb4ca",
+    "policy_A_originals_current_tree": 28,
+    "portable_derived_copies": 10
+  }
+}

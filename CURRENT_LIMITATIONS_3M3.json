@@ -1,0 +1,105 @@
+{
+  "schema": "dqaeip.3m3.current_limitations/2.0",
+  "generated_at": "2026-09-30T10:40:00Z",
+  "source_authoritative": "CURRENT_FINAL_RESULTS.json limitations + evidence/release/limitation_registry.json (17 registered)",
+  "total_limitations": 10,
+  "limitations": [
+    {
+      "limitation_id": "CUR-001",
+      "description": "Customer data has not been processed.",
+      "status": "NOT_PROVEN",
+      "blocking": false,
+      "authoritative_source": "CURRENT_FINAL_RESULTS.json limitations[0]",
+      "evidence_reference": "All validations used synthetic data (seed 20260929). No customer data was processed in any certified run."
+    },
+    {
+      "limitation_id": "CUR-002",
+      "description": "Airflow runtime has not been validated in a deployed Airflow environment.",
+      "status": "NOT_PROVEN",
+      "blocking": false,
+      "authoritative_source": "CURRENT_FINAL_RESULTS.json limitations[1]",
+      "evidence_reference": "DAG file (airflow/dags/dq_validation_dag.py) structurally tested (test_dag_importable, test_dag_has_tasks). No Airflow instance deployed."
+    },
+    {
+      "limitation_id": "CUR-003",
+      "description": "ClickHouse runtime connection has not been validated.",
+      "status": "NOT_PROVEN",
+      "blocking": false,
+      "authoritative_source": "CURRENT_FINAL_RESULTS.json limitations[2]",
+      "evidence_reference": "5 SQL schemas (sql/*.sql) + config stubs (configs/quality.yaml, settings.py) + docker-compose service implemented. No ClickHouse running. Client intentionally NOT in production code (security boundary enforced by gate 15)."
+    },
+    {
+      "limitation_id": "CUR-004",
+      "description": "Unicode beyond the tested ASCII synthetic dataset was not covered by the 3.3M test.",
+      "status": "NOT_TESTED",
+      "blocking": false,
+      "authoritative_source": "CURRENT_FINAL_RESULTS.json limitations[3]",
+      "evidence_reference": "3.3M synthetic dataset used ASCII names only."
+    },
+    {
+      "limitation_id": "CUR-005",
+      "description": "Near-duplicate detection was not part of this controlled validation.",
+      "status": "NOT_TESTED",
+      "blocking": false,
+      "authoritative_source": "CURRENT_FINAL_RESULTS.json limitations[4]",
+      "evidence_reference": "No near-duplicate injection. Platform has no near-duplicate rule in V1 rule set."
+    },
+    {
+      "limitation_id": "CUR-006",
+      "description": "Peak memory and CPU were not measured in this run.",
+      "status": "ENVIRONMENT_LIMITED",
+      "blocking": false,
+      "authoritative_source": "CURRENT_FINAL_RESULTS.json limitations[5]",
+      "evidence_reference": "Engine does not expose peak RSS via CLI output. Prior certified 3.2M run measured 2365 MB peak RSS."
+    },
+    {
+      "limitation_id": "CUR-007",
+      "description": "Historical 2026-09-18 fixed-point verification remains environment-limited (required ZIP unavailable).",
+      "status": "ENVIRONMENT_LIMITED",
+      "blocking": false,
+      "authoritative_source": "CURRENT_FINAL_RESULTS.json limitations[6]",
+      "evidence_reference": "hardening_fixed_point_verify.py requires DQAEIP-FINAL-CLEAN-REBUILD-RELEASE-2026-09-18.zip (not present on filesystem). This is a prerequisite for the SEPARATE historical fixed-point verifier, NOT a blocker for the current release gate."
+    },
+    {
+      "limitation_id": "LIM-001",
+      "description": "O(N) engine memory profile — peak RSS 2365 MB at 3.2M rows.",
+      "status": "OPEN",
+      "blocking": false,
+      "authoritative_source": "evidence/release/limitation_registry.json LIM-001",
+      "evidence_reference": "id_set grows with every row; documented in engine.py docstring. Bounded-memory design intentionally NOT implemented."
+    },
+    {
+      "limitation_id": "LIM-011",
+      "description": "Runtime safety is cooperative audit-hook instrumentation, not a kernel sandbox.",
+      "status": "OPEN",
+      "blocking": false,
+      "authoritative_source": "evidence/release/limitation_registry.json LIM-011",
+      "evidence_reference": "CPython audit hooks are cooperative; no kernel-isolation claim."
+    },
+    {
+      "limitation_id": "LIM-017",
+      "description": "Filesystem metadata mutations (os.chmod/os.utime) not captured by audit hook.",
+      "status": "OPEN",
+      "blocking": false,
+      "authoritative_source": "evidence/release/limitation_registry.json LIM-017",
+      "evidence_reference": "Production validation code does not call chmod/utime (AST-verified). Only maintenance fixer script does."
+    }
+  ],
+  "additional_registry_limitations_not_listed_above": [
+    "LIM-002 (ClickHouse runtime not executed — covered by CUR-003)",
+    "LIM-003 (Airflow runtime not executed — covered by CUR-002)",
+    "LIM-004 (DL fixture unavailable — 7 golden tests skip)",
+    "LIM-005 (SP1 validation-only)",
+    "LIM-006 (E1 not implemented)",
+    "LIM-007 (Oracle is pinned reference, not independently sourced)",
+    "LIM-008 (Validation scale 3.2M — superseded by 3.3M but still registered)",
+    "LIM-009 (Bulk staging CSVs removed after byte-proof)",
+    "LIM-010 (ZIP 733xx/TX geography under review)",
+    "LIM-012 (Checkpoint/safe-resume contract-only)",
+    "LIM-013 (Reference-data provenance content-addressed only)",
+    "LIM-014 (Peak-RSS monitoring sampled at 250ms)",
+    "LIM-015 (Authorization not kernel sandbox — covered by LIM-011)",
+    "LIM-016 (Atomic commit single-filesystem)"
+  ],
+  "no_speculative_limitations_added": true
+}

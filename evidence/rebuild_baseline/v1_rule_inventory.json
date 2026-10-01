@@ -1,0 +1,77 @@
+{
+  "frozen_contract_statement": "The production registry MUST remain exactly the approved V1 registry: 8 rules, versions 1.0.0, predicates unchanged.",
+  "generated_utc": "2026-09-18T23:40:47Z",
+  "inventory_version": "2.0.0",
+  "registry_exactly_matches_required": true,
+  "registry_rule_ids_actual": [
+    "email_blank",
+    "email_syntax_failure",
+    "first_name_cleaning_candidate",
+    "geography_mismatch_candidate",
+    "last_name_cleaning_candidate",
+    "name_cleaning_candidate",
+    "proposed_email_export_eligible",
+    "zip_state_assessable"
+  ],
+  "required_rule_ids_in_order": [
+    "first_name_cleaning_candidate",
+    "last_name_cleaning_candidate",
+    "name_cleaning_candidate",
+    "email_blank",
+    "email_syntax_failure",
+    "proposed_email_export_eligible",
+    "zip_state_assessable",
+    "geography_mismatch_candidate"
+  ],
+  "rules": [
+    {
+      "registry_order_index": 0,
+      "rule_hash": "575e9d4588334d364bdcfae6ca3c44b9bf35120a371b78fecfde8ee19373ca69",
+      "rule_id": "first_name_cleaning_candidate",
+      "rule_version": "1.0.0"
+    },
+    {
+      "registry_order_index": 1,
+      "rule_hash": "c553b7f4484b54135e2b84c6b37a84b15df328544256577984e61f6ede900122",
+      "rule_id": "last_name_cleaning_candidate",
+      "rule_version": "1.0.0"
+    },
+    {
+      "registry_order_index": 2,
+      "rule_hash": "3a128ec85d196cd3a42720347ba8790f5fbf0f386bd617e4ec508ee050b661c8",
+      "rule_id": "name_cleaning_candidate",
+      "rule_version": "1.0.0"
+    },
+    {
+      "registry_order_index": 3,
+      "rule_hash": "157ccc2127334bac03534f80868a3d7ea3bc8df77c132e8c237874321164f2bc",
+      "rule_id": "email_blank",
+      "rule_version": "1.0.0"
+    },
+    {
+      "registry_order_index": 4,
+      "rule_hash": "5caaba13a73c90c5aac7a52cf756713c8ecc3dc73d30c2949206efa8d2b712f7",
+      "rule_id": "email_syntax_failure",
+      "rule_version": "1.0.0"
+    },
+    {
+      "registry_order_index": 5,
+      "rule_hash": "6732e6bfed6fae3c23439f0e69b5c39e2843a5b74f2f8f3fdaf6ad5d536da98c",
+      "rule_id": "proposed_email_export_eligible",
+      "rule_version": "1.0.0"
+    },
+    {
+      "registry_order_index": 6,
+      "rule_hash": "e7730c1b848f32790a56bfb79f7ef5dbc8c88b3919f9903421adc7dde5393885",
+      "rule_id": "zip_state_assessable",
+      "rule_version": "1.0.0"
+    },
+    {
+      "registry_order_index": 7,
+      "rule_hash": "7967b59ef7a14b83284a12eb298d63c6140e0837bfafdf3ac4e758baf74c4e93",
+      "rule_id": "geography_mismatch_candidate",
+      "rule_version": "1.0.0"
+    }
+  ],
+  "source_of_truth": "data_quality_platform/rules/registry.py + v1_rules.py (actual import)"
+}

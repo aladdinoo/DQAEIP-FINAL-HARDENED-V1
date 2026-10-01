@@ -1,0 +1,63 @@
+{
+  "report": "Phase 0 continuation supplement — forensic re-verification and drift classification",
+  "supplement_utc": "2026-09-19T09:05:00Z",
+  "context": "Session resumed after context exhaustion. This supplement records the re-verification of every baseline_record.json claim performed independently in the resumed session, the classification of all working-tree drift and untracked artifacts found at resume time, and the disposition decisions taken before Phase 1 (hardening implementation).",
+  "reverification_of_baseline_record": {
+    "method": "independent shell + python reads; no value copied from baseline_record.json without re-measurement",
+    "nested_repo_head": "fb4df927baf9e43735ac8facde7c5ecbd2a5f187",
+    "verified_exact": {
+      "baseline_zip_sha256": "4ecbfc16da7ddaa1c830d5963f2eefba3236e3ce07fb1b1857bd07d63020cea5",
+      "baseline_zip_member_count": 460,
+      "baseline_zip_size_bytes": 2001588,
+      "sidecar_matches_actual": true,
+      "fresh_3m2_rows": 3200000,
+      "fresh_3m2_runs": 2,
+      "fresh_3m2_oracle_comparisons_per_run": 25600000,
+      "fresh_3m2_oracle_mismatches_total": 0,
+      "fresh_3m2_input_sha256": "59624a53c72f908f1dde673ceecf59e0662ae721bb8f9af7e165acba5318d153",
+      "fresh_3m2_output_sha256": "b72adc235160a86e0b99a08f988dd0bb5f2cff82bbe5b5d28ea07c5a5719329a",
+      "frozen_v1_sha256": "daef1ded54c7d3c79898a1ba253be2acd5b6120e18b16b09009fdd7be9fc2276",
+      "readme_sha256": "87d7a36f75695f437e95398e0406f3ed6ef2f6de6e4788fed55aff6430905de9",
+      "final_results_sha256": "cbd25637a4b03cf57552e991b897321e50445394cf8734a0eb010e759c63de0b",
+      "release_manifest_sha256": "aaa92fe736c87b93bc98bd40d7b2e4607c76f367cfa53f03675d28616e28a3ea",
+      "release_notes_sha256": "81d8241e7522310569ece5c6ff5921f60b2ee9066f68c07a61fdbaa56ba31891",
+      "test_summary": "collected=1053 passed=1044 skipped=9 failed=0",
+      "release_gate": "gates=22 verdict=PASS",
+      "rule_matrix": "rule_count=8; rule_id set == frozen eight (exact set equality; matrix key is 'rule_id')"
+    },
+    "discrepancies_found": 0
+  },
+  "working_tree_drift_classification": {
+    "modified_files_total": 195,
+    "mode_only_changes": {
+      "count": 194,
+      "pattern": "100644 -> 100755 (environment chmod on session restore)",
+      "content_delta": 0
+    },
+    "content_changes": {
+      "count": 1,
+      "path": "evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/self_contained_verification/SELF_CONTAINED_RELEASE_VERIFICATION.json",
+      "classification": "post-terminal-commit self-verification re-run (documented discipline, worklog Phase 9)",
+      "committed_value_at_HEAD_fb4df92": "verdict FAIL for superseded ZIP 6a4383399f4bc773c0930986dd0ee76bbe907ebf5efb3bc0224b24df288b6dc5",
+      "working_tree_value": "verdict PASS (17/17) for definitive ZIP 4ecbfc16da7ddaa1c830d5963f2eefba3236e3ce07fb1b1857bd07d63020cea5",
+      "interpretation": "The committed HEAD record is the earlier extraction verification of the superseded ZIP round; the final re-run against the definitive ZIP updated the working tree after commit fb4df92 and was left uncommitted at session end. The certified baseline remains byte-recoverable at HEAD fb4df92 (git) and the working tree holds the terminal certified state. No ambiguity for the hardening release: this file belongs to the 2026-09-18 baseline namespace and will NOT be modified by the 2026-09-19 release work.",
+      "action": "document only; no modification"
+    }
+  },
+  "untracked_artifacts_at_resume": {
+    "evidence/forensic_baseline/2026-09-19/baseline_record.json": {
+      "classification": "Phase 0 deliverable of THIS release task (prior attempt, 2026-09-19T08:12Z); all claims independently re-verified in this supplement",
+      "action": "retained as Phase 0 record"
+    },
+    "scripts/hardening_forensic_baseline.py": {
+      "classification": "Phase 0 script of THIS release task (prior attempt); 338 lines; output matches re-verification",
+      "action": "retained (reusable Phase 0 tooling)"
+    },
+    "data_quality_platform/hardening/__init__.py.tmp": {
+      "classification": "0-byte .tmp debris from the aborted prior attempt at Phase 1; never finalized, never imported, no git tracking",
+      "action": "REMOVE at Phase 1 start (before any hardening implementation)"
+    }
+  },
+  "phase0_verdict": "BASELINE_ESTABLISHED_NO_AMBIGUITY",
+  "resume_gate": "Phase 0 complete; Phase 1 (hardening layers A-H) authorized to begin with removal of the classified debris file"
+}

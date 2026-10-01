@@ -1,0 +1,190 @@
+{
+  "artifact_inventory_result": {
+    "missing": [],
+    "required_artifacts": [
+      "README.md",
+      "RELEASE_NOTES.md",
+      "FINAL_RESULTS.json",
+      "final_result.json",
+      "release_manifest.json",
+      "evidence/release/release_evidence_model.json",
+      "evidence/release_gate/final_release_gate.json",
+      "evidence/rebuild_verification/test_summary.json",
+      "evidence/rebuild_verification/run_pair_verification.json",
+      "evidence/mutation_testing/mutation_results.json",
+      "evidence/dqvp_performance/performance_results.json"
+    ],
+    "verdict": "PASS",
+    "verdict_note": "missing required release artifact fails closed"
+  },
+  "credential_scan_result": {
+    "documentation_example_count": 0,
+    "findings": [
+      {
+        "classification": "SYNTHETIC_TEST_FIXTURE",
+        "justification": "synthetic security-scanner positive-control fixtures: fake PEM header/body proving private-key detection; no real key material",
+        "path": "tests/assurance/test_release_security_and_manifest.py",
+        "rule": "private_key"
+      },
+      {
+        "classification": "SYNTHETIC_TEST_FIXTURE",
+        "justification": "synthetic positive-control: the well-known AWS documentation EXAMPLE access-key id (value intentionally not reproduced in this report) fails closed; not a real credential",
+        "path": "tests/assurance/test_release_security_and_manifest.py",
+        "rule": "aws_access_key_id"
+      },
+      {
+        "classification": "SYNTHETIC_TEST_FIXTURE",
+        "justification": "synthetic positive-control: fabricated placeholder password proving credential-assignment detection fails closed",
+        "path": "tests/assurance/test_release_security_and_manifest.py",
+        "rule": "password_assignment"
+      },
+      {
+        "classification": "SYNTHETIC_TEST_FIXTURE",
+        "justification": "synthetic PII-scanner positive-control fixture: fake PEM header with 4-char body 'MIIB' proving pem_private_key detection fails closed; no real key material",
+        "path": "tests/unit/test_pii_scan.py",
+        "rule": "private_key"
+      }
+    ],
+    "findings_total": 4,
+    "real_secret_count": 0,
+    "rule_catalog": [
+      "private_key",
+      "aws_access_key_id",
+      "github_token",
+      "slack_token",
+      "jwt",
+      "generic_api_key_assignment",
+      "password_assignment"
+    ],
+    "scanned_file_count": 527,
+    "synthetic_fixture_count": 4,
+    "verdict": "PASS",
+    "verdict_note": "value content never reproduced; classification is keyed by exact path + rule with recorded justification \u2014 never by pattern resemblance"
+  },
+  "documentation_example_classifications": {
+    "count": 0,
+    "entries": [],
+    "note": "documented placeholder templates (no real values)"
+  },
+  "environment_leakage_result": {
+    "note": "internal forensic evidence may retain exact execution paths for auditability (documented scope policy); release-facing documents are repository-relative only",
+    "rules": [
+      "posix_home",
+      "macos_users",
+      "root_home",
+      "mounted_volume",
+      "machine_tmp",
+      "system_var",
+      "service_tree",
+      "windows_drive",
+      "unc_share",
+      "tilde_user",
+      "tilde_named_user",
+      "dqvp_work_dirname"
+    ],
+    "scanned_release_facing_documents": [
+      "FINAL_RESULTS.json",
+      "final_result.json",
+      "release_manifest.json",
+      "README.md",
+      "RELEASE_NOTES.md",
+      "DELIVERY_MANIFEST.json",
+      "evidence/release/reproducibility_manifest.json",
+      "evidence/release/golden_release_snapshot.json",
+      "evidence/release/limitation_registry.json",
+      "evidence/release/release_evidence_model.json",
+      "evidence/release/claim_provenance.json",
+      "evidence/release/consistency_matrix.json",
+      "evidence/release/assurance_mutation.json"
+    ],
+    "verdict": "PASS",
+    "violations": []
+  },
+  "fail_closed_behavior_status": {
+    "missing_required_artifact": true,
+    "note": "each capability is proven by the dedicated negative tests in tests/assurance/test_release_security_and_manifest.py",
+    "path_leakage_rejected": true,
+    "prohibited_file_class_rejected": true,
+    "real_credential_rejected": true,
+    "verdict": "VERIFIED"
+  },
+  "overall_verdict": "PASS",
+  "path_leakage_result": {
+    "missing": [],
+    "rule_catalog": [
+      "posix_home",
+      "macos_users",
+      "root_home",
+      "mounted_volume",
+      "machine_tmp",
+      "system_var",
+      "service_tree",
+      "windows_drive",
+      "unc_share",
+      "tilde_user",
+      "tilde_named_user",
+      "dqvp_work_dirname"
+    ],
+    "scanned": [
+      "FINAL_RESULTS.json",
+      "final_result.json",
+      "release_manifest.json",
+      "README.md",
+      "RELEASE_NOTES.md",
+      "DELIVERY_MANIFEST.json",
+      "evidence/release/reproducibility_manifest.json",
+      "evidence/release/golden_release_snapshot.json",
+      "evidence/release/limitation_registry.json",
+      "evidence/release/release_evidence_model.json",
+      "evidence/release/claim_provenance.json",
+      "evidence/release/consistency_matrix.json",
+      "evidence/release/assurance_mutation.json"
+    ],
+    "verdict": "PASS",
+    "verdict_note": "PASS only when every release-facing artifact exists and contains zero machine-local paths; missing artifacts also fail (fail-closed), they are never silently skipped",
+    "violation_count": 0,
+    "violations": []
+  },
+  "report": "DQAEIP security / privacy release report",
+  "scan_version": "1.0.0",
+  "synthetic_fixture_classifications": {
+    "count": 4,
+    "entries": [
+      {
+        "justification": "synthetic security-scanner positive-control fixtures: fake PEM header/body proving private-key detection; no real key material",
+        "path": "tests/assurance/test_release_security_and_manifest.py",
+        "rule": "private_key"
+      },
+      {
+        "justification": "synthetic positive-control: the well-known AWS documentation EXAMPLE access-key id (value intentionally not reproduced in this report) fails closed; not a real credential",
+        "path": "tests/assurance/test_release_security_and_manifest.py",
+        "rule": "aws_access_key_id"
+      },
+      {
+        "justification": "synthetic positive-control: fabricated placeholder password proving credential-assignment detection fails closed",
+        "path": "tests/assurance/test_release_security_and_manifest.py",
+        "rule": "password_assignment"
+      },
+      {
+        "justification": "synthetic PII-scanner positive-control fixture: fake PEM header with 4-char body 'MIIB' proving pem_private_key detection fails closed; no real key material",
+        "path": "tests/unit/test_pii_scan.py",
+        "rule": "private_key"
+      }
+    ],
+    "note": "positive-control fixtures that prove the scanners fail closed; each is an exact path+rule exception with a recorded justification; values never reproduced"
+  },
+  "zip_scan_result": {
+    "archive_member_count": null,
+    "credential_scan_prohibited_findings": 0,
+    "documented_exceptions": {
+      "DQAEIP-FINAL-HARDENED-RELEASE-2026-09-19/tests/assurance/test_release_security_and_manifest.py": "positive-control fixture for the release security scanner (synthetic PEM marker, fabricated documentation-example tokens, placeholder body)",
+      "DQAEIP-FINAL-HARDENED-RELEASE-2026-09-19/tests/unit/test_pii_scan.py": "positive-control fixture for the PII scanner (synthetic PEM marker, placeholder body)"
+    },
+    "extraction_verification": "VERIFIED",
+    "path_firewall_violations": 0,
+    "verdict": "VERIFIED",
+    "zip_release_name": null,
+    "zip_sha256": "88229de9e032e7196213b6c153fd8a5d561de732c259ba11defce56768e016ea",
+    "zip_size_bytes": 2195761
+  }
+}

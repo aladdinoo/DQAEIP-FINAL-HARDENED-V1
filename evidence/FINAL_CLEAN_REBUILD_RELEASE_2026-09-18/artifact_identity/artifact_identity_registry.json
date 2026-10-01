@@ -1,0 +1,487 @@
+{
+  "artifact_class_vocabulary": [
+    "AUTHORITATIVE",
+    "DERIVED",
+    "SUPERSEDED",
+    "UNKNOWN",
+    "TEMPORARY"
+  ],
+  "class_counts": {
+    "AUTHORITATIVE": 10,
+    "DERIVED": 30,
+    "UNKNOWN": 1
+  },
+  "fingerprint_policy": "deterministic, timestamp-free: SHA-256 over canonical (logical_path, sha256, artifact_class) triples",
+  "generated_utc": "2026-09-19T02:43:08Z",
+  "identity_contract": {
+    "artifact_class": "AUTHORITATIVE | DERIVED | SUPERSEDED | UNKNOWN | TEMPORARY",
+    "cryptographic_identity": "SHA-256 of exact bytes",
+    "logical_identity": "repo:// URI (stable across machines)",
+    "physical_path": "repository-relative POSIX path",
+    "provenance": "producer + role per record",
+    "self_reference": "this registry's own SHA is pinned by the integrity baseline snapshot, not by itself (a file cannot contain its own hash)",
+    "unknown_policy": "UNKNOWN artifacts are never forced into another class; reclassification requires an explicit resolution record"
+  },
+  "record_count": 41,
+  "records": [
+    {
+      "artifact_class": "AUTHORITATIVE",
+      "logical_path": "repo://data_quality_platform/rules/v1_rules.py",
+      "provenance": {
+        "producer": "DQAEIP-FINAL-PORTABLE-EVIDENCE-RELEASE-2026-09-18",
+        "role": "frozen V1 rule source (identity anchor daef1ded\u2026)"
+      },
+      "relative_path": "data_quality_platform/rules/v1_rules.py",
+      "schema_version": "1.0",
+      "sha256": "daef1ded54c7d3c79898a1ba253be2acd5b6120e18b16b09009fdd7be9fc2276"
+    },
+    {
+      "artifact_class": "AUTHORITATIVE",
+      "logical_path": "repo://evidence/validation/2026-09-18/fresh_3m2/harness/FINAL_RESULTS.json",
+      "provenance": {
+        "producer": "DQAEIP-FINAL-PORTABLE-EVIDENCE-RELEASE-2026-09-18",
+        "role": "official 3M run-pair record (never regenerate; never modify)"
+      },
+      "relative_path": "evidence/validation/2026-09-18/fresh_3m2/harness/FINAL_RESULTS.json",
+      "schema_version": "1.0",
+      "sha256": "755fa28f224c480e873676b487d4c6babeb0072fff50e47c08104684b6643337"
+    },
+    {
+      "artifact_class": "AUTHORITATIVE",
+      "logical_path": "repo://evidence/validation/2026-09-18/fresh_3m2/harness/pass1_result.json",
+      "provenance": {
+        "producer": "DQAEIP-FINAL-PORTABLE-EVIDENCE-RELEASE-2026-09-18",
+        "role": "official Run 1 result"
+      },
+      "relative_path": "evidence/validation/2026-09-18/fresh_3m2/harness/pass1_result.json",
+      "schema_version": "1.0",
+      "sha256": "dde3592c46fd48bfa8950ec0ab94a8076b287523770cad7a9dc9919e278aad18"
+    },
+    {
+      "artifact_class": "AUTHORITATIVE",
+      "logical_path": "repo://evidence/validation/2026-09-18/fresh_3m2/harness/pass2_result.json",
+      "provenance": {
+        "producer": "DQAEIP-FINAL-PORTABLE-EVIDENCE-RELEASE-2026-09-18",
+        "role": "official Run 2 result"
+      },
+      "relative_path": "evidence/validation/2026-09-18/fresh_3m2/harness/pass2_result.json",
+      "schema_version": "1.0",
+      "sha256": "9c92d21cd5a6d636d355bf867508cb7a9501275e1adb2a004fda0f6cfe34157f"
+    },
+    {
+      "artifact_class": "AUTHORITATIVE",
+      "logical_path": "repo://evidence/validation/2026-09-18/fresh_3m2/harness/pass1_cli.json",
+      "provenance": {
+        "producer": "DQAEIP-FINAL-PORTABLE-EVIDENCE-RELEASE-2026-09-18",
+        "role": "official Run 1 CLI capture"
+      },
+      "relative_path": "evidence/validation/2026-09-18/fresh_3m2/harness/pass1_cli.json",
+      "schema_version": "1.0",
+      "sha256": "ad756deb31f1df0f5036e64a32cb8fe8cf9a1b27ca23b146a8961004a58b495d"
+    },
+    {
+      "artifact_class": "AUTHORITATIVE",
+      "logical_path": "repo://evidence/validation/2026-09-18/fresh_3m2/harness/pass2_cli.json",
+      "provenance": {
+        "producer": "DQAEIP-FINAL-PORTABLE-EVIDENCE-RELEASE-2026-09-18",
+        "role": "official Run 2 CLI capture"
+      },
+      "relative_path": "evidence/validation/2026-09-18/fresh_3m2/harness/pass2_cli.json",
+      "schema_version": "1.0",
+      "sha256": "048c9cbc31777db6da9d9c77dd6afb09c2ea833b489cfbfd62a406c6156a14c5"
+    },
+    {
+      "artifact_class": "AUTHORITATIVE",
+      "logical_path": "repo://evidence/validation/2026-09-18/fresh_3m2/harness/pass1_runtime_safety_events.json",
+      "provenance": {
+        "producer": "DQAEIP-FINAL-PORTABLE-EVIDENCE-RELEASE-2026-09-18",
+        "role": "official Run 1 runtime-safety audit-hook events"
+      },
+      "relative_path": "evidence/validation/2026-09-18/fresh_3m2/harness/pass1_runtime_safety_events.json",
+      "schema_version": "1.0",
+      "sha256": "2fc822ed2ed6cac744ac33bd6e47b6181c1d813064e274ccbd94d97851c0e301"
+    },
+    {
+      "artifact_class": "AUTHORITATIVE",
+      "logical_path": "repo://evidence/validation/2026-09-18/fresh_3m2/harness/pass2_runtime_safety_events.json",
+      "provenance": {
+        "producer": "DQAEIP-FINAL-PORTABLE-EVIDENCE-RELEASE-2026-09-18",
+        "role": "official Run 2 runtime-safety audit-hook events"
+      },
+      "relative_path": "evidence/validation/2026-09-18/fresh_3m2/harness/pass2_runtime_safety_events.json",
+      "schema_version": "1.0",
+      "sha256": "0a26ed04c1e0d711a1978bd05a0fc537a92fd19698a89af843ea0601d8d460bc"
+    },
+    {
+      "artifact_class": "AUTHORITATIVE",
+      "logical_path": "repo://scripts/final_3m_validation.py",
+      "provenance": {
+        "producer": "DQAEIP-FINAL-PORTABLE-EVIDENCE-RELEASE-2026-09-18",
+        "role": "official fail-closed checker (0ef7c10c\u2026)"
+      },
+      "relative_path": "scripts/final_3m_validation.py",
+      "schema_version": "1.0",
+      "sha256": "0ef7c10c14a1df317c23cb0dfc73b3a60c2257c064b35080d694e5fe8bc50d84"
+    },
+    {
+      "artifact_class": "AUTHORITATIVE",
+      "logical_path": "repo://scripts/verify_run_pair.py",
+      "provenance": {
+        "producer": "DQAEIP-FINAL-PORTABLE-EVIDENCE-RELEASE-2026-09-18",
+        "role": "official run-pair verifier (0ec07367\u2026)"
+      },
+      "relative_path": "scripts/verify_run_pair.py",
+      "schema_version": "1.0",
+      "sha256": "425534dba7183e25879e1b9e9e681ed5b465db45d941676868da8ed8a8c277ad"
+    },
+    {
+      "artifact_class": "DERIVED",
+      "logical_path": "repo://evidence/rebuild_verification/run_pair_verification.json",
+      "provenance": {
+        "producer": "DQAEIP-FINAL-PORTABLE-EVIDENCE-RELEASE-2026-09-18",
+        "role": "95-check fail-closed verification of the official pair"
+      },
+      "relative_path": "evidence/rebuild_verification/run_pair_verification.json",
+      "schema_version": "1.0",
+      "sha256": "7112257f799c8473feb8622f6e1cee445b893914be67753becba999b69745379"
+    },
+    {
+      "artifact_class": "DERIVED",
+      "logical_path": "repo://evidence/rebuild_verification/test_summary.json",
+      "provenance": {
+        "producer": "DQAEIP-FINAL-PORTABLE-EVIDENCE-RELEASE-2026-09-18",
+        "role": "full-suite collection/pass/skip counts"
+      },
+      "relative_path": "evidence/rebuild_verification/test_summary.json",
+      "schema_version": "1.0",
+      "sha256": "6f70c21a94bb23ef37633ca3983158f7c55fa0e24c4a0ff71c678d3e115f2e5c"
+    },
+    {
+      "artifact_class": "DERIVED",
+      "logical_path": "repo://evidence/mutation_testing/mutation_results.json",
+      "provenance": {
+        "producer": "DQAEIP-FINAL-PORTABLE-EVIDENCE-RELEASE-2026-09-18",
+        "role": "business-rule mutation battery"
+      },
+      "relative_path": "evidence/mutation_testing/mutation_results.json",
+      "schema_version": "1.0",
+      "sha256": "a24da7210bc0d757b7e7abfebf22acac158f2722ddb890a153e7d506e874ff98"
+    },
+    {
+      "artifact_class": "DERIVED",
+      "logical_path": "repo://evidence/release/assurance_mutation.json",
+      "provenance": {
+        "producer": "DQAEIP-FINAL-PORTABLE-EVIDENCE-RELEASE-2026-09-18",
+        "role": "false-PASS prevention battery"
+      },
+      "relative_path": "evidence/release/assurance_mutation.json",
+      "schema_version": "1.0",
+      "sha256": "795b722ae1b84755f049e33a75499f863471f25a20d3743114b9fd94bcc945f0"
+    },
+    {
+      "artifact_class": "DERIVED",
+      "logical_path": "repo://evidence/release/limitation_registry.json",
+      "provenance": {
+        "producer": "DQAEIP-FINAL-PORTABLE-EVIDENCE-RELEASE-2026-09-18",
+        "role": "machine-readable documented limitations"
+      },
+      "relative_path": "evidence/release/limitation_registry.json",
+      "schema_version": "1.0",
+      "sha256": "4ffad35d9f50f68984323287870b4c9627c93411eef079474e32bd3234c93bb5"
+    },
+    {
+      "artifact_class": "DERIVED",
+      "logical_path": "repo://evidence/release/release_evidence_model.json",
+      "provenance": {
+        "producer": "DQAEIP-FINAL-PORTABLE-EVIDENCE-RELEASE-2026-09-18",
+        "role": "canonical evidence model"
+      },
+      "relative_path": "evidence/release/release_evidence_model.json",
+      "schema_version": "2.0",
+      "sha256": "3649c44ea2302f46858219db4d47366a80a6320f942da98949e026ec05743d76"
+    },
+    {
+      "artifact_class": "DERIVED",
+      "logical_path": "repo://evidence/release/claim_provenance.json",
+      "provenance": {
+        "producer": "DQAEIP-FINAL-PORTABLE-EVIDENCE-RELEASE-2026-09-18",
+        "role": "claim-level provenance records"
+      },
+      "relative_path": "evidence/release/claim_provenance.json",
+      "schema_version": "1.0",
+      "sha256": "c811b0289fd60ddb884a35c6af99cf5268659c3e0ea61c744905135613726e73"
+    },
+    {
+      "artifact_class": "DERIVED",
+      "logical_path": "repo://evidence/release/golden_release_snapshot.json",
+      "provenance": {
+        "producer": "DQAEIP-FINAL-PORTABLE-EVIDENCE-RELEASE-2026-09-18",
+        "role": "golden release snapshot"
+      },
+      "relative_path": "evidence/release/golden_release_snapshot.json",
+      "schema_version": "1.0",
+      "sha256": "c1f9a3891e620e3919fcc1aa6cce6c54901290ecf96eceb1ecfb4ab5c445d493"
+    },
+    {
+      "artifact_class": "DERIVED",
+      "logical_path": "repo://evidence/release/reproducibility_manifest.json",
+      "provenance": {
+        "producer": "DQAEIP-FINAL-PORTABLE-EVIDENCE-RELEASE-2026-09-18",
+        "role": "reproducibility manifest"
+      },
+      "relative_path": "evidence/release/reproducibility_manifest.json",
+      "schema_version": "1.0",
+      "sha256": "e3c900aa18d6e9968c98e8243abd545eba1c5b020e134f0704ebc3882b6798a7"
+    },
+    {
+      "artifact_class": "DERIVED",
+      "logical_path": "repo://evidence/release/consistency_matrix.json",
+      "provenance": {
+        "producer": "DQAEIP-FINAL-PORTABLE-EVIDENCE-RELEASE-2026-09-18",
+        "role": "consistency matrix"
+      },
+      "relative_path": "evidence/release/consistency_matrix.json",
+      "schema_version": "1.0",
+      "sha256": "4b7e94b80601eeadcf44d083c4297e235a4b2c8c5de5f58b2779047681092127"
+    },
+    {
+      "artifact_class": "DERIVED",
+      "logical_path": "repo://evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/path_forensics/ABSOLUTE_PATH_INVENTORY.json",
+      "provenance": {
+        "producer": "DQAEIP-FINAL-PORTABLE-EVIDENCE-RELEASE-2026-09-18",
+        "role": "Phase-1 absolute-path inventory (diagnostic quoting record)"
+      },
+      "relative_path": "evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/path_forensics/ABSOLUTE_PATH_INVENTORY.json",
+      "schema_version": "1.0",
+      "sha256": "b2e68da0f1a94a5634c62ea68aaf79272a70fd7e2b1480849ae428fabd39000a"
+    },
+    {
+      "artifact_class": "DERIVED",
+      "logical_path": "repo://evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/portable_paths/PORTABLE_EVIDENCE_NORMALIZATION.json",
+      "provenance": {
+        "producer": "DQAEIP-FINAL-PORTABLE-EVIDENCE-RELEASE-2026-09-18",
+        "role": "Phase-2 policy-A normalization summary"
+      },
+      "relative_path": "evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/portable_paths/PORTABLE_EVIDENCE_NORMALIZATION.json",
+      "schema_version": "1.0",
+      "sha256": "3bdec633699886b8fa5515061842a1a7a0c29decbc107dfdf2eb4be74fa4e8a7"
+    },
+    {
+      "artifact_class": "DERIVED",
+      "logical_path": "repo://evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/release_gate/absolute_path_gate_report.json",
+      "provenance": {
+        "producer": "DQAEIP-FINAL-PORTABLE-EVIDENCE-RELEASE-2026-09-18",
+        "role": "Phase-3 absolute-path release gate report"
+      },
+      "relative_path": "evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/release_gate/absolute_path_gate_report.json",
+      "schema_version": "1.0",
+      "sha256": "e9771beb6d44695cbe256fdd5cb3677c4bc6778a9bc6d7c66a4fbf798f049dea"
+    },
+    {
+      "artifact_class": "DERIVED",
+      "logical_path": "repo://evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/schema_versioning/SCHEMA_COMPATIBILITY_REPORT.json",
+      "provenance": {
+        "producer": "DQAEIP-FINAL-PORTABLE-EVIDENCE-RELEASE-2026-09-18",
+        "role": "Phase-6 schema compatibility report"
+      },
+      "relative_path": "evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/schema_versioning/SCHEMA_COMPATIBILITY_REPORT.json",
+      "schema_version": "1.0",
+      "sha256": "072d9b8b685154f4d63be59bc24cf5e24ed65886eda6a165c134ab52ec149b6a"
+    },
+    {
+      "artifact_class": "DERIVED",
+      "logical_path": "repo://evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/final_results/FINAL_RESULTS_PORTABLE_2026-09-18.json",
+      "provenance": {
+        "producer": "DQAEIP-FINAL-PORTABLE-EVIDENCE-RELEASE-2026-09-18",
+        "role": "Phase-10 two-phase rebuilt FINAL_RESULTS (portable)"
+      },
+      "relative_path": "evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/final_results/FINAL_RESULTS_PORTABLE_2026-09-18.json",
+      "schema_version": "2.0",
+      "sha256": "98400e0f27ca526c54ef44ced1cf0d50a10b53ba2591a3dc43615561159cbdf8"
+    },
+    {
+      "artifact_class": "DERIVED",
+      "logical_path": "repo://evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/claim_graph/claim_graph.json",
+      "provenance": {
+        "producer": "DQAEIP-FINAL-PORTABLE-EVIDENCE-RELEASE-2026-09-18",
+        "role": "Phase-5 claim\u2192evidence\u2192hash provenance graph"
+      },
+      "relative_path": "evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/claim_graph/claim_graph.json",
+      "schema_version": "1.0",
+      "sha256": "2154c90c27628a6613c06c5763659a0d3bf1eb0b0923f2a9086555721bf7c1cb"
+    },
+    {
+      "artifact_class": "DERIVED",
+      "logical_path": "repo://evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/mutation_testing/evidence_mutation_matrix.json",
+      "provenance": {
+        "producer": "DQAEIP-FINAL-PORTABLE-EVIDENCE-RELEASE-2026-09-18",
+        "role": "Phase-8 evidence mutation matrix (16/16 rejected)"
+      },
+      "relative_path": "evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/mutation_testing/evidence_mutation_matrix.json",
+      "schema_version": "1.0",
+      "sha256": "f74070efaf0d735e255b5be6c77b0c71094d8a557c8af05fc163600affb8b6c5"
+    },
+    {
+      "artifact_class": "DERIVED",
+      "logical_path": "repo://evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/security/tamper_matrix.json",
+      "provenance": {
+        "producer": "DQAEIP-FINAL-PORTABLE-EVIDENCE-RELEASE-2026-09-18",
+        "role": "artifact tamper matrix (15/15 detected)"
+      },
+      "relative_path": "evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/security/tamper_matrix.json",
+      "schema_version": "1.0",
+      "sha256": "ec78857d91d94e5379d3df0f5c5392be9bba4cd7cfce7fe25cf3b39d9dc51d93"
+    },
+    {
+      "artifact_class": "DERIVED",
+      "logical_path": "repo://evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/portable_evidence/evidence/validation/2026-09-18/fresh_3m2/harness/FINAL_RESULTS.json",
+      "provenance": {
+        "producer": "DQAEIP-FINAL-PORTABLE-EVIDENCE-RELEASE-2026-09-18",
+        "role": "normalized derived copy (policy A)"
+      },
+      "relative_path": "evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/portable_evidence/evidence/validation/2026-09-18/fresh_3m2/harness/FINAL_RESULTS.json",
+      "schema_version": "1.0",
+      "sha256": "5cd97b0837f5c1c2be2fabbd26600ade41cb4d95cd848f0e5fea850a4ce24572"
+    },
+    {
+      "artifact_class": "DERIVED",
+      "logical_path": "repo://evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/portable_evidence/evidence/validation/2026-09-18/fresh_3m2/harness/pass1_result.json",
+      "provenance": {
+        "producer": "DQAEIP-FINAL-PORTABLE-EVIDENCE-RELEASE-2026-09-18",
+        "role": "normalized derived copy (policy A)"
+      },
+      "relative_path": "evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/portable_evidence/evidence/validation/2026-09-18/fresh_3m2/harness/pass1_result.json",
+      "schema_version": "1.0",
+      "sha256": "1c7ba5cc4fe4b308dd6830c9e58f8b02a73e44cd9e88248c7a68dbb74e9d8cb4"
+    },
+    {
+      "artifact_class": "DERIVED",
+      "logical_path": "repo://evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/portable_evidence/evidence/validation/2026-09-18/fresh_3m2/harness/pass2_result.json",
+      "provenance": {
+        "producer": "DQAEIP-FINAL-PORTABLE-EVIDENCE-RELEASE-2026-09-18",
+        "role": "normalized derived copy (policy A)"
+      },
+      "relative_path": "evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/portable_evidence/evidence/validation/2026-09-18/fresh_3m2/harness/pass2_result.json",
+      "schema_version": "1.0",
+      "sha256": "2869f4ac7655ad3866e8002148f34d23171787ba4e956174bdcffa00837f8dee"
+    },
+    {
+      "artifact_class": "DERIVED",
+      "logical_path": "repo://evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/portable_evidence/evidence/validation/2026-09-18/fresh_3m2/harness/pass1_cli.json",
+      "provenance": {
+        "producer": "DQAEIP-FINAL-PORTABLE-EVIDENCE-RELEASE-2026-09-18",
+        "role": "normalized derived copy (policy A)"
+      },
+      "relative_path": "evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/portable_evidence/evidence/validation/2026-09-18/fresh_3m2/harness/pass1_cli.json",
+      "schema_version": "1.0",
+      "sha256": "80f25d4ccc0428c10e3bb9e82d0d36d94d60d7cd39f7a1ccc4fe7e037bfb4052"
+    },
+    {
+      "artifact_class": "DERIVED",
+      "logical_path": "repo://evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/portable_evidence/evidence/validation/2026-09-18/fresh_3m2/harness/pass2_cli.json",
+      "provenance": {
+        "producer": "DQAEIP-FINAL-PORTABLE-EVIDENCE-RELEASE-2026-09-18",
+        "role": "normalized derived copy (policy A)"
+      },
+      "relative_path": "evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/portable_evidence/evidence/validation/2026-09-18/fresh_3m2/harness/pass2_cli.json",
+      "schema_version": "1.0",
+      "sha256": "34f3336fef68be76fdd0f39a43a4b1a4f53d5a95bb90f57d0711622eca7fc659"
+    },
+    {
+      "artifact_class": "DERIVED",
+      "logical_path": "repo://evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/portable_evidence/evidence/validation/2026-09-18/fresh_3m2/harness/pass1_runtime_safety_events.json",
+      "provenance": {
+        "producer": "DQAEIP-FINAL-PORTABLE-EVIDENCE-RELEASE-2026-09-18",
+        "role": "normalized derived copy (policy A)"
+      },
+      "relative_path": "evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/portable_evidence/evidence/validation/2026-09-18/fresh_3m2/harness/pass1_runtime_safety_events.json",
+      "schema_version": "1.0",
+      "sha256": "cd7cb4345ff01c47cb8e0beaf073cb5d8cd2f041429328bd2a5eae6e0e0e7ea1"
+    },
+    {
+      "artifact_class": "DERIVED",
+      "logical_path": "repo://evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/portable_evidence/evidence/validation/2026-09-18/fresh_3m2/harness/pass2_runtime_safety_events.json",
+      "provenance": {
+        "producer": "DQAEIP-FINAL-PORTABLE-EVIDENCE-RELEASE-2026-09-18",
+        "role": "normalized derived copy (policy A)"
+      },
+      "relative_path": "evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/portable_evidence/evidence/validation/2026-09-18/fresh_3m2/harness/pass2_runtime_safety_events.json",
+      "schema_version": "1.0",
+      "sha256": "91e9813c878f3817ce19b7ba43ec768991d7c6be42b7c0c75d4119e2c6d19bbb"
+    },
+    {
+      "artifact_class": "DERIVED",
+      "logical_path": "repo://README.md",
+      "provenance": {
+        "producer": "DQAEIP-FINAL-PORTABLE-EVIDENCE-RELEASE-2026-09-18",
+        "role": "presentation only; never a source of truth"
+      },
+      "relative_path": "README.md",
+      "schema_version": "1.0",
+      "sha256": "87d7a36f75695f437e95398e0406f3ed6ef2f6de6e4788fed55aff6430905de9"
+    },
+    {
+      "artifact_class": "DERIVED",
+      "logical_path": "repo://RELEASE_NOTES.md",
+      "provenance": {
+        "producer": "DQAEIP-FINAL-PORTABLE-EVIDENCE-RELEASE-2026-09-18",
+        "role": "presentation only"
+      },
+      "relative_path": "RELEASE_NOTES.md",
+      "schema_version": "1.0",
+      "sha256": "81d8241e7522310569ece5c6ff5921f60b2ee9066f68c07a61fdbaa56ba31891"
+    },
+    {
+      "artifact_class": "DERIVED",
+      "logical_path": "repo://FINAL_RESULTS.json",
+      "provenance": {
+        "producer": "DQAEIP-FINAL-PORTABLE-EVIDENCE-RELEASE-2026-09-18",
+        "role": "root final results (generated)"
+      },
+      "relative_path": "FINAL_RESULTS.json",
+      "schema_version": "2.0",
+      "sha256": "cbd25637a4b03cf57552e991b897321e50445394cf8734a0eb010e759c63de0b"
+    },
+    {
+      "artifact_class": "DERIVED",
+      "logical_path": "repo://final_result.json",
+      "provenance": {
+        "producer": "DQAEIP-FINAL-PORTABLE-EVIDENCE-RELEASE-2026-09-18",
+        "role": "root final results (copy)"
+      },
+      "relative_path": "final_result.json",
+      "schema_version": "2.0",
+      "sha256": "cbd25637a4b03cf57552e991b897321e50445394cf8734a0eb010e759c63de0b"
+    },
+    {
+      "artifact_class": "DERIVED",
+      "logical_path": "repo://release_manifest.json",
+      "provenance": {
+        "producer": "DQAEIP-FINAL-PORTABLE-EVIDENCE-RELEASE-2026-09-18",
+        "role": "root release manifest (generated)"
+      },
+      "relative_path": "release_manifest.json",
+      "schema_version": "1.0",
+      "sha256": "aaa92fe736c87b93bc98bd40d7b2e4607c76f367cfa53f03675d28616e28a3ea"
+    },
+    {
+      "artifact_class": "UNKNOWN",
+      "logical_path": "repo://evidence/hardening_baseline/test_baseline.txt",
+      "provenance": {
+        "protection_note": "historical captured pytest output; not a release-truth source; retained under the UNKNOWN-protection policy with a narrow absolute-path-gate exception"
+      },
+      "relative_path": "evidence/hardening_baseline/test_baseline.txt",
+      "schema_version": "1.0",
+      "sha256": "62309108196f099742a24e9d6ac54ebc72d95dac5456c09c533dc2c0030877e4"
+    }
+  ],
+  "registry_fingerprint": "e759724c5eef2393a2c4d7ae600b70a9663dfb7d961fc2f4a24f23d4ecf3974b",
+  "release_id": "DQAEIP-FINAL-CLEAN-REBUILD-RELEASE-2026-09-18",
+  "report": "DQAEIP artifact identity registry (cryptographic identity contract)",
+  "schema": {
+    "name": "dqaeip.artifact_identity_registry",
+    "version": "1.0"
+  },
+  "validation_problems": [],
+  "verdict": "PASS"
+}

@@ -1,0 +1,109 @@
+{
+  "run_id": "bench_q19",
+  "events": [
+    {
+      "event_type": "run_started",
+      "run_id": "bench_q19",
+      "timestamp": "2026-09-30T10:24:37.840254+00:00",
+      "details": {
+        "source": "/home/z/my-project/DQAEIP-FINAL-HARDENED/data/generated/bench_1k.csv"
+      }
+    },
+    {
+      "event_type": "schema_validated",
+      "run_id": "bench_q19",
+      "timestamp": "2026-09-30T10:24:37.840360+00:00",
+      "details": {
+        "schema_hash": "",
+        "errors": []
+      }
+    },
+    {
+      "event_type": "rules_loaded",
+      "run_id": "bench_q19",
+      "timestamp": "2026-09-30T10:24:37.840435+00:00",
+      "details": {
+        "rule_count": 8,
+        "registry_hash": "2b9130fdcc656d32191b122e6ea863c3dc228f20679827ba7dde7f4749273192"
+      }
+    },
+    {
+      "event_type": "validation_started",
+      "run_id": "bench_q19",
+      "timestamp": "2026-09-30T10:24:37.840443+00:00",
+      "details": {
+        "row_count": 0
+      }
+    },
+    {
+      "event_type": "reconciliation_completed",
+      "run_id": "bench_q19",
+      "timestamp": "2026-09-30T10:24:37.880381+00:00",
+      "details": {
+        "passed": true,
+        "details": {
+          "passed": true,
+          "errors": [],
+          "input_row_count": 1000,
+          "output_row_count": 1000,
+          "flag_counts": {
+            "first_name_cleaning_candidate": 99,
+            "last_name_cleaning_candidate": 69,
+            "name_cleaning_candidate": 31,
+            "email_blank": 80,
+            "email_syntax_failure": 70,
+            "proposed_email_export_eligible": 850,
+            "zip_state_assessable": 1000,
+            "geography_mismatch_candidate": 50
+          }
+        }
+      }
+    },
+    {
+      "event_type": "monitoring_completed",
+      "run_id": "bench_q19",
+      "timestamp": "2026-09-30T10:24:37.880412+00:00",
+      "details": {
+        "overall_score": 0.9165,
+        "sla_passed": false
+      }
+    },
+    {
+      "event_type": "validation_completed",
+      "run_id": "bench_q19",
+      "timestamp": "2026-09-30T10:24:37.880454+00:00",
+      "details": {
+        "input_rows": 1000,
+        "output_rows": 1000,
+        "flag_counts": {
+          "first_name_cleaning_candidate": 99,
+          "last_name_cleaning_candidate": 69,
+          "name_cleaning_candidate": 31,
+          "email_blank": 80,
+          "email_syntax_failure": 70,
+          "proposed_email_export_eligible": 850,
+          "zip_state_assessable": 1000,
+          "geography_mismatch_candidate": 50
+        },
+        "duration_seconds": 0.03299427032470703
+      }
+    },
+    {
+      "event_type": "output_written",
+      "run_id": "bench_q19",
+      "timestamp": "2026-09-30T10:24:37.880456+00:00",
+      "details": {
+        "path": "/home/z/my-project/DQAEIP-FINAL-HARDENED/data/generated/bench_1k_out.csv",
+        "rows": 1000
+      }
+    },
+    {
+      "event_type": "lineage_recorded",
+      "run_id": "bench_q19",
+      "timestamp": "2026-09-30T10:24:37.887913+00:00",
+      "details": {
+        "path": "/home/z/my-project/DQAEIP-FINAL-HARDENED/evidence/bench_quick/lineage.json"
+      }
+    }
+  ]
+}

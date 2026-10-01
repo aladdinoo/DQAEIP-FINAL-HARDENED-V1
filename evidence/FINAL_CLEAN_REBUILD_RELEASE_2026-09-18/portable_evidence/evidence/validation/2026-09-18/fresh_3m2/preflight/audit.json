@@ -1,0 +1,123 @@
+{
+  "events": [
+    {
+      "details": {
+        "source": "data/generated/fresh_3m2_smoke/preflight_1k_seed_20260918.csv"
+      },
+      "event_type": "run_started",
+      "run_id": "preflight_1k",
+      "timestamp": "2026-09-18T23:30:15.403219+00:00"
+    },
+    {
+      "details": {
+        "errors": [],
+        "schema_hash": ""
+      },
+      "event_type": "schema_validated",
+      "run_id": "preflight_1k",
+      "timestamp": "2026-09-18T23:30:15.403334+00:00"
+    },
+    {
+      "details": {
+        "registry_hash": "2b9130fdcc656d32191b122e6ea863c3dc228f20679827ba7dde7f4749273192",
+        "rule_count": 8
+      },
+      "event_type": "rules_loaded",
+      "run_id": "preflight_1k",
+      "timestamp": "2026-09-18T23:30:15.403416+00:00"
+    },
+    {
+      "details": {
+        "row_count": 0
+      },
+      "event_type": "validation_started",
+      "run_id": "preflight_1k",
+      "timestamp": "2026-09-18T23:30:15.403427+00:00"
+    },
+    {
+      "details": {
+        "details": {
+          "errors": [],
+          "flag_counts": {
+            "email_blank": 74,
+            "email_syntax_failure": 92,
+            "first_name_cleaning_candidate": 160,
+            "geography_mismatch_candidate": 136,
+            "last_name_cleaning_candidate": 74,
+            "name_cleaning_candidate": 3,
+            "proposed_email_export_eligible": 834,
+            "zip_state_assessable": 913
+          },
+          "input_row_count": 1000,
+          "output_row_count": 1000,
+          "passed": true
+        },
+        "passed": true
+      },
+      "event_type": "reconciliation_completed",
+      "run_id": "preflight_1k",
+      "timestamp": "2026-09-18T23:30:15.442402+00:00"
+    },
+    {
+      "details": {
+        "overall_score": 0.8748,
+        "sla_passed": false
+      },
+      "event_type": "monitoring_completed",
+      "run_id": "preflight_1k",
+      "timestamp": "2026-09-18T23:30:15.442457+00:00"
+    },
+    {
+      "details": {
+        "duration_seconds": 0.03222393989562988,
+        "flag_counts": {
+          "email_blank": 74,
+          "email_syntax_failure": 92,
+          "first_name_cleaning_candidate": 160,
+          "geography_mismatch_candidate": 136,
+          "last_name_cleaning_candidate": 74,
+          "name_cleaning_candidate": 3,
+          "proposed_email_export_eligible": 834,
+          "zip_state_assessable": 913
+        },
+        "input_rows": 1000,
+        "output_rows": 1000
+      },
+      "event_type": "validation_completed",
+      "run_id": "preflight_1k",
+      "timestamp": "2026-09-18T23:30:15.442520+00:00"
+    },
+    {
+      "details": {
+        "path": "data/generated/fresh_3m2_smoke/preflight_1k_out.csv",
+        "rows": 1000
+      },
+      "event_type": "output_written",
+      "run_id": "preflight_1k",
+      "timestamp": "2026-09-18T23:30:15.442523+00:00"
+    },
+    {
+      "details": {
+        "path": "evidence/validation/2026-09-18/fresh_3m2/preflight/lineage.json"
+      },
+      "event_type": "lineage_recorded",
+      "run_id": "preflight_1k",
+      "timestamp": "2026-09-18T23:30:15.450067+00:00"
+    }
+  ],
+  "portable_derivation": {
+    "derived_from": "evidence/validation/2026-09-18/fresh_3m2/preflight/audit.json",
+    "environment_placeholders": {},
+    "normalization": "repository-local absolute paths rewritten to repo-relative POSIX paths; historical interpreter-home prefixes rewritten to explicit placeholder tokens; all other values unchanged",
+    "normalized_field_paths": [
+      "$.events[0].details.source",
+      "$.events[7].details.path",
+      "$.events[8].details.path"
+    ],
+    "normalized_string_count": 3,
+    "policy": "A \u2014 original preserved byte-exact; this file is a clearly-marked normalized derived representation",
+    "portability": "PORTABLE",
+    "source_sha256": "e909d7d646500a4c528e37c23a2a14b8a1fa13c554b06c6c64d741e95613413e"
+  },
+  "run_id": "preflight_1k"
+}

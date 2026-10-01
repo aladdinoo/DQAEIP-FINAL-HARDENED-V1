@@ -1,0 +1,555 @@
+{
+  "report": "DQAEIP claim-to-evidence provenance",
+  "generated_utc": "2026-09-28T20:16:47Z",
+  "claims": [
+    {
+      "claim_id": "CLAIM-3m-validation-rows-1dbf3d",
+      "claim": "3M validation rows",
+      "value": 3200000,
+      "source_artifact": "evidence/validation/2026-09-19/fresh_3m2/FINAL_RESULTS.json",
+      "source_sha256": "034a7d478eeefa9e4d3e8783b2499ae73a040ff544320f2eb7584fb920c9250b",
+      "derivation": "final_3m_rows",
+      "verified": true,
+      "status": "VERIFIED_LOCALLY"
+    },
+    {
+      "claim_id": "CLAIM-exactly-two-complete-3m-runs-782cda",
+      "claim": "exactly two complete 3M runs",
+      "value": 2,
+      "source_artifact": "evidence/validation/2026-09-19/fresh_3m2/FINAL_RESULTS.json",
+      "source_sha256": "034a7d478eeefa9e4d3e8783b2499ae73a040ff544320f2eb7584fb920c9250b",
+      "derivation": "final_3m_run_count",
+      "verified": true,
+      "status": "VERIFIED_LOCALLY"
+    },
+    {
+      "claim_id": "CLAIM-3m-input-sha-256-c3511a",
+      "claim": "3M input SHA-256",
+      "value": "59624a53c72f908f1dde673ceecf59e0662ae721bb8f9af7e165acba5318d153",
+      "source_artifact": "evidence/validation/2026-09-19/fresh_3m2/FINAL_RESULTS.json",
+      "source_sha256": "034a7d478eeefa9e4d3e8783b2499ae73a040ff544320f2eb7584fb920c9250b",
+      "derivation": "final_3m_input_sha256",
+      "verified": true,
+      "status": "VERIFIED_LOCALLY"
+    },
+    {
+      "claim_id": "CLAIM-3m-output-sha-256-637e51",
+      "claim": "3M output SHA-256",
+      "value": "b72adc235160a86e0b99a08f988dd0bb5f2cff82bbe5b5d28ea07c5a5719329a",
+      "source_artifact": "evidence/validation/2026-09-19/fresh_3m2/FINAL_RESULTS.json",
+      "source_sha256": "034a7d478eeefa9e4d3e8783b2499ae73a040ff544320f2eb7584fb920c9250b",
+      "derivation": "final_3m_output_sha256",
+      "verified": true,
+      "status": "VERIFIED_LOCALLY"
+    },
+    {
+      "claim_id": "CLAIM-3m-checker-final-status-cf4844",
+      "claim": "3M checker final status",
+      "value": "PASS",
+      "source_artifact": "evidence/validation/2026-09-19/fresh_3m2/FINAL_RESULTS.json",
+      "source_sha256": "034a7d478eeefa9e4d3e8783b2499ae73a040ff544320f2eb7584fb920c9250b",
+      "derivation": "final_3m_status",
+      "verified": true,
+      "status": "VERIFIED_LOCALLY"
+    },
+    {
+      "claim_id": "CLAIM-deterministic-synthetic-data-seed-ba10f0",
+      "claim": "deterministic synthetic data seed",
+      "value": 20260918,
+      "source_artifact": "evidence/validation/2026-09-19/fresh_3m2/FINAL_RESULTS.json",
+      "source_sha256": "034a7d478eeefa9e4d3e8783b2499ae73a040ff544320f2eb7584fb920c9250b",
+      "derivation": "final_3m_seed",
+      "verified": true,
+      "status": "VERIFIED_LOCALLY"
+    },
+    {
+      "claim_id": "CLAIM-byte-identical-outputs-across-runs-1ed358",
+      "claim": "byte-identical outputs across runs",
+      "value": true,
+      "source_artifact": "evidence/validation/2026-09-19/fresh_3m2/FINAL_RESULTS.json",
+      "source_sha256": "034a7d478eeefa9e4d3e8783b2499ae73a040ff544320f2eb7584fb920c9250b",
+      "derivation": "final_3m_determinism_gate",
+      "verified": true,
+      "status": "VERIFIED_LOCALLY"
+    },
+    {
+      "claim_id": "CLAIM-oracle-comparisons-combined-4bb65d",
+      "claim": "oracle comparisons (combined)",
+      "value": 51200000,
+      "source_artifact": "evidence/validation/2026-09-19/fresh_3m2/FINAL_RESULTS.json",
+      "source_sha256": "034a7d478eeefa9e4d3e8783b2499ae73a040ff544320f2eb7584fb920c9250b",
+      "derivation": "oracle_comparisons_combined",
+      "verified": true,
+      "status": "VERIFIED_LOCALLY"
+    },
+    {
+      "claim_id": "CLAIM-oracle-mismatches-combined-321a05",
+      "claim": "oracle mismatches (combined)",
+      "value": 0,
+      "source_artifact": "evidence/validation/2026-09-19/fresh_3m2/FINAL_RESULTS.json",
+      "source_sha256": "034a7d478eeefa9e4d3e8783b2499ae73a040ff544320f2eb7584fb920c9250b",
+      "derivation": "oracle_mismatches_combined",
+      "verified": true,
+      "status": "VERIFIED_LOCALLY"
+    },
+    {
+      "claim_id": "CLAIM-run-pair-verification-verdict-a6246c",
+      "claim": "run-pair verification verdict",
+      "value": "PASS",
+      "source_artifact": "evidence/rebuild_verification/run_pair_verification.json",
+      "source_sha256": "93aa9cab699cefabea56305d9f64d100f00e92a43a4a809110bd522c0ca193e4",
+      "derivation": "run_pair_verification_verdict",
+      "verified": true,
+      "status": "VERIFIED_LOCALLY"
+    },
+    {
+      "claim_id": "CLAIM-business-mutation-score-198982",
+      "claim": "business mutation score",
+      "value": 1.0,
+      "source_artifact": "evidence/mutation_testing/mutation_results.json",
+      "source_sha256": "464e7672225bd227b658564a681b805119a0cb71dbb5cb75b5f11fe54253ffe0",
+      "derivation": "mutation_score",
+      "verified": true,
+      "status": "VERIFIED_LOCALLY"
+    },
+    {
+      "claim_id": "CLAIM-tests-collected-1e5dc3",
+      "claim": "tests collected",
+      "value": 1269,
+      "source_artifact": "evidence/rebuild_verification/test_summary.json",
+      "source_sha256": "a8e794c307665e776f7072c6b45424e6cbd552837329fc12d40a4e1584d15760",
+      "derivation": "tests_collected",
+      "verified": true,
+      "status": "VERIFIED_LOCALLY"
+    },
+    {
+      "claim_id": "CLAIM-tests-passed-068f86",
+      "claim": "tests passed",
+      "value": 1259,
+      "source_artifact": "evidence/rebuild_verification/test_summary.json",
+      "source_sha256": "a8e794c307665e776f7072c6b45424e6cbd552837329fc12d40a4e1584d15760",
+      "derivation": "tests_passed",
+      "verified": true,
+      "status": "VERIFIED_LOCALLY"
+    },
+    {
+      "claim_id": "CLAIM-tests-skipped-explicit-reasons-ef7660",
+      "claim": "tests skipped (explicit reasons)",
+      "value": 9,
+      "source_artifact": "evidence/rebuild_verification/test_summary.json",
+      "source_sha256": "a8e794c307665e776f7072c6b45424e6cbd552837329fc12d40a4e1584d15760",
+      "derivation": "tests_skipped",
+      "verified": true,
+      "status": "VERIFIED_LOCALLY"
+    },
+    {
+      "claim_id": "CLAIM-test-suite-all-green-0-failed-0-errors-2f14f0",
+      "claim": "test suite all green (0 failed / 0 errors)",
+      "value": true,
+      "source_artifact": "evidence/rebuild_verification/test_summary.json",
+      "source_sha256": "a8e794c307665e776f7072c6b45424e6cbd552837329fc12d40a4e1584d15760",
+      "derivation": "test_summary_all_green",
+      "verified": true,
+      "status": "VERIFIED_LOCALLY"
+    },
+    {
+      "claim_id": "CLAIM-checker-script-sha-256-4ad29b",
+      "claim": "checker script SHA-256",
+      "value": "d216dbca0ad0132e199394cd4e416528712979e9684585d8dc7d111604afb969",
+      "source_artifact": "scripts/final_3m_validation.py",
+      "source_sha256": "d216dbca0ad0132e199394cd4e416528712979e9684585d8dc7d111604afb969",
+      "derivation": "checker_script_sha256",
+      "verified": true,
+      "status": "VERIFIED_LOCALLY"
+    },
+    {
+      "claim_id": "CLAIM-v1-rule-source-sha-256-bc93f0",
+      "claim": "V1 rule source SHA-256",
+      "value": "daef1ded54c7d3c79898a1ba253be2acd5b6120e18b16b09009fdd7be9fc2276",
+      "source_artifact": "data_quality_platform/rules/v1_rules.py",
+      "source_sha256": "daef1ded54c7d3c79898a1ba253be2acd5b6120e18b16b09009fdd7be9fc2276",
+      "derivation": "v1_rule_source_sha256",
+      "verified": true,
+      "status": "VERIFIED_LOCALLY"
+    },
+    {
+      "claim_id": "CLAIM-frozen-v1-rule-count-ec0e8b",
+      "claim": "Frozen V1 rule count",
+      "value": 8,
+      "source_artifact": "evidence/rebuild_baseline/v1_rule_inventory.json",
+      "source_sha256": "4b5ec120e00f894bd8656ea929961b3bf7af6ebc940e21f86c3f1d779e813e47",
+      "derivation": "v1_rule_count",
+      "verified": true,
+      "status": "VERIFIED_LOCALLY"
+    },
+    {
+      "claim_id": "CLAIM-documented-limitation-count-44ab94",
+      "claim": "documented limitation count",
+      "value": 17,
+      "source_artifact": "evidence/release/limitation_registry.json",
+      "source_sha256": "0c8c2bd32d13513ceb6ade2bd63ed7387deac1183ff1ec48c4223d6517250eb0",
+      "derivation": "limitation_count",
+      "verified": true,
+      "status": "VERIFIED_LOCALLY"
+    },
+    {
+      "claim_id": "CLAIM-absolute-path-gate-violations-portable-e-680ed5",
+      "claim": "absolute-path gate violations (portable evidence)",
+      "value": 0,
+      "source_artifact": "evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/release_gate/absolute_path_gate_report.json",
+      "source_sha256": "e9771beb6d44695cbe256fdd5cb3677c4bc6778a9bc6d7c66a4fbf798f049dea",
+      "derivation": "absolute_path_gate_violations",
+      "verified": true,
+      "status": "VERIFIED_LOCALLY"
+    },
+    {
+      "claim_id": "CLAIM-artifact-tamper-detection-rate-5f3bda",
+      "claim": "artifact tamper detection rate",
+      "value": "15/15",
+      "source_artifact": "evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/security/tamper_matrix.json",
+      "source_sha256": "ec78857d91d94e5379d3df0f5c5392be9bba4cd7cfce7fe25cf3b39d9dc51d93",
+      "derivation": "tamper_detection_rate",
+      "verified": true,
+      "status": "VERIFIED_LOCALLY"
+    },
+    {
+      "claim_id": "CLAIM-evidence-mutation-matrix-outcome-1c91a7",
+      "claim": "evidence mutation matrix outcome",
+      "value": "PASS",
+      "source_artifact": "evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/mutation_testing/evidence_mutation_matrix.json",
+      "source_sha256": "f74070efaf0d735e255b5be6c77b0c71094d8a557c8af05fc163600affb8b6c5",
+      "derivation": "evidence_mutation_outcome",
+      "verified": true,
+      "status": "VERIFIED_LOCALLY"
+    },
+    {
+      "claim_id": "CLAIM-artifact-identity-registry-verdict-a9c0b1",
+      "claim": "artifact identity registry verdict",
+      "value": "PASS",
+      "source_artifact": "evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/artifact_identity/artifact_identity_registry.json",
+      "source_sha256": "7a94d787c771357b8b75f93b1448fe22525b67a81bed9009c95e3f1e03ba8194",
+      "derivation": "artifact_identity_registry_verdict",
+      "verified": true,
+      "status": "VERIFIED_LOCALLY"
+    },
+    {
+      "claim_id": "CLAIM-claim-graph-verdict-6cdfa9",
+      "claim": "claim graph verdict",
+      "value": "PASS",
+      "source_artifact": "evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/claim_graph/claim_graph.json",
+      "source_sha256": "2154c90c27628a6613c06c5763659a0d3bf1eb0b0923f2a9086555721bf7c1cb",
+      "derivation": "claim_graph_verdict",
+      "verified": true,
+      "status": "VERIFIED_LOCALLY"
+    },
+    {
+      "claim_id": "CLAIM-schema-compatibility-verdict-f8c191",
+      "claim": "schema compatibility verdict",
+      "value": "PASS",
+      "source_artifact": "evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/schema_versioning/SCHEMA_COMPATIBILITY_REPORT.json",
+      "source_sha256": "072d9b8b685154f4d63be59bc24cf5e24ed65886eda6a165c134ab52ec149b6a",
+      "derivation": "schema_compatibility_verdict",
+      "verified": true,
+      "status": "VERIFIED_LOCALLY"
+    },
+    {
+      "claim_id": "CLAIM-memory-profile-documented-limitation-not-bbd1f7",
+      "claim": "memory profile (documented limitation, not bounded memory)",
+      "value": "O(N)",
+      "source_artifact": "evidence/release/limitation_registry.json",
+      "source_sha256": "0c8c2bd32d13513ceb6ade2bd63ed7387deac1183ff1ec48c4223d6517250eb0",
+      "derivation": "memory_characteristic",
+      "verified": true,
+      "status": "VERIFIED_LOCALLY"
+    },
+    {
+      "claim_id": "CLAIM-clickhouse-runtime-validation-status-76e441",
+      "claim": "ClickHouse runtime validation status",
+      "value": "NOT_VERIFIED (not executed; static SQL only)",
+      "source_artifact": "evidence/release/limitation_registry.json",
+      "source_sha256": "0c8c2bd32d13513ceb6ade2bd63ed7387deac1183ff1ec48c4223d6517250eb0",
+      "derivation": "clickhouse_runtime_status",
+      "verified": true,
+      "status": "VERIFIED_LOCALLY"
+    },
+    {
+      "claim_id": "CLAIM-airflow-runtime-validation-status-757dd1",
+      "claim": "Airflow runtime validation status",
+      "value": "NOT_VERIFIED (not executed; DAG definitions only)",
+      "source_artifact": "evidence/release/limitation_registry.json",
+      "source_sha256": "0c8c2bd32d13513ceb6ade2bd63ed7387deac1183ff1ec48c4223d6517250eb0",
+      "derivation": "airflow_runtime_status",
+      "verified": true,
+      "status": "VERIFIED_LOCALLY"
+    },
+    {
+      "claim_id": "CLAIM-validated-scale-no-scalability-extrapola-0b19d0",
+      "claim": "validated scale (no scalability extrapolation)",
+      "value": "3,200,000 rows (validated); no 100M/800M claim",
+      "source_artifact": "evidence/validation/2026-09-19/fresh_3m2/FINAL_RESULTS.json",
+      "source_sha256": "034a7d478eeefa9e4d3e8783b2499ae73a040ff544320f2eb7584fb920c9250b",
+      "derivation": "validation_scale",
+      "verified": true,
+      "status": "VERIFIED_LOCALLY"
+    },
+    {
+      "claim_id": "CLAIM-release-gate-verdict-21-gates-dec547",
+      "claim": "release gate verdict (21 gates)",
+      "value": "PASS",
+      "source_artifact": "evidence/release_gate/final_release_gate.json",
+      "source_sha256": "da441c50f5d5ab56a51d9fccc2d8144a6cd16d1849fb64611fd35e8f873c7074",
+      "derivation": "release_gate_verdict",
+      "verified": true,
+      "status": "VERIFIED_LOCALLY"
+    }
+  ],
+  "verification": {
+    "claims_total": 30,
+    "claims_verified": 30,
+    "claims_not_verified": 0,
+    "recheck_passed": true,
+    "results": [
+      {
+        "claim": "3M validation rows",
+        "verified": true,
+        "ok": true,
+        "detail": {
+          "derived": 3200000
+        }
+      },
+      {
+        "claim": "exactly two complete 3M runs",
+        "verified": true,
+        "ok": true,
+        "detail": {
+          "derived": 2
+        }
+      },
+      {
+        "claim": "3M input SHA-256",
+        "verified": true,
+        "ok": true,
+        "detail": {
+          "derived": "59624a53c72f908f1dde673ceecf59e0662ae721bb8f9af7e165acba5318d153"
+        }
+      },
+      {
+        "claim": "3M output SHA-256",
+        "verified": true,
+        "ok": true,
+        "detail": {
+          "derived": "b72adc235160a86e0b99a08f988dd0bb5f2cff82bbe5b5d28ea07c5a5719329a"
+        }
+      },
+      {
+        "claim": "3M checker final status",
+        "verified": true,
+        "ok": true,
+        "detail": {
+          "derived": "PASS"
+        }
+      },
+      {
+        "claim": "deterministic synthetic data seed",
+        "verified": true,
+        "ok": true,
+        "detail": {
+          "derived": 20260918
+        }
+      },
+      {
+        "claim": "byte-identical outputs across runs",
+        "verified": true,
+        "ok": true,
+        "detail": {
+          "derived": true
+        }
+      },
+      {
+        "claim": "oracle comparisons (combined)",
+        "verified": true,
+        "ok": true,
+        "detail": {
+          "derived": 51200000
+        }
+      },
+      {
+        "claim": "oracle mismatches (combined)",
+        "verified": true,
+        "ok": true,
+        "detail": {
+          "derived": 0
+        }
+      },
+      {
+        "claim": "run-pair verification verdict",
+        "verified": true,
+        "ok": true,
+        "detail": {
+          "derived": "PASS"
+        }
+      },
+      {
+        "claim": "business mutation score",
+        "verified": true,
+        "ok": true,
+        "detail": {
+          "derived": 1.0
+        }
+      },
+      {
+        "claim": "tests collected",
+        "verified": true,
+        "ok": true,
+        "detail": {
+          "derived": 1269
+        }
+      },
+      {
+        "claim": "tests passed",
+        "verified": true,
+        "ok": true,
+        "detail": {
+          "derived": 1259
+        }
+      },
+      {
+        "claim": "tests skipped (explicit reasons)",
+        "verified": true,
+        "ok": true,
+        "detail": {
+          "derived": 9
+        }
+      },
+      {
+        "claim": "test suite all green (0 failed / 0 errors)",
+        "verified": true,
+        "ok": true,
+        "detail": {
+          "derived": true
+        }
+      },
+      {
+        "claim": "checker script SHA-256",
+        "verified": true,
+        "ok": true,
+        "detail": {
+          "derived": "d216dbca0ad0132e199394cd4e416528712979e9684585d8dc7d111604afb969"
+        }
+      },
+      {
+        "claim": "V1 rule source SHA-256",
+        "verified": true,
+        "ok": true,
+        "detail": {
+          "derived": "daef1ded54c7d3c79898a1ba253be2acd5b6120e18b16b09009fdd7be9fc2276"
+        }
+      },
+      {
+        "claim": "Frozen V1 rule count",
+        "verified": true,
+        "ok": true,
+        "detail": {
+          "derived": 8
+        }
+      },
+      {
+        "claim": "documented limitation count",
+        "verified": true,
+        "ok": true,
+        "detail": {
+          "derived": 17
+        }
+      },
+      {
+        "claim": "absolute-path gate violations (portable evidence)",
+        "verified": true,
+        "ok": true,
+        "detail": {
+          "derived": 0
+        }
+      },
+      {
+        "claim": "artifact tamper detection rate",
+        "verified": true,
+        "ok": true,
+        "detail": {
+          "derived": "15/15"
+        }
+      },
+      {
+        "claim": "evidence mutation matrix outcome",
+        "verified": true,
+        "ok": true,
+        "detail": {
+          "derived": "PASS"
+        }
+      },
+      {
+        "claim": "artifact identity registry verdict",
+        "verified": true,
+        "ok": true,
+        "detail": {
+          "derived": "PASS"
+        }
+      },
+      {
+        "claim": "claim graph verdict",
+        "verified": true,
+        "ok": true,
+        "detail": {
+          "derived": "PASS"
+        }
+      },
+      {
+        "claim": "schema compatibility verdict",
+        "verified": true,
+        "ok": true,
+        "detail": {
+          "derived": "PASS"
+        }
+      },
+      {
+        "claim": "memory profile (documented limitation, not bounded memory)",
+        "verified": true,
+        "ok": true,
+        "detail": {
+          "derived": "O(N)"
+        }
+      },
+      {
+        "claim": "ClickHouse runtime validation status",
+        "verified": true,
+        "ok": true,
+        "detail": {
+          "derived": "NOT_VERIFIED (not executed; static SQL only)"
+        }
+      },
+      {
+        "claim": "Airflow runtime validation status",
+        "verified": true,
+        "ok": true,
+        "detail": {
+          "derived": "NOT_VERIFIED (not executed; DAG definitions only)"
+        }
+      },
+      {
+        "claim": "validated scale (no scalability extrapolation)",
+        "verified": true,
+        "ok": true,
+        "detail": {
+          "derived": "3,200,000 rows (validated); no 100M/800M claim"
+        }
+      },
+      {
+        "claim": "release gate verdict (21 gates)",
+        "verified": true,
+        "ok": true,
+        "detail": {
+          "derived": "PASS"
+        }
+      }
+    ]
+  },
+  "policy": "values are machine-derived from source artifacts; claims that cannot be derived are NOT_VERIFIED and never become PASS"
+}

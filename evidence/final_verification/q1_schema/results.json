@@ -1,0 +1,50 @@
+{
+  "results": [
+    {
+      "experiment": "A: Valid 33-col CSV",
+      "expected": "PASS",
+      "actual": "PASS",
+      "errors": []
+    },
+    {
+      "experiment": "B: Missing column (state removed)",
+      "expected": "FAIL/REJECT",
+      "actual": "REJECT",
+      "errors": [
+        "Column count mismatch: expected 33, got 32",
+        "Missing columns: ['state']"
+      ]
+    },
+    {
+      "experiment": "C: Extra column added",
+      "expected": "FAIL/drift",
+      "actual": "REJECT",
+      "errors": [
+        "Column count mismatch: expected 33, got 34",
+        "Extra columns found: ['extra_col']"
+      ]
+    },
+    {
+      "experiment": "D: Reordered columns",
+      "expected": "FAIL (order enforced)",
+      "actual": "REJECT",
+      "errors": [
+        "Columns are reordered"
+      ]
+    },
+    {
+      "experiment": "E: Duplicate column (id)",
+      "expected": "FAIL",
+      "actual": "REJECT",
+      "errors": [
+        "Column count mismatch: expected 33, got 34",
+        "Duplicate columns found: ['id']"
+      ]
+    },
+    {
+      "experiment": "Schema hash",
+      "hash": "47813dbee947c871971a4841bd4aef325530a6886b96a6f77bba6af86c5031fa"
+    }
+  ],
+  "schema_hash": "47813dbee947c871971a4841bd4aef325530a6886b96a6f77bba6af86c5031fa"
+}

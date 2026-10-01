@@ -1,0 +1,143 @@
+{
+  "report": "DQAEIP assurance-layer mutation testing",
+  "generated_utc": "2026-09-18T23:38:57Z",
+  "scope": "assurance layer ONLY (evidence artifacts + release documents); business rules are NEVER mutated here (see scripts/mutation_testing.py for the rule-suite battery)",
+  "baseline_clean_verifier_pass": true,
+  "scenarios_total": 14,
+  "scenarios_detected": 14,
+  "scenarios_accepted_in_error": [],
+  "restoration_verified": true,
+  "restoration_note": "SHA-256 of every touched file equals its pre-battery value (byte-for-byte restoration proof)",
+  "final_clean_verifier_pass": true,
+  "scenarios": [
+    {
+      "scenario": "A1",
+      "description": "missing run manifest",
+      "target": "evidence/validation/2026-09-18/fresh_3m2/harness/pass1_engine/manifest.json",
+      "expected": "REJECTED",
+      "actual": "REJECTED",
+      "detected": true,
+      "verifier_output_tail": "RUN PAIR VERIFICATION: FAIL\n  checks: 87 total, 4 failed\n  FAILED: pass1: engine manifest parseable\n  FAILED: pass1: tamper-evident evidence root verified\n  FAILED: cross-run schema hash equal\n  FAILED: cross-run rule identity equal\n  report: evidence/rebuild_verification/run_pair_verification.json"
+    },
+    {
+      "scenario": "A2",
+      "description": "modified run manifest (run_id tampered)",
+      "target": "evidence/validation/2026-09-18/fresh_3m2/harness/pass1_engine/manifest.json",
+      "expected": "REJECTED",
+      "actual": "REJECTED",
+      "detected": true,
+      "verifier_output_tail": "RUN PAIR VERIFICATION: FAIL\n  checks: 95 total, 2 failed\n  FAILED: pass1: manifest run_id matches pass\n  FAILED: pass1: tamper-evident evidence root verified\n  report: evidence/rebuild_verification/run_pair_verification.json"
+    },
+    {
+      "scenario": "A3",
+      "description": "wrong artifact hash (flag_counts tampered)",
+      "target": "evidence/validation/2026-09-18/fresh_3m2/harness/pass1_engine/manifest.json",
+      "expected": "REJECTED",
+      "actual": "REJECTED",
+      "detected": true,
+      "verifier_output_tail": "RUN PAIR VERIFICATION: FAIL\n  checks: 95 total, 2 failed\n  FAILED: pass1: manifest flag counts == oracle flag totals\n  FAILED: pass1: tamper-evident evidence root verified\n  report: evidence/rebuild_verification/run_pair_verification.json"
+    },
+    {
+      "scenario": "A4",
+      "description": "tampered covered artifact (lineage.json)",
+      "target": "evidence/validation/2026-09-18/fresh_3m2/harness/pass1_engine/lineage.json",
+      "expected": "REJECTED",
+      "actual": "REJECTED",
+      "detected": true,
+      "verifier_output_tail": "RUN PAIR VERIFICATION: FAIL\n  checks: 95 total, 2 failed\n  FAILED: pass1: lineage hash matches actual file\n  FAILED: pass1: tamper-evident evidence root verified\n  report: evidence/rebuild_verification/run_pair_verification.json"
+    },
+    {
+      "scenario": "A5",
+      "description": "malformed evidence JSON (monitoring.json)",
+      "target": "evidence/validation/2026-09-18/fresh_3m2/harness/pass2_engine/monitoring.json",
+      "expected": "REJECTED",
+      "actual": "REJECTED",
+      "detected": true,
+      "verifier_output_tail": "RUN PAIR VERIFICATION: FAIL\n  checks: 95 total, 2 failed\n  FAILED: pass2: monitoring hash matches actual file\n  FAILED: pass2: tamper-evident evidence root verified\n  report: evidence/rebuild_verification/run_pair_verification.json"
+    },
+    {
+      "scenario": "A6",
+      "description": "wrong input hash (pass1 dataset)",
+      "target": "evidence/validation/2026-09-18/fresh_3m2/harness/pass1_result.json",
+      "expected": "REJECTED",
+      "actual": "REJECTED",
+      "detected": true,
+      "verifier_output_tail": "RUN PAIR VERIFICATION: FAIL\n  checks: 95 total, 3 failed\n  FAILED: pass1: source unmutated during validation\n  FAILED: cross-run input SHA256 equal\n  FAILED: FINAL_RESULTS input SHA == run evidence\n  report: evidence/rebuild_verification/run_pair_verification.json"
+    },
+    {
+      "scenario": "A7",
+      "description": "wrong output hash (pass2 output)",
+      "target": "evidence/validation/2026-09-18/fresh_3m2/harness/pass2_result.json",
+      "expected": "REJECTED",
+      "actual": "REJECTED",
+      "detected": true,
+      "verifier_output_tail": "RUN PAIR VERIFICATION: FAIL\n  checks: 95 total, 2 failed\n  FAILED: cross-run output SHA256 equal\n  FAILED: FINAL_RESULTS output SHA == run evidence\n  report: evidence/rebuild_verification/run_pair_verification.json"
+    },
+    {
+      "scenario": "A8",
+      "description": "mixed Run1/Run2 lineage (pass2 git_commit tampered)",
+      "target": "evidence/validation/2026-09-18/fresh_3m2/harness/pass2_result.json",
+      "expected": "REJECTED",
+      "actual": "REJECTED",
+      "detected": true,
+      "verifier_output_tail": "RUN PAIR VERIFICATION: FAIL\n  checks: 95 total, 2 failed\n  FAILED: pass2: git_commit is ancestor of current HEAD\n  FAILED: cross-run git lineage equal\n  report: evidence/rebuild_verification/run_pair_verification.json"
+    },
+    {
+      "scenario": "A9",
+      "description": "wrong rule hash in run manifest",
+      "target": "evidence/validation/2026-09-18/fresh_3m2/harness/pass1_engine/manifest.json",
+      "expected": "REJECTED",
+      "actual": "REJECTED",
+      "detected": true,
+      "verifier_output_tail": "RUN PAIR VERIFICATION: FAIL\n  checks: 95 total, 2 failed\n  FAILED: pass1: tamper-evident evidence root verified\n  FAILED: cross-run rule identity equal\n  report: evidence/rebuild_verification/run_pair_verification.json"
+    },
+    {
+      "scenario": "A10",
+      "description": "missing evidence file (pass2_result.json removed)",
+      "target": "evidence/validation/2026-09-18/fresh_3m2/harness/pass2_result.json",
+      "expected": "REJECTED",
+      "actual": "REJECTED",
+      "detected": true,
+      "verifier_output_tail": "SHA256 equal\n  FAILED: cross-run output SHA256 equal\n  FAILED: cross-run schema hash equal\n  FAILED: cross-run rule identity equal\n  FAILED: cross-run checker script SHA equal\n  FAILED: cross-run git lineage equal\n  FAILED: both runs mismatch count == 0\n  FAILED: cross-run flag totals equal\n  FAILED: both runs 3,200,000 input rows\n  FAILED: FINAL_RESULTS input SHA == run evidence\n  FAILED: FINAL_RESULTS output SHA == run evidence\n  report: evidence/rebuild_verification/run_pair_verification.json"
+    },
+    {
+      "scenario": "A11",
+      "description": "FINAL_RESULTS final_status tampered",
+      "target": "evidence/validation/2026-09-18/fresh_3m2/harness/FINAL_RESULTS.json",
+      "expected": "REJECTED",
+      "actual": "REJECTED",
+      "detected": true,
+      "verifier_output_tail": "RUN PAIR VERIFICATION: FAIL\n  checks: 95 total, 1 failed\n  FAILED: FINAL_RESULTS final_status == PASS\n  report: evidence/rebuild_verification/run_pair_verification.json"
+    },
+    {
+      "scenario": "B1",
+      "description": "unknown status in release metadata (release_schema)",
+      "target": "<synthetic document>",
+      "expected": "REJECTED",
+      "actual": "REJECTED",
+      "detected": true,
+      "verifier_output_tail": "FINAL_RESULTS: unknown final_release_status 'PROBABLY_FINE'"
+    },
+    {
+      "scenario": "B2",
+      "description": "machine-local path injection (path_firewall)",
+      "target": "<synthetic text>",
+      "expected": "REJECTED",
+      "actual": "REJECTED",
+      "detected": true,
+      "verifier_output_tail": "3 violations: posix_home, windows_drive, unc_share"
+    },
+    {
+      "scenario": "B3",
+      "description": "fabricated claim value (claims re-derivation)",
+      "target": "<synthetic claims>",
+      "expected": "REJECTED",
+      "actual": "REJECTED",
+      "detected": true,
+      "verifier_output_tail": "[{\"claim\": \"rows\", \"verified\": true, \"ok\": false, \"detail\": {\"reason\": \"recorded value does not match re-derived value\", \"recorded\": 3000001, \"derived\": 3200000}}, {\"claim\": \"input_sha\", \"verified\": false, \"ok\": true, \"detail\": {\"reason\": \"recorded as NOT_VERIFIED \\u2014 never reported as PASS\"}}]"
+    }
+  ],
+  "mutation_score": 1.0,
+  "verdict": "PASS",
+  "verdict_note": "PASS only when every controlled failure is detected AND every mutated file is restored byte-exactly AND the clean verifier passes again; target: 100% detection"
+}

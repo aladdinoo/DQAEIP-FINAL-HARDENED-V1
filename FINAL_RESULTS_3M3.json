@@ -1,0 +1,202 @@
+{
+  "schema": "dqaeip.3m3.final_results/2.0",
+  "artifact_type": "current_3m3_validation_result",
+  "generated_at": "2026-09-30T10:35:00Z",
+  "documentation_date": "2026-09-29",
+
+  "repository": {
+    "current_commit": "95abd860354d4239fecb01d722355a8a1d4a25cc",
+    "commit_short": "95abd86",
+    "branch": "main",
+    "origin_main_ahead": 9,
+    "origin_main_behind": 0,
+    "pushed_to_origin": false,
+    "push_state_description": "Current local HEAD is ahead of origin/main by 9 commits and has not yet been pushed.",
+    "working_tree_state": "0 content-modified tracked files; 519 mode-only filesystem drift; 2 untracked files (CURRENT_FINAL_RESULTS.json, docs/DQAEIP_ARCHITECTURE_GUIDE.md); 0 staged",
+    "commit_signature_status": "G",
+    "commit_signature_fingerprint": "6BAF8AEFE12EB327598EB4471B0613B9D58ADC85",
+    "commit_signer": "DQAEIP Release Signing <release-signing@dqaeip.local>",
+    "commit_timestamp": "2026-09-29T12:59:16Z"
+  },
+
+  "release_gate": {
+    "verdict": "PASS",
+    "gate_version": "4.0.0",
+    "gate_count": 24,
+    "gates_passed": 24,
+    "gates_failed": 0,
+    "exit_code": 0,
+    "gate_artifact": "evidence/release_gate/final_release_gate.json",
+    "head_recorded_by_gate": "95abd860354d4239fecb01d722355a8a1d4a25cc",
+    "gate_results": {
+      "1_repository_integrity": "PASS — HEAD 95abd86, clean outside evidence/",
+      "2_commit_signature": "PASS — commit signature verified",
+      "3_baseline_signature": "PASS — baseline signature verified",
+      "4_unit_tests": "PASS — 605 passed / 0 skipped / 0 failed",
+      "5_integration_tests": "PASS — 24 passed / 0 skipped / 0 failed",
+      "6_contract_tests": "PASS — 22 passed / 0 skipped / 0 failed",
+      "7_golden_tests": "PASS — 117 passed / 7 skipped / 0 failed",
+      "8_property_tests": "PASS — 9 passed / 0 skipped / 0 failed",
+      "9_differential_validation": "PASS — 10 consistency tests green",
+      "10_mutation_testing": "PASS — 17/17 mutants killed, score 1.0",
+      "11_replay": "PASS — 2 runs byte-identical, nondeterministic registry rejected",
+      "12_evidence_validation": "PASS — 3M two-run evidence validated, tamper-evident roots verified",
+      "13_provenance_validation": "PASS — decision provenance chain resolves",
+      "14_reference_validation": "PASS — all production references VERIFIED",
+      "15_safety_checks": "PASS — fail-closed gates green, SP1 inactive, no ClickHouse client import",
+      "16_pii_evidence_scan": "PASS — 0 prohibited in evidence tree",
+      "17_performance_regression": "PASS — 1K/10K/100K/1M vs baseline: clean",
+      "18_production_source_integrity": "PASS — frozen sources byte-identical, 0 unauthorized delta",
+      "19_assurance_tests": "PASS — 489 passed / 0 skipped / 0 failed / 5 deselected",
+      "20_machine_path_firewall": "PASS — 0 violations",
+      "21_negative_release_gate": "PASS — 14/14 controlled failures rejected",
+      "22_claim_provenance": "PASS — 29/30 claims verified, 1 honestly NOT_VERIFIED",
+      "23_consistency_matrix": "PASS — all chain edges verified, CONSISTENT",
+      "24_absolute_path_release_gate": "PASS — 0 violations"
+    }
+  },
+
+  "validation": {
+    "date": "2026-09-29",
+    "dataset_type": "synthetic_controlled_validation",
+    "customer_data_processed": false,
+    "seed": 20260929,
+    "rows": 3300000,
+    "input_columns": 33,
+    "output_columns": 41,
+    "rules_tested": 8,
+    "input_sha256": "37b74de296f66135cb3897b28a13d2faecb0f093ef3f29a124db7684674d7c7b",
+    "output_sha256": "469c55907a3757d81f53af32bfa0afa37868456e909db6d08d012c10ebd908de",
+    "input_bytes": 887357286,
+    "output_bytes": 943457484,
+    "run1_seconds": 119.35,
+    "run2_seconds": 119.18,
+    "average_seconds": 119.27,
+    "rows_per_second": 27669,
+    "byte_identical": true,
+    "input_immutable": true,
+    "rows_preserved": 3300000,
+    "clean_rows": 3200999,
+    "defective_rows_injected": 99001,
+    "defect_rate_pct": 3.0,
+    "false_negatives": 0,
+    "confirmed_bugs": 0,
+    "non_assessable_geography_cases": 5562,
+    "verdict": "PASS_WITH_DOCUMENTED_LIMITATIONS"
+  },
+
+  "reproducibility": {
+    "byte_identical_output": true,
+    "run1_output_sha256": "469c55907a3757d81f53af32bfa0afa37868456e909db6d08d012c10ebd908de",
+    "run2_output_sha256": "469c55907a3757d81f53af32bfa0afa37868456e909db6d08d012c10ebd908de",
+    "input_immutable": true,
+    "determinism_guaranteed": true,
+    "determinism_mechanism": "Streaming csv.DictReader preserves input order; uuid4 for temp file name only (not output content); no random module in validation/rules; json.dumps sort_keys=True for evidence"
+  },
+
+  "rule_coverage": {
+    "total_rules": 8,
+    "v1_rules_sha256": "daef1ded54c7d3c79898a1ba253be2acd5b6120e18b16b09009fdd7be9fc2276",
+    "frozen_v1_rules_unchanged": true,
+    "rule_types": {
+      "defect_detection": ["first_name_cleaning_candidate", "last_name_cleaning_candidate", "name_cleaning_candidate", "email_blank", "email_syntax_failure", "geography_mismatch_candidate"],
+      "eligibility_flag": ["proposed_email_export_eligible"],
+      "assessability_flag": ["zip_state_assessable"]
+    },
+    "per_rule_recall": {
+      "first_name_cleaning_candidate": {"engine_flags": 195127, "injected_detected": 39001, "false_negatives": 0, "recall": 1.0},
+      "last_name_cleaning_candidate": {"engine_flags": 108802, "injected_detected": 26000, "false_negatives": 0, "recall": 1.0},
+      "name_cleaning_candidate": {"engine_flags": 33797, "injected_detected": 33000, "false_negatives": 0, "recall": 1.0},
+      "email_blank": {"engine_flags": 16000, "injected_detected": 16000, "false_negatives": 0, "recall": 1.0},
+      "email_syntax_failure": {"engine_flags": 32000, "injected_detected": 32000, "false_negatives": 0, "recall": 1.0},
+      "proposed_email_export_eligible": {"engine_flags": 3252000, "false_negatives": 0, "recall": 1.0, "type": "positive_flag"},
+      "zip_state_assessable": {"engine_flags": 3294000, "false_negatives": 0, "recall": 1.0, "type": "positive_flag"},
+      "geography_mismatch_candidate": {"engine_flags": 32000, "injected_detected": 32000, "false_negatives": 0, "recall": 1.0}
+    },
+    "known_false_positives_note": "Name rules (first_name/last_name_cleaning_candidate) use case-insensitive substring matching per frozen V1 contract. Pattern 'na' matches normal names like 'Anna', 'Donna', 'Hannah'. This is intended rule semantics, NOT an engine defect.",
+    "geography_semantics": "geography_mismatch_candidate is conditional on zip_state_assessable=1. Non-assessable records (invalid US state) return 0 for both flags — NOT clean, just NOT ASSESSABLE."
+  },
+
+  "evidence_integrity": {
+    "frozen_production_files_match": true,
+    "frozen_production_files_count": 12,
+    "v1_rules_sha256_verified": true,
+    "b8_trust_anchor_verified": true,
+    "b8_fingerprints_verified": ["release_gate.py.sig", "baseline_manifest.json.sig", "commit_signature"],
+    "tamper_evident_roots": true,
+    "f01_marker_blocking": true,
+    "self_referential_pending_sentinel": true,
+    "security_findings": 0
+  },
+
+  "historical_release": {
+    "section_description": "HISTORICAL — preserved as immutable provenance. NOT modified by 3.3M validation.",
+    "release_id": "DQAEIP-FINAL-HARDENED-RELEASE-2026-09-19",
+    "release_date": "2026-09-19",
+    "release_kind": "OPERATIONAL_HARDENING_ADDITIVE",
+    "git_commit_at_build": "3c7e0852cfdabf114ca28d16319040f0819bae65",
+    "build_commit_is_ancestor_of_current_head": true,
+    "h4_ancestor_verified": true,
+    "historical_validation_rows": 3200000,
+    "historical_seed": 20260918,
+    "historical_input_sha256": "59624a53c72f908f1dde673ceecf59e0662ae721bbf8f9af7e165acba5318d153",
+    "historical_output_sha256": "b72adc235160a86e0b99a08f988dd0bb5f2cff82bbe5b5d28ea07c5a5719329a",
+    "historical_release_evidence": "FINAL_RESULTS.json (at repo root — historical 2026-09-19 release evidence, NOT modified)"
+  },
+
+  "runtime_status": {
+    "airflow": {
+      "implemented": true,
+      "dag_file": "airflow/dags/dq_validation_dag.py (1 file, 6 tasks)",
+      "structural_tests": ["test_dag_importable", "test_dag_has_tasks"],
+      "deployed": false,
+      "runtime_validated": false,
+      "status": "STRUCTURALLY IMPLEMENTED — NOT DEPLOYED — NOT RUNTIME-VALIDATED"
+    },
+    "clickhouse": {
+      "sql_schemas_implemented": true,
+      "schema_files": ["sql/001_create_source.sql", "sql/002_create_flag_preview.sql", "sql/003_create_reference_tables.sql", "sql/004_create_audit_table.sql", "sql/005_create_lineage_table.sql"],
+      "config_stubs_implemented": true,
+      "docker_compose_service": true,
+      "client_in_production_code": false,
+      "client_boundary_enforced_by": "gate 15 safety_checks",
+      "runtime_connection_validated": false,
+      "status": "SCHEMAS + CONFIG IMPLEMENTED — RUNTIME NOT VALIDATED — CLIENT INTENTIONALLY NOT IN PRODUCTION CODE"
+    },
+    "customer_data": {
+      "processed": false,
+      "status": "NOT PROCESSED — ALL VALIDATIONS USED SYNTHETIC DATA"
+    }
+  },
+
+  "limitations": [
+    {"id": "CUR-001", "description": "Customer data has not been processed.", "status": "NOT_PROVEN", "blocking": false},
+    {"id": "CUR-002", "description": "Airflow runtime has not been validated in a deployed Airflow environment.", "status": "NOT_PROVEN", "blocking": false},
+    {"id": "CUR-003", "description": "ClickHouse runtime connection has not been validated.", "status": "NOT_PROVEN", "blocking": false},
+    {"id": "CUR-004", "description": "Unicode beyond the tested ASCII synthetic dataset was not covered by the 3.3M test.", "status": "NOT_TESTED", "blocking": false},
+    {"id": "CUR-005", "description": "Near-duplicate detection was not part of this controlled validation.", "status": "NOT_TESTED", "blocking": false},
+    {"id": "CUR-006", "description": "Peak memory and CPU were not measured in this run.", "status": "ENVIRONMENT_LIMITED", "blocking": false},
+    {"id": "CUR-007", "description": "Historical 2026-09-18 fixed-point verification remains environment-limited (required ZIP unavailable).", "status": "ENVIRONMENT_LIMITED", "blocking": false},
+    {"id": "LIM-001", "description": "O(N) engine memory profile — peak RSS 2365 MB at 3.2M rows.", "status": "OPEN", "blocking": false, "source": "evidence/release/limitation_registry.json"},
+    {"id": "LIM-011", "description": "Runtime safety is cooperative audit-hook instrumentation, not a kernel sandbox.", "status": "OPEN", "blocking": false, "source": "evidence/release/limitation_registry.json"},
+    {"id": "LIM-017", "description": "Filesystem metadata mutations (os.chmod/os.utime) not captured by audit hook.", "status": "OPEN", "blocking": false, "source": "evidence/release/limitation_registry.json"}
+  ],
+
+  "final_verdict": "PASS_WITH_DOCUMENTED_LIMITATIONS",
+  "verdict_derivation": "PASS because: (1) release gate 24/24 PASS at HEAD 95abd86; (2) 3.3M synthetic validation completed with 100% recall on all 8 rules, byte-identical output, immutable input, 0 confirmed bugs; (3) 0 security findings. WITH DOCUMENTED LIMITATIONS because: customer data not processed, Airflow runtime not validated, ClickHouse runtime not validated.",
+
+  "claim_provenance": {
+    "authoritative_sources": {
+      "git_head": "git rev-parse HEAD",
+      "git_ahead": "git rev-list --count origin/main..HEAD",
+      "signature": "git show -s --format=%G? %GF %GS HEAD",
+      "release_gate": "evidence/release_gate/final_release_gate.json",
+      "3.3m_validation": "CURRENT_FINAL_RESULTS.json",
+      "v1_rules": "sha256sum data_quality_platform/rules/v1_rules.py",
+      "contract": "data_quality_platform/contracts.py",
+      "release_identity": "evidence/FINAL_HARDENED_RELEASE_2026-09-19/release_identity/RELEASE_IDENTITY.json",
+      "limitations_registry": "evidence/release/limitation_registry.json",
+      "h4_ancestor": "git merge-base --is-ancestor 3c7e0852 HEAD"
+    }
+  }
+}

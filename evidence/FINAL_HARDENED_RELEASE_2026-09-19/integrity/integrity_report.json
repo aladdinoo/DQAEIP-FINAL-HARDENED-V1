@@ -1,0 +1,72 @@
+{
+  "file_count": 13,
+  "files": [
+    {
+      "path": "evidence/FINAL_HARDENED_RELEASE_2026-09-19/claims/claim_register.json",
+      "sha256": "86e9e67aab03564406e604d1056273f1d4dd3df88af61e458c85fb765d60b2ca",
+      "size_bytes": 5201
+    },
+    {
+      "path": "evidence/FINAL_HARDENED_RELEASE_2026-09-19/fixed_point/run_1.json",
+      "sha256": "30d95a0c5a19f08bfef3908bc533a6e3ae53d1b105f4be2323994a982212fd9a",
+      "size_bytes": 4822
+    },
+    {
+      "path": "evidence/FINAL_HARDENED_RELEASE_2026-09-19/frozen_core/frozen_core_verification.json",
+      "sha256": "ed8931ae8d9538faa7bf5d2da86a4041e0b9375f591dcf4daf5ac1017b2aaf93",
+      "size_bytes": 1498
+    },
+    {
+      "path": "evidence/FINAL_HARDENED_RELEASE_2026-09-19/hardening_layers/layer_registry.json",
+      "sha256": "7a429ec9cd5e48f26669be244e4adf5d5cbc38b0cad39d9722b5c5fa2dfe41f4",
+      "size_bytes": 3326
+    },
+    {
+      "path": "evidence/FINAL_HARDENED_RELEASE_2026-09-19/limitations/limitation_registry.json",
+      "sha256": "5c32e9ce998957045d2ffc26f1ab26c71ba67982d6b9513526447a3623d8214a",
+      "size_bytes": 11680
+    },
+    {
+      "path": "evidence/FINAL_HARDENED_RELEASE_2026-09-19/negative_battery/battery_results.json",
+      "sha256": "5e8fb31d510da04c487aac438fd6014abe57ced400e56772425312eaedd81781",
+      "size_bytes": 2551
+    },
+    {
+      "path": "evidence/FINAL_HARDENED_RELEASE_2026-09-19/path_forensics/path_inventory.json",
+      "sha256": "0cb12a59b6055dcbb172c709bef24d4bbe518fa56c97b9bd5c47fe403fb7fd0d",
+      "size_bytes": 1658
+    },
+    {
+      "path": "evidence/FINAL_HARDENED_RELEASE_2026-09-19/performance/performance_ladder.json",
+      "sha256": "f8813c6b87555077f8368592f281bba98f5c626a62f91f68ddb3289ecc03e191",
+      "size_bytes": 4090
+    },
+    {
+      "path": "evidence/FINAL_HARDENED_RELEASE_2026-09-19/performance/performance_summary.json",
+      "sha256": "0cf9013869d146e8ecaae984e0a27ae0b6dae5cebbc0a2a6ca45631e12fe770f",
+      "size_bytes": 481
+    },
+    {
+      "path": "evidence/FINAL_HARDENED_RELEASE_2026-09-19/regression/fresh_3m2_regression.json",
+      "sha256": "499401472bd32d1bc5c3bb3e8382b981c3ef72536b13f1b7af10acded6d87278",
+      "size_bytes": 2309
+    },
+    {
+      "path": "evidence/FINAL_HARDENED_RELEASE_2026-09-19/release_gate/gate_rounds.json",
+      "sha256": "df9f7853dfe121b8c8e9af0d39a1e37d9c1b62efa56e1d942639ff5e1e983bee",
+      "size_bytes": 36424
+    },
+    {
+      "path": "evidence/FINAL_HARDENED_RELEASE_2026-09-19/release_identity/RELEASE_IDENTITY.json",
+      "sha256": "04b645f6b4f9380e36361095b6d51bcb7d08f055aaa737591c14e016a36c8d3e",
+      "size_bytes": 1158
+    },
+    {
+      "path": "evidence/FINAL_HARDENED_RELEASE_2026-09-19/test_suite/test_suite_results.json",
+      "sha256": "d6ab6c344d218b354276299430ce039203e05f8d71669f6a0cc7f0ca99372e74",
+      "size_bytes": 741
+    }
+  ],
+  "generated_utc": "2026-09-19T13:28:43Z",
+  "schema": "dqaeip.hardening.integrity/1.0"
+}

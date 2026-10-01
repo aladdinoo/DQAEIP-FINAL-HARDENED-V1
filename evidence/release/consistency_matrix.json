@@ -1,0 +1,138 @@
+{
+  "report": "DQAEIP final consistency matrix",
+  "generated_utc": "2026-09-28T20:16:47Z",
+  "git_head": "331322f2b4518bd8f07a4bb7d29e599d53a7c74f",
+  "verdict": "CONSISTENT",
+  "verdict_note": "any mismatch in any recorded identity is RELEASE_RECONSTRUCTION_FAILED; identities recorded nowhere are not compared (None never matches a value)",
+  "checks": [
+    {
+      "identity": "git_head",
+      "recorded_in": 2,
+      "expected_sources": 2,
+      "consistent": true,
+      "value_preview": "3c7e0852cfdabf114ca28d16319040f0819bae65",
+      "detail": {
+        "doc_recorded_head": "3c7e0852cfdabf114ca28d16319040f0819bae65",
+        "release_manifest_head": "3c7e0852cfdabf114ca28d16319040f0819bae65",
+        "live_head": "331322f2b4518bd8f07a4bb7d29e599d53a7c74f",
+        "check": "ancestor (recorded build commit must be ancestor of live HEAD)",
+        "lineage_ok": true
+      }
+    },
+    {
+      "identity": "input_sha256",
+      "recorded_in": 4,
+      "expected_sources": 4,
+      "consistent": true,
+      "value_preview": "59624a53c72f908f1dde673ceecf59e0662ae721bb8f9af7e165acba5318d153"
+    },
+    {
+      "identity": "output_sha256",
+      "recorded_in": 4,
+      "expected_sources": 4,
+      "consistent": true,
+      "value_preview": "b72adc235160a86e0b99a08f988dd0bb5f2cff82bbe5b5d28ea07c5a5719329a"
+    },
+    {
+      "identity": "schema_hash_run_manifests",
+      "recorded_in": 2,
+      "expected_sources": 2,
+      "consistent": true,
+      "value_preview": "47813dbee947c871971a4841bd4aef325530a6886b96a6f77bba6af86c5031fa"
+    },
+    {
+      "identity": "rule_hash_set",
+      "recorded_in": 4,
+      "expected_sources": 4,
+      "consistent": true,
+      "value_preview": "{'first_name_cleaning_candidate': '575e9d4588334d364bdcfae6ca3c4"
+    },
+    {
+      "identity": "checker_sha256",
+      "recorded_in": 2,
+      "expected_sources": 2,
+      "consistent": true,
+      "value_preview": "d216dbca0ad0132e199394cd4e416528712979e9684585d8dc7d111604afb969"
+    },
+    {
+      "identity": "historical_checker_sha256",
+      "recorded_in": 2,
+      "expected_sources": 2,
+      "consistent": true,
+      "value_preview": "0ef7c10c14a1df317c23cb0dfc73b3a60c2257c064b35080d694e5fe8bc50d84"
+    },
+    {
+      "identity": "run_ids",
+      "recorded_in": 2,
+      "expected_sources": 2,
+      "consistent": true,
+      "value_preview": "['final_3m_pass1', 'final_3m_pass2']"
+    },
+    {
+      "identity": "rows_3m",
+      "recorded_in": 2,
+      "expected_sources": 2,
+      "consistent": true,
+      "value_preview": "3200000"
+    },
+    {
+      "identity": "final_release_status",
+      "recorded_in": 2,
+      "expected_sources": 2,
+      "consistent": true,
+      "value_preview": "PASS_WITH_DOCUMENTED_LIMITATIONS"
+    },
+    {
+      "identity": "release_gate_verdict",
+      "recorded_in": 3,
+      "expected_sources": 3,
+      "consistent": true,
+      "value_preview": "PASS"
+    },
+    {
+      "identity": "tests_passed",
+      "recorded_in": 2,
+      "expected_sources": 2,
+      "consistent": true,
+      "value_preview": "1259"
+    },
+    {
+      "identity": "oracle_comparisons_combined",
+      "recorded_in": 2,
+      "expected_sources": 2,
+      "consistent": true,
+      "value_preview": "51200000"
+    },
+    {
+      "identity": "oracle_mismatches_combined",
+      "recorded_in": 2,
+      "expected_sources": 2,
+      "consistent": true,
+      "value_preview": "0"
+    },
+    {
+      "identity": "release_name",
+      "recorded_in": 2,
+      "expected_sources": 2,
+      "consistent": true,
+      "value_preview": "DQAEIP-FINAL-HARDENED-RELEASE-2026-09-19"
+    },
+    {
+      "identity": "README.md carries I/O hash fingerprints",
+      "recorded_in": 1,
+      "expected_sources": 1,
+      "consistent": true,
+      "value_preview": "59624a53c72f908f\u2026/b72adc235160a86e\u2026"
+    },
+    {
+      "identity": "RELEASE_NOTES.md carries I/O hash fingerprints",
+      "recorded_in": 1,
+      "expected_sources": 1,
+      "consistent": true,
+      "value_preview": "59624a53c72f908f\u2026/b72adc235160a86e\u2026"
+    }
+  ],
+  "checks_total": 17,
+  "checks_failed": 0,
+  "failed_identities": []
+}

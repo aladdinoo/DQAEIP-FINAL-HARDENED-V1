@@ -1,0 +1,158 @@
+{
+  "checked_file": "README.md",
+  "evidence_sources_available": {
+    "FINAL_RESULTS": true,
+    "assurance_mutation": true,
+    "final_3m": true,
+    "mutation": true,
+    "release_gate": true,
+    "rule_inventory": true,
+    "run_pair": true,
+    "test_summary": true
+  },
+  "generated_utc": "2026-09-28T00:50:28Z",
+  "problems": [],
+  "report": "DQAEIP README/evidence automated consistency check",
+  "required_values": [
+    {
+      "expected": "1269 collected",
+      "found": true,
+      "label": "test_collected"
+    },
+    {
+      "expected": "1259 passed",
+      "found": true,
+      "label": "test_passed"
+    },
+    {
+      "expected": "9 skipped",
+      "found": true,
+      "label": "test_skipped"
+    },
+    {
+      "expected": "0 failed",
+      "found": true,
+      "label": "test_failed"
+    },
+    {
+      "expected": "24 fail-closed gates",
+      "found": true,
+      "label": "gate_count_long"
+    },
+    {
+      "expected": "24-gate",
+      "found": true,
+      "label": "gate_count_short"
+    },
+    {
+      "expected": "51,200,000",
+      "found": true,
+      "label": "comparisons_combined"
+    },
+    {
+      "expected": "0 mismatches",
+      "found": true,
+      "label": "mismatches"
+    },
+    {
+      "expected": "3,200,000-row",
+      "found": true,
+      "label": "rows_per_run"
+    },
+    {
+      "expected": "Final 3M checker verdict: PASS",
+      "found": true,
+      "label": "final_3m_verdict"
+    },
+    {
+      "expected": "59624a53",
+      "found": true,
+      "label": "input_sha_prefix"
+    },
+    {
+      "expected": "b72adc23",
+      "found": true,
+      "label": "output_sha_prefix"
+    },
+    {
+      "expected": "95/95",
+      "found": true,
+      "label": "run_pair_checks"
+    },
+    {
+      "expected": "Run 1 + Run 2",
+      "found": true,
+      "label": "official_runs"
+    },
+    {
+      "expected": "17/17",
+      "found": true,
+      "label": "business_mutation"
+    },
+    {
+      "expected": "14/14",
+      "found": true,
+      "label": "assurance_mutation"
+    },
+    {
+      "expected": "8 frozen V1 rules",
+      "found": true,
+      "label": "v1_rule_count"
+    },
+    {
+      "expected": "PASS_WITH_DOCUMENTED_LIMITATIONS",
+      "found": true,
+      "label": "release_verdict"
+    },
+    {
+      "expected": "DQAEIP-FINAL-HARDENED-RELEASE-2026-09-19",
+      "found": true,
+      "label": "release_name"
+    }
+  ],
+  "schema_version": "1.0.0",
+  "superseded_values": [
+    {
+      "label": "superseded_gate_16_long",
+      "present": false,
+      "value": "16 fail-closed gates"
+    },
+    {
+      "label": "superseded_gate_16_short",
+      "present": false,
+      "value": "16-gate"
+    },
+    {
+      "label": "superseded_gate_16_plain",
+      "present": false,
+      "value": "16 gates"
+    },
+    {
+      "label": "superseded_tests_715",
+      "present": false,
+      "value": "715 passed"
+    },
+    {
+      "label": "superseded_tests_813",
+      "present": false,
+      "value": "813 collected"
+    },
+    {
+      "label": "superseded_tests_804",
+      "present": false,
+      "value": "804 passed"
+    },
+    {
+      "label": "superseded_zip_tooling_primary",
+      "present": false,
+      "value": "scripts/build_enterprise_release_zip.py"
+    },
+    {
+      "label": "superseded_zip_tooling_verify",
+      "present": false,
+      "value": "scripts/verify_enterprise_release_zip.py"
+    }
+  ],
+  "verdict": "CONSISTENT",
+  "verdict_note": "CONSISTENT only when every evidence-derived value is present and every known superseded value is absent; values are derived from evidence at check time, never hard-coded"
+}

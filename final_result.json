@@ -1,0 +1,970 @@
+{
+  "report": "DQAEIP FINAL RESULTS (rebuilt from verified evidence)",
+  "schema": {
+    "name": "dqaeip.final_results",
+    "version": "2.0"
+  },
+  "schema_version": "2.0.0",
+  "release_identity": {
+    "release_name": "DQAEIP-FINAL-HARDENED-RELEASE-2026-09-19",
+    "release_date": "2026-09-19",
+    "supersedes": "DQAEIP-FINAL-CLEAN-REBUILD-RELEASE-2026-09-18",
+    "supersedes_note": "byte-recoverable at git HEAD fb4df92 (nested repo) and via the certified ZIP + sidecar; NOT modified by this release",
+    "product_name": "Data Quality Assurance & Evidence Integrity Platform",
+    "short_name": "DQAEIP",
+    "technical_package": "data_quality_platform (retained unchanged for compatibility)"
+  },
+  "git_commit_at_build": "3c7e0852cfdabf114ca28d16319040f0819bae65",
+  "frozen_core": {
+    "checker_sha256": "0ef7c10c14a1df317c23cb0dfc73b3a60c2257c064b35080d694e5fe8bc50d84",
+    "immutability": "Frozen V1 rules are NOT modified by this release; hardening layers are additive wrappers only",
+    "v1_rules_sha256": "daef1ded54c7d3c79898a1ba253be2acd5b6120e18b16b09009fdd7be9fc2276"
+  },
+  "derived_values": {
+    "run_count": 2,
+    "rows_per_run": 3200000,
+    "comparisons_per_run": 25600000,
+    "combined_comparisons": 51200000,
+    "combined_mismatches": 0,
+    "rule_count": 8,
+    "input_column_count": 33,
+    "output_column_count": 41
+  },
+  "verification_state": "PASS_WITH_DOCUMENTED_LIMITATIONS",
+  "project_identity": {
+    "name": "Data Quality Assurance & Evidence Integrity Platform",
+    "short_name": "DQAEIP",
+    "previous_name": "Data Quality Assurance & Validation Platform (DQAVP)",
+    "python_package": "data_quality_platform",
+    "package_policy": "compatibility package retained; no imports broken; no internal modules renamed"
+  },
+  "git_identity": {
+    "head": "3c7e0852cfdabf114ca28d16319040f0819bae65",
+    "branch": "main",
+    "origin_main": "3c7e0852cfdabf114ca28d16319040f0819bae65",
+    "ahead": 5,
+    "behind": 0,
+    "tree_hash": "b7dc7828de6376096f28dffd1523c00dcfae1656",
+    "pushed": false,
+    "note": "local release branch; nothing pushed",
+    "head_semantics": "head recorded at document build time; generated documents are committed after the build, so the live HEAD is this head or a descendant (ancestry is verified by the consistency matrix)"
+  },
+  "rule_identity": {
+    "registry_source": "data_quality_platform/rules/registry.py",
+    "rule_source_sha256": "daef1ded54c7d3c79898a1ba253be2acd5b6120e18b16b09009fdd7be9fc2276",
+    "rule_count": 8,
+    "rule_ids": [
+      "email_blank",
+      "email_syntax_failure",
+      "first_name_cleaning_candidate",
+      "geography_mismatch_candidate",
+      "last_name_cleaning_candidate",
+      "name_cleaning_candidate",
+      "proposed_email_export_eligible",
+      "zip_state_assessable"
+    ],
+    "rule_versions": {
+      "email_blank": "1.0.0",
+      "email_syntax_failure": "1.0.0",
+      "first_name_cleaning_candidate": "1.0.0",
+      "geography_mismatch_candidate": "1.0.0",
+      "last_name_cleaning_candidate": "1.0.0",
+      "name_cleaning_candidate": "1.0.0",
+      "proposed_email_export_eligible": "1.0.0",
+      "zip_state_assessable": "1.0.0"
+    },
+    "rule_hashes": {
+      "email_blank": "157ccc2127334bac03534f80868a3d7ea3bc8df77c132e8c237874321164f2bc",
+      "email_syntax_failure": "5caaba13a73c90c5aac7a52cf756713c8ecc3dc73d30c2949206efa8d2b712f7",
+      "first_name_cleaning_candidate": "575e9d4588334d364bdcfae6ca3c44b9bf35120a371b78fecfde8ee19373ca69",
+      "geography_mismatch_candidate": "7967b59ef7a14b83284a12eb298d63c6140e0837bfafdf3ac4e758baf74c4e93",
+      "last_name_cleaning_candidate": "c553b7f4484b54135e2b84c6b37a84b15df328544256577984e61f6ede900122",
+      "name_cleaning_candidate": "3a128ec85d196cd3a42720347ba8790f5fbf0f386bd617e4ec508ee050b661c8",
+      "proposed_email_export_eligible": "6732e6bfed6fae3c23439f0e69b5c39e2843a5b74f2f8f3fdaf6ad5d536da98c",
+      "zip_state_assessable": "e7730c1b848f32790a56bfb79f7ef5dbc8c88b3919f9903421adc7dde5393885"
+    },
+    "frozen_baseline": "byte-identical to the hardening baseline daef1ded\u2026"
+  },
+  "test_identity": {
+    "collected": 1269,
+    "passed": 1259,
+    "failed": 0,
+    "skipped": 9,
+    "skip_reasons": [
+      {
+        "count": 7,
+        "reason": "tests/golden/test_dl_canonical_geography.py:62: Authoritative DL001-DL015 acceptance table not present at tests/golden/dl_geography_cases.csv. It is external evidence to be supplied verbatim by the repo owner; it is never reconstructed from existing fixtures."
+      },
+      {
+        "count": 1,
+        "reason": "tests/runtime/test_runtime.py:119: Docker/ClickHouse unavailable"
+      },
+      {
+        "count": 1,
+        "reason": "tests/runtime/test_runtime.py:156: Airflow not installed - DESIGNED_BUT_NOT_RUNTIME_VERIFIED"
+      }
+    ],
+    "category_breakdown": {
+      "unit": {
+        "present": true,
+        "passed": 605,
+        "failed": 0,
+        "skipped": 0,
+        "xfailed": 0,
+        "errors": 0,
+        "exit_code": 0
+      },
+      "integration": {
+        "present": true,
+        "passed": 24,
+        "failed": 0,
+        "skipped": 0,
+        "xfailed": 0,
+        "errors": 0,
+        "exit_code": 0
+      },
+      "contract": {
+        "present": true,
+        "passed": 22,
+        "failed": 0,
+        "skipped": 0,
+        "xfailed": 0,
+        "errors": 0,
+        "exit_code": 0
+      },
+      "golden": {
+        "present": true,
+        "passed": 117,
+        "failed": 0,
+        "skipped": 7,
+        "xfailed": 0,
+        "errors": 0,
+        "exit_code": 0
+      },
+      "property": {
+        "present": true,
+        "passed": 9,
+        "failed": 0,
+        "skipped": 0,
+        "xfailed": 0,
+        "errors": 0,
+        "exit_code": 0
+      },
+      "safety": {
+        "present": true,
+        "passed": 24,
+        "failed": 0,
+        "skipped": 0,
+        "xfailed": 0,
+        "errors": 0,
+        "exit_code": 0
+      },
+      "security": {
+        "present": true,
+        "passed": 6,
+        "failed": 0,
+        "skipped": 0,
+        "xfailed": 0,
+        "errors": 0,
+        "exit_code": 0
+      },
+      "runtime": {
+        "present": true,
+        "passed": 8,
+        "failed": 0,
+        "skipped": 2,
+        "xfailed": 0,
+        "errors": 0,
+        "exit_code": 0
+      },
+      "assurance": {
+        "present": true,
+        "passed": 423,
+        "failed": 0,
+        "skipped": 0,
+        "xfailed": 0,
+        "errors": 0,
+        "exit_code": 0
+      },
+      "hardening": {
+        "present": true,
+        "passed": 21,
+        "failed": 0,
+        "skipped": 0,
+        "xfailed": 0,
+        "errors": 0,
+        "exit_code": 0
+      }
+    }
+  },
+  "runs": {
+    "run_1": {
+      "run_id": "final_3m_pass1",
+      "status": "PASS",
+      "pass": "pass1",
+      "git_commit_provenance": "not recorded",
+      "input_sha256": "59624a53c72f908f1dde673ceecf59e0662ae721bb8f9af7e165acba5318d153",
+      "output_sha256": "b72adc235160a86e0b99a08f988dd0bb5f2cff82bbe5b5d28ea07c5a5719329a",
+      "rows": 3200000,
+      "input_columns": 33,
+      "output_columns": 41,
+      "oracle_comparisons": 25600000,
+      "oracle_mismatches": 0,
+      "engine_peak_rss_mb": 2365.29,
+      "stage_runtime_seconds": {
+        "generation": 86.898,
+        "validation": 157.005,
+        "verify_oracle": 67.77
+      },
+      "runtime_safety": "PASS",
+      "sp1_frozen": "PASS",
+      "verification_statuses": {
+        "schema_status": "PASS",
+        "row_count_status": "PASS",
+        "column_count_status": "PASS",
+        "column_order_status": "PASS",
+        "row_identity_status": "PASS",
+        "row_ordering_status": "PASS",
+        "source_values_preserved_status": "PASS",
+        "output_shape_status": "PASS",
+        "flag_domain_status": "PASS"
+      }
+    },
+    "run_2": {
+      "run_id": "final_3m_pass2",
+      "status": "PASS",
+      "pass": "pass2",
+      "git_commit_provenance": "not recorded",
+      "input_sha256": "59624a53c72f908f1dde673ceecf59e0662ae721bb8f9af7e165acba5318d153",
+      "output_sha256": "b72adc235160a86e0b99a08f988dd0bb5f2cff82bbe5b5d28ea07c5a5719329a",
+      "rows": 3200000,
+      "input_columns": 33,
+      "output_columns": 41,
+      "oracle_comparisons": 25600000,
+      "oracle_mismatches": 0,
+      "engine_peak_rss_mb": 2363.95,
+      "stage_runtime_seconds": {
+        "generation": 84.104,
+        "validation": 156.711,
+        "verify_oracle": 68.098
+      },
+      "runtime_safety": "PASS",
+      "sp1_frozen": "PASS",
+      "verification_statuses": {
+        "schema_status": "PASS",
+        "row_count_status": "PASS",
+        "column_count_status": "PASS",
+        "column_order_status": "PASS",
+        "row_identity_status": "PASS",
+        "row_ordering_status": "PASS",
+        "source_values_preserved_status": "PASS",
+        "output_shape_status": "PASS",
+        "flag_domain_status": "PASS"
+      }
+    }
+  },
+  "verification": {
+    "final_3m_checker_verdict": "PASS",
+    "checker_version": "2.0.0 (fail-closed final-verdict hardening, Dave review)",
+    "input_sha256": "59624a53c72f908f1dde673ceecf59e0662ae721bb8f9af7e165acba5318d153",
+    "output_sha256": "b72adc235160a86e0b99a08f988dd0bb5f2cff82bbe5b5d28ea07c5a5719329a",
+    "rows": 3200000,
+    "input_columns": 33,
+    "output_columns": 41,
+    "run_pair_verification": {
+      "verdict": "PASS",
+      "checks_total": 95,
+      "checks_failed": 0,
+      "evidence": "evidence/rebuild_verification/run_pair_verification.json"
+    },
+    "release_gate_verdict": "PASS",
+    "release_gate_status": "VERIFIED_LOCALLY",
+    "release_gate_gates_pass": 24,
+    "release_gate_evidence": "evidence/release_gate/final_release_gate.json"
+  },
+  "oracle_verification": {
+    "architecture": "independent execution implementation against pinned frozen reference truth",
+    "wording_note": "NOT 'independently sourced business truth' \u2014 the reference tables originate from the same frozen contract",
+    "implementation": "scripts/final_3m_validation.py (stdlib only; zero platform imports)",
+    "comparisons_per_run": 25600000,
+    "comparisons_combined": 51200000,
+    "mismatches_run_1": 0,
+    "mismatches_run_2": 0,
+    "mismatches_combined": 0,
+    "consistency_tests": "tests/unit/test_rule_oracle_consistency.py (10 tests incl. 5000-row random battery)"
+  },
+  "replay_verification": {
+    "three_m_validation_byte_identical": true,
+    "gate_replay_detail": {
+      "runs": 2,
+      "byte_identical_output": true,
+      "nondeterministic_registry_rejected": true,
+      "input_row_count": 5000
+    },
+    "status": "VERIFIED_LOCALLY"
+  },
+  "mutation_assurance": {
+    "business_rules": {
+      "mutants_total": 17,
+      "detected": 17,
+      "mutation_score": 1.0,
+      "source_restored": true,
+      "evidence": "evidence/mutation_testing/mutation_results.json"
+    },
+    "assurance_layer": {
+      "scenarios_total": 14,
+      "scenarios_detected": 14,
+      "restoration_verified": true,
+      "verdict": "PASS",
+      "evidence": "evidence/release/assurance_mutation.json"
+    }
+  },
+  "evidence_integrity": {
+    "tamper_evident_roots": {
+      "run_1": "65c48452a3ee89ee944c28a9ef919a64d1815d0037510f6179c6f7f203faeb19",
+      "run_2": "bf8d1777e7c7eb0b6cfd6afce981a0274a18988ecaeaa29a60e72af0798fd902"
+    },
+    "evidence_validator": "data_quality_platform/validation/evidence_validator.py (fail-closed)",
+    "run_pair_checks": 95,
+    "stale_evidence_rejection": "data_quality_platform/assurance/stale_evidence.py (anti-mixing)",
+    "path_firewall": "data_quality_platform/assurance/path_firewall.py (machine-local paths)",
+    "negative_release_gate": {
+      "scenarios_total": 14,
+      "all_rejected": true,
+      "evidence": "evidence/release/assurance_mutation.json"
+    }
+  },
+  "negative_gate_results": {
+    "scenarios_total": 14,
+    "all_rejected": true,
+    "evidence": "evidence/release/assurance_mutation.json"
+  },
+  "security_results": {
+    "pii_evidence_scan": {
+      "gate_status": "PASS",
+      "detail_keys": [
+        "evidence_tree",
+        "release_document_findings",
+        "review_adjudication"
+      ]
+    },
+    "runtime_safety": {
+      "run_1": "PASS",
+      "run_2": "PASS",
+      "measurement": "runtime-verified: 0 socket events, 0 process-exec events, 6 filesystem mutations all within the repository root"
+    },
+    "machine_path_firewall": {
+      "release_artifacts_clean": true
+    }
+  },
+  "performance_results": {
+    "scale_ladder": [
+      {
+        "rows": 1000,
+        "engine_reported_seconds": 0.034,
+        "peak_rss_mb": 23.25,
+        "cli_wall_seconds": 0.19,
+        "engine_rows_per_second": 29613.9,
+        "input_sha256": "4a13dd1acecd8167df5136cfff72c84f46610a36dc2ea333d5824116bce0b888"
+      },
+      {
+        "rows": 10000,
+        "engine_reported_seconds": 0.344,
+        "peak_rss_mb": 29.38,
+        "cli_wall_seconds": 0.611,
+        "engine_rows_per_second": 29028.2,
+        "input_sha256": "d3e2e1ea109c8b7b425a88fe2bbc27e785399fa5cf2f80a7ce562bbc00e721a4"
+      },
+      {
+        "rows": 100000,
+        "engine_reported_seconds": 3.445,
+        "peak_rss_mb": 96.82,
+        "cli_wall_seconds": 4.793,
+        "engine_rows_per_second": 29029.4,
+        "input_sha256": "220d55af3feb27a68d97a440477718fdb2f22e4a0874f96e59bdf1f871c65ab3"
+      },
+      {
+        "rows": 1000000,
+        "engine_reported_seconds": 37.295,
+        "peak_rss_mb": 750.34,
+        "cli_wall_seconds": 49.961,
+        "engine_rows_per_second": 26813.5,
+        "input_sha256": "f8fb5ac1ff73a9440d5638288d9173dfc75826171f60a1d6ffb40e80c416f90d"
+      }
+    ],
+    "source": "evidence/dqvp_performance/performance_results.json",
+    "gate_status": "PASS",
+    "memory_profile": "O(N) documented honestly (LIM-001)",
+    "peak_rss_mb_run_1": 2365.29,
+    "peak_rss_mb_run_2": 2363.95,
+    "scalability_claim_policy": "no 100M/800M production scalability claim from 3M validation evidence"
+  },
+  "limitations": [
+    {
+      "affected_scope": "execution",
+      "blocks_release": false,
+      "description": "The engine materializes the full dataset in memory; peak RSS measured 2365.7 MB at 3,200,000 rows (fresh 2026-09-18 run). Memory scales linearly with row count. A bounded-memory design exists as a future design document only; it is intentionally NOT implemented because business-equivalence is unproven. Re-proven by the 2026-09-19 hardened-release regression (fresh dual-run, peak RSS 2365.29 MB, pass2 bulk CSVs reclaimed after the byte-identity proof).",
+      "evidence_reference": [
+        "evidence/validation/2026-09-19/fresh_3m2/FINAL_RESULTS.json",
+        "evidence/dqvp_performance/performance_results.json",
+        "docs/future/bounded_memory_execution.md"
+      ],
+      "id": "LIM-001",
+      "policy_note": "documented; performance optimization is out of scope and explicitly forbidden for this rebuild",
+      "status": "OPEN",
+      "title": "O(N) memory profile",
+      "verification_state": "VERIFIED_LOCALLY"
+    },
+    {
+      "affected_scope": "storage integration",
+      "blocks_release": false,
+      "description": "The ClickHouse storage integration is import-verified only; no ClickHouse server is connected or executed. Client code contains no live connection path (verified boundary check).",
+      "evidence_reference": [
+        "tests/runtime/test_runtime.py",
+        "evidence/release_gate/final_release_gate.json"
+      ],
+      "id": "LIM-002",
+      "status": "OPEN",
+      "title": "ClickHouse runtime not executed",
+      "verification_state": "NOT_EXECUTED"
+    },
+    {
+      "affected_scope": "orchestration integration",
+      "blocks_release": false,
+      "description": "The Airflow DAG is statically validated only; the Airflow scheduler/executor runtime is not installed or run in this environment.",
+      "evidence_reference": [
+        "airflow/dags/dq_validation_dag.py",
+        "tests/runtime/test_runtime.py"
+      ],
+      "id": "LIM-003",
+      "status": "OPEN",
+      "title": "Airflow runtime not executed",
+      "verification_state": "NOT_EXECUTED"
+    },
+    {
+      "affected_scope": "golden test coverage",
+      "blocks_release": false,
+      "description": "The authoritative DL001-DL015 geography acceptance table was not supplied by the repo owner; 7 golden tests are skipped with that explicit reason. The fixture is never reconstructed from existing fixtures (anti-fabrication).",
+      "evidence_reference": [
+        "tests/golden/test_dl_canonical_geography.py"
+      ],
+      "id": "LIM-004",
+      "policy_note": "company-supplied evidence outstanding; skipped tests are never converted to PASS",
+      "status": "OPEN",
+      "title": "Authoritative DL fixture unavailable",
+      "verification_state": "NOT_VERIFIED"
+    },
+    {
+      "affected_scope": "geography successor layer",
+      "blocks_release": false,
+      "description": "The SP1 successor geography layer is implemented for validation only; it is NOT registered in the production rule registry and NOT activated. The fresh 3.2M validation pinned the frozen V1 rule set (regenerated from the frozen source) and verified SP1 absence in BOTH executed run manifests.",
+      "evidence_reference": [
+        "evidence/validation/2026-09-19/fresh_3m2/FINAL_RESULTS.json",
+        "data_quality_platform/geography/"
+      ],
+      "id": "LIM-005",
+      "status": "OPEN",
+      "title": "SP1 validation-only",
+      "verification_state": "VERIFIED_LOCALLY"
+    },
+    {
+      "affected_scope": "future enhancement",
+      "blocks_release": false,
+      "description": "E1 is neither implemented nor authorized. Zero E1 identifiers exist in application code (tripwire-enforced boundary test). This registry entry documents that boundary; it is not an implementation plan.",
+      "evidence_reference": [
+        "tests/unit/test_final_3m_hardening.py"
+      ],
+      "id": "LIM-006",
+      "status": "OPEN",
+      "title": "E1 not implemented / not authorized",
+      "verification_state": "NOT_AUTHORIZED"
+    },
+    {
+      "affected_scope": "oracle semantics",
+      "blocks_release": false,
+      "description": "The independent oracle re-implements the frozen V1 contract; it is a pinned reference truth, not independently sourced business truth. Perfect engine-vs-oracle agreement (51,200,000 comparisons, 0 mismatches) proves engine-to-contract fidelity, not contract-to-business fidelity.",
+      "evidence_reference": [
+        "evidence/validation/2026-09-19/fresh_3m2/FINAL_RESULTS.json",
+        "scripts/final_3m_validation.py"
+      ],
+      "id": "LIM-007",
+      "status": "OPEN",
+      "title": "Oracle reference truth is pinned, not independently sourced",
+      "verification_state": "VERIFIED_LOCALLY"
+    },
+    {
+      "affected_scope": "performance claims",
+      "blocks_release": false,
+      "description": "Production validation executed at 3,200,000 rows (two complete runs, seed 20260918). No claim is made about 100M/800M production scalability from this evidence; performance comparability is limited to the measured host class. Re-proven by the 2026-09-19 hardened-release regression (fresh dual-run, peak RSS 2365.29 MB, pass2 bulk CSVs reclaimed after the byte-identity proof).",
+      "evidence_reference": [
+        "evidence/dqvp_performance/performance_results.json",
+        "evidence/validation/2026-09-19/fresh_3m2/FINAL_RESULTS.json"
+      ],
+      "id": "LIM-008",
+      "status": "OPEN",
+      "title": "3.2M-row validation scale",
+      "verification_state": "VERIFIED_LOCALLY"
+    },
+    {
+      "affected_scope": "artifact retention",
+      "blocks_release": false,
+      "description": "The bulk input/output CSVs of BOTH passes under data/generated/ (gitignored staging) were removed after the byte-identical proof and after the release-verification chain was complete; their SHA-256 values are hash-anchored in the harness evidence. The dataset is deterministically re-derivable from seed 20260918 (generation ~85s per pass). The release gate's evidence-validation documents the by-design staging absence (determinism proven + manifest output SHA equals the byte-proven SHA). Re-proven by the 2026-09-19 hardened-release regression (fresh dual-run, peak RSS 2365.29 MB, pass2 bulk CSVs reclaimed after the byte-identity proof).",
+      "evidence_reference": [
+        "evidence/validation/2026-09-19/fresh_3m2/FINAL_RESULTS.json"
+      ],
+      "id": "LIM-009",
+      "status": "OPEN",
+      "title": "Bulk staging CSVs removed after byte-proof",
+      "verification_state": "VERIFIED_LOCALLY"
+    },
+    {
+      "affected_scope": "golden corpus / geography semantics",
+      "blocks_release": false,
+      "description": "Three golden-corpus cases record real-world expectations (mismatch=0) that conflict with the frozen V1 prefix map (73->OK only). The frozen V1 behavior is preserved and the cases are pinned REVIEW_REQUIRED with an exact allowlist; any new drift fails the suite.",
+      "evidence_reference": [
+        "tests/unit/test_rule_oracle_consistency.py",
+        "tests/golden/regression_corpus.json"
+      ],
+      "id": "LIM-010",
+      "policy_note": "no unauthorized semantic change; decision deferred to the contract owner",
+      "status": "OPEN",
+      "title": "ZIP 733xx / TX geography expectations under review",
+      "verification_state": "REVIEW_REQUIRED"
+    },
+    {
+      "affected_scope": "safety evidence semantics",
+      "blocks_release": false,
+      "description": "Runtime safety (0 sockets, 0 exec, in-repo writes only) is measured via CPython audit hooks inside the production CLI subprocess \u2014 cooperative observation, not a kernel sandbox.",
+      "evidence_reference": [
+        "scripts/final_3m_runtime_safety_wrapper.py",
+        "evidence/validation/2026-09-19/fresh_3m2/pass1_cli.json"
+      ],
+      "id": "LIM-011",
+      "status": "OPEN",
+      "title": "Runtime safety is cooperative instrumentation",
+      "verification_state": "VERIFIED_LOCALLY"
+    },
+    {
+      "affected_scope": "execution hardening (Layer E)",
+      "blocks_release": false,
+      "description": "Layer E ships the checkpoint binding contract but NO resume implementation: resume is refused (partial-write duplication, oracle prefix ambiguity, ledger-state conflation, determinism makes fresh re-run the safe equivalent).",
+      "evidence_reference": [
+        "data_quality_platform/hardening/checkpoint_contract.py",
+        "tests/hardening/test_hardening_negative_battery.py"
+      ],
+      "id": "LIM-012",
+      "policy_note": "deliberate design decision; refusal is fail-closed",
+      "status": "OPEN",
+      "title": "Checkpoint/safe-resume is contract-only",
+      "verification_state": "VERIFIED_LOCALLY"
+    },
+    {
+      "affected_scope": "reference data (Layer G)",
+      "blocks_release": false,
+      "description": "Layer G versions reference artifacts by SHA-256 content hash; no external authoritative source exists for the state/ZIP prefix table, so provenance beyond content is not claimed.",
+      "evidence_reference": [
+        "data_quality_platform/hardening/reference_data.py",
+        "evidence/FINAL_HARDENED_RELEASE_2026-09-19/hardening_layers/layer_registry.json"
+      ],
+      "id": "LIM-013",
+      "status": "OPEN",
+      "title": "Reference-data provenance is content-addressed only",
+      "verification_state": "VERIFIED_LOCALLY"
+    },
+    {
+      "affected_scope": "execution guard (Layer H)",
+      "blocks_release": false,
+      "description": "Layer H samples /proc/<pid>/status VmRSS at 250 ms intervals; sub-interval memory spikes between samples can be missed (wall-time enforcement is exact).",
+      "evidence_reference": [
+        "data_quality_platform/hardening/resource_guard.py"
+      ],
+      "id": "LIM-014",
+      "status": "OPEN",
+      "title": "Peak-RSS monitoring is sampled",
+      "verification_state": "VERIFIED_LOCALLY"
+    },
+    {
+      "affected_scope": "authorization (Layer B)",
+      "blocks_release": false,
+      "description": "Layer B binds software identity by file hash at execution time and fails closed on divergence; it does not provide kernel-level sandboxing. Audit hooks remain cooperative CPython instrumentation (as in LIM-011).",
+      "evidence_reference": [
+        "data_quality_platform/hardening/authorization.py",
+        "evidence/FINAL_HARDENED_RELEASE_2026-09-19/hardening_layers/layer_registry.json"
+      ],
+      "id": "LIM-015",
+      "status": "OPEN",
+      "title": "Authorization is not a kernel sandbox",
+      "verification_state": "VERIFIED_LOCALLY"
+    },
+    {
+      "affected_scope": "atomic commit (Layer D)",
+      "blocks_release": false,
+      "description": "Layer D atomicity relies on a single os.rename of the staging directory onto the final directory on one filesystem; cross-filesystem staging requires operator co-location of work and final directories.",
+      "evidence_reference": [
+        "data_quality_platform/hardening/atomic_commit.py"
+      ],
+      "id": "LIM-016",
+      "status": "OPEN",
+      "title": "Atomic commit is single-filesystem",
+      "verification_state": "VERIFIED_LOCALLY"
+    },
+    {
+      "id": "LIM-017",
+      "title": "Filesystem metadata mutations (chmod/utime) not captured by audit hook",
+      "status": "OPEN",
+      "description": "Filesystem metadata mutations such as os.chmod and os.utime are not captured by the runtime safety audit hook; the defined 18-operation mutation matrix focuses on content/boundary mutations (open-write, remove, rmdir, truncate, mkdir, rename, link, symlink, shutil.copyfile/copymode/copystat/move/rmtree). os.chmod/os.utime are metadata-only mutations (permissions/timestamps, not content). Production validation code does not call chmod/utime. Documented as an explicit limitation (not a vulnerability) under the cooperative security model (LIM-011).",
+      "evidence_reference": [
+        "scripts/final_3m_runtime_safety_wrapper.py",
+        "README.md#LIM-017"
+      ],
+      "verification_state": "VERIFIED_LOCALLY",
+      "affected_scope": "runtime safety audit hook (Layer A)",
+      "blocks_release": false
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "CLAIM-3m-validation-rows-1dbf3d",
+      "claim": "3M validation rows",
+      "value": 3200000,
+      "source_artifact": "evidence/validation/2026-09-19/fresh_3m2/FINAL_RESULTS.json",
+      "source_sha256": "034a7d478eeefa9e4d3e8783b2499ae73a040ff544320f2eb7584fb920c9250b",
+      "derivation": "final_3m_rows",
+      "verified": true,
+      "status": "VERIFIED_LOCALLY"
+    },
+    {
+      "claim_id": "CLAIM-exactly-two-complete-3m-runs-782cda",
+      "claim": "exactly two complete 3M runs",
+      "value": 2,
+      "source_artifact": "evidence/validation/2026-09-19/fresh_3m2/FINAL_RESULTS.json",
+      "source_sha256": "034a7d478eeefa9e4d3e8783b2499ae73a040ff544320f2eb7584fb920c9250b",
+      "derivation": "final_3m_run_count",
+      "verified": true,
+      "status": "VERIFIED_LOCALLY"
+    },
+    {
+      "claim_id": "CLAIM-3m-input-sha-256-c3511a",
+      "claim": "3M input SHA-256",
+      "value": "59624a53c72f908f1dde673ceecf59e0662ae721bb8f9af7e165acba5318d153",
+      "source_artifact": "evidence/validation/2026-09-19/fresh_3m2/FINAL_RESULTS.json",
+      "source_sha256": "034a7d478eeefa9e4d3e8783b2499ae73a040ff544320f2eb7584fb920c9250b",
+      "derivation": "final_3m_input_sha256",
+      "verified": true,
+      "status": "VERIFIED_LOCALLY"
+    },
+    {
+      "claim_id": "CLAIM-3m-output-sha-256-637e51",
+      "claim": "3M output SHA-256",
+      "value": "b72adc235160a86e0b99a08f988dd0bb5f2cff82bbe5b5d28ea07c5a5719329a",
+      "source_artifact": "evidence/validation/2026-09-19/fresh_3m2/FINAL_RESULTS.json",
+      "source_sha256": "034a7d478eeefa9e4d3e8783b2499ae73a040ff544320f2eb7584fb920c9250b",
+      "derivation": "final_3m_output_sha256",
+      "verified": true,
+      "status": "VERIFIED_LOCALLY"
+    },
+    {
+      "claim_id": "CLAIM-3m-checker-final-status-cf4844",
+      "claim": "3M checker final status",
+      "value": "PASS",
+      "source_artifact": "evidence/validation/2026-09-19/fresh_3m2/FINAL_RESULTS.json",
+      "source_sha256": "034a7d478eeefa9e4d3e8783b2499ae73a040ff544320f2eb7584fb920c9250b",
+      "derivation": "final_3m_status",
+      "verified": true,
+      "status": "VERIFIED_LOCALLY"
+    },
+    {
+      "claim_id": "CLAIM-deterministic-synthetic-data-seed-ba10f0",
+      "claim": "deterministic synthetic data seed",
+      "value": 20260918,
+      "source_artifact": "evidence/validation/2026-09-19/fresh_3m2/FINAL_RESULTS.json",
+      "source_sha256": "034a7d478eeefa9e4d3e8783b2499ae73a040ff544320f2eb7584fb920c9250b",
+      "derivation": "final_3m_seed",
+      "verified": true,
+      "status": "VERIFIED_LOCALLY"
+    },
+    {
+      "claim_id": "CLAIM-byte-identical-outputs-across-runs-1ed358",
+      "claim": "byte-identical outputs across runs",
+      "value": true,
+      "source_artifact": "evidence/validation/2026-09-19/fresh_3m2/FINAL_RESULTS.json",
+      "source_sha256": "034a7d478eeefa9e4d3e8783b2499ae73a040ff544320f2eb7584fb920c9250b",
+      "derivation": "final_3m_determinism_gate",
+      "verified": true,
+      "status": "VERIFIED_LOCALLY"
+    },
+    {
+      "claim_id": "CLAIM-oracle-comparisons-combined-4bb65d",
+      "claim": "oracle comparisons (combined)",
+      "value": 51200000,
+      "source_artifact": "evidence/validation/2026-09-19/fresh_3m2/FINAL_RESULTS.json",
+      "source_sha256": "034a7d478eeefa9e4d3e8783b2499ae73a040ff544320f2eb7584fb920c9250b",
+      "derivation": "oracle_comparisons_combined",
+      "verified": true,
+      "status": "VERIFIED_LOCALLY"
+    },
+    {
+      "claim_id": "CLAIM-oracle-mismatches-combined-321a05",
+      "claim": "oracle mismatches (combined)",
+      "value": 0,
+      "source_artifact": "evidence/validation/2026-09-19/fresh_3m2/FINAL_RESULTS.json",
+      "source_sha256": "034a7d478eeefa9e4d3e8783b2499ae73a040ff544320f2eb7584fb920c9250b",
+      "derivation": "oracle_mismatches_combined",
+      "verified": true,
+      "status": "VERIFIED_LOCALLY"
+    },
+    {
+      "claim_id": "CLAIM-run-pair-verification-verdict-a6246c",
+      "claim": "run-pair verification verdict",
+      "value": "PASS",
+      "source_artifact": "evidence/rebuild_verification/run_pair_verification.json",
+      "source_sha256": "93aa9cab699cefabea56305d9f64d100f00e92a43a4a809110bd522c0ca193e4",
+      "derivation": "run_pair_verification_verdict",
+      "verified": true,
+      "status": "VERIFIED_LOCALLY"
+    },
+    {
+      "claim_id": "CLAIM-business-mutation-score-198982",
+      "claim": "business mutation score",
+      "value": 1.0,
+      "source_artifact": "evidence/mutation_testing/mutation_results.json",
+      "source_sha256": "464e7672225bd227b658564a681b805119a0cb71dbb5cb75b5f11fe54253ffe0",
+      "derivation": "mutation_score",
+      "verified": true,
+      "status": "VERIFIED_LOCALLY"
+    },
+    {
+      "claim_id": "CLAIM-tests-collected-1e5dc3",
+      "claim": "tests collected",
+      "value": 1269,
+      "source_artifact": "evidence/rebuild_verification/test_summary.json",
+      "source_sha256": "a8e794c307665e776f7072c6b45424e6cbd552837329fc12d40a4e1584d15760",
+      "derivation": "tests_collected",
+      "verified": true,
+      "status": "VERIFIED_LOCALLY"
+    },
+    {
+      "claim_id": "CLAIM-tests-passed-068f86",
+      "claim": "tests passed",
+      "value": 1259,
+      "source_artifact": "evidence/rebuild_verification/test_summary.json",
+      "source_sha256": "a8e794c307665e776f7072c6b45424e6cbd552837329fc12d40a4e1584d15760",
+      "derivation": "tests_passed",
+      "verified": true,
+      "status": "VERIFIED_LOCALLY"
+    },
+    {
+      "claim_id": "CLAIM-tests-skipped-explicit-reasons-ef7660",
+      "claim": "tests skipped (explicit reasons)",
+      "value": 9,
+      "source_artifact": "evidence/rebuild_verification/test_summary.json",
+      "source_sha256": "a8e794c307665e776f7072c6b45424e6cbd552837329fc12d40a4e1584d15760",
+      "derivation": "tests_skipped",
+      "verified": true,
+      "status": "VERIFIED_LOCALLY"
+    },
+    {
+      "claim_id": "CLAIM-test-suite-all-green-0-failed-0-errors-2f14f0",
+      "claim": "test suite all green (0 failed / 0 errors)",
+      "value": true,
+      "source_artifact": "evidence/rebuild_verification/test_summary.json",
+      "source_sha256": "a8e794c307665e776f7072c6b45424e6cbd552837329fc12d40a4e1584d15760",
+      "derivation": "test_summary_all_green",
+      "verified": true,
+      "status": "VERIFIED_LOCALLY"
+    },
+    {
+      "claim_id": "CLAIM-checker-script-sha-256-4ad29b",
+      "claim": "checker script SHA-256",
+      "value": "d216dbca0ad0132e199394cd4e416528712979e9684585d8dc7d111604afb969",
+      "source_artifact": "scripts/final_3m_validation.py",
+      "source_sha256": "d216dbca0ad0132e199394cd4e416528712979e9684585d8dc7d111604afb969",
+      "derivation": "checker_script_sha256",
+      "verified": true,
+      "status": "VERIFIED_LOCALLY"
+    },
+    {
+      "claim_id": "CLAIM-v1-rule-source-sha-256-bc93f0",
+      "claim": "V1 rule source SHA-256",
+      "value": "daef1ded54c7d3c79898a1ba253be2acd5b6120e18b16b09009fdd7be9fc2276",
+      "source_artifact": "data_quality_platform/rules/v1_rules.py",
+      "source_sha256": "daef1ded54c7d3c79898a1ba253be2acd5b6120e18b16b09009fdd7be9fc2276",
+      "derivation": "v1_rule_source_sha256",
+      "verified": true,
+      "status": "VERIFIED_LOCALLY"
+    },
+    {
+      "claim_id": "CLAIM-frozen-v1-rule-count-ec0e8b",
+      "claim": "Frozen V1 rule count",
+      "value": 8,
+      "source_artifact": "evidence/rebuild_baseline/v1_rule_inventory.json",
+      "source_sha256": "4b5ec120e00f894bd8656ea929961b3bf7af6ebc940e21f86c3f1d779e813e47",
+      "derivation": "v1_rule_count",
+      "verified": true,
+      "status": "VERIFIED_LOCALLY"
+    },
+    {
+      "claim_id": "CLAIM-documented-limitation-count-44ab94",
+      "claim": "documented limitation count",
+      "value": 17,
+      "source_artifact": "evidence/release/limitation_registry.json",
+      "source_sha256": "0c8c2bd32d13513ceb6ade2bd63ed7387deac1183ff1ec48c4223d6517250eb0",
+      "derivation": "limitation_count",
+      "verified": true,
+      "status": "VERIFIED_LOCALLY"
+    },
+    {
+      "claim_id": "CLAIM-absolute-path-gate-violations-portable-e-680ed5",
+      "claim": "absolute-path gate violations (portable evidence)",
+      "value": 0,
+      "source_artifact": "evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/release_gate/absolute_path_gate_report.json",
+      "source_sha256": "e9771beb6d44695cbe256fdd5cb3677c4bc6778a9bc6d7c66a4fbf798f049dea",
+      "derivation": "absolute_path_gate_violations",
+      "verified": true,
+      "status": "VERIFIED_LOCALLY"
+    },
+    {
+      "claim_id": "CLAIM-artifact-tamper-detection-rate-5f3bda",
+      "claim": "artifact tamper detection rate",
+      "value": "15/15",
+      "source_artifact": "evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/security/tamper_matrix.json",
+      "source_sha256": "ec78857d91d94e5379d3df0f5c5392be9bba4cd7cfce7fe25cf3b39d9dc51d93",
+      "derivation": "tamper_detection_rate",
+      "verified": true,
+      "status": "VERIFIED_LOCALLY"
+    },
+    {
+      "claim_id": "CLAIM-evidence-mutation-matrix-outcome-1c91a7",
+      "claim": "evidence mutation matrix outcome",
+      "value": "PASS",
+      "source_artifact": "evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/mutation_testing/evidence_mutation_matrix.json",
+      "source_sha256": "f74070efaf0d735e255b5be6c77b0c71094d8a557c8af05fc163600affb8b6c5",
+      "derivation": "evidence_mutation_outcome",
+      "verified": true,
+      "status": "VERIFIED_LOCALLY"
+    },
+    {
+      "claim_id": "CLAIM-artifact-identity-registry-verdict-a9c0b1",
+      "claim": "artifact identity registry verdict",
+      "value": "PASS",
+      "source_artifact": "evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/artifact_identity/artifact_identity_registry.json",
+      "source_sha256": "7a94d787c771357b8b75f93b1448fe22525b67a81bed9009c95e3f1e03ba8194",
+      "derivation": "artifact_identity_registry_verdict",
+      "verified": true,
+      "status": "VERIFIED_LOCALLY"
+    },
+    {
+      "claim_id": "CLAIM-claim-graph-verdict-6cdfa9",
+      "claim": "claim graph verdict",
+      "value": "PASS",
+      "source_artifact": "evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/claim_graph/claim_graph.json",
+      "source_sha256": "2154c90c27628a6613c06c5763659a0d3bf1eb0b0923f2a9086555721bf7c1cb",
+      "derivation": "claim_graph_verdict",
+      "verified": true,
+      "status": "VERIFIED_LOCALLY"
+    },
+    {
+      "claim_id": "CLAIM-schema-compatibility-verdict-f8c191",
+      "claim": "schema compatibility verdict",
+      "value": "PASS",
+      "source_artifact": "evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/schema_versioning/SCHEMA_COMPATIBILITY_REPORT.json",
+      "source_sha256": "072d9b8b685154f4d63be59bc24cf5e24ed65886eda6a165c134ab52ec149b6a",
+      "derivation": "schema_compatibility_verdict",
+      "verified": true,
+      "status": "VERIFIED_LOCALLY"
+    },
+    {
+      "claim_id": "CLAIM-memory-profile-documented-limitation-not-bbd1f7",
+      "claim": "memory profile (documented limitation, not bounded memory)",
+      "value": "O(N)",
+      "source_artifact": "evidence/release/limitation_registry.json",
+      "source_sha256": "0c8c2bd32d13513ceb6ade2bd63ed7387deac1183ff1ec48c4223d6517250eb0",
+      "derivation": "memory_characteristic",
+      "verified": true,
+      "status": "VERIFIED_LOCALLY"
+    },
+    {
+      "claim_id": "CLAIM-clickhouse-runtime-validation-status-76e441",
+      "claim": "ClickHouse runtime validation status",
+      "value": "NOT_VERIFIED (not executed; static SQL only)",
+      "source_artifact": "evidence/release/limitation_registry.json",
+      "source_sha256": "0c8c2bd32d13513ceb6ade2bd63ed7387deac1183ff1ec48c4223d6517250eb0",
+      "derivation": "clickhouse_runtime_status",
+      "verified": true,
+      "status": "VERIFIED_LOCALLY"
+    },
+    {
+      "claim_id": "CLAIM-airflow-runtime-validation-status-757dd1",
+      "claim": "Airflow runtime validation status",
+      "value": "NOT_VERIFIED (not executed; DAG definitions only)",
+      "source_artifact": "evidence/release/limitation_registry.json",
+      "source_sha256": "0c8c2bd32d13513ceb6ade2bd63ed7387deac1183ff1ec48c4223d6517250eb0",
+      "derivation": "airflow_runtime_status",
+      "verified": true,
+      "status": "VERIFIED_LOCALLY"
+    },
+    {
+      "claim_id": "CLAIM-validated-scale-no-scalability-extrapola-0b19d0",
+      "claim": "validated scale (no scalability extrapolation)",
+      "value": "3,200,000 rows (validated); no 100M/800M claim",
+      "source_artifact": "evidence/validation/2026-09-19/fresh_3m2/FINAL_RESULTS.json",
+      "source_sha256": "034a7d478eeefa9e4d3e8783b2499ae73a040ff544320f2eb7584fb920c9250b",
+      "derivation": "validation_scale",
+      "verified": true,
+      "status": "VERIFIED_LOCALLY"
+    },
+    {
+      "claim_id": "CLAIM-release-gate-verdict-21-gates-dec547",
+      "claim": "release gate verdict (21 gates)",
+      "value": "PASS",
+      "source_artifact": "evidence/release_gate/final_release_gate.json",
+      "source_sha256": "da441c50f5d5ab56a51d9fccc2d8144a6cd16d1849fb64611fd35e8f873c7074",
+      "derivation": "release_gate_verdict",
+      "verified": true,
+      "status": "VERIFIED_LOCALLY"
+    }
+  ],
+  "required_verifications": [
+    {
+      "name": "3M validation complete",
+      "established": true
+    },
+    {
+      "name": "run pair verified",
+      "established": true
+    },
+    {
+      "name": "tests all green",
+      "established": true
+    },
+    {
+      "name": "business mutation score 1.0",
+      "established": true
+    },
+    {
+      "name": "assurance mutation battery PASS",
+      "established": true
+    },
+    {
+      "name": "V1 rules frozen",
+      "established": true
+    },
+    {
+      "name": "claims re-derive",
+      "established": true
+    },
+    {
+      "name": "release gate PASS 22/22",
+      "established": true
+    }
+  ],
+  "final_release_status": "PASS_WITH_DOCUMENTED_LIMITATIONS",
+  "final_status_derivation": {
+    "policy": "all required verifications passed AND a non-empty, structured limitation registry documents explicitly non-blocking limitations under the stated release policy",
+    "blocking_failures": [],
+    "unestablished_required": [],
+    "limitations_total": 17,
+    "limitations_blocking": 0
+  },
+  "rebuild_statement": "This document was machine-assembled by scripts/build_release_evidence_model.py from verified evidence artifacts; manual editing is prohibited. Every numeric claim carries provenance (source artifact + SHA + derivation). NOT_VERIFIED claims never become PASS."
+}

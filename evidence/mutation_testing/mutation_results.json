@@ -1,0 +1,244 @@
+{
+  "tool": "scripts/mutation_testing.py",
+  "generated_utc": "2026-09-30T10:25:48Z",
+  "production_source": "data_quality_platform/rules/v1_rules.py",
+  "source_sha256_before": "daef1ded54c7d3c79898a1ba253be2acd5b6120e18b16b09009fdd7be9fc2276",
+  "source_sha256_after": "daef1ded54c7d3c79898a1ba253be2acd5b6120e18b16b09009fdd7be9fc2276",
+  "source_restored_exactly": true,
+  "test_targets": [
+    "tests/golden/test_golden_cases.py",
+    "tests/golden/test_golden_fixture_integrity.py",
+    "tests/unit/test_rules.py",
+    "tests/unit/test_final_3m_hardening.py",
+    "tests/unit/test_rule_oracle_consistency.py",
+    "tests/integration/test_engine.py"
+  ],
+  "mutants_total": 17,
+  "mutants_detected": 17,
+  "mutants_survived": 0,
+  "mutation_score": 1.0,
+  "testing_gaps": [],
+  "results": [
+    {
+      "mutation_id": "M01",
+      "rule_id": "first_name_cleaning_candidate",
+      "mutation_description": "inverted final boolean result (suspicious names pass)",
+      "technique": "inverted_boolean",
+      "detected": true,
+      "tests_that_detected_it": [
+        "tests/golden/test_golden_cases.py::TestGoldenCases::test_gc001_valid_row"
+      ],
+      "failed_test_count": 1,
+      "suite_exit_code": 1,
+      "duration_seconds": 2.27
+    },
+    {
+      "mutation_id": "M02",
+      "rule_id": "first_name_cleaning_candidate",
+      "mutation_description": "removed repeated-character condition",
+      "technique": "removed_condition",
+      "detected": true,
+      "tests_that_detected_it": [
+        "tests/unit/test_final_3m_hardening.py::TestEngineOracleAgreement::test_all_flags_agree_with_independent_oracle"
+      ],
+      "failed_test_count": 1,
+      "suite_exit_code": 1,
+      "duration_seconds": 2.8
+    },
+    {
+      "mutation_id": "M03",
+      "rule_id": "first_name_cleaning_candidate",
+      "mutation_description": "changed normalization: leading/trailing whitespace no longer stripped",
+      "technique": "changed_normalization",
+      "detected": true,
+      "tests_that_detected_it": [
+        "tests/unit/test_final_3m_hardening.py::TestEngineOracleAgreement::test_all_flags_agree_with_independent_oracle"
+      ],
+      "failed_test_count": 1,
+      "suite_exit_code": 1,
+      "duration_seconds": 2.82
+    },
+    {
+      "mutation_id": "M04",
+      "rule_id": "last_name_cleaning_candidate",
+      "mutation_description": "inverted final boolean result",
+      "technique": "inverted_boolean",
+      "detected": true,
+      "tests_that_detected_it": [
+        "tests/golden/test_golden_cases.py::TestGoldenCases::test_all_50_cases_all_rules"
+      ],
+      "failed_test_count": 1,
+      "suite_exit_code": 1,
+      "duration_seconds": 2.4
+    },
+    {
+      "mutation_id": "M05",
+      "rule_id": "last_name_cleaning_candidate",
+      "mutation_description": "removed non-alpha character condition",
+      "technique": "removed_condition",
+      "detected": true,
+      "tests_that_detected_it": [
+        "tests/unit/test_final_3m_hardening.py::TestW1W2DocumentationFacts::test_rule_matrix_is_the_per_rule_hash_record"
+      ],
+      "failed_test_count": 1,
+      "suite_exit_code": 1,
+      "duration_seconds": 3.18
+    },
+    {
+      "mutation_id": "M06",
+      "rule_id": "name_cleaning_candidate",
+      "mutation_description": "inverted equality comparison (equal names no longer flagged)",
+      "technique": "inverted_comparison",
+      "detected": true,
+      "tests_that_detected_it": [
+        "tests/golden/test_golden_cases.py::TestGoldenCases::test_gc011_same_name"
+      ],
+      "failed_test_count": 1,
+      "suite_exit_code": 1,
+      "duration_seconds": 2.35
+    },
+    {
+      "mutation_id": "M07",
+      "rule_id": "name_cleaning_candidate",
+      "mutation_description": "removed single-character-name condition",
+      "technique": "removed_condition",
+      "detected": true,
+      "tests_that_detected_it": [
+        "tests/unit/test_rules.py::TestNameCleaningCandidate::test_both_single_char"
+      ],
+      "failed_test_count": 1,
+      "suite_exit_code": 1,
+      "duration_seconds": 2.52
+    },
+    {
+      "mutation_id": "M08",
+      "rule_id": "email_blank",
+      "mutation_description": "inverted blank comparison",
+      "technique": "inverted_comparison",
+      "detected": true,
+      "tests_that_detected_it": [
+        "tests/golden/test_golden_cases.py::TestGoldenCases::test_gc001_valid_row"
+      ],
+      "failed_test_count": 1,
+      "suite_exit_code": 1,
+      "duration_seconds": 2.35
+    },
+    {
+      "mutation_id": "M09",
+      "rule_id": "email_blank",
+      "mutation_description": "altered blank handling: whitespace-only emails no longer blank",
+      "technique": "altered_blank_handling",
+      "detected": true,
+      "tests_that_detected_it": [
+        "tests/unit/test_rules.py::TestEmailBlank::test_whitespace_email"
+      ],
+      "failed_test_count": 1,
+      "suite_exit_code": 1,
+      "duration_seconds": 2.51
+    },
+    {
+      "mutation_id": "M10",
+      "rule_id": "email_syntax_failure",
+      "mutation_description": "inverted regex match verdict",
+      "technique": "inverted_boolean",
+      "detected": true,
+      "tests_that_detected_it": [
+        "tests/golden/test_golden_cases.py::TestGoldenCases::test_gc003_malformed_email"
+      ],
+      "failed_test_count": 1,
+      "suite_exit_code": 1,
+      "duration_seconds": 2.46
+    },
+    {
+      "mutation_id": "M11",
+      "rule_id": "email_syntax_failure",
+      "mutation_description": "altered threshold: TLD suffix minimum {2,} -> {1,}",
+      "technique": "altered_threshold",
+      "detected": true,
+      "tests_that_detected_it": [
+        "tests/unit/test_final_3m_hardening.py::TestW1W2DocumentationFacts::test_rule_matrix_is_the_per_rule_hash_record"
+      ],
+      "failed_test_count": 1,
+      "suite_exit_code": 1,
+      "duration_seconds": 3.18
+    },
+    {
+      "mutation_id": "M12",
+      "rule_id": "proposed_email_export_eligible",
+      "mutation_description": "inverted eligibility verdict",
+      "technique": "inverted_boolean",
+      "detected": true,
+      "tests_that_detected_it": [
+        "tests/golden/test_golden_cases.py::TestGoldenCases::test_gc001_valid_row"
+      ],
+      "failed_test_count": 1,
+      "suite_exit_code": 1,
+      "duration_seconds": 2.27
+    },
+    {
+      "mutation_id": "M13",
+      "rule_id": "zip_state_assessable",
+      "mutation_description": "inverted state-membership check",
+      "technique": "inverted_comparison",
+      "detected": true,
+      "tests_that_detected_it": [
+        "tests/golden/test_golden_cases.py::TestGoldenCases::test_all_50_cases_all_rules"
+      ],
+      "failed_test_count": 1,
+      "suite_exit_code": 1,
+      "duration_seconds": 2.43
+    },
+    {
+      "mutation_id": "M14",
+      "rule_id": "zip_state_assessable",
+      "mutation_description": "changed normalization: state case no longer normalized",
+      "technique": "changed_normalization",
+      "detected": true,
+      "tests_that_detected_it": [
+        "tests/unit/test_final_3m_hardening.py::TestEngineOracleAgreement::test_all_flags_agree_with_independent_oracle"
+      ],
+      "failed_test_count": 1,
+      "suite_exit_code": 1,
+      "duration_seconds": 2.81
+    },
+    {
+      "mutation_id": "M15",
+      "rule_id": "geography_mismatch_candidate",
+      "mutation_description": "inverted prefix-match verdict (matching prefixes flagged as mismatch)",
+      "technique": "inverted_boolean",
+      "detected": true,
+      "tests_that_detected_it": [
+        "tests/golden/test_golden_cases.py::TestGoldenCases::test_gc019_zip_state_mismatch"
+      ],
+      "failed_test_count": 1,
+      "suite_exit_code": 1,
+      "duration_seconds": 2.48
+    },
+    {
+      "mutation_id": "M16",
+      "rule_id": "geography_mismatch_candidate",
+      "mutation_description": "incorrect geography condition: unknown states flagged as mismatch",
+      "technique": "incorrect_condition",
+      "detected": true,
+      "tests_that_detected_it": [
+        "tests/golden/test_golden_fixture_integrity.py::test_geography_edge_cases_expectations_conform_to_implementation"
+      ],
+      "failed_test_count": 1,
+      "suite_exit_code": 1,
+      "duration_seconds": 2.51
+    },
+    {
+      "mutation_id": "M17",
+      "rule_id": "geography_mismatch_candidate",
+      "mutation_description": "altered blank handling: blank ZIP no longer exempts a row",
+      "technique": "altered_blank_handling",
+      "detected": true,
+      "tests_that_detected_it": [
+        "tests/golden/test_golden_fixture_integrity.py::test_geography_edge_cases_expectations_conform_to_implementation"
+      ],
+      "failed_test_count": 1,
+      "suite_exit_code": 1,
+      "duration_seconds": 2.55
+    }
+  ]
+}

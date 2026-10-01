@@ -1,0 +1,339 @@
+{
+  "baseline_version": "1.0.0",
+  "generated_utc": "2026-09-18T23:43:14Z",
+  "execution_identity": "DQAVP enterprise-hardening Phase 0 (read-only forensic capture, scripts/hardening_baseline.py)",
+  "immutability_statement": "This baseline was captured before enterprise-hardening changes and is immutable: its SHA-256 is recorded in baseline_manifest.sha256 and enforced by release gate 16 (production-source integrity).",
+  "git": {
+    "branch": "main",
+    "head": "dafea63318b468929c7606681867ecf79f711094",
+    "origin_main": "8f60aa68f0009cdc81c332815f9fcd5ae194581f",
+    "ahead": 131,
+    "behind": 0,
+    "tree_hash_of_head": "18040ba0387f5cd32d5a71a9351fe51f6bc767e1",
+    "tracked_file_count": 303,
+    "tracked_changes_at_capture": [
+      " M evidence/bench_quick/alerts.json",
+      " M evidence/bench_quick/audit.json",
+      " M evidence/bench_quick/lineage.json",
+      " M evidence/bench_quick/manifest.json",
+      " M evidence/final_execution/rule_matrix.json",
+      " M evidence/validation/2026-09-18/fresh_3m2/preflight/alerts.json",
+      " M evidence/validation/2026-09-18/fresh_3m2/preflight/audit.json",
+      " M evidence/validation/2026-09-18/fresh_3m2/preflight/lineage.json",
+      " M evidence/validation/2026-09-18/fresh_3m2/preflight/manifest.json",
+      " M scripts/verify_run_pair.py",
+      " M tests/assurance/test_update_v2_path_regression.py",
+      " M tools/absolute_path_forensics.py",
+      " M tools/build_artifact_identity_registry.py",
+      " M tools/normalize_portable_evidence.py",
+      " M tools/run_tamper_matrix.py",
+      " M tools/update_v2_path_inventory.py",
+      " M tools/update_v2_portable_evidence.py"
+    ],
+    "untracked_at_capture": [
+      "evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/",
+      "evidence/FINAL_PORTABLE_RELEASE_2026-09-18/",
+      "evidence/dqvp_performance/",
+      "evidence/mutation_testing/",
+      "evidence/rebuild_baseline/",
+      "evidence/rebuild_verification/",
+      "evidence/release/assurance_mutation.json",
+      "evidence/release/reproducibility_fingerprint.json"
+    ],
+    "remote": "https://github.com/aladdinoo/Data-Quality-Validation-Platform-v2.git",
+    "porcelain_v1": " M evidence/bench_quick/alerts.json\n M evidence/bench_quick/audit.json\n M evidence/bench_quick/lineage.json\n M evidence/bench_quick/manifest.json\n M evidence/final_execution/rule_matrix.json\n M evidence/validation/2026-09-18/fresh_3m2/preflight/alerts.json\n M evidence/validation/2026-09-18/fresh_3m2/preflight/audit.json\n M evidence/validation/2026-09-18/fresh_3m2/preflight/lineage.json\n M evidence/validation/2026-09-18/fresh_3m2/preflight/manifest.json\n M scripts/verify_run_pair.py\n M tests/assurance/test_update_v2_path_regression.py\n M tools/absolute_path_forensics.py\n M tools/build_artifact_identity_registry.py\n M tools/normalize_portable_evidence.py\n M tools/run_tamper_matrix.py\n M tools/update_v2_path_inventory.py\n M tools/update_v2_portable_evidence.py\n?? evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/\n?? evidence/FINAL_PORTABLE_RELEASE_2026-09-18/\n?? evidence/dqvp_performance/\n?? evidence/mutation_testing/\n?? evidence/rebuild_baseline/\n?? evidence/rebuild_verification/\n?? evidence/release/assurance_mutation.json\n?? evidence/release/reproducibility_fingerprint.json\n"
+  },
+  "tree": {
+    "tracked_files_hashed": 303,
+    "full_tree_sha256": "f850ffe09d6b0ed6ae52063d682f58296c41ccc3459073680819811f38be1b5a",
+    "git_tree_hash_of_head": "18040ba0387f5cd32d5a71a9351fe51f6bc767e1"
+  },
+  "frozen_production_files": {
+    "data_quality_platform/rules/v1_rules.py": "daef1ded54c7d3c79898a1ba253be2acd5b6120e18b16b09009fdd7be9fc2276",
+    "data_quality_platform/rules/registry.py": "bea2ab41d7c3237c322e1b3085b7ec5602152865491c8bc3d6c060e050d8faf5",
+    "data_quality_platform/rules/base.py": "3a2a5793506114b09a7c1db9616ced482c990bdc18da6aa2d2446b282013d0af",
+    "data_quality_platform/contracts.py": "b3eea54f0c5142e654cd531c4bb994669a170a7b37060b6bb7d45c4c46fb5d18",
+    "data_quality_platform/validation/engine.py": "14491560f926c9393602ba841f913bb1b846a1a8b70892ac4001beede050f59d",
+    "data_quality_platform/generation/synthetic.py": "b81eb9168fb208b4d5d97665191c750c9135e9caf8540b022236925c01ba97e9",
+    "data_quality_platform/lineage/recorder.py": "560bebf91b95a8c21358d5f3a06562da1b17354067a51b48775eaaf9ea66f36e",
+    "data_quality_platform/evidence/manifests.py": "820007875ae8de65d4f6b5c50787febb0ccfe6cf0dc3cd7da17ac7709f35d6b8",
+    "data_quality_platform/audit/trail.py": "e6b254bdf3d1f58cedeb3a6ac5f4b1bb5d646fe4a2d8d63b4388028b8cfeb754",
+    "data_quality_platform/monitoring/quality.py": "b9c3174da516a2532a7ff204604159bf48ee2849664533ccca0259f50568e028",
+    "data_quality_platform/alerting/alerts.py": "760338c1beac2ddf829a850abbe3f1243d58f49c5453cfa11c016c5d362a2eec",
+    "runner/cli.py": "1ee41fb204eba38739f223328796a56cee930f83a5126ebb911df1db6d257756"
+  },
+  "production_source_hashes": {
+    "data_quality_platform/__init__.py": "6f6248cc09a8faa8ef095cb92400030690af59bf7eb78e042b2558a727f04646",
+    "data_quality_platform/alerting/__init__.py": "ed4674ead1ddf4e736ada4e0dfe8d26bab0ecab3cf5172e1c32bfcfef2dece13",
+    "data_quality_platform/alerting/alerts.py": "760338c1beac2ddf829a850abbe3f1243d58f49c5453cfa11c016c5d362a2eec",
+    "data_quality_platform/assurance/__init__.py": "6fbc1dfe7bf281eae1a176a462a527698d006b0b03f59f4aa3161a9018e4e150",
+    "data_quality_platform/assurance/artifact_identity.py": "718397e9d2ec115a22df9e0271e4ee66dadc44c5a5528271729bc63eb7e3b1ca",
+    "data_quality_platform/assurance/claim_graph.py": "2b34abf4bae046db57ea578ae3fb100e72788cb53f55b97ff7ce0459c7e26950",
+    "data_quality_platform/assurance/claims.py": "579edb438d58e2f3e08ac476cb3b2b916b7d9ec21fa9572a899bd537eca286a5",
+    "data_quality_platform/assurance/contradiction_checker.py": "2d2f832cc8dde881d7463fc64430db88b32110bb0ac08c1d6d37127f4acde23b",
+    "data_quality_platform/assurance/evidence_quarantine.py": "60364da33619670f00e9c75e92a7791ffe5abcd494e8d4ed5e768d5697a9510b",
+    "data_quality_platform/assurance/evidence_schema.py": "f9f622ef4548f41c423f2c69a43ee56ecd49c0546042732cf56ceb6c7cb07199",
+    "data_quality_platform/assurance/golden_snapshot.py": "6c434ad56c25fc8a1a04531baaee5e9c55cedbcb70b96e78a576f1217f41f3ad",
+    "data_quality_platform/assurance/integrity.py": "74d6b2d08cb533a70e380acedcdd2b404c71c1bf5f9b80707e5336a64198f3e0",
+    "data_quality_platform/assurance/limitation_registry.py": "7e4296603e865a75db1cfeb4966bf036315df599a6241973ebf2242c33655111",
+    "data_quality_platform/assurance/path_firewall.py": "61cdc2362b5ed5a55fb56285c8e2ba874341ab4771d558716ecb9132fd00323a",
+    "data_quality_platform/assurance/portable_evidence.py": "5e3af6210a968340976f5ef13bb8f44396c07d9caac91aaa83138a49f5cbac33",
+    "data_quality_platform/assurance/release_chain.py": "813b72722071309f4f0bfd53682c78b7ddbc0663d1846537ad80a7b8afbbf852",
+    "data_quality_platform/assurance/release_schema.py": "fcf15ce70bc793292b9f0ab64cdff33e170e0611bf317687f5d806fee4b15024",
+    "data_quality_platform/assurance/release_security.py": "7b09f734ab46f6c1f59f8cdc43ca6839d52cad9601bff5936c6da47985a60db4",
+    "data_quality_platform/assurance/stale_evidence.py": "563bb3a1cb6595f00d7dae1509c1557fe1499235f031e07895518398fa639c65",
+    "data_quality_platform/assurance/status_model.py": "f54c1405f665874d097b382a8a3f0ce432b37873024598e5f9646f7410ad618c",
+    "data_quality_platform/assurance/truth_model.py": "88a950a5fa3833e2231d9de947def6d09cd248996e9bf7006968f548575b821e",
+    "data_quality_platform/audit/__init__.py": "09b05ae5fc942ac294e05db6219283e0a8d351f15f697a84b9a3a45c58e1b9a2",
+    "data_quality_platform/audit/trail.py": "e6b254bdf3d1f58cedeb3a6ac5f4b1bb5d646fe4a2d8d63b4388028b8cfeb754",
+    "data_quality_platform/cleaning/__init__.py": "c0297b57cca31e8eccbbf65c15c0c23fe22ad1098599e36af6262d94422ce920",
+    "data_quality_platform/config/__init__.py": "1f188b346d09df524378fd74f130aaa7f4425ce4ca3c5305af86a9c7af2dde37",
+    "data_quality_platform/config/settings.py": "5a41ece9c11610997de098f7edb717b9b45b5dcb756fd0ede1fe78df4e347787",
+    "data_quality_platform/contracts.py": "b3eea54f0c5142e654cd531c4bb994669a170a7b37060b6bb7d45c4c46fb5d18",
+    "data_quality_platform/evidence/__init__.py": "1ef0c5795b4220aa84fbff44c4971d4179098aaecbf40a47d8358cc48292727c",
+    "data_quality_platform/evidence/manifests.py": "820007875ae8de65d4f6b5c50787febb0ccfe6cf0dc3cd7da17ac7709f35d6b8",
+    "data_quality_platform/flags/__init__.py": "c5f39c9286b9f9c645aba8a499d56d4af2be88b20636589a2e7992ae0527d778",
+    "data_quality_platform/generation/__init__.py": "261b349090fc50b60399d6268ace49c0a37e2906cdec55ef8b32df1d26908b56",
+    "data_quality_platform/generation/synthetic.py": "b81eb9168fb208b4d5d97665191c750c9135e9caf8540b022236925c01ba97e9",
+    "data_quality_platform/geography/__init__.py": "c11d10709431cdfde489da8f4ad94a570217e2f2c44495331f4f3b20540fe63c",
+    "data_quality_platform/geography/canonical.py": "d2efa7ec05f683d3b735cef4f506a58ce3adf4555133da147a5413038ee926d3",
+    "data_quality_platform/geography/references.py": "c4762484b67f8f6bbfc8c424e406aa52f96e224afa036a9ee5e2b158dbc77a00",
+    "data_quality_platform/lineage/__init__.py": "69e0bd5a69ddaa1d5d2d709ee678574574c60037aa0e5fee777a34776139178e",
+    "data_quality_platform/lineage/recorder.py": "560bebf91b95a8c21358d5f3a06562da1b17354067a51b48775eaaf9ea66f36e",
+    "data_quality_platform/monitoring/__init__.py": "4d119548fd659e90096a6748699f76a077e4d72eae50414c207377ee6063a168",
+    "data_quality_platform/monitoring/quality.py": "b9c3174da516a2532a7ff204604159bf48ee2849664533ccca0259f50568e028",
+    "data_quality_platform/profiling/__init__.py": "3988b0f6d74e19832743653defaacee70245893b367ade9f2f82a8b47d164f83",
+    "data_quality_platform/rules/__init__.py": "2f052eac193a2389fd8fd2f8f8ecfa143883305e74907785c777dbfea9e4a328",
+    "data_quality_platform/rules/base.py": "3a2a5793506114b09a7c1db9616ced482c990bdc18da6aa2d2446b282013d0af",
+    "data_quality_platform/rules/registry.py": "bea2ab41d7c3237c322e1b3085b7ec5602152865491c8bc3d6c060e050d8faf5",
+    "data_quality_platform/rules/v1_rules.py": "daef1ded54c7d3c79898a1ba253be2acd5b6120e18b16b09009fdd7be9fc2276",
+    "data_quality_platform/schema/__init__.py": "53afeeeba8a2314536e8f995f492e5dc78b025b9736ecdaa6e52c0360dce1d4b",
+    "data_quality_platform/schema/validator.py": "ecc97c4ad2864fa41c4eaf5e2c326eb7eec38b0ec3c57db9e7d3dfa1f52228a1",
+    "data_quality_platform/security/__init__.py": "8c8728cf6671bed8fb3d45f4a7a0c3347ac03ca82aff6beb09c1b3ff519e170d",
+    "data_quality_platform/security/auth.py": "fe42ac289a642d2037a27154c28e28ed32e3c2d94a1a9a87d0b154b6ff4efaa5",
+    "data_quality_platform/security/pii_masking.py": "48216b4f9035276529b64c1b97d5915fe209edf2e49094b9709831f6a1efc63b",
+    "data_quality_platform/security/pii_scan.py": "a3a8a8ec630176b53f6e4e814e6fd444a9e5841b85b44742d8f52b1fe3468815",
+    "data_quality_platform/storage/__init__.py": "a93b16ab47a4486d851916e8105688cf1705fca8a93d4737b462f3114c05313f",
+    "data_quality_platform/validation/__init__.py": "cd013d8a2292d7617f3994d48ada7fdc19801c099c1c64f9467e049dcfd79e48",
+    "data_quality_platform/validation/chunking.py": "32e21dd232a1828b840eb4470d6b283f72d84108c21fedf33b8cea05ded6f035",
+    "data_quality_platform/validation/engine.py": "14491560f926c9393602ba841f913bb1b846a1a8b70892ac4001beede050f59d",
+    "data_quality_platform/validation/evidence_root.py": "cfdb469fc53360554c3d764e67cba618df83927d7cbab351dfbd537976ee7e23",
+    "data_quality_platform/validation/evidence_validator.py": "70cd0c26a1d5626939e00408cb0a12e28553d99614e784bcbd722ea57ee2d7c9",
+    "data_quality_platform/validation/failure_taxonomy.py": "98697a84b24e1b07d956f5d64904023344211084bb2580f3fa698a0d707394f2",
+    "data_quality_platform/validation/impact_analysis.py": "3631d8498155be5fd8815169ef97d2b2f93fed7ccbb6b391d4a68ff806479783",
+    "data_quality_platform/validation/input_contract.py": "547afa2241afea764dfcd7ed16e70bfcd8388a46a8e7a301918b2a70bf98a359",
+    "data_quality_platform/validation/replay.py": "e3a2aeb32b4951a6861cb2c81a52e73da5a04df75fabb0e24012a0526fba1879",
+    "data_quality_platform/verification/__init__.py": "2132345e3d821a68c9e0ba38422585ad22c0d69e9a203e83cc5e918fdd8ab4a9",
+    "data_quality_platform/verification/decision_provenance.py": "6ad75f7c9137102fc58f2e86f319b7c21a9a10041d021b8ea87279203a20ea00",
+    "data_quality_platform/verification/reference_provenance.py": "0bdf1872411717faf3be6b90cceb5dc0b82e466232e0e34eb318303980a70370",
+    "data_quality_platform/verification/scope_aggregator.py": "3202eb179bdc9316c309848f70b05dd261653d198073ac6ff75c78e92b3960ef",
+    "runner/__init__.py": "7030584db7d1014d82d6103e2bf6ca1edbb2e686bebf685bb952c2c5d8a0a955",
+    "runner/cli.py": "1ee41fb204eba38739f223328796a56cee930f83a5126ebb911df1db6d257756",
+    "airflow/dags/dq_validation_dag.py": "53ff8d3086a3681a9c5bdea572b03c986c5a82adfb1775627c80e0fabacbd23c",
+    "sql/001_create_source.sql": "c55b376ec6ece0518d34ce15c8a14ebe2f78cb82a4a03f23840857b2814ea8cc",
+    "sql/002_create_flag_preview.sql": "ae40ae0d568aac2c44f7730ed6c7432fb4517cd1ce7b3fc518582d0dcb8c7e3d",
+    "sql/003_create_reference_tables.sql": "2c683fb3889e7b0f399a54a24fe265dcc7dba419037712e7163410b2f375fe5a",
+    "sql/004_create_audit_table.sql": "c8673f57a7200a36129672b0386b7f8f0bb1bea293691a3251abaf4006e8117f",
+    "sql/005_create_lineage_table.sql": "cd00603c2765f678bb7ed2aee969320924f54b107c32dc1dde9fafa8f0d25498",
+    "configs/quality.yaml": "c35134ea94f61b4a3441b0459048fea784b90be09e1066f9dc18d6f9bcb29e4f",
+    "pyproject.toml": "4f190654d568fcec67e52b378cb6c0c10d82eeffd4e56cbe8f65bb96c06a8970",
+    "docker-compose.yml": "b59bd7f13b7bae7ec6acac3ecb41e96e71438d4c9b201589f2e37af5e6c6eca4"
+  },
+  "test_baseline": {
+    "collected": 1053,
+    "passed": 1035,
+    "failed": 5,
+    "skipped": 13,
+    "xfailed": 0,
+    "errors": 0,
+    "exit_code": 1
+  },
+  "evidence_inventory": [
+    {
+      "dir": "evidence",
+      "file_count": 0
+    },
+    {
+      "dir": "evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18",
+      "file_count": 0
+    },
+    {
+      "dir": "evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/artifact_identity",
+      "file_count": 1
+    },
+    {
+      "dir": "evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/baseline",
+      "file_count": 1
+    },
+    {
+      "dir": "evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/claim_graph",
+      "file_count": 1
+    },
+    {
+      "dir": "evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/mutation_testing",
+      "file_count": 1
+    },
+    {
+      "dir": "evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/path_forensics",
+      "file_count": 3
+    },
+    {
+      "dir": "evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/portable_evidence",
+      "file_count": 1
+    },
+    {
+      "dir": "evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/portable_evidence/evidence",
+      "file_count": 0
+    },
+    {
+      "dir": "evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/portable_evidence/evidence/validation",
+      "file_count": 0
+    },
+    {
+      "dir": "evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/portable_evidence/evidence/validation/2026-09-18",
+      "file_count": 0
+    },
+    {
+      "dir": "evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/portable_evidence/evidence/validation/2026-09-18/fresh_3m2",
+      "file_count": 0
+    },
+    {
+      "dir": "evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/portable_evidence/evidence/validation/2026-09-18/fresh_3m2/harness",
+      "file_count": 13
+    },
+    {
+      "dir": "evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/portable_evidence/evidence/validation/2026-09-18/fresh_3m2/preflight",
+      "file_count": 6
+    },
+    {
+      "dir": "evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/portable_paths",
+      "file_count": 2
+    },
+    {
+      "dir": "evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/schema_versioning",
+      "file_count": 1
+    },
+    {
+      "dir": "evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/security",
+      "file_count": 1
+    },
+    {
+      "dir": "evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/staging",
+      "file_count": 1
+    },
+    {
+      "dir": "evidence/FINAL_PORTABLE_RELEASE_2026-09-18",
+      "file_count": 0
+    },
+    {
+      "dir": "evidence/FINAL_PORTABLE_RELEASE_2026-09-18/security",
+      "file_count": 1
+    },
+    {
+      "dir": "evidence/bench_quick",
+      "file_count": 5
+    },
+    {
+      "dir": "evidence/dqvp_performance",
+      "file_count": 2
+    },
+    {
+      "dir": "evidence/final_execution",
+      "file_count": 1
+    },
+    {
+      "dir": "evidence/hardening_baseline",
+      "file_count": 0
+    },
+    {
+      "dir": "evidence/mutation_testing",
+      "file_count": 1
+    },
+    {
+      "dir": "evidence/q20_cli",
+      "file_count": 5
+    },
+    {
+      "dir": "evidence/rebuild_baseline",
+      "file_count": 4
+    },
+    {
+      "dir": "evidence/rebuild_verification",
+      "file_count": 1
+    },
+    {
+      "dir": "evidence/release",
+      "file_count": 3
+    },
+    {
+      "dir": "evidence/rt_1k",
+      "file_count": 5
+    },
+    {
+      "dir": "evidence/test_q9",
+      "file_count": 5
+    },
+    {
+      "dir": "evidence/validation",
+      "file_count": 0
+    },
+    {
+      "dir": "evidence/validation/2026-09-18",
+      "file_count": 0
+    },
+    {
+      "dir": "evidence/validation/2026-09-18/fresh_3m2",
+      "file_count": 0
+    },
+    {
+      "dir": "evidence/validation/2026-09-18/fresh_3m2/harness",
+      "file_count": 9
+    },
+    {
+      "dir": "evidence/validation/2026-09-18/fresh_3m2/harness/pass1_engine",
+      "file_count": 6
+    },
+    {
+      "dir": "evidence/validation/2026-09-18/fresh_3m2/harness/pass2_engine",
+      "file_count": 6
+    },
+    {
+      "dir": "evidence/validation/2026-09-18/fresh_3m2/preflight",
+      "file_count": 6
+    }
+  ],
+  "key_evidence_hashes": {
+    "evidence/dqvp_performance/performance_results.json": "80f242b6690b566c7870ed1603ac639ce03f14417cf3307f3c5291ebe85c1330",
+    "evidence/mutation_testing/mutation_results.json": "6fae8de0d0ae99ade4d7b1e28d055b73914bdb2edca3cec4d674df38e528af74",
+    "final_result.json": "106cc6fc58887d1383de4d42dc0a3c477fd08e8408e890ca679c7a00969744fc",
+    "README.md": "18e66889210481cb79a18f32862dc6e19e3c7c9b5f7bb742d9c7b06353c656a6",
+    "RELEASE_NOTES.md": "ea39e2f0e7b0f99ac932306622bd6333d426f8a8e269ae6e6ce5e5ced4dc577b",
+    "DELIVERY_MANIFEST.json": "664d23f20981e12981bc16c3635e3a2e3f5b08335590432067124828d3b081bb"
+  },
+  "environment": {
+    "captured_utc": "2026-09-18T23:42:41Z",
+    "python": {
+      "version": "3.12.14",
+      "implementation": "CPython",
+      "executable_name": "python3"
+    },
+    "os": {
+      "system": "Linux",
+      "release": "5.10.134-013.15.kangaroo.al8.x86_64",
+      "architecture": "x86_64"
+    },
+    "packages": {
+      "pyyaml": "6.0.3",
+      "pytest": "9.0.2"
+    },
+    "dependency_lock_hash": null,
+    "dependency_lock_note": "no requirements lock file is tracked; dependencies declared in pyproject.toml (pyyaml>=6.0, pytest>=7.0 dev)",
+    "locale": "C (unset)",
+    "timezone": "UTC UTC",
+    "timezone_utc_offset_seconds": 0,
+    "execution_mode": "staged local validation (no network, no ClickHouse/Airflow runtime, no SP1/E1 activation)",
+    "reproducibility_claim": "environment-dependent; no claim of environment-independent reproducibility is made beyond what deterministic replay actually proves on this machine",
+    "hypothesis_available": false
+  },
+  "capture_duration_seconds": 33.58
+}

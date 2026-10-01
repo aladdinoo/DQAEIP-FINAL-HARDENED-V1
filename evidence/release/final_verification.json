@@ -1,0 +1,145 @@
+{
+  "report": "DQAEIP final verification pass (complete reload verification)",
+  "generated_utc": "2026-09-19T13:41:32Z",
+  "git_head": "5018547c4c2fe533a0f706b210bb1570129c7d21",
+  "verification_mode": "read-only on the final tree; no third 3M run; the official Run 1 + Run 2 verified in place",
+  "checks_total": 21,
+  "checks_failed": 0,
+  "checks": [
+    {
+      "check": "git HEAD exists",
+      "status": "PASS",
+      "detail": {
+        "head": "5018547c4c2fe533a0f706b210bb1570129c7d21"
+      }
+    },
+    {
+      "check": "tracked tree content-clean (modifications: none)",
+      "status": "PASS",
+      "detail": {
+        "pending": []
+      }
+    },
+    {
+      "check": "frozen business sources byte-identical to baseline",
+      "status": "PASS",
+      "detail": {
+        "mismatched": []
+      }
+    },
+    {
+      "check": "tamper-evident evidence roots recompute (both runs)",
+      "status": "PASS"
+    },
+    {
+      "check": "release schema valid: FINAL_RESULTS.json",
+      "status": "PASS"
+    },
+    {
+      "check": "release schema valid: release_manifest.json",
+      "status": "PASS"
+    },
+    {
+      "check": "release schema valid: evidence/release/reproducibility_manifest.json",
+      "status": "PASS"
+    },
+    {
+      "check": "FINAL_RESULTS claims re-derive from evidence",
+      "status": "PASS",
+      "detail": {
+        "verified": 19,
+        "not_verified": 2
+      }
+    },
+    {
+      "check": "machine-path firewall clean on release artifacts",
+      "status": "PASS",
+      "detail": {
+        "violations": 0,
+        "missing": []
+      }
+    },
+    {
+      "check": "release artifact manifest: terminal, zero drift",
+      "status": "PASS"
+    },
+    {
+      "check": "consistency matrix re-verified: CONSISTENT",
+      "status": "PASS",
+      "detail": {
+        "checks_failed": 0
+      }
+    },
+    {
+      "check": "release gate reproducible (repro-check run: PASS 22/22)",
+      "status": "PASS",
+      "detail": {
+        "canonical": "PASS",
+        "repro_check": "PASS"
+      }
+    },
+    {
+      "check": "run-pair verification report: PASS, zero failed checks",
+      "status": "PASS",
+      "detail": {
+        "checks": 95,
+        "failed": 0
+      }
+    },
+    {
+      "check": "business mutation: 17/17 detected, source restored",
+      "status": "PASS",
+      "detail": {
+        "score": 1.0
+      }
+    },
+    {
+      "check": "assurance mutation: all detected, restoration verified",
+      "status": "PASS",
+      "detail": {
+        "scenarios": 14
+      }
+    },
+    {
+      "check": "test summary: all green, skips explicit only",
+      "status": "PASS",
+      "detail": {
+        "passed": 1089,
+        "skipped": 9
+      }
+    },
+    {
+      "check": "limitation registry valid, zero blocking",
+      "status": "PASS",
+      "detail": {
+        "total": 16,
+        "problems": []
+      }
+    },
+    {
+      "check": "golden snapshot complete, PII/path-free",
+      "status": "PASS"
+    },
+    {
+      "check": "security release report: overall PASS, ZIP scan PASS",
+      "status": "PASS",
+      "detail": {
+        "overall": "PASS",
+        "zip": "VERIFIED"
+      }
+    },
+    {
+      "check": "README/evidence automated consistency: CONSISTENT",
+      "status": "PASS",
+      "detail": {
+        "problems": []
+      }
+    },
+    {
+      "check": "observability status record: 5 dimensions valid, consistent with evidence",
+      "status": "PASS"
+    }
+  ],
+  "final_verdict": "PASS",
+  "final_verdict_note": "PASS means the final tree state is fully coherent: documents, evidence, gate reproducibility, claims, schemas, firewalls and registries all verified from the actual filesystem"
+}

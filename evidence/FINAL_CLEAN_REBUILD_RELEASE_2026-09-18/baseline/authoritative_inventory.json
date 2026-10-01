@@ -1,0 +1,326 @@
+{
+  "authoritative_artifact_count": 28,
+  "classification_counts": {
+    "AUTHORITATIVE": 28,
+    "DERIVED": 23
+  },
+  "classification_taxonomy": {
+    "AUTHORITATIVE": "fresh 2026-09-18 validation evidence \u2014 preserved byte-exact (policy A originals)",
+    "DERIVED": "rebuilt from the new tree in this release"
+  },
+  "full_classification": {
+    "evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/baseline/authoritative_inventory.json": {
+      "classification": "DERIVED",
+      "role": "clean-room release assurance layer (this release)",
+      "sha256": "ef2ce944d95eae671d36919c3a361e19fc1eef995dbd6403b285180c41073271",
+      "size_bytes": 15037
+    },
+    "evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/path_forensics/ABSOLUTE_PATH_INVENTORY.json": {
+      "classification": "DERIVED",
+      "role": "clean-room release assurance layer (this release)",
+      "sha256": "d19582dc61d91f6c86c7b6bbf514c9c666cc2e286208796cb1a69c3bd55b2a7f",
+      "size_bytes": 230088
+    },
+    "evidence/bench_quick/alerts.json": {
+      "classification": "DERIVED",
+      "role": "derived evidence rebuilt from the fresh 3.2M validation",
+      "sha256": "43a3fede6c698cfef50a6447acad2adaa976d4cf92987638a6d3b0a292bcad85",
+      "size_bytes": 1286
+    },
+    "evidence/bench_quick/audit.json": {
+      "classification": "DERIVED",
+      "role": "derived evidence rebuilt from the fresh 3.2M validation",
+      "sha256": "d565048d8238fd6153df8cd66d8b2e53d85ce4fae1f206140780f2e4b7840b8f",
+      "size_bytes": 3094
+    },
+    "evidence/bench_quick/lineage.json": {
+      "classification": "DERIVED",
+      "role": "derived evidence rebuilt from the fresh 3.2M validation",
+      "sha256": "b5640f0760fd0b41d0639a9d3a98bd782a44d031a450d8d95eb584a801c43398",
+      "size_bytes": 259424
+    },
+    "evidence/bench_quick/manifest.json": {
+      "classification": "DERIVED",
+      "role": "derived evidence rebuilt from the fresh 3.2M validation",
+      "sha256": "e0d7452abef1926ce42abb3f8875854fde9950773b6d098789bcf4b0cdeb13f3",
+      "size_bytes": 4300
+    },
+    "evidence/bench_quick/monitoring.json": {
+      "classification": "DERIVED",
+      "role": "derived evidence rebuilt from the fresh 3.2M validation",
+      "sha256": "d68b83e0bdbab1dedca6c94f48d24ad88f45ef44a90696e2289ca739f18fb845",
+      "size_bytes": 714
+    },
+    "evidence/final_execution/rule_matrix.json": {
+      "classification": "AUTHORITATIVE",
+      "role": "fresh 2026-09-18 validation evidence (clean-room rebuild)",
+      "sha256": "ddd370ecf2790af958642f05e2fece979419a00ff27dcd66aa8d4b95f0c301bf",
+      "size_bytes": 10785
+    },
+    "evidence/q20_cli/alerts.json": {
+      "classification": "DERIVED",
+      "role": "derived evidence rebuilt from the fresh 3.2M validation",
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "size_bytes": 2
+    },
+    "evidence/q20_cli/audit.json": {
+      "classification": "DERIVED",
+      "role": "derived evidence rebuilt from the fresh 3.2M validation",
+      "sha256": "a6af1c67be936e49c8dcb233f54498e805936d9632be52aa8e4f7a4806174065",
+      "size_bytes": 3092
+    },
+    "evidence/q20_cli/lineage.json": {
+      "classification": "DERIVED",
+      "role": "derived evidence rebuilt from the fresh 3.2M validation",
+      "sha256": "5e0f023ccdf3f1cdf713c815473e28e94117656461fe3bd7c28b1e45dae36353",
+      "size_bytes": 27628
+    },
+    "evidence/q20_cli/manifest.json": {
+      "classification": "DERIVED",
+      "role": "derived evidence rebuilt from the fresh 3.2M validation",
+      "sha256": "a94a3deb6b010d1963913d2869068496aa9391cb4f8b39eece61c1fa54108de5",
+      "size_bytes": 4248
+    },
+    "evidence/q20_cli/monitoring.json": {
+      "classification": "DERIVED",
+      "role": "derived evidence rebuilt from the fresh 3.2M validation",
+      "sha256": "9e251175f848c10a36440f279b888af165ee4ecbbc23a9043ffafbddc6b3ab43",
+      "size_bytes": 704
+    },
+    "evidence/release/limitation_registry.json": {
+      "classification": "DERIVED",
+      "role": "derived evidence rebuilt from the fresh 3.2M validation",
+      "sha256": "6234053364b4e1697a867ed54750ebd937ab5ea39fca2ecc1da0bc17d0d75aef",
+      "size_bytes": 7902
+    },
+    "evidence/rt_1k/alerts.json": {
+      "classification": "DERIVED",
+      "role": "derived evidence rebuilt from the fresh 3.2M validation",
+      "sha256": "7e75c68e0ac3218686f115a20121c7a90367b3513c743922709634f840ff2a24",
+      "size_bytes": 1270
+    },
+    "evidence/rt_1k/audit.json": {
+      "classification": "DERIVED",
+      "role": "derived evidence rebuilt from the fresh 3.2M validation",
+      "sha256": "afee98ec0680e050b5fa8bc42b650443185e80064d38c7cd76b098b28eab7536",
+      "size_bytes": 3040
+    },
+    "evidence/rt_1k/lineage.json": {
+      "classification": "DERIVED",
+      "role": "derived evidence rebuilt from the fresh 3.2M validation",
+      "sha256": "7211336290a2a0d4301df38925151dd5fcc089fe03909c8faed0e956c1497e13",
+      "size_bytes": 255406
+    },
+    "evidence/rt_1k/manifest.json": {
+      "classification": "DERIVED",
+      "role": "derived evidence rebuilt from the fresh 3.2M validation",
+      "sha256": "d52a481a0ab5aeb900e380520c965fd97c7e1df1118789a60306b40a5a96a712",
+      "size_bytes": 4263
+    },
+    "evidence/rt_1k/monitoring.json": {
+      "classification": "DERIVED",
+      "role": "derived evidence rebuilt from the fresh 3.2M validation",
+      "sha256": "d68b83e0bdbab1dedca6c94f48d24ad88f45ef44a90696e2289ca739f18fb845",
+      "size_bytes": 714
+    },
+    "evidence/test_q9/alerts.json": {
+      "classification": "DERIVED",
+      "role": "derived evidence rebuilt from the fresh 3.2M validation",
+      "sha256": "dea0cdf8e5727b76d1b477a74dfa9822515105a9518b703e890f3b12b559636e",
+      "size_bytes": 1276
+    },
+    "evidence/test_q9/audit.json": {
+      "classification": "DERIVED",
+      "role": "derived evidence rebuilt from the fresh 3.2M validation",
+      "sha256": "8ebaad84c96791c0a4059be73f43d3ee17e7daee0945b571521a55eb110e0a64",
+      "size_bytes": 3050
+    },
+    "evidence/test_q9/lineage.json": {
+      "classification": "DERIVED",
+      "role": "derived evidence rebuilt from the fresh 3.2M validation",
+      "sha256": "fc52da1ac0b151e2ebc5656b3ec16c7c208769876fe44d78a3949a1c79f4bc99",
+      "size_bytes": 59740
+    },
+    "evidence/test_q9/manifest.json": {
+      "classification": "DERIVED",
+      "role": "derived evidence rebuilt from the fresh 3.2M validation",
+      "sha256": "a937fa53dc5478456176b72040dbbdb47d555dc717a09c2a53c478219ee37a71",
+      "size_bytes": 4258
+    },
+    "evidence/test_q9/monitoring.json": {
+      "classification": "DERIVED",
+      "role": "derived evidence rebuilt from the fresh 3.2M validation",
+      "sha256": "1de2b0f70258ac6aa7870c08518fff76be9b4e91aa0bed68e490d1be1ca742d9",
+      "size_bytes": 713
+    },
+    "evidence/validation/2026-09-18/fresh_3m2/harness/FINAL_RESULTS.json": {
+      "classification": "AUTHORITATIVE",
+      "role": "fresh 2026-09-18 validation evidence (clean-room rebuild)",
+      "sha256": "755fa28f224c480e873676b487d4c6babeb0072fff50e47c08104684b6643337",
+      "size_bytes": 16729
+    },
+    "evidence/validation/2026-09-18/fresh_3m2/harness/pass1_cli.json": {
+      "classification": "AUTHORITATIVE",
+      "role": "fresh 2026-09-18 validation evidence (clean-room rebuild)",
+      "sha256": "ad756deb31f1df0f5036e64a32cb8fe8cf9a1b27ca23b146a8961004a58b495d",
+      "size_bytes": 4594
+    },
+    "evidence/validation/2026-09-18/fresh_3m2/harness/pass1_engine/alerts.json": {
+      "classification": "AUTHORITATIVE",
+      "role": "fresh 2026-09-18 validation evidence (clean-room rebuild)",
+      "sha256": "d5047aab37321589b98a4a1bc9e62152182d1843e0b49329e5c947bf6ca9aac9",
+      "size_bytes": 1994
+    },
+    "evidence/validation/2026-09-18/fresh_3m2/harness/pass1_engine/audit.json": {
+      "classification": "AUTHORITATIVE",
+      "role": "fresh 2026-09-18 validation evidence (clean-room rebuild)",
+      "sha256": "e19a2d8f78204ece7e79ec96559f6b8dda69132a98c4e458f3a745b681d13a0f",
+      "size_bytes": 3220
+    },
+    "evidence/validation/2026-09-18/fresh_3m2/harness/pass1_engine/evidence_root.json": {
+      "classification": "AUTHORITATIVE",
+      "role": "fresh 2026-09-18 validation evidence (clean-room rebuild)",
+      "sha256": "8c401782731fe5ee14e21b5135079f9f6de2e8d87f135f68d21ffa6503823fac",
+      "size_bytes": 1212
+    },
+    "evidence/validation/2026-09-18/fresh_3m2/harness/pass1_engine/lineage.json": {
+      "classification": "AUTHORITATIVE",
+      "role": "fresh 2026-09-18 validation evidence (clean-room rebuild)",
+      "sha256": "3f20219ccbe699e0f56153bf6f61da1f20302d9d397dfb9665ad114322858c34",
+      "size_bytes": 264772
+    },
+    "evidence/validation/2026-09-18/fresh_3m2/harness/pass1_engine/manifest.json": {
+      "classification": "AUTHORITATIVE",
+      "role": "fresh 2026-09-18 validation evidence (clean-room rebuild)",
+      "sha256": "b4491b02f1487de936b941301cb86e134cc4e5bee15767395d51ec0669464a9a",
+      "size_bytes": 4423
+    },
+    "evidence/validation/2026-09-18/fresh_3m2/harness/pass1_engine/monitoring.json": {
+      "classification": "AUTHORITATIVE",
+      "role": "fresh 2026-09-18 validation evidence (clean-room rebuild)",
+      "sha256": "25160186c45639feef1a22d280e73c3081c69bbb185dd713330c538280049e09",
+      "size_bytes": 728
+    },
+    "evidence/validation/2026-09-18/fresh_3m2/harness/pass1_generate.json": {
+      "classification": "AUTHORITATIVE",
+      "role": "fresh 2026-09-18 validation evidence (clean-room rebuild)",
+      "sha256": "5d27e27d0948e9fec151111d8680049ce72e84538bc1692217720a45930b6dd1",
+      "size_bytes": 480
+    },
+    "evidence/validation/2026-09-18/fresh_3m2/harness/pass1_result.json": {
+      "classification": "AUTHORITATIVE",
+      "role": "fresh 2026-09-18 validation evidence (clean-room rebuild)",
+      "sha256": "dde3592c46fd48bfa8950ec0ab94a8076b287523770cad7a9dc9919e278aad18",
+      "size_bytes": 7915
+    },
+    "evidence/validation/2026-09-18/fresh_3m2/harness/pass1_runtime_safety_events.json": {
+      "classification": "AUTHORITATIVE",
+      "role": "fresh 2026-09-18 validation evidence (clean-room rebuild)",
+      "sha256": "2fc822ed2ed6cac744ac33bd6e47b6181c1d813064e274ccbd94d97851c0e301",
+      "size_bytes": 23873
+    },
+    "evidence/validation/2026-09-18/fresh_3m2/harness/pass2_cli.json": {
+      "classification": "AUTHORITATIVE",
+      "role": "fresh 2026-09-18 validation evidence (clean-room rebuild)",
+      "sha256": "048c9cbc31777db6da9d9c77dd6afb09c2ea833b489cfbfd62a406c6156a14c5",
+      "size_bytes": 4593
+    },
+    "evidence/validation/2026-09-18/fresh_3m2/harness/pass2_engine/alerts.json": {
+      "classification": "AUTHORITATIVE",
+      "role": "fresh 2026-09-18 validation evidence (clean-room rebuild)",
+      "sha256": "d353c5347e4f7f8c63d669891a0d4583c309df1038e554c929a52ba343b9643b",
+      "size_bytes": 1994
+    },
+    "evidence/validation/2026-09-18/fresh_3m2/harness/pass2_engine/audit.json": {
+      "classification": "AUTHORITATIVE",
+      "role": "fresh 2026-09-18 validation evidence (clean-room rebuild)",
+      "sha256": "53e71c3f29473b1859ca8216f45f49d87bf41e985a38536d44123d1d72763d77",
+      "size_bytes": 3220
+    },
+    "evidence/validation/2026-09-18/fresh_3m2/harness/pass2_engine/evidence_root.json": {
+      "classification": "AUTHORITATIVE",
+      "role": "fresh 2026-09-18 validation evidence (clean-room rebuild)",
+      "sha256": "8ea6e1345baf31dcba48cb8ed0ddd362ecd2fa72db5c992f17863fbba04ae9c7",
+      "size_bytes": 1212
+    },
+    "evidence/validation/2026-09-18/fresh_3m2/harness/pass2_engine/lineage.json": {
+      "classification": "AUTHORITATIVE",
+      "role": "fresh 2026-09-18 validation evidence (clean-room rebuild)",
+      "sha256": "f3526410192b2a343d93232615dffb8766a2b05aba1f6c2051b6a29ba2ec515a",
+      "size_bytes": 264772
+    },
+    "evidence/validation/2026-09-18/fresh_3m2/harness/pass2_engine/manifest.json": {
+      "classification": "AUTHORITATIVE",
+      "role": "fresh 2026-09-18 validation evidence (clean-room rebuild)",
+      "sha256": "96ac5bcc3bbd32a335de72a0bf6eec762615a876187a6837943feeabddc3ff95",
+      "size_bytes": 4423
+    },
+    "evidence/validation/2026-09-18/fresh_3m2/harness/pass2_engine/monitoring.json": {
+      "classification": "AUTHORITATIVE",
+      "role": "fresh 2026-09-18 validation evidence (clean-room rebuild)",
+      "sha256": "25160186c45639feef1a22d280e73c3081c69bbb185dd713330c538280049e09",
+      "size_bytes": 728
+    },
+    "evidence/validation/2026-09-18/fresh_3m2/harness/pass2_generate.json": {
+      "classification": "AUTHORITATIVE",
+      "role": "fresh 2026-09-18 validation evidence (clean-room rebuild)",
+      "sha256": "97120027c82217a467686856ae5cfd42fdb299df31568c577610e1e6a5d0c6f5",
+      "size_bytes": 480
+    },
+    "evidence/validation/2026-09-18/fresh_3m2/harness/pass2_result.json": {
+      "classification": "AUTHORITATIVE",
+      "role": "fresh 2026-09-18 validation evidence (clean-room rebuild)",
+      "sha256": "9c92d21cd5a6d636d355bf867508cb7a9501275e1adb2a004fda0f6cfe34157f",
+      "size_bytes": 7914
+    },
+    "evidence/validation/2026-09-18/fresh_3m2/harness/pass2_runtime_safety_events.json": {
+      "classification": "AUTHORITATIVE",
+      "role": "fresh 2026-09-18 validation evidence (clean-room rebuild)",
+      "sha256": "0a26ed04c1e0d711a1978bd05a0fc537a92fd19698a89af843ea0601d8d460bc",
+      "size_bytes": 23873
+    },
+    "evidence/validation/2026-09-18/fresh_3m2/preflight/alerts.json": {
+      "classification": "AUTHORITATIVE",
+      "role": "fresh 2026-09-18 validation evidence (clean-room rebuild)",
+      "sha256": "64f0426854da5e1e50ee041bb2330e38787b9ba06563ee0c1c23f0cc7f9d7deb",
+      "size_bytes": 1970
+    },
+    "evidence/validation/2026-09-18/fresh_3m2/preflight/audit.json": {
+      "classification": "AUTHORITATIVE",
+      "role": "fresh 2026-09-18 validation evidence (clean-room rebuild)",
+      "sha256": "e909d7d646500a4c528e37c23a2a14b8a1fa13c554b06c6c64d741e95613413e",
+      "size_bytes": 3207
+    },
+    "evidence/validation/2026-09-18/fresh_3m2/preflight/lineage.json": {
+      "classification": "AUTHORITATIVE",
+      "role": "fresh 2026-09-18 validation evidence (clean-room rebuild)",
+      "sha256": "e20ecdc63fc046a4bc23ae8cacacddcf894dc95fefab92913f022023d93d8a6d",
+      "size_bytes": 262830
+    },
+    "evidence/validation/2026-09-18/fresh_3m2/preflight/manifest.json": {
+      "classification": "AUTHORITATIVE",
+      "role": "fresh 2026-09-18 validation evidence (clean-room rebuild)",
+      "sha256": "ab26687fbfe5543e77298b0595fb732c6f23f82b1aa078a0d68ba7c68b930ea2",
+      "size_bytes": 4481
+    },
+    "evidence/validation/2026-09-18/fresh_3m2/preflight/monitoring.json": {
+      "classification": "AUTHORITATIVE",
+      "role": "fresh 2026-09-18 validation evidence (clean-room rebuild)",
+      "sha256": "f182cb0ebed056f9aabe3f21dd5360462dcdd31bd9a68d51e4a248f38d88e7c9",
+      "size_bytes": 722
+    },
+    "evidence/validation/2026-09-18/fresh_3m2/preflight/preflight_record.json": {
+      "classification": "AUTHORITATIVE",
+      "role": "fresh 2026-09-18 validation evidence (clean-room rebuild)",
+      "sha256": "d827d51270c235c125495aa410d1c487ecef174db7e49f2b3a4784d7cc7202c2",
+      "size_bytes": 529
+    }
+  },
+  "generated_utc": "2026-09-18T23:30:19Z",
+  "git_head": "dafea63318b468929c7606681867ecf79f711094",
+  "report": "CLEAN-ROOM classification inventory (current tree)",
+  "stale_note": null,
+  "unknown_files": 0,
+  "unknown_policy": "clean-room tree: no UNKNOWN artifacts; the pre-rebuild inventory was deleted with the old evidence tree",
+  "update_id": "DQAEIP-FINAL-CLEAN-REBUILD-RELEASE-2026-09-18"
+}

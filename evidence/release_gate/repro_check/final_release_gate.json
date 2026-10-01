@@ -1,0 +1,564 @@
+{
+  "release_gate": "scripts/release_gate.py",
+  "gate_version": "3.0.0",
+  "generated_utc": "2026-09-19T13:37:21Z",
+  "environment_fingerprint": {
+    "python": "3.12.14",
+    "os": "Linux 5.10.134-013.15.kangaroo.al8.x86_64 (x86_64)",
+    "execution_mode": "local staged validation; no network, no ClickHouse/Airflow runtime, SP1/E1 inactive"
+  },
+  "fail_closed_statement": "A gate result is PASS only when its own evidence proves it. Missing evidence, unreadable evidence, or any exception is a FAIL \u2014 never a skip. The overall verdict is PASS only when all 22 gates PASS.",
+  "gates": [
+    {
+      "gate": "repository_integrity",
+      "status": "PASS",
+      "evidence": "HEAD f800a50b2984, clean outside evidence/",
+      "duration_seconds": 0.01,
+      "details": {
+        "git_context_available": true,
+        "head": "f800a50b298444507aa55bfad4811ceabcd56a36",
+        "branch": "main",
+        "tracked_changes_outside_evidence": [],
+        "evidence_tracked_changes": []
+      }
+    },
+    {
+      "gate": "unit_tests",
+      "status": "PASS",
+      "evidence": "542 passed / 0 skipped / 0 failed",
+      "duration_seconds": 7.85,
+      "details": {
+        "path": "tests/unit",
+        "exit_code": 0,
+        "passed": 542,
+        "failed": 0,
+        "skipped": 0
+      }
+    },
+    {
+      "gate": "integration_tests",
+      "status": "PASS",
+      "evidence": "24 passed / 0 skipped / 0 failed",
+      "duration_seconds": 3.23,
+      "details": {
+        "path": "tests/integration",
+        "exit_code": 0,
+        "passed": 24,
+        "failed": 0,
+        "skipped": 0
+      }
+    },
+    {
+      "gate": "contract_tests",
+      "status": "PASS",
+      "evidence": "22 passed / 0 skipped / 0 failed",
+      "duration_seconds": 2.26,
+      "details": {
+        "path": "tests/contract",
+        "exit_code": 0,
+        "passed": 22,
+        "failed": 0,
+        "skipped": 0
+      }
+    },
+    {
+      "gate": "golden_tests",
+      "status": "PASS",
+      "evidence": "117 passed / 7 skipped / 0 failed",
+      "duration_seconds": 3.25,
+      "details": {
+        "path": "tests/golden",
+        "exit_code": 0,
+        "passed": 117,
+        "failed": 0,
+        "skipped": 7
+      }
+    },
+    {
+      "gate": "property_tests",
+      "status": "PASS",
+      "evidence": "9 passed / 0 skipped / 0 failed",
+      "duration_seconds": 12.5,
+      "details": {
+        "path": "tests/property",
+        "exit_code": 0,
+        "passed": 9,
+        "failed": 0,
+        "skipped": 0
+      }
+    },
+    {
+      "gate": "differential_validation",
+      "status": "PASS",
+      "evidence": "engine vs independent oracle: 10 consistency tests green (incl. 5000-row random battery)",
+      "duration_seconds": 3.61,
+      "details": {
+        "path": "tests/unit/test_rule_oracle_consistency.py",
+        "exit_code": 0,
+        "passed": 10,
+        "failed": 0,
+        "skipped": 0
+      }
+    },
+    {
+      "gate": "mutation_testing",
+      "status": "PASS",
+      "evidence": "17/17 mutants detected, score 1.0, source restored",
+      "duration_seconds": 47.22,
+      "details": {
+        "mutants_total": 17,
+        "mutants_detected": 17,
+        "mutants_survived": 0,
+        "mutation_score": 1.0,
+        "source_restored_exactly": true,
+        "source_sha256_before": "daef1ded54c7d3c79898a1ba253be2acd5b6120e18b16b09009fdd7be9fc2276",
+        "source_sha256_after": "daef1ded54c7d3c79898a1ba253be2acd5b6120e18b16b09009fdd7be9fc2276"
+      }
+    },
+    {
+      "gate": "replay",
+      "status": "PASS",
+      "evidence": "2 runs byte-identical + nondeterministic registry rejected",
+      "duration_seconds": 75.33,
+      "details": {
+        "runs": 2,
+        "input_sha256": "9d96971f4123ef879abb3ad0e0e9e87874b4ead3720d9a36a0581f7546abb275",
+        "input_row_count": 5000,
+        "byte_identical_output": true,
+        "mismatches": [],
+        "nondeterministic_registry_rejected": true
+      }
+    },
+    {
+      "gate": "evidence_validation",
+      "status": "PASS",
+      "evidence": "3M two-run evidence validated + tamper-evident roots verified + baseline intact",
+      "duration_seconds": 0.01,
+      "details": {
+        "three_m_evidence_dir": "evidence/validation/2026-09-19/fresh_3m2",
+        "final_status": "PASS",
+        "gates_all_true": true,
+        "pass1_engine_validation": true,
+        "pass1_engine_by_design_absent_staging": [
+          "generated_files.output path absent: 'data/generated/fresh_3m2_regression/consumer_3m_seed_20260918_pass1_out.csv'"
+        ],
+        "pass1_engine_evidence_root": true,
+        "pass2_engine_validation": true,
+        "pass2_engine_by_design_absent_staging": [
+          "generated_files.output path absent: 'data/generated/fresh_3m2_regression/consumer_3m_seed_20260918_pass2_out.csv'"
+        ],
+        "pass2_engine_evidence_root": true,
+        "hardening_baseline_manifest_intact": true,
+        "by_design_exception_rule": "output CSVs under data/generated/ (gitignored staging, hash-anchored) may be absent ONLY when the FINAL_RESULTS determinism gate is proven true and the manifest's recorded output SHA equals the byte-proven output SHA"
+      }
+    },
+    {
+      "gate": "provenance_validation",
+      "status": "PASS",
+      "evidence": "decision provenance chain resolves \"why did this row get this flag\"",
+      "duration_seconds": 0.0,
+      "details": {
+        "resolved_row_number": 2,
+        "resolved_rule_id": "proposed_email_export_eligible",
+        "chain_keys_present": 8,
+        "explanation_chars": 706
+      }
+    },
+    {
+      "gate": "reference_validation",
+      "status": "PASS",
+      "evidence": "all production references VERIFIED with hashes; SP1 EXPERIMENTAL; DL fixture MISSING (not fabricated)",
+      "duration_seconds": 0.0,
+      "details": {
+        "references": {
+          "state_zip_prefix_map_v1": {
+            "operational": "LOCAL",
+            "enterprise": "VERIFIED",
+            "sha256": true,
+            "row_count": 51
+          },
+          "suspicious_name_patterns_v1": {
+            "operational": "LOCAL",
+            "enterprise": "VERIFIED",
+            "sha256": true,
+            "row_count": 19
+          },
+          "email_syntax_regex_v1": {
+            "operational": "LOCAL",
+            "enterprise": "VERIFIED",
+            "sha256": true,
+            "row_count": 1
+          },
+          "sp1_two_reference_provider": {
+            "operational": "EXPERIMENTAL",
+            "enterprise": "EXPERIMENTAL",
+            "sha256": true,
+            "row_count": 0
+          },
+          "dl_geography_cases_company_fixture": {
+            "operational": "UNVERIFIED",
+            "enterprise": "MISSING",
+            "sha256": false,
+            "row_count": 0
+          }
+        },
+        "rule_reference_map_rules": 8,
+        "unverified_count": 1
+      }
+    },
+    {
+      "gate": "safety_checks",
+      "status": "PASS",
+      "evidence": "fail-closed gates green; SP1 inactive; no ClickHouse client import in production code",
+      "duration_seconds": 2.82,
+      "details": {
+        "path": "tests/safety",
+        "exit_code": 0,
+        "passed": 24,
+        "failed": 0,
+        "skipped": 0,
+        "boundaries": {
+          "sp1_registered_in_required_rules": false,
+          "clickhouse_client_imports_in_production_code": [],
+          "note": "config/settings.py contains documented ClickHouse configuration stubs (never connected); the boundary checked here is actual client imports/connection code"
+        }
+      }
+    },
+    {
+      "gate": "pii_evidence_scan",
+      "status": "PASS",
+      "evidence": "evidence tree PASS (0 prohibited); release documents portable",
+      "duration_seconds": 14.5,
+      "details": {
+        "evidence_tree": {
+          "verdict": "PASS",
+          "scanned_files": 295,
+          "prohibited_count": 0,
+          "review_required_count": 116
+        },
+        "review_adjudication": "REVIEW_REQUIRED findings in evidence/ are (a) execution-time absolute paths recorded by the engine's own manifests as provenance \u2014 immutable historical records, and (b) phone-like strings in synthetic CSV evidence produced by the deterministic generator. Neither is raw personal data; both are documented here rather than silently suppressed.",
+        "release_document_findings": []
+      }
+    },
+    {
+      "gate": "performance_regression",
+      "status": "PASS",
+      "evidence": "1K/10K/100K/1M vs baseline: clean",
+      "duration_seconds": 83.58,
+      "details": {
+        "thresholds": {
+          "warn": 0.1,
+          "fail": 0.2
+        },
+        "comparison": {
+          "1000": {
+            "baseline_rps": 30516.0,
+            "current_rps": 30203.5,
+            "degradation_pct": 1.02,
+            "baseline_peak_rss_mb": 23.17,
+            "current_peak_rss_mb": 23.12,
+            "rss_growth_pct": -0.22
+          },
+          "10000": {
+            "baseline_rps": 30200.1,
+            "current_rps": 29547.4,
+            "degradation_pct": 2.16,
+            "baseline_peak_rss_mb": 29.16,
+            "current_peak_rss_mb": 29.14,
+            "rss_growth_pct": -0.07
+          },
+          "100000": {
+            "baseline_rps": 28945.3,
+            "current_rps": 28430.4,
+            "degradation_pct": 1.78,
+            "baseline_peak_rss_mb": 96.68,
+            "current_peak_rss_mb": 96.58,
+            "rss_growth_pct": -0.1
+          },
+          "1000000": {
+            "baseline_rps": 27709.4,
+            "current_rps": 26809.9,
+            "degradation_pct": 3.25,
+            "baseline_peak_rss_mb": 750.41,
+            "current_peak_rss_mb": 750.3,
+            "rss_growth_pct": -0.01
+          }
+        },
+        "warnings": [],
+        "fresh_results_file": "evidence/release_gate/repro_check/performance_results_current.json"
+      }
+    },
+    {
+      "gate": "production_source_integrity",
+      "status": "PASS",
+      "evidence": "frozen business sources byte-identical; delta = authorized 17 file(s)",
+      "duration_seconds": 0.0,
+      "details": {
+        "frozen_files_checked": [
+          "data_quality_platform/rules/v1_rules.py",
+          "data_quality_platform/rules/registry.py",
+          "data_quality_platform/rules/base.py",
+          "data_quality_platform/contracts.py",
+          "data_quality_platform/validation/engine.py",
+          "data_quality_platform/generation/synthetic.py"
+        ],
+        "modified_vs_baseline": [
+          "data_quality_platform/assurance/claims.py",
+          "data_quality_platform/assurance/contradiction_checker.py",
+          "data_quality_platform/assurance/evidence_quarantine.py",
+          "data_quality_platform/assurance/evidence_schema.py",
+          "data_quality_platform/assurance/golden_snapshot.py",
+          "data_quality_platform/assurance/integrity.py",
+          "data_quality_platform/assurance/release_chain.py"
+        ],
+        "added_vs_baseline": [
+          "data_quality_platform/hardening/__init__.py",
+          "data_quality_platform/hardening/atomic_commit.py",
+          "data_quality_platform/hardening/authorization.py",
+          "data_quality_platform/hardening/checkpoint_contract.py",
+          "data_quality_platform/hardening/idempotency.py",
+          "data_quality_platform/hardening/input_contract.py",
+          "data_quality_platform/hardening/pipeline.py",
+          "data_quality_platform/hardening/reference_data.py",
+          "data_quality_platform/hardening/resource_guard.py",
+          "data_quality_platform/hardening/schema_guard.py"
+        ],
+        "removed_vs_baseline": [],
+        "authorized_delta": [
+          "data_quality_platform/assurance/__init__.py",
+          "data_quality_platform/assurance/artifact_identity.py",
+          "data_quality_platform/assurance/claim_graph.py",
+          "data_quality_platform/assurance/claims.py",
+          "data_quality_platform/assurance/contradiction_checker.py",
+          "data_quality_platform/assurance/evidence_quarantine.py",
+          "data_quality_platform/assurance/evidence_schema.py",
+          "data_quality_platform/assurance/golden_snapshot.py",
+          "data_quality_platform/assurance/integrity.py",
+          "data_quality_platform/assurance/limitation_registry.py",
+          "data_quality_platform/assurance/path_firewall.py",
+          "data_quality_platform/assurance/portable_evidence.py",
+          "data_quality_platform/assurance/release_chain.py",
+          "data_quality_platform/assurance/release_schema.py",
+          "data_quality_platform/assurance/release_security.py",
+          "data_quality_platform/assurance/stale_evidence.py",
+          "data_quality_platform/assurance/status_model.py",
+          "data_quality_platform/assurance/truth_model.py",
+          "data_quality_platform/hardening/__init__.py",
+          "data_quality_platform/hardening/atomic_commit.py",
+          "data_quality_platform/hardening/authorization.py",
+          "data_quality_platform/hardening/checkpoint_contract.py",
+          "data_quality_platform/hardening/idempotency.py",
+          "data_quality_platform/hardening/input_contract.py",
+          "data_quality_platform/hardening/pipeline.py",
+          "data_quality_platform/hardening/reference_data.py",
+          "data_quality_platform/hardening/resource_guard.py",
+          "data_quality_platform/hardening/schema_guard.py",
+          "data_quality_platform/security/pii_scan.py",
+          "data_quality_platform/validation/chunking.py",
+          "data_quality_platform/validation/evidence_root.py",
+          "data_quality_platform/validation/failure_taxonomy.py",
+          "data_quality_platform/verification/reference_provenance.py"
+        ],
+        "unauthorized_delta": []
+      }
+    },
+    {
+      "gate": "assurance_tests",
+      "status": "PASS",
+      "evidence": "316 passed / 0 skipped / 0 failed (false-PASS prevention battery)",
+      "duration_seconds": 6.11,
+      "details": {
+        "path": "tests/assurance",
+        "exit_code": 0,
+        "passed": 316,
+        "failed": 0,
+        "skipped": 0
+      }
+    },
+    {
+      "gate": "machine_path_firewall",
+      "status": "PASS",
+      "evidence": "zero machine-local paths in release-facing artifacts",
+      "duration_seconds": 0.02,
+      "details": {
+        "scanned": [
+          "FINAL_RESULTS.json",
+          "final_result.json",
+          "release_manifest.json",
+          "README.md",
+          "RELEASE_NOTES.md",
+          "DELIVERY_MANIFEST.json",
+          "evidence/release/reproducibility_manifest.json",
+          "evidence/release/golden_release_snapshot.json",
+          "evidence/release/limitation_registry.json",
+          "evidence/release/release_evidence_model.json",
+          "evidence/release/claim_provenance.json",
+          "evidence/release/consistency_matrix.json",
+          "evidence/release/assurance_mutation.json"
+        ],
+        "missing": [],
+        "violation_count": 0,
+        "rule_catalog": [
+          "posix_home",
+          "macos_users",
+          "root_home",
+          "mounted_volume",
+          "machine_tmp",
+          "system_var",
+          "service_tree",
+          "windows_drive",
+          "unc_share",
+          "tilde_user",
+          "tilde_named_user",
+          "dqvp_work_dirname"
+        ]
+      }
+    },
+    {
+      "gate": "negative_release_gate",
+      "status": "PASS",
+      "evidence": "14/14 controlled failures rejected; restoration byte-exact",
+      "duration_seconds": 0.0,
+      "details": {
+        "scenarios_total": 14,
+        "scenarios_detected": 14,
+        "mutation_score": 1.0,
+        "restoration_verified": true,
+        "required_scenario_coverage": [
+          "A1",
+          "A10",
+          "A11",
+          "A2",
+          "A3",
+          "A4",
+          "A5",
+          "A6",
+          "A7",
+          "A8",
+          "A9",
+          "B1",
+          "B2",
+          "B3"
+        ],
+        "missing_scenarios": []
+      }
+    },
+    {
+      "gate": "claim_provenance",
+      "status": "PASS",
+      "evidence": "19/21 claims verified; 2 honestly NOT_VERIFIED (never PASS)",
+      "duration_seconds": 0.0,
+      "details": {
+        "claims_total": 21,
+        "claims_verified": 19,
+        "claims_not_verified": 2,
+        "recheck_passed": true
+      }
+    },
+    {
+      "gate": "consistency_matrix",
+      "status": "PASS",
+      "evidence": "all chain edges verified; document identities consistent with run evidence; contradiction checker CONSISTENT",
+      "duration_seconds": 0.18,
+      "details": {
+        "edges": {
+          "source_to_git": true,
+          "git_to_rules": true,
+          "rules_to_input": true,
+          "input_to_runs": true,
+          "run_to_run": true,
+          "runs_to_oracle": true,
+          "oracle_to_replay": true,
+          "replay_to_evidence": true,
+          "evidence_to_root": true,
+          "root_to_gate": true,
+          "gate_to_results": true,
+          "results_to_docs": true
+        },
+        "verdict": "VERIFIED",
+        "final_results_identity_consistent": true,
+        "contradiction_check_verdict": "CONSISTENT",
+        "contradiction_count": 0,
+        "contradiction_check_docs_scanned": 24
+      }
+    },
+    {
+      "gate": "absolute_path_release_gate",
+      "status": "PASS",
+      "evidence": "portable release evidence machine-path free (0 violations)",
+      "duration_seconds": 0.32,
+      "details": {
+        "verdict": "PASS",
+        "violation_count": 0,
+        "scanned_file_count": 76,
+        "exceptions_granted": [
+          "evidence/hardening_baseline/test_baseline.txt",
+          "evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/path_forensics/ABSOLUTE_PATH_INVENTORY.json",
+          "evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/path_forensics/path_inventory_UPDATE-V2.json",
+          "evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/path_forensics/json_semantic_diff_UPDATE-V2.json",
+          "evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/release_gate/absolute_path_gate_report.json",
+          "evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/staging/rebuild_failure.log"
+        ],
+        "missing_scope_entries": [],
+        "registry_problems": []
+      }
+    }
+  ],
+  "gate_count": 22,
+  "gate_counts": {
+    "pass": 22,
+    "fail": 0
+  },
+  "failure_taxonomy": {
+    "taxonomy_version": "1.0.0",
+    "failure_classes": [
+      "DATA_ERROR",
+      "CONTRACT_ERROR",
+      "CONFIG_ERROR",
+      "RULE_ERROR",
+      "REFERENCE_ERROR",
+      "EVIDENCE_ERROR",
+      "NON_DETERMINISM",
+      "SECURITY_ERROR",
+      "PERFORMANCE_ERROR",
+      "ENVIRONMENT_ERROR",
+      "INFRASTRUCTURE_ERROR",
+      "AUTHORIZATION_ERROR",
+      "REVIEW_REQUIRED"
+    ],
+    "severities": [
+      "BLOCKER",
+      "MAJOR",
+      "MINOR"
+    ],
+    "class_descriptions": {
+      "DATA_ERROR": "input data violates structural expectations (encoding, ragged rows, NUL bytes, unreadable file)",
+      "CONTRACT_ERROR": "input/output contract violation (columns, order, duplicates, schema version, identifier sanity)",
+      "CONFIG_ERROR": "configuration malformed, incompatible, or missing required keys/threshold ranges",
+      "RULE_ERROR": "rule registry or rule execution defect (missing rule, wrong version, unexpected exception)",
+      "REFERENCE_ERROR": "reference data missing, invalid, hash-mismatched, or unverifiable for a decision that requires it",
+      "EVIDENCE_ERROR": "evidence artifact missing, malformed, internally inconsistent, or tamper-detected",
+      "NON_DETERMINISM": "deterministic replay produced different results (hashes, counts, or bytes)",
+      "SECURITY_ERROR": "security boundary violation (PII in evidence, secrets, unauthorized activation/mutation attempt)",
+      "PERFORMANCE_ERROR": "performance regression beyond the configured FAIL threshold",
+      "ENVIRONMENT_ERROR": "execution environment unsuitable or unverifiable (python version, missing dependency, resource limits)",
+      "INFRASTRUCTURE_ERROR": "external infrastructure unavailable or not exercised (ClickHouse, Airflow runtime, network)",
+      "AUTHORIZATION_ERROR": "an operation requires explicit authorization that is not present (e.g. activation of an experimental component outside its authorized scope, or production mutation)",
+      "REVIEW_REQUIRED": "behavior is ambiguous or disputed; business-rule adjudication by the contract owner is required before any change"
+    },
+    "default_for_unknown_exception": "REVIEW_REQUIRED",
+    "record_schema": [
+      "failure_class",
+      "severity",
+      "gate",
+      "reason",
+      "evidence",
+      "remediation",
+      "recorded_utc",
+      "exception (optional)"
+    ]
+  },
+  "failures": [],
+  "overall_verdict": "PASS",
+  "total_duration_seconds": 262.82
+}

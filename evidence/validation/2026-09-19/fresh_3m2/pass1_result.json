@@ -1,0 +1,145 @@
+{
+  "pass": "pass1",
+  "checker_version": "2.0.0 (fail-closed final-verdict hardening, Dave review)",
+  "script_sha256": "0ef7c10c14a1df317c23cb0dfc73b3a60c2257c064b35080d694e5fe8bc50d84",
+  "git_commit": "fb4df927baf9e43735ac8facde7c5ecbd2a5f187",
+  "blocked": false,
+  "cli": {
+    "command": "/home/z/my-project/dqvp-work/repo/.venv/bin/python /home/z/my-project/dqvp-work/repo/scripts/final_3m_runtime_safety_wrapper.py --events-out evidence/validation/2026-09-19/fresh_3m2/pass1_runtime_safety_events.json --max-events 50000 -- validate --csv data/generated/fresh_3m2_regression/consumer_3m_seed_20260918_pass1.csv --output data/generated/fresh_3m2_regression/consumer_3m_seed_20260918_pass1_out.csv --run-id final_3m_pass1 --evidence-dir evidence/validation/2026-09-19/fresh_3m2/pass1_engine",
+    "canonical_command": "/home/z/my-project/dqvp-work/repo/.venv/bin/python -m runner.cli validate --csv data/generated/fresh_3m2_regression/consumer_3m_seed_20260918_pass1.csv --output data/generated/fresh_3m2_regression/consumer_3m_seed_20260918_pass1_out.csv --run-id final_3m_pass1 --evidence-dir evidence/validation/2026-09-19/fresh_3m2/pass1_engine",
+    "wrapper_script": "scripts/final_3m_runtime_safety_wrapper.py",
+    "returncode": 0,
+    "stdout": "Input contract: PASS (3200000 rows, 33 columns, id scan 500000 rows)\n[ALERT WARNING] sla_breach: SLA breach for completeness: score=0.8603, threshold=0.95\n[ALERT WARNING] sla_breach: SLA breach for validity: score=0.8297, threshold=0.95\n[ALERT WARNING] sla_breach: SLA breach for consistency: score=0.8565, threshold=0.9\n[ALERT WARNING] sla_breach: SLA breach for accuracy: score=0.7619, threshold=0.9\n[ALERT WARNING] sla_breach: SLA breach for geography_quality: score=0.8565, threshold=0.9\n[ALERT WARNING] sla_breach: SLA breach for email_quality: score=0.8297, threshold=0.95\nValidation PASSED: 3200000 rows in, 3200000 rows out\n  Run ID: final_3m_pass1\n  Duration: 115.65s\n  Monitoring score: 0.8743\n  SLA passed: False\n  Reconciliation passed: True\n  Evidence: evidence/validation/2026-09-19/fresh_3m2/pass1_engine\n    first_name_cleaning_candidate: 506073\n    last_name_cleaning_candidate: 255805\n    name_cleaning_candidate: 3619\n    email_blank: 256310\n    email_syntax_failure: 288653\n    proposed_email_export_eligible: 2655037\n    zip_state_assessable: 2954329\n    geography_mismatch_candidate: 424088\n",
+    "stderr": "<frozen runpy>:128: RuntimeWarning: 'runner.cli' found in sys.modules after import of package 'runner', but prior to execution of 'runner.cli'; this may result in unpredictable behaviour\n",
+    "duration_seconds": 157.005
+  },
+  "dataset": {
+    "path": "data/generated/fresh_3m2_regression/consumer_3m_seed_20260918_pass1.csv",
+    "rows": 3200000,
+    "seed": 20260918,
+    "columns": 33,
+    "size_bytes": 783406620,
+    "sha256": "59624a53c72f908f1dde673ceecf59e0662ae721bb8f9af7e165acba5318d153",
+    "sha256_after_validation": "59624a53c72f908f1dde673ceecf59e0662ae721bb8f9af7e165acba5318d153",
+    "generation_seconds": 86.898
+  },
+  "output": {
+    "path": "data/generated/fresh_3m2_regression/consumer_3m_seed_20260918_pass1_out.csv",
+    "rows": 3200000,
+    "columns": 41,
+    "size_bytes": 834606817,
+    "sha256": "b72adc235160a86e0b99a08f988dd0bb5f2cff82bbe5b5d28ea07c5a5719329a"
+  },
+  "verification": {
+    "schema_status": "PASS",
+    "row_count_status": "PASS",
+    "column_count_status": "PASS",
+    "column_order_status": "PASS",
+    "row_identity_status": "PASS",
+    "row_ordering_status": "PASS",
+    "source_values_preserved_status": "PASS",
+    "output_shape_status": "PASS",
+    "flag_domain_status": "PASS",
+    "oracle_comparisons": 25600000,
+    "oracle_mismatches": 0,
+    "mismatches_by_rule": {
+      "first_name_cleaning_candidate": 0,
+      "last_name_cleaning_candidate": 0,
+      "name_cleaning_candidate": 0,
+      "email_blank": 0,
+      "email_syntax_failure": 0,
+      "proposed_email_export_eligible": 0,
+      "zip_state_assessable": 0,
+      "geography_mismatch_candidate": 0
+    },
+    "first_mismatches": [],
+    "flag_totals": {
+      "first_name_cleaning_candidate": 506073,
+      "last_name_cleaning_candidate": 255805,
+      "name_cleaning_candidate": 3619,
+      "email_blank": 256310,
+      "email_syntax_failure": 288653,
+      "proposed_email_export_eligible": 2655037,
+      "zip_state_assessable": 2954329,
+      "geography_mismatch_candidate": 424088
+    },
+    "input_rows": 3200000,
+    "output_rows": 3200000,
+    "extra_input_rows_after_lockstep": 0,
+    "extra_output_rows_after_lockstep": 0,
+    "verify_duration_seconds": 67.77
+  },
+  "sp1_frozen": {
+    "status": "PASS",
+    "expected_names_verified": true,
+    "expected_hashes_verified": true,
+    "secondary_full_hash_match": null,
+    "pinned_source": "evidence/final_execution/rule_matrix.json",
+    "manifest_rule_names": [
+      "email_blank",
+      "email_syntax_failure",
+      "first_name_cleaning_candidate",
+      "geography_mismatch_candidate",
+      "last_name_cleaning_candidate",
+      "name_cleaning_candidate",
+      "proposed_email_export_eligible",
+      "zip_state_assessable"
+    ],
+    "mismatched_rules": {},
+    "reason": "manifest rule names and implementation hashes match the pinned frozen baseline (exactly the 8 frozen V1 rules executed; SP1 successor layer absent)",
+    "manifest_rule_hashes": {
+      "first_name_cleaning_candidate": "575e9d4588334d364bdcfae6ca3c44b9bf35120a371b78fecfde8ee19373ca69",
+      "last_name_cleaning_candidate": "c553b7f4484b54135e2b84c6b37a84b15df328544256577984e61f6ede900122",
+      "name_cleaning_candidate": "3a128ec85d196cd3a42720347ba8790f5fbf0f386bd617e4ec508ee050b661c8",
+      "email_blank": "157ccc2127334bac03534f80868a3d7ea3bc8df77c132e8c237874321164f2bc",
+      "email_syntax_failure": "5caaba13a73c90c5aac7a52cf756713c8ecc3dc73d30c2949206efa8d2b712f7",
+      "proposed_email_export_eligible": "6732e6bfed6fae3c23439f0e69b5c39e2843a5b74f2f8f3fdaf6ad5d536da98c",
+      "zip_state_assessable": "e7730c1b848f32790a56bfb79f7ef5dbc8c88b3919f9903421adc7dde5393885",
+      "geography_mismatch_candidate": "7967b59ef7a14b83284a12eb298d63c6140e0837bfafdf3ac4e758baf74c4e93"
+    }
+  },
+  "runtime_safety": {
+    "status": "PASS",
+    "reason": "runtime-verified: 0 socket events, 0 process-exec events, 6 filesystem mutations all within the repository root",
+    "measurement": "CPython audit-hook runtime instrumentation of the production CLI subprocess (scripts/final_3m_runtime_safety_wrapper.py); cooperative observation, not a kernel sandbox",
+    "network_event_count": 0,
+    "exec_event_count": 0,
+    "ctypes_event_count": 0,
+    "mutation_count": 6,
+    "out_of_repo_mutation_count": 0,
+    "event_count": 144,
+    "engine_exit_code": 0,
+    "sample_mutations": [
+      {
+        "event": "open(write)",
+        "path": "data/generated/fresh_3m2_regression/consumer_3m_seed_20260918_pass1_out.csv"
+      },
+      {
+        "event": "open(write)",
+        "path": "evidence/validation/2026-09-19/fresh_3m2/pass1_engine/lineage.json"
+      },
+      {
+        "event": "open(write)",
+        "path": "evidence/validation/2026-09-19/fresh_3m2/pass1_engine/audit.json"
+      },
+      {
+        "event": "open(write)",
+        "path": "evidence/validation/2026-09-19/fresh_3m2/pass1_engine/monitoring.json"
+      },
+      {
+        "event": "open(write)",
+        "path": "evidence/validation/2026-09-19/fresh_3m2/pass1_engine/alerts.json"
+      },
+      {
+        "event": "open(write)",
+        "path": "evidence/validation/2026-09-19/fresh_3m2/pass1_engine/manifest.json"
+      }
+    ],
+    "events_path": "evidence/validation/2026-09-19/fresh_3m2/pass1_runtime_safety_events.json",
+    "events_file_sha256": "76a5a5e0b0dbf822961b92a97bc4dc45beb0aaa6f51c2b6b216e285be21e55eb"
+  },
+  "pinned_rule_baseline_source": "evidence/final_execution/rule_matrix.json",
+  "peak_rss_mb": 20.14,
+  "engine_peak_rss_mb": 2365.29,
+  "verified_utc": "2026-09-19T08:46:50Z"
+}

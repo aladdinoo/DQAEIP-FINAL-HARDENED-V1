@@ -1,0 +1,240 @@
+{
+  "generated_at_utc": "2026-09-18T23:30:15Z",
+  "rule_count": 8,
+  "counts_source": "CLEAN-ROOM REGENERATION 2026-09-18: rule identities and implementation hash heads derived LIVE from the frozen V1 source (v1_rules.py sha256 daef1ded54c7d3c7...); observed counts from a fresh 1,000-row pre-flight CLI validate execution",
+  "frozen_v1_source_sha256": "daef1ded54c7d3c79898a1ba253be2acd5b6120e18b16b09009fdd7be9fc2276",
+  "regeneration_basis": "clean-room rebuild DQAEIP-FINAL-CLEAN-REBUILD-RELEASE-2026-09-18; zero old-evidence bootstrap",
+  "preflight_input_sha256": "e6a43ea13369626399d412636c6111e84207130486d8e173c3b8f349140b495c",
+  "preflight_command": "../../../.venv/bin/python3 -m runner.cli validate --csv data/generated/fresh_3m2_smoke/preflight_1k_seed_20260918.csv --output data/generated/fresh_3m2_smoke/preflight_1k_out.csv --run-id preflight_1k --evidence-dir evidence/validation/2026-09-18/fresh_3m2/preflight",
+  "rules": [
+    {
+      "rule_id": "first_name_cleaning_candidate",
+      "rule_version": "1.0.0",
+      "implementation_hash_head": "575e9d4588334d36",
+      "implementation": "data_quality_platform/rules/v1_rules.py:34",
+      "input_fields": [
+        "first_name"
+      ],
+      "output_flag": "first_name_cleaning_candidate",
+      "observed_count_fresh_cli_run": 160,
+      "observed_count_output_csv": 160,
+      "count_sources_agree": true,
+      "tests_referencing": [
+        "tests/golden/test_golden_cases.py",
+        "tests/golden/test_golden_fixture_integrity.py",
+        "tests/property/test_property_invariants.py",
+        "tests/unit/test_config_wiring.py",
+        "tests/unit/test_contracts.py",
+        "tests/unit/test_input_contract.py",
+        "tests/unit/test_monitoring.py",
+        "tests/unit/test_rule_oracle_consistency.py",
+        "tests/unit/test_rules.py",
+        "tests/unit/test_sp1_successor_contract_validation.py"
+      ],
+      "evidence_path": "evidence/validation/2026-09-18/fresh_3m2/preflight (fresh 1K pre-flight CLI validate)",
+      "status": "PASS (unit+contract+integration tested; observed in fresh pre-flight execution)"
+    },
+    {
+      "rule_id": "last_name_cleaning_candidate",
+      "rule_version": "1.0.0",
+      "implementation_hash_head": "c553b7f4484b5413",
+      "implementation": "data_quality_platform/rules/v1_rules.py:73",
+      "input_fields": [
+        "last_name"
+      ],
+      "output_flag": "last_name_cleaning_candidate",
+      "observed_count_fresh_cli_run": 74,
+      "observed_count_output_csv": 74,
+      "count_sources_agree": true,
+      "tests_referencing": [
+        "tests/golden/test_golden_cases.py",
+        "tests/golden/test_golden_fixture_integrity.py",
+        "tests/property/test_property_invariants.py",
+        "tests/unit/test_config_wiring.py",
+        "tests/unit/test_contracts.py",
+        "tests/unit/test_input_contract.py",
+        "tests/unit/test_monitoring.py",
+        "tests/unit/test_rule_oracle_consistency.py",
+        "tests/unit/test_rules.py",
+        "tests/unit/test_sp1_successor_contract_validation.py"
+      ],
+      "evidence_path": "evidence/validation/2026-09-18/fresh_3m2/preflight (fresh 1K pre-flight CLI validate)",
+      "status": "PASS (unit+contract+integration tested; observed in fresh pre-flight execution)"
+    },
+    {
+      "rule_id": "name_cleaning_candidate",
+      "rule_version": "1.0.0",
+      "implementation_hash_head": "3a128ec85d196cd3",
+      "implementation": "data_quality_platform/rules/v1_rules.py:112",
+      "input_fields": [
+        "first_name",
+        "last_name"
+      ],
+      "output_flag": "name_cleaning_candidate",
+      "observed_count_fresh_cli_run": 3,
+      "observed_count_output_csv": 3,
+      "count_sources_agree": true,
+      "tests_referencing": [
+        "tests/golden/test_golden_cases.py",
+        "tests/golden/test_golden_fixture_integrity.py",
+        "tests/property/test_property_invariants.py",
+        "tests/unit/test_config_wiring.py",
+        "tests/unit/test_contracts.py",
+        "tests/unit/test_input_contract.py",
+        "tests/unit/test_monitoring.py",
+        "tests/unit/test_rule_oracle_consistency.py",
+        "tests/unit/test_rules.py",
+        "tests/unit/test_sp1_successor_contract_validation.py"
+      ],
+      "evidence_path": "evidence/validation/2026-09-18/fresh_3m2/preflight (fresh 1K pre-flight CLI validate)",
+      "status": "PASS (unit+contract+integration tested; observed in fresh pre-flight execution)"
+    },
+    {
+      "rule_id": "email_blank",
+      "rule_version": "1.0.0",
+      "implementation_hash_head": "157ccc2127334bac",
+      "implementation": "data_quality_platform/rules/v1_rules.py:146",
+      "input_fields": [
+        "email_address"
+      ],
+      "output_flag": "email_blank",
+      "observed_count_fresh_cli_run": 74,
+      "observed_count_output_csv": 74,
+      "count_sources_agree": true,
+      "tests_referencing": [
+        "tests/assurance/test_release_schema_and_stale_evidence.py",
+        "tests/golden/test_golden_cases.py",
+        "tests/golden/test_golden_fixture_integrity.py",
+        "tests/integration/test_engine.py",
+        "tests/property/test_property_invariants.py",
+        "tests/safety/test_fail_closed_gates.py",
+        "tests/unit/test_config_wiring.py",
+        "tests/unit/test_contracts.py",
+        "tests/unit/test_evidence.py",
+        "tests/unit/test_evidence_validator.py",
+        "tests/unit/test_impact_analysis.py",
+        "tests/unit/test_input_contract.py",
+        "tests/unit/test_lineage.py",
+        "tests/unit/test_lineage_serialization.py",
+        "tests/unit/test_monitoring.py",
+        "tests/unit/test_provenance.py",
+        "tests/unit/test_replay.py",
+        "tests/unit/test_security.py",
+        "tests/unit/test_sp1_successor_contract_validation.py"
+      ],
+      "evidence_path": "evidence/validation/2026-09-18/fresh_3m2/preflight (fresh 1K pre-flight CLI validate)",
+      "status": "PASS (unit+contract+integration tested; observed in fresh pre-flight execution)"
+    },
+    {
+      "rule_id": "email_syntax_failure",
+      "rule_version": "1.0.0",
+      "implementation_hash_head": "5caaba13a73c90c5",
+      "implementation": "data_quality_platform/rules/v1_rules.py:174",
+      "input_fields": [
+        "email_address"
+      ],
+      "output_flag": "email_syntax_failure",
+      "observed_count_fresh_cli_run": 92,
+      "observed_count_output_csv": 92,
+      "count_sources_agree": true,
+      "tests_referencing": [
+        "tests/golden/test_golden_cases.py",
+        "tests/golden/test_golden_fixture_integrity.py",
+        "tests/property/test_property_invariants.py",
+        "tests/unit/test_config_wiring.py",
+        "tests/unit/test_contracts.py",
+        "tests/unit/test_input_contract.py",
+        "tests/unit/test_monitoring.py",
+        "tests/unit/test_sp1_successor_contract_validation.py"
+      ],
+      "evidence_path": "evidence/validation/2026-09-18/fresh_3m2/preflight (fresh 1K pre-flight CLI validate)",
+      "status": "PASS (unit+contract+integration tested; observed in fresh pre-flight execution)"
+    },
+    {
+      "rule_id": "proposed_email_export_eligible",
+      "rule_version": "1.0.0",
+      "implementation_hash_head": "6732e6bfed6fae3c",
+      "implementation": "data_quality_platform/rules/v1_rules.py:209",
+      "input_fields": [
+        "email_address"
+      ],
+      "output_flag": "proposed_email_export_eligible",
+      "observed_count_fresh_cli_run": 834,
+      "observed_count_output_csv": 834,
+      "count_sources_agree": true,
+      "tests_referencing": [
+        "tests/golden/test_golden_cases.py",
+        "tests/golden/test_golden_fixture_integrity.py",
+        "tests/integration/test_engine.py",
+        "tests/property/test_property_invariants.py",
+        "tests/unit/test_config_wiring.py",
+        "tests/unit/test_contracts.py",
+        "tests/unit/test_input_contract.py",
+        "tests/unit/test_monitoring.py",
+        "tests/unit/test_sp1_successor_contract_validation.py"
+      ],
+      "evidence_path": "evidence/validation/2026-09-18/fresh_3m2/preflight (fresh 1K pre-flight CLI validate)",
+      "status": "PASS (unit+contract+integration tested; observed in fresh pre-flight execution)"
+    },
+    {
+      "rule_id": "zip_state_assessable",
+      "rule_version": "1.0.0",
+      "implementation_hash_head": "e7730c1b848f3279",
+      "implementation": "data_quality_platform/rules/v1_rules.py:244",
+      "input_fields": [
+        "state",
+        "zip"
+      ],
+      "output_flag": "zip_state_assessable",
+      "observed_count_fresh_cli_run": 913,
+      "observed_count_output_csv": 913,
+      "count_sources_agree": true,
+      "tests_referencing": [
+        "tests/golden/test_dl_canonical_geography.py",
+        "tests/golden/test_golden_fixture_integrity.py",
+        "tests/property/test_property_invariants.py",
+        "tests/safety/test_fail_closed_gates.py",
+        "tests/unit/test_config_wiring.py",
+        "tests/unit/test_contracts.py",
+        "tests/unit/test_evidence_validator.py",
+        "tests/unit/test_final_3m_hardening.py",
+        "tests/unit/test_input_contract.py",
+        "tests/unit/test_monitoring.py",
+        "tests/unit/test_provenance.py",
+        "tests/unit/test_sp1_geography_contract.py",
+        "tests/unit/test_sp1_successor_contract_validation.py"
+      ],
+      "evidence_path": "evidence/validation/2026-09-18/fresh_3m2/preflight (fresh 1K pre-flight CLI validate)",
+      "status": "PASS (unit+contract+integration tested; observed in fresh pre-flight execution)"
+    },
+    {
+      "rule_id": "geography_mismatch_candidate",
+      "rule_version": "1.0.0",
+      "implementation_hash_head": "7967b59ef7a14b83",
+      "implementation": "data_quality_platform/rules/v1_rules.py:273",
+      "input_fields": [
+        "state",
+        "zip"
+      ],
+      "output_flag": "geography_mismatch_candidate",
+      "observed_count_fresh_cli_run": 136,
+      "observed_count_output_csv": 136,
+      "count_sources_agree": true,
+      "tests_referencing": [
+        "tests/golden/test_dl_canonical_geography.py",
+        "tests/golden/test_golden_cases.py",
+        "tests/golden/test_golden_fixture_integrity.py",
+        "tests/property/test_property_invariants.py",
+        "tests/unit/test_contracts.py",
+        "tests/unit/test_input_contract.py",
+        "tests/unit/test_monitoring.py",
+        "tests/unit/test_provenance.py",
+        "tests/unit/test_rule_oracle_consistency.py",
+        "tests/unit/test_sp1_geography_contract.py",
+        "tests/unit/test_sp1_successor_contract_validation.py"
+      ],
+      "evidence_path": "evidence/validation/2026-09-18/fresh_3m2/preflight (fresh 1K pre-flight CLI validate)",
+      "status": "PASS (unit+contract+integration tested; observed in fresh pre-flight execution)"
+    }
+  ]
+}

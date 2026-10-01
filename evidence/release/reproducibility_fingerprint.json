@@ -1,0 +1,56 @@
+{
+  "components": {
+    "checker_identity": {
+      "path": "scripts/final_3m_validation.py",
+      "sha256": "0ef7c10c14a1df317c23cb0dfc73b3a60c2257c064b35080d694e5fe8bc50d84"
+    },
+    "code_identity": {
+      "algorithm": "sha256-over-sorted-(path,file-sha256)-pairs",
+      "files": [
+        "data_quality_platform/alerting/alerts.py",
+        "data_quality_platform/audit/trail.py",
+        "data_quality_platform/contracts.py",
+        "data_quality_platform/evidence/manifests.py",
+        "data_quality_platform/generation/synthetic.py",
+        "data_quality_platform/lineage/recorder.py",
+        "data_quality_platform/monitoring/quality.py",
+        "data_quality_platform/rules/base.py",
+        "data_quality_platform/rules/registry.py",
+        "data_quality_platform/rules/v1_rules.py",
+        "data_quality_platform/validation/engine.py",
+        "runner/cli.py"
+      ],
+      "sha256": "a371d4cd1016b77ee2256261f4cb6decb9559e476bbefc07494de8902efaec3f"
+    },
+    "environment_identity": {
+      "implementation": "CPython",
+      "os_class": "linux",
+      "python_version": "3.12.14"
+    },
+    "fingerprint_version": "1.0.0",
+    "rule_set_identity": {
+      "canonical_source": "data_quality_platform/rules/v1_rules.py",
+      "sha256": "daef1ded54c7d3c79898a1ba253be2acd5b6120e18b16b09009fdd7be9fc2276"
+    },
+    "schema_identity": {
+      "contracts_sha256": "b3eea54f0c5142e654cd531c4bb994669a170a7b37060b6bb7d45c4c46fb5d18",
+      "contracts_source": "data_quality_platform/contracts.py",
+      "official_run_schema_hashes": [
+        "47813dbee947c871971a4841bd4aef325530a6886b96a6f77bba6af86c5031fa",
+        "47813dbee947c871971a4841bd4aef325530a6886b96a6f77bba6af86c5031fa"
+      ]
+    },
+    "test_identity": {
+      "algorithm": "sha256-over-sorted-(path,file-sha256)-pairs",
+      "sha256": "accbe3767af2f997ef5090e96163ef6f0f20481bd6f2b6cc529a6d6b96f6ca98",
+      "test_file_count": 53
+    }
+  },
+  "fingerprint_algorithm": "SHA-256 over canonical JSON (sorted keys, no whitespace) of the six deterministic component identities",
+  "nondeterminism_policy": "timestamps, durations, wall-clock values, machine-local paths, hostnames, and usernames are EXCLUDED from the cryptographic identity; they appear only in separate metadata fields and never participate in the hash",
+  "recorded_utc": "2026-09-18T23:42:01Z",
+  "recorded_utc_note": "informational only; NOT part of the fingerprint hash",
+  "regeneration_command": ".venv/bin/python scripts/build_reproducibility_fingerprint.py",
+  "report": "DQAEIP reproducibility fingerprint",
+  "reproducibility_fingerprint_sha256": "735a2a082b229663b3c5f293354091e0dc02221a5d0e9142a9cf6c86265f07b6"
+}

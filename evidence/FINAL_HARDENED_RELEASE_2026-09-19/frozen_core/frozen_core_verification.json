@@ -1,0 +1,38 @@
+{
+  "contracts": {
+    "path": "data_quality_platform/contracts.py",
+    "role": "schema/flag/state-prefix contract table (reference data, Layer G content-addressed)",
+    "sha256": "b3eea54f0c5142e654cd531c4bb994669a170a7b37060b6bb7d45c4c46fb5d18"
+  },
+  "rule_matrix": {
+    "frozen_eight_exact_match": true,
+    "matrix_sha256": "ddd370ecf2790af958642f05e2fece979419a00ff27dcd66aa8d4b95f0c301bf",
+    "path": "evidence/final_execution/rule_matrix.json",
+    "rule_count": 8,
+    "rule_ids": [
+      "email_blank",
+      "email_syntax_failure",
+      "first_name_cleaning_candidate",
+      "geography_mismatch_candidate",
+      "last_name_cleaning_candidate",
+      "name_cleaning_candidate",
+      "proposed_email_export_eligible",
+      "zip_state_assessable"
+    ]
+  },
+  "schema": "dqaeip.hardening.frozen.core/1.0",
+  "v1_rules": {
+    "expected_sha256": "daef1ded54c7d3c79898a1ba253be2acd5b6120e18b16b09009fdd7be9fc2276",
+    "matches": true,
+    "path": "data_quality_platform/rules/v1_rules.py",
+    "sha256": "daef1ded54c7d3c79898a1ba253be2acd5b6120e18b16b09009fdd7be9fc2276"
+  },
+  "validation_checker": {
+    "expected_sha256": "0ef7c10c14a1df317c23cb0dfc73b3a60c2257c064b35080d694e5fe8bc50d84",
+    "matches": true,
+    "note": "byte-identical to the harness that produced the certified 2026-09-18 evidence",
+    "path": "scripts/final_3m_validation.py",
+    "sha256": "0ef7c10c14a1df317c23cb0dfc73b3a60c2257c064b35080d694e5fe8bc50d84"
+  },
+  "verified_utc": "2026-09-19T13:28:40Z"
+}

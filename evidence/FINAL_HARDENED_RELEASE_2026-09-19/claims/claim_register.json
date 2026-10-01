@@ -1,0 +1,78 @@
+{
+  "claim_count": 9,
+  "claims": [
+    {
+      "claim_id": "HC-01",
+      "derivation": "sha256(data_quality_platform/rules/v1_rules.py) == expected constant",
+      "source": "data_quality_platform/rules/v1_rules.py",
+      "source_sha256": "daef1ded54c7d3c79898a1ba253be2acd5b6120e18b16b09009fdd7be9fc2276",
+      "statement": "Frozen V1 rule set is byte-identical to the certified baseline (SHA-256 daef1ded54c7d3c7...).",
+      "verifier": "scripts/hardening_evidence_builder.py (build_frozen_core, fresh hash)"
+    },
+    {
+      "claim_id": "HC-02",
+      "derivation": "sha256(scripts/final_3m_validation.py) == 0ef7c10c... pinned constant",
+      "source": "scripts/final_3m_validation.py",
+      "source_sha256": "0ef7c10c14a1df317c23cb0dfc73b3a60c2257c064b35080d694e5fe8bc50d84",
+      "statement": "The validation checker is byte-identical to the frozen harness that produced the certified 2026-09-18 evidence.",
+      "verifier": "scripts/hardening_evidence_builder.py (build_frozen_core, fresh hash)"
+    },
+    {
+      "claim_id": "HC-03",
+      "derivation": "evidence/validation/2026-09-19/fresh_3m2/FINAL_RESULTS.json final_status == PASS and all baseline facts matched expected constants",
+      "source": "evidence/validation/2026-09-19/fresh_3m2/FINAL_RESULTS.json",
+      "source_sha256": "034a7d478eeefa9e4d3e8783b2499ae73a040ff544320f2eb7584fb920c9250b",
+      "statement": "The 2026-09-19 regression reproduced the certified baseline facts exactly: 3,200,000 rows, seed 20260918, two passes, 25,600,000 oracle comparisons per pass, zero mismatches, byte-identical outputs, runtime safety PASS.",
+      "verifier": "frozen checker phase_finalize authoritative gate + builder reproduction assertions"
+    },
+    {
+      "claim_id": "HC-04",
+      "derivation": "sha256 of every data_quality_platform/hardening/ module file at build time",
+      "source": "data_quality_platform/hardening/__init__.py",
+      "source_sha256": "66762f4f57cf52957e1bb2ac998f59b2b44c37b5748870ac7f02dfa4a680e72a",
+      "statement": "All 9 hardening layer modules are present with recorded SHA-256 identities; layer E is contract-only by documented design.",
+      "verifier": "scripts/hardening_evidence_builder.py (build_layer_registry, fresh hashes)"
+    },
+    {
+      "claim_id": "HC-05",
+      "derivation": "fresh pytest run at evidence build time; zero failures/errors",
+      "source": "evidence/FINAL_HARDENED_RELEASE_2026-09-19/negative_battery/_junit_battery.xml",
+      "statement": "The 17 mandated negative scenarios plus positive controls (21 tests) all pass fail-closed.",
+      "verifier": "pytest tests/hardening/ with junitxml capture"
+    },
+    {
+      "claim_id": "HC-06",
+      "derivation": "evidence/rebuild_verification/test_summary (captured 2026-09-19T13:23:06Z) \u2014 green run (failed=0, errors=0, all_green true); re-verified at namespace build time (source_sha256 recorded)",
+      "source": "evidence/rebuild_verification/test_summary.json",
+      "source_sha256": "8971adc4916ba210f8f1b49358846b6308bda5e35033422574037c42e7808ee9",
+      "statement": "Full repository test suite: 1089 passed, 9 skipped, 0 failed, 0 errors.",
+      "verifier": "scripts/capture_test_summary.py (fresh full-suite execution; captured to the canonical test summary BEFORE this namespace is built) + scripts/hardening_evidence_builder.py (fail-closed consumption)"
+    },
+    {
+      "claim_id": "HC-07",
+      "derivation": "engine-only vs hardened-pipeline wall time, identical engine command",
+      "source": "evidence/FINAL_HARDENED_RELEASE_2026-09-19/performance/performance_ladder.json",
+      "source_sha256": "f8813c6b87555077f8368592f281bba98f5c626a62f91f68ddb3289ecc03e191",
+      "statement": "Hardening performance overhead measured across the 1K/10K/100K/1M/3.2M ladder; per-rung overhead percentages recorded.",
+      "verifier": "scripts/hardening_performance_ladder.py"
+    },
+    {
+      "claim_id": "HC-08",
+      "derivation": "sha256(DQAEIP-FINAL-CLEAN-REBUILD-RELEASE-2026-09-18.zip) == sidecar == expected constant",
+      "source": "download/DQAEIP-FINAL-CLEAN-REBUILD-RELEASE-2026-09-18.zip (external artifact preserved at the release workspace, outside the repository tree)",
+      "source_sha256": "4ecbfc16da7ddaa1c830d5963f2eefba3236e3ce07fb1b1857bd07d63020cea5",
+      "statement": "The certified 2026-09-18 baseline ZIP is byte-recoverable and unmodified (hash re-verified at this release's build).",
+      "verifier": "scripts/hardening_evidence_builder.py (build_release_identity, fresh hash vs sidecar)"
+    },
+    {
+      "claim_id": "HC-09",
+      "derivation": "limitation registry enumeration (baseline registry inherited in full + hardening additions)",
+      "source": "evidence/release/limitation_registry.json",
+      "statement": "Known limitations are registered: 11 inherited verbatim from the certified baseline + 5 new hardening limitations (16 total); production integration remains NOT YET VERIFIED.",
+      "verifier": "scripts/hardening_evidence_builder.py (build_limitations)"
+    }
+  ],
+  "generated_utc": "2026-09-19T13:28:43Z",
+  "release": "DQAEIP-FINAL-HARDENED-RELEASE-2026-09-19",
+  "schema": "dqaeip.hardening.claims/1.0"
+}

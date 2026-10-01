@@ -1,0 +1,116 @@
+{
+  "artifact_count": 14,
+  "artifacts": {
+    "README.md": {
+      "authority_level": "DERIVED",
+      "dependency_count": 2,
+      "reasons": [],
+      "self_sha256": "87d7a36f75695f437e95398e0406f3ed6ef2f6de6e4788fed55aff6430905de9",
+      "state": "CURRENT"
+    },
+    "evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/artifact_identity/artifact_identity_registry.json": {
+      "authority_level": "DERIVED",
+      "dependency_count": 3,
+      "reasons": [],
+      "self_sha256": "e32bd64215d58645c0637d1848b08db619f27d8e348a4e55aab6ed066192fd55",
+      "state": "CURRENT"
+    },
+    "evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/claim_graph/claim_graph.json": {
+      "authority_level": "DERIVED",
+      "dependency_count": 6,
+      "reasons": [],
+      "self_sha256": "15dbc510cbad9a158fdf512240cc54216292e9b3bb57df7a68270ce4d0fb52b9",
+      "state": "CURRENT"
+    },
+    "evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/final_results/FINAL_RESULTS_PORTABLE_2026-09-18.json": {
+      "authority_level": "DERIVED",
+      "dependency_count": 7,
+      "reasons": [],
+      "self_sha256": "98400e0f27ca526c54ef44ced1cf0d50a10b53ba2591a3dc43615561159cbdf8",
+      "state": "CURRENT"
+    },
+    "evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/mutation_testing/evidence_mutation_matrix.json": {
+      "authority_level": "VERIFIED",
+      "dependency_count": 3,
+      "reasons": [],
+      "self_sha256": "f74070efaf0d735e255b5be6c77b0c71094d8a557c8af05fc163600affb8b6c5",
+      "state": "CURRENT"
+    },
+    "evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/portable_paths/PORTABLE_EVIDENCE_NORMALIZATION.json": {
+      "authority_level": "DERIVED",
+      "dependency_count": 2,
+      "reasons": [],
+      "self_sha256": "3bdec633699886b8fa5515061842a1a7a0c29decbc107dfdf2eb4be74fa4e8a7",
+      "state": "CURRENT"
+    },
+    "evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/release_gate/absolute_path_gate_report.json": {
+      "authority_level": "VERIFIED",
+      "dependency_count": 2,
+      "reasons": [],
+      "self_sha256": "e9771beb6d44695cbe256fdd5cb3677c4bc6778a9bc6d7c66a4fbf798f049dea",
+      "state": "CURRENT"
+    },
+    "evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/schema_versioning/SCHEMA_COMPATIBILITY_REPORT.json": {
+      "authority_level": "DERIVED",
+      "dependency_count": 2,
+      "reasons": [],
+      "self_sha256": "072d9b8b685154f4d63be59bc24cf5e24ed65886eda6a165c134ab52ec149b6a",
+      "state": "CURRENT"
+    },
+    "evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/security/tamper_matrix.json": {
+      "authority_level": "VERIFIED",
+      "dependency_count": 2,
+      "reasons": [],
+      "self_sha256": "ec78857d91d94e5379d3df0f5c5392be9bba4cd7cfce7fe25cf3b39d9dc51d93",
+      "state": "CURRENT"
+    },
+    "evidence/mutation_testing/mutation_results.json": {
+      "authority_level": "VERIFIED",
+      "dependency_count": 2,
+      "reasons": [],
+      "self_sha256": "a24da7210bc0d757b7e7abfebf22acac158f2722ddb890a153e7d506e874ff98",
+      "state": "CURRENT"
+    },
+    "evidence/rebuild_verification/run_pair_verification.json": {
+      "authority_level": "VERIFIED",
+      "dependency_count": 6,
+      "reasons": [],
+      "self_sha256": "7112257f799c8473feb8622f6e1cee445b893914be67753becba999b69745379",
+      "state": "CURRENT"
+    },
+    "evidence/rebuild_verification/test_summary.json": {
+      "authority_level": "VERIFIED",
+      "dependency_count": 1,
+      "reasons": [],
+      "self_sha256": "6f70c21a94bb23ef37633ca3983158f7c55fa0e24c4a0ff71c678d3e115f2e5c",
+      "state": "CURRENT"
+    },
+    "evidence/release/assurance_mutation.json": {
+      "authority_level": "VERIFIED",
+      "dependency_count": 2,
+      "reasons": [],
+      "self_sha256": "795b722ae1b84755f049e33a75499f863471f25a20d3743114b9fd94bcc945f0",
+      "state": "CURRENT"
+    },
+    "evidence/release/release_evidence_model.json": {
+      "authority_level": "DERIVED",
+      "dependency_count": 2,
+      "reasons": [],
+      "self_sha256": "3649c44ea2302f46858219db4d47366a80a6320f942da98949e026ec05743d76",
+      "state": "CURRENT"
+    }
+  },
+  "findings": [],
+  "generated_utc": "2026-09-19T02:42:52Z",
+  "graph_fingerprint": "8c3039eeeafae34b7512c4f1dab3de2964ada16f59ab8d189b80cf49a652a7dc",
+  "overall_state": "CURRENT",
+  "policy": "stale evidence is never silently refreshed; STALE must be resolved by an explicit two-phase re-derivation",
+  "report": "DQAEIP FINAL UPDATE evidence freshness report",
+  "states": {
+    "CURRENT": 14,
+    "INVALID": 0,
+    "NOT_VERIFIED": 0,
+    "STALE": 0
+  },
+  "update_id": "DQAEIP-FINAL-CLEAN-REBUILD-RELEASE-2026-09-18"
+}

@@ -1,0 +1,48 @@
+{
+  "snapshot_type": "golden_release_fingerprint_metadata_only",
+  "release_identity": "DQAEIP-FINAL-HARDENED-RELEASE-2026-09-19",
+  "input_schema_hash_33": "47813dbee947c871971a4841bd4aef325530a6886b96a6f77bba6af86c5031fa",
+  "output_schema_hash_41": "9bbdd1201f124dd6149f01434e3c10139412393dccad058a4861ff65ffbd9327",
+  "output_column_count_41": 41,
+  "v1_rule_ids": [
+    "email_blank",
+    "email_syntax_failure",
+    "first_name_cleaning_candidate",
+    "geography_mismatch_candidate",
+    "last_name_cleaning_candidate",
+    "name_cleaning_candidate",
+    "proposed_email_export_eligible",
+    "zip_state_assessable"
+  ],
+  "v1_rule_versions": {
+    "email_blank": "1.0.0",
+    "email_syntax_failure": "1.0.0",
+    "first_name_cleaning_candidate": "1.0.0",
+    "geography_mismatch_candidate": "1.0.0",
+    "last_name_cleaning_candidate": "1.0.0",
+    "name_cleaning_candidate": "1.0.0",
+    "proposed_email_export_eligible": "1.0.0",
+    "zip_state_assessable": "1.0.0"
+  },
+  "v1_rule_hashes": {
+    "email_blank": "157ccc2127334bac03534f80868a3d7ea3bc8df77c132e8c237874321164f2bc",
+    "email_syntax_failure": "5caaba13a73c90c5aac7a52cf756713c8ecc3dc73d30c2949206efa8d2b712f7",
+    "first_name_cleaning_candidate": "575e9d4588334d364bdcfae6ca3c44b9bf35120a371b78fecfde8ee19373ca69",
+    "geography_mismatch_candidate": "7967b59ef7a14b83284a12eb298d63c6140e0837bfafdf3ac4e758baf74c4e93",
+    "last_name_cleaning_candidate": "c553b7f4484b54135e2b84c6b37a84b15df328544256577984e61f6ede900122",
+    "name_cleaning_candidate": "3a128ec85d196cd3a42720347ba8790f5fbf0f386bd617e4ec508ee050b661c8",
+    "proposed_email_export_eligible": "6732e6bfed6fae3c23439f0e69b5c39e2843a5b74f2f8f3fdaf6ad5d536da98c",
+    "zip_state_assessable": "e7730c1b848f32790a56bfb79f7ef5dbc8c88b3919f9903421adc7dde5393885"
+  },
+  "checker_sha256": "d216dbca0ad0132e199394cd4e416528712979e9684585d8dc7d111604afb969",
+  "input_sha256": "59624a53c72f908f1dde673ceecf59e0662ae721bb8f9af7e165acba5318d153",
+  "output_sha256": "b72adc235160a86e0b99a08f988dd0bb5f2cff82bbe5b5d28ea07c5a5719329a",
+  "test_summary_sha256": "a8e794c307665e776f7072c6b45424e6cbd552837329fc12d40a4e1584d15760",
+  "release_gate_sha256": "da441c50f5d5ab56a51d9fccc2d8144a6cd16d1849fb64611fd35e8f873c7074",
+  "evidence_roots": {
+    "run_1": "65c48452a3ee89ee944c28a9ef919a64d1815d0037510f6179c6f7f203faeb19",
+    "run_2": "bf8d1777e7c7eb0b6cfd6afce981a0274a18988ecaeaa29a60e72af0798fd902"
+  },
+  "schema_note": "input_schema_hash_33 is the 33-column input schema hash from the run manifest; output_schema_hash_41 is the deterministic SHA-256 over the frozen 41 OUTPUT_COLUMNS contract (comma-joined ordered names, same algorithm as the engine schema hash)",
+  "pii_statement": "this snapshot is metadata only; it contains no customer data, no PII, no credentials, no machine-local paths"
+}

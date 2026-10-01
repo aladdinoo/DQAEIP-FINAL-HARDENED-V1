@@ -1,0 +1,2045 @@
+{
+  "run_id": "recon_100",
+  "run_start_time": "2026-09-19T02:23:01.646459+00:00",
+  "run_records": [
+    {
+      "run_id": "recon_100",
+      "source": "/home/z/my-project/dqvp-work/repo/evidence/final_verification/reconciliation/input_100.csv",
+      "database": "",
+      "table": "",
+      "rule_id": "",
+      "rule_version": "",
+      "row_count": 0,
+      "schema_hash": "47813dbee947c871971a4841bd4aef325530a6886b96a6f77bba6af86c5031fa",
+      "ddl_hash": "",
+      "sql_hash": "2b9130fdcc656d32191b122e6ea863c3dc228f20679827ba7dde7f4749273192",
+      "output_identity": "",
+      "timestamp": "2026-09-19T02:23:01.646668+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "source": "/home/z/my-project/dqvp-work/repo/evidence/final_verification/reconciliation/input_100.csv",
+      "database": "",
+      "table": "",
+      "rule_id": "",
+      "rule_version": "",
+      "row_count": 100,
+      "schema_hash": "47813dbee947c871971a4841bd4aef325530a6886b96a6f77bba6af86c5031fa",
+      "ddl_hash": "",
+      "sql_hash": "2b9130fdcc656d32191b122e6ea863c3dc228f20679827ba7dde7f4749273192",
+      "output_identity": "21fddc48ec8d3ac399e091087ea099f1819389a3b5c4fc3df5aa7afc2d383665",
+      "timestamp": "2026-09-19T02:23:01.650334+00:00"
+    }
+  ],
+  "row_records": [
+    {
+      "run_id": "recon_100",
+      "row_number": 2,
+      "rule_id": "proposed_email_export_eligible",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "18f7da920903acab",
+      "timestamp": "2026-09-19T02:23:01.648222+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 2,
+      "rule_id": "zip_state_assessable",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "18f7da920903acab",
+      "timestamp": "2026-09-19T02:23:01.648230+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 3,
+      "rule_id": "proposed_email_export_eligible",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "b6b22d04398cc2e0",
+      "timestamp": "2026-09-19T02:23:01.648234+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 3,
+      "rule_id": "zip_state_assessable",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "b6b22d04398cc2e0",
+      "timestamp": "2026-09-19T02:23:01.648237+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 4,
+      "rule_id": "proposed_email_export_eligible",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "a4527748294fd778",
+      "timestamp": "2026-09-19T02:23:01.648240+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 4,
+      "rule_id": "zip_state_assessable",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "a4527748294fd778",
+      "timestamp": "2026-09-19T02:23:01.648243+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 5,
+      "rule_id": "proposed_email_export_eligible",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "5cd6be43c4ac5cfb",
+      "timestamp": "2026-09-19T02:23:01.648246+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 5,
+      "rule_id": "zip_state_assessable",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "5cd6be43c4ac5cfb",
+      "timestamp": "2026-09-19T02:23:01.648249+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 6,
+      "rule_id": "proposed_email_export_eligible",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "15f259f90cd8eddd",
+      "timestamp": "2026-09-19T02:23:01.648252+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 6,
+      "rule_id": "zip_state_assessable",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "15f259f90cd8eddd",
+      "timestamp": "2026-09-19T02:23:01.648254+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 7,
+      "rule_id": "proposed_email_export_eligible",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "ec49629a85ebae2e",
+      "timestamp": "2026-09-19T02:23:01.648260+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 7,
+      "rule_id": "zip_state_assessable",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "ec49629a85ebae2e",
+      "timestamp": "2026-09-19T02:23:01.648263+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 8,
+      "rule_id": "proposed_email_export_eligible",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "49a0fe75c05124a4",
+      "timestamp": "2026-09-19T02:23:01.648266+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 8,
+      "rule_id": "zip_state_assessable",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "49a0fe75c05124a4",
+      "timestamp": "2026-09-19T02:23:01.648268+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 9,
+      "rule_id": "proposed_email_export_eligible",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "7013e886186df62f",
+      "timestamp": "2026-09-19T02:23:01.648271+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 9,
+      "rule_id": "zip_state_assessable",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "7013e886186df62f",
+      "timestamp": "2026-09-19T02:23:01.648273+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 10,
+      "rule_id": "proposed_email_export_eligible",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "8d60bd2acded7241",
+      "timestamp": "2026-09-19T02:23:01.648276+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 10,
+      "rule_id": "zip_state_assessable",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "8d60bd2acded7241",
+      "timestamp": "2026-09-19T02:23:01.648279+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 11,
+      "rule_id": "proposed_email_export_eligible",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "b0e5ea2069cf6473",
+      "timestamp": "2026-09-19T02:23:01.648282+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 11,
+      "rule_id": "zip_state_assessable",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "b0e5ea2069cf6473",
+      "timestamp": "2026-09-19T02:23:01.648284+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 12,
+      "rule_id": "proposed_email_export_eligible",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "351de1a4db6dfef6",
+      "timestamp": "2026-09-19T02:23:01.648287+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 12,
+      "rule_id": "zip_state_assessable",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "351de1a4db6dfef6",
+      "timestamp": "2026-09-19T02:23:01.648290+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 13,
+      "rule_id": "proposed_email_export_eligible",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "c4ce569a9b0158e5",
+      "timestamp": "2026-09-19T02:23:01.648293+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 13,
+      "rule_id": "zip_state_assessable",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "c4ce569a9b0158e5",
+      "timestamp": "2026-09-19T02:23:01.648295+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 14,
+      "rule_id": "proposed_email_export_eligible",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "a5f3d2b5262143d3",
+      "timestamp": "2026-09-19T02:23:01.648298+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 14,
+      "rule_id": "zip_state_assessable",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "a5f3d2b5262143d3",
+      "timestamp": "2026-09-19T02:23:01.648301+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 15,
+      "rule_id": "proposed_email_export_eligible",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "b0b251863c1e4cd6",
+      "timestamp": "2026-09-19T02:23:01.648303+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 15,
+      "rule_id": "zip_state_assessable",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "b0b251863c1e4cd6",
+      "timestamp": "2026-09-19T02:23:01.648306+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 16,
+      "rule_id": "proposed_email_export_eligible",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "d8e36989bdb4de81",
+      "timestamp": "2026-09-19T02:23:01.648314+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 16,
+      "rule_id": "zip_state_assessable",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "d8e36989bdb4de81",
+      "timestamp": "2026-09-19T02:23:01.648317+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 17,
+      "rule_id": "proposed_email_export_eligible",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "fdeda1844171cd20",
+      "timestamp": "2026-09-19T02:23:01.648319+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 17,
+      "rule_id": "zip_state_assessable",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "fdeda1844171cd20",
+      "timestamp": "2026-09-19T02:23:01.648322+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 18,
+      "rule_id": "proposed_email_export_eligible",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "9d487e16f19af50c",
+      "timestamp": "2026-09-19T02:23:01.648325+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 18,
+      "rule_id": "zip_state_assessable",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "9d487e16f19af50c",
+      "timestamp": "2026-09-19T02:23:01.648327+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 19,
+      "rule_id": "proposed_email_export_eligible",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "602816d52bdfd41c",
+      "timestamp": "2026-09-19T02:23:01.648330+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 19,
+      "rule_id": "zip_state_assessable",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "602816d52bdfd41c",
+      "timestamp": "2026-09-19T02:23:01.648333+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 20,
+      "rule_id": "proposed_email_export_eligible",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "49a5402bfa796c0d",
+      "timestamp": "2026-09-19T02:23:01.648335+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 20,
+      "rule_id": "zip_state_assessable",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "49a5402bfa796c0d",
+      "timestamp": "2026-09-19T02:23:01.648338+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 21,
+      "rule_id": "proposed_email_export_eligible",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "c05c4526e8fbd345",
+      "timestamp": "2026-09-19T02:23:01.648341+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 21,
+      "rule_id": "zip_state_assessable",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "c05c4526e8fbd345",
+      "timestamp": "2026-09-19T02:23:01.648343+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 22,
+      "rule_id": "proposed_email_export_eligible",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "2da4eb1560597306",
+      "timestamp": "2026-09-19T02:23:01.648346+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 22,
+      "rule_id": "zip_state_assessable",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "2da4eb1560597306",
+      "timestamp": "2026-09-19T02:23:01.648349+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 23,
+      "rule_id": "proposed_email_export_eligible",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "7ed2512a813eed8f",
+      "timestamp": "2026-09-19T02:23:01.648351+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 23,
+      "rule_id": "zip_state_assessable",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "7ed2512a813eed8f",
+      "timestamp": "2026-09-19T02:23:01.648354+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 24,
+      "rule_id": "proposed_email_export_eligible",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "ab75110d08d05817",
+      "timestamp": "2026-09-19T02:23:01.648357+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 24,
+      "rule_id": "zip_state_assessable",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "ab75110d08d05817",
+      "timestamp": "2026-09-19T02:23:01.648359+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 25,
+      "rule_id": "proposed_email_export_eligible",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "a1a2f0653e648952",
+      "timestamp": "2026-09-19T02:23:01.648362+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 25,
+      "rule_id": "zip_state_assessable",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "a1a2f0653e648952",
+      "timestamp": "2026-09-19T02:23:01.648365+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 26,
+      "rule_id": "proposed_email_export_eligible",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "22390dc3de24a434",
+      "timestamp": "2026-09-19T02:23:01.648370+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 26,
+      "rule_id": "zip_state_assessable",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "22390dc3de24a434",
+      "timestamp": "2026-09-19T02:23:01.648372+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 27,
+      "rule_id": "proposed_email_export_eligible",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "d7d406a4be609bcb",
+      "timestamp": "2026-09-19T02:23:01.648375+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 27,
+      "rule_id": "zip_state_assessable",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "d7d406a4be609bcb",
+      "timestamp": "2026-09-19T02:23:01.648377+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 28,
+      "rule_id": "proposed_email_export_eligible",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "d3cfb5e7d6ba71f5",
+      "timestamp": "2026-09-19T02:23:01.648380+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 28,
+      "rule_id": "zip_state_assessable",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "d3cfb5e7d6ba71f5",
+      "timestamp": "2026-09-19T02:23:01.648383+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 29,
+      "rule_id": "proposed_email_export_eligible",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "0b8a308af47fbaaa",
+      "timestamp": "2026-09-19T02:23:01.648387+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 29,
+      "rule_id": "zip_state_assessable",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "0b8a308af47fbaaa",
+      "timestamp": "2026-09-19T02:23:01.648390+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 30,
+      "rule_id": "proposed_email_export_eligible",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "4dc5d7a77353deb3",
+      "timestamp": "2026-09-19T02:23:01.648392+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 30,
+      "rule_id": "zip_state_assessable",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "4dc5d7a77353deb3",
+      "timestamp": "2026-09-19T02:23:01.648395+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 31,
+      "rule_id": "proposed_email_export_eligible",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "5aeb8edf51d08aee",
+      "timestamp": "2026-09-19T02:23:01.648398+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 31,
+      "rule_id": "zip_state_assessable",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "5aeb8edf51d08aee",
+      "timestamp": "2026-09-19T02:23:01.648400+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 32,
+      "rule_id": "proposed_email_export_eligible",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "4ae4238f88ed6c3c",
+      "timestamp": "2026-09-19T02:23:01.648403+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 32,
+      "rule_id": "zip_state_assessable",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "4ae4238f88ed6c3c",
+      "timestamp": "2026-09-19T02:23:01.648406+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 33,
+      "rule_id": "proposed_email_export_eligible",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "3a6770b194fd1975",
+      "timestamp": "2026-09-19T02:23:01.648409+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 33,
+      "rule_id": "zip_state_assessable",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "3a6770b194fd1975",
+      "timestamp": "2026-09-19T02:23:01.648412+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 34,
+      "rule_id": "proposed_email_export_eligible",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "61bd8a4c7fb89a71",
+      "timestamp": "2026-09-19T02:23:01.648415+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 34,
+      "rule_id": "zip_state_assessable",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "61bd8a4c7fb89a71",
+      "timestamp": "2026-09-19T02:23:01.648417+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 35,
+      "rule_id": "proposed_email_export_eligible",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "db99eaf0004206b1",
+      "timestamp": "2026-09-19T02:23:01.648420+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 35,
+      "rule_id": "zip_state_assessable",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "db99eaf0004206b1",
+      "timestamp": "2026-09-19T02:23:01.648423+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 36,
+      "rule_id": "proposed_email_export_eligible",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "de504a5ebe28e58b",
+      "timestamp": "2026-09-19T02:23:01.648427+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 36,
+      "rule_id": "zip_state_assessable",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "de504a5ebe28e58b",
+      "timestamp": "2026-09-19T02:23:01.648430+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 37,
+      "rule_id": "proposed_email_export_eligible",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "e591d863083d6ce1",
+      "timestamp": "2026-09-19T02:23:01.648433+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 37,
+      "rule_id": "zip_state_assessable",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "e591d863083d6ce1",
+      "timestamp": "2026-09-19T02:23:01.648435+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 38,
+      "rule_id": "proposed_email_export_eligible",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "d53a0a7d127d5d00",
+      "timestamp": "2026-09-19T02:23:01.648438+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 38,
+      "rule_id": "zip_state_assessable",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "d53a0a7d127d5d00",
+      "timestamp": "2026-09-19T02:23:01.648441+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 39,
+      "rule_id": "proposed_email_export_eligible",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "69e4b08ce8624643",
+      "timestamp": "2026-09-19T02:23:01.648443+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 39,
+      "rule_id": "zip_state_assessable",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "69e4b08ce8624643",
+      "timestamp": "2026-09-19T02:23:01.648446+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 40,
+      "rule_id": "proposed_email_export_eligible",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "19ee677939457c9f",
+      "timestamp": "2026-09-19T02:23:01.648449+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 40,
+      "rule_id": "zip_state_assessable",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "19ee677939457c9f",
+      "timestamp": "2026-09-19T02:23:01.648451+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 41,
+      "rule_id": "proposed_email_export_eligible",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "1cea56be1aabebe9",
+      "timestamp": "2026-09-19T02:23:01.648454+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 41,
+      "rule_id": "zip_state_assessable",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "1cea56be1aabebe9",
+      "timestamp": "2026-09-19T02:23:01.648457+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 42,
+      "rule_id": "proposed_email_export_eligible",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "6b11ed0828374e11",
+      "timestamp": "2026-09-19T02:23:01.648460+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 42,
+      "rule_id": "zip_state_assessable",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "6b11ed0828374e11",
+      "timestamp": "2026-09-19T02:23:01.648462+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 43,
+      "rule_id": "proposed_email_export_eligible",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "98da42aff528030f",
+      "timestamp": "2026-09-19T02:23:01.648465+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 43,
+      "rule_id": "zip_state_assessable",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "98da42aff528030f",
+      "timestamp": "2026-09-19T02:23:01.648468+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 44,
+      "rule_id": "proposed_email_export_eligible",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "7050bf4c1c11608a",
+      "timestamp": "2026-09-19T02:23:01.648470+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 44,
+      "rule_id": "zip_state_assessable",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "7050bf4c1c11608a",
+      "timestamp": "2026-09-19T02:23:01.648473+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 45,
+      "rule_id": "proposed_email_export_eligible",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "d019911f6af40fb1",
+      "timestamp": "2026-09-19T02:23:01.648476+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 45,
+      "rule_id": "zip_state_assessable",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "d019911f6af40fb1",
+      "timestamp": "2026-09-19T02:23:01.648478+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 46,
+      "rule_id": "proposed_email_export_eligible",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "cb423843e4d8a2f0",
+      "timestamp": "2026-09-19T02:23:01.648483+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 46,
+      "rule_id": "zip_state_assessable",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "cb423843e4d8a2f0",
+      "timestamp": "2026-09-19T02:23:01.648486+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 47,
+      "rule_id": "proposed_email_export_eligible",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "be5821acd2865c4f",
+      "timestamp": "2026-09-19T02:23:01.648489+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 47,
+      "rule_id": "zip_state_assessable",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "be5821acd2865c4f",
+      "timestamp": "2026-09-19T02:23:01.648491+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 48,
+      "rule_id": "proposed_email_export_eligible",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "9a8e2b074f32a00f",
+      "timestamp": "2026-09-19T02:23:01.648494+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 48,
+      "rule_id": "zip_state_assessable",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "9a8e2b074f32a00f",
+      "timestamp": "2026-09-19T02:23:01.648497+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 49,
+      "rule_id": "proposed_email_export_eligible",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "3ac88788fb32fd38",
+      "timestamp": "2026-09-19T02:23:01.648499+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 49,
+      "rule_id": "zip_state_assessable",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "3ac88788fb32fd38",
+      "timestamp": "2026-09-19T02:23:01.648502+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 50,
+      "rule_id": "proposed_email_export_eligible",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "da2a0e2d9e596574",
+      "timestamp": "2026-09-19T02:23:01.648505+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 50,
+      "rule_id": "zip_state_assessable",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "da2a0e2d9e596574",
+      "timestamp": "2026-09-19T02:23:01.648507+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 51,
+      "rule_id": "proposed_email_export_eligible",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "13da6ff2fe997617",
+      "timestamp": "2026-09-19T02:23:01.648510+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 51,
+      "rule_id": "zip_state_assessable",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "13da6ff2fe997617",
+      "timestamp": "2026-09-19T02:23:01.648513+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 52,
+      "rule_id": "proposed_email_export_eligible",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "473441a31adc81ff",
+      "timestamp": "2026-09-19T02:23:01.649619+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 52,
+      "rule_id": "zip_state_assessable",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "473441a31adc81ff",
+      "timestamp": "2026-09-19T02:23:01.649623+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 53,
+      "rule_id": "proposed_email_export_eligible",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "770d4436e9e5a841",
+      "timestamp": "2026-09-19T02:23:01.649626+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 53,
+      "rule_id": "zip_state_assessable",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "770d4436e9e5a841",
+      "timestamp": "2026-09-19T02:23:01.649629+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 54,
+      "rule_id": "proposed_email_export_eligible",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "5e38b5139755b337",
+      "timestamp": "2026-09-19T02:23:01.649632+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 54,
+      "rule_id": "zip_state_assessable",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "5e38b5139755b337",
+      "timestamp": "2026-09-19T02:23:01.649634+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 55,
+      "rule_id": "proposed_email_export_eligible",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "7c847092eb803510",
+      "timestamp": "2026-09-19T02:23:01.649637+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 55,
+      "rule_id": "zip_state_assessable",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "7c847092eb803510",
+      "timestamp": "2026-09-19T02:23:01.649640+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 56,
+      "rule_id": "proposed_email_export_eligible",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "303468a16cc02d24",
+      "timestamp": "2026-09-19T02:23:01.649642+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 56,
+      "rule_id": "zip_state_assessable",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "303468a16cc02d24",
+      "timestamp": "2026-09-19T02:23:01.649645+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 57,
+      "rule_id": "proposed_email_export_eligible",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "328e151e98c712be",
+      "timestamp": "2026-09-19T02:23:01.649648+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 57,
+      "rule_id": "zip_state_assessable",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "328e151e98c712be",
+      "timestamp": "2026-09-19T02:23:01.649651+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 58,
+      "rule_id": "first_name_cleaning_candidate",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "c8dc0f4442919708",
+      "timestamp": "2026-09-19T02:23:01.649656+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 58,
+      "rule_id": "proposed_email_export_eligible",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "c8dc0f4442919708",
+      "timestamp": "2026-09-19T02:23:01.649659+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 58,
+      "rule_id": "zip_state_assessable",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "c8dc0f4442919708",
+      "timestamp": "2026-09-19T02:23:01.649662+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 59,
+      "rule_id": "proposed_email_export_eligible",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "93ceffb1627df686",
+      "timestamp": "2026-09-19T02:23:01.649664+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 59,
+      "rule_id": "zip_state_assessable",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "93ceffb1627df686",
+      "timestamp": "2026-09-19T02:23:01.649667+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 60,
+      "rule_id": "proposed_email_export_eligible",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "45a162e0054679db",
+      "timestamp": "2026-09-19T02:23:01.649670+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 60,
+      "rule_id": "zip_state_assessable",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "45a162e0054679db",
+      "timestamp": "2026-09-19T02:23:01.649672+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 61,
+      "rule_id": "proposed_email_export_eligible",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "b81b3370eda05e58",
+      "timestamp": "2026-09-19T02:23:01.649675+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 61,
+      "rule_id": "zip_state_assessable",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "b81b3370eda05e58",
+      "timestamp": "2026-09-19T02:23:01.649677+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 62,
+      "rule_id": "proposed_email_export_eligible",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "ba9eec519d1422f2",
+      "timestamp": "2026-09-19T02:23:01.649680+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 62,
+      "rule_id": "zip_state_assessable",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "ba9eec519d1422f2",
+      "timestamp": "2026-09-19T02:23:01.649683+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 63,
+      "rule_id": "proposed_email_export_eligible",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "fb58ba68b4fad45c",
+      "timestamp": "2026-09-19T02:23:01.649685+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 63,
+      "rule_id": "zip_state_assessable",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "fb58ba68b4fad45c",
+      "timestamp": "2026-09-19T02:23:01.649688+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 64,
+      "rule_id": "proposed_email_export_eligible",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "86cb4c9cffb4d9e3",
+      "timestamp": "2026-09-19T02:23:01.649691+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 64,
+      "rule_id": "zip_state_assessable",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "86cb4c9cffb4d9e3",
+      "timestamp": "2026-09-19T02:23:01.649693+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 65,
+      "rule_id": "proposed_email_export_eligible",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "f55b2d4c18e105ef",
+      "timestamp": "2026-09-19T02:23:01.649696+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 65,
+      "rule_id": "zip_state_assessable",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "f55b2d4c18e105ef",
+      "timestamp": "2026-09-19T02:23:01.649699+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 66,
+      "rule_id": "email_blank",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "cf3871b3cb2167ac",
+      "timestamp": "2026-09-19T02:23:01.649701+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 66,
+      "rule_id": "zip_state_assessable",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "cf3871b3cb2167ac",
+      "timestamp": "2026-09-19T02:23:01.649704+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 67,
+      "rule_id": "first_name_cleaning_candidate",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "a8474b6c23936625",
+      "timestamp": "2026-09-19T02:23:01.649707+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 67,
+      "rule_id": "email_blank",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "a8474b6c23936625",
+      "timestamp": "2026-09-19T02:23:01.649712+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 67,
+      "rule_id": "zip_state_assessable",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "a8474b6c23936625",
+      "timestamp": "2026-09-19T02:23:01.649715+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 68,
+      "rule_id": "email_blank",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "baaf049376b08d73",
+      "timestamp": "2026-09-19T02:23:01.649717+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 68,
+      "rule_id": "zip_state_assessable",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "baaf049376b08d73",
+      "timestamp": "2026-09-19T02:23:01.649720+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 69,
+      "rule_id": "email_blank",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "b835bba57d17db29",
+      "timestamp": "2026-09-19T02:23:01.649723+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 69,
+      "rule_id": "zip_state_assessable",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "b835bba57d17db29",
+      "timestamp": "2026-09-19T02:23:01.649725+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 70,
+      "rule_id": "email_blank",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "2c49d7b3f9cfde26",
+      "timestamp": "2026-09-19T02:23:01.649728+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 70,
+      "rule_id": "zip_state_assessable",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "2c49d7b3f9cfde26",
+      "timestamp": "2026-09-19T02:23:01.649731+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 71,
+      "rule_id": "email_blank",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "171209c9fba8bcfb",
+      "timestamp": "2026-09-19T02:23:01.649733+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 71,
+      "rule_id": "zip_state_assessable",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "171209c9fba8bcfb",
+      "timestamp": "2026-09-19T02:23:01.649736+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 72,
+      "rule_id": "email_blank",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "ae13eac0f007bfe3",
+      "timestamp": "2026-09-19T02:23:01.649739+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 72,
+      "rule_id": "zip_state_assessable",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "ae13eac0f007bfe3",
+      "timestamp": "2026-09-19T02:23:01.649741+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 73,
+      "rule_id": "email_blank",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "fe48f5566fb10c5e",
+      "timestamp": "2026-09-19T02:23:01.649744+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 73,
+      "rule_id": "zip_state_assessable",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "fe48f5566fb10c5e",
+      "timestamp": "2026-09-19T02:23:01.649746+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 74,
+      "rule_id": "email_syntax_failure",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "663dfa73c239ad9c",
+      "timestamp": "2026-09-19T02:23:01.649749+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 74,
+      "rule_id": "zip_state_assessable",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "663dfa73c239ad9c",
+      "timestamp": "2026-09-19T02:23:01.649752+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 75,
+      "rule_id": "email_syntax_failure",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "3898f977ae56c534",
+      "timestamp": "2026-09-19T02:23:01.649754+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 75,
+      "rule_id": "zip_state_assessable",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "3898f977ae56c534",
+      "timestamp": "2026-09-19T02:23:01.649757+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 76,
+      "rule_id": "email_syntax_failure",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "a6b2fbc8e1c8cba0",
+      "timestamp": "2026-09-19T02:23:01.649760+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 76,
+      "rule_id": "zip_state_assessable",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "a6b2fbc8e1c8cba0",
+      "timestamp": "2026-09-19T02:23:01.649762+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 77,
+      "rule_id": "email_syntax_failure",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "8f7eb3e09bd23ec5",
+      "timestamp": "2026-09-19T02:23:01.649768+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 77,
+      "rule_id": "zip_state_assessable",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "8f7eb3e09bd23ec5",
+      "timestamp": "2026-09-19T02:23:01.649771+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 78,
+      "rule_id": "email_syntax_failure",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "5ae132f163113b2d",
+      "timestamp": "2026-09-19T02:23:01.649774+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 78,
+      "rule_id": "zip_state_assessable",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "5ae132f163113b2d",
+      "timestamp": "2026-09-19T02:23:01.649776+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 79,
+      "rule_id": "email_syntax_failure",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "15ba3bfebf45da14",
+      "timestamp": "2026-09-19T02:23:01.649779+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 79,
+      "rule_id": "zip_state_assessable",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "15ba3bfebf45da14",
+      "timestamp": "2026-09-19T02:23:01.649781+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 80,
+      "rule_id": "email_syntax_failure",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "dd71ee386abea96b",
+      "timestamp": "2026-09-19T02:23:01.649784+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 80,
+      "rule_id": "zip_state_assessable",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "dd71ee386abea96b",
+      "timestamp": "2026-09-19T02:23:01.649787+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 81,
+      "rule_id": "first_name_cleaning_candidate",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "492fa37ba86a37a9",
+      "timestamp": "2026-09-19T02:23:01.649789+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 81,
+      "rule_id": "proposed_email_export_eligible",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "492fa37ba86a37a9",
+      "timestamp": "2026-09-19T02:23:01.649792+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 81,
+      "rule_id": "zip_state_assessable",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "492fa37ba86a37a9",
+      "timestamp": "2026-09-19T02:23:01.649795+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 82,
+      "rule_id": "first_name_cleaning_candidate",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "151ca7b3cc23363d",
+      "timestamp": "2026-09-19T02:23:01.649797+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 82,
+      "rule_id": "proposed_email_export_eligible",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "151ca7b3cc23363d",
+      "timestamp": "2026-09-19T02:23:01.649800+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 82,
+      "rule_id": "zip_state_assessable",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "151ca7b3cc23363d",
+      "timestamp": "2026-09-19T02:23:01.649803+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 83,
+      "rule_id": "first_name_cleaning_candidate",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "c5461cd264097514",
+      "timestamp": "2026-09-19T02:23:01.649805+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 83,
+      "rule_id": "proposed_email_export_eligible",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "c5461cd264097514",
+      "timestamp": "2026-09-19T02:23:01.649808+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 83,
+      "rule_id": "zip_state_assessable",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "c5461cd264097514",
+      "timestamp": "2026-09-19T02:23:01.649811+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 84,
+      "rule_id": "first_name_cleaning_candidate",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "4d88b4b4758655eb",
+      "timestamp": "2026-09-19T02:23:01.649813+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 84,
+      "rule_id": "proposed_email_export_eligible",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "4d88b4b4758655eb",
+      "timestamp": "2026-09-19T02:23:01.649816+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 84,
+      "rule_id": "zip_state_assessable",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "4d88b4b4758655eb",
+      "timestamp": "2026-09-19T02:23:01.649818+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 85,
+      "rule_id": "first_name_cleaning_candidate",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "621b9c1890cfeafe",
+      "timestamp": "2026-09-19T02:23:01.649829+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 85,
+      "rule_id": "proposed_email_export_eligible",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "621b9c1890cfeafe",
+      "timestamp": "2026-09-19T02:23:01.649832+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 85,
+      "rule_id": "zip_state_assessable",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "621b9c1890cfeafe",
+      "timestamp": "2026-09-19T02:23:01.649835+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 86,
+      "rule_id": "last_name_cleaning_candidate",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "6625a8cc70d1c335",
+      "timestamp": "2026-09-19T02:23:01.649838+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 86,
+      "rule_id": "proposed_email_export_eligible",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "6625a8cc70d1c335",
+      "timestamp": "2026-09-19T02:23:01.649840+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 86,
+      "rule_id": "zip_state_assessable",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "6625a8cc70d1c335",
+      "timestamp": "2026-09-19T02:23:01.649843+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 87,
+      "rule_id": "last_name_cleaning_candidate",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "176b14ac2faa159e",
+      "timestamp": "2026-09-19T02:23:01.649846+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 87,
+      "rule_id": "proposed_email_export_eligible",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "176b14ac2faa159e",
+      "timestamp": "2026-09-19T02:23:01.649848+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 87,
+      "rule_id": "zip_state_assessable",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "176b14ac2faa159e",
+      "timestamp": "2026-09-19T02:23:01.649851+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 88,
+      "rule_id": "last_name_cleaning_candidate",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "4ec1d1c7f67f0058",
+      "timestamp": "2026-09-19T02:23:01.649853+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 88,
+      "rule_id": "proposed_email_export_eligible",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "4ec1d1c7f67f0058",
+      "timestamp": "2026-09-19T02:23:01.649856+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 88,
+      "rule_id": "zip_state_assessable",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "4ec1d1c7f67f0058",
+      "timestamp": "2026-09-19T02:23:01.649859+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 89,
+      "rule_id": "first_name_cleaning_candidate",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "09f88b14b8b7d922",
+      "timestamp": "2026-09-19T02:23:01.649861+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 89,
+      "rule_id": "last_name_cleaning_candidate",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "09f88b14b8b7d922",
+      "timestamp": "2026-09-19T02:23:01.649864+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 89,
+      "rule_id": "proposed_email_export_eligible",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "09f88b14b8b7d922",
+      "timestamp": "2026-09-19T02:23:01.649867+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 89,
+      "rule_id": "zip_state_assessable",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "09f88b14b8b7d922",
+      "timestamp": "2026-09-19T02:23:01.649870+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 90,
+      "rule_id": "last_name_cleaning_candidate",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "d61b945a041ccb6f",
+      "timestamp": "2026-09-19T02:23:01.649872+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 90,
+      "rule_id": "proposed_email_export_eligible",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "d61b945a041ccb6f",
+      "timestamp": "2026-09-19T02:23:01.649879+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 90,
+      "rule_id": "zip_state_assessable",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "d61b945a041ccb6f",
+      "timestamp": "2026-09-19T02:23:01.649882+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 91,
+      "rule_id": "proposed_email_export_eligible",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "da1e9656a95bbd45",
+      "timestamp": "2026-09-19T02:23:01.649885+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 91,
+      "rule_id": "zip_state_assessable",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "da1e9656a95bbd45",
+      "timestamp": "2026-09-19T02:23:01.649888+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 91,
+      "rule_id": "geography_mismatch_candidate",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "da1e9656a95bbd45",
+      "timestamp": "2026-09-19T02:23:01.649890+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 92,
+      "rule_id": "proposed_email_export_eligible",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "502903d3a25855be",
+      "timestamp": "2026-09-19T02:23:01.649893+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 92,
+      "rule_id": "zip_state_assessable",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "502903d3a25855be",
+      "timestamp": "2026-09-19T02:23:01.649896+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 92,
+      "rule_id": "geography_mismatch_candidate",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "502903d3a25855be",
+      "timestamp": "2026-09-19T02:23:01.649899+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 93,
+      "rule_id": "proposed_email_export_eligible",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "2f361d99847a45e9",
+      "timestamp": "2026-09-19T02:23:01.649902+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 93,
+      "rule_id": "zip_state_assessable",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "2f361d99847a45e9",
+      "timestamp": "2026-09-19T02:23:01.649904+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 93,
+      "rule_id": "geography_mismatch_candidate",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "2f361d99847a45e9",
+      "timestamp": "2026-09-19T02:23:01.649907+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 94,
+      "rule_id": "last_name_cleaning_candidate",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "012d3c98abcfbdc6",
+      "timestamp": "2026-09-19T02:23:01.650166+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 94,
+      "rule_id": "proposed_email_export_eligible",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "012d3c98abcfbdc6",
+      "timestamp": "2026-09-19T02:23:01.650170+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 94,
+      "rule_id": "zip_state_assessable",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "012d3c98abcfbdc6",
+      "timestamp": "2026-09-19T02:23:01.650173+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 94,
+      "rule_id": "geography_mismatch_candidate",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "012d3c98abcfbdc6",
+      "timestamp": "2026-09-19T02:23:01.650176+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 95,
+      "rule_id": "proposed_email_export_eligible",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "6c16de858e8d33b9",
+      "timestamp": "2026-09-19T02:23:01.650179+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 95,
+      "rule_id": "zip_state_assessable",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "6c16de858e8d33b9",
+      "timestamp": "2026-09-19T02:23:01.650182+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 95,
+      "rule_id": "geography_mismatch_candidate",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "6c16de858e8d33b9",
+      "timestamp": "2026-09-19T02:23:01.650184+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 96,
+      "rule_id": "name_cleaning_candidate",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "60f3237c63aa55b6",
+      "timestamp": "2026-09-19T02:23:01.650187+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 96,
+      "rule_id": "proposed_email_export_eligible",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "60f3237c63aa55b6",
+      "timestamp": "2026-09-19T02:23:01.650190+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 96,
+      "rule_id": "zip_state_assessable",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "60f3237c63aa55b6",
+      "timestamp": "2026-09-19T02:23:01.650192+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 97,
+      "rule_id": "name_cleaning_candidate",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "1f2c3b264cedec13",
+      "timestamp": "2026-09-19T02:23:01.650195+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 97,
+      "rule_id": "proposed_email_export_eligible",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "1f2c3b264cedec13",
+      "timestamp": "2026-09-19T02:23:01.650198+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 97,
+      "rule_id": "zip_state_assessable",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "1f2c3b264cedec13",
+      "timestamp": "2026-09-19T02:23:01.650200+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 98,
+      "rule_id": "name_cleaning_candidate",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "ce819301f8aa2502",
+      "timestamp": "2026-09-19T02:23:01.650203+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 98,
+      "rule_id": "proposed_email_export_eligible",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "ce819301f8aa2502",
+      "timestamp": "2026-09-19T02:23:01.650206+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 98,
+      "rule_id": "zip_state_assessable",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "ce819301f8aa2502",
+      "timestamp": "2026-09-19T02:23:01.650208+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 99,
+      "rule_id": "proposed_email_export_eligible",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "f4cccb560e7da13f",
+      "timestamp": "2026-09-19T02:23:01.650213+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 99,
+      "rule_id": "zip_state_assessable",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "f4cccb560e7da13f",
+      "timestamp": "2026-09-19T02:23:01.650216+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 100,
+      "rule_id": "proposed_email_export_eligible",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "881b4290264fe3d3",
+      "timestamp": "2026-09-19T02:23:01.650219+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 100,
+      "rule_id": "zip_state_assessable",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "881b4290264fe3d3",
+      "timestamp": "2026-09-19T02:23:01.650221+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 101,
+      "rule_id": "first_name_cleaning_candidate",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "4a984763c77b6201",
+      "timestamp": "2026-09-19T02:23:01.650224+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 101,
+      "rule_id": "proposed_email_export_eligible",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "4a984763c77b6201",
+      "timestamp": "2026-09-19T02:23:01.650227+00:00"
+    },
+    {
+      "run_id": "recon_100",
+      "row_number": 101,
+      "rule_id": "zip_state_assessable",
+      "rule_version": "1.0.0",
+      "flag_value": 1,
+      "row_hash": "4a984763c77b6201",
+      "timestamp": "2026-09-19T02:23:01.650229+00:00"
+    }
+  ],
+  "total_row_records": 223,
+  "truncated": false
+}

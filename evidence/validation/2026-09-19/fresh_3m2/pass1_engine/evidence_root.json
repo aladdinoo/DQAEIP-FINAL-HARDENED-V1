@@ -1,0 +1,26 @@
+{
+  "layer": "tamper_evident_evidence_root",
+  "layer_version": "1.0.0",
+  "evidence_dir_portable_note": "paths are handled by the caller; this record stores only artifact names and hashes",
+  "artifacts": {
+    "manifest.json": "7ffe1030be48bec8ffa3b702742bd0a87790269d49bf0a400913ce3156aa89d5",
+    "output.csv": null,
+    "lineage.json": "1f12cf6f3627f6266045ee7af9760696a39d2fb16cbea83596b8bf26f83bcb28",
+    "audit.json": "89915155d679277e096bff33690c96e577a5dcefe7ca941b082c6d17c637f7a6",
+    "monitoring.json": "25160186c45639feef1a22d280e73c3081c69bbb185dd713330c538280049e09",
+    "alerts.json": "d6bae9f440c69ea9df6816674bfb767362a9581e21e7ab2f4f42841410078ae7"
+  },
+  "present_artifacts": [
+    "manifest.json",
+    "lineage.json",
+    "audit.json",
+    "monitoring.json",
+    "alerts.json"
+  ],
+  "absent_artifacts": [
+    "output.csv"
+  ],
+  "root_sha256": "65c48452a3ee89ee944c28a9ef919a64d1815d0037510f6179c6f7f203faeb19",
+  "created_utc": "2026-09-19T09:21:51Z",
+  "verification_note": "Recompute the artifact hashes and the root hash from the actual files and compare against root_sha256 \u2014 any difference (including an artifact appearing or disappearing) invalidates this evidence root."
+}

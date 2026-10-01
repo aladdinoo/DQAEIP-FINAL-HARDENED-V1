@@ -1,0 +1,77 @@
+{
+  "detected_count": 15,
+  "detection_rate": "15/15",
+  "generated_utc": "2026-09-18T23:36:56Z",
+  "isolation": "every scenario ran against an isolated temporary fixture; authoritative production evidence was never touched",
+  "report": "DQAEIP FINAL UPDATE tamper matrix (section 20)",
+  "required_detection_rate": "100%",
+  "scenario_count": 15,
+  "scenarios": [
+    {
+      "detection": "detected",
+      "scenario": "01_frozen_v1_modification"
+    },
+    {
+      "detection": "detected",
+      "scenario": "02_run1_modification"
+    },
+    {
+      "detection": "detected",
+      "scenario": "03_run2_modification"
+    },
+    {
+      "detection": "detected",
+      "scenario": "04_final_results_modification"
+    },
+    {
+      "detection": "detected",
+      "scenario": "05_hash_modification"
+    },
+    {
+      "detection": "detected",
+      "scenario": "06_manifest_modification"
+    },
+    {
+      "detection": "detected",
+      "scenario": "07_provenance_modification"
+    },
+    {
+      "detection": "detected",
+      "scenario": "08_checker_sha_modification"
+    },
+    {
+      "detection": "detected",
+      "scenario": "09_readme_metric_modification"
+    },
+    {
+      "detection": "detected",
+      "scenario": "10_fake_run3"
+    },
+    {
+      "detection": "detected",
+      "scenario": "11_duplicate_artifact"
+    },
+    {
+      "detection": "detected",
+      "scenario": "12_missing_evidence"
+    },
+    {
+      "detection": "detected",
+      "scenario": "13_stale_dependency"
+    },
+    {
+      "detection": "detected",
+      "scenario": "14_release_identity_modification"
+    },
+    {
+      "detection": "detected",
+      "scenario": "15_configuration_drift"
+    }
+  ],
+  "schema": {
+    "name": "dqaeip.tamper_matrix",
+    "version": "1.0"
+  },
+  "update_id": "DQAEIP-FINAL-CLEAN-REBUILD-RELEASE-2026-09-18",
+  "verdict": "PASS"
+}

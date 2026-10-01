@@ -1,0 +1,109 @@
+{
+  "baseline_type": "DQAEIP rebuild forensic baseline (Phase 1, pre-modification)",
+  "environment": {
+    "arch": "x86_64",
+    "os": "linux",
+    "python": "3.12.14"
+  },
+  "evidence_directory_inventory": {
+    "FINAL_CLEAN_REBUILD_RELEASE_2026-09-18": {
+      "files": 31
+    },
+    "FINAL_PORTABLE_RELEASE_2026-09-18": {
+      "files": 1
+    },
+    "bench_quick": {
+      "files": 5
+    },
+    "dqvp_performance": {
+      "files": 2
+    },
+    "final_execution": {
+      "files": 1
+    },
+    "mutation_testing": {
+      "files": 1
+    },
+    "q20_cli": {
+      "files": 5
+    },
+    "rebuild_baseline": {
+      "files": 0
+    },
+    "rebuild_verification": {
+      "files": 1
+    },
+    "release": {
+      "files": 2
+    },
+    "rt_1k": {
+      "files": 5
+    },
+    "test_q9": {
+      "files": 5
+    },
+    "validation": {
+      "files": 27
+    }
+  },
+  "frozen_production_files": {
+    "data_quality_platform/alerting/alerts.py": "760338c1beac2ddf829a850abbe3f1243d58f49c5453cfa11c016c5d362a2eec",
+    "data_quality_platform/audit/trail.py": "e6b254bdf3d1f58cedeb3a6ac5f4b1bb5d646fe4a2d8d63b4388028b8cfeb754",
+    "data_quality_platform/contracts.py": "b3eea54f0c5142e654cd531c4bb994669a170a7b37060b6bb7d45c4c46fb5d18",
+    "data_quality_platform/evidence/manifests.py": "820007875ae8de65d4f6b5c50787febb0ccfe6cf0dc3cd7da17ac7709f35d6b8",
+    "data_quality_platform/generation/synthetic.py": "b81eb9168fb208b4d5d97665191c750c9135e9caf8540b022236925c01ba97e9",
+    "data_quality_platform/lineage/recorder.py": "560bebf91b95a8c21358d5f3a06562da1b17354067a51b48775eaaf9ea66f36e",
+    "data_quality_platform/monitoring/quality.py": "b9c3174da516a2532a7ff204604159bf48ee2849664533ccca0259f50568e028",
+    "data_quality_platform/rules/base.py": "3a2a5793506114b09a7c1db9616ced482c990bdc18da6aa2d2446b282013d0af",
+    "data_quality_platform/rules/registry.py": "bea2ab41d7c3237c322e1b3085b7ec5602152865491c8bc3d6c060e050d8faf5",
+    "data_quality_platform/rules/v1_rules.py": "daef1ded54c7d3c79898a1ba253be2acd5b6120e18b16b09009fdd7be9fc2276",
+    "data_quality_platform/validation/engine.py": "eb2af61813227cfb4b8ce4f92a71e61be8747bd39df77284a7e556fb6ebf3fc8",
+    "runner/cli.py": "1ee41fb204eba38739f223328796a56cee930f83a5126ebb911df1db6d257756"
+  },
+  "generated_utc": "2026-09-18T23:40:47Z",
+  "git": {
+    "ahead": 131,
+    "behind": 0,
+    "branch": "main",
+    "content_clean": false,
+    "content_clean_note": "content-level cleanliness with core.fileMode=false; the storage layer flipped executable bits (644->755) on tracked files after the previous session \u2014 zero content difference, verified via git blob hash comparison on canonical sources",
+    "head": "dafea63318b468929c7606681867ecf79f711094",
+    "last_commit_timestamp": "2026-09-18T23:28:35Z",
+    "mode_only_changes_recorded": 13,
+    "origin_main": "8f60aa68f0009cdc81c332815f9fcd5ae194581f",
+    "origin_url": "https://github.com/aladdinoo/Data-Quality-Validation-Platform-v2.git",
+    "tree_hash": "18040ba0387f5cd32d5a71a9351fe51f6bc767e1"
+  },
+  "identity": {
+    "current_name": "Data Quality Assurance & Validation Platform",
+    "current_release_name": "DQAVP-Enterprise-Hardened-Validation-Release-2026-09-15",
+    "current_short_name": "DQAVP",
+    "python_package": "data_quality_platform",
+    "rename_target": {
+      "new_name": "Data Quality Assurance & Evidence Integrity Platform",
+      "new_release_name": "DQAEIP-Enterprise-Assurance-Validation-Release",
+      "new_short_name": "DQAEIP",
+      "package_policy": "data_quality_platform retained as compatibility package (no import changes)"
+    }
+  },
+  "immutability": "this manifest is written once; the writer refuses to overwrite it",
+  "key_release_artifacts": {
+    "DELIVERY_MANIFEST.json": "664d23f20981e12981bc16c3635e3a2e3f5b08335590432067124828d3b081bb",
+    "README.md": "18e66889210481cb79a18f32862dc6e19e3c7c9b5f7bb742d9c7b06353c656a6",
+    "RELEASE_NOTES.md": "ea39e2f0e7b0f99ac932306622bd6333d426f8a8e269ae6e6ce5e5ced4dc577b",
+    "evidence/dqvp_performance/performance_results.json": "80f242b6690b566c7870ed1603ac639ce03f14417cf3307f3c5291ebe85c1330",
+    "evidence/hardening_baseline/baseline_manifest.json": null,
+    "evidence/mutation_testing/mutation_results.json": "6fae8de0d0ae99ade4d7b1e28d055b73914bdb2edca3cec4d674df38e528af74",
+    "evidence/release_gate/final_release_gate.json": null,
+    "evidence/validation/2026-09-18/fresh_3m2/harness/FINAL_RESULTS.json": "755fa28f224c480e873676b487d4c6babeb0072fff50e47c08104684b6643337",
+    "evidence/validation/2026-09-18/fresh_3m2/harness/pass1_engine/evidence_root.json": "8c401782731fe5ee14e21b5135079f9f6de2e8d87f135f68d21ffa6503823fac",
+    "evidence/validation/2026-09-18/fresh_3m2/harness/pass1_engine/manifest.json": "b4491b02f1487de936b941301cb86e134cc4e5bee15767395d51ec0669464a9a",
+    "evidence/validation/2026-09-18/fresh_3m2/harness/pass2_engine/evidence_root.json": "8ea6e1345baf31dcba48cb8ed0ddd362ecd2fa72db5c992f17863fbba04ae9c7",
+    "evidence/validation/2026-09-18/fresh_3m2/harness/pass2_engine/manifest.json": "96ac5bcc3bbd32a335de72a0bf6eec762615a876187a6837943feeabddc3ff95",
+    "final_result.json": "106cc6fc58887d1383de4d42dc0a3c477fd08e8408e890ca679c7a00969744fc",
+    "release_manifest.json": "26cc960f33b94ce83d9ad1fbdc8c65945b30be14a916d9f5056f211bf38b2c37"
+  },
+  "tracked_files_hashed": 303,
+  "tracked_files_total": 303,
+  "tracked_tree_concat_sha256": "1f8508fb1c46236f961782bc310195d7ae324bb4f8168e1684443d618a6b9a11"
+}

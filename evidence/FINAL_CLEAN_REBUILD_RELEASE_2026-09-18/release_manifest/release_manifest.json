@@ -1,0 +1,3174 @@
+{
+  "exclusion_note": "the release lock, the manifest and the ZIP scan report are written after the manifest and therefore cannot be described by it; their identities are pinned in the integrity snapshot instead",
+  "file_count": 449,
+  "files": [
+    {
+      "artifact_identity": "release file::.env.example",
+      "path": ".env.example",
+      "role": "release file",
+      "sha256": "050d42d7caab335e94a2cd1ee4a20b3ec3defcfbf3870fe5a373b357d7dea26d",
+      "size": 1376
+    },
+    {
+      "artifact_identity": "release file::.gitignore",
+      "path": ".gitignore",
+      "role": "release file",
+      "sha256": "55cbcfa1b99083c1cfee66467847149796aeb448ed1430adbbe7d86de509b5e9",
+      "size": 1188
+    },
+    {
+      "artifact_identity": "release file::DELIVERY_MANIFEST.json",
+      "path": "DELIVERY_MANIFEST.json",
+      "role": "release file",
+      "sha256": "664d23f20981e12981bc16c3635e3a2e3f5b08335590432067124828d3b081bb",
+      "size": 20451
+    },
+    {
+      "artifact_identity": "release file::FINAL_RESULTS.json",
+      "path": "FINAL_RESULTS.json",
+      "role": "release file",
+      "sha256": "cbd25637a4b03cf57552e991b897321e50445394cf8734a0eb010e759c63de0b",
+      "size": 35549
+    },
+    {
+      "artifact_identity": "documentation::README.md",
+      "path": "README.md",
+      "role": "documentation",
+      "sha256": "87d7a36f75695f437e95398e0406f3ed6ef2f6de6e4788fed55aff6430905de9",
+      "size": 14995
+    },
+    {
+      "artifact_identity": "documentation::RELEASE_NOTES.md",
+      "path": "RELEASE_NOTES.md",
+      "role": "documentation",
+      "sha256": "81d8241e7522310569ece5c6ff5921f60b2ee9066f68c07a61fdbaa56ba31891",
+      "size": 14178
+    },
+    {
+      "artifact_identity": "release file::airflow/dags/dq_validation_dag.py",
+      "path": "airflow/dags/dq_validation_dag.py",
+      "role": "release file",
+      "sha256": "53ff8d3086a3681a9c5bdea572b03c986c5a82adfb1775627c80e0fabacbd23c",
+      "size": 5291
+    },
+    {
+      "artifact_identity": "release file::configs/quality.yaml",
+      "path": "configs/quality.yaml",
+      "role": "release file",
+      "sha256": "c35134ea94f61b4a3441b0459048fea784b90be09e1066f9dc18d6f9bcb29e4f",
+      "size": 613
+    },
+    {
+      "artifact_identity": "release file::data/generated/fresh_3m2_smoke/preflight_1k_out.csv",
+      "path": "data/generated/fresh_3m2_smoke/preflight_1k_out.csv",
+      "role": "release file",
+      "sha256": "aab9dca37bb2dc5c3cb014e92f40045890cb37f28741268edb85d0a4f8a0652b",
+      "size": 250717
+    },
+    {
+      "artifact_identity": "release file::data/generated/fresh_3m2_smoke/preflight_1k_seed_20260918.csv",
+      "path": "data/generated/fresh_3m2_smoke/preflight_1k_seed_20260918.csv",
+      "role": "release file",
+      "sha256": "e6a43ea13369626399d412636c6111e84207130486d8e173c3b8f349140b495c",
+      "size": 234520
+    },
+    {
+      "artifact_identity": "platform source::data_quality_platform/__init__.py",
+      "path": "data_quality_platform/__init__.py",
+      "role": "platform source",
+      "sha256": "6f6248cc09a8faa8ef095cb92400030690af59bf7eb78e042b2558a727f04646",
+      "size": 110
+    },
+    {
+      "artifact_identity": "platform source::data_quality_platform/alerting/__init__.py",
+      "path": "data_quality_platform/alerting/__init__.py",
+      "role": "platform source",
+      "sha256": "ed4674ead1ddf4e736ada4e0dfe8d26bab0ecab3cf5172e1c32bfcfef2dece13",
+      "size": 139
+    },
+    {
+      "artifact_identity": "platform source::data_quality_platform/alerting/alerts.py",
+      "path": "data_quality_platform/alerting/alerts.py",
+      "role": "platform source",
+      "sha256": "760338c1beac2ddf829a850abbe3f1243d58f49c5453cfa11c016c5d362a2eec",
+      "size": 4576
+    },
+    {
+      "artifact_identity": "platform source::data_quality_platform/assurance/__init__.py",
+      "path": "data_quality_platform/assurance/__init__.py",
+      "role": "platform source",
+      "sha256": "6fbc1dfe7bf281eae1a176a462a527698d006b0b03f59f4aa3161a9018e4e150",
+      "size": 865
+    },
+    {
+      "artifact_identity": "platform source::data_quality_platform/assurance/artifact_identity.py",
+      "path": "data_quality_platform/assurance/artifact_identity.py",
+      "role": "platform source",
+      "sha256": "718397e9d2ec115a22df9e0271e4ee66dadc44c5a5528271729bc63eb7e3b1ca",
+      "size": 6850
+    },
+    {
+      "artifact_identity": "platform source::data_quality_platform/assurance/claim_graph.py",
+      "path": "data_quality_platform/assurance/claim_graph.py",
+      "role": "platform source",
+      "sha256": "2b34abf4bae046db57ea578ae3fb100e72788cb53f55b97ff7ce0459c7e26950",
+      "size": 11200
+    },
+    {
+      "artifact_identity": "platform source::data_quality_platform/assurance/claims.py",
+      "path": "data_quality_platform/assurance/claims.py",
+      "role": "platform source",
+      "sha256": "579edb438d58e2f3e08ac476cb3b2b916b7d9ec21fa9572a899bd537eca286a5",
+      "size": 16665
+    },
+    {
+      "artifact_identity": "platform source::data_quality_platform/assurance/contradiction_checker.py",
+      "path": "data_quality_platform/assurance/contradiction_checker.py",
+      "role": "platform source",
+      "sha256": "2d2f832cc8dde881d7463fc64430db88b32110bb0ac08c1d6d37127f4acde23b",
+      "size": 21394
+    },
+    {
+      "artifact_identity": "platform source::data_quality_platform/assurance/evidence_quarantine.py",
+      "path": "data_quality_platform/assurance/evidence_quarantine.py",
+      "role": "platform source",
+      "sha256": "60364da33619670f00e9c75e92a7791ffe5abcd494e8d4ed5e768d5697a9510b",
+      "size": 8090
+    },
+    {
+      "artifact_identity": "platform source::data_quality_platform/assurance/evidence_schema.py",
+      "path": "data_quality_platform/assurance/evidence_schema.py",
+      "role": "platform source",
+      "sha256": "547f52cd30e276ee1f76dbaa563aa13a5edc4da7a39ba096ddc849c13cc0bd93",
+      "size": 10221
+    },
+    {
+      "artifact_identity": "platform source::data_quality_platform/assurance/golden_snapshot.py",
+      "path": "data_quality_platform/assurance/golden_snapshot.py",
+      "role": "platform source",
+      "sha256": "6c434ad56c25fc8a1a04531baaee5e9c55cedbcb70b96e78a576f1217f41f3ad",
+      "size": 6171
+    },
+    {
+      "artifact_identity": "platform source::data_quality_platform/assurance/integrity.py",
+      "path": "data_quality_platform/assurance/integrity.py",
+      "role": "platform source",
+      "sha256": "2883e26ad0be70b816ea4de1873ff21a1adaf1c998724587117372676defdae2",
+      "size": 57762
+    },
+    {
+      "artifact_identity": "platform source::data_quality_platform/assurance/limitation_registry.py",
+      "path": "data_quality_platform/assurance/limitation_registry.py",
+      "role": "platform source",
+      "sha256": "7e4296603e865a75db1cfeb4966bf036315df599a6241973ebf2242c33655111",
+      "size": 4645
+    },
+    {
+      "artifact_identity": "platform source::data_quality_platform/assurance/path_firewall.py",
+      "path": "data_quality_platform/assurance/path_firewall.py",
+      "role": "platform source",
+      "sha256": "61cdc2362b5ed5a55fb56285c8e2ba874341ab4771d558716ecb9132fd00323a",
+      "size": 5541
+    },
+    {
+      "artifact_identity": "platform source::data_quality_platform/assurance/portable_evidence.py",
+      "path": "data_quality_platform/assurance/portable_evidence.py",
+      "role": "platform source",
+      "sha256": "5e3af6210a968340976f5ef13bb8f44396c07d9caac91aaa83138a49f5cbac33",
+      "size": 8455
+    },
+    {
+      "artifact_identity": "platform source::data_quality_platform/assurance/release_chain.py",
+      "path": "data_quality_platform/assurance/release_chain.py",
+      "role": "platform source",
+      "sha256": "813b72722071309f4f0bfd53682c78b7ddbc0663d1846537ad80a7b8afbbf852",
+      "size": 8634
+    },
+    {
+      "artifact_identity": "platform source::data_quality_platform/assurance/release_schema.py",
+      "path": "data_quality_platform/assurance/release_schema.py",
+      "role": "platform source",
+      "sha256": "fcf15ce70bc793292b9f0ab64cdff33e170e0611bf317687f5d806fee4b15024",
+      "size": 7480
+    },
+    {
+      "artifact_identity": "platform source::data_quality_platform/assurance/release_security.py",
+      "path": "data_quality_platform/assurance/release_security.py",
+      "role": "platform source",
+      "sha256": "7b09f734ab46f6c1f59f8cdc43ca6839d52cad9601bff5936c6da47985a60db4",
+      "size": 20527
+    },
+    {
+      "artifact_identity": "platform source::data_quality_platform/assurance/stale_evidence.py",
+      "path": "data_quality_platform/assurance/stale_evidence.py",
+      "role": "platform source",
+      "sha256": "563bb3a1cb6595f00d7dae1509c1557fe1499235f031e07895518398fa639c65",
+      "size": 5959
+    },
+    {
+      "artifact_identity": "platform source::data_quality_platform/assurance/status_model.py",
+      "path": "data_quality_platform/assurance/status_model.py",
+      "role": "platform source",
+      "sha256": "f54c1405f665874d097b382a8a3f0ce432b37873024598e5f9646f7410ad618c",
+      "size": 9729
+    },
+    {
+      "artifact_identity": "platform source::data_quality_platform/assurance/truth_model.py",
+      "path": "data_quality_platform/assurance/truth_model.py",
+      "role": "platform source",
+      "sha256": "88a950a5fa3833e2231d9de947def6d09cd248996e9bf7006968f548575b821e",
+      "size": 5310
+    },
+    {
+      "artifact_identity": "platform source::data_quality_platform/audit/__init__.py",
+      "path": "data_quality_platform/audit/__init__.py",
+      "role": "platform source",
+      "sha256": "09b05ae5fc942ac294e05db6219283e0a8d351f15f697a84b9a3a45c58e1b9a2",
+      "size": 109
+    },
+    {
+      "artifact_identity": "platform source::data_quality_platform/audit/trail.py",
+      "path": "data_quality_platform/audit/trail.py",
+      "role": "platform source",
+      "sha256": "e6b254bdf3d1f58cedeb3a6ac5f4b1bb5d646fe4a2d8d63b4388028b8cfeb754",
+      "size": 5524
+    },
+    {
+      "artifact_identity": "platform source::data_quality_platform/cleaning/__init__.py",
+      "path": "data_quality_platform/cleaning/__init__.py",
+      "role": "platform source",
+      "sha256": "c0297b57cca31e8eccbbf65c15c0c23fe22ad1098599e36af6262d94422ce920",
+      "size": 597
+    },
+    {
+      "artifact_identity": "platform source::data_quality_platform/config/__init__.py",
+      "path": "data_quality_platform/config/__init__.py",
+      "role": "platform source",
+      "sha256": "1f188b346d09df524378fd74f130aaa7f4425ce4ca3c5305af86a9c7af2dde37",
+      "size": 95
+    },
+    {
+      "artifact_identity": "platform source::data_quality_platform/config/settings.py",
+      "path": "data_quality_platform/config/settings.py",
+      "role": "platform source",
+      "sha256": "5a41ece9c11610997de098f7edb717b9b45b5dcb756fd0ede1fe78df4e347787",
+      "size": 9343
+    },
+    {
+      "artifact_identity": "platform source::data_quality_platform/contracts.py",
+      "path": "data_quality_platform/contracts.py",
+      "role": "platform source",
+      "sha256": "b3eea54f0c5142e654cd531c4bb994669a170a7b37060b6bb7d45c4c46fb5d18",
+      "size": 3254
+    },
+    {
+      "artifact_identity": "platform source::data_quality_platform/evidence/__init__.py",
+      "path": "data_quality_platform/evidence/__init__.py",
+      "role": "platform source",
+      "sha256": "1ef0c5795b4220aa84fbff44c4971d4179098aaecbf40a47d8358cc48292727c",
+      "size": 132
+    },
+    {
+      "artifact_identity": "platform source::data_quality_platform/evidence/manifests.py",
+      "path": "data_quality_platform/evidence/manifests.py",
+      "role": "platform source",
+      "sha256": "820007875ae8de65d4f6b5c50787febb0ccfe6cf0dc3cd7da17ac7709f35d6b8",
+      "size": 4561
+    },
+    {
+      "artifact_identity": "platform source::data_quality_platform/flags/__init__.py",
+      "path": "data_quality_platform/flags/__init__.py",
+      "role": "platform source",
+      "sha256": "c5f39c9286b9f9c645aba8a499d56d4af2be88b20636589a2e7992ae0527d778",
+      "size": 54
+    },
+    {
+      "artifact_identity": "platform source::data_quality_platform/generation/__init__.py",
+      "path": "data_quality_platform/generation/__init__.py",
+      "role": "platform source",
+      "sha256": "261b349090fc50b60399d6268ace49c0a37e2906cdec55ef8b32df1d26908b56",
+      "size": 116
+    },
+    {
+      "artifact_identity": "platform source::data_quality_platform/generation/synthetic.py",
+      "path": "data_quality_platform/generation/synthetic.py",
+      "role": "platform source",
+      "sha256": "b81eb9168fb208b4d5d97665191c750c9135e9caf8540b022236925c01ba97e9",
+      "size": 9412
+    },
+    {
+      "artifact_identity": "platform source::data_quality_platform/geography/__init__.py",
+      "path": "data_quality_platform/geography/__init__.py",
+      "role": "platform source",
+      "sha256": "c11d10709431cdfde489da8f4ad94a570217e2f2c44495331f4f3b20540fe63c",
+      "size": 3264
+    },
+    {
+      "artifact_identity": "platform source::data_quality_platform/geography/canonical.py",
+      "path": "data_quality_platform/geography/canonical.py",
+      "role": "platform source",
+      "sha256": "d2efa7ec05f683d3b735cef4f506a58ce3adf4555133da147a5413038ee926d3",
+      "size": 17732
+    },
+    {
+      "artifact_identity": "platform source::data_quality_platform/geography/references.py",
+      "path": "data_quality_platform/geography/references.py",
+      "role": "platform source",
+      "sha256": "c4762484b67f8f6bbfc8c424e406aa52f96e224afa036a9ee5e2b158dbc77a00",
+      "size": 4733
+    },
+    {
+      "artifact_identity": "platform source::data_quality_platform/lineage/__init__.py",
+      "path": "data_quality_platform/lineage/__init__.py",
+      "role": "platform source",
+      "sha256": "69e0bd5a69ddaa1d5d2d709ee678574574c60037aa0e5fee777a34776139178e",
+      "size": 98
+    },
+    {
+      "artifact_identity": "platform source::data_quality_platform/lineage/recorder.py",
+      "path": "data_quality_platform/lineage/recorder.py",
+      "role": "platform source",
+      "sha256": "560bebf91b95a8c21358d5f3a06562da1b17354067a51b48775eaaf9ea66f36e",
+      "size": 6194
+    },
+    {
+      "artifact_identity": "platform source::data_quality_platform/monitoring/__init__.py",
+      "path": "data_quality_platform/monitoring/__init__.py",
+      "role": "platform source",
+      "sha256": "4d119548fd659e90096a6748699f76a077e4d72eae50414c207377ee6063a168",
+      "size": 98
+    },
+    {
+      "artifact_identity": "platform source::data_quality_platform/monitoring/quality.py",
+      "path": "data_quality_platform/monitoring/quality.py",
+      "role": "platform source",
+      "sha256": "b9c3174da516a2532a7ff204604159bf48ee2849664533ccca0259f50568e028",
+      "size": 5981
+    },
+    {
+      "artifact_identity": "platform source::data_quality_platform/profiling/__init__.py",
+      "path": "data_quality_platform/profiling/__init__.py",
+      "role": "platform source",
+      "sha256": "3988b0f6d74e19832743653defaacee70245893b367ade9f2f82a8b47d164f83",
+      "size": 19
+    },
+    {
+      "artifact_identity": "frozen V1 rule source::data_quality_platform/rules/__init__.py",
+      "path": "data_quality_platform/rules/__init__.py",
+      "role": "frozen V1 rule source",
+      "sha256": "2f052eac193a2389fd8fd2f8f8ecfa143883305e74907785c777dbfea9e4a328",
+      "size": 666
+    },
+    {
+      "artifact_identity": "frozen V1 rule source::data_quality_platform/rules/base.py",
+      "path": "data_quality_platform/rules/base.py",
+      "role": "frozen V1 rule source",
+      "sha256": "3a2a5793506114b09a7c1db9616ced482c990bdc18da6aa2d2446b282013d0af",
+      "size": 1864
+    },
+    {
+      "artifact_identity": "frozen V1 rule source::data_quality_platform/rules/registry.py",
+      "path": "data_quality_platform/rules/registry.py",
+      "role": "frozen V1 rule source",
+      "sha256": "bea2ab41d7c3237c322e1b3085b7ec5602152865491c8bc3d6c060e050d8faf5",
+      "size": 5673
+    },
+    {
+      "artifact_identity": "frozen V1 rule source::data_quality_platform/rules/v1_rules.py",
+      "path": "data_quality_platform/rules/v1_rules.py",
+      "role": "frozen V1 rule source",
+      "sha256": "daef1ded54c7d3c79898a1ba253be2acd5b6120e18b16b09009fdd7be9fc2276",
+      "size": 9906
+    },
+    {
+      "artifact_identity": "platform source::data_quality_platform/schema/__init__.py",
+      "path": "data_quality_platform/schema/__init__.py",
+      "role": "platform source",
+      "sha256": "53afeeeba8a2314536e8f995f492e5dc78b025b9736ecdaa6e52c0360dce1d4b",
+      "size": 98
+    },
+    {
+      "artifact_identity": "platform source::data_quality_platform/schema/validator.py",
+      "path": "data_quality_platform/schema/validator.py",
+      "role": "platform source",
+      "sha256": "ecc97c4ad2864fa41c4eaf5e2c326eb7eec38b0ec3c57db9e7d3dfa1f52228a1",
+      "size": 3672
+    },
+    {
+      "artifact_identity": "platform source::data_quality_platform/security/__init__.py",
+      "path": "data_quality_platform/security/__init__.py",
+      "role": "platform source",
+      "sha256": "8c8728cf6671bed8fb3d45f4a7a0c3347ac03ca82aff6beb09c1b3ff519e170d",
+      "size": 219
+    },
+    {
+      "artifact_identity": "platform source::data_quality_platform/security/auth.py",
+      "path": "data_quality_platform/security/auth.py",
+      "role": "platform source",
+      "sha256": "fe42ac289a642d2037a27154c28e28ed32e3c2d94a1a9a87d0b154b6ff4efaa5",
+      "size": 4232
+    },
+    {
+      "artifact_identity": "platform source::data_quality_platform/security/pii_masking.py",
+      "path": "data_quality_platform/security/pii_masking.py",
+      "role": "platform source",
+      "sha256": "48216b4f9035276529b64c1b97d5915fe209edf2e49094b9709831f6a1efc63b",
+      "size": 2461
+    },
+    {
+      "artifact_identity": "platform source::data_quality_platform/security/pii_scan.py",
+      "path": "data_quality_platform/security/pii_scan.py",
+      "role": "platform source",
+      "sha256": "a3a8a8ec630176b53f6e4e814e6fd444a9e5841b85b44742d8f52b1fe3468815",
+      "size": 11306
+    },
+    {
+      "artifact_identity": "platform source::data_quality_platform/storage/__init__.py",
+      "path": "data_quality_platform/storage/__init__.py",
+      "role": "platform source",
+      "sha256": "a93b16ab47a4486d851916e8105688cf1705fca8a93d4737b462f3114c05313f",
+      "size": 121
+    },
+    {
+      "artifact_identity": "platform source::data_quality_platform/validation/__init__.py",
+      "path": "data_quality_platform/validation/__init__.py",
+      "role": "platform source",
+      "sha256": "cd013d8a2292d7617f3994d48ada7fdc19801c099c1c64f9467e049dcfd79e48",
+      "size": 139
+    },
+    {
+      "artifact_identity": "platform source::data_quality_platform/validation/chunking.py",
+      "path": "data_quality_platform/validation/chunking.py",
+      "role": "platform source",
+      "sha256": "32e21dd232a1828b840eb4470d6b283f72d84108c21fedf33b8cea05ded6f035",
+      "size": 9557
+    },
+    {
+      "artifact_identity": "platform source::data_quality_platform/validation/engine.py",
+      "path": "data_quality_platform/validation/engine.py",
+      "role": "platform source",
+      "sha256": "eb2af61813227cfb4b8ce4f92a71e61be8747bd39df77284a7e556fb6ebf3fc8",
+      "size": 17851
+    },
+    {
+      "artifact_identity": "platform source::data_quality_platform/validation/evidence_root.py",
+      "path": "data_quality_platform/validation/evidence_root.py",
+      "role": "platform source",
+      "sha256": "cfdb469fc53360554c3d764e67cba618df83927d7cbab351dfbd537976ee7e23",
+      "size": 7603
+    },
+    {
+      "artifact_identity": "platform source::data_quality_platform/validation/evidence_validator.py",
+      "path": "data_quality_platform/validation/evidence_validator.py",
+      "role": "platform source",
+      "sha256": "70cd0c26a1d5626939e00408cb0a12e28553d99614e784bcbd722ea57ee2d7c9",
+      "size": 22045
+    },
+    {
+      "artifact_identity": "platform source::data_quality_platform/validation/failure_taxonomy.py",
+      "path": "data_quality_platform/validation/failure_taxonomy.py",
+      "role": "platform source",
+      "sha256": "98697a84b24e1b07d956f5d64904023344211084bb2580f3fa698a0d707394f2",
+      "size": 6906
+    },
+    {
+      "artifact_identity": "platform source::data_quality_platform/validation/impact_analysis.py",
+      "path": "data_quality_platform/validation/impact_analysis.py",
+      "role": "platform source",
+      "sha256": "3631d8498155be5fd8815169ef97d2b2f93fed7ccbb6b391d4a68ff806479783",
+      "size": 6629
+    },
+    {
+      "artifact_identity": "platform source::data_quality_platform/validation/input_contract.py",
+      "path": "data_quality_platform/validation/input_contract.py",
+      "role": "platform source",
+      "sha256": "547afa2241afea764dfcd7ed16e70bfcd8388a46a8e7a301918b2a70bf98a359",
+      "size": 15187
+    },
+    {
+      "artifact_identity": "platform source::data_quality_platform/validation/replay.py",
+      "path": "data_quality_platform/validation/replay.py",
+      "role": "platform source",
+      "sha256": "e3a2aeb32b4951a6861cb2c81a52e73da5a04df75fabb0e24012a0526fba1879",
+      "size": 6881
+    },
+    {
+      "artifact_identity": "platform source::data_quality_platform/verification/__init__.py",
+      "path": "data_quality_platform/verification/__init__.py",
+      "role": "platform source",
+      "sha256": "2132345e3d821a68c9e0ba38422585ad22c0d69e9a203e83cc5e918fdd8ab4a9",
+      "size": 299
+    },
+    {
+      "artifact_identity": "platform source::data_quality_platform/verification/decision_provenance.py",
+      "path": "data_quality_platform/verification/decision_provenance.py",
+      "role": "platform source",
+      "sha256": "6ad75f7c9137102fc58f2e86f319b7c21a9a10041d021b8ea87279203a20ea00",
+      "size": 8656
+    },
+    {
+      "artifact_identity": "platform source::data_quality_platform/verification/reference_provenance.py",
+      "path": "data_quality_platform/verification/reference_provenance.py",
+      "role": "platform source",
+      "sha256": "0bdf1872411717faf3be6b90cceb5dc0b82e466232e0e34eb318303980a70370",
+      "size": 9304
+    },
+    {
+      "artifact_identity": "platform source::data_quality_platform/verification/scope_aggregator.py",
+      "path": "data_quality_platform/verification/scope_aggregator.py",
+      "role": "platform source",
+      "sha256": "3202eb179bdc9316c309848f70b05dd261653d198073ac6ff75c78e92b3960ef",
+      "size": 14275
+    },
+    {
+      "artifact_identity": "release file::docker-compose.yml",
+      "path": "docker-compose.yml",
+      "role": "release file",
+      "sha256": "b59bd7f13b7bae7ec6acac3ecb41e96e71438d4c9b201589f2e37af5e6c6eca4",
+      "size": 473
+    },
+    {
+      "artifact_identity": "documentation::docs/ARCHITECTURE_MAP.md",
+      "path": "docs/ARCHITECTURE_MAP.md",
+      "role": "documentation",
+      "sha256": "416b106810feb2794bd787909951e629ed74b202ff962f401036282e16dc6f46",
+      "size": 7255
+    },
+    {
+      "artifact_identity": "documentation::docs/CANONICAL_GEOGRAPHY_DESIGN.md",
+      "path": "docs/CANONICAL_GEOGRAPHY_DESIGN.md",
+      "role": "documentation",
+      "sha256": "077b8d85c6507e55843911124514db3ef9cebb6cabab864075c6e28c626e554d",
+      "size": 17786
+    },
+    {
+      "artifact_identity": "documentation::docs/DATA_FLOW_MAP.md",
+      "path": "docs/DATA_FLOW_MAP.md",
+      "role": "documentation",
+      "sha256": "a66a40e6e4a2ce8bf7f43876b24f3486719b7c15bb49e9c3522e6eb962c225e7",
+      "size": 8383
+    },
+    {
+      "artifact_identity": "documentation::docs/EVIDENCE_COVERAGE.md",
+      "path": "docs/EVIDENCE_COVERAGE.md",
+      "role": "documentation",
+      "sha256": "c95e6388de4a62d5050ab48a8c121b3c0fd1c5ed9aa4d049d76bfd59a2879230",
+      "size": 5874
+    },
+    {
+      "artifact_identity": "documentation::docs/FALSE_POSITIVE_REVIEW.md",
+      "path": "docs/FALSE_POSITIVE_REVIEW.md",
+      "role": "documentation",
+      "sha256": "7491afefd4d7aa85845eadd20e614032070d4cb7b17d2100b75688c9cd991431",
+      "size": 3212
+    },
+    {
+      "artifact_identity": "documentation::docs/FINAL_5M_VALIDATION_REPORT.md",
+      "path": "docs/FINAL_5M_VALIDATION_REPORT.md",
+      "role": "documentation",
+      "sha256": "82dc6967e6090fab04760b5449d7f9437625b2b8e2f8bb3637a97d0429215553",
+      "size": 16532
+    },
+    {
+      "artifact_identity": "documentation::docs/FINAL_AUDIT_DECISION_MATRIX.md",
+      "path": "docs/FINAL_AUDIT_DECISION_MATRIX.md",
+      "role": "documentation",
+      "sha256": "4e5b3e031fefa52827682884185ef91c161af65d4bf3b6ee68ef96d35ac1299d",
+      "size": 4179
+    },
+    {
+      "artifact_identity": "documentation::docs/GEOGRAPHY_RULE_SP1_CONTRACT.md",
+      "path": "docs/GEOGRAPHY_RULE_SP1_CONTRACT.md",
+      "role": "documentation",
+      "sha256": "22c5eb3b337a978fb98d2991730a892141a6b677ea004a448e4cc0b41de8cabb",
+      "size": 13206
+    },
+    {
+      "artifact_identity": "documentation::docs/GULNARA_REVIEW.md",
+      "path": "docs/GULNARA_REVIEW.md",
+      "role": "documentation",
+      "sha256": "5f251e1ee11aebf739de63aea163fbe464bb77b93df50c99bbc9ae104e0e4ff2",
+      "size": 3170
+    },
+    {
+      "artifact_identity": "documentation::docs/REFERENCE_GOVERNANCE_VOCABULARY.md",
+      "path": "docs/REFERENCE_GOVERNANCE_VOCABULARY.md",
+      "role": "documentation",
+      "sha256": "0834d2a93c03198c6cf7ff6a66d7a020da07f18e8ca02bef15210ff000a41fce",
+      "size": 3222
+    },
+    {
+      "artifact_identity": "documentation::docs/REPRODUCIBILITY.md",
+      "path": "docs/REPRODUCIBILITY.md",
+      "role": "documentation",
+      "sha256": "7b97ed5ec4b555eef9d8de971f6567ad5f0a2b3ffd8ae241db0fb1f890add784",
+      "size": 10938
+    },
+    {
+      "artifact_identity": "documentation::docs/RULE_ORACLE_INDEPENDENCE.md",
+      "path": "docs/RULE_ORACLE_INDEPENDENCE.md",
+      "role": "documentation",
+      "sha256": "486bd003ee6ec73587744f5096ca54ee2ec057cd94584f8db76c730122fab48c",
+      "size": 5470
+    },
+    {
+      "artifact_identity": "documentation::docs/SP1_SUCCESSOR_FORENSIC_VALIDATION_REPORT_2026-09-10.md",
+      "path": "docs/SP1_SUCCESSOR_FORENSIC_VALIDATION_REPORT_2026-09-10.md",
+      "role": "documentation",
+      "sha256": "2abf6564f3029cdd2767e5f4e6bac1597aa3cf1b05561dea5c1d94f56ed92117",
+      "size": 15133
+    },
+    {
+      "artifact_identity": "documentation::docs/future/bounded_memory_execution.md",
+      "path": "docs/future/bounded_memory_execution.md",
+      "role": "documentation",
+      "sha256": "383b25cf577b24cac21a467e173a0144ff5225487f0bd331966d3ba01558294e",
+      "size": 6729
+    },
+    {
+      "artifact_identity": "evidence::evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/baseline/authoritative_inventory.json",
+      "path": "evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/baseline/authoritative_inventory.json",
+      "role": "evidence",
+      "sha256": "b83acc6d45df42ddd9896689954f8a01542317a393f94cddab4e3d40d45c1e3d",
+      "size": 15672
+    },
+    {
+      "artifact_identity": "evidence::evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/dependency_graph/dependency_graph.json",
+      "path": "evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/dependency_graph/dependency_graph.json",
+      "role": "evidence",
+      "sha256": "49c19e96a6f796dd1e7907087a229f884a19ed5821088a2689286c471848ab2d",
+      "size": 28838
+    },
+    {
+      "artifact_identity": "evidence::evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/final_results/FINAL_RESULTS_PORTABLE_2026-09-18.json",
+      "path": "evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/final_results/FINAL_RESULTS_PORTABLE_2026-09-18.json",
+      "role": "evidence",
+      "sha256": "98400e0f27ca526c54ef44ced1cf0d50a10b53ba2591a3dc43615561159cbdf8",
+      "size": 13273
+    },
+    {
+      "artifact_identity": "evidence::evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/final_results/FINAL_RESULTS_PORTABLE_2026-09-18.json.superseded",
+      "path": "evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/final_results/FINAL_RESULTS_PORTABLE_2026-09-18.json.superseded",
+      "role": "evidence",
+      "sha256": "0ee27894a8faa1a411fa6b77d4336866901c947195e833fda5a6499d69a7d6fe",
+      "size": 13098
+    },
+    {
+      "artifact_identity": "evidence::evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/historical_policy/HISTORICAL_EVIDENCE_POLICY.json",
+      "path": "evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/historical_policy/HISTORICAL_EVIDENCE_POLICY.json",
+      "role": "evidence",
+      "sha256": "e91fe6d0efd1cd0e3eba7f7a290f29c044119903379abdaa87a8dd09b5532936",
+      "size": 1859
+    },
+    {
+      "artifact_identity": "evidence::evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/mutation_testing/evidence_mutation_matrix.json",
+      "path": "evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/mutation_testing/evidence_mutation_matrix.json",
+      "role": "evidence",
+      "sha256": "f74070efaf0d735e255b5be6c77b0c71094d8a557c8af05fc163600affb8b6c5",
+      "size": 3509
+    },
+    {
+      "artifact_identity": "evidence::evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/path_forensics/ABSOLUTE_PATH_INVENTORY.json",
+      "path": "evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/path_forensics/ABSOLUTE_PATH_INVENTORY.json",
+      "role": "evidence",
+      "sha256": "b2e68da0f1a94a5634c62ea68aaf79272a70fd7e2b1480849ae428fabd39000a",
+      "size": 228806
+    },
+    {
+      "artifact_identity": "evidence::evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/path_forensics/json_semantic_diff_UPDATE-V2.json",
+      "path": "evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/path_forensics/json_semantic_diff_UPDATE-V2.json",
+      "role": "evidence",
+      "sha256": "285450d4b46a42e028474e665e566fa321acf425b72357af405043d976179b9d",
+      "size": 124979
+    },
+    {
+      "artifact_identity": "evidence::evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/path_forensics/path_inventory_UPDATE-V2.json",
+      "path": "evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/path_forensics/path_inventory_UPDATE-V2.json",
+      "role": "evidence",
+      "sha256": "635eff0246ffe567719002e9e0bbf83efbf85bebd50d9811abcb629c3ebd8f82",
+      "size": 351302
+    },
+    {
+      "artifact_identity": "evidence::evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/portable_evidence/FINAL_3M_VALIDATION_RESULTS.UPDATE-V2.portable.json",
+      "path": "evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/portable_evidence/FINAL_3M_VALIDATION_RESULTS.UPDATE-V2.portable.json",
+      "role": "evidence",
+      "sha256": "ee300912a76dfb2bfa41cdab0d0680d68c07496cd853faaac177757943c80bea",
+      "size": 18267
+    },
+    {
+      "artifact_identity": "evidence::evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/portable_evidence/evidence/validation/2026-09-18/fresh_3m2/harness/FINAL_RESULTS.json",
+      "path": "evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/portable_evidence/evidence/validation/2026-09-18/fresh_3m2/harness/FINAL_RESULTS.json",
+      "role": "evidence",
+      "sha256": "5cd97b0837f5c1c2be2fabbd26600ade41cb4d95cd848f0e5fea850a4ce24572",
+      "size": 17608
+    },
+    {
+      "artifact_identity": "evidence::evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/portable_evidence/evidence/validation/2026-09-18/fresh_3m2/harness/pass1_cli.UPDATE-V2.portable.json",
+      "path": "evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/portable_evidence/evidence/validation/2026-09-18/fresh_3m2/harness/pass1_cli.UPDATE-V2.portable.json",
+      "role": "evidence",
+      "sha256": "9cfb7a1780e845305e99721dc819bff2712c68c0ea1ff7d690345a9ba1550221",
+      "size": 6124
+    },
+    {
+      "artifact_identity": "evidence::evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/portable_evidence/evidence/validation/2026-09-18/fresh_3m2/harness/pass1_cli.json",
+      "path": "evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/portable_evidence/evidence/validation/2026-09-18/fresh_3m2/harness/pass1_cli.json",
+      "role": "evidence",
+      "sha256": "80f25d4ccc0428c10e3bb9e82d0d36d94d60d7cd39f7a1ccc4fe7e037bfb4052",
+      "size": 5403
+    },
+    {
+      "artifact_identity": "evidence::evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/portable_evidence/evidence/validation/2026-09-18/fresh_3m2/harness/pass1_result.UPDATE-V2.portable.json",
+      "path": "evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/portable_evidence/evidence/validation/2026-09-18/fresh_3m2/harness/pass1_result.UPDATE-V2.portable.json",
+      "role": "evidence",
+      "sha256": "cd3c49bfbba9edfbc9fff5765b5829ec3d6171258a3e0c7a5643f33f9fdcb880",
+      "size": 9454
+    },
+    {
+      "artifact_identity": "evidence::evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/portable_evidence/evidence/validation/2026-09-18/fresh_3m2/harness/pass1_result.json",
+      "path": "evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/portable_evidence/evidence/validation/2026-09-18/fresh_3m2/harness/pass1_result.json",
+      "role": "evidence",
+      "sha256": "1c7ba5cc4fe4b308dd6830c9e58f8b02a73e44cd9e88248c7a68dbb74e9d8cb4",
+      "size": 8727
+    },
+    {
+      "artifact_identity": "evidence::evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/portable_evidence/evidence/validation/2026-09-18/fresh_3m2/harness/pass1_runtime_safety_events.UPDATE-V2.portable.json",
+      "path": "evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/portable_evidence/evidence/validation/2026-09-18/fresh_3m2/harness/pass1_runtime_safety_events.UPDATE-V2.portable.json",
+      "role": "evidence",
+      "sha256": "8b73ebe1874d317d626c79215eb696cd409efa154a927706555cbd9858ec9f2c",
+      "size": 28696
+    },
+    {
+      "artifact_identity": "evidence::evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/portable_evidence/evidence/validation/2026-09-18/fresh_3m2/harness/pass1_runtime_safety_events.json",
+      "path": "evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/portable_evidence/evidence/validation/2026-09-18/fresh_3m2/harness/pass1_runtime_safety_events.json",
+      "role": "evidence",
+      "sha256": "cd7cb4345ff01c47cb8e0beaf073cb5d8cd2f041429328bd2a5eae6e0e0e7ea1",
+      "size": 27896
+    },
+    {
+      "artifact_identity": "evidence::evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/portable_evidence/evidence/validation/2026-09-18/fresh_3m2/harness/pass2_cli.UPDATE-V2.portable.json",
+      "path": "evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/portable_evidence/evidence/validation/2026-09-18/fresh_3m2/harness/pass2_cli.UPDATE-V2.portable.json",
+      "role": "evidence",
+      "sha256": "152e004d4f283000f33a3733a52d66a51f54a3545b6fc0d15e29f50e229f46d8",
+      "size": 6123
+    },
+    {
+      "artifact_identity": "evidence::evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/portable_evidence/evidence/validation/2026-09-18/fresh_3m2/harness/pass2_cli.json",
+      "path": "evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/portable_evidence/evidence/validation/2026-09-18/fresh_3m2/harness/pass2_cli.json",
+      "role": "evidence",
+      "sha256": "34f3336fef68be76fdd0f39a43a4b1a4f53d5a95bb90f57d0711622eca7fc659",
+      "size": 5402
+    },
+    {
+      "artifact_identity": "evidence::evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/portable_evidence/evidence/validation/2026-09-18/fresh_3m2/harness/pass2_result.UPDATE-V2.portable.json",
+      "path": "evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/portable_evidence/evidence/validation/2026-09-18/fresh_3m2/harness/pass2_result.UPDATE-V2.portable.json",
+      "role": "evidence",
+      "sha256": "488805fd1c0a309f6e6da1b8251e24196f7ac4b0168190f3ed31f66e695117c1",
+      "size": 9453
+    },
+    {
+      "artifact_identity": "evidence::evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/portable_evidence/evidence/validation/2026-09-18/fresh_3m2/harness/pass2_result.json",
+      "path": "evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/portable_evidence/evidence/validation/2026-09-18/fresh_3m2/harness/pass2_result.json",
+      "role": "evidence",
+      "sha256": "2869f4ac7655ad3866e8002148f34d23171787ba4e956174bdcffa00837f8dee",
+      "size": 8726
+    },
+    {
+      "artifact_identity": "evidence::evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/portable_evidence/evidence/validation/2026-09-18/fresh_3m2/harness/pass2_runtime_safety_events.UPDATE-V2.portable.json",
+      "path": "evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/portable_evidence/evidence/validation/2026-09-18/fresh_3m2/harness/pass2_runtime_safety_events.UPDATE-V2.portable.json",
+      "role": "evidence",
+      "sha256": "2e3e4a41cb0393c1816f91f936eb09e97f7e6c7b9bdd2b2be062e095d014ae32",
+      "size": 28696
+    },
+    {
+      "artifact_identity": "evidence::evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/portable_evidence/evidence/validation/2026-09-18/fresh_3m2/harness/pass2_runtime_safety_events.json",
+      "path": "evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/portable_evidence/evidence/validation/2026-09-18/fresh_3m2/harness/pass2_runtime_safety_events.json",
+      "role": "evidence",
+      "sha256": "91e9813c878f3817ce19b7ba43ec768991d7c6be42b7c0c75d4119e2c6d19bbb",
+      "size": 27896
+    },
+    {
+      "artifact_identity": "evidence::evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/portable_evidence/evidence/validation/2026-09-18/fresh_3m2/preflight/audit.UPDATE-V2.portable.json",
+      "path": "evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/portable_evidence/evidence/validation/2026-09-18/fresh_3m2/preflight/audit.UPDATE-V2.portable.json",
+      "role": "evidence",
+      "sha256": "c168757ad984427cac409315d8c6087f0eb173441a2703a4ccc0f1e73ad37673",
+      "size": 4551
+    },
+    {
+      "artifact_identity": "evidence::evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/portable_evidence/evidence/validation/2026-09-18/fresh_3m2/preflight/audit.json",
+      "path": "evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/portable_evidence/evidence/validation/2026-09-18/fresh_3m2/preflight/audit.json",
+      "role": "evidence",
+      "sha256": "d3f4a29b3cfc456fad634c2b3004ef1cf9ad2d7e9dbd1f400fee0ee3dae79383",
+      "size": 3877
+    },
+    {
+      "artifact_identity": "evidence::evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/portable_evidence/evidence/validation/2026-09-18/fresh_3m2/preflight/lineage.UPDATE-V2.portable.json",
+      "path": "evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/portable_evidence/evidence/validation/2026-09-18/fresh_3m2/preflight/lineage.UPDATE-V2.portable.json",
+      "role": "evidence",
+      "sha256": "13565deeb20efc1c01f24168170cc9ab616e67526682d47141a2a95deb6f76e9",
+      "size": 264176
+    },
+    {
+      "artifact_identity": "evidence::evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/portable_evidence/evidence/validation/2026-09-18/fresh_3m2/preflight/lineage.json",
+      "path": "evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/portable_evidence/evidence/validation/2026-09-18/fresh_3m2/preflight/lineage.json",
+      "role": "evidence",
+      "sha256": "4b219d10c2a25db1eeaf0140417eaf55cae4910235f9ead8d1ee5cbbaf260d45",
+      "size": 263498
+    },
+    {
+      "artifact_identity": "evidence::evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/portable_evidence/evidence/validation/2026-09-18/fresh_3m2/preflight/manifest.UPDATE-V2.portable.json",
+      "path": "evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/portable_evidence/evidence/validation/2026-09-18/fresh_3m2/preflight/manifest.UPDATE-V2.portable.json",
+      "role": "evidence",
+      "sha256": "fe9624ac4841f85d7cd531d5784102c5c00f20fd158b895dfdd53fcea9634da7",
+      "size": 5831
+    },
+    {
+      "artifact_identity": "evidence::evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/portable_evidence/evidence/validation/2026-09-18/fresh_3m2/preflight/manifest.json",
+      "path": "evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/portable_evidence/evidence/validation/2026-09-18/fresh_3m2/preflight/manifest.json",
+      "role": "evidence",
+      "sha256": "33b04b966dcc35c51585d4593161b88e71492b7dc8823f7fa6197297b9601d54",
+      "size": 5151
+    },
+    {
+      "artifact_identity": "evidence::evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/portable_paths/PORTABLE_EVIDENCE_NORMALIZATION.json",
+      "path": "evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/portable_paths/PORTABLE_EVIDENCE_NORMALIZATION.json",
+      "role": "evidence",
+      "sha256": "3bdec633699886b8fa5515061842a1a7a0c29decbc107dfdf2eb4be74fa4e8a7",
+      "size": 15278
+    },
+    {
+      "artifact_identity": "evidence::evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/portable_paths/UPDATE_V2_NORMALIZATION_SUMMARY.json",
+      "path": "evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/portable_paths/UPDATE_V2_NORMALIZATION_SUMMARY.json",
+      "role": "evidence",
+      "sha256": "adf7b7820d455924e0457820cbaeadd5d2542f66bfafd98ade2f3f52a89b8bfb",
+      "size": 17521
+    },
+    {
+      "artifact_identity": "evidence::evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/release_gate/absolute_path_gate_exceptions.json",
+      "path": "evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/release_gate/absolute_path_gate_exceptions.json",
+      "role": "evidence",
+      "sha256": "5d721aa527881e5efe2cf58444e6864c532e06f8f3b09d82357a85c5fc2f4ad0",
+      "size": 2817
+    },
+    {
+      "artifact_identity": "evidence::evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/release_gate/absolute_path_gate_report.json",
+      "path": "evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/release_gate/absolute_path_gate_report.json",
+      "role": "evidence",
+      "sha256": "e9771beb6d44695cbe256fdd5cb3677c4bc6778a9bc6d7c66a4fbf798f049dea",
+      "size": 6651
+    },
+    {
+      "artifact_identity": "evidence::evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/security/tamper_matrix.json",
+      "path": "evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/security/tamper_matrix.json",
+      "role": "evidence",
+      "sha256": "ec78857d91d94e5379d3df0f5c5392be9bba4cd7cfce7fe25cf3b39d9dc51d93",
+      "size": 1852
+    },
+    {
+      "artifact_identity": "evidence::evidence/FINAL_PORTABLE_RELEASE_2026-09-18/security/tamper_matrix.json",
+      "path": "evidence/FINAL_PORTABLE_RELEASE_2026-09-18/security/tamper_matrix.json",
+      "role": "evidence",
+      "sha256": "461807ea6042a90c5591ee64d8fe16a1d4c3fe12988758830efef9a26c6e94c3",
+      "size": 1852
+    },
+    {
+      "artifact_identity": "evidence::evidence/bench_quick/alerts.json",
+      "path": "evidence/bench_quick/alerts.json",
+      "role": "evidence",
+      "sha256": "4d2dc87294bfc24b12114d42bf99bbc3efe38496ba155efddeeac70279315f5e",
+      "size": 1286
+    },
+    {
+      "artifact_identity": "evidence::evidence/bench_quick/audit.json",
+      "path": "evidence/bench_quick/audit.json",
+      "role": "evidence",
+      "sha256": "ee3fb818e400122a950add112233e8cb3a27fade5dad3a50579d11417c40f1b9",
+      "size": 3093
+    },
+    {
+      "artifact_identity": "evidence::evidence/bench_quick/lineage.json",
+      "path": "evidence/bench_quick/lineage.json",
+      "role": "evidence",
+      "sha256": "3ba0a21797d21ad62341c4aafd7e8427a36b9b190bc07fd02c40269af212fdde",
+      "size": 259424
+    },
+    {
+      "artifact_identity": "evidence::evidence/bench_quick/manifest.json",
+      "path": "evidence/bench_quick/manifest.json",
+      "role": "evidence",
+      "sha256": "d1bd5c08c338b748ed626caf024b56a1e960c696a91d79411d90cebe1ef4747c",
+      "size": 4300
+    },
+    {
+      "artifact_identity": "evidence::evidence/bench_quick/monitoring.json",
+      "path": "evidence/bench_quick/monitoring.json",
+      "role": "evidence",
+      "sha256": "d68b83e0bdbab1dedca6c94f48d24ad88f45ef44a90696e2289ca739f18fb845",
+      "size": 714
+    },
+    {
+      "artifact_identity": "evidence::evidence/dqvp_performance/performance_results.json",
+      "path": "evidence/dqvp_performance/performance_results.json",
+      "role": "evidence",
+      "sha256": "bf673b519a655f254a57a1c62d532ecf51593871ca27f267738db66af3323520",
+      "size": 3293
+    },
+    {
+      "artifact_identity": "evidence::evidence/dqvp_performance/performance_results_baseline_2026-09-18.json",
+      "path": "evidence/dqvp_performance/performance_results_baseline_2026-09-18.json",
+      "role": "evidence",
+      "sha256": "80f242b6690b566c7870ed1603ac639ce03f14417cf3307f3c5291ebe85c1330",
+      "size": 3293
+    },
+    {
+      "artifact_identity": "evidence::evidence/final_execution/rule_matrix.json",
+      "path": "evidence/final_execution/rule_matrix.json",
+      "role": "evidence",
+      "sha256": "ddd370ecf2790af958642f05e2fece979419a00ff27dcd66aa8d4b95f0c301bf",
+      "size": 10785
+    },
+    {
+      "artifact_identity": "evidence::evidence/final_verification/FINAL_VERIFICATION.json",
+      "path": "evidence/final_verification/FINAL_VERIFICATION.json",
+      "role": "evidence",
+      "sha256": "ef1e6746b7b5f1293d1381c53ce22438971c475c03ddc946e3437715a4c13963",
+      "size": 12249
+    },
+    {
+      "artifact_identity": "evidence::evidence/final_verification/VERIFICATION_MATRIX.json",
+      "path": "evidence/final_verification/VERIFICATION_MATRIX.json",
+      "role": "evidence",
+      "sha256": "1a888725719b1454459dc5a4e81c67d04bdbe5503f713eb473d3c95ef5271ec9",
+      "size": 7786
+    },
+    {
+      "artifact_identity": "evidence::evidence/final_verification/airflow/results.json",
+      "path": "evidence/final_verification/airflow/results.json",
+      "role": "evidence",
+      "sha256": "49cd84baa271d38114e9cf166a1ef0c830bcdb4c5f0b9fb3225153e4469eefba",
+      "size": 618
+    },
+    {
+      "artifact_identity": "evidence::evidence/final_verification/clickhouse/results.json",
+      "path": "evidence/final_verification/clickhouse/results.json",
+      "role": "evidence",
+      "sha256": "47538fa433950aa1ae5b122396486861a567bbbb2e3c8ce2f133b6c9721b4528",
+      "size": 821
+    },
+    {
+      "artifact_identity": "evidence::evidence/final_verification/commands/pytest_output.txt",
+      "path": "evidence/final_verification/commands/pytest_output.txt",
+      "role": "evidence",
+      "sha256": "355084e9aa2057cc35ac35e80625f6775a5be4aa026a6965f496d69117ed2879",
+      "size": 1233
+    },
+    {
+      "artifact_identity": "evidence::evidence/final_verification/commands/runtime_tests_output.txt",
+      "path": "evidence/final_verification/commands/runtime_tests_output.txt",
+      "role": "evidence",
+      "sha256": "45464e1ed21f55726f9f9caf7b0f5bf36859ee97c6f6c4f6b5e49cc85025c7ce",
+      "size": 1822
+    },
+    {
+      "artifact_identity": "evidence::evidence/final_verification/flag_contract/evidence_100/alerts.json",
+      "path": "evidence/final_verification/flag_contract/evidence_100/alerts.json",
+      "role": "evidence",
+      "sha256": "541d1c10be32b622a51fa750f3022c5ed3bed8d5922ea44134c2f7730b50d4ff",
+      "size": 1272
+    },
+    {
+      "artifact_identity": "evidence::evidence/final_verification/flag_contract/evidence_100/audit.json",
+      "path": "evidence/final_verification/flag_contract/evidence_100/audit.json",
+      "role": "evidence",
+      "sha256": "8635a25c5082dfa5acfaa85362bab256aa391c31aa2e53edacfec1c6af0c31fa",
+      "size": 3130
+    },
+    {
+      "artifact_identity": "evidence::evidence/final_verification/flag_contract/evidence_100/lineage.json",
+      "path": "evidence/final_verification/flag_contract/evidence_100/lineage.json",
+      "role": "evidence",
+      "sha256": "e415af76e3ce9972453a515237748d1e1d8f8f395729c49f6e07d870abaa8950",
+      "size": 58013
+    },
+    {
+      "artifact_identity": "evidence::evidence/final_verification/flag_contract/evidence_100/manifest.json",
+      "path": "evidence/final_verification/flag_contract/evidence_100/manifest.json",
+      "role": "evidence",
+      "sha256": "20562e3f891870bfe319ad408360d7de79febbeb29808c187188403274ce384c",
+      "size": 4471
+    },
+    {
+      "artifact_identity": "evidence::evidence/final_verification/flag_contract/evidence_100/monitoring.json",
+      "path": "evidence/final_verification/flag_contract/evidence_100/monitoring.json",
+      "role": "evidence",
+      "sha256": "52e262fffddc327d41a6f502ce73f3e458d2d9a5b7bb45707eb13efc1d586b7b",
+      "size": 713
+    },
+    {
+      "artifact_identity": "evidence::evidence/final_verification/flag_contract/evidence_1000/alerts.json",
+      "path": "evidence/final_verification/flag_contract/evidence_1000/alerts.json",
+      "role": "evidence",
+      "sha256": "e6a74a451a41361b994e7318549bc119b86f826ddf23408cf916ef5a12fa3091",
+      "size": 1276
+    },
+    {
+      "artifact_identity": "evidence::evidence/final_verification/flag_contract/evidence_1000/audit.json",
+      "path": "evidence/final_verification/flag_contract/evidence_1000/audit.json",
+      "role": "evidence",
+      "sha256": "2d21e15f280250029030c2ef0ec7da0abfd6da7901feb88c2074adfb44bd33ca",
+      "size": 3164
+    },
+    {
+      "artifact_identity": "evidence::evidence/final_verification/flag_contract/evidence_1000/lineage.json",
+      "path": "evidence/final_verification/flag_contract/evidence_1000/lineage.json",
+      "role": "evidence",
+      "sha256": "4cc938c1810d04e4abbee69ef272ed4a355a4c435fb9480ac18157cd0be81dc9",
+      "size": 257524
+    },
+    {
+      "artifact_identity": "evidence::evidence/final_verification/flag_contract/evidence_1000/manifest.json",
+      "path": "evidence/final_verification/flag_contract/evidence_1000/manifest.json",
+      "role": "evidence",
+      "sha256": "097be9c0c00cff5f3615024a8964fcbb03ed282553a68cfbd10f64c44e4551f3",
+      "size": 4499
+    },
+    {
+      "artifact_identity": "evidence::evidence/final_verification/flag_contract/evidence_1000/monitoring.json",
+      "path": "evidence/final_verification/flag_contract/evidence_1000/monitoring.json",
+      "role": "evidence",
+      "sha256": "2bdadf944d0374373c3e6b1c936cf53cc813cffbfa7deaa497fd25d7b9359887",
+      "size": 712
+    },
+    {
+      "artifact_identity": "evidence::evidence/final_verification/flag_contract/input_100.csv",
+      "path": "evidence/final_verification/flag_contract/input_100.csv",
+      "role": "evidence",
+      "sha256": "971fa58f5fd809a911114a5dd8d1aad87da56431948dee295b4d6d12a58ed649",
+      "size": 25972
+    },
+    {
+      "artifact_identity": "evidence::evidence/final_verification/flag_contract/input_1000.csv",
+      "path": "evidence/final_verification/flag_contract/input_1000.csv",
+      "role": "evidence",
+      "sha256": "4ad9acbca0921ced0a9aca0bf4b4a4ea00531764e3ee4721b93f029aae7f6ec2",
+      "size": 260075
+    },
+    {
+      "artifact_identity": "evidence::evidence/final_verification/flag_contract/output_100.csv",
+      "path": "evidence/final_verification/flag_contract/output_100.csv",
+      "role": "evidence",
+      "sha256": "21fddc48ec8d3ac399e091087ea099f1819389a3b5c4fc3df5aa7afc2d383665",
+      "size": 27769
+    },
+    {
+      "artifact_identity": "evidence::evidence/final_verification/flag_contract/output_1000.csv",
+      "path": "evidence/final_verification/flag_contract/output_1000.csv",
+      "role": "evidence",
+      "sha256": "1144c9b80cee2610c4470ff42508fd14a648caa68956e00f91c9d158ff4cc7cd",
+      "size": 276272
+    },
+    {
+      "artifact_identity": "evidence::evidence/final_verification/flag_contract/results.json",
+      "path": "evidence/final_verification/flag_contract/results.json",
+      "role": "evidence",
+      "sha256": "2e8f9100e455d14b711936aaad467e0f02f920604a7991149b86632ed7fd4e94",
+      "size": 1252
+    },
+    {
+      "artifact_identity": "evidence::evidence/final_verification/negative_tests/results.json",
+      "path": "evidence/final_verification/negative_tests/results.json",
+      "role": "evidence",
+      "sha256": "794d26d055fc718b9e33edf8bcd103441e48430c29dc03cee0be2844d7341c4d",
+      "size": 1398
+    },
+    {
+      "artifact_identity": "evidence::evidence/final_verification/phase2_documentation_audit.json",
+      "path": "evidence/final_verification/phase2_documentation_audit.json",
+      "role": "evidence",
+      "sha256": "11151823d5d60bef116abd64597a82e670372cb3647f41d678a36e804aae68fc",
+      "size": 754
+    },
+    {
+      "artifact_identity": "evidence::evidence/final_verification/q1_schema/duplicate_column.csv",
+      "path": "evidence/final_verification/q1_schema/duplicate_column.csv",
+      "role": "evidence",
+      "sha256": "100731d52de777fdbe33f959b566d3008d49cc32e7cf03436508c5c882a1ddd9",
+      "size": 1610
+    },
+    {
+      "artifact_identity": "evidence::evidence/final_verification/q1_schema/extra_column.csv",
+      "path": "evidence/final_verification/q1_schema/extra_column.csv",
+      "role": "evidence",
+      "sha256": "41c36cf437d8d88aaceedac4477b4a92bb262423d2257f19628ae427642133ad",
+      "size": 1667
+    },
+    {
+      "artifact_identity": "evidence::evidence/final_verification/q1_schema/missing_column.csv",
+      "path": "evidence/final_verification/q1_schema/missing_column.csv",
+      "role": "evidence",
+      "sha256": "3bf37127e00e4c2e32657f0122cccf44c21edcfbcfa83c1034efe460e0389373",
+      "size": 1576
+    },
+    {
+      "artifact_identity": "evidence::evidence/final_verification/q1_schema/reordered_columns.csv",
+      "path": "evidence/final_verification/q1_schema/reordered_columns.csv",
+      "role": "evidence",
+      "sha256": "b60400c6970f2480050b6979e1e30b0ebedfce164316fc0c2061946b1e876d46",
+      "size": 1597
+    },
+    {
+      "artifact_identity": "evidence::evidence/final_verification/q1_schema/results.json",
+      "path": "evidence/final_verification/q1_schema/results.json",
+      "role": "evidence",
+      "sha256": "bac1adaa0ba6617e3c4928e1d0bc5da6f08c6ebbe176a6cfd33cca1f517f4054",
+      "size": 1266
+    },
+    {
+      "artifact_identity": "evidence::evidence/final_verification/q1_schema/valid_33col.csv",
+      "path": "evidence/final_verification/q1_schema/valid_33col.csv",
+      "role": "evidence",
+      "sha256": "fa9a4956dc49bbc8fc94ae372fd14856a5d164d47aebe5a9b7c72bc34b69b5d0",
+      "size": 1603
+    },
+    {
+      "artifact_identity": "evidence::evidence/final_verification/q2_quality/evidence/alerts.json",
+      "path": "evidence/final_verification/q2_quality/evidence/alerts.json",
+      "role": "evidence",
+      "sha256": "a6d4e63044511904947724e52ec067d34c68945a469a8c61a6a486e8da518580",
+      "size": 1308
+    },
+    {
+      "artifact_identity": "evidence::evidence/final_verification/q2_quality/evidence/audit.json",
+      "path": "evidence/final_verification/q2_quality/evidence/audit.json",
+      "role": "evidence",
+      "sha256": "a6d0e53e9bab6d956b276e864be1fc5ad77ab95ae33a0a6782378b7bb7b3fd48",
+      "size": 3214
+    },
+    {
+      "artifact_identity": "evidence::evidence/final_verification/q2_quality/evidence/lineage.json",
+      "path": "evidence/final_verification/q2_quality/evidence/lineage.json",
+      "role": "evidence",
+      "sha256": "391dab32afc6aa7f220a38e8bf95d217dcbed508e67dfb84d455a9823a361284",
+      "size": 60049
+    },
+    {
+      "artifact_identity": "evidence::evidence/final_verification/q2_quality/evidence/manifest.json",
+      "path": "evidence/final_verification/q2_quality/evidence/manifest.json",
+      "role": "evidence",
+      "sha256": "398a4a05617bdbfb1b0669a7050fa899e44ec240309d38fc21a84a65c6d4e851",
+      "size": 4444
+    },
+    {
+      "artifact_identity": "evidence::evidence/final_verification/q2_quality/evidence/monitoring.json",
+      "path": "evidence/final_verification/q2_quality/evidence/monitoring.json",
+      "role": "evidence",
+      "sha256": "52e262fffddc327d41a6f502ce73f3e458d2d9a5b7bb45707eb13efc1d586b7b",
+      "size": 713
+    },
+    {
+      "artifact_identity": "evidence::evidence/final_verification/q2_quality/output_flags.csv",
+      "path": "evidence/final_verification/q2_quality/output_flags.csv",
+      "role": "evidence",
+      "sha256": "21fddc48ec8d3ac399e091087ea099f1819389a3b5c4fc3df5aa7afc2d383665",
+      "size": 27769
+    },
+    {
+      "artifact_identity": "evidence::evidence/final_verification/q2_quality/results.json",
+      "path": "evidence/final_verification/q2_quality/results.json",
+      "role": "evidence",
+      "sha256": "392f25c33a45793e859e533c06bdd1db68fc191d65d7d68a64a60afcac8d5572",
+      "size": 1506
+    },
+    {
+      "artifact_identity": "evidence::evidence/final_verification/q2_quality/synthetic_100.csv",
+      "path": "evidence/final_verification/q2_quality/synthetic_100.csv",
+      "role": "evidence",
+      "sha256": "971fa58f5fd809a911114a5dd8d1aad87da56431948dee295b4d6d12a58ed649",
+      "size": 25972
+    },
+    {
+      "artifact_identity": "evidence::evidence/final_verification/q3_rules/determinism_input.csv",
+      "path": "evidence/final_verification/q3_rules/determinism_input.csv",
+      "role": "evidence",
+      "sha256": "95c1e180db257d1fb725268eebf63450b73c7a07990f8a3099a53870a4ef66b4",
+      "size": 13326
+    },
+    {
+      "artifact_identity": "evidence::evidence/final_verification/q3_rules/evidence_a/alerts.json",
+      "path": "evidence/final_verification/q3_rules/evidence_a/alerts.json",
+      "role": "evidence",
+      "sha256": "63f1c29a5615decd314c447178c429968c79f08c4c5d595b45403710d8faa0ab",
+      "size": 316
+    },
+    {
+      "artifact_identity": "evidence::evidence/final_verification/q3_rules/evidence_a/audit.json",
+      "path": "evidence/final_verification/q3_rules/evidence_a/audit.json",
+      "role": "evidence",
+      "sha256": "af445c036b878f8326370f5bc8c93eef6d0c01f10564a7c487bf361bdfcbaa9d",
+      "size": 3130
+    },
+    {
+      "artifact_identity": "evidence::evidence/final_verification/q3_rules/evidence_a/lineage.json",
+      "path": "evidence/final_verification/q3_rules/evidence_a/lineage.json",
+      "role": "evidence",
+      "sha256": "43e26cdfe2d71b5497eb47b0ade895263e31e33c7cfb165dabda4c00c3262bd8",
+      "size": 28840
+    },
+    {
+      "artifact_identity": "evidence::evidence/final_verification/q3_rules/evidence_a/manifest.json",
+      "path": "evidence/final_verification/q3_rules/evidence_a/manifest.json",
+      "role": "evidence",
+      "sha256": "97afbf5fc66948a9a7e41f92c4737cccc9d6e205d5bec02c0b3710cf885127d2",
+      "size": 4415
+    },
+    {
+      "artifact_identity": "evidence::evidence/final_verification/q3_rules/evidence_a/monitoring.json",
+      "path": "evidence/final_verification/q3_rules/evidence_a/monitoring.json",
+      "role": "evidence",
+      "sha256": "618678bdd11caca729cc1c8fe8e711b7da7e1076a1b2c75ea3d62b637f8d5f2d",
+      "size": 706
+    },
+    {
+      "artifact_identity": "evidence::evidence/final_verification/q3_rules/evidence_b/alerts.json",
+      "path": "evidence/final_verification/q3_rules/evidence_b/alerts.json",
+      "role": "evidence",
+      "sha256": "e035441177f6c94a1a82f27a068476ceea4320879c4da901bdd80474a8473455",
+      "size": 316
+    },
+    {
+      "artifact_identity": "evidence::evidence/final_verification/q3_rules/evidence_b/audit.json",
+      "path": "evidence/final_verification/q3_rules/evidence_b/audit.json",
+      "role": "evidence",
+      "sha256": "e9b506d71e98cb76973700721947e0a14235c82a16555fe71fbfa3d400e6568d",
+      "size": 3129
+    },
+    {
+      "artifact_identity": "evidence::evidence/final_verification/q3_rules/evidence_b/lineage.json",
+      "path": "evidence/final_verification/q3_rules/evidence_b/lineage.json",
+      "role": "evidence",
+      "sha256": "cac119c421fd47e5830c2cc8b390a2fd1935dce39492d57b2933f1c20f83d3fe",
+      "size": 28840
+    },
+    {
+      "artifact_identity": "evidence::evidence/final_verification/q3_rules/evidence_b/manifest.json",
+      "path": "evidence/final_verification/q3_rules/evidence_b/manifest.json",
+      "role": "evidence",
+      "sha256": "e7b4d7cb8c152326515fb7782d16f658fe17e2df8411a65a7b0900f5b7f5232f",
+      "size": 4415
+    },
+    {
+      "artifact_identity": "evidence::evidence/final_verification/q3_rules/evidence_b/monitoring.json",
+      "path": "evidence/final_verification/q3_rules/evidence_b/monitoring.json",
+      "role": "evidence",
+      "sha256": "618678bdd11caca729cc1c8fe8e711b7da7e1076a1b2c75ea3d62b637f8d5f2d",
+      "size": 706
+    },
+    {
+      "artifact_identity": "evidence::evidence/final_verification/q3_rules/gen_x1.csv",
+      "path": "evidence/final_verification/q3_rules/gen_x1.csv",
+      "role": "evidence",
+      "sha256": "931c9e27fd0a8c58b3dc5335a2e9bd1763fa5af09375ecacebba8aa1c11082a3",
+      "size": 8246
+    },
+    {
+      "artifact_identity": "evidence::evidence/final_verification/q3_rules/gen_x2.csv",
+      "path": "evidence/final_verification/q3_rules/gen_x2.csv",
+      "role": "evidence",
+      "sha256": "931c9e27fd0a8c58b3dc5335a2e9bd1763fa5af09375ecacebba8aa1c11082a3",
+      "size": 8246
+    },
+    {
+      "artifact_identity": "evidence::evidence/final_verification/q3_rules/results.json",
+      "path": "evidence/final_verification/q3_rules/results.json",
+      "role": "evidence",
+      "sha256": "24558f5a25f8681a372201ba3849fe7aee0725a19e57e34d3828983469e904fd",
+      "size": 1589
+    },
+    {
+      "artifact_identity": "evidence::evidence/final_verification/q3_rules/run_a.csv",
+      "path": "evidence/final_verification/q3_rules/run_a.csv",
+      "role": "evidence",
+      "sha256": "6d76b69f2aaf8ab77716ba7c416cb6f5d5a83c8903c4c829e43689434cde9d28",
+      "size": 14323
+    },
+    {
+      "artifact_identity": "evidence::evidence/final_verification/q3_rules/run_b.csv",
+      "path": "evidence/final_verification/q3_rules/run_b.csv",
+      "role": "evidence",
+      "sha256": "6d76b69f2aaf8ab77716ba7c416cb6f5d5a83c8903c4c829e43689434cde9d28",
+      "size": 14323
+    },
+    {
+      "artifact_identity": "evidence::evidence/final_verification/q4_evidence/e2e_input.csv",
+      "path": "evidence/final_verification/q4_evidence/e2e_input.csv",
+      "role": "evidence",
+      "sha256": "971fa58f5fd809a911114a5dd8d1aad87da56431948dee295b4d6d12a58ed649",
+      "size": 25972
+    },
+    {
+      "artifact_identity": "evidence::evidence/final_verification/q4_evidence/e2e_output.csv",
+      "path": "evidence/final_verification/q4_evidence/e2e_output.csv",
+      "role": "evidence",
+      "sha256": "21fddc48ec8d3ac399e091087ea099f1819389a3b5c4fc3df5aa7afc2d383665",
+      "size": 27769
+    },
+    {
+      "artifact_identity": "evidence::evidence/final_verification/q4_evidence/evidence/alerts.json",
+      "path": "evidence/final_verification/q4_evidence/evidence/alerts.json",
+      "role": "evidence",
+      "sha256": "c3ed587b2909ed4bdb0c87f00e6d8ddc4aae9118e294b65563fab12b9b1e401b",
+      "size": 1272
+    },
+    {
+      "artifact_identity": "evidence::evidence/final_verification/q4_evidence/evidence/audit.json",
+      "path": "evidence/final_verification/q4_evidence/evidence/audit.json",
+      "role": "evidence",
+      "sha256": "dc6e777f0f5f41024dedd79041656544ea45b04c589d1c970ae85ebe2e0fb9cb",
+      "size": 3119
+    },
+    {
+      "artifact_identity": "evidence::evidence/final_verification/q4_evidence/evidence/lineage.json",
+      "path": "evidence/final_verification/q4_evidence/evidence/lineage.json",
+      "role": "evidence",
+      "sha256": "caa878efc56be22b62cd109318835d40f86e6df152614df663162d739101d442",
+      "size": 58009
+    },
+    {
+      "artifact_identity": "evidence::evidence/final_verification/q4_evidence/evidence/manifest.json",
+      "path": "evidence/final_verification/q4_evidence/evidence/manifest.json",
+      "role": "evidence",
+      "sha256": "881ba62dbdd7a9811df122043a58fda8fb9ccdecff0e0db9a28ef60590f59686",
+      "size": 4439
+    },
+    {
+      "artifact_identity": "evidence::evidence/final_verification/q4_evidence/evidence/monitoring.json",
+      "path": "evidence/final_verification/q4_evidence/evidence/monitoring.json",
+      "role": "evidence",
+      "sha256": "52e262fffddc327d41a6f502ce73f3e458d2d9a5b7bb45707eb13efc1d586b7b",
+      "size": 713
+    },
+    {
+      "artifact_identity": "evidence::evidence/final_verification/q4_evidence/results.json",
+      "path": "evidence/final_verification/q4_evidence/results.json",
+      "role": "evidence",
+      "sha256": "cc172fc4d6a92c0a5b964361ea39148d2d6da328df54f95c79c430232db80317",
+      "size": 2461
+    },
+    {
+      "artifact_identity": "evidence::evidence/final_verification/reconciliation/evidence_100/alerts.json",
+      "path": "evidence/final_verification/reconciliation/evidence_100/alerts.json",
+      "role": "evidence",
+      "sha256": "0e15045a50559689f597161ab665761373fcfce6686bf70694a5eb06a71847ac",
+      "size": 1284
+    },
+    {
+      "artifact_identity": "evidence::evidence/final_verification/reconciliation/evidence_100/audit.json",
+      "path": "evidence/final_verification/reconciliation/evidence_100/audit.json",
+      "role": "evidence",
+      "sha256": "183f8109577cbdc540cb0265eb413e1a88a15731d4ea272477f67f7bfe2490af",
+      "size": 3164
+    },
+    {
+      "artifact_identity": "evidence::evidence/final_verification/reconciliation/evidence_100/lineage.json",
+      "path": "evidence/final_verification/reconciliation/evidence_100/lineage.json",
+      "role": "evidence",
+      "sha256": "957515c91ab7b0ac756c46dfd20dfdd34a5486e5ce74377274c49210596cad79",
+      "size": 58693
+    },
+    {
+      "artifact_identity": "evidence::evidence/final_verification/reconciliation/evidence_100/manifest.json",
+      "path": "evidence/final_verification/reconciliation/evidence_100/manifest.json",
+      "role": "evidence",
+      "sha256": "b686318ed1bd5a0f4646ae619a19aec6e6885fcafc69edd643040dc052963726",
+      "size": 4480
+    },
+    {
+      "artifact_identity": "evidence::evidence/final_verification/reconciliation/evidence_100/monitoring.json",
+      "path": "evidence/final_verification/reconciliation/evidence_100/monitoring.json",
+      "role": "evidence",
+      "sha256": "52e262fffddc327d41a6f502ce73f3e458d2d9a5b7bb45707eb13efc1d586b7b",
+      "size": 713
+    },
+    {
+      "artifact_identity": "evidence::evidence/final_verification/reconciliation/evidence_1000/alerts.json",
+      "path": "evidence/final_verification/reconciliation/evidence_1000/alerts.json",
+      "role": "evidence",
+      "sha256": "14fdfdee6ad8232b394e48da3f47205723c11e299c50ae7cce697184dacd3d67",
+      "size": 1288
+    },
+    {
+      "artifact_identity": "evidence::evidence/final_verification/reconciliation/evidence_1000/audit.json",
+      "path": "evidence/final_verification/reconciliation/evidence_1000/audit.json",
+      "role": "evidence",
+      "sha256": "2dfb674aa6ccb6fcedbd7090986b767e130c465e38ee8e5aaa1104f21036ae77",
+      "size": 3197
+    },
+    {
+      "artifact_identity": "evidence::evidence/final_verification/reconciliation/evidence_1000/lineage.json",
+      "path": "evidence/final_verification/reconciliation/evidence_1000/lineage.json",
+      "role": "evidence",
+      "sha256": "c50224b7b4f74f2990e890bea0a9c0aeb3c65df197cd65c0c7da9b9bf94574aa",
+      "size": 260535
+    },
+    {
+      "artifact_identity": "evidence::evidence/final_verification/reconciliation/evidence_1000/manifest.json",
+      "path": "evidence/final_verification/reconciliation/evidence_1000/manifest.json",
+      "role": "evidence",
+      "sha256": "67d84382e7fffbf846fd5b717616868c79c670a0d6b6b09d6afb3fd185b8c3bd",
+      "size": 4508
+    },
+    {
+      "artifact_identity": "evidence::evidence/final_verification/reconciliation/evidence_1000/monitoring.json",
+      "path": "evidence/final_verification/reconciliation/evidence_1000/monitoring.json",
+      "role": "evidence",
+      "sha256": "2bdadf944d0374373c3e6b1c936cf53cc813cffbfa7deaa497fd25d7b9359887",
+      "size": 712
+    },
+    {
+      "artifact_identity": "evidence::evidence/final_verification/reconciliation/input_100.csv",
+      "path": "evidence/final_verification/reconciliation/input_100.csv",
+      "role": "evidence",
+      "sha256": "971fa58f5fd809a911114a5dd8d1aad87da56431948dee295b4d6d12a58ed649",
+      "size": 25972
+    },
+    {
+      "artifact_identity": "evidence::evidence/final_verification/reconciliation/input_1000.csv",
+      "path": "evidence/final_verification/reconciliation/input_1000.csv",
+      "role": "evidence",
+      "sha256": "4ad9acbca0921ced0a9aca0bf4b4a4ea00531764e3ee4721b93f029aae7f6ec2",
+      "size": 260075
+    },
+    {
+      "artifact_identity": "evidence::evidence/final_verification/reconciliation/output_100.csv",
+      "path": "evidence/final_verification/reconciliation/output_100.csv",
+      "role": "evidence",
+      "sha256": "21fddc48ec8d3ac399e091087ea099f1819389a3b5c4fc3df5aa7afc2d383665",
+      "size": 27769
+    },
+    {
+      "artifact_identity": "evidence::evidence/final_verification/reconciliation/output_1000.csv",
+      "path": "evidence/final_verification/reconciliation/output_1000.csv",
+      "role": "evidence",
+      "sha256": "1144c9b80cee2610c4470ff42508fd14a648caa68956e00f91c9d158ff4cc7cd",
+      "size": 276272
+    },
+    {
+      "artifact_identity": "evidence::evidence/final_verification/reconciliation/results.json",
+      "path": "evidence/final_verification/reconciliation/results.json",
+      "role": "evidence",
+      "sha256": "3a5d655b6eddeeee121564d675e893a6a2568de905bffd92491c522e4a529810",
+      "size": 292
+    },
+    {
+      "artifact_identity": "evidence::evidence/final_verification/security/results.json",
+      "path": "evidence/final_verification/security/results.json",
+      "role": "evidence",
+      "sha256": "e1063e3beaf4e04b841462dc928b4d1cf9cebc79461b96a2edbed87048b77311",
+      "size": 542
+    },
+    {
+      "artifact_identity": "evidence::evidence/final_verification/tests/full_pytest_output.txt",
+      "path": "evidence/final_verification/tests/full_pytest_output.txt",
+      "role": "evidence",
+      "sha256": "4ebbf2897c46beb168d13fecacf23e388c76f2af61198350fec5dec465731336",
+      "size": 780
+    },
+    {
+      "artifact_identity": "evidence::evidence/final_verification/tests/results.json",
+      "path": "evidence/final_verification/tests/results.json",
+      "role": "evidence",
+      "sha256": "0c1d215a5cc139ed51ab8d554542fb80f1ca5567b6ea43836659125e3ee89c4d",
+      "size": 2188
+    },
+    {
+      "artifact_identity": "evidence::evidence/hardening_baseline/baseline_manifest.json",
+      "path": "evidence/hardening_baseline/baseline_manifest.json",
+      "role": "evidence",
+      "sha256": "8b44181e8398cdeeae38ec0c280547922f032e3d8e56993f22c7889bb1d33bc8",
+      "size": 19524
+    },
+    {
+      "artifact_identity": "evidence::evidence/hardening_baseline/baseline_manifest.sha256",
+      "path": "evidence/hardening_baseline/baseline_manifest.sha256",
+      "role": "evidence",
+      "sha256": "6f84823ccec65efbeac123d525e2200c34b7db8935f738e33b0307af459373ca",
+      "size": 89
+    },
+    {
+      "artifact_identity": "evidence::evidence/hardening_baseline/environment_fingerprint.json",
+      "path": "evidence/hardening_baseline/environment_fingerprint.json",
+      "role": "evidence",
+      "sha256": "375c91faae7f2b41597de142b0c12188b8e9387f50844a3364d150f7af8ac203",
+      "size": 923
+    },
+    {
+      "artifact_identity": "evidence::evidence/hardening_baseline/test_baseline.txt",
+      "path": "evidence/hardening_baseline/test_baseline.txt",
+      "role": "evidence",
+      "sha256": "62309108196f099742a24e9d6ac54ebc72d95dac5456c09c533dc2c0030877e4",
+      "size": 8672
+    },
+    {
+      "artifact_identity": "evidence::evidence/hardening_baseline/v1_rule_inventory.json",
+      "path": "evidence/hardening_baseline/v1_rule_inventory.json",
+      "role": "evidence",
+      "sha256": "67246b6c1f215f6427670724f4271f99b38af06abb365eea04276c724f530be9",
+      "size": 9833
+    },
+    {
+      "artifact_identity": "evidence::evidence/mutation_testing/mutation_results.json",
+      "path": "evidence/mutation_testing/mutation_results.json",
+      "role": "evidence",
+      "sha256": "a24da7210bc0d757b7e7abfebf22acac158f2722ddb890a153e7d506e874ff98",
+      "size": 8684
+    },
+    {
+      "artifact_identity": "evidence::evidence/rebuild_baseline/environment_fingerprint.json",
+      "path": "evidence/rebuild_baseline/environment_fingerprint.json",
+      "role": "evidence",
+      "sha256": "804ddcbcc0e85321b8b41f2b2c113a5c558af5f044cfdf23cc51e6be31c9d0f9",
+      "size": 271
+    },
+    {
+      "artifact_identity": "evidence::evidence/rebuild_baseline/rebuild_baseline_manifest.json",
+      "path": "evidence/rebuild_baseline/rebuild_baseline_manifest.json",
+      "role": "evidence",
+      "sha256": "bbf2f9dd71f675f879675297d05e5f7032fe58515f4ec49dfbbff24fda5783cb",
+      "size": 5478
+    },
+    {
+      "artifact_identity": "evidence::evidence/rebuild_baseline/tracked_file_hashes.json",
+      "path": "evidence/rebuild_baseline/tracked_file_hashes.json",
+      "role": "evidence",
+      "sha256": "ffa4d836b2bb114b8602ed521a03c98bf310d5e2fcbe12fcf1bc039d58bb46c4",
+      "size": 33777
+    },
+    {
+      "artifact_identity": "evidence::evidence/rebuild_baseline/v1_rule_inventory.json",
+      "path": "evidence/rebuild_baseline/v1_rule_inventory.json",
+      "role": "evidence",
+      "sha256": "4b5ec120e00f894bd8656ea929961b3bf7af6ebc940e21f86c3f1d779e813e47",
+      "size": 2626
+    },
+    {
+      "artifact_identity": "evidence::evidence/rebuild_verification/run_pair_verification.json",
+      "path": "evidence/rebuild_verification/run_pair_verification.json",
+      "role": "evidence",
+      "sha256": "7112257f799c8473feb8622f6e1cee445b893914be67753becba999b69745379",
+      "size": 8027
+    },
+    {
+      "artifact_identity": "evidence::evidence/rebuild_verification/test_summary.json",
+      "path": "evidence/rebuild_verification/test_summary.json",
+      "role": "evidence",
+      "sha256": "6f70c21a94bb23ef37633ca3983158f7c55fa0e24c4a0ff71c678d3e115f2e5c",
+      "size": 2611
+    },
+    {
+      "artifact_identity": "evidence::evidence/release/assurance_mutation.json",
+      "path": "evidence/release/assurance_mutation.json",
+      "role": "evidence",
+      "sha256": "795b722ae1b84755f049e33a75499f863471f25a20d3743114b9fd94bcc945f0",
+      "size": 8284
+    },
+    {
+      "artifact_identity": "evidence::evidence/release/claim_provenance.json",
+      "path": "evidence/release/claim_provenance.json",
+      "role": "evidence",
+      "sha256": "c811b0289fd60ddb884a35c6af99cf5268659c3e0ea61c744905135613726e73",
+      "size": 19108
+    },
+    {
+      "artifact_identity": "evidence::evidence/release/consistency_matrix.json",
+      "path": "evidence/release/consistency_matrix.json",
+      "role": "evidence",
+      "sha256": "4b7e94b80601eeadcf44d083c4297e235a4b2c8c5de5f58b2779047681092127",
+      "size": 3952
+    },
+    {
+      "artifact_identity": "evidence::evidence/release/contradiction_check.json",
+      "path": "evidence/release/contradiction_check.json",
+      "role": "evidence",
+      "sha256": "21f5688e865dda4380ceb3aedacf777c5972d833453d7830ef5600d64ff13843",
+      "size": 2867
+    },
+    {
+      "artifact_identity": "evidence::evidence/release/evidence_quarantine_screen.json",
+      "path": "evidence/release/evidence_quarantine_screen.json",
+      "role": "evidence",
+      "sha256": "009809e3a4e643ffee8e00d8ad4a045ff680776770770703c60f0caf7d070a3d",
+      "size": 9959
+    },
+    {
+      "artifact_identity": "evidence::evidence/release/final_verification.json",
+      "path": "evidence/release/final_verification.json",
+      "role": "evidence",
+      "sha256": "ca7b84ee8d989eb0013d57bd0e0826972a13f27d087ecc8121849b21e9a6ae97",
+      "size": 3670
+    },
+    {
+      "artifact_identity": "evidence::evidence/release/golden_release_snapshot.json",
+      "path": "evidence/release/golden_release_snapshot.json",
+      "role": "evidence",
+      "sha256": "c1f9a3891e620e3919fcc1aa6cce6c54901290ecf96eceb1ecfb4ab5c445d493",
+      "size": 2840
+    },
+    {
+      "artifact_identity": "evidence::evidence/release/limitation_registry.json",
+      "path": "evidence/release/limitation_registry.json",
+      "role": "evidence",
+      "sha256": "4ffad35d9f50f68984323287870b4c9627c93411eef079474e32bd3234c93bb5",
+      "size": 8109
+    },
+    {
+      "artifact_identity": "evidence::evidence/release/observability_status.json",
+      "path": "evidence/release/observability_status.json",
+      "role": "evidence",
+      "sha256": "503e627e348432389aa6e5de9fec7ed35b3117a87776a6c594b2a82df9f428ad",
+      "size": 5341
+    },
+    {
+      "artifact_identity": "evidence::evidence/release/readme_consistency.json",
+      "path": "evidence/release/readme_consistency.json",
+      "role": "evidence",
+      "sha256": "f0502ffd26c4621f06831ddccbcd26d9af47f0f561620810de0336dedd882c2d",
+      "size": 3587
+    },
+    {
+      "artifact_identity": "evidence::evidence/release/release_artifact_manifest.json",
+      "path": "evidence/release/release_artifact_manifest.json",
+      "role": "evidence",
+      "sha256": "4d7441ab2c778a21838ce99d26b9d085576735e62510ae6bde4e334fec2dc716",
+      "size": 9386
+    },
+    {
+      "artifact_identity": "evidence::evidence/release/release_evidence_model.json",
+      "path": "evidence/release/release_evidence_model.json",
+      "role": "evidence",
+      "sha256": "3649c44ea2302f46858219db4d47366a80a6320f942da98949e026ec05743d76",
+      "size": 35273
+    },
+    {
+      "artifact_identity": "evidence::evidence/release/reproducibility_fingerprint.json",
+      "path": "evidence/release/reproducibility_fingerprint.json",
+      "role": "evidence",
+      "sha256": "4fa332e6b57da5526ed1ba3ee65c9e85e8067c5c63f1de3c20ebfc12c4c4183d",
+      "size": 2683
+    },
+    {
+      "artifact_identity": "evidence::evidence/release/reproducibility_manifest.json",
+      "path": "evidence/release/reproducibility_manifest.json",
+      "role": "evidence",
+      "sha256": "e3c900aa18d6e9968c98e8243abd545eba1c5b020e134f0704ebc3882b6798a7",
+      "size": 4294
+    },
+    {
+      "artifact_identity": "evidence::evidence/release/rule_impact_graph.json",
+      "path": "evidence/release/rule_impact_graph.json",
+      "role": "evidence",
+      "sha256": "d06e483c673066534492a3fa2c0afe2c06cd95209d5d9042447e8c2783878791",
+      "size": 21020
+    },
+    {
+      "artifact_identity": "evidence::evidence/release/security_release_report.json",
+      "path": "evidence/release/security_release_report.json",
+      "role": "evidence",
+      "sha256": "a6924b4ed553c977926b2766a6f4264f7dc1531abe52cd2be19a7e2fde28764c",
+      "size": 7678
+    },
+    {
+      "artifact_identity": "evidence::evidence/release_gate/final_release_gate.json",
+      "path": "evidence/release_gate/final_release_gate.json",
+      "role": "evidence",
+      "sha256": "58bc2c489bd74256d5fcaf58dee39749b2038a2bddb0441575b09576879404d5",
+      "size": 19153
+    },
+    {
+      "artifact_identity": "evidence::evidence/release_gate/performance_results_current.json",
+      "path": "evidence/release_gate/performance_results_current.json",
+      "role": "evidence",
+      "sha256": "d797f47e31642097e661e4d2ffdd65baa8cf078bb1e4ecec19e75649930e3c44",
+      "size": 3292
+    },
+    {
+      "artifact_identity": "evidence::evidence/release_gate/repro_check/final_release_gate.json",
+      "path": "evidence/release_gate/repro_check/final_release_gate.json",
+      "role": "evidence",
+      "sha256": "e568a00c59bb11f192164411f8b14757ae29cae878635f481e51104459db7b98",
+      "size": 19167
+    },
+    {
+      "artifact_identity": "evidence::evidence/release_gate/repro_check/performance_results_current.json",
+      "path": "evidence/release_gate/repro_check/performance_results_current.json",
+      "role": "evidence",
+      "sha256": "bf673b519a655f254a57a1c62d532ecf51593871ca27f267738db66af3323520",
+      "size": 3293
+    },
+    {
+      "artifact_identity": "official 3M run-pair evidence::evidence/validation/2026-09-18/fresh_3m2/harness/FINAL_RESULTS.json",
+      "path": "evidence/validation/2026-09-18/fresh_3m2/harness/FINAL_RESULTS.json",
+      "role": "official 3M run-pair evidence",
+      "sha256": "755fa28f224c480e873676b487d4c6babeb0072fff50e47c08104684b6643337",
+      "size": 16729
+    },
+    {
+      "artifact_identity": "official 3M run-pair evidence::evidence/validation/2026-09-18/fresh_3m2/harness/pass1_cli.json",
+      "path": "evidence/validation/2026-09-18/fresh_3m2/harness/pass1_cli.json",
+      "role": "official 3M run-pair evidence",
+      "sha256": "ad756deb31f1df0f5036e64a32cb8fe8cf9a1b27ca23b146a8961004a58b495d",
+      "size": 4594
+    },
+    {
+      "artifact_identity": "official 3M run-pair evidence::evidence/validation/2026-09-18/fresh_3m2/harness/pass1_engine/alerts.json",
+      "path": "evidence/validation/2026-09-18/fresh_3m2/harness/pass1_engine/alerts.json",
+      "role": "official 3M run-pair evidence",
+      "sha256": "d5047aab37321589b98a4a1bc9e62152182d1843e0b49329e5c947bf6ca9aac9",
+      "size": 1994
+    },
+    {
+      "artifact_identity": "official 3M run-pair evidence::evidence/validation/2026-09-18/fresh_3m2/harness/pass1_engine/audit.json",
+      "path": "evidence/validation/2026-09-18/fresh_3m2/harness/pass1_engine/audit.json",
+      "role": "official 3M run-pair evidence",
+      "sha256": "e19a2d8f78204ece7e79ec96559f6b8dda69132a98c4e458f3a745b681d13a0f",
+      "size": 3220
+    },
+    {
+      "artifact_identity": "official 3M run-pair evidence::evidence/validation/2026-09-18/fresh_3m2/harness/pass1_engine/evidence_root.json",
+      "path": "evidence/validation/2026-09-18/fresh_3m2/harness/pass1_engine/evidence_root.json",
+      "role": "official 3M run-pair evidence",
+      "sha256": "8c401782731fe5ee14e21b5135079f9f6de2e8d87f135f68d21ffa6503823fac",
+      "size": 1212
+    },
+    {
+      "artifact_identity": "official 3M run-pair evidence::evidence/validation/2026-09-18/fresh_3m2/harness/pass1_engine/lineage.json",
+      "path": "evidence/validation/2026-09-18/fresh_3m2/harness/pass1_engine/lineage.json",
+      "role": "official 3M run-pair evidence",
+      "sha256": "3f20219ccbe699e0f56153bf6f61da1f20302d9d397dfb9665ad114322858c34",
+      "size": 264772
+    },
+    {
+      "artifact_identity": "official 3M run-pair evidence::evidence/validation/2026-09-18/fresh_3m2/harness/pass1_engine/manifest.json",
+      "path": "evidence/validation/2026-09-18/fresh_3m2/harness/pass1_engine/manifest.json",
+      "role": "official 3M run-pair evidence",
+      "sha256": "b4491b02f1487de936b941301cb86e134cc4e5bee15767395d51ec0669464a9a",
+      "size": 4423
+    },
+    {
+      "artifact_identity": "official 3M run-pair evidence::evidence/validation/2026-09-18/fresh_3m2/harness/pass1_engine/monitoring.json",
+      "path": "evidence/validation/2026-09-18/fresh_3m2/harness/pass1_engine/monitoring.json",
+      "role": "official 3M run-pair evidence",
+      "sha256": "25160186c45639feef1a22d280e73c3081c69bbb185dd713330c538280049e09",
+      "size": 728
+    },
+    {
+      "artifact_identity": "official 3M run-pair evidence::evidence/validation/2026-09-18/fresh_3m2/harness/pass1_generate.json",
+      "path": "evidence/validation/2026-09-18/fresh_3m2/harness/pass1_generate.json",
+      "role": "official 3M run-pair evidence",
+      "sha256": "5d27e27d0948e9fec151111d8680049ce72e84538bc1692217720a45930b6dd1",
+      "size": 480
+    },
+    {
+      "artifact_identity": "official 3M run-pair evidence::evidence/validation/2026-09-18/fresh_3m2/harness/pass1_result.json",
+      "path": "evidence/validation/2026-09-18/fresh_3m2/harness/pass1_result.json",
+      "role": "official 3M run-pair evidence",
+      "sha256": "dde3592c46fd48bfa8950ec0ab94a8076b287523770cad7a9dc9919e278aad18",
+      "size": 7915
+    },
+    {
+      "artifact_identity": "official 3M run-pair evidence::evidence/validation/2026-09-18/fresh_3m2/harness/pass1_runtime_safety_events.json",
+      "path": "evidence/validation/2026-09-18/fresh_3m2/harness/pass1_runtime_safety_events.json",
+      "role": "official 3M run-pair evidence",
+      "sha256": "2fc822ed2ed6cac744ac33bd6e47b6181c1d813064e274ccbd94d97851c0e301",
+      "size": 23873
+    },
+    {
+      "artifact_identity": "official 3M run-pair evidence::evidence/validation/2026-09-18/fresh_3m2/harness/pass2_cli.json",
+      "path": "evidence/validation/2026-09-18/fresh_3m2/harness/pass2_cli.json",
+      "role": "official 3M run-pair evidence",
+      "sha256": "048c9cbc31777db6da9d9c77dd6afb09c2ea833b489cfbfd62a406c6156a14c5",
+      "size": 4593
+    },
+    {
+      "artifact_identity": "official 3M run-pair evidence::evidence/validation/2026-09-18/fresh_3m2/harness/pass2_engine/alerts.json",
+      "path": "evidence/validation/2026-09-18/fresh_3m2/harness/pass2_engine/alerts.json",
+      "role": "official 3M run-pair evidence",
+      "sha256": "d353c5347e4f7f8c63d669891a0d4583c309df1038e554c929a52ba343b9643b",
+      "size": 1994
+    },
+    {
+      "artifact_identity": "official 3M run-pair evidence::evidence/validation/2026-09-18/fresh_3m2/harness/pass2_engine/audit.json",
+      "path": "evidence/validation/2026-09-18/fresh_3m2/harness/pass2_engine/audit.json",
+      "role": "official 3M run-pair evidence",
+      "sha256": "53e71c3f29473b1859ca8216f45f49d87bf41e985a38536d44123d1d72763d77",
+      "size": 3220
+    },
+    {
+      "artifact_identity": "official 3M run-pair evidence::evidence/validation/2026-09-18/fresh_3m2/harness/pass2_engine/evidence_root.json",
+      "path": "evidence/validation/2026-09-18/fresh_3m2/harness/pass2_engine/evidence_root.json",
+      "role": "official 3M run-pair evidence",
+      "sha256": "8ea6e1345baf31dcba48cb8ed0ddd362ecd2fa72db5c992f17863fbba04ae9c7",
+      "size": 1212
+    },
+    {
+      "artifact_identity": "official 3M run-pair evidence::evidence/validation/2026-09-18/fresh_3m2/harness/pass2_engine/lineage.json",
+      "path": "evidence/validation/2026-09-18/fresh_3m2/harness/pass2_engine/lineage.json",
+      "role": "official 3M run-pair evidence",
+      "sha256": "f3526410192b2a343d93232615dffb8766a2b05aba1f6c2051b6a29ba2ec515a",
+      "size": 264772
+    },
+    {
+      "artifact_identity": "official 3M run-pair evidence::evidence/validation/2026-09-18/fresh_3m2/harness/pass2_engine/manifest.json",
+      "path": "evidence/validation/2026-09-18/fresh_3m2/harness/pass2_engine/manifest.json",
+      "role": "official 3M run-pair evidence",
+      "sha256": "96ac5bcc3bbd32a335de72a0bf6eec762615a876187a6837943feeabddc3ff95",
+      "size": 4423
+    },
+    {
+      "artifact_identity": "official 3M run-pair evidence::evidence/validation/2026-09-18/fresh_3m2/harness/pass2_engine/monitoring.json",
+      "path": "evidence/validation/2026-09-18/fresh_3m2/harness/pass2_engine/monitoring.json",
+      "role": "official 3M run-pair evidence",
+      "sha256": "25160186c45639feef1a22d280e73c3081c69bbb185dd713330c538280049e09",
+      "size": 728
+    },
+    {
+      "artifact_identity": "official 3M run-pair evidence::evidence/validation/2026-09-18/fresh_3m2/harness/pass2_generate.json",
+      "path": "evidence/validation/2026-09-18/fresh_3m2/harness/pass2_generate.json",
+      "role": "official 3M run-pair evidence",
+      "sha256": "97120027c82217a467686856ae5cfd42fdb299df31568c577610e1e6a5d0c6f5",
+      "size": 480
+    },
+    {
+      "artifact_identity": "official 3M run-pair evidence::evidence/validation/2026-09-18/fresh_3m2/harness/pass2_result.json",
+      "path": "evidence/validation/2026-09-18/fresh_3m2/harness/pass2_result.json",
+      "role": "official 3M run-pair evidence",
+      "sha256": "9c92d21cd5a6d636d355bf867508cb7a9501275e1adb2a004fda0f6cfe34157f",
+      "size": 7914
+    },
+    {
+      "artifact_identity": "official 3M run-pair evidence::evidence/validation/2026-09-18/fresh_3m2/harness/pass2_runtime_safety_events.json",
+      "path": "evidence/validation/2026-09-18/fresh_3m2/harness/pass2_runtime_safety_events.json",
+      "role": "official 3M run-pair evidence",
+      "sha256": "0a26ed04c1e0d711a1978bd05a0fc537a92fd19698a89af843ea0601d8d460bc",
+      "size": 23873
+    },
+    {
+      "artifact_identity": "evidence::evidence/validation/2026-09-18/fresh_3m2/preflight/alerts.json",
+      "path": "evidence/validation/2026-09-18/fresh_3m2/preflight/alerts.json",
+      "role": "evidence",
+      "sha256": "64f0426854da5e1e50ee041bb2330e38787b9ba06563ee0c1c23f0cc7f9d7deb",
+      "size": 1970
+    },
+    {
+      "artifact_identity": "evidence::evidence/validation/2026-09-18/fresh_3m2/preflight/audit.json",
+      "path": "evidence/validation/2026-09-18/fresh_3m2/preflight/audit.json",
+      "role": "evidence",
+      "sha256": "e909d7d646500a4c528e37c23a2a14b8a1fa13c554b06c6c64d741e95613413e",
+      "size": 3207
+    },
+    {
+      "artifact_identity": "evidence::evidence/validation/2026-09-18/fresh_3m2/preflight/lineage.json",
+      "path": "evidence/validation/2026-09-18/fresh_3m2/preflight/lineage.json",
+      "role": "evidence",
+      "sha256": "e20ecdc63fc046a4bc23ae8cacacddcf894dc95fefab92913f022023d93d8a6d",
+      "size": 262830
+    },
+    {
+      "artifact_identity": "evidence::evidence/validation/2026-09-18/fresh_3m2/preflight/manifest.json",
+      "path": "evidence/validation/2026-09-18/fresh_3m2/preflight/manifest.json",
+      "role": "evidence",
+      "sha256": "ab26687fbfe5543e77298b0595fb732c6f23f82b1aa078a0d68ba7c68b930ea2",
+      "size": 4481
+    },
+    {
+      "artifact_identity": "evidence::evidence/validation/2026-09-18/fresh_3m2/preflight/monitoring.json",
+      "path": "evidence/validation/2026-09-18/fresh_3m2/preflight/monitoring.json",
+      "role": "evidence",
+      "sha256": "f182cb0ebed056f9aabe3f21dd5360462dcdd31bd9a68d51e4a248f38d88e7c9",
+      "size": 722
+    },
+    {
+      "artifact_identity": "evidence::evidence/validation/2026-09-18/fresh_3m2/preflight/preflight_record.json",
+      "path": "evidence/validation/2026-09-18/fresh_3m2/preflight/preflight_record.json",
+      "role": "evidence",
+      "sha256": "d827d51270c235c125495aa410d1c487ecef174db7e49f2b3a4784d7cc7202c2",
+      "size": 529
+    },
+    {
+      "artifact_identity": "release file::final_result.json",
+      "path": "final_result.json",
+      "role": "release file",
+      "sha256": "cbd25637a4b03cf57552e991b897321e50445394cf8734a0eb010e759c63de0b",
+      "size": 35549
+    },
+    {
+      "artifact_identity": "release file::pyproject.toml",
+      "path": "pyproject.toml",
+      "role": "release file",
+      "sha256": "4f190654d568fcec67e52b378cb6c0c10d82eeffd4e56cbe8f65bb96c06a8970",
+      "size": 859
+    },
+    {
+      "artifact_identity": "release file::release_manifest.json",
+      "path": "release_manifest.json",
+      "role": "release file",
+      "sha256": "aaa92fe736c87b93bc98bd40d7b2e4607c76f367cfa53f03675d28616e28a3ea",
+      "size": 3510
+    },
+    {
+      "artifact_identity": "documentation::reports/history/COMPANY_ALIGNMENT_FORENSIC_REPORT.md",
+      "path": "reports/history/COMPANY_ALIGNMENT_FORENSIC_REPORT.md",
+      "role": "documentation",
+      "sha256": "800eb3b873170a56c21d607cb7a20a18d73a2b2945fcd1cb0f28668958c85540",
+      "size": 40637
+    },
+    {
+      "artifact_identity": "documentation::reports/history/CROSS_REFERENCE_PROVENANCE_REPORT.md",
+      "path": "reports/history/CROSS_REFERENCE_PROVENANCE_REPORT.md",
+      "role": "documentation",
+      "sha256": "770946128ea8e16d35880a9facf964755cbc4ef0126158e81bfb5afe9e6335f1",
+      "size": 18296
+    },
+    {
+      "artifact_identity": "release file::reports/history/DELIVERY_MANIFEST.json",
+      "path": "reports/history/DELIVERY_MANIFEST.json",
+      "role": "release file",
+      "sha256": "b6ba6668bd08008878f9827af840835dba299d37d1b39ea04b367306e94a23ec",
+      "size": 11405
+    },
+    {
+      "artifact_identity": "documentation::reports/history/ENGINEERING_RECOMMENDATIONS.md",
+      "path": "reports/history/ENGINEERING_RECOMMENDATIONS.md",
+      "role": "documentation",
+      "sha256": "cbb1dce35778a94d69775a5d34ff2a169000004785f247048041d8fa8fd01238",
+      "size": 32189
+    },
+    {
+      "artifact_identity": "documentation::reports/history/FINAL_VERIFICATION_REPORT_2026-08-25_HISTORICAL.md",
+      "path": "reports/history/FINAL_VERIFICATION_REPORT_2026-08-25_HISTORICAL.md",
+      "role": "documentation",
+      "sha256": "c6d6c6873f9c306e7db7da8838d6d68457a93ef2b6d9589012514c8d969aee14",
+      "size": 14319
+    },
+    {
+      "artifact_identity": "documentation::reports/history/HISTORY_INDEX.md",
+      "path": "reports/history/HISTORY_INDEX.md",
+      "role": "documentation",
+      "sha256": "c239890565baefec0a587307486730c4b9096ff186c2ef315912be12d3cf0e76",
+      "size": 7215
+    },
+    {
+      "artifact_identity": "documentation::reports/history/PHASE1_Q21_ADJUDICATION.md",
+      "path": "reports/history/PHASE1_Q21_ADJUDICATION.md",
+      "role": "documentation",
+      "sha256": "20c72ccf91ce9cad342f849010b2c77c01066114686142314547fa3d4a4042d8",
+      "size": 10791
+    },
+    {
+      "artifact_identity": "documentation::reports/history/PHASE3_GOLDEN_INTEGRITY_REPORT.md",
+      "path": "reports/history/PHASE3_GOLDEN_INTEGRITY_REPORT.md",
+      "role": "documentation",
+      "sha256": "44913d4b136edd0d539b0c8950f38d342ca3ca2eb339bdf2abd35a58d6f091be",
+      "size": 12579
+    },
+    {
+      "artifact_identity": "documentation::reports/history/PHASE_18_DELTA_VERIFICATION_REPORT.md",
+      "path": "reports/history/PHASE_18_DELTA_VERIFICATION_REPORT.md",
+      "role": "documentation",
+      "sha256": "3a1b18452482bba44a7200e2ced4c960b181e37b598e46f6e0bd9a0714fe0eb8",
+      "size": 28620
+    },
+    {
+      "artifact_identity": "documentation::reports/history/PHASE_19_EVIDENCE_REPORT.md",
+      "path": "reports/history/PHASE_19_EVIDENCE_REPORT.md",
+      "role": "documentation",
+      "sha256": "83eedcb4744acaf377d5206ad907405d5a995c919dd10e424daa1bbabdeb87f1",
+      "size": 24178
+    },
+    {
+      "artifact_identity": "documentation::reports/history/PHASE_20_FORENSIC_AUDIT_REPORT.md",
+      "path": "reports/history/PHASE_20_FORENSIC_AUDIT_REPORT.md",
+      "role": "documentation",
+      "sha256": "4bb618ef1baa54f78c599b5c15c7216f680e7d8552f5c391805c0c723f189ee8",
+      "size": 28015
+    },
+    {
+      "artifact_identity": "documentation::reports/history/Q1_Q22_ACCEPTANCE_AUDIT.md",
+      "path": "reports/history/Q1_Q22_ACCEPTANCE_AUDIT.md",
+      "role": "documentation",
+      "sha256": "a8783a425fb3e28f4141e1e968603dc711f7fe4e86f09fac78b0ef086605fcef",
+      "size": 26539
+    },
+    {
+      "artifact_identity": "release file::runner/__init__.py",
+      "path": "runner/__init__.py",
+      "role": "release file",
+      "sha256": "7030584db7d1014d82d6103e2bf6ca1edbb2e686bebf685bb952c2c5d8a0a955",
+      "size": 48
+    },
+    {
+      "artifact_identity": "release file::runner/cli.py",
+      "path": "runner/cli.py",
+      "role": "release file",
+      "sha256": "1ee41fb204eba38739f223328796a56cee930f83a5126ebb911df1db6d257756",
+      "size": 25772
+    },
+    {
+      "artifact_identity": "verification tooling::scripts/assurance_baseline.py",
+      "path": "scripts/assurance_baseline.py",
+      "role": "verification tooling",
+      "sha256": "aa2c03b4d4a7b4fbe71af78a2f5de2720673e1f3fffd0b6575134d647125e7f6",
+      "size": 15396
+    },
+    {
+      "artifact_identity": "verification tooling::scripts/assurance_mutation.py",
+      "path": "scripts/assurance_mutation.py",
+      "role": "verification tooling",
+      "sha256": "5fcf361b8be6392ddb04b979720bf753e6395878e7efd1d3a6a0ce0d5d1ef89d",
+      "size": 13072
+    },
+    {
+      "artifact_identity": "verification tooling::scripts/assurance_rebuild_baseline.py",
+      "path": "scripts/assurance_rebuild_baseline.py",
+      "role": "verification tooling",
+      "sha256": "38cea21576b10dc10dd4f2d538db155c561351fa330fccda7bee30d04ee98d63",
+      "size": 14331
+    },
+    {
+      "artifact_identity": "verification tooling::scripts/benchmark.py",
+      "path": "scripts/benchmark.py",
+      "role": "verification tooling",
+      "sha256": "5aa4515823ec40014ed9971a27551a37ab003dc0f658ceae3043e19c4b9b485c",
+      "size": 3458
+    },
+    {
+      "artifact_identity": "verification tooling::scripts/build_enterprise_release_zip.py",
+      "path": "scripts/build_enterprise_release_zip.py",
+      "role": "verification tooling",
+      "sha256": "c3c9762e62a769e063c00af1d3cae4a8ec9599e724d195c2eaec80c3057e816d",
+      "size": 10677
+    },
+    {
+      "artifact_identity": "verification tooling::scripts/build_final_hardening_zip.py",
+      "path": "scripts/build_final_hardening_zip.py",
+      "role": "verification tooling",
+      "sha256": "2936778ed5844c422fe0a9b9b345fc2d33f26057674e61cb84bbeda10bdea3ed",
+      "size": 18729
+    },
+    {
+      "artifact_identity": "verification tooling::scripts/build_final_result.py",
+      "path": "scripts/build_final_result.py",
+      "role": "verification tooling",
+      "sha256": "1dd64be11bd5cd6a9fd69381c611d54ab28499ec48a1819f700f74d09ccca9af",
+      "size": 18504
+    },
+    {
+      "artifact_identity": "verification tooling::scripts/build_observability_status.py",
+      "path": "scripts/build_observability_status.py",
+      "role": "verification tooling",
+      "sha256": "5abb87a9dc050f1aaf9bcc176d6cf05d1181bbf54ae5aa34926107997a473a6a",
+      "size": 7512
+    },
+    {
+      "artifact_identity": "verification tooling::scripts/build_regression_corpus.py",
+      "path": "scripts/build_regression_corpus.py",
+      "role": "verification tooling",
+      "sha256": "4ca4f28c418f3cd57f17b39140f790966e770c15a42c689b1e350e3b5429280b",
+      "size": 9373
+    },
+    {
+      "artifact_identity": "verification tooling::scripts/build_release_artifact_manifest.py",
+      "path": "scripts/build_release_artifact_manifest.py",
+      "role": "verification tooling",
+      "sha256": "b2c7c5b83d71d733100b11af38aac6c1cf7662a9c151afd064f7db56e4b08c87",
+      "size": 13409
+    },
+    {
+      "artifact_identity": "verification tooling::scripts/build_release_evidence_model.py",
+      "path": "scripts/build_release_evidence_model.py",
+      "role": "verification tooling",
+      "sha256": "97e03a36c42692d32f6382b2d0e8431fc7d33b1822d68df32e81c049b710a11b",
+      "size": 59393
+    },
+    {
+      "artifact_identity": "verification tooling::scripts/build_reproducibility_fingerprint.py",
+      "path": "scripts/build_reproducibility_fingerprint.py",
+      "role": "verification tooling",
+      "sha256": "1564427920df93d64a3e1d1b8b1c6f3c53461d3d07d5cb156c81a5219e587ff7",
+      "size": 6777
+    },
+    {
+      "artifact_identity": "verification tooling::scripts/build_rule_impact_graph.py",
+      "path": "scripts/build_rule_impact_graph.py",
+      "role": "verification tooling",
+      "sha256": "f42e8dcfad54d10ce2aff3a9ff1f665d47743589738422a5fff874b7e1119945",
+      "size": 10412
+    },
+    {
+      "artifact_identity": "verification tooling::scripts/capture_test_summary.py",
+      "path": "scripts/capture_test_summary.py",
+      "role": "verification tooling",
+      "sha256": "48c2ff95f139eee40a322042b2ac617225209126b331178fdf4647dd05ffbdb2",
+      "size": 4760
+    },
+    {
+      "artifact_identity": "verification tooling::scripts/clean_room_readme.py",
+      "path": "scripts/clean_room_readme.py",
+      "role": "verification tooling",
+      "sha256": "2da56b1fd88289bbeec97e86645f825d7d099012d93219e837de2c1a2465e6b8",
+      "size": 18677
+    },
+    {
+      "artifact_identity": "verification tooling::scripts/consistency_matrix.py",
+      "path": "scripts/consistency_matrix.py",
+      "role": "verification tooling",
+      "sha256": "1c9281f16b0442dcc92e3e7d3eb24543689398359e6ec30b93942e9fc21d1d29",
+      "size": 9757
+    },
+    {
+      "artifact_identity": "verification tooling::scripts/contradiction_checker.py",
+      "path": "scripts/contradiction_checker.py",
+      "role": "verification tooling",
+      "sha256": "f9b53eef4bce8c7d1c01278e4a3983319a1c80dc38c7e5eff8c4c72e10ce5e92",
+      "size": 1444
+    },
+    {
+      "artifact_identity": "verification tooling::scripts/discover_truth.py",
+      "path": "scripts/discover_truth.py",
+      "role": "verification tooling",
+      "sha256": "14a0cdeeb2cb0753d46e3f1c0508971a046f99d6adac3db06f5a5901db5f47ff",
+      "size": 15806
+    },
+    {
+      "artifact_identity": "verification tooling::scripts/dqvp_performance_certification.py",
+      "path": "scripts/dqvp_performance_certification.py",
+      "role": "verification tooling",
+      "sha256": "a06b0de4293c7e4c6ec68a041af2da35ec0613a8b0e53941e373573f61d9707f",
+      "size": 6592
+    },
+    {
+      "artifact_identity": "verification tooling::scripts/final_3m_runtime_safety_wrapper.py",
+      "path": "scripts/final_3m_runtime_safety_wrapper.py",
+      "role": "verification tooling",
+      "sha256": "fad1bc74f73e340248c5ac493aee67dcb71e286c1d5f0af111597ca17b825815",
+      "size": 7479
+    },
+    {
+      "artifact_identity": "official checker::scripts/final_3m_validation.py",
+      "path": "scripts/final_3m_validation.py",
+      "role": "official checker",
+      "sha256": "0ef7c10c14a1df317c23cb0dfc73b3a60c2257c064b35080d694e5fe8bc50d84",
+      "size": 91924
+    },
+    {
+      "artifact_identity": "verification tooling::scripts/final_forensic_audit.py",
+      "path": "scripts/final_forensic_audit.py",
+      "role": "verification tooling",
+      "sha256": "6d05333f7b29427d1f34ea91a279871e7d95202d6742d63fe8488f89df743f93",
+      "size": 14658
+    },
+    {
+      "artifact_identity": "verification tooling::scripts/final_hardening_baseline.py",
+      "path": "scripts/final_hardening_baseline.py",
+      "role": "verification tooling",
+      "sha256": "9e2860a83906d20fea35a9478f15473c8889c3bf315c90c18e3a12364356e1b6",
+      "size": 10902
+    },
+    {
+      "artifact_identity": "verification tooling::scripts/final_update_baseline.py",
+      "path": "scripts/final_update_baseline.py",
+      "role": "verification tooling",
+      "sha256": "0802dde7b38134a2d8804598d1b4da288d3f253b7babeb853b6548b7ef59d919",
+      "size": 19626
+    },
+    {
+      "artifact_identity": "verification tooling::scripts/final_update_inventory.py",
+      "path": "scripts/final_update_inventory.py",
+      "role": "verification tooling",
+      "sha256": "79f1b0fe6080368e36cda3099ad380d349f58a230364437fe42f1dcc5feb1174",
+      "size": 18535
+    },
+    {
+      "artifact_identity": "verification tooling::scripts/final_verification.py",
+      "path": "scripts/final_verification.py",
+      "role": "verification tooling",
+      "sha256": "25bc9926b58a855aa20eb60ca2bf564a4de6a86362039b2144cbb08189738868",
+      "size": 15428
+    },
+    {
+      "artifact_identity": "verification tooling::scripts/five_m/consolidation_package_v2.py",
+      "path": "scripts/five_m/consolidation_package_v2.py",
+      "role": "verification tooling",
+      "sha256": "734d81fe7f40d54528dd9070af695dc8807e7dcef900906d81bcfa9e8daeb129",
+      "size": 16162
+    },
+    {
+      "artifact_identity": "verification tooling::scripts/five_m/independent_verifier.py",
+      "path": "scripts/five_m/independent_verifier.py",
+      "role": "verification tooling",
+      "sha256": "4fce3dcfe1904e444a2669610259b4bba1ed277de752be232b72e616aff818db",
+      "size": 12559
+    },
+    {
+      "artifact_identity": "verification tooling::scripts/five_m/phase13_results.py",
+      "path": "scripts/five_m/phase13_results.py",
+      "role": "verification tooling",
+      "sha256": "ff257782ad55289ad1c060daeb09b3d73b282fd487957a08eff416e72eb2bbc9",
+      "size": 15381
+    },
+    {
+      "artifact_identity": "verification tooling::scripts/five_m/phase17_consistency.py",
+      "path": "scripts/five_m/phase17_consistency.py",
+      "role": "verification tooling",
+      "sha256": "ec8b46e6417374ee6e8a79efdb48df7d65e8074cd4a558a4858fc3b3b0e191c5",
+      "size": 9041
+    },
+    {
+      "artifact_identity": "verification tooling::scripts/five_m/phase18_manifest_archive.py",
+      "path": "scripts/five_m/phase18_manifest_archive.py",
+      "role": "verification tooling",
+      "sha256": "588e06aa89ffd2da838d5f153510dd75c962cd7ca75787eb12a64564ca1a32df",
+      "size": 11508
+    },
+    {
+      "artifact_identity": "verification tooling::scripts/five_m/phase2_3_meta.py",
+      "path": "scripts/five_m/phase2_3_meta.py",
+      "role": "verification tooling",
+      "sha256": "d7a5fc5be5a206d0d3a2bbce2326f17b984b7fabaea47dde127e8a342a7e8174",
+      "size": 4519
+    },
+    {
+      "artifact_identity": "verification tooling::scripts/five_m/phase4_run.py",
+      "path": "scripts/five_m/phase4_run.py",
+      "role": "verification tooling",
+      "sha256": "b97def367bc9b2883d979a590e219815273e4bd5b4138bd3560878f5bcc6c271",
+      "size": 8009
+    },
+    {
+      "artifact_identity": "verification tooling::scripts/five_m/phase7_bench.py",
+      "path": "scripts/five_m/phase7_bench.py",
+      "role": "verification tooling",
+      "sha256": "93112548ca079204731eaba5e5a6b08596bbd7449adb6469f1d6e11fee22d27a",
+      "size": 6073
+    },
+    {
+      "artifact_identity": "verification tooling::scripts/five_m/phase8_geography.py",
+      "path": "scripts/five_m/phase8_geography.py",
+      "role": "verification tooling",
+      "sha256": "896e43f109ffccb2f1aa6401c92cfe93a2cc6d9cca8673d0d9d2f46c80e01749",
+      "size": 5079
+    },
+    {
+      "artifact_identity": "verification tooling::scripts/five_m/phase9_sp1.py",
+      "path": "scripts/five_m/phase9_sp1.py",
+      "role": "verification tooling",
+      "sha256": "8ccab7280e3ab6afb650fc62ade1ede7ab4b52cab9999a99cd85eaae99fdffd6",
+      "size": 7653
+    },
+    {
+      "artifact_identity": "verification tooling::scripts/five_m/run_capture.py",
+      "path": "scripts/five_m/run_capture.py",
+      "role": "verification tooling",
+      "sha256": "76a6c43e5ba43095aff77b800faa420a6fc7b87b15292b156efb1655aa694d8c",
+      "size": 2269
+    },
+    {
+      "artifact_identity": "verification tooling::scripts/five_m/verify_dataset_5m.py",
+      "path": "scripts/five_m/verify_dataset_5m.py",
+      "role": "verification tooling",
+      "sha256": "3282bbf61abaf973ee47df7d0b74472959bd48a4b383f6e8eea949d7525224fd",
+      "size": 5201
+    },
+    {
+      "artifact_identity": "verification tooling::scripts/fresh_evidence_manifest.py",
+      "path": "scripts/fresh_evidence_manifest.py",
+      "role": "verification tooling",
+      "sha256": "0cbc5d91030648460424ae7ed6cf809b9abb2c2fb5321147a75e52335109ef67",
+      "size": 3768
+    },
+    {
+      "artifact_identity": "verification tooling::scripts/fresh_execution_probe.py",
+      "path": "scripts/fresh_execution_probe.py",
+      "role": "verification tooling",
+      "sha256": "725f74cd110a0f7d4d3ce7f48b7e0b83659a15e741747f55a3552480dd9269fe",
+      "size": 11439
+    },
+    {
+      "artifact_identity": "verification tooling::scripts/fresh_rule_matrix.py",
+      "path": "scripts/fresh_rule_matrix.py",
+      "role": "verification tooling",
+      "sha256": "07a5df1105ed6374fa05fa78a66578b96ad5de4ef8d4e1a5997f61786cbf72cb",
+      "size": 4954
+    },
+    {
+      "artifact_identity": "verification tooling::scripts/hardening_baseline.py",
+      "path": "scripts/hardening_baseline.py",
+      "role": "verification tooling",
+      "sha256": "c51e69e4d327a2112a511577a186b119b76b4792d7896311b276a6fdcde51301",
+      "size": 17267
+    },
+    {
+      "artifact_identity": "verification tooling::scripts/mutation_testing.py",
+      "path": "scripts/mutation_testing.py",
+      "role": "verification tooling",
+      "sha256": "cb9c30742127021d49b5c9c24d17664fdd6f7276ecb1f4c0a2d73d2c7ad79b2e",
+      "size": 13484
+    },
+    {
+      "artifact_identity": "verification tooling::scripts/portable_readme_sections.py",
+      "path": "scripts/portable_readme_sections.py",
+      "role": "verification tooling",
+      "sha256": "93b70621d90be1721412a1fcd37c7d1283a60b8de2f74f00674c204497176b7e",
+      "size": 14316
+    },
+    {
+      "artifact_identity": "verification tooling::scripts/portable_release_baseline.py",
+      "path": "scripts/portable_release_baseline.py",
+      "role": "verification tooling",
+      "sha256": "d0e6c03d4375641f9c65752fa7c6e033fadcfb2ab40ec4b6b3d68c6a74e1c257",
+      "size": 12380
+    },
+    {
+      "artifact_identity": "verification tooling::scripts/readme_consistency_check.py",
+      "path": "scripts/readme_consistency_check.py",
+      "role": "verification tooling",
+      "sha256": "266e70359590a941565d833dc84155a4627a1c6d2ad2e0a27daecb274ae54c29",
+      "size": 10511
+    },
+    {
+      "artifact_identity": "verification tooling::scripts/rebuild_baseline.py",
+      "path": "scripts/rebuild_baseline.py",
+      "role": "verification tooling",
+      "sha256": "b4525c13ddaa4bb22c05fe8a6251bc3fd43380082a334b4252d0d49b5bd59396",
+      "size": 11349
+    },
+    {
+      "artifact_identity": "verification tooling::scripts/rebuild_final_forensic_audit.py",
+      "path": "scripts/rebuild_final_forensic_audit.py",
+      "role": "verification tooling",
+      "sha256": "e50e6b16af18f3139422e678dba94d250dd342b73eff9b1c76a4b8144ed3f1f9",
+      "size": 15673
+    },
+    {
+      "artifact_identity": "verification tooling::scripts/release_artifact_security_scan.py",
+      "path": "scripts/release_artifact_security_scan.py",
+      "role": "verification tooling",
+      "sha256": "1a4274130eb658eaa516465785c79506a9ee7ffe2e00e957b36c5156a392b1c3",
+      "size": 3104
+    },
+    {
+      "artifact_identity": "verification tooling::scripts/release_gate.py",
+      "path": "scripts/release_gate.py",
+      "role": "verification tooling",
+      "sha256": "de5c21733a311ce4867e1664d9de603e4f44b0a603b72c2737eec9f91c065c56",
+      "size": 62805
+    },
+    {
+      "artifact_identity": "verification tooling::scripts/rule_impact_analysis.py",
+      "path": "scripts/rule_impact_analysis.py",
+      "role": "verification tooling",
+      "sha256": "6037560233df96f6b52760ce6fd5a8675dc40b1649385f9b263465e10edcd823",
+      "size": 7095
+    },
+    {
+      "artifact_identity": "verification tooling::scripts/run_evidence_quarantine.py",
+      "path": "scripts/run_evidence_quarantine.py",
+      "role": "verification tooling",
+      "sha256": "8adc8970da1e45403757dd5dc35ca8bbf0838efe960009c4b32ad3bf623dd72c",
+      "size": 4835
+    },
+    {
+      "artifact_identity": "verification tooling::scripts/run_final_verification.py",
+      "path": "scripts/run_final_verification.py",
+      "role": "verification tooling",
+      "sha256": "4fb40dcabdf1e8ce288010ed2c8993cd0d1f96189d460ad8fcd6f8122791eae2",
+      "size": 50052
+    },
+    {
+      "artifact_identity": "verification tooling::scripts/verify_enterprise_release_zip.py",
+      "path": "scripts/verify_enterprise_release_zip.py",
+      "role": "verification tooling",
+      "sha256": "01ec4d189b44921762f38edf160123442badd23a68624bc62ae32486b9d51ec6",
+      "size": 16587
+    },
+    {
+      "artifact_identity": "run-pair verifier::scripts/verify_run_pair.py",
+      "path": "scripts/verify_run_pair.py",
+      "role": "run-pair verifier",
+      "sha256": "425534dba7183e25879e1b9e9e681ed5b465db45d941676868da8ed8a8c277ad",
+      "size": 18584
+    },
+    {
+      "artifact_identity": "release file::sql/001_create_source.sql",
+      "path": "sql/001_create_source.sql",
+      "role": "release file",
+      "sha256": "c55b376ec6ece0518d34ce15c8a14ebe2f78cb82a4a03f23840857b2814ea8cc",
+      "size": 783
+    },
+    {
+      "artifact_identity": "release file::sql/002_create_flag_preview.sql",
+      "path": "sql/002_create_flag_preview.sql",
+      "role": "release file",
+      "sha256": "ae40ae0d568aac2c44f7730ed6c7432fb4517cd1ce7b3fc518582d0dcb8c7e3d",
+      "size": 1155
+    },
+    {
+      "artifact_identity": "release file::sql/003_create_reference_tables.sql",
+      "path": "sql/003_create_reference_tables.sql",
+      "role": "release file",
+      "sha256": "2c683fb3889e7b0f399a54a24fe265dcc7dba419037712e7163410b2f375fe5a",
+      "size": 447
+    },
+    {
+      "artifact_identity": "release file::sql/004_create_audit_table.sql",
+      "path": "sql/004_create_audit_table.sql",
+      "role": "release file",
+      "sha256": "c8673f57a7200a36129672b0386b7f8f0bb1bea293691a3251abaf4006e8117f",
+      "size": 277
+    },
+    {
+      "artifact_identity": "release file::sql/005_create_lineage_table.sql",
+      "path": "sql/005_create_lineage_table.sql",
+      "role": "release file",
+      "sha256": "cd00603c2765f678bb7ed2aee969320924f54b107c32dc1dde9fafa8f0d25498",
+      "size": 655
+    },
+    {
+      "artifact_identity": "test suite::tests/__init__.py",
+      "path": "tests/__init__.py",
+      "role": "test suite",
+      "sha256": "41b8baa5bd565cc4134c68cec3216a8b5d56f90acedaaa263f060c53add03f5a",
+      "size": 29
+    },
+    {
+      "artifact_identity": "test suite::tests/assurance/__init__.py",
+      "path": "tests/assurance/__init__.py",
+      "role": "test suite",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "artifact_identity": "test suite::tests/assurance/test_absolute_path_gate.py",
+      "path": "tests/assurance/test_absolute_path_gate.py",
+      "role": "test suite",
+      "sha256": "a2a3181914119f4c167a361f22dfadbefdec4468e697ef7912a6ee49c54d7613",
+      "size": 11604
+    },
+    {
+      "artifact_identity": "test suite::tests/assurance/test_artifact_identity.py",
+      "path": "tests/assurance/test_artifact_identity.py",
+      "role": "test suite",
+      "sha256": "bc5044df4123fa3cf4ae3d9429f852fa3e11ff88d9ada3321da9e401b30e7a5b",
+      "size": 4571
+    },
+    {
+      "artifact_identity": "test suite::tests/assurance/test_claim_graph_and_schema.py",
+      "path": "tests/assurance/test_claim_graph_and_schema.py",
+      "role": "test suite",
+      "sha256": "e2751294c343d5b25c0a7a32fb6eff2b33a8fc5e60338882c223af1ccd691d8b",
+      "size": 9637
+    },
+    {
+      "artifact_identity": "test suite::tests/assurance/test_integrity_monitoring.py",
+      "path": "tests/assurance/test_integrity_monitoring.py",
+      "role": "test suite",
+      "sha256": "9b1e17ce27ff55fe990cfbb8f27eace1220026944e01dd3e79fe3427c749c071",
+      "size": 31682
+    },
+    {
+      "artifact_identity": "test suite::tests/assurance/test_path_firewall_and_truth_model.py",
+      "path": "tests/assurance/test_path_firewall_and_truth_model.py",
+      "role": "test suite",
+      "sha256": "4361d094a3a9ce8930d587c2325b78b7db8b00b08cd171d63959ab14fca51394",
+      "size": 8354
+    },
+    {
+      "artifact_identity": "test suite::tests/assurance/test_release_chain_and_registry.py",
+      "path": "tests/assurance/test_release_chain_and_registry.py",
+      "role": "test suite",
+      "sha256": "e5a541f57e89c546e5cd2c9299a40d14e52260db2deb95ea203555ece124113d",
+      "size": 8149
+    },
+    {
+      "artifact_identity": "test suite::tests/assurance/test_release_schema_and_stale_evidence.py",
+      "path": "tests/assurance/test_release_schema_and_stale_evidence.py",
+      "role": "test suite",
+      "sha256": "929e9c7cb0bd9638a8752b7063b03321377d10cddc794e9284e51378c47168dc",
+      "size": 12263
+    },
+    {
+      "artifact_identity": "test suite::tests/assurance/test_release_security_and_manifest.py",
+      "path": "tests/assurance/test_release_security_and_manifest.py",
+      "role": "test suite",
+      "sha256": "773b3581692f51e56f9ac3b9e21a852f6f9f6b456435876f9d9d56eab558f824",
+      "size": 18397
+    },
+    {
+      "artifact_identity": "test suite::tests/assurance/test_status_model.py",
+      "path": "tests/assurance/test_status_model.py",
+      "role": "test suite",
+      "sha256": "22e18e6fed8bc00b95074f1a2d124af4a654d17a7260005ab4c04d227d4f58ff",
+      "size": 11271
+    },
+    {
+      "artifact_identity": "test suite::tests/assurance/test_tamper_fail_closed.py",
+      "path": "tests/assurance/test_tamper_fail_closed.py",
+      "role": "test suite",
+      "sha256": "db981904cde56ac6ae2369346c1c62efe23ce3d5f93076c16287de18eae609c0",
+      "size": 27916
+    },
+    {
+      "artifact_identity": "test suite::tests/assurance/test_update_v2_path_regression.py",
+      "path": "tests/assurance/test_update_v2_path_regression.py",
+      "role": "test suite",
+      "sha256": "beb5477efc13b83d07f7d80cd21a61911fc01a3334dd4bb04bf094b9d193e3ef",
+      "size": 26117
+    },
+    {
+      "artifact_identity": "test suite::tests/contract/__init__.py",
+      "path": "tests/contract/__init__.py",
+      "role": "test suite",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "artifact_identity": "test suite::tests/contract/test_flag_preview_contract.py",
+      "path": "tests/contract/test_flag_preview_contract.py",
+      "role": "test suite",
+      "sha256": "f9d9fb213ff569c8647f5642a5381326190415d7e54e0ae4616417bae1f014e6",
+      "size": 623
+    },
+    {
+      "artifact_identity": "test suite::tests/contract/test_imports.py",
+      "path": "tests/contract/test_imports.py",
+      "role": "test suite",
+      "sha256": "ce566de5cb9ebf29aa34fd1e035cd966ae6db531a094de458dfa50fbc11785f1",
+      "size": 3561
+    },
+    {
+      "artifact_identity": "test suite::tests/golden/expected_results.csv",
+      "path": "tests/golden/expected_results.csv",
+      "role": "test suite",
+      "sha256": "fd2d9783718c7bd60ee89615309a3f5708c8e3fa0401c8fdbdcc4ed9db3a63b2",
+      "size": 1377
+    },
+    {
+      "artifact_identity": "test suite::tests/golden/geography_edge_cases.csv",
+      "path": "tests/golden/geography_edge_cases.csv",
+      "role": "test suite",
+      "sha256": "c5084feb4d8f2cee6dbe4bab67fc3f8fb15f39d2098f7ab8c6a5a5c9d6b8406f",
+      "size": 1458
+    },
+    {
+      "artifact_identity": "test suite::tests/golden/golden_cases.csv",
+      "path": "tests/golden/golden_cases.csv",
+      "role": "test suite",
+      "sha256": "9ff2364f6b283ad26612677af99a39905ef9587654f1cef03206db994b2bc23e",
+      "size": 15155
+    },
+    {
+      "artifact_identity": "test suite::tests/golden/regression_corpus.json",
+      "path": "tests/golden/regression_corpus.json",
+      "role": "test suite",
+      "sha256": "f5b22e2c762bb5dfa2c865d9acec4f64477604564ccb8ae9bd3c21b2ad7c8fc0",
+      "size": 24652
+    },
+    {
+      "artifact_identity": "test suite::tests/golden/test_dl_canonical_geography.py",
+      "path": "tests/golden/test_dl_canonical_geography.py",
+      "role": "test suite",
+      "sha256": "009ea3acb7f2e49314a56e8e6fe348b27720703d93f50b5f0210c85b8c71c61f",
+      "size": 8767
+    },
+    {
+      "artifact_identity": "test suite::tests/golden/test_golden_cases.py",
+      "path": "tests/golden/test_golden_cases.py",
+      "role": "test suite",
+      "sha256": "3f155b8bc4a5ff4099ead2cf16a4661486519c3c25810d6cf2b43f7e408a68b7",
+      "size": 4437
+    },
+    {
+      "artifact_identity": "test suite::tests/golden/test_golden_fixture_integrity.py",
+      "path": "tests/golden/test_golden_fixture_integrity.py",
+      "role": "test suite",
+      "sha256": "b398e4945dcc938f9a42a001378dab5b0779d2b94c7b8ed79374028c3cfa594c",
+      "size": 16730
+    },
+    {
+      "artifact_identity": "test suite::tests/golden/test_regression_corpus.py",
+      "path": "tests/golden/test_regression_corpus.py",
+      "role": "test suite",
+      "sha256": "e93d10be25445cfef6e6880f0d3bda7f4bc4e1f3a0e6967db81c6c1ea35e718c",
+      "size": 4216
+    },
+    {
+      "artifact_identity": "test suite::tests/integration/__init__.py",
+      "path": "tests/integration/__init__.py",
+      "role": "test suite",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "artifact_identity": "test suite::tests/integration/test_cli_subprocess.py",
+      "path": "tests/integration/test_cli_subprocess.py",
+      "role": "test suite",
+      "sha256": "40c89c97ef64cc6c6f976369fa58e1bac6f676f72e0f68b0c1998c03eb4227b7",
+      "size": 7906
+    },
+    {
+      "artifact_identity": "test suite::tests/integration/test_engine.py",
+      "path": "tests/integration/test_engine.py",
+      "role": "test suite",
+      "sha256": "7bf3ca48e82afb58522c57ecd7c05fe16158feb7e032158f8b7be1fc4888fba1",
+      "size": 8635
+    },
+    {
+      "artifact_identity": "test suite::tests/integration/test_engine_failure_path.py",
+      "path": "tests/integration/test_engine_failure_path.py",
+      "role": "test suite",
+      "sha256": "01c19d467bf9e7fb519ae62a87e397977a8e99f7dad96d7e1b627012229fd088",
+      "size": 3976
+    },
+    {
+      "artifact_identity": "test suite::tests/property/__init__.py",
+      "path": "tests/property/__init__.py",
+      "role": "test suite",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "artifact_identity": "test suite::tests/property/test_property_invariants.py",
+      "path": "tests/property/test_property_invariants.py",
+      "role": "test suite",
+      "sha256": "6b307e2e8e9968724e703629e23e7f2664a9d814b199b9bac139da43ffdfab07",
+      "size": 14860
+    },
+    {
+      "artifact_identity": "test suite::tests/runtime/__init__.py",
+      "path": "tests/runtime/__init__.py",
+      "role": "test suite",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "artifact_identity": "test suite::tests/runtime/test_runtime.py",
+      "path": "tests/runtime/test_runtime.py",
+      "role": "test suite",
+      "sha256": "32f81580bb555a2e031385bdc95c51776bb3b88f9c7075be9ea5daf0969f563f",
+      "size": 6743
+    },
+    {
+      "artifact_identity": "test suite::tests/safety/__init__.py",
+      "path": "tests/safety/__init__.py",
+      "role": "test suite",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "artifact_identity": "test suite::tests/safety/test_execution_idempotency.py",
+      "path": "tests/safety/test_execution_idempotency.py",
+      "role": "test suite",
+      "sha256": "a38d01cfe37cf97d28718b073b5b0a2e9e4b862dbc3c845fe592845e8ad5fe96",
+      "size": 7383
+    },
+    {
+      "artifact_identity": "test suite::tests/safety/test_fail_closed_gates.py",
+      "path": "tests/safety/test_fail_closed_gates.py",
+      "role": "test suite",
+      "sha256": "57b6945c234db7d1309d79cfb020817d4dbc6d4c1483805404cd746eb8f29dfa",
+      "size": 10374
+    },
+    {
+      "artifact_identity": "test suite::tests/safety/test_failure_recovery_hardening.py",
+      "path": "tests/safety/test_failure_recovery_hardening.py",
+      "role": "test suite",
+      "sha256": "e19de31dcf7db3088b27ae695d31825e1b46cec051d5f8029d90a9f958fa74e4",
+      "size": 8746
+    },
+    {
+      "artifact_identity": "test suite::tests/security/__init__.py",
+      "path": "tests/security/__init__.py",
+      "role": "test suite",
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+      "size": 1
+    },
+    {
+      "artifact_identity": "test suite::tests/security/test_security.py",
+      "path": "tests/security/test_security.py",
+      "role": "test suite",
+      "sha256": "405382b076a2473f537da499764e1c489d0e020293e6a51454a4702080c72bcd",
+      "size": 2438
+    },
+    {
+      "artifact_identity": "test suite::tests/unit/__init__.py",
+      "path": "tests/unit/__init__.py",
+      "role": "test suite",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "artifact_identity": "test suite::tests/unit/test_alerts.py",
+      "path": "tests/unit/test_alerts.py",
+      "role": "test suite",
+      "sha256": "5f8450a7f031e6b1f454701f51575a3073a3f6b1922bfa429feabea4bdbd797e",
+      "size": 1474
+    },
+    {
+      "artifact_identity": "test suite::tests/unit/test_audit.py",
+      "path": "tests/unit/test_audit.py",
+      "role": "test suite",
+      "sha256": "189c86180c902459d9cac511b058682bcfc00925883a48b005d78ecea5159167",
+      "size": 2057
+    },
+    {
+      "artifact_identity": "test suite::tests/unit/test_chunking.py",
+      "path": "tests/unit/test_chunking.py",
+      "role": "test suite",
+      "sha256": "5ab8eaf90ba5957969b7c7c4840f625cb40b3d08f71aa2aed3a454d56c1024ef",
+      "size": 8908
+    },
+    {
+      "artifact_identity": "test suite::tests/unit/test_config_wiring.py",
+      "path": "tests/unit/test_config_wiring.py",
+      "role": "test suite",
+      "sha256": "4d9a319ae0ddbd31bd62e6073d6f61454ca900ea5fa17a93e9592c4922b41ed5",
+      "size": 23400
+    },
+    {
+      "artifact_identity": "test suite::tests/unit/test_contracts.py",
+      "path": "tests/unit/test_contracts.py",
+      "role": "test suite",
+      "sha256": "f6d31abc1d2ff6009993b20fdbba039a47aee6d21dc8a54e3a246b2ad2683858",
+      "size": 2345
+    },
+    {
+      "artifact_identity": "test suite::tests/unit/test_evidence.py",
+      "path": "tests/unit/test_evidence.py",
+      "role": "test suite",
+      "sha256": "3d0572b61d9b82f0024015f3f8605f24ff0347183f3638cdec0ecd56cad985be",
+      "size": 3371
+    },
+    {
+      "artifact_identity": "test suite::tests/unit/test_evidence_root.py",
+      "path": "tests/unit/test_evidence_root.py",
+      "role": "test suite",
+      "sha256": "7a53bbef68416c69d70aa3ae894c1167b746bfa1aeccb123249ca285583378b3",
+      "size": 5567
+    },
+    {
+      "artifact_identity": "test suite::tests/unit/test_evidence_validator.py",
+      "path": "tests/unit/test_evidence_validator.py",
+      "role": "test suite",
+      "sha256": "b144297f9dee99b874c9c1a74f614f9ed7380e6b1091f8d1760e21c4681392f9",
+      "size": 10201
+    },
+    {
+      "artifact_identity": "test suite::tests/unit/test_failure_taxonomy.py",
+      "path": "tests/unit/test_failure_taxonomy.py",
+      "role": "test suite",
+      "sha256": "f124a940ae188d4b7f8192cf35b73840b529113dd45ce163d22cb01d5d36ff63",
+      "size": 4126
+    },
+    {
+      "artifact_identity": "test suite::tests/unit/test_final_3m_checker_hardening.py",
+      "path": "tests/unit/test_final_3m_checker_hardening.py",
+      "role": "test suite",
+      "sha256": "04a4621c89430094bf26438a186611c095901faed3c6ee508add4ff9391f2b2b",
+      "size": 38739
+    },
+    {
+      "artifact_identity": "test suite::tests/unit/test_final_3m_hardening.py",
+      "path": "tests/unit/test_final_3m_hardening.py",
+      "role": "test suite",
+      "sha256": "9c63cfe582633b05ed4189d086ea69c95ffd515f3b8cea3818401db606f1d206",
+      "size": 20238
+    },
+    {
+      "artifact_identity": "test suite::tests/unit/test_impact_analysis.py",
+      "path": "tests/unit/test_impact_analysis.py",
+      "role": "test suite",
+      "sha256": "28506b9d2e04be2b7b284b795f111cc667297a572f777c9097b18e8fa6ea540d",
+      "size": 3681
+    },
+    {
+      "artifact_identity": "test suite::tests/unit/test_input_contract.py",
+      "path": "tests/unit/test_input_contract.py",
+      "role": "test suite",
+      "sha256": "d9de6dd8851d91c4eceed6eae49718c522e1722ddf1586baa2dabeb802bfe5a7",
+      "size": 11115
+    },
+    {
+      "artifact_identity": "test suite::tests/unit/test_lineage.py",
+      "path": "tests/unit/test_lineage.py",
+      "role": "test suite",
+      "sha256": "25bce27f19ab38e53465afafa08dab7c625df293bee5af43716d4686ecf37746",
+      "size": 2047
+    },
+    {
+      "artifact_identity": "test suite::tests/unit/test_lineage_serialization.py",
+      "path": "tests/unit/test_lineage_serialization.py",
+      "role": "test suite",
+      "sha256": "e0113b1b4a2d4b490ffd31b516108eeb06d979bd8dea67d7da7587397e1172fe",
+      "size": 8689
+    },
+    {
+      "artifact_identity": "test suite::tests/unit/test_monitoring.py",
+      "path": "tests/unit/test_monitoring.py",
+      "role": "test suite",
+      "sha256": "5f2aec418250fb69ee1d1e0cda4ed466be65229add2e90fac94b5e7d78a6f0cf",
+      "size": 4864
+    },
+    {
+      "artifact_identity": "test suite::tests/unit/test_mutation_evidence.py",
+      "path": "tests/unit/test_mutation_evidence.py",
+      "role": "test suite",
+      "sha256": "8f045e5377dab0a8ef8159657fd6aebb92c16ae1776bb00fa37f1189d94eca73",
+      "size": 1751
+    },
+    {
+      "artifact_identity": "test suite::tests/unit/test_pii_scan.py",
+      "path": "tests/unit/test_pii_scan.py",
+      "role": "test suite",
+      "sha256": "597dc395c168dbcb33ad2f63703d1411a4267658d9f8d74c419e179ff6fbb16f",
+      "size": 5106
+    },
+    {
+      "artifact_identity": "test suite::tests/unit/test_provenance.py",
+      "path": "tests/unit/test_provenance.py",
+      "role": "test suite",
+      "sha256": "72a0e0d4f922503a258b161a2a0e4d376f6aac791504671d981daca8a41412ba",
+      "size": 7241
+    },
+    {
+      "artifact_identity": "test suite::tests/unit/test_q21_scope_aggregation.py",
+      "path": "tests/unit/test_q21_scope_aggregation.py",
+      "role": "test suite",
+      "sha256": "867ad577a47958bfcf7c33ca70c1e1a3b93205b6e24a1a0613d5b9df6bc59fca",
+      "size": 14745
+    },
+    {
+      "artifact_identity": "test suite::tests/unit/test_replay.py",
+      "path": "tests/unit/test_replay.py",
+      "role": "test suite",
+      "sha256": "8adaef3989910b3e9b1129d46406ae9d728da1c74c720d316d776e37703179f6",
+      "size": 3647
+    },
+    {
+      "artifact_identity": "test suite::tests/unit/test_rule_oracle_consistency.py",
+      "path": "tests/unit/test_rule_oracle_consistency.py",
+      "role": "test suite",
+      "sha256": "a034dceff0c23e58bb414014be7785d819960d5af889e120ef5bf13e0a348d50",
+      "size": 11929
+    },
+    {
+      "artifact_identity": "test suite::tests/unit/test_rules.py",
+      "path": "tests/unit/test_rules.py",
+      "role": "test suite",
+      "sha256": "ba88fd2678cf4b370c4c6842b7fdc7987beacf7b3988320cb9ff4c2221891346",
+      "size": 8582
+    },
+    {
+      "artifact_identity": "test suite::tests/unit/test_schema.py",
+      "path": "tests/unit/test_schema.py",
+      "role": "test suite",
+      "sha256": "7830043d59af4753885214e821c7a65fc14179b3ba5d41284d39e5a24a6e2c05",
+      "size": 2423
+    },
+    {
+      "artifact_identity": "test suite::tests/unit/test_security.py",
+      "path": "tests/unit/test_security.py",
+      "role": "test suite",
+      "sha256": "57ebae803a34ff52c122dc9f063e77499c39130680207d991af70ffa82cca49f",
+      "size": 3886
+    },
+    {
+      "artifact_identity": "test suite::tests/unit/test_sp1_geography_contract.py",
+      "path": "tests/unit/test_sp1_geography_contract.py",
+      "role": "test suite",
+      "sha256": "7f6dc1c1cbb03097880e6fb54c83f475243a19ac7fb2ef68ddb562624fefe917",
+      "size": 28140
+    },
+    {
+      "artifact_identity": "test suite::tests/unit/test_sp1_successor_contract_validation.py",
+      "path": "tests/unit/test_sp1_successor_contract_validation.py",
+      "role": "test suite",
+      "sha256": "f1fa25c12d81f342e4e9942284a198ed6adb7e8f7c5fceeff696b39106f077bc",
+      "size": 22769
+    },
+    {
+      "artifact_identity": "update tooling::tools/absolute_path_forensics.py",
+      "path": "tools/absolute_path_forensics.py",
+      "role": "update tooling",
+      "sha256": "4452ab4e6bf09784a59f81a1c0a0cea80be98c466aa7564150c2e990707a9363",
+      "size": 15174
+    },
+    {
+      "artifact_identity": "update tooling::tools/absolute_path_release_gate.py",
+      "path": "tools/absolute_path_release_gate.py",
+      "role": "update tooling",
+      "sha256": "17c7a84ff627f4a7f9e2d19a9084c7c3f52222b4e03768e4526643d6c5e1b5a2",
+      "size": 11592
+    },
+    {
+      "artifact_identity": "update tooling::tools/build_artifact_identity_registry.py",
+      "path": "tools/build_artifact_identity_registry.py",
+      "role": "update tooling",
+      "sha256": "fed95c15fe4d13f2e2522d16ac0879ae27c26299dc1b8c32e235d70d8ed2cc5b",
+      "size": 12004
+    },
+    {
+      "artifact_identity": "update tooling::tools/build_baseline_snapshot.py",
+      "path": "tools/build_baseline_snapshot.py",
+      "role": "update tooling",
+      "sha256": "f6c8ed544e2a8a9639d7da3f7500cc939ecc687056551b164c583fe3dfadf489",
+      "size": 8891
+    },
+    {
+      "artifact_identity": "update tooling::tools/build_claim_graph.py",
+      "path": "tools/build_claim_graph.py",
+      "role": "update tooling",
+      "sha256": "8760d9db2d64028c0c9da96b28bfa253df02147dbead5a6b8e024d31d54cac29",
+      "size": 15114
+    },
+    {
+      "artifact_identity": "update tooling::tools/build_dependency_graph.py",
+      "path": "tools/build_dependency_graph.py",
+      "role": "update tooling",
+      "sha256": "1730aabf2772b72ba3ed3e5eb4f0564e46471f869567e40729da8cfdeeda1571",
+      "size": 17183
+    },
+    {
+      "artifact_identity": "update tooling::tools/build_final_update_zip.py",
+      "path": "tools/build_final_update_zip.py",
+      "role": "update tooling",
+      "sha256": "57c23eca8b2fedc1d4577caf4ae95faf2cb3d914a8594311f8b1b232217997f0",
+      "size": 10467
+    },
+    {
+      "artifact_identity": "update tooling::tools/build_portable_release_zip.py",
+      "path": "tools/build_portable_release_zip.py",
+      "role": "update tooling",
+      "sha256": "59641b94b011d69c3330d7f9e51434475490471b758dd0ed4e30520ffb53b56b",
+      "size": 13274
+    },
+    {
+      "artifact_identity": "update tooling::tools/build_release_identity.py",
+      "path": "tools/build_release_identity.py",
+      "role": "update tooling",
+      "sha256": "e9fcd6e627f419deaface22383762eab68136a5660c8c244619baffe6e7c7b55",
+      "size": 3814
+    },
+    {
+      "artifact_identity": "update tooling::tools/build_release_lock.py",
+      "path": "tools/build_release_lock.py",
+      "role": "update tooling",
+      "sha256": "ada044739a8898a0e27700ec3737c5c025a99504fc549341c4dabd4f8da3ab77",
+      "size": 9108
+    },
+    {
+      "artifact_identity": "update tooling::tools/build_schema_compatibility_report.py",
+      "path": "tools/build_schema_compatibility_report.py",
+      "role": "update tooling",
+      "sha256": "f81bc737ad213f153838ccfdace27d88aee8e490dd779f3566b3bc7e34414714",
+      "size": 5524
+    },
+    {
+      "artifact_identity": "update tooling::tools/build_update_observability.py",
+      "path": "tools/build_update_observability.py",
+      "role": "update tooling",
+      "sha256": "125b444a42c799fe8d0c1815d2c2c8e59abba5c012866f8a304f5f2c713becf7",
+      "size": 6709
+    },
+    {
+      "artifact_identity": "update tooling::tools/drift_detector.py",
+      "path": "tools/drift_detector.py",
+      "role": "update tooling",
+      "sha256": "b234385e4eb6236da04b15f0546811ecf3ec4b6a6ccaa4f986a53955ea7b2080",
+      "size": 3456
+    },
+    {
+      "artifact_identity": "update tooling::tools/evaluate_freshness.py",
+      "path": "tools/evaluate_freshness.py",
+      "role": "update tooling",
+      "sha256": "6d4990543f51adec3b98a3340424116caf3f93750c0f50fd2f18d3be6a01c4d8",
+      "size": 3625
+    },
+    {
+      "artifact_identity": "update tooling::tools/final_portable_forensic_audit.py",
+      "path": "tools/final_portable_forensic_audit.py",
+      "role": "update tooling",
+      "sha256": "d591bf9bd1b398f91f004524e88e65a8363acc7d9de15f56ec07cb49a6e529e8",
+      "size": 13699
+    },
+    {
+      "artifact_identity": "update tooling::tools/final_results_rebuild.py",
+      "path": "tools/final_results_rebuild.py",
+      "role": "update tooling",
+      "sha256": "d15fc16396bcd45d7323efa63096a57bfc49093a9900c85c1c3339b009bcee48",
+      "size": 16256
+    },
+    {
+      "artifact_identity": "update tooling::tools/final_update_forensic_audit.py",
+      "path": "tools/final_update_forensic_audit.py",
+      "role": "update tooling",
+      "sha256": "8caef81a7d33dc70f90eb5e1279e31e8e757ed4113f40f1bc25941f3d81193fc",
+      "size": 8805
+    },
+    {
+      "artifact_identity": "update tooling::tools/final_update_report.py",
+      "path": "tools/final_update_report.py",
+      "role": "update tooling",
+      "sha256": "61cb765938da00e76fbd986a4dfa6f4355a2c1bda6ba3a235dc18959426b48e7",
+      "size": 14691
+    },
+    {
+      "artifact_identity": "update tooling::tools/integrity_monitor.py",
+      "path": "tools/integrity_monitor.py",
+      "role": "update tooling",
+      "sha256": "b2cdc4b0635a1da0135c363f96b9423d9cf2ecc43a4762354c44c2bfa1695551",
+      "size": 5431
+    },
+    {
+      "artifact_identity": "update tooling::tools/normalize_portable_evidence.py",
+      "path": "tools/normalize_portable_evidence.py",
+      "role": "update tooling",
+      "sha256": "04d5651c1e244e8241dce5b8d4339995e9649b0d65cb4dcdea40dbe913a316f2",
+      "size": 11176
+    },
+    {
+      "artifact_identity": "update tooling::tools/portable_final_results_rebuild.py",
+      "path": "tools/portable_final_results_rebuild.py",
+      "role": "update tooling",
+      "sha256": "e17ee90d2bf7f0c5661ebc34d79aaf97220f0951c65b5ba6a9d8295606e7c6e8",
+      "size": 16349
+    },
+    {
+      "artifact_identity": "update tooling::tools/run_evidence_mutation_matrix.py",
+      "path": "tools/run_evidence_mutation_matrix.py",
+      "role": "update tooling",
+      "sha256": "16bde389e76fb9b13ac2b3f636c2c4c47810191f36c4bd6ec07a5521d1889bcd",
+      "size": 26651
+    },
+    {
+      "artifact_identity": "update tooling::tools/run_tamper_matrix.py",
+      "path": "tools/run_tamper_matrix.py",
+      "role": "update tooling",
+      "sha256": "b62245c42c63e9a2340a07da7aa68dbd5b97a467fb587442d682ef696da011d8",
+      "size": 8669
+    },
+    {
+      "artifact_identity": "update tooling::tools/update_v2_baseline.py",
+      "path": "tools/update_v2_baseline.py",
+      "role": "update tooling",
+      "sha256": "523ac206b7db003293e9b09633686fd9719ee5ab5681371467ffc4ad24f24c52",
+      "size": 12939
+    },
+    {
+      "artifact_identity": "update tooling::tools/update_v2_historical_safety.py",
+      "path": "tools/update_v2_historical_safety.py",
+      "role": "update tooling",
+      "sha256": "69c89cf077f5263064541bf9178c4f2a5132fd956f81d152c873558817a2750a",
+      "size": 6623
+    },
+    {
+      "artifact_identity": "update tooling::tools/update_v2_manifest.py",
+      "path": "tools/update_v2_manifest.py",
+      "role": "update tooling",
+      "sha256": "65d4cd647ad15713c78ccce9f02ede2effd1bb4edf9b995c5e0cfe3ab4fc72dc",
+      "size": 14734
+    },
+    {
+      "artifact_identity": "update tooling::tools/update_v2_path_gate.py",
+      "path": "tools/update_v2_path_gate.py",
+      "role": "update tooling",
+      "sha256": "c9d86e89421e231126dac528c09181313cf37cfd4f7529925f6b194e40141aad",
+      "size": 12173
+    },
+    {
+      "artifact_identity": "update tooling::tools/update_v2_path_inventory.py",
+      "path": "tools/update_v2_path_inventory.py",
+      "role": "update tooling",
+      "sha256": "5d05a8b9d21f385e7f32d5947f16b1ac967ad52f041a232e903890437b61ff6f",
+      "size": 20946
+    },
+    {
+      "artifact_identity": "update tooling::tools/update_v2_portable_evidence.py",
+      "path": "tools/update_v2_portable_evidence.py",
+      "role": "update tooling",
+      "sha256": "4512f0e111bc7e286dd260dadb281e003ad74548d16c5cc1adb6a9a527cb1e70",
+      "size": 19707
+    },
+    {
+      "artifact_identity": "update tooling::tools/update_v2_registry_and_claims.py",
+      "path": "tools/update_v2_registry_and_claims.py",
+      "role": "update tooling",
+      "sha256": "7009c76a09eb1cd6b0c35dfed295d171f71672c7be5c356874ba6cb703ca96e2",
+      "size": 36166
+    },
+    {
+      "artifact_identity": "update tooling::tools/update_v2_release_identity.py",
+      "path": "tools/update_v2_release_identity.py",
+      "role": "update tooling",
+      "sha256": "80393c517a40dd802ee73f9c317f8d77246d40b6af899f1c0c17917be5c33e39",
+      "size": 8074
+    },
+    {
+      "artifact_identity": "update tooling::tools/update_v2_self_verify.py",
+      "path": "tools/update_v2_self_verify.py",
+      "role": "update tooling",
+      "sha256": "867ae2ccaec93bd03fcacf930f0b6ca6073fbddee644691b266cd21f238ffa59",
+      "size": 25672
+    },
+    {
+      "artifact_identity": "update tooling::tools/update_v2_test_and_security.py",
+      "path": "tools/update_v2_test_and_security.py",
+      "role": "update tooling",
+      "sha256": "e2b4bab3516aa558cf0280bd03c0e292d8cb67545a29c4f98af204e24a4a4d8f",
+      "size": 7496
+    },
+    {
+      "artifact_identity": "update tooling::tools/update_v2_zip.py",
+      "path": "tools/update_v2_zip.py",
+      "role": "update tooling",
+      "sha256": "e08a1043d216d23cc3b1168b4cfe03563d847bb8ef07dac7256a59625580f902",
+      "size": 14288
+    },
+    {
+      "artifact_identity": "update tooling::tools/verify_final_update_zip.py",
+      "path": "tools/verify_final_update_zip.py",
+      "role": "update tooling",
+      "sha256": "16e3ca0b183864bda6f7f531acd6dd569c6e447448d7e936b52e5aae28113a79",
+      "size": 11679
+    },
+    {
+      "artifact_identity": "update tooling::tools/verify_self_contained_release.py",
+      "path": "tools/verify_self_contained_release.py",
+      "role": "update tooling",
+      "sha256": "fa4fab3715cc258c7f4e9c772735637d86e4fc86937c3399d8b11199c15687bb",
+      "size": 16024
+    }
+  ],
+  "generated_utc": "2026-09-19T02:43:07Z",
+  "git_head": "b86320379a99de4aa34d2bc67c6ec32a138b30b3",
+  "git_tree": "115bca1c227356648936820128f7f7928e552367",
+  "manifest_sha256_concat": "0f166ea18a8ca9995e434b7d94b7ccb86f22532b4cb1c320a35b09d2af0a6c6e",
+  "release_id": "DQAEIP-FINAL-CLEAN-REBUILD-RELEASE-2026-09-18",
+  "report": "DQAEIP portable release cryptographic release manifest",
+  "schema": {
+    "name": "dqaeip.release_manifest",
+    "version": "1.0"
+  },
+  "self_referential_exclusions": [
+    "evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/release_manifest/",
+    "evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/freshness/",
+    "evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/self_contained_verification/",
+    "evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/final_audit/",
+    "evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/claim_graph/",
+    "evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/artifact_identity/",
+    "evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/schema_versioning/",
+    "evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/security/zip_scan_report.json",
+    "evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/integrity/integrity_monitor_report.json",
+    "evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/integrity/change_ledger.jsonl",
+    "evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/drift/drift_report.json",
+    "evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/integrity/",
+    "evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/observability/"
+  ]
+}

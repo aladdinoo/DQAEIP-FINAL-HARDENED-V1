@@ -1,0 +1,144 @@
+.....................s.................................................. [  6%]
+.......................................................F...............F [ 13%]
+............s.................................FF..F..................... [ 20%]
+.............s...........................s.............................. [ 27%]
+..........................sssssss....................................... [ 34%]
+........................................................................ [ 41%]
+.............................................s.s........................ [ 47%]
+........................................................................ [ 54%]
+........................................................................ [ 61%]
+........................................................................ [ 68%]
+........................................................................ [ 75%]
+........................................................................ [ 82%]
+........................................................................ [ 88%]
+........................................................................ [ 95%]
+.............................................                            [100%]
+=================================== FAILURES ===================================
+_____________ TestReleaseChain.test_real_chain_core_edges_verified _____________
+
+self = <tests.assurance.test_release_chain_and_registry.TestReleaseChain object at 0x7f21dc6f69c0>
+
+    def test_real_chain_core_edges_verified(self):
+        # FINAL HARDENING (§22 extraction check): live git lineage is a
+        # REPOSITORY-state fact. In a git-less extraction of the release
+        # archive (the ZIP intentionally excludes .git), git context is
+        # genuinely NOT VERIFIABLE — this test skips with an explicit
+        # reason (consistent with the repo's skip policy: environment
+        # limitations are never converted to PASS, and never silently
+        # ignored). In a live checkout the git edges are always asserted.
+        if not os.path.isdir(os.path.join(REPO_ROOT, ".git")):
+            pytest.skip("no git repository present (release-archive "
+                        "extraction): live git-lineage edges are not "
+                        "verifiable without .git — NOT_VERIFIED, "
+                        "never PASS")
+        ok, report = release_chain.verify_chain(REPO_ROOT)
+        edges = report["edges"]
+        # Core evidence edges must hold on the real repo right now:
+        for core in ("source_to_git", "git_to_rules", "rules_to_input",
+                     "input_to_runs", "run_to_run", "runs_to_oracle",
+                     "oracle_to_replay", "replay_to_evidence",
+                     "evidence_to_root", "root_to_gate"):
+>           assert edges[core]["verified"], (core, edges[core])
+E           AssertionError: ('root_to_gate', {'detail': {'contradiction_free': True, 'final_results_gate_claim': 'PASS', 'release_gate_verdict': None}, 'verified': False})
+E           assert False
+
+tests/assurance/test_release_chain_and_registry.py:53: AssertionError
+___________ TestGoldenSnapshot.test_valid_snapshot_passes_validation ___________
+
+self = <tests.assurance.test_release_chain_and_registry.TestGoldenSnapshot object at 0x7f21dc6f6960>
+
+    def test_valid_snapshot_passes_validation(self):
+        snap = golden_snapshot.build_snapshot(
+            REPO_ROOT, "DQAEIP-Enterprise-Assurance-Validation-Release")
+        problems = golden_snapshot.validate_snapshot(snap)
+>       assert problems == [], problems
+E       AssertionError: ["snapshot: key 'test_summary_sha256' is null (NOT_VERIFIED — fail closed)", "snapshot: key 'release_gate_sha256' is null (NOT_VERIFIED — fail closed)"]
+E       assert ['snapshot: k...fail closed)'] == []
+E         
+E         Left contains 2 more items, first extra item: "snapshot: key 'test_summary_sha256' is null (NOT_VERIFIED — fail closed)"
+E         Use -v to get more diff
+
+tests/assurance/test_release_chain_and_registry.py:178: AssertionError
+__________ TestReleaseTreeScan.test_scan_tree_overall_pass_structure ___________
+
+self = <tests.assurance.test_release_security_and_manifest.TestReleaseTreeScan object at 0x7f21dc41a510>
+
+    def test_scan_tree_overall_pass_structure(self):
+        result = release_security.scan_release_tree(REPO_ROOT)
+        # the live release tree must pass every section
+>       assert result["verdict"] == "PASS"
+E       AssertionError: assert 'FAIL' == 'PASS'
+E         
+E         - PASS
+E         + FAIL
+
+tests/assurance/test_release_security_and_manifest.py:173: AssertionError
+____________ TestSecurityReleaseReport.test_report_sections_present ____________
+
+self = <tests.assurance.test_release_security_and_manifest.TestSecurityReleaseReport object at 0x7f21dc41b1a0>
+
+    def test_report_sections_present(self):
+        report = release_security.build_security_release_report(
+            REPO_ROOT)
+        for section in ("credential_scan_result", "path_leakage_result",
+                        "artifact_inventory_result", "zip_scan_result",
+                        "environment_leakage_result",
+                        "synthetic_fixture_classifications",
+                        "fail_closed_behavior_status"):
+            assert section in report
+>       assert report["overall_verdict"] == "PASS"
+E       AssertionError: assert 'FAIL' == 'PASS'
+E         
+E         - PASS
+E         + FAIL
+
+tests/assurance/test_release_security_and_manifest.py:187: AssertionError
+_________ TestReleaseArtifactManifest.test_build_and_verify_roundtrip __________
+
+self = <tests.assurance.test_release_security_and_manifest.TestReleaseArtifactManifest object at 0x7f21dc41c6e0>
+tmp_path = PosixPath('/tmp/pytest-of-z/pytest-36/test_build_and_verify_roundtri0')
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x7f21dbe4ef90>
+
+    def test_build_and_verify_roundtrip(self, tmp_path, monkeypatch):
+        """Build + verify against an ISOLATED output path: the canonical
+        evidence/release/release_artifact_manifest.json must never be
+        clobbered by a test run (the terminal manifest discipline)."""
+        import build_release_artifact_manifest as bam
+        out = tmp_path / "release_artifact_manifest.json"
+        monkeypatch.setattr(bam, "OUT", str(out))
+>       assert bam.main([]) == 0            # build (pre-ZIP phase ok)
+        ^^^^^^^^^^^^^^^^^^^^^^^^
+E       AssertionError: assert 1 == 0
+E        +  where 1 = <function main at 0x7f21d9f42020>([])
+E        +    where <function main at 0x7f21d9f42020> = <module 'build_release_artifact_manifest' from '/home/z/my-project/dqvp-work/repo/scripts/build_release_artifact_manifest.py'>.main
+
+tests/assurance/test_release_security_and_manifest.py:212: AssertionError
+----------------------------- Captured stderr call -----------------------------
+FAIL-CLOSED: missing required artifacts:
+  - evidence/release/release_evidence_model.json
+  - evidence/release/golden_release_snapshot.json
+  - evidence/release/consistency_matrix.json
+  - evidence/release/claim_provenance.json
+  - evidence/release/reproducibility_manifest.json
+  - evidence/release/rule_impact_graph.json
+  - evidence/release/contradiction_check.json
+  - evidence/release/evidence_quarantine_screen.json
+  - evidence/release/observability_status.json
+  - evidence/release/readme_consistency.json
+  - evidence/release_gate/final_release_gate.json
+  - evidence/rebuild_verification/test_summary.json
+  - evidence/final_hardening_2026-09-16/release_zip_record.json
+  - evidence/assurance_baseline/assurance_baseline.json
+  - evidence/assurance_baseline/tracked_tree_manifest.json
+  - evidence/assurance_baseline/evidence_inventory.json
+  - evidence/assurance_rebuild_baseline/assurance_rebuild_baseline.json
+  - evidence/assurance_rebuild_baseline/tracked_tree_manifest.json
+  - evidence/assurance_rebuild_baseline/truth_inventory.json
+  - evidence/assurance_rebaseline_2026-09-17/release_zip_record.json
+=========================== short test summary info ============================
+FAILED tests/assurance/test_release_chain_and_registry.py::TestReleaseChain::test_real_chain_core_edges_verified
+FAILED tests/assurance/test_release_chain_and_registry.py::TestGoldenSnapshot::test_valid_snapshot_passes_validation
+FAILED tests/assurance/test_release_security_and_manifest.py::TestReleaseTreeScan::test_scan_tree_overall_pass_structure
+FAILED tests/assurance/test_release_security_and_manifest.py::TestSecurityReleaseReport::test_report_sections_present
+FAILED tests/assurance/test_release_security_and_manifest.py::TestReleaseArtifactManifest::test_build_and_verify_roundtrip
+5 failed, 1035 passed, 13 skipped in 26.46s

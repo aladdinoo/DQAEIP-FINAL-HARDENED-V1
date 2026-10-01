@@ -1,0 +1,851 @@
+{
+  "corpus_version": "1.0.0",
+  "generated_utc": "2026-09-15T16:21:52Z",
+  "policy": "Expected values are the CURRENT frozen V1 behavior, computed by executing the production rules and cross-checked against the independent oracle (build aborts on any disagreement). review_required cases pin V1 behavior that is known to diverge from real-world/company expectations; the ambiguity is documented, never silently decided.",
+  "case_count": 43,
+  "review_required_count": 2,
+  "areas": [
+    "email",
+    "geography",
+    "name"
+  ],
+  "cases": [
+    {
+      "case_id": "RC-E01",
+      "area": "email",
+      "origin": "blank email flags email_blank only",
+      "review_required": false,
+      "input": {
+        "email_address": ""
+      },
+      "expected": {
+        "first_name_cleaning_candidate": 0,
+        "last_name_cleaning_candidate": 0,
+        "name_cleaning_candidate": 0,
+        "email_blank": 1,
+        "email_syntax_failure": 0,
+        "proposed_email_export_eligible": 0,
+        "zip_state_assessable": 0,
+        "geography_mismatch_candidate": 0
+      }
+    },
+    {
+      "case_id": "RC-E02",
+      "area": "email",
+      "origin": "whitespace-only email flags email_blank (strip semantics)",
+      "review_required": false,
+      "input": {
+        "email_address": "   "
+      },
+      "expected": {
+        "first_name_cleaning_candidate": 0,
+        "last_name_cleaning_candidate": 0,
+        "name_cleaning_candidate": 0,
+        "email_blank": 1,
+        "email_syntax_failure": 0,
+        "proposed_email_export_eligible": 0,
+        "zip_state_assessable": 0,
+        "geography_mismatch_candidate": 0
+      }
+    },
+    {
+      "case_id": "RC-E03",
+      "area": "email",
+      "origin": "null-like missing email field",
+      "review_required": false,
+      "input": {
+        "email_address": null
+      },
+      "expected": {
+        "first_name_cleaning_candidate": 0,
+        "last_name_cleaning_candidate": 0,
+        "name_cleaning_candidate": 0,
+        "email_blank": 1,
+        "email_syntax_failure": 0,
+        "proposed_email_export_eligible": 0,
+        "zip_state_assessable": 0,
+        "geography_mismatch_candidate": 0
+      }
+    },
+    {
+      "case_id": "RC-E04",
+      "area": "email",
+      "origin": "valid simple email",
+      "review_required": false,
+      "input": {
+        "email_address": "user@example.com"
+      },
+      "expected": {
+        "first_name_cleaning_candidate": 0,
+        "last_name_cleaning_candidate": 0,
+        "name_cleaning_candidate": 0,
+        "email_blank": 0,
+        "email_syntax_failure": 0,
+        "proposed_email_export_eligible": 1,
+        "zip_state_assessable": 0,
+        "geography_mismatch_candidate": 0
+      }
+    },
+    {
+      "case_id": "RC-E05",
+      "area": "email",
+      "origin": "padded valid email is stripped before matching",
+      "review_required": false,
+      "input": {
+        "email_address": "  user@example.com  "
+      },
+      "expected": {
+        "first_name_cleaning_candidate": 0,
+        "last_name_cleaning_candidate": 0,
+        "name_cleaning_candidate": 0,
+        "email_blank": 0,
+        "email_syntax_failure": 0,
+        "proposed_email_export_eligible": 1,
+        "zip_state_assessable": 0,
+        "geography_mismatch_candidate": 0
+      }
+    },
+    {
+      "case_id": "RC-E06",
+      "area": "email",
+      "origin": "no-at-sign invalid syntax",
+      "review_required": false,
+      "input": {
+        "email_address": "not-an-email"
+      },
+      "expected": {
+        "first_name_cleaning_candidate": 0,
+        "last_name_cleaning_candidate": 0,
+        "name_cleaning_candidate": 0,
+        "email_blank": 0,
+        "email_syntax_failure": 1,
+        "proposed_email_export_eligible": 0,
+        "zip_state_assessable": 0,
+        "geography_mismatch_candidate": 0
+      }
+    },
+    {
+      "case_id": "RC-E07",
+      "area": "email",
+      "origin": "double @ invalid",
+      "review_required": false,
+      "input": {
+        "email_address": "user@@double.com"
+      },
+      "expected": {
+        "first_name_cleaning_candidate": 0,
+        "last_name_cleaning_candidate": 0,
+        "name_cleaning_candidate": 0,
+        "email_blank": 0,
+        "email_syntax_failure": 1,
+        "proposed_email_export_eligible": 0,
+        "zip_state_assessable": 0,
+        "geography_mismatch_candidate": 0
+      }
+    },
+    {
+      "case_id": "RC-E08",
+      "area": "email",
+      "origin": "single-char TLD invalid under V1 regex",
+      "review_required": false,
+      "input": {
+        "email_address": "user@x.c"
+      },
+      "expected": {
+        "first_name_cleaning_candidate": 0,
+        "last_name_cleaning_candidate": 0,
+        "name_cleaning_candidate": 0,
+        "email_blank": 0,
+        "email_syntax_failure": 1,
+        "proposed_email_export_eligible": 0,
+        "zip_state_assessable": 0,
+        "geography_mismatch_candidate": 0
+      }
+    },
+    {
+      "case_id": "RC-E09",
+      "area": "email",
+      "origin": "multi-label TLD valid",
+      "review_required": false,
+      "input": {
+        "email_address": "user@mail.example.co.uk"
+      },
+      "expected": {
+        "first_name_cleaning_candidate": 0,
+        "last_name_cleaning_candidate": 0,
+        "name_cleaning_candidate": 0,
+        "email_blank": 0,
+        "email_syntax_failure": 0,
+        "proposed_email_export_eligible": 1,
+        "zip_state_assessable": 0,
+        "geography_mismatch_candidate": 0
+      }
+    },
+    {
+      "case_id": "RC-E10",
+      "area": "email",
+      "origin": "plus-tag valid",
+      "review_required": false,
+      "input": {
+        "email_address": "u.ser+tag@sub.example.io"
+      },
+      "expected": {
+        "first_name_cleaning_candidate": 0,
+        "last_name_cleaning_candidate": 0,
+        "name_cleaning_candidate": 0,
+        "email_blank": 0,
+        "email_syntax_failure": 0,
+        "proposed_email_export_eligible": 1,
+        "zip_state_assessable": 0,
+        "geography_mismatch_candidate": 0
+      }
+    },
+    {
+      "case_id": "RC-E11",
+      "area": "email",
+      "origin": "consecutive dots ACCEPTED by V1 regex (known gap)",
+      "review_required": false,
+      "input": {
+        "email_address": "bad..dots@example.com"
+      },
+      "expected": {
+        "first_name_cleaning_candidate": 0,
+        "last_name_cleaning_candidate": 0,
+        "name_cleaning_candidate": 0,
+        "email_blank": 0,
+        "email_syntax_failure": 0,
+        "proposed_email_export_eligible": 1,
+        "zip_state_assessable": 0,
+        "geography_mismatch_candidate": 0
+      }
+    },
+    {
+      "case_id": "RC-E12",
+      "area": "email",
+      "origin": "unicode local part rejected by V1 regex",
+      "review_required": false,
+      "input": {
+        "email_address": "Ü@example.com"
+      },
+      "expected": {
+        "first_name_cleaning_candidate": 0,
+        "last_name_cleaning_candidate": 0,
+        "name_cleaning_candidate": 0,
+        "email_blank": 0,
+        "email_syntax_failure": 1,
+        "proposed_email_export_eligible": 0,
+        "zip_state_assessable": 0,
+        "geography_mismatch_candidate": 0
+      }
+    },
+    {
+      "case_id": "RC-E13",
+      "area": "email",
+      "origin": "hyphen domain valid",
+      "review_required": false,
+      "input": {
+        "email_address": "user@my-site.org"
+      },
+      "expected": {
+        "first_name_cleaning_candidate": 0,
+        "last_name_cleaning_candidate": 0,
+        "name_cleaning_candidate": 0,
+        "email_blank": 0,
+        "email_syntax_failure": 0,
+        "proposed_email_export_eligible": 1,
+        "zip_state_assessable": 0,
+        "geography_mismatch_candidate": 0
+      }
+    },
+    {
+      "case_id": "RC-N01",
+      "area": "name",
+      "origin": "suspicious substring 'test' in first name",
+      "review_required": false,
+      "input": {
+        "first_name": "Test"
+      },
+      "expected": {
+        "first_name_cleaning_candidate": 1,
+        "last_name_cleaning_candidate": 0,
+        "name_cleaning_candidate": 0,
+        "email_blank": 1,
+        "email_syntax_failure": 0,
+        "proposed_email_export_eligible": 0,
+        "zip_state_assessable": 0,
+        "geography_mismatch_candidate": 0
+      }
+    },
+    {
+      "case_id": "RC-N02",
+      "area": "name",
+      "origin": "suspicious substring embedded in last name",
+      "review_required": false,
+      "input": {
+        "last_name": "McTesty"
+      },
+      "expected": {
+        "first_name_cleaning_candidate": 0,
+        "last_name_cleaning_candidate": 1,
+        "name_cleaning_candidate": 0,
+        "email_blank": 1,
+        "email_syntax_failure": 0,
+        "proposed_email_export_eligible": 0,
+        "zip_state_assessable": 0,
+        "geography_mismatch_candidate": 0
+      }
+    },
+    {
+      "case_id": "RC-N03",
+      "area": "name",
+      "origin": "digit in first name flags non-alpha",
+      "review_required": false,
+      "input": {
+        "first_name": "John2"
+      },
+      "expected": {
+        "first_name_cleaning_candidate": 1,
+        "last_name_cleaning_candidate": 0,
+        "name_cleaning_candidate": 0,
+        "email_blank": 1,
+        "email_syntax_failure": 0,
+        "proposed_email_export_eligible": 0,
+        "zip_state_assessable": 0,
+        "geography_mismatch_candidate": 0
+      }
+    },
+    {
+      "case_id": "RC-N04",
+      "area": "name",
+      "origin": "punctuation in last name flags non-alpha",
+      "review_required": false,
+      "input": {
+        "last_name": "O!Brien"
+      },
+      "expected": {
+        "first_name_cleaning_candidate": 0,
+        "last_name_cleaning_candidate": 1,
+        "name_cleaning_candidate": 0,
+        "email_blank": 1,
+        "email_syntax_failure": 0,
+        "proposed_email_export_eligible": 0,
+        "zip_state_assessable": 0,
+        "geography_mismatch_candidate": 0
+      }
+    },
+    {
+      "case_id": "RC-N05",
+      "area": "name",
+      "origin": "hyphen allowed (no flag)",
+      "review_required": false,
+      "input": {
+        "first_name": "Anne-Marie"
+      },
+      "expected": {
+        "first_name_cleaning_candidate": 0,
+        "last_name_cleaning_candidate": 0,
+        "name_cleaning_candidate": 0,
+        "email_blank": 1,
+        "email_syntax_failure": 0,
+        "proposed_email_export_eligible": 0,
+        "zip_state_assessable": 0,
+        "geography_mismatch_candidate": 0
+      }
+    },
+    {
+      "case_id": "RC-N06",
+      "area": "name",
+      "origin": "apostrophe allowed (no flag)",
+      "review_required": false,
+      "input": {
+        "first_name": "O'Brien"
+      },
+      "expected": {
+        "first_name_cleaning_candidate": 0,
+        "last_name_cleaning_candidate": 0,
+        "name_cleaning_candidate": 0,
+        "email_blank": 1,
+        "email_syntax_failure": 0,
+        "proposed_email_export_eligible": 0,
+        "zip_state_assessable": 0,
+        "geography_mismatch_candidate": 0
+      }
+    },
+    {
+      "case_id": "RC-N07",
+      "area": "name",
+      "origin": "repeated single character flags",
+      "review_required": false,
+      "input": {
+        "first_name": "aaaa"
+      },
+      "expected": {
+        "first_name_cleaning_candidate": 1,
+        "last_name_cleaning_candidate": 0,
+        "name_cleaning_candidate": 0,
+        "email_blank": 1,
+        "email_syntax_failure": 0,
+        "proposed_email_export_eligible": 0,
+        "zip_state_assessable": 0,
+        "geography_mismatch_candidate": 0
+      }
+    },
+    {
+      "case_id": "RC-N08",
+      "area": "name",
+      "origin": "repeated char with apostrophe flags",
+      "review_required": false,
+      "input": {
+        "first_name": "zz'z"
+      },
+      "expected": {
+        "first_name_cleaning_candidate": 1,
+        "last_name_cleaning_candidate": 0,
+        "name_cleaning_candidate": 0,
+        "email_blank": 1,
+        "email_syntax_failure": 0,
+        "proposed_email_export_eligible": 0,
+        "zip_state_assessable": 0,
+        "geography_mismatch_candidate": 0
+      }
+    },
+    {
+      "case_id": "RC-N09",
+      "area": "name",
+      "origin": "unicode alpha NOT flagged (str.isalpha true)",
+      "review_required": false,
+      "input": {
+        "first_name": "José"
+      },
+      "expected": {
+        "first_name_cleaning_candidate": 0,
+        "last_name_cleaning_candidate": 0,
+        "name_cleaning_candidate": 0,
+        "email_blank": 1,
+        "email_syntax_failure": 0,
+        "proposed_email_export_eligible": 0,
+        "zip_state_assessable": 0,
+        "geography_mismatch_candidate": 0
+      }
+    },
+    {
+      "case_id": "RC-N10",
+      "area": "name",
+      "origin": "padded suspicious name still flagged (strip)",
+      "review_required": false,
+      "input": {
+        "first_name": "  Test  "
+      },
+      "expected": {
+        "first_name_cleaning_candidate": 1,
+        "last_name_cleaning_candidate": 0,
+        "name_cleaning_candidate": 0,
+        "email_blank": 1,
+        "email_syntax_failure": 0,
+        "proposed_email_export_eligible": 0,
+        "zip_state_assessable": 0,
+        "geography_mismatch_candidate": 0
+      }
+    },
+    {
+      "case_id": "RC-N11",
+      "area": "name",
+      "origin": "blank first name: no name flags",
+      "review_required": false,
+      "input": {
+        "first_name": "",
+        "last_name": "Smith"
+      },
+      "expected": {
+        "first_name_cleaning_candidate": 0,
+        "last_name_cleaning_candidate": 0,
+        "name_cleaning_candidate": 0,
+        "email_blank": 1,
+        "email_syntax_failure": 0,
+        "proposed_email_export_eligible": 0,
+        "zip_state_assessable": 0,
+        "geography_mismatch_candidate": 0
+      }
+    },
+    {
+      "case_id": "RC-F01",
+      "area": "name",
+      "origin": "first equals last (case-insensitive) flags",
+      "review_required": false,
+      "input": {
+        "first_name": "Chris",
+        "last_name": "chris"
+      },
+      "expected": {
+        "first_name_cleaning_candidate": 0,
+        "last_name_cleaning_candidate": 0,
+        "name_cleaning_candidate": 1,
+        "email_blank": 1,
+        "email_syntax_failure": 0,
+        "proposed_email_export_eligible": 0,
+        "zip_state_assessable": 0,
+        "geography_mismatch_candidate": 0
+      }
+    },
+    {
+      "case_id": "RC-F02",
+      "area": "name",
+      "origin": "both single char flags",
+      "review_required": false,
+      "input": {
+        "first_name": "A",
+        "last_name": "B"
+      },
+      "expected": {
+        "first_name_cleaning_candidate": 0,
+        "last_name_cleaning_candidate": 0,
+        "name_cleaning_candidate": 1,
+        "email_blank": 1,
+        "email_syntax_failure": 0,
+        "proposed_email_export_eligible": 0,
+        "zip_state_assessable": 0,
+        "geography_mismatch_candidate": 0
+      }
+    },
+    {
+      "case_id": "RC-F03",
+      "area": "name",
+      "origin": "one single char + one long: no flag",
+      "review_required": false,
+      "input": {
+        "first_name": "A",
+        "last_name": "Johnson"
+      },
+      "expected": {
+        "first_name_cleaning_candidate": 0,
+        "last_name_cleaning_candidate": 0,
+        "name_cleaning_candidate": 0,
+        "email_blank": 1,
+        "email_syntax_failure": 0,
+        "proposed_email_export_eligible": 0,
+        "zip_state_assessable": 0,
+        "geography_mismatch_candidate": 0
+      }
+    },
+    {
+      "case_id": "RC-F04",
+      "area": "name",
+      "origin": "both blank: no flag",
+      "review_required": false,
+      "input": {
+        "first_name": "",
+        "last_name": ""
+      },
+      "expected": {
+        "first_name_cleaning_candidate": 0,
+        "last_name_cleaning_candidate": 0,
+        "name_cleaning_candidate": 0,
+        "email_blank": 1,
+        "email_syntax_failure": 0,
+        "proposed_email_export_eligible": 0,
+        "zip_state_assessable": 0,
+        "geography_mismatch_candidate": 0
+      }
+    },
+    {
+      "case_id": "RC-F05",
+      "area": "name",
+      "origin": "equal names with different case+padding",
+      "review_required": false,
+      "input": {
+        "first_name": " Lee ",
+        "last_name": "lee"
+      },
+      "expected": {
+        "first_name_cleaning_candidate": 0,
+        "last_name_cleaning_candidate": 0,
+        "name_cleaning_candidate": 1,
+        "email_blank": 1,
+        "email_syntax_failure": 0,
+        "proposed_email_export_eligible": 0,
+        "zip_state_assessable": 0,
+        "geography_mismatch_candidate": 0
+      }
+    },
+    {
+      "case_id": "RC-Z01",
+      "area": "geography",
+      "origin": "assessable NY/10001 no mismatch",
+      "review_required": false,
+      "input": {
+        "zip": "10001",
+        "state": "NY"
+      },
+      "expected": {
+        "first_name_cleaning_candidate": 0,
+        "last_name_cleaning_candidate": 0,
+        "name_cleaning_candidate": 0,
+        "email_blank": 1,
+        "email_syntax_failure": 0,
+        "proposed_email_export_eligible": 0,
+        "zip_state_assessable": 1,
+        "geography_mismatch_candidate": 0
+      }
+    },
+    {
+      "case_id": "RC-Z02",
+      "area": "geography",
+      "origin": "mismatch NY/90210",
+      "review_required": false,
+      "input": {
+        "zip": "90210",
+        "state": "NY"
+      },
+      "expected": {
+        "first_name_cleaning_candidate": 0,
+        "last_name_cleaning_candidate": 0,
+        "name_cleaning_candidate": 0,
+        "email_blank": 1,
+        "email_syntax_failure": 0,
+        "proposed_email_export_eligible": 0,
+        "zip_state_assessable": 1,
+        "geography_mismatch_candidate": 1
+      }
+    },
+    {
+      "case_id": "RC-Z03",
+      "area": "geography",
+      "origin": "blank zip: not assessable",
+      "review_required": false,
+      "input": {
+        "zip": "",
+        "state": "NY"
+      },
+      "expected": {
+        "first_name_cleaning_candidate": 0,
+        "last_name_cleaning_candidate": 0,
+        "name_cleaning_candidate": 0,
+        "email_blank": 1,
+        "email_syntax_failure": 0,
+        "proposed_email_export_eligible": 0,
+        "zip_state_assessable": 0,
+        "geography_mismatch_candidate": 0
+      }
+    },
+    {
+      "case_id": "RC-Z04",
+      "area": "geography",
+      "origin": "blank state: not assessable",
+      "review_required": false,
+      "input": {
+        "zip": "10001",
+        "state": ""
+      },
+      "expected": {
+        "first_name_cleaning_candidate": 0,
+        "last_name_cleaning_candidate": 0,
+        "name_cleaning_candidate": 0,
+        "email_blank": 1,
+        "email_syntax_failure": 0,
+        "proposed_email_export_eligible": 0,
+        "zip_state_assessable": 0,
+        "geography_mismatch_candidate": 0
+      }
+    },
+    {
+      "case_id": "RC-Z05",
+      "area": "geography",
+      "origin": "whitespace zip: not assessable (strip)",
+      "review_required": false,
+      "input": {
+        "zip": "   ",
+        "state": "NY"
+      },
+      "expected": {
+        "first_name_cleaning_candidate": 0,
+        "last_name_cleaning_candidate": 0,
+        "name_cleaning_candidate": 0,
+        "email_blank": 1,
+        "email_syntax_failure": 0,
+        "proposed_email_export_eligible": 0,
+        "zip_state_assessable": 0,
+        "geography_mismatch_candidate": 0
+      }
+    },
+    {
+      "case_id": "RC-Z06",
+      "area": "geography",
+      "origin": "lowercase state normalized to upper",
+      "review_required": false,
+      "input": {
+        "zip": "10001",
+        "state": "ny"
+      },
+      "expected": {
+        "first_name_cleaning_candidate": 0,
+        "last_name_cleaning_candidate": 0,
+        "name_cleaning_candidate": 0,
+        "email_blank": 1,
+        "email_syntax_failure": 0,
+        "proposed_email_export_eligible": 0,
+        "zip_state_assessable": 1,
+        "geography_mismatch_candidate": 0
+      }
+    },
+    {
+      "case_id": "RC-Z07",
+      "area": "geography",
+      "origin": "padded state normalized",
+      "review_required": false,
+      "input": {
+        "zip": "10001",
+        "state": " NY "
+      },
+      "expected": {
+        "first_name_cleaning_candidate": 0,
+        "last_name_cleaning_candidate": 0,
+        "name_cleaning_candidate": 0,
+        "email_blank": 1,
+        "email_syntax_failure": 0,
+        "proposed_email_export_eligible": 0,
+        "zip_state_assessable": 1,
+        "geography_mismatch_candidate": 0
+      }
+    },
+    {
+      "case_id": "RC-Z08",
+      "area": "geography",
+      "origin": "unknown state ZZ: not assessable",
+      "review_required": false,
+      "input": {
+        "zip": "12345",
+        "state": "ZZ"
+      },
+      "expected": {
+        "first_name_cleaning_candidate": 0,
+        "last_name_cleaning_candidate": 0,
+        "name_cleaning_candidate": 0,
+        "email_blank": 1,
+        "email_syntax_failure": 0,
+        "proposed_email_export_eligible": 0,
+        "zip_state_assessable": 0,
+        "geography_mismatch_candidate": 0
+      }
+    },
+    {
+      "case_id": "RC-Z09",
+      "area": "geography",
+      "origin": "territory PR: not in map, not assessable",
+      "review_required": false,
+      "input": {
+        "zip": "00901",
+        "state": "PR"
+      },
+      "expected": {
+        "first_name_cleaning_candidate": 0,
+        "last_name_cleaning_candidate": 0,
+        "name_cleaning_candidate": 0,
+        "email_blank": 1,
+        "email_syntax_failure": 0,
+        "proposed_email_export_eligible": 0,
+        "zip_state_assessable": 0,
+        "geography_mismatch_candidate": 0
+      }
+    },
+    {
+      "case_id": "RC-Z10",
+      "area": "geography",
+      "origin": "six-digit zip with in-map state still assessable; prefix mismatch",
+      "review_required": false,
+      "input": {
+        "zip": "123456",
+        "state": "NY"
+      },
+      "expected": {
+        "first_name_cleaning_candidate": 0,
+        "last_name_cleaning_candidate": 0,
+        "name_cleaning_candidate": 0,
+        "email_blank": 1,
+        "email_syntax_failure": 0,
+        "proposed_email_export_eligible": 0,
+        "zip_state_assessable": 1,
+        "geography_mismatch_candidate": 0
+      }
+    },
+    {
+      "case_id": "RC-Z11",
+      "area": "geography",
+      "origin": "alpha zip with in-map state still assessable; prefix mismatch",
+      "review_required": false,
+      "input": {
+        "zip": "12A45",
+        "state": "NY"
+      },
+      "expected": {
+        "first_name_cleaning_candidate": 0,
+        "last_name_cleaning_candidate": 0,
+        "name_cleaning_candidate": 0,
+        "email_blank": 1,
+        "email_syntax_failure": 0,
+        "proposed_email_export_eligible": 0,
+        "zip_state_assessable": 1,
+        "geography_mismatch_candidate": 0
+      }
+    },
+    {
+      "case_id": "RC-Z12",
+      "area": "geography",
+      "origin": "shared-prefix control: UT/84501 is NO mismatch (845 spans UT/OK; documented DL013 control)",
+      "review_required": false,
+      "input": {
+        "zip": "84501",
+        "state": "UT"
+      },
+      "expected": {
+        "first_name_cleaning_candidate": 0,
+        "last_name_cleaning_candidate": 0,
+        "name_cleaning_candidate": 0,
+        "email_blank": 1,
+        "email_syntax_failure": 0,
+        "proposed_email_export_eligible": 0,
+        "zip_state_assessable": 1,
+        "geography_mismatch_candidate": 0
+      }
+    },
+    {
+      "case_id": "RC-R01",
+      "area": "geography",
+      "origin": "REVIEW: ZIP 73301 is Austin TX in real USPS geography, but frozen V1 map assigns prefix 73 to OK only -> V1 flags mismatch. Same class as golden cases 11/37/50.",
+      "review_required": true,
+      "input": {
+        "zip": "73301",
+        "state": "TX"
+      },
+      "expected": {
+        "first_name_cleaning_candidate": 0,
+        "last_name_cleaning_candidate": 0,
+        "name_cleaning_candidate": 0,
+        "email_blank": 1,
+        "email_syntax_failure": 0,
+        "proposed_email_export_eligible": 0,
+        "zip_state_assessable": 1,
+        "geography_mismatch_candidate": 1
+      }
+    },
+    {
+      "case_id": "RC-R02",
+      "area": "geography",
+      "origin": "REVIEW: lowercase state that WOULD mismatch under uppercase normalization (tx/10001) — pins the normalization dependency explicitly.",
+      "review_required": true,
+      "input": {
+        "zip": "10001",
+        "state": "tx"
+      },
+      "expected": {
+        "first_name_cleaning_candidate": 0,
+        "last_name_cleaning_candidate": 0,
+        "name_cleaning_candidate": 0,
+        "email_blank": 1,
+        "email_syntax_failure": 0,
+        "proposed_email_export_eligible": 0,
+        "zip_state_assessable": 1,
+        "geography_mismatch_candidate": 1
+      }
+    }
+  ]
+}

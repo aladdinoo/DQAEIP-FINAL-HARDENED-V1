@@ -1,0 +1,23 @@
+{
+  "baseline_certified_historical": {
+    "note": "byte-recoverable at git HEAD fb4df92 (nested repo) and via the certified ZIP + sidecar; NOT modified by this release",
+    "reference_kind": "BASELINE_CERTIFIED_HISTORICAL",
+    "release_date": "2026-09-18",
+    "release_id": "DQAEIP-FINAL-CLEAN-REBUILD-RELEASE-2026-09-18",
+    "status": "PASS_WITH_DOCUMENTED_LIMITATIONS",
+    "zip_member_count": 460,
+    "zip_sha256": "4ecbfc16da7ddaa1c830d5963f2eefba3236e3ce07fb1b1857bd07d63020cea5",
+    "zip_size_bytes": 2001588
+  },
+  "frozen_core": {
+    "checker_sha256": "0ef7c10c14a1df317c23cb0dfc73b3a60c2257c064b35080d694e5fe8bc50d84",
+    "immutability": "Frozen V1 rules are NOT modified by this release; hardening layers are additive wrappers only",
+    "v1_rules_sha256": "daef1ded54c7d3c79898a1ba253be2acd5b6120e18b16b09009fdd7be9fc2276"
+  },
+  "generated_utc": "2026-09-19T13:28:40Z",
+  "git_commit_at_build": "3c7e0852cfdabf114ca28d16319040f0819bae65",
+  "release_date": "2026-09-19",
+  "release_id": "DQAEIP-FINAL-HARDENED-RELEASE-2026-09-19",
+  "release_kind": "OPERATIONAL_HARDENING_ADDITIVE",
+  "schema": "dqaeip.hardening.release.identity/1.0"
+}

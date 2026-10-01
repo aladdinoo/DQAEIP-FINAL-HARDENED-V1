@@ -1,0 +1,221 @@
+{
+  "fixed_location_registry": "evidence/release/limitation_registry.json",
+  "generated_utc": "2026-09-19T13:28:43Z",
+  "inherited_count": 11,
+  "inherited_from_baseline_certified_historical": [
+    {
+      "affected_scope": "execution",
+      "blocks_release": false,
+      "description": "The engine materializes the full dataset in memory; peak RSS measured 2365.7 MB at 3,200,000 rows (fresh 2026-09-18 run). Memory scales linearly with row count. A bounded-memory design exists as a future design document only; it is intentionally NOT implemented because business-equivalence is unproven. Re-proven by the 2026-09-19 hardened-release regression (fresh dual-run, peak RSS 2365.29 MB, pass2 bulk CSVs reclaimed after the byte-identity proof).",
+      "evidence_reference": [
+        "evidence/validation/2026-09-19/fresh_3m2/FINAL_RESULTS.json",
+        "evidence/dqvp_performance/performance_results.json",
+        "docs/future/bounded_memory_execution.md"
+      ],
+      "id": "LIM-001",
+      "policy_note": "documented; performance optimization is out of scope and explicitly forbidden for this rebuild",
+      "status": "OPEN",
+      "title": "O(N) memory profile",
+      "verification_state": "VERIFIED_LOCALLY"
+    },
+    {
+      "affected_scope": "storage integration",
+      "blocks_release": false,
+      "description": "The ClickHouse storage integration is import-verified only; no ClickHouse server is connected or executed. Client code contains no live connection path (verified boundary check).",
+      "evidence_reference": [
+        "tests/runtime/test_runtime.py",
+        "evidence/release_gate/final_release_gate.json"
+      ],
+      "id": "LIM-002",
+      "status": "OPEN",
+      "title": "ClickHouse runtime not executed",
+      "verification_state": "NOT_EXECUTED"
+    },
+    {
+      "affected_scope": "orchestration integration",
+      "blocks_release": false,
+      "description": "The Airflow DAG is statically validated only; the Airflow scheduler/executor runtime is not installed or run in this environment.",
+      "evidence_reference": [
+        "airflow/dags/dq_validation_dag.py",
+        "tests/runtime/test_runtime.py"
+      ],
+      "id": "LIM-003",
+      "status": "OPEN",
+      "title": "Airflow runtime not executed",
+      "verification_state": "NOT_EXECUTED"
+    },
+    {
+      "affected_scope": "golden test coverage",
+      "blocks_release": false,
+      "description": "The authoritative DL001-DL015 geography acceptance table was not supplied by the repo owner; 7 golden tests are skipped with that explicit reason. The fixture is never reconstructed from existing fixtures (anti-fabrication).",
+      "evidence_reference": [
+        "tests/golden/test_dl_canonical_geography.py"
+      ],
+      "id": "LIM-004",
+      "policy_note": "company-supplied evidence outstanding; skipped tests are never converted to PASS",
+      "status": "OPEN",
+      "title": "Authoritative DL fixture unavailable",
+      "verification_state": "NOT_VERIFIED"
+    },
+    {
+      "affected_scope": "geography successor layer",
+      "blocks_release": false,
+      "description": "The SP1 successor geography layer is implemented for validation only; it is NOT registered in the production rule registry and NOT activated. The fresh 3.2M validation pinned the frozen V1 rule set (regenerated from the frozen source) and verified SP1 absence in BOTH executed run manifests.",
+      "evidence_reference": [
+        "evidence/validation/2026-09-19/fresh_3m2/FINAL_RESULTS.json",
+        "data_quality_platform/geography/"
+      ],
+      "id": "LIM-005",
+      "status": "OPEN",
+      "title": "SP1 validation-only",
+      "verification_state": "VERIFIED_LOCALLY"
+    },
+    {
+      "affected_scope": "future enhancement",
+      "blocks_release": false,
+      "description": "E1 is neither implemented nor authorized. Zero E1 identifiers exist in application code (tripwire-enforced boundary test). This registry entry documents that boundary; it is not an implementation plan.",
+      "evidence_reference": [
+        "tests/unit/test_final_3m_hardening.py"
+      ],
+      "id": "LIM-006",
+      "status": "OPEN",
+      "title": "E1 not implemented / not authorized",
+      "verification_state": "NOT_AUTHORIZED"
+    },
+    {
+      "affected_scope": "oracle semantics",
+      "blocks_release": false,
+      "description": "The independent oracle re-implements the frozen V1 contract; it is a pinned reference truth, not independently sourced business truth. Perfect engine-vs-oracle agreement (51,200,000 comparisons, 0 mismatches) proves engine-to-contract fidelity, not contract-to-business fidelity.",
+      "evidence_reference": [
+        "evidence/validation/2026-09-19/fresh_3m2/FINAL_RESULTS.json",
+        "scripts/final_3m_validation.py"
+      ],
+      "id": "LIM-007",
+      "status": "OPEN",
+      "title": "Oracle reference truth is pinned, not independently sourced",
+      "verification_state": "VERIFIED_LOCALLY"
+    },
+    {
+      "affected_scope": "performance claims",
+      "blocks_release": false,
+      "description": "Production validation executed at 3,200,000 rows (two complete runs, seed 20260918). No claim is made about 100M/800M production scalability from this evidence; performance comparability is limited to the measured host class. Re-proven by the 2026-09-19 hardened-release regression (fresh dual-run, peak RSS 2365.29 MB, pass2 bulk CSVs reclaimed after the byte-identity proof).",
+      "evidence_reference": [
+        "evidence/dqvp_performance/performance_results.json",
+        "evidence/validation/2026-09-19/fresh_3m2/FINAL_RESULTS.json"
+      ],
+      "id": "LIM-008",
+      "status": "OPEN",
+      "title": "3.2M-row validation scale",
+      "verification_state": "VERIFIED_LOCALLY"
+    },
+    {
+      "affected_scope": "artifact retention",
+      "blocks_release": false,
+      "description": "The bulk input/output CSVs of BOTH passes under data/generated/ (gitignored staging) were removed after the byte-identical proof and after the release-verification chain was complete; their SHA-256 values are hash-anchored in the harness evidence. The dataset is deterministically re-derivable from seed 20260918 (generation ~85s per pass). The release gate's evidence-validation documents the by-design staging absence (determinism proven + manifest output SHA equals the byte-proven SHA). Re-proven by the 2026-09-19 hardened-release regression (fresh dual-run, peak RSS 2365.29 MB, pass2 bulk CSVs reclaimed after the byte-identity proof).",
+      "evidence_reference": [
+        "evidence/validation/2026-09-19/fresh_3m2/FINAL_RESULTS.json"
+      ],
+      "id": "LIM-009",
+      "status": "OPEN",
+      "title": "Bulk staging CSVs removed after byte-proof",
+      "verification_state": "VERIFIED_LOCALLY"
+    },
+    {
+      "affected_scope": "golden corpus / geography semantics",
+      "blocks_release": false,
+      "description": "Three golden-corpus cases record real-world expectations (mismatch=0) that conflict with the frozen V1 prefix map (73->OK only). The frozen V1 behavior is preserved and the cases are pinned REVIEW_REQUIRED with an exact allowlist; any new drift fails the suite.",
+      "evidence_reference": [
+        "tests/unit/test_rule_oracle_consistency.py",
+        "tests/golden/regression_corpus.json"
+      ],
+      "id": "LIM-010",
+      "policy_note": "no unauthorized semantic change; decision deferred to the contract owner",
+      "status": "OPEN",
+      "title": "ZIP 733xx / TX geography expectations under review",
+      "verification_state": "REVIEW_REQUIRED"
+    },
+    {
+      "affected_scope": "safety evidence semantics",
+      "blocks_release": false,
+      "description": "Runtime safety (0 sockets, 0 exec, in-repo writes only) is measured via CPython audit hooks inside the production CLI subprocess \u2014 cooperative observation, not a kernel sandbox.",
+      "evidence_reference": [
+        "scripts/final_3m_runtime_safety_wrapper.py",
+        "evidence/validation/2026-09-19/fresh_3m2/pass1_cli.json"
+      ],
+      "id": "LIM-011",
+      "status": "OPEN",
+      "title": "Runtime safety is cooperative instrumentation",
+      "verification_state": "VERIFIED_LOCALLY"
+    }
+  ],
+  "new_count": 5,
+  "new_hardening_limitations": [
+    {
+      "affected_scope": "execution hardening (Layer E)",
+      "blocks_release": false,
+      "description": "Layer E ships the checkpoint binding contract but NO resume implementation: resume is refused (partial-write duplication, oracle prefix ambiguity, ledger-state conflation, determinism makes fresh re-run the safe equivalent).",
+      "evidence_reference": [
+        "data_quality_platform/hardening/checkpoint_contract.py",
+        "tests/hardening/test_hardening_negative_battery.py"
+      ],
+      "id": "LIM-012",
+      "policy_note": "deliberate design decision; refusal is fail-closed",
+      "status": "OPEN",
+      "title": "Checkpoint/safe-resume is contract-only",
+      "verification_state": "VERIFIED_LOCALLY"
+    },
+    {
+      "affected_scope": "reference data (Layer G)",
+      "blocks_release": false,
+      "description": "Layer G versions reference artifacts by SHA-256 content hash; no external authoritative source exists for the state/ZIP prefix table, so provenance beyond content is not claimed.",
+      "evidence_reference": [
+        "data_quality_platform/hardening/reference_data.py",
+        "evidence/FINAL_HARDENED_RELEASE_2026-09-19/hardening_layers/layer_registry.json"
+      ],
+      "id": "LIM-013",
+      "status": "OPEN",
+      "title": "Reference-data provenance is content-addressed only",
+      "verification_state": "VERIFIED_LOCALLY"
+    },
+    {
+      "affected_scope": "execution guard (Layer H)",
+      "blocks_release": false,
+      "description": "Layer H samples /proc/<pid>/status VmRSS at 250 ms intervals; sub-interval memory spikes between samples can be missed (wall-time enforcement is exact).",
+      "evidence_reference": [
+        "data_quality_platform/hardening/resource_guard.py"
+      ],
+      "id": "LIM-014",
+      "status": "OPEN",
+      "title": "Peak-RSS monitoring is sampled",
+      "verification_state": "VERIFIED_LOCALLY"
+    },
+    {
+      "affected_scope": "authorization (Layer B)",
+      "blocks_release": false,
+      "description": "Layer B binds software identity by file hash at execution time and fails closed on divergence; it does not provide kernel-level sandboxing. Audit hooks remain cooperative CPython instrumentation (as in LIM-011).",
+      "evidence_reference": [
+        "data_quality_platform/hardening/authorization.py",
+        "evidence/FINAL_HARDENED_RELEASE_2026-09-19/hardening_layers/layer_registry.json"
+      ],
+      "id": "LIM-015",
+      "status": "OPEN",
+      "title": "Authorization is not a kernel sandbox",
+      "verification_state": "VERIFIED_LOCALLY"
+    },
+    {
+      "affected_scope": "atomic commit (Layer D)",
+      "blocks_release": false,
+      "description": "Layer D atomicity relies on a single os.rename of the staging directory onto the final directory on one filesystem; cross-filesystem staging requires operator co-location of work and final directories.",
+      "evidence_reference": [
+        "data_quality_platform/hardening/atomic_commit.py"
+      ],
+      "id": "LIM-016",
+      "status": "OPEN",
+      "title": "Atomic commit is single-filesystem",
+      "verification_state": "VERIFIED_LOCALLY"
+    }
+  ],
+  "production_integration_status": "NOT YET VERIFIED: this release certifies the hardened pipeline in the repository environment; production ClickHouse/Airflow integration remains unverified (inherited limitation).",
+  "schema": "dqaeip.hardening.limitations/1.0",
+  "total": 16
+}

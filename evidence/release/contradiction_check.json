@@ -1,0 +1,70 @@
+{
+  "contradiction_count": 0,
+  "contradictions": [],
+  "docs_scanned": [
+    "README.md",
+    "RELEASE_NOTES.md",
+    "DELIVERY_MANIFEST.json",
+    "FINAL_RESULTS.json",
+    "final_result.json",
+    "release_manifest.json",
+    "evidence/release_gate/final_release_gate.json",
+    "evidence/rebuild_verification/test_summary.json",
+    "evidence/rebuild_verification/run_pair_verification.json",
+    "evidence/release/assurance_mutation.json",
+    "evidence/release/claim_provenance.json",
+    "evidence/release/consistency_matrix.json",
+    "evidence/release/evidence_quarantine_screen.json",
+    "evidence/release/final_verification.json",
+    "evidence/release/golden_release_snapshot.json",
+    "evidence/release/limitation_registry.json",
+    "evidence/release/observability_status.json",
+    "evidence/release/readme_consistency.json",
+    "evidence/release/release_artifact_manifest.json",
+    "evidence/release/release_evidence_model.json",
+    "evidence/release/reproducibility_fingerprint.json",
+    "evidence/release/reproducibility_manifest.json",
+    "evidence/release/rule_impact_graph.json",
+    "evidence/release/security_release_report.json"
+  ],
+  "docs_scanned_count": 24,
+  "fail_closed_rule": "the release gate fails when verdict != CONSISTENT; absence of a check input records NOT_VERIFIED, never PASS",
+  "generated_utc": "2026-09-19T13:28:43Z",
+  "out_of_scope_note": "historical/superseded forensic archives are excluded by design; they are preserved, explicitly-labeled evidence of superseded states",
+  "report": "DQAEIP contradiction check (current documents vs machine-derived truth)",
+  "truth": {
+    "checker_sha256": "0ef7c10c14a1df317c23cb0dfc73b3a60c2257c064b35080d694e5fe8bc50d84",
+    "comparisons_combined": 51200000,
+    "comparisons_per_run": 25600000,
+    "final_3m_status": "PASS",
+    "gate_count": 22,
+    "gate_verdict": "PASS",
+    "input_sha256": "59624a53c72f908f1dde673ceecf59e0662ae721bb8f9af7e165acba5318d153",
+    "mismatches_combined": 0,
+    "output_sha256": "b72adc235160a86e0b99a08f988dd0bb5f2cff82bbe5b5d28ea07c5a5719329a",
+    "release_date": "2026-09-19",
+    "release_name": "DQAEIP-FINAL-HARDENED-RELEASE-2026-09-19",
+    "rows": 3200000,
+    "rule_source_sha256": "daef1ded54c7d3c79898a1ba253be2acd5b6120e18b16b09009fdd7be9fc2276",
+    "run_ids": [
+      "run_1",
+      "run_2"
+    ],
+    "tests": {
+      "collected": 1098,
+      "errors": 0,
+      "failed": 0,
+      "passed": 1089,
+      "skipped": 9
+    }
+  },
+  "truth_sources": {
+    "checker": "scripts/final_3m_validation.py (actual file hash)",
+    "gate": "evidence/release_gate/final_release_gate.json",
+    "official_3m2": "evidence/validation/2026-09-19/fresh_3m2/FINAL_RESULTS.json",
+    "release_identity": "release_manifest.json (declared anchor)",
+    "rule_source": "data_quality_platform/rules/v1_rules.py (actual file hash)",
+    "tests": "evidence/rebuild_verification/test_summary.json"
+  },
+  "verdict": "CONSISTENT"
+}

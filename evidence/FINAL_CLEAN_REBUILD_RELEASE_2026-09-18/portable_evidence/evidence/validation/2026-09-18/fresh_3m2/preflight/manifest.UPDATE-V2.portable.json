@@ -1,0 +1,120 @@
+{
+  "_artifact_identity": {
+    "artifact_class": "DERIVED",
+    "derived_by": "tools/update_v2_portable_evidence.py via the centralized normalizer data_quality_platform/assurance/portable_evidence.py",
+    "environment_placeholders": {},
+    "logical_path": "repo://evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/portable_evidence/evidence/validation/2026-09-18/fresh_3m2/preflight/manifest.UPDATE-V2.portable.json",
+    "normalization_detail": "repository-local absolute paths rewritten to the canonical repo-relative POSIX form; uv-managed cpython interpreter-home prefixes rewritten to explicit placeholder tokens; URLs, hashes, emails and all other values structurally unchanged",
+    "normalization_policy": "repo-local-paths-only",
+    "normalized_field_paths": [
+      "$.lineage_reference",
+      "$.generated_files.output",
+      "$.generated_files.lineage",
+      "$.generated_files.audit",
+      "$.generated_files.monitoring",
+      "$.generated_files.alerts"
+    ],
+    "normalized_string_count": 6,
+    "original_preserved_byte_exact": true,
+    "relative_path": "evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/portable_evidence/evidence/validation/2026-09-18/fresh_3m2/preflight/manifest.UPDATE-V2.portable.json",
+    "schema_version": "dqaeip.update_v2.portable_artifact:1.0",
+    "source_artifact": "evidence/validation/2026-09-18/fresh_3m2/preflight/manifest.json",
+    "source_artifact_sha256": "ab26687fbfe5543e77298b0595fb732c6f23f82b1aa078a0d68ba7c68b930ea2",
+    "update_id": "DQAEIP-FINAL-CLEAN-REBUILD-RELEASE-2026-09-18"
+  },
+  "file_hashes": {
+    "alerts": "64f0426854da5e1e50ee041bb2330e38787b9ba06563ee0c1c23f0cc7f9d7deb",
+    "audit": "e909d7d646500a4c528e37c23a2a14b8a1fa13c554b06c6c64d741e95613413e",
+    "lineage": "e20ecdc63fc046a4bc23ae8cacacddcf894dc95fefab92913f022023d93d8a6d",
+    "monitoring": "f182cb0ebed056f9aabe3f21dd5360462dcdd31bd9a68d51e4a248f38d88e7c9",
+    "output": "aab9dca37bb2dc5c3cb014e92f40045890cb37f28741268edb85d0a4f8a0652b"
+  },
+  "flag_counts": {
+    "email_blank": 74,
+    "email_syntax_failure": 92,
+    "first_name_cleaning_candidate": 160,
+    "geography_mismatch_candidate": 136,
+    "last_name_cleaning_candidate": 74,
+    "name_cleaning_candidate": 3,
+    "proposed_email_export_eligible": 834,
+    "zip_state_assessable": 913
+  },
+  "generated_files": {
+    "alerts": "evidence/validation/2026-09-18/fresh_3m2/preflight/alerts.json",
+    "audit": "evidence/validation/2026-09-18/fresh_3m2/preflight/audit.json",
+    "lineage": "evidence/validation/2026-09-18/fresh_3m2/preflight/lineage.json",
+    "monitoring": "evidence/validation/2026-09-18/fresh_3m2/preflight/monitoring.json",
+    "output": "data/generated/fresh_3m2_smoke/preflight_1k_out.csv"
+  },
+  "lineage_reference": "evidence/validation/2026-09-18/fresh_3m2/preflight/lineage.json",
+  "manifest_type": "success",
+  "monitoring_score": 0.8748,
+  "monitoring_scores": {
+    "accuracy": 0.766,
+    "completeness": 0.862,
+    "consistency": 0.851,
+    "email_quality": 0.834,
+    "freshness": 1.0,
+    "geography_quality": 0.851,
+    "uniqueness": 1.0,
+    "validity": 0.834
+  },
+  "output_row_count": 1000,
+  "reconciliation": {
+    "errors": [],
+    "flag_counts": {
+      "email_blank": 74,
+      "email_syntax_failure": 92,
+      "first_name_cleaning_candidate": 160,
+      "geography_mismatch_candidate": 136,
+      "last_name_cleaning_candidate": 74,
+      "name_cleaning_candidate": 3,
+      "proposed_email_export_eligible": 834,
+      "zip_state_assessable": 913
+    },
+    "input_row_count": 1000,
+    "output_row_count": 1000,
+    "passed": true
+  },
+  "rule_hashes": {
+    "email_blank": "157ccc2127334bac03534f80868a3d7ea3bc8df77c132e8c237874321164f2bc",
+    "email_syntax_failure": "5caaba13a73c90c5aac7a52cf756713c8ecc3dc73d30c2949206efa8d2b712f7",
+    "first_name_cleaning_candidate": "575e9d4588334d364bdcfae6ca3c44b9bf35120a371b78fecfde8ee19373ca69",
+    "geography_mismatch_candidate": "7967b59ef7a14b83284a12eb298d63c6140e0837bfafdf3ac4e758baf74c4e93",
+    "last_name_cleaning_candidate": "c553b7f4484b54135e2b84c6b37a84b15df328544256577984e61f6ede900122",
+    "name_cleaning_candidate": "3a128ec85d196cd3a42720347ba8790f5fbf0f386bd617e4ec508ee050b661c8",
+    "proposed_email_export_eligible": "6732e6bfed6fae3c23439f0e69b5c39e2843a5b74f2f8f3fdaf6ad5d536da98c",
+    "zip_state_assessable": "e7730c1b848f32790a56bfb79f7ef5dbc8c88b3919f9903421adc7dde5393885"
+  },
+  "run_id": "preflight_1k",
+  "safety_invariants": [
+    "input_row_count == output_row_count",
+    "all_flags_are_0_or_1",
+    "source_columns_unchanged",
+    "no_lost_rows",
+    "no_duplicated_rows"
+  ],
+  "schema_hash": "47813dbee947c871971a4841bd4aef325530a6886b96a6f77bba6af86c5031fa",
+  "sla_results": {
+    "accuracy": false,
+    "completeness": false,
+    "consistency": false,
+    "email_quality": false,
+    "freshness": true,
+    "geography_quality": false,
+    "uniqueness": true,
+    "validity": false
+  },
+  "source_row_count": 1000,
+  "sql_hashes": {
+    "email_blank": "cadc95e7e0ad95386a86a716ae4db9ef59235a6fc4a8840616b34264b22d8658",
+    "email_syntax_failure": "a486ed707dc117dcf5843ae55f06f82eeed022e983bfb4d92ec8299a20ef245b",
+    "first_name_cleaning_candidate": "7ef1a683334edce555912771e2338c4f851a5c6b6c618eeb8778b9ea996afc0b",
+    "geography_mismatch_candidate": "8afc105c1ff69eb95ad397150196491e514bb821efaf87475348562b161c8868",
+    "last_name_cleaning_candidate": "c4778d71689f6602900112e3bb54a3c956bef9fa9ebceb5d43868d7292d051a7",
+    "name_cleaning_candidate": "79b13318092be08d7f6e0cbd6a87196c8d68919118ff03e5fdd1a784d1353921",
+    "proposed_email_export_eligible": "a8f131220ef81c6e8d370e64d876dcc6eac2429bb6fb040fda335049e16220c0",
+    "zip_state_assessable": "88d6ecaf72ee158cebb9c84e281619cb400105b072b2a8b59a697f97ca925be4"
+  },
+  "timestamp": "2026-09-18T23:30:15.451105+00:00"
+}

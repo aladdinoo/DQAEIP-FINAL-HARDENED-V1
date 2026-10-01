@@ -1,0 +1,43 @@
+{
+  "built_utc": "2026-09-19T13:44:20Z",
+  "documented_exceptions": {
+    "DQAEIP-FINAL-HARDENED-RELEASE-2026-09-19/tests/assurance/test_release_security_and_manifest.py": "positive-control fixture for the release security scanner (synthetic PEM marker, fabricated documentation-example tokens, placeholder body)",
+    "DQAEIP-FINAL-HARDENED-RELEASE-2026-09-19/tests/unit/test_pii_scan.py": "positive-control fixture for the PII scanner (synthetic PEM marker, placeholder body)"
+  },
+  "excluded_by_policy": [],
+  "exclusion_policy": [
+    "temporary staging (two-phase rebuild working area; forensic records preserved in repository + git history), caches, bytecode, environment files, regenerable replay work products"
+  ],
+  "git_head_at_build": "6e15d9295d5527b48a3895956ba01fa6eabf0cd5",
+  "historical_policy": {
+    "members_with_machine_paths": 87,
+    "note": "historical evidence archives preserved under the documented historical-evidence policy; portable derived representations are machine-path free"
+  },
+  "member_count": 527,
+  "non_self_referential_model": "the ZIP is built from the committed tree before this record exists in the tree; the archive cannot contain its own hash; the authoritative SHA-256 is recorded here and in the .sha256 sidecar, both written after the build",
+  "portable_scope_members_scanned": 68,
+  "prohibited_findings": [],
+  "release_id": "DQAEIP-FINAL-HARDENED-RELEASE-2026-09-19",
+  "report": "DQAEIP portable release ZIP record",
+  "schema": {
+    "name": "dqaeip.zip_record",
+    "version": "1.0"
+  },
+  "status": "VERIFIED",
+  "tree_clean_at_build": true,
+  "verdict": "VERIFIED",
+  "verification": {
+    "crc": "PASS",
+    "credential_scan": "PASS (documented positive-control fixtures only)",
+    "executable_bits_preserved": true,
+    "key_artifact_manifest_consistency": "PASS",
+    "member_set_matches_tree": true,
+    "member_sha256_verified": 527,
+    "path_safety": "PASS",
+    "portable_scope_machine_path_gate": "PASS",
+    "problems": []
+  },
+  "zip_path": "DQAEIP-FINAL-HARDENED-RELEASE-2026-09-19.zip",
+  "zip_sha256": "88229de9e032e7196213b6c153fd8a5d561de732c259ba11defce56768e016ea",
+  "zip_size_bytes": 2195761
+}

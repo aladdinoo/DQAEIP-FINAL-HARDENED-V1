@@ -1,0 +1,969 @@
+{
+ "schema": "dqaeip.hardening.gate.rounds/1.0",
+ "release": "DQAEIP-FINAL-HARDENED-RELEASE-2026-09-19",
+ "rounds": [
+  {
+   "round": 1,
+   "source": "prior session (2026-09-19 morning) first release-gate run of the hardened release",
+   "preservation": "RECONSTRUCTED SUMMARY: full content was superseded by the round-2 re-run and not preserved; failure set reconstructed from the session record",
+   "generated_utc": null,
+   "overall_verdict": "FAIL",
+   "failing_gates_reconstructed": [
+    {
+     "gate": "repository_integrity",
+     "cause": "uncommitted hardening delta (pre-commit state, expected until the release commit)"
+    },
+    {
+     "gate": "consistency_matrix",
+     "cause": "contradiction check flagged README scalability_overclaim false positives (out-of-scope list mention of 100M/800M)"
+    },
+    {
+     "gate": "claim_provenance",
+     "cause": "test-suite claim mismatch after the limitation-registry duplication regressed the suite"
+    },
+    {
+     "gate": "evidence_validation",
+     "cause": "regression engine evidence roots missing (fixed by scripts/hardening_fixed_point_fixer.py step 1)"
+    }
+   ]
+  },
+  {
+   "round": 2,
+   "ledgered_utc_source": "evidence/release_gate/final_release_gate.json",
+   "source_sha256": "f768f0ebaf85616bc152ef66fbb0e1d711edbd6420bd5f17c0507e92442e5ca6",
+   "generated_utc": "2026-09-19T09:33:23Z",
+   "overall_verdict": "FAIL",
+   "gate_count": 22,
+   "gate_statuses": {
+    "repository_integrity": "FAIL",
+    "unit_tests": "PASS",
+    "integration_tests": "PASS",
+    "contract_tests": "PASS",
+    "golden_tests": "PASS",
+    "property_tests": "PASS",
+    "differential_validation": "PASS",
+    "mutation_testing": "PASS",
+    "replay": "PASS",
+    "evidence_validation": "PASS",
+    "provenance_validation": "PASS",
+    "reference_validation": "PASS",
+    "safety_checks": "PASS",
+    "pii_evidence_scan": "PASS",
+    "performance_regression": "PASS",
+    "production_source_integrity": "PASS",
+    "assurance_tests": "FAIL",
+    "machine_path_firewall": "PASS",
+    "negative_release_gate": "PASS",
+    "claim_provenance": "FAIL",
+    "consistency_matrix": "FAIL",
+    "absolute_path_release_gate": "PASS"
+   },
+   "failing_gates": [
+    {
+     "gate": "repository_integrity",
+     "status": "FAIL",
+     "evidence": "tracked changes outside evidence/"
+    },
+    {
+     "gate": "assurance_tests",
+     "status": "FAIL",
+     "evidence": "290 passed / 0 skipped / 2 failed (false-PASS prevention battery)"
+    },
+    {
+     "gate": "claim_provenance",
+     "status": "FAIL",
+     "evidence": "1 claims failed re-derivation"
+    },
+    {
+     "gate": "consistency_matrix",
+     "status": "FAIL",
+     "evidence": "chain or document identity inconsistency"
+    }
+   ],
+   "preservation": "FAIL round: full content embedded here (the working-tree file is superseded by the next round; the single-commit release has no intermediate git history to preserve it in)",
+   "full_content": {
+    "release_gate": "scripts/release_gate.py",
+    "gate_version": "3.0.0",
+    "generated_utc": "2026-09-19T09:33:23Z",
+    "environment_fingerprint": {
+     "python": "3.12.14",
+     "os": "Linux 5.10.134-013.15.kangaroo.al8.x86_64 (x86_64)",
+     "execution_mode": "local staged validation; no network, no ClickHouse/Airflow runtime, SP1/E1 inactive"
+    },
+    "fail_closed_statement": "A gate result is PASS only when its own evidence proves it. Missing evidence, unreadable evidence, or any exception is a FAIL \u2014 never a skip. The overall verdict is PASS only when all 22 gates PASS.",
+    "gates": [
+     {
+      "gate": "repository_integrity",
+      "status": "FAIL",
+      "evidence": "tracked changes outside evidence/",
+      "duration_seconds": 0.04,
+      "details": {
+       "git_context_available": true,
+       "head": "fb4df927baf9e43735ac8facde7c5ecbd2a5f187",
+       "branch": "main",
+       "tracked_changes_outside_evidence": [
+        " M FINAL_RESULTS.json",
+        " M README.md",
+        " M RELEASE_NOTES.md",
+        " M data_quality_platform/assurance/claims.py",
+        " M data_quality_platform/assurance/contradiction_checker.py",
+        " M data_quality_platform/assurance/evidence_quarantine.py",
+        " M data_quality_platform/assurance/golden_snapshot.py",
+        " M data_quality_platform/assurance/integrity.py",
+        " M data_quality_platform/assurance/release_chain.py",
+        " M final_result.json",
+        " M release_manifest.json",
+        " M scripts/build_observability_status.py",
+        " M scripts/build_release_evidence_model.py",
+        " M scripts/capture_test_summary.py",
+        " M scripts/consistency_matrix.py",
+        " M scripts/readme_consistency_check.py",
+        " M scripts/release_gate.py",
+        " M tests/assurance/test_release_schema_and_stale_evidence.py",
+        " M tests/assurance/test_release_security_and_manifest.py",
+        " M tests/assurance/test_tamper_fail_closed.py"
+       ],
+       "evidence_tracked_changes": [
+        "evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/self_contained_verification/SELF_CONTAINED_RELEASE_VERIFICATION.json",
+        "evidence/bench_quick/alerts.json",
+        "evidence/bench_quick/audit.json",
+        "evidence/bench_quick/lineage.json",
+        "evidence/bench_quick/manifest.json",
+        "evidence/dqvp_performance/performance_results.json",
+        "evidence/mutation_testing/mutation_results.json",
+        "evidence/rebuild_verification/test_summary.json",
+        "evidence/release/limitation_registry.json",
+        "evidence/release/observability_status.json",
+        "evidence/release_gate/final_release_gate.json",
+        "evidence/release_gate/performance_results_current.json"
+       ]
+      }
+     },
+     {
+      "gate": "unit_tests",
+      "status": "PASS",
+      "evidence": "542 passed / 0 skipped / 0 failed",
+      "duration_seconds": 5.95,
+      "details": {
+       "path": "tests/unit",
+       "exit_code": 0,
+       "passed": 542,
+       "failed": 0,
+       "skipped": 0
+      }
+     },
+     {
+      "gate": "integration_tests",
+      "status": "PASS",
+      "evidence": "24 passed / 0 skipped / 0 failed",
+      "duration_seconds": 1.58,
+      "details": {
+       "path": "tests/integration",
+       "exit_code": 0,
+       "passed": 24,
+       "failed": 0,
+       "skipped": 0
+      }
+     },
+     {
+      "gate": "contract_tests",
+      "status": "PASS",
+      "evidence": "22 passed / 0 skipped / 0 failed",
+      "duration_seconds": 0.58,
+      "details": {
+       "path": "tests/contract",
+       "exit_code": 0,
+       "passed": 22,
+       "failed": 0,
+       "skipped": 0
+      }
+     },
+     {
+      "gate": "golden_tests",
+      "status": "PASS",
+      "evidence": "117 passed / 7 skipped / 0 failed",
+      "duration_seconds": 1.51,
+      "details": {
+       "path": "tests/golden",
+       "exit_code": 0,
+       "passed": 117,
+       "failed": 0,
+       "skipped": 7
+      }
+     },
+     {
+      "gate": "property_tests",
+      "status": "PASS",
+      "evidence": "9 passed / 0 skipped / 0 failed",
+      "duration_seconds": 10.28,
+      "details": {
+       "path": "tests/property",
+       "exit_code": 0,
+       "passed": 9,
+       "failed": 0,
+       "skipped": 0
+      }
+     },
+     {
+      "gate": "differential_validation",
+      "status": "PASS",
+      "evidence": "engine vs independent oracle: 10 consistency tests green (incl. 5000-row random battery)",
+      "duration_seconds": 1.92,
+      "details": {
+       "path": "tests/unit/test_rule_oracle_consistency.py",
+       "exit_code": 0,
+       "passed": 10,
+       "failed": 0,
+       "skipped": 0
+      }
+     },
+     {
+      "gate": "mutation_testing",
+      "status": "PASS",
+      "evidence": "17/17 mutants detected, score 1.0, source restored",
+      "duration_seconds": 17.2,
+      "details": {
+       "mutants_total": 17,
+       "mutants_detected": 17,
+       "mutants_survived": 0,
+       "mutation_score": 1.0,
+       "source_restored_exactly": true,
+       "source_sha256_before": "daef1ded54c7d3c79898a1ba253be2acd5b6120e18b16b09009fdd7be9fc2276",
+       "source_sha256_after": "daef1ded54c7d3c79898a1ba253be2acd5b6120e18b16b09009fdd7be9fc2276"
+      }
+     },
+     {
+      "gate": "replay",
+      "status": "PASS",
+      "evidence": "2 runs byte-identical + nondeterministic registry rejected",
+      "duration_seconds": 75.38,
+      "details": {
+       "runs": 2,
+       "input_sha256": "9d96971f4123ef879abb3ad0e0e9e87874b4ead3720d9a36a0581f7546abb275",
+       "input_row_count": 5000,
+       "byte_identical_output": true,
+       "mismatches": [],
+       "nondeterministic_registry_rejected": true
+      }
+     },
+     {
+      "gate": "evidence_validation",
+      "status": "PASS",
+      "evidence": "3M two-run evidence validated + tamper-evident roots verified + baseline intact",
+      "duration_seconds": 0.01,
+      "details": {
+       "three_m_evidence_dir": "evidence/validation/2026-09-19/fresh_3m2",
+       "final_status": "PASS",
+       "gates_all_true": true,
+       "pass1_engine_validation": true,
+       "pass1_engine_by_design_absent_staging": [
+        "generated_files.output path absent: 'data/generated/fresh_3m2_regression/consumer_3m_seed_20260918_pass1_out.csv'"
+       ],
+       "pass1_engine_evidence_root": true,
+       "pass2_engine_validation": true,
+       "pass2_engine_by_design_absent_staging": [
+        "generated_files.output path absent: 'data/generated/fresh_3m2_regression/consumer_3m_seed_20260918_pass2_out.csv'"
+       ],
+       "pass2_engine_evidence_root": true,
+       "hardening_baseline_manifest_intact": true,
+       "by_design_exception_rule": "output CSVs under data/generated/ (gitignored staging, hash-anchored) may be absent ONLY when the FINAL_RESULTS determinism gate is proven true and the manifest's recorded output SHA equals the byte-proven output SHA"
+      }
+     },
+     {
+      "gate": "provenance_validation",
+      "status": "PASS",
+      "evidence": "decision provenance chain resolves \"why did this row get this flag\"",
+      "duration_seconds": 0.0,
+      "details": {
+       "resolved_row_number": 2,
+       "resolved_rule_id": "proposed_email_export_eligible",
+       "chain_keys_present": 8,
+       "explanation_chars": 706
+      }
+     },
+     {
+      "gate": "reference_validation",
+      "status": "PASS",
+      "evidence": "all production references VERIFIED with hashes; SP1 EXPERIMENTAL; DL fixture MISSING (not fabricated)",
+      "duration_seconds": 0.0,
+      "details": {
+       "references": {
+        "state_zip_prefix_map_v1": {
+         "operational": "LOCAL",
+         "enterprise": "VERIFIED",
+         "sha256": true,
+         "row_count": 51
+        },
+        "suspicious_name_patterns_v1": {
+         "operational": "LOCAL",
+         "enterprise": "VERIFIED",
+         "sha256": true,
+         "row_count": 19
+        },
+        "email_syntax_regex_v1": {
+         "operational": "LOCAL",
+         "enterprise": "VERIFIED",
+         "sha256": true,
+         "row_count": 1
+        },
+        "sp1_two_reference_provider": {
+         "operational": "EXPERIMENTAL",
+         "enterprise": "EXPERIMENTAL",
+         "sha256": true,
+         "row_count": 0
+        },
+        "dl_geography_cases_company_fixture": {
+         "operational": "UNVERIFIED",
+         "enterprise": "MISSING",
+         "sha256": false,
+         "row_count": 0
+        }
+       },
+       "rule_reference_map_rules": 8,
+       "unverified_count": 1
+      }
+     },
+     {
+      "gate": "safety_checks",
+      "status": "PASS",
+      "evidence": "fail-closed gates green; SP1 inactive; no ClickHouse client import in production code",
+      "duration_seconds": 1.15,
+      "details": {
+       "path": "tests/safety",
+       "exit_code": 0,
+       "passed": 24,
+       "failed": 0,
+       "skipped": 0,
+       "boundaries": {
+        "sp1_registered_in_required_rules": false,
+        "clickhouse_client_imports_in_production_code": [],
+        "note": "config/settings.py contains documented ClickHouse configuration stubs (never connected); the boundary checked here is actual client imports/connection code"
+       }
+      }
+     },
+     {
+      "gate": "pii_evidence_scan",
+      "status": "PASS",
+      "evidence": "evidence tree PASS (0 prohibited); release documents portable",
+      "duration_seconds": 14.49,
+      "details": {
+       "evidence_tree": {
+        "verdict": "PASS",
+        "scanned_files": 293,
+        "prohibited_count": 0,
+        "review_required_count": 117
+       },
+       "review_adjudication": "REVIEW_REQUIRED findings in evidence/ are (a) execution-time absolute paths recorded by the engine's own manifests as provenance \u2014 immutable historical records, and (b) phone-like strings in synthetic CSV evidence produced by the deterministic generator. Neither is raw personal data; both are documented here rather than silently suppressed.",
+       "release_document_findings": []
+      }
+     },
+     {
+      "gate": "performance_regression",
+      "status": "PASS",
+      "evidence": "1K/10K/100K/1M vs baseline: clean",
+      "duration_seconds": 81.84,
+      "details": {
+       "thresholds": {
+        "warn": 0.1,
+        "fail": 0.2
+       },
+       "comparison": {
+        "1000": {
+         "baseline_rps": 30516.0,
+         "current_rps": 29765.6,
+         "degradation_pct": 2.46,
+         "baseline_peak_rss_mb": 23.17,
+         "current_peak_rss_mb": 22.61,
+         "rss_growth_pct": -2.42
+        },
+        "10000": {
+         "baseline_rps": 30200.1,
+         "current_rps": 30134.3,
+         "degradation_pct": 0.22,
+         "baseline_peak_rss_mb": 29.16,
+         "current_peak_rss_mb": 29.15,
+         "rss_growth_pct": -0.03
+        },
+        "100000": {
+         "baseline_rps": 28945.3,
+         "current_rps": 29238.3,
+         "degradation_pct": -1.01,
+         "baseline_peak_rss_mb": 96.68,
+         "current_peak_rss_mb": 96.54,
+         "rss_growth_pct": -0.14
+        },
+        "1000000": {
+         "baseline_rps": 27709.4,
+         "current_rps": 27642.3,
+         "degradation_pct": 0.24,
+         "baseline_peak_rss_mb": 750.41,
+         "current_peak_rss_mb": 750.01,
+         "rss_growth_pct": -0.05
+        }
+       },
+       "warnings": [],
+       "fresh_results_file": "evidence/release_gate/performance_results_current.json"
+      }
+     },
+     {
+      "gate": "production_source_integrity",
+      "status": "PASS",
+      "evidence": "frozen business sources byte-identical; delta = authorized 17 file(s)",
+      "duration_seconds": 0.0,
+      "details": {
+       "frozen_files_checked": [
+        "data_quality_platform/rules/v1_rules.py",
+        "data_quality_platform/rules/registry.py",
+        "data_quality_platform/rules/base.py",
+        "data_quality_platform/contracts.py",
+        "data_quality_platform/validation/engine.py",
+        "data_quality_platform/generation/synthetic.py"
+       ],
+       "modified_vs_baseline": [
+        "data_quality_platform/assurance/claims.py",
+        "data_quality_platform/assurance/contradiction_checker.py",
+        "data_quality_platform/assurance/evidence_quarantine.py",
+        "data_quality_platform/assurance/evidence_schema.py",
+        "data_quality_platform/assurance/golden_snapshot.py",
+        "data_quality_platform/assurance/integrity.py",
+        "data_quality_platform/assurance/release_chain.py"
+       ],
+       "added_vs_baseline": [
+        "data_quality_platform/hardening/__init__.py",
+        "data_quality_platform/hardening/atomic_commit.py",
+        "data_quality_platform/hardening/authorization.py",
+        "data_quality_platform/hardening/checkpoint_contract.py",
+        "data_quality_platform/hardening/idempotency.py",
+        "data_quality_platform/hardening/input_contract.py",
+        "data_quality_platform/hardening/pipeline.py",
+        "data_quality_platform/hardening/reference_data.py",
+        "data_quality_platform/hardening/resource_guard.py",
+        "data_quality_platform/hardening/schema_guard.py"
+       ],
+       "removed_vs_baseline": [],
+       "authorized_delta": [
+        "data_quality_platform/assurance/__init__.py",
+        "data_quality_platform/assurance/artifact_identity.py",
+        "data_quality_platform/assurance/claim_graph.py",
+        "data_quality_platform/assurance/claims.py",
+        "data_quality_platform/assurance/contradiction_checker.py",
+        "data_quality_platform/assurance/evidence_quarantine.py",
+        "data_quality_platform/assurance/evidence_schema.py",
+        "data_quality_platform/assurance/golden_snapshot.py",
+        "data_quality_platform/assurance/integrity.py",
+        "data_quality_platform/assurance/limitation_registry.py",
+        "data_quality_platform/assurance/path_firewall.py",
+        "data_quality_platform/assurance/portable_evidence.py",
+        "data_quality_platform/assurance/release_chain.py",
+        "data_quality_platform/assurance/release_schema.py",
+        "data_quality_platform/assurance/release_security.py",
+        "data_quality_platform/assurance/stale_evidence.py",
+        "data_quality_platform/assurance/status_model.py",
+        "data_quality_platform/assurance/truth_model.py",
+        "data_quality_platform/hardening/__init__.py",
+        "data_quality_platform/hardening/atomic_commit.py",
+        "data_quality_platform/hardening/authorization.py",
+        "data_quality_platform/hardening/checkpoint_contract.py",
+        "data_quality_platform/hardening/idempotency.py",
+        "data_quality_platform/hardening/input_contract.py",
+        "data_quality_platform/hardening/pipeline.py",
+        "data_quality_platform/hardening/reference_data.py",
+        "data_quality_platform/hardening/resource_guard.py",
+        "data_quality_platform/hardening/schema_guard.py",
+        "data_quality_platform/security/pii_scan.py",
+        "data_quality_platform/validation/chunking.py",
+        "data_quality_platform/validation/evidence_root.py",
+        "data_quality_platform/validation/failure_taxonomy.py",
+        "data_quality_platform/verification/reference_provenance.py"
+       ],
+       "unauthorized_delta": []
+      }
+     },
+     {
+      "gate": "assurance_tests",
+      "status": "FAIL",
+      "evidence": "290 passed / 0 skipped / 2 failed (false-PASS prevention battery)",
+      "duration_seconds": 3.94,
+      "details": {
+       "path": "tests/assurance",
+       "exit_code": 1,
+       "passed": 290,
+       "failed": 2,
+       "skipped": 0
+      }
+     },
+     {
+      "gate": "machine_path_firewall",
+      "status": "PASS",
+      "evidence": "zero machine-local paths in release-facing artifacts",
+      "duration_seconds": 0.03,
+      "details": {
+       "scanned": [
+        "FINAL_RESULTS.json",
+        "final_result.json",
+        "release_manifest.json",
+        "README.md",
+        "RELEASE_NOTES.md",
+        "DELIVERY_MANIFEST.json",
+        "evidence/release/reproducibility_manifest.json",
+        "evidence/release/golden_release_snapshot.json",
+        "evidence/release/limitation_registry.json",
+        "evidence/release/release_evidence_model.json",
+        "evidence/release/claim_provenance.json",
+        "evidence/release/consistency_matrix.json",
+        "evidence/release/assurance_mutation.json"
+       ],
+       "missing": [],
+       "violation_count": 0,
+       "rule_catalog": [
+        "posix_home",
+        "macos_users",
+        "root_home",
+        "mounted_volume",
+        "machine_tmp",
+        "system_var",
+        "service_tree",
+        "windows_drive",
+        "unc_share",
+        "tilde_user",
+        "tilde_named_user",
+        "dqvp_work_dirname"
+       ]
+      }
+     },
+     {
+      "gate": "negative_release_gate",
+      "status": "PASS",
+      "evidence": "14/14 controlled failures rejected; restoration byte-exact",
+      "duration_seconds": 0.0,
+      "details": {
+       "scenarios_total": 14,
+       "scenarios_detected": 14,
+       "mutation_score": 1.0,
+       "restoration_verified": true,
+       "required_scenario_coverage": [
+        "A1",
+        "A10",
+        "A11",
+        "A2",
+        "A3",
+        "A4",
+        "A5",
+        "A6",
+        "A7",
+        "A8",
+        "A9",
+        "B1",
+        "B2",
+        "B3"
+       ],
+       "missing_scenarios": []
+      }
+     },
+     {
+      "gate": "claim_provenance",
+      "status": "FAIL",
+      "evidence": "1 claims failed re-derivation",
+      "duration_seconds": 0.0,
+      "details": {
+       "claims_total": 21,
+       "claims_verified": 18,
+       "claims_not_verified": 3,
+       "recheck_passed": false,
+       "failing": [
+        {
+         "claim": "full suite passed",
+         "verified": true,
+         "ok": false,
+         "detail": {
+          "reason": "recorded value does not match re-derived value",
+          "recorded": 1065,
+          "derived": 1061
+         }
+        }
+       ]
+      }
+     },
+     {
+      "gate": "consistency_matrix",
+      "status": "FAIL",
+      "evidence": "chain or document identity inconsistency",
+      "duration_seconds": 0.19,
+      "details": {
+       "edges": {
+        "source_to_git": true,
+        "git_to_rules": true,
+        "rules_to_input": true,
+        "input_to_runs": true,
+        "run_to_run": true,
+        "runs_to_oracle": true,
+        "oracle_to_replay": true,
+        "replay_to_evidence": true,
+        "evidence_to_root": true,
+        "root_to_gate": true,
+        "gate_to_results": true,
+        "results_to_docs": true
+       },
+       "verdict": "VERIFIED",
+       "final_results_identity_consistent": true,
+       "contradiction_check_verdict": "CONTRADICTIONS_FOUND",
+       "contradiction_count": 20,
+       "contradiction_check_docs_scanned": 24,
+       "contradictions_sample": [
+        {
+         "doc": "README.md",
+         "type": "scalability_overclaim",
+         "field": null,
+         "match": "100M",
+         "context": "use/Airflow integration (unverified);   100M/800M-row certification; changes to Frozen V1 semantics;"
+        },
+        {
+         "doc": "README.md",
+         "type": "scalability_overclaim",
+         "field": null,
+         "match": "800M",
+         "context": "irflow integration (unverified);   100M/800M-row certification; changes to Frozen V1 semantics; kern"
+        },
+        {
+         "doc": "evidence/release_gate/final_release_gate.json",
+         "type": "scalability_overclaim",
+         "field": ".gates[20].details.contradictions_sample[0].match",
+         "match": "100M",
+         "context": "100M"
+        },
+        {
+         "doc": "evidence/release_gate/final_release_gate.json",
+         "type": "scalability_overclaim",
+         "field": ".gates[20].details.contradictions_sample[0].context",
+         "match": "100M",
+         "context": "use/Airflow integration (unverified);   100M/800M-row certification; changes to Frozen V1 semantics;"
+        },
+        {
+         "doc": "evidence/release_gate/final_release_gate.json",
+         "type": "scalability_overclaim",
+         "field": ".gates[20].details.contradictions_sample[0].context",
+         "match": "800M",
+         "context": "irflow integration (unverified);   100M/800M-row certification; changes to Frozen V1 semantics;"
+        },
+        {
+         "doc": "evidence/release_gate/final_release_gate.json",
+         "type": "scalability_overclaim",
+         "field": ".gates[20].details.contradictions_sample[1].match",
+         "match": "800M",
+         "context": "800M"
+        },
+        {
+         "doc": "evidence/release_gate/final_release_gate.json",
+         "type": "scalability_overclaim",
+         "field": ".gates[20].details.contradictions_sample[1].context",
+         "match": "100M",
+         "context": "irflow integration (unverified);   100M/800M-row certification; changes to Frozen V1 semantics;"
+        },
+        {
+         "doc": "evidence/release_gate/final_release_gate.json",
+         "type": "scalability_overclaim",
+         "field": ".gates[20].details.contradictions_sample[1].context",
+         "match": "800M",
+         "context": "irflow integration (unverified);   100M/800M-row certification; changes to Frozen V1 semantics; kern"
+        },
+        {
+         "doc": "evidence/release_gate/final_release_gate.json",
+         "type": "scalability_overclaim",
+         "field": ".failures[3].evidence.contradictions_sample[0].match",
+         "match": "100M",
+         "context": "100M"
+        },
+        {
+         "doc": "evidence/release_gate/final_release_gate.json",
+         "type": "scalability_overclaim",
+         "field": ".failures[3].evidence.contradictions_sample[0].context",
+         "match": "100M",
+         "context": "use/Airflow integration (unverified);   100M/800M-row certification; changes to Frozen V1 semantics;"
+        }
+       ]
+      }
+     },
+     {
+      "gate": "absolute_path_release_gate",
+      "status": "PASS",
+      "evidence": "portable release evidence machine-path free (0 violations)",
+      "duration_seconds": 0.32,
+      "details": {
+       "verdict": "PASS",
+       "violation_count": 0,
+       "scanned_file_count": 76,
+       "exceptions_granted": [
+        "evidence/hardening_baseline/test_baseline.txt",
+        "evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/path_forensics/ABSOLUTE_PATH_INVENTORY.json",
+        "evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/path_forensics/path_inventory_UPDATE-V2.json",
+        "evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/path_forensics/json_semantic_diff_UPDATE-V2.json",
+        "evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/release_gate/absolute_path_gate_report.json",
+        "evidence/FINAL_CLEAN_REBUILD_RELEASE_2026-09-18/staging/rebuild_failure.log"
+       ],
+       "missing_scope_entries": [],
+       "registry_problems": []
+      }
+     }
+    ],
+    "gate_count": 22,
+    "gate_counts": {
+     "pass": 18,
+     "fail": 4
+    },
+    "failure_taxonomy": {
+     "taxonomy_version": "1.0.0",
+     "failure_classes": [
+      "DATA_ERROR",
+      "CONTRACT_ERROR",
+      "CONFIG_ERROR",
+      "RULE_ERROR",
+      "REFERENCE_ERROR",
+      "EVIDENCE_ERROR",
+      "NON_DETERMINISM",
+      "SECURITY_ERROR",
+      "PERFORMANCE_ERROR",
+      "ENVIRONMENT_ERROR",
+      "INFRASTRUCTURE_ERROR",
+      "AUTHORIZATION_ERROR",
+      "REVIEW_REQUIRED"
+     ],
+     "severities": [
+      "BLOCKER",
+      "MAJOR",
+      "MINOR"
+     ],
+     "class_descriptions": {
+      "DATA_ERROR": "input data violates structural expectations (encoding, ragged rows, NUL bytes, unreadable file)",
+      "CONTRACT_ERROR": "input/output contract violation (columns, order, duplicates, schema version, identifier sanity)",
+      "CONFIG_ERROR": "configuration malformed, incompatible, or missing required keys/threshold ranges",
+      "RULE_ERROR": "rule registry or rule execution defect (missing rule, wrong version, unexpected exception)",
+      "REFERENCE_ERROR": "reference data missing, invalid, hash-mismatched, or unverifiable for a decision that requires it",
+      "EVIDENCE_ERROR": "evidence artifact missing, malformed, internally inconsistent, or tamper-detected",
+      "NON_DETERMINISM": "deterministic replay produced different results (hashes, counts, or bytes)",
+      "SECURITY_ERROR": "security boundary violation (PII in evidence, secrets, unauthorized activation/mutation attempt)",
+      "PERFORMANCE_ERROR": "performance regression beyond the configured FAIL threshold",
+      "ENVIRONMENT_ERROR": "execution environment unsuitable or unverifiable (python version, missing dependency, resource limits)",
+      "INFRASTRUCTURE_ERROR": "external infrastructure unavailable or not exercised (ClickHouse, Airflow runtime, network)",
+      "AUTHORIZATION_ERROR": "an operation requires explicit authorization that is not present (e.g. activation of an experimental component outside its authorized scope, or production mutation)",
+      "REVIEW_REQUIRED": "behavior is ambiguous or disputed; business-rule adjudication by the contract owner is required before any change"
+     },
+     "default_for_unknown_exception": "REVIEW_REQUIRED",
+     "record_schema": [
+      "failure_class",
+      "severity",
+      "gate",
+      "reason",
+      "evidence",
+      "remediation",
+      "recorded_utc",
+      "exception (optional)"
+     ]
+    },
+    "failures": [
+     {
+      "failure_class": "SECURITY_ERROR",
+      "class_description": "security boundary violation (PII in evidence, secrets, unauthorized activation/mutation attempt)",
+      "severity": "BLOCKER",
+      "gate": "repository_integrity",
+      "reason": "tracked production/repository files modified outside evidence/ at gate start",
+      "evidence": {
+       "files": [
+        " M FINAL_RESULTS.json",
+        " M README.md",
+        " M RELEASE_NOTES.md",
+        " M data_quality_platform/assurance/claims.py",
+        " M data_quality_platform/assurance/contradiction_checker.py",
+        " M data_quality_platform/assurance/evidence_quarantine.py",
+        " M data_quality_platform/assurance/golden_snapshot.py",
+        " M data_quality_platform/assurance/integrity.py",
+        " M data_quality_platform/assurance/release_chain.py",
+        " M final_result.json",
+        " M release_manifest.json",
+        " M scripts/build_observability_status.py",
+        " M scripts/build_release_evidence_model.py",
+        " M scripts/capture_test_summary.py",
+        " M scripts/consistency_matrix.py",
+        " M scripts/readme_consistency_check.py",
+        " M scripts/release_gate.py",
+        " M tests/assurance/test_release_schema_and_stale_evidence.py",
+        " M tests/assurance/test_release_security_and_manifest.py",
+        " M tests/assurance/test_tamper_fail_closed.py"
+       ]
+      },
+      "remediation": "commit or revert unauthorized changes before release",
+      "recorded_utc": "2026-09-19T09:29:46Z"
+     },
+     {
+      "failure_class": "EVIDENCE_ERROR",
+      "class_description": "evidence artifact missing, malformed, internally inconsistent, or tamper-detected",
+      "severity": "BLOCKER",
+      "gate": "assurance_tests",
+      "reason": "assurance test suite failed",
+      "evidence": {
+       "path": "tests/assurance",
+       "exit_code": 1,
+       "passed": 290,
+       "failed": 2,
+       "skipped": 0
+      },
+      "remediation": "fix the assurance layer; never waive",
+      "recorded_utc": "2026-09-19T09:33:22Z"
+     },
+     {
+      "failure_class": "EVIDENCE_ERROR",
+      "class_description": "evidence artifact missing, malformed, internally inconsistent, or tamper-detected",
+      "severity": "BLOCKER",
+      "gate": "claim_provenance",
+      "reason": "FINAL_RESULTS claims do not re-derive from their evidence sources",
+      "evidence": {
+       "claims_total": 21,
+       "claims_verified": 18,
+       "claims_not_verified": 3,
+       "recheck_passed": false
+      },
+      "remediation": "rebuild FINAL_RESULTS from verified evidence only",
+      "recorded_utc": "2026-09-19T09:33:22Z"
+     },
+     {
+      "failure_class": "EVIDENCE_ERROR",
+      "class_description": "evidence artifact missing, malformed, internally inconsistent, or tamper-detected",
+      "severity": "BLOCKER",
+      "gate": "consistency_matrix",
+      "reason": "release evidence chain has an unverifiable edge, documents disagree with run evidence, or the contradiction checker found contradictions",
+      "evidence": {
+       "edges": {
+        "source_to_git": true,
+        "git_to_rules": true,
+        "rules_to_input": true,
+        "input_to_runs": true,
+        "run_to_run": true,
+        "runs_to_oracle": true,
+        "oracle_to_replay": true,
+        "replay_to_evidence": true,
+        "evidence_to_root": true,
+        "root_to_gate": true,
+        "gate_to_results": true,
+        "results_to_docs": true
+       },
+       "verdict": "VERIFIED",
+       "final_results_identity_consistent": true,
+       "contradiction_check_verdict": "CONTRADICTIONS_FOUND",
+       "contradiction_count": 20,
+       "contradiction_check_docs_scanned": 24,
+       "contradictions_sample": [
+        {
+         "doc": "README.md",
+         "type": "scalability_overclaim",
+         "field": null,
+         "match": "100M",
+         "context": "use/Airflow integration (unverified);   100M/800M-row certification; changes to Frozen V1 semantics;"
+        },
+        {
+         "doc": "README.md",
+         "type": "scalability_overclaim",
+         "field": null,
+         "match": "800M",
+         "context": "irflow integration (unverified);   100M/800M-row certification; changes to Frozen V1 semantics; kern"
+        },
+        {
+         "doc": "evidence/release_gate/final_release_gate.json",
+         "type": "scalability_overclaim",
+         "field": ".gates[20].details.contradictions_sample[0].match",
+         "match": "100M",
+         "context": "100M"
+        },
+        {
+         "doc": "evidence/release_gate/final_release_gate.json",
+         "type": "scalability_overclaim",
+         "field": ".gates[20].details.contradictions_sample[0].context",
+         "match": "100M",
+         "context": "use/Airflow integration (unverified);   100M/800M-row certification; changes to Frozen V1 semantics;"
+        },
+        {
+         "doc": "evidence/release_gate/final_release_gate.json",
+         "type": "scalability_overclaim",
+         "field": ".gates[20].details.contradictions_sample[0].context",
+         "match": "800M",
+         "context": "irflow integration (unverified);   100M/800M-row certification; changes to Frozen V1 semantics;"
+        },
+        {
+         "doc": "evidence/release_gate/final_release_gate.json",
+         "type": "scalability_overclaim",
+         "field": ".gates[20].details.contradictions_sample[1].match",
+         "match": "800M",
+         "context": "800M"
+        },
+        {
+         "doc": "evidence/release_gate/final_release_gate.json",
+         "type": "scalability_overclaim",
+         "field": ".gates[20].details.contradictions_sample[1].context",
+         "match": "100M",
+         "context": "irflow integration (unverified);   100M/800M-row certification; changes to Frozen V1 semantics;"
+        },
+        {
+         "doc": "evidence/release_gate/final_release_gate.json",
+         "type": "scalability_overclaim",
+         "field": ".gates[20].details.contradictions_sample[1].context",
+         "match": "800M",
+         "context": "irflow integration (unverified);   100M/800M-row certification; changes to Frozen V1 semantics; kern"
+        },
+        {
+         "doc": "evidence/release_gate/final_release_gate.json",
+         "type": "scalability_overclaim",
+         "field": ".failures[3].evidence.contradictions_sample[0].match",
+         "match": "100M",
+         "context": "100M"
+        },
+        {
+         "doc": "evidence/release_gate/final_release_gate.json",
+         "type": "scalability_overclaim",
+         "field": ".failures[3].evidence.contradictions_sample[0].context",
+         "match": "100M",
+         "context": "use/Airflow integration (unverified);   100M/800M-row certification; changes to Frozen V1 semantics;"
+        }
+       ]
+      },
+      "remediation": "rebuild documents from the canonical evidence model; investigate any edge failure or listed contradiction",
+      "recorded_utc": "2026-09-19T09:33:22Z"
+     }
+    ],
+    "overall_verdict": "FAIL",
+    "total_duration_seconds": 216.44
+   }
+  },
+  {
+   "round": 3,
+   "ledgered_utc_source": "evidence/release_gate/final_release_gate.json",
+   "source_sha256": "6be0031fdf94d27177e534bd655c20d277ae70ccd4442aedfd51b75e35c7ce12",
+   "generated_utc": "2026-09-19T13:21:41Z",
+   "overall_verdict": "PASS",
+   "gate_count": 22,
+   "gate_statuses": {
+    "repository_integrity": "PASS",
+    "unit_tests": "PASS",
+    "integration_tests": "PASS",
+    "contract_tests": "PASS",
+    "golden_tests": "PASS",
+    "property_tests": "PASS",
+    "differential_validation": "PASS",
+    "mutation_testing": "PASS",
+    "replay": "PASS",
+    "evidence_validation": "PASS",
+    "provenance_validation": "PASS",
+    "reference_validation": "PASS",
+    "safety_checks": "PASS",
+    "pii_evidence_scan": "PASS",
+    "performance_regression": "PASS",
+    "production_source_integrity": "PASS",
+    "assurance_tests": "PASS",
+    "machine_path_firewall": "PASS",
+    "negative_release_gate": "PASS",
+    "claim_provenance": "PASS",
+    "consistency_matrix": "PASS",
+    "absolute_path_release_gate": "PASS"
+   },
+   "failing_gates": [],
+   "preservation": "PASS round: summary only; the round's evidence file persists on disk and is committed with the release"
+  }
+ ]
+}

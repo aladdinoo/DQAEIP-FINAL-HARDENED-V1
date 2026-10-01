@@ -1,0 +1,889 @@
+{
+ "wrapper_version": "1.0.0",
+ "python_version": "3.12.14",
+ "started_utc": "2026-09-19T08:42:57Z",
+ "ended_utc": "2026-09-19T08:45:34Z",
+ "module": "runner.cli (executed as __main__ via runpy)",
+ "argv": [
+  "validate",
+  "--csv",
+  "data/generated/fresh_3m2_regression/consumer_3m_seed_20260918_pass1.csv",
+  "--output",
+  "data/generated/fresh_3m2_regression/consumer_3m_seed_20260918_pass1_out.csv",
+  "--run-id",
+  "final_3m_pass1",
+  "--evidence-dir",
+  "evidence/validation/2026-09-19/fresh_3m2/pass1_engine"
+ ],
+ "exit_code": 0,
+ "error": null,
+ "max_events": 50000,
+ "truncated": false,
+ "event_count": 144,
+ "events": [
+  {
+   "event": "open",
+   "path": "/home/z/my-project/dqvp-work/repo/runner/__pycache__/__init__.cpython-312.pyc",
+   "mode": "r",
+   "flags": 524288
+  },
+  {
+   "event": "open",
+   "path": "/home/z/my-project/dqvp-work/repo/runner/__init__.py",
+   "mode": "r",
+   "flags": 524288
+  },
+  {
+   "event": "open",
+   "path": "/home/z/my-project/dqvp-work/repo/runner/__pycache__/cli.cpython-312.pyc",
+   "mode": "r",
+   "flags": 524288
+  },
+  {
+   "event": "open",
+   "path": "/home/z/my-project/dqvp-work/repo/runner/cli.py",
+   "mode": "r",
+   "flags": 524288
+  },
+  {
+   "event": "open",
+   "path": "/home/z/.local/share/uv/python/cpython-3.12.14-linux-x86_64-gnu/lib/python3.12/__pycache__/csv.cpython-312.pyc",
+   "mode": "r",
+   "flags": 524288
+  },
+  {
+   "event": "open",
+   "path": "/home/z/.local/share/uv/python/cpython-3.12.14-linux-x86_64-gnu/lib/python3.12/__pycache__/subprocess.cpython-312.pyc",
+   "mode": "r",
+   "flags": 524288
+  },
+  {
+   "event": "open",
+   "path": "/home/z/.local/share/uv/python/cpython-3.12.14-linux-x86_64-gnu/lib/python3.12/__pycache__/signal.cpython-312.pyc",
+   "mode": "r",
+   "flags": 524288
+  },
+  {
+   "event": "open",
+   "path": "/home/z/.local/share/uv/python/cpython-3.12.14-linux-x86_64-gnu/lib/python3.12/__pycache__/threading.cpython-312.pyc",
+   "mode": "r",
+   "flags": 524288
+  },
+  {
+   "event": "open",
+   "path": "/home/z/.local/share/uv/python/cpython-3.12.14-linux-x86_64-gnu/lib/python3.12/__pycache__/_weakrefset.cpython-312.pyc",
+   "mode": "r",
+   "flags": 524288
+  },
+  {
+   "event": "open",
+   "path": "/home/z/.local/share/uv/python/cpython-3.12.14-linux-x86_64-gnu/lib/python3.12/__pycache__/contextlib.cpython-312.pyc",
+   "mode": "r",
+   "flags": 524288
+  },
+  {
+   "event": "open",
+   "path": "/home/z/.local/share/uv/python/cpython-3.12.14-linux-x86_64-gnu/lib/python3.12/__pycache__/selectors.cpython-312.pyc",
+   "mode": "r",
+   "flags": 524288
+  },
+  {
+   "event": "open",
+   "path": "/home/z/.local/share/uv/python/cpython-3.12.14-linux-x86_64-gnu/lib/python3.12/collections/__pycache__/abc.cpython-312.pyc",
+   "mode": "r",
+   "flags": 524288
+  },
+  {
+   "event": "open",
+   "path": "/home/z/.local/share/uv/python/cpython-3.12.14-linux-x86_64-gnu/lib/python3.12/__pycache__/datetime.cpython-312.pyc",
+   "mode": "r",
+   "flags": 524288
+  },
+  {
+   "event": "open",
+   "path": "/home/z/my-project/dqvp-work/repo/data_quality_platform/__pycache__/__init__.cpython-312.pyc",
+   "mode": "r",
+   "flags": 524288
+  },
+  {
+   "event": "open",
+   "path": "/home/z/my-project/dqvp-work/repo/data_quality_platform/__init__.py",
+   "mode": "r",
+   "flags": 524288
+  },
+  {
+   "event": "open",
+   "path": "/home/z/my-project/dqvp-work/repo/data_quality_platform/validation/__pycache__/__init__.cpython-312.pyc",
+   "mode": "r",
+   "flags": 524288
+  },
+  {
+   "event": "open",
+   "path": "/home/z/my-project/dqvp-work/repo/data_quality_platform/validation/__init__.py",
+   "mode": "r",
+   "flags": 524288
+  },
+  {
+   "event": "open",
+   "path": "/home/z/my-project/dqvp-work/repo/data_quality_platform/validation/__pycache__/engine.cpython-312.pyc",
+   "mode": "r",
+   "flags": 524288
+  },
+  {
+   "event": "open",
+   "path": "/home/z/my-project/dqvp-work/repo/data_quality_platform/validation/engine.py",
+   "mode": "r",
+   "flags": 524288
+  },
+  {
+   "event": "open",
+   "path": "/home/z/.local/share/uv/python/cpython-3.12.14-linux-x86_64-gnu/lib/python3.12/__pycache__/hashlib.cpython-312.pyc",
+   "mode": "r",
+   "flags": 524288
+  },
+  {
+   "event": "open",
+   "path": "/home/z/.local/share/uv/python/cpython-3.12.14-linux-x86_64-gnu/lib/python3.12/__pycache__/dataclasses.cpython-312.pyc",
+   "mode": "r",
+   "flags": 524288
+  },
+  {
+   "event": "open",
+   "path": "/home/z/.local/share/uv/python/cpython-3.12.14-linux-x86_64-gnu/lib/python3.12/__pycache__/copy.cpython-312.pyc",
+   "mode": "r",
+   "flags": 524288
+  },
+  {
+   "event": "open",
+   "path": "/home/z/.local/share/uv/python/cpython-3.12.14-linux-x86_64-gnu/lib/python3.12/__pycache__/weakref.cpython-312.pyc",
+   "mode": "r",
+   "flags": 524288
+  },
+  {
+   "event": "open",
+   "path": "/home/z/.local/share/uv/python/cpython-3.12.14-linux-x86_64-gnu/lib/python3.12/__pycache__/inspect.cpython-312.pyc",
+   "mode": "r",
+   "flags": 524288
+  },
+  {
+   "event": "open",
+   "path": "/home/z/.local/share/uv/python/cpython-3.12.14-linux-x86_64-gnu/lib/python3.12/__pycache__/ast.cpython-312.pyc",
+   "mode": "r",
+   "flags": 524288
+  },
+  {
+   "event": "open",
+   "path": "/home/z/.local/share/uv/python/cpython-3.12.14-linux-x86_64-gnu/lib/python3.12/__pycache__/dis.cpython-312.pyc",
+   "mode": "r",
+   "flags": 524288
+  },
+  {
+   "event": "open",
+   "path": "/home/z/.local/share/uv/python/cpython-3.12.14-linux-x86_64-gnu/lib/python3.12/__pycache__/opcode.cpython-312.pyc",
+   "mode": "r",
+   "flags": 524288
+  },
+  {
+   "event": "open",
+   "path": "/home/z/.local/share/uv/python/cpython-3.12.14-linux-x86_64-gnu/lib/python3.12/__pycache__/linecache.cpython-312.pyc",
+   "mode": "r",
+   "flags": 524288
+  },
+  {
+   "event": "open",
+   "path": "/home/z/.local/share/uv/python/cpython-3.12.14-linux-x86_64-gnu/lib/python3.12/__pycache__/tokenize.cpython-312.pyc",
+   "mode": "r",
+   "flags": 524288
+  },
+  {
+   "event": "open",
+   "path": "/home/z/.local/share/uv/python/cpython-3.12.14-linux-x86_64-gnu/lib/python3.12/__pycache__/token.cpython-312.pyc",
+   "mode": "r",
+   "flags": 524288
+  },
+  {
+   "event": "open",
+   "path": "/home/z/.local/share/uv/python/cpython-3.12.14-linux-x86_64-gnu/lib/python3.12/__pycache__/typing.cpython-312.pyc",
+   "mode": "r",
+   "flags": 524288
+  },
+  {
+   "event": "open",
+   "path": "/home/z/my-project/dqvp-work/repo/data_quality_platform/__pycache__/contracts.cpython-312.pyc",
+   "mode": "r",
+   "flags": 524288
+  },
+  {
+   "event": "open",
+   "path": "/home/z/my-project/dqvp-work/repo/data_quality_platform/contracts.py",
+   "mode": "r",
+   "flags": 524288
+  },
+  {
+   "event": "open",
+   "path": "/home/z/my-project/dqvp-work/repo/data_quality_platform/schema/__pycache__/__init__.cpython-312.pyc",
+   "mode": "r",
+   "flags": 524288
+  },
+  {
+   "event": "open",
+   "path": "/home/z/my-project/dqvp-work/repo/data_quality_platform/schema/__init__.py",
+   "mode": "r",
+   "flags": 524288
+  },
+  {
+   "event": "open",
+   "path": "/home/z/my-project/dqvp-work/repo/data_quality_platform/schema/__pycache__/validator.cpython-312.pyc",
+   "mode": "r",
+   "flags": 524288
+  },
+  {
+   "event": "open",
+   "path": "/home/z/my-project/dqvp-work/repo/data_quality_platform/schema/validator.py",
+   "mode": "r",
+   "flags": 524288
+  },
+  {
+   "event": "open",
+   "path": "/home/z/my-project/dqvp-work/repo/data_quality_platform/rules/__pycache__/__init__.cpython-312.pyc",
+   "mode": "r",
+   "flags": 524288
+  },
+  {
+   "event": "open",
+   "path": "/home/z/my-project/dqvp-work/repo/data_quality_platform/rules/__init__.py",
+   "mode": "r",
+   "flags": 524288
+  },
+  {
+   "event": "open",
+   "path": "/home/z/my-project/dqvp-work/repo/data_quality_platform/rules/__pycache__/base.cpython-312.pyc",
+   "mode": "r",
+   "flags": 524288
+  },
+  {
+   "event": "open",
+   "path": "/home/z/my-project/dqvp-work/repo/data_quality_platform/rules/base.py",
+   "mode": "r",
+   "flags": 524288
+  },
+  {
+   "event": "open",
+   "path": "/home/z/my-project/dqvp-work/repo/data_quality_platform/rules/__pycache__/registry.cpython-312.pyc",
+   "mode": "r",
+   "flags": 524288
+  },
+  {
+   "event": "open",
+   "path": "/home/z/my-project/dqvp-work/repo/data_quality_platform/rules/registry.py",
+   "mode": "r",
+   "flags": 524288
+  },
+  {
+   "event": "open",
+   "path": "/home/z/my-project/dqvp-work/repo/data_quality_platform/rules/__pycache__/v1_rules.cpython-312.pyc",
+   "mode": "r",
+   "flags": 524288
+  },
+  {
+   "event": "open",
+   "path": "/home/z/my-project/dqvp-work/repo/data_quality_platform/rules/v1_rules.py",
+   "mode": "r",
+   "flags": 524288
+  },
+  {
+   "event": "open",
+   "path": "/home/z/my-project/dqvp-work/repo/data_quality_platform/lineage/__pycache__/__init__.cpython-312.pyc",
+   "mode": "r",
+   "flags": 524288
+  },
+  {
+   "event": "open",
+   "path": "/home/z/my-project/dqvp-work/repo/data_quality_platform/lineage/__init__.py",
+   "mode": "r",
+   "flags": 524288
+  },
+  {
+   "event": "open",
+   "path": "/home/z/my-project/dqvp-work/repo/data_quality_platform/lineage/__pycache__/recorder.cpython-312.pyc",
+   "mode": "r",
+   "flags": 524288
+  },
+  {
+   "event": "open",
+   "path": "/home/z/my-project/dqvp-work/repo/data_quality_platform/lineage/recorder.py",
+   "mode": "r",
+   "flags": 524288
+  },
+  {
+   "event": "open",
+   "path": "/home/z/my-project/dqvp-work/repo/data_quality_platform/audit/__pycache__/__init__.cpython-312.pyc",
+   "mode": "r",
+   "flags": 524288
+  },
+  {
+   "event": "open",
+   "path": "/home/z/my-project/dqvp-work/repo/data_quality_platform/audit/__init__.py",
+   "mode": "r",
+   "flags": 524288
+  },
+  {
+   "event": "open",
+   "path": "/home/z/my-project/dqvp-work/repo/data_quality_platform/audit/__pycache__/trail.cpython-312.pyc",
+   "mode": "r",
+   "flags": 524288
+  },
+  {
+   "event": "open",
+   "path": "/home/z/my-project/dqvp-work/repo/data_quality_platform/audit/trail.py",
+   "mode": "r",
+   "flags": 524288
+  },
+  {
+   "event": "open",
+   "path": "/home/z/my-project/dqvp-work/repo/data_quality_platform/monitoring/__pycache__/__init__.cpython-312.pyc",
+   "mode": "r",
+   "flags": 524288
+  },
+  {
+   "event": "open",
+   "path": "/home/z/my-project/dqvp-work/repo/data_quality_platform/monitoring/__init__.py",
+   "mode": "r",
+   "flags": 524288
+  },
+  {
+   "event": "open",
+   "path": "/home/z/my-project/dqvp-work/repo/data_quality_platform/monitoring/__pycache__/quality.cpython-312.pyc",
+   "mode": "r",
+   "flags": 524288
+  },
+  {
+   "event": "open",
+   "path": "/home/z/my-project/dqvp-work/repo/data_quality_platform/monitoring/quality.py",
+   "mode": "r",
+   "flags": 524288
+  },
+  {
+   "event": "open",
+   "path": "/home/z/my-project/dqvp-work/repo/data_quality_platform/alerting/__pycache__/__init__.cpython-312.pyc",
+   "mode": "r",
+   "flags": 524288
+  },
+  {
+   "event": "open",
+   "path": "/home/z/my-project/dqvp-work/repo/data_quality_platform/alerting/__init__.py",
+   "mode": "r",
+   "flags": 524288
+  },
+  {
+   "event": "open",
+   "path": "/home/z/my-project/dqvp-work/repo/data_quality_platform/alerting/__pycache__/alerts.cpython-312.pyc",
+   "mode": "r",
+   "flags": 524288
+  },
+  {
+   "event": "open",
+   "path": "/home/z/my-project/dqvp-work/repo/data_quality_platform/alerting/alerts.py",
+   "mode": "r",
+   "flags": 524288
+  },
+  {
+   "event": "open",
+   "path": "/home/z/my-project/dqvp-work/repo/data_quality_platform/evidence/__pycache__/__init__.cpython-312.pyc",
+   "mode": "r",
+   "flags": 524288
+  },
+  {
+   "event": "open",
+   "path": "/home/z/my-project/dqvp-work/repo/data_quality_platform/evidence/__init__.py",
+   "mode": "r",
+   "flags": 524288
+  },
+  {
+   "event": "open",
+   "path": "/home/z/my-project/dqvp-work/repo/data_quality_platform/evidence/__pycache__/manifests.cpython-312.pyc",
+   "mode": "r",
+   "flags": 524288
+  },
+  {
+   "event": "open",
+   "path": "/home/z/my-project/dqvp-work/repo/data_quality_platform/evidence/manifests.py",
+   "mode": "r",
+   "flags": 524288
+  },
+  {
+   "event": "open",
+   "path": "/home/z/my-project/dqvp-work/repo/data_quality_platform/security/__pycache__/__init__.cpython-312.pyc",
+   "mode": "r",
+   "flags": 524288
+  },
+  {
+   "event": "open",
+   "path": "/home/z/my-project/dqvp-work/repo/data_quality_platform/security/__init__.py",
+   "mode": "r",
+   "flags": 524288
+  },
+  {
+   "event": "open",
+   "path": "/home/z/my-project/dqvp-work/repo/data_quality_platform/security/__pycache__/pii_masking.cpython-312.pyc",
+   "mode": "r",
+   "flags": 524288
+  },
+  {
+   "event": "open",
+   "path": "/home/z/my-project/dqvp-work/repo/data_quality_platform/security/pii_masking.py",
+   "mode": "r",
+   "flags": 524288
+  },
+  {
+   "event": "open",
+   "path": "/home/z/my-project/dqvp-work/repo/data_quality_platform/security/__pycache__/auth.cpython-312.pyc",
+   "mode": "r",
+   "flags": 524288
+  },
+  {
+   "event": "open",
+   "path": "/home/z/my-project/dqvp-work/repo/data_quality_platform/security/auth.py",
+   "mode": "r",
+   "flags": 524288
+  },
+  {
+   "event": "open",
+   "path": "/home/z/my-project/dqvp-work/repo/data_quality_platform/generation/__pycache__/__init__.cpython-312.pyc",
+   "mode": "r",
+   "flags": 524288
+  },
+  {
+   "event": "open",
+   "path": "/home/z/my-project/dqvp-work/repo/data_quality_platform/generation/__init__.py",
+   "mode": "r",
+   "flags": 524288
+  },
+  {
+   "event": "open",
+   "path": "/home/z/my-project/dqvp-work/repo/data_quality_platform/generation/__pycache__/synthetic.cpython-312.pyc",
+   "mode": "r",
+   "flags": 524288
+  },
+  {
+   "event": "open",
+   "path": "/home/z/my-project/dqvp-work/repo/data_quality_platform/generation/synthetic.py",
+   "mode": "r",
+   "flags": 524288
+  },
+  {
+   "event": "open",
+   "path": "/home/z/.local/share/uv/python/cpython-3.12.14-linux-x86_64-gnu/lib/python3.12/__pycache__/random.cpython-312.pyc",
+   "mode": "r",
+   "flags": 524288
+  },
+  {
+   "event": "open",
+   "path": "/home/z/.local/share/uv/python/cpython-3.12.14-linux-x86_64-gnu/lib/python3.12/__pycache__/bisect.cpython-312.pyc",
+   "mode": "r",
+   "flags": 524288
+  },
+  {
+   "event": "open",
+   "path": "/home/z/my-project/dqvp-work/repo/data_quality_platform/config/__pycache__/__init__.cpython-312.pyc",
+   "mode": "r",
+   "flags": 524288
+  },
+  {
+   "event": "open",
+   "path": "/home/z/my-project/dqvp-work/repo/data_quality_platform/config/__init__.py",
+   "mode": "r",
+   "flags": 524288
+  },
+  {
+   "event": "open",
+   "path": "/home/z/my-project/dqvp-work/repo/data_quality_platform/config/__pycache__/settings.cpython-312.pyc",
+   "mode": "r",
+   "flags": 524288
+  },
+  {
+   "event": "open",
+   "path": "/home/z/my-project/dqvp-work/repo/data_quality_platform/config/settings.py",
+   "mode": "r",
+   "flags": 524288
+  },
+  {
+   "event": "open",
+   "path": "/home/z/my-project/dqvp-work/repo/.venv/lib/python3.12/site-packages/yaml/__pycache__/__init__.cpython-312.pyc",
+   "mode": "r",
+   "flags": 524288
+  },
+  {
+   "event": "open",
+   "path": "/home/z/my-project/dqvp-work/repo/.venv/lib/python3.12/site-packages/yaml/__init__.py",
+   "mode": "r",
+   "flags": 524288
+  },
+  {
+   "event": "open",
+   "path": "/home/z/my-project/dqvp-work/repo/.venv/lib/python3.12/site-packages/yaml/__pycache__/error.cpython-312.pyc",
+   "mode": "r",
+   "flags": 524288
+  },
+  {
+   "event": "open",
+   "path": "/home/z/my-project/dqvp-work/repo/.venv/lib/python3.12/site-packages/yaml/error.py",
+   "mode": "r",
+   "flags": 524288
+  },
+  {
+   "event": "open",
+   "path": "/home/z/my-project/dqvp-work/repo/.venv/lib/python3.12/site-packages/yaml/__pycache__/tokens.cpython-312.pyc",
+   "mode": "r",
+   "flags": 524288
+  },
+  {
+   "event": "open",
+   "path": "/home/z/my-project/dqvp-work/repo/.venv/lib/python3.12/site-packages/yaml/tokens.py",
+   "mode": "r",
+   "flags": 524288
+  },
+  {
+   "event": "open",
+   "path": "/home/z/my-project/dqvp-work/repo/.venv/lib/python3.12/site-packages/yaml/__pycache__/events.cpython-312.pyc",
+   "mode": "r",
+   "flags": 524288
+  },
+  {
+   "event": "open",
+   "path": "/home/z/my-project/dqvp-work/repo/.venv/lib/python3.12/site-packages/yaml/events.py",
+   "mode": "r",
+   "flags": 524288
+  },
+  {
+   "event": "open",
+   "path": "/home/z/my-project/dqvp-work/repo/.venv/lib/python3.12/site-packages/yaml/__pycache__/nodes.cpython-312.pyc",
+   "mode": "r",
+   "flags": 524288
+  },
+  {
+   "event": "open",
+   "path": "/home/z/my-project/dqvp-work/repo/.venv/lib/python3.12/site-packages/yaml/nodes.py",
+   "mode": "r",
+   "flags": 524288
+  },
+  {
+   "event": "open",
+   "path": "/home/z/my-project/dqvp-work/repo/.venv/lib/python3.12/site-packages/yaml/__pycache__/loader.cpython-312.pyc",
+   "mode": "r",
+   "flags": 524288
+  },
+  {
+   "event": "open",
+   "path": "/home/z/my-project/dqvp-work/repo/.venv/lib/python3.12/site-packages/yaml/loader.py",
+   "mode": "r",
+   "flags": 524288
+  },
+  {
+   "event": "open",
+   "path": "/home/z/my-project/dqvp-work/repo/.venv/lib/python3.12/site-packages/yaml/__pycache__/reader.cpython-312.pyc",
+   "mode": "r",
+   "flags": 524288
+  },
+  {
+   "event": "open",
+   "path": "/home/z/my-project/dqvp-work/repo/.venv/lib/python3.12/site-packages/yaml/reader.py",
+   "mode": "r",
+   "flags": 524288
+  },
+  {
+   "event": "open",
+   "path": "/home/z/my-project/dqvp-work/repo/.venv/lib/python3.12/site-packages/yaml/__pycache__/scanner.cpython-312.pyc",
+   "mode": "r",
+   "flags": 524288
+  },
+  {
+   "event": "open",
+   "path": "/home/z/my-project/dqvp-work/repo/.venv/lib/python3.12/site-packages/yaml/scanner.py",
+   "mode": "r",
+   "flags": 524288
+  },
+  {
+   "event": "open",
+   "path": "/home/z/my-project/dqvp-work/repo/.venv/lib/python3.12/site-packages/yaml/__pycache__/parser.cpython-312.pyc",
+   "mode": "r",
+   "flags": 524288
+  },
+  {
+   "event": "open",
+   "path": "/home/z/my-project/dqvp-work/repo/.venv/lib/python3.12/site-packages/yaml/parser.py",
+   "mode": "r",
+   "flags": 524288
+  },
+  {
+   "event": "open",
+   "path": "/home/z/my-project/dqvp-work/repo/.venv/lib/python3.12/site-packages/yaml/__pycache__/composer.cpython-312.pyc",
+   "mode": "r",
+   "flags": 524288
+  },
+  {
+   "event": "open",
+   "path": "/home/z/my-project/dqvp-work/repo/.venv/lib/python3.12/site-packages/yaml/composer.py",
+   "mode": "r",
+   "flags": 524288
+  },
+  {
+   "event": "open",
+   "path": "/home/z/my-project/dqvp-work/repo/.venv/lib/python3.12/site-packages/yaml/__pycache__/constructor.cpython-312.pyc",
+   "mode": "r",
+   "flags": 524288
+  },
+  {
+   "event": "open",
+   "path": "/home/z/my-project/dqvp-work/repo/.venv/lib/python3.12/site-packages/yaml/constructor.py",
+   "mode": "r",
+   "flags": 524288
+  },
+  {
+   "event": "open",
+   "path": "/home/z/.local/share/uv/python/cpython-3.12.14-linux-x86_64-gnu/lib/python3.12/__pycache__/base64.cpython-312.pyc",
+   "mode": "r",
+   "flags": 524288
+  },
+  {
+   "event": "open",
+   "path": "/home/z/.local/share/uv/python/cpython-3.12.14-linux-x86_64-gnu/lib/python3.12/__pycache__/struct.cpython-312.pyc",
+   "mode": "r",
+   "flags": 524288
+  },
+  {
+   "event": "open",
+   "path": "/home/z/my-project/dqvp-work/repo/.venv/lib/python3.12/site-packages/yaml/__pycache__/resolver.cpython-312.pyc",
+   "mode": "r",
+   "flags": 524288
+  },
+  {
+   "event": "open",
+   "path": "/home/z/my-project/dqvp-work/repo/.venv/lib/python3.12/site-packages/yaml/resolver.py",
+   "mode": "r",
+   "flags": 524288
+  },
+  {
+   "event": "open",
+   "path": "/home/z/my-project/dqvp-work/repo/.venv/lib/python3.12/site-packages/yaml/__pycache__/dumper.cpython-312.pyc",
+   "mode": "r",
+   "flags": 524288
+  },
+  {
+   "event": "open",
+   "path": "/home/z/my-project/dqvp-work/repo/.venv/lib/python3.12/site-packages/yaml/dumper.py",
+   "mode": "r",
+   "flags": 524288
+  },
+  {
+   "event": "open",
+   "path": "/home/z/my-project/dqvp-work/repo/.venv/lib/python3.12/site-packages/yaml/__pycache__/emitter.cpython-312.pyc",
+   "mode": "r",
+   "flags": 524288
+  },
+  {
+   "event": "open",
+   "path": "/home/z/my-project/dqvp-work/repo/.venv/lib/python3.12/site-packages/yaml/emitter.py",
+   "mode": "r",
+   "flags": 524288
+  },
+  {
+   "event": "open",
+   "path": "/home/z/my-project/dqvp-work/repo/.venv/lib/python3.12/site-packages/yaml/__pycache__/serializer.cpython-312.pyc",
+   "mode": "r",
+   "flags": 524288
+  },
+  {
+   "event": "open",
+   "path": "/home/z/my-project/dqvp-work/repo/.venv/lib/python3.12/site-packages/yaml/serializer.py",
+   "mode": "r",
+   "flags": 524288
+  },
+  {
+   "event": "open",
+   "path": "/home/z/my-project/dqvp-work/repo/.venv/lib/python3.12/site-packages/yaml/__pycache__/representer.cpython-312.pyc",
+   "mode": "r",
+   "flags": 524288
+  },
+  {
+   "event": "open",
+   "path": "/home/z/my-project/dqvp-work/repo/.venv/lib/python3.12/site-packages/yaml/representer.py",
+   "mode": "r",
+   "flags": 524288
+  },
+  {
+   "event": "open",
+   "path": "/home/z/my-project/dqvp-work/repo/.venv/lib/python3.12/site-packages/yaml/__pycache__/cyaml.cpython-312.pyc",
+   "mode": "r",
+   "flags": 524288
+  },
+  {
+   "event": "open",
+   "path": "/home/z/my-project/dqvp-work/repo/.venv/lib/python3.12/site-packages/yaml/cyaml.py",
+   "mode": "r",
+   "flags": 524288
+  },
+  {
+   "event": "open",
+   "path": "/home/z/my-project/dqvp-work/repo/runner/__pycache__/cli.cpython-312.pyc",
+   "mode": "r",
+   "flags": 524288
+  },
+  {
+   "event": "open",
+   "path": "/home/z/my-project/dqvp-work/repo/runner/cli.py",
+   "mode": "r",
+   "flags": 524288
+  },
+  {
+   "event": "open",
+   "path": "/home/z/my-project/dqvp-work/repo/configs/quality.yaml",
+   "mode": "r",
+   "flags": 524288
+  },
+  {
+   "event": "open",
+   "path": "/home/z/my-project/dqvp-work/repo/data_quality_platform/validation/__pycache__/input_contract.cpython-312.pyc",
+   "mode": "r",
+   "flags": 524288
+  },
+  {
+   "event": "open",
+   "path": "/home/z/my-project/dqvp-work/repo/data_quality_platform/validation/input_contract.py",
+   "mode": "r",
+   "flags": 524288
+  },
+  {
+   "event": "open",
+   "path": "data/generated/fresh_3m2_regression/consumer_3m_seed_20260918_pass1.csv",
+   "mode": "r",
+   "flags": 524288
+  },
+  {
+   "event": "open",
+   "path": "data/generated/fresh_3m2_regression/consumer_3m_seed_20260918_pass1.csv",
+   "mode": "r",
+   "flags": 524288
+  },
+  {
+   "event": "open",
+   "path": "data/generated/fresh_3m2_regression/consumer_3m_seed_20260918_pass1.csv",
+   "mode": "r",
+   "flags": 524288
+  },
+  {
+   "event": "open",
+   "path": "/home/z/my-project/dqvp-work/repo/data_quality_platform/rules/v1_rules.py",
+   "mode": "r",
+   "flags": 524288
+  },
+  {
+   "event": "open",
+   "path": "data/generated/fresh_3m2_regression/consumer_3m_seed_20260918_pass1.csv",
+   "mode": "r",
+   "flags": 524288
+  },
+  {
+   "event": "open",
+   "path": "data/generated/fresh_3m2_regression/consumer_3m_seed_20260918_pass1.csv",
+   "mode": "r",
+   "flags": 524288
+  },
+  {
+   "event": "open",
+   "path": "data/generated/fresh_3m2_regression/consumer_3m_seed_20260918_pass1.csv",
+   "mode": "r",
+   "flags": 524288
+  },
+  {
+   "event": "open",
+   "path": "data/generated/fresh_3m2_regression/consumer_3m_seed_20260918_pass1_out.csv",
+   "mode": "w",
+   "flags": 524865
+  },
+  {
+   "event": "open",
+   "path": "data/generated/fresh_3m2_regression/consumer_3m_seed_20260918_pass1_out.csv",
+   "mode": "r",
+   "flags": 524288
+  },
+  {
+   "event": "open",
+   "path": "data/generated/fresh_3m2_regression/consumer_3m_seed_20260918_pass1_out.csv",
+   "mode": "r",
+   "flags": 524288
+  },
+  {
+   "event": "open",
+   "path": "evidence/validation/2026-09-19/fresh_3m2/pass1_engine/lineage.json",
+   "mode": "w",
+   "flags": 524865
+  },
+  {
+   "event": "open",
+   "path": "evidence/validation/2026-09-19/fresh_3m2/pass1_engine/audit.json",
+   "mode": "w",
+   "flags": 524865
+  },
+  {
+   "event": "open",
+   "path": "evidence/validation/2026-09-19/fresh_3m2/pass1_engine/monitoring.json",
+   "mode": "w",
+   "flags": 524865
+  },
+  {
+   "event": "open",
+   "path": "evidence/validation/2026-09-19/fresh_3m2/pass1_engine/alerts.json",
+   "mode": "w",
+   "flags": 524865
+  },
+  {
+   "event": "open",
+   "path": "data/generated/fresh_3m2_regression/consumer_3m_seed_20260918_pass1_out.csv",
+   "mode": "r",
+   "flags": 524288
+  },
+  {
+   "event": "open",
+   "path": "evidence/validation/2026-09-19/fresh_3m2/pass1_engine/lineage.json",
+   "mode": "r",
+   "flags": 524288
+  },
+  {
+   "event": "open",
+   "path": "evidence/validation/2026-09-19/fresh_3m2/pass1_engine/audit.json",
+   "mode": "r",
+   "flags": 524288
+  },
+  {
+   "event": "open",
+   "path": "evidence/validation/2026-09-19/fresh_3m2/pass1_engine/monitoring.json",
+   "mode": "r",
+   "flags": 524288
+  },
+  {
+   "event": "open",
+   "path": "evidence/validation/2026-09-19/fresh_3m2/pass1_engine/alerts.json",
+   "mode": "r",
+   "flags": 524288
+  },
+  {
+   "event": "open",
+   "path": "evidence/validation/2026-09-19/fresh_3m2/pass1_engine/manifest.json",
+   "mode": "w",
+   "flags": 524865
+  },
+  {
+   "event": "open",
+   "path": "evidence/validation/2026-09-19/fresh_3m2/pass1_engine/manifest.json",
+   "mode": "None",
+   "flags": 524288
+  },
+  {
+   "event": "open",
+   "path": "evidence/validation/2026-09-19/fresh_3m2/pass1_engine/manifest.json",
+   "mode": "r",
+   "flags": 524288
+  }
+ ]
+}
