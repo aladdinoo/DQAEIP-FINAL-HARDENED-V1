@@ -1,6 +1,6 @@
 # DQAEIP — Data Quality Assurance & Evidence Integrity Platform
 
-## README V2 — Company-Facing Documentation
+## README — Company-Facing Documentation
 
 > **Documentation kind:** Company-facing README, rebuilt from the actual repository state and authoritative evidence present in the repository.
 >
